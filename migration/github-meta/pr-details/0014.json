@@ -1,0 +1,854 @@
+{
+  "changed_files": [
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01 — full vs partial range erase boundary\n+\n+- **Upstream ID:** `B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T011_BULK_ERASE_ACCEPTANCE_20261031_09H.md`; SHA256 verified 2026-11-01 `97C6FF82814759FE26980B65B88144BAB27D5CA1001B5137F484E618D7DD7DCC`.\n+- **B source:** `data/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md`; SHA256 verified 2026-11-01 `C54054A10AE7834D10DAA45129B80100048CD98CDAE286324C91E9F784DF24AC`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+T020 acceptance split: full-range begin==head.leftmost and end==head proceeds via 0x4DEF57→0x4ED030; nonfull path may use 0x4DEFCF→0x4DEC70. Independent historical E evidence attested native windows 4/4 and E8 destinations 6/6. Historical 72/72 conditional abstract cases (24 full,48 partial) check branching and model-only tree-free ordering; do **not** prove real tree lifetime or game-reachable partial deletion. Source-range metadata uses mixed inclusive/exclusive end conventions across B windows; SHA-specific lengths 70/168/73/53 bytes avoid a false T019 engine discrepancy.\n+\n+## VA / CALL / offsets\n+0x4726A0,0x4726C1,0x4DEF40,0x4DEF57,0x4DEFCF,0x4DEC70,0x4ED030,0x49F6A0; CALL 0x4DEF57→0x4ED030, 0x4DEFCF→0x4DEC70; tree count +0x8, sentinel +0x15.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01` cross-references `B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. B owner to prove legitimate partial erase reachability; E to verify same-run legal G0/G1/G2.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01.md",
+      "sha": "ee7e3abf330ae467aa28a055eafc2733f9170b34",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01 — partial erase iterator and count gate\n+\n+- **Upstream ID:** `B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T011_PARTIAL_ERASE_ACCEPTANCE_20261031_10H.md`; SHA256 verified 2026-11-01 `8CB2955649DFB0718B172476648FFD57C3DF0E5CA9037575D22D8F03E022F6F7`.\n+- **B source:** `data/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md`; SHA256 verified 2026-11-01 `FCFE8992BE8EA58636A958E8BA0E4D615F6EAC4E9DB2455EE45C5B07D0187EF6`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Original E study separately attested [0x4DEC70,0x4DEEE2) 626-byte window and seven outgoing direct CALLs. Native branch uses byte[node+0x15] invalid-iterator guard, deletion-free site 0x4DEEBB, conditional tree count decrement and output iterator candidate; ABI, rebalance and reachability remain VERIFY. Historical 240/240 conditional synthetic tests, only 20 abstract cases eligible for **further** partial-branch review, none for original Golden. Error-report helper must not be asserted to throw without proof. Prior 09H bulk deletion is not a second discovery.\n+\n+## VA / CALL / offsets\n+0x4DEC70,0x4DEC74,0x4DEC7F,0x4DEC8E,0x4DEEBB,0x4DEED6; CALL 0x4DEFCF→0x4DEC70; node+0x15, tree+0x8.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01` cross-references `B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. B to prove partial iterator preconditions; legal G0/G1/G2 remains missing.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01.md",
+      "sha": "5332007fa146df06ee82e312b3e98bd986a7b54d",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01 — save next iterator before deletion\n+\n+- **Upstream ID:** `B-20261031-11H-T011-PARTIAL-RANGE-SUCCESSOR-PRESERVE-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T011_SUCCESSOR_BEFORE_ERASE_ACCEPTANCE_20261031_11H.md`; SHA256 verified 2026-11-01 `164EF3C77941FB985E8DC6119AD4EB371B0C8D8C50C35B7A2AEB69FC76A79182`.\n+- **B source:** `data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md`; SHA256 verified 2026-11-01 `C391E96E951C1C22E1D02F03C12ECD4E0F7C1F39F1E746316E201C04217F0631`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Read-only original E report attested [0x4DEF6A,0x4DEFE5) 123-byte window SHA and direct CALL 0x4DEFCF→0x4DEC70. E synthesized 432 BST ordered-range first-step cases: 96 empty,12 whole-range handled in separate bulk branch,324 partial (right-descent154,ancestor170). All 432 passed historically. The model does **not** emulate native red-black tree unlink, memory safety, invalid sentinel or legitimate training-cache lifecycle. Local pointer capture 0x4DEF9A/0x4DEFC4, deletion 0x4DEFCF and restore 0x4DEFD4 are conditional STATIC/INFERRED.\n+\n+## VA / CALL / offsets\n+0x4DEF6A,0x4DEF74,0x4DEF9A,0x4DEFC4,0x4DEFC8,0x4DEFCF,0x4DEFD4,0x4DEFDC; node links +0/+4/+8 and flag+0x15.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01` cross-references `B-20261031-11H-T011-PARTIAL-RANGE-SUCCESSOR-PRESERVE-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. Native sentinel/ABI remains B-owned VERIFY; avoid claiming full repeated erase proven.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01.md",
+      "sha": "75f1dabda83dd3fa14ec0153c8657c0b52a4f803",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01 — signed dual score and rank-gate conditional regressions\n+\n+- **Upstream ID:** `B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T013_DUAL_SCORE_SIGNED_ACCEPTANCE_20261031_12H.md`; SHA256 verified 2026-11-01 `AAA0FC6F03E48B25CCACBEF62CEB439976D0F6FB4BFF0F19977BBDC07BD2150F`.\n+- **B source:** `data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md`; SHA256 verified 2026-11-01 `0889CC0A8F6BCE872EFB23748E8784D09BEE65B007F46DF64CAB829929CB7781`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Historical E source checks bounded x86 windows 3/3; abstract synthetic 196 signed comparator cases plus 56 signed-rank/write boundary cases = 252/252 historical PASS. Mode and score choice use candidate fields +0xA0C / +0xA10; rank gating threshold -2147483547. Do not infer stable 33+ sort, actual selected target, calling convention, overflow or user-visible rank from this model. **Erratum link:** next 13H study corrected the previous-score tie grouping intuition; the 12H gate is not sufficient to assert tied-low rank semantics.\n+\n+## VA / CALL / offsets\n+0x447240,0x447260,0x448E90,0x448FA6,0x449276→0x47BB50,0x449296; candidate+0xA0C/+0xA10.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01` cross-references `B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. Use 13H correction as current ranked-tie interpretation; actual sort and legal target output VERIFY.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01.md",
+      "sha": "92da944554a6593e325f95aa8ec2511810133764",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01 — fixed-anchor tie interpretation correction\n+\n+- **Upstream ID:** `B-20261031-13H-T013-SORT-ANCHOR-TIE-CORRECTION-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T013_FIXED_ANCHOR_CORRECTION_ACCEPTANCE_20261031_13H.md`; SHA256 verified 2026-11-01 `157AD16C3163FDB6124564113BDF2BF63E9CA655146B25C784246C36F6D82785`.\n+- **B source:** `data/T013_DUAL_SCORE_SORT_ANCHOR_TIE_CORRECTION_NATIVE_20261031_13H.md`; SHA256 verified 2026-11-01 `6C09EA760DEB4FDD6C6793648833D22C2B246A94A8AEB82BB8C9FB6FAFA9CB18`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Critical explicit E/B 12H correction. Rank anchor EDI is changed only while sentinel; on later scores unequal to retained anchor, EBP is decremented even for consecutive equal lower scores. Historical 4032/4032 synthetic cases PASS, 1044 disagree with intentionally obsolete preceding-item tie grouping; neither number is gameplay. Anchors: [20,20,8,8]→[10000,10000,9999,9998], [20,8,8,8]→[10000,9999,9998,9997], [20,20,20] constant10000. Signed threshold may skip rank write **after** decrement; unknown output remains null. Native E source historically checked six windows, 3 direct E8 targets.\n+\n+## VA / CALL / offsets\n+0x449276→0x47BB50; 0x47BBF6→0x44D6A0; 0x44927E,0x449280,0x449285,0x4492AF,0x4492B7,0x4492BB,0x4492BF; candidate+0xA0C/+0xA10.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01` cross-references `B-20261031-13H-T013-SORT-ANCHOR-TIE-CORRECTION-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. Curator must retain B13/E13 erratum linkage, not mislabel this a proven game bug; sort input order/33+ remain VERIFY.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01.md",
+      "sha": "de0fb858aaad02b35b48622472b883cfffffed1c",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01 — rank return vs per-Unit kind8 eligibility\n+\n+- **Upstream ID:** `B-20261031-14H-T013-RANK-CLEANUP-UNIT8-CALLCHAIN-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md`; SHA256 verified 2026-11-01 `7247DE5F9A2C5AB7347FDFEB67FC151D8EB8E703F15BD9B6E68E59AF0937DB1A`.\n+- **B source:** `data/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md`; SHA256 verified 2026-11-01 `F2CB56A3BE2401B93A6A62A21F8F942A27CE710C34A9860EBAECF03A2EC30E19`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Two scheduler paths after rank return are distinct. A skips nonzero Unit+0x1867C, conditionally applies first index gate in mode0, always applies second index gate, then calls kind8. B skips the flag and uses a separate iterator path without A's two local index gates. Historical native evidence 4 windows/4 and 11 direct CALLs/11; E fixture 128/128 abstract gate cases PASS. Rank RETURN is **not proof of final selected attack target**; kind8 dispatch is not visible attack. This crosswalk checks only pre-call filters/order, not kind8 internals/RNG/visible result.\n+\n+## VA / CALL / offsets\n+0x448E90,0x4492CF,0x449792,0x449959,0x44D070,0x44982B,0x44999D,0x577A20; Unit+0x1867C.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01` cross-references `B-20261031-14H-T013-RANK-CLEANUP-UNIT8-CALLCHAIN-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. Only a legal same-run trace may connect kind8 dispatch to event/target; do not promote rank to target.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01.md",
+      "sha": "85cd7079a4256e17b012c06c348f8d9bb2ae3ce8",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01 — RNG producer precedes queue count<2 skip\n+\n+- **Upstream ID:** `B-20261031-15H-T013-KIND8-RANDOM-PAYLOAD-QUEUE-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md`; SHA256 verified 2026-11-01 `EDB29972F9CC7A6FAB72A94BBE531A18EFD3FB83896DBB0F8117BD4D3E1A1339`.\n+- **B source:** `data/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md`; SHA256 verified 2026-11-01 `FAEF6FDEF83E746CD0F27A5E601A6662D97A23ECF7757F2A3FD1F7C94F58C03B`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Historical static native proof: kind8 0x577D82→0x5A3DF0 builder before 0x577DCB→0x579EB0 queue; producer internal RNG 0x5A3E55 precedes queue unsigned count<2 gate at 0x579F04/07 **if reached**. Therefore count0/1 post-queue skip does not imply no earlier RNG request; neither assures actual seed mutation. Historical byte checks 4 windows/4, E8 9/9 and instruction anchors 3/3, 80/80 abstract synthetic cases. Model sample*100/32768 is rational; native converted integer left null because x87 rounding/ABI not proven. Unit+0x18654 identity is conditional, not UI evidence.\n+\n+## VA / CALL / offsets\n+0x577D82→0x5A3DF0; 0x577DCB→0x579EB0; 0x5A3E55,0x579F04,0x579F07; Unit+0x18650/+0x18654, record+0x28.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01` cross-references `B-20261031-15H-T013-KIND8-RANDOM-PAYLOAD-QUEUE-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. Clarify count producer and integer conversion via B-owned source, original-game RNG/visible event via legal UI only.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01.md",
+      "sha": "784bc2521dc0d3d770fef0269840395c5f081ef0",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01 — 26-list bucket merge and signed threshold\n+\n+- **Upstream ID:** `B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01` (B owner; **do not duplicate discovery**).\n+- **E source:** `tests/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md`; SHA256 verified 2026-11-01 `D3FD0A6CC920785B335FF13B96637E518301646FD31EA8F44D87BD2C8E30588A`.\n+- **B source:** `data/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md`; SHA256 verified 2026-11-01 `C9E9AE4017DB40F4810E32CB45419EE2390028757BBE38843DC0E1AE3A8CA621`. Upstream report is referenced, not reproduced.\n+- **Source snapshot:** 2026-10-31 (JST), private PC read-only source recheck 2026-11-01 23:52 JST.\n+- **Owner / task:** E / T020, T018-T019 cross-check. Upstream owner B/T011 or B/T013 as separately identified; not a new B native finding.\n+- **Engine basis:** previously authenticated read-only PE copy, original SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`. This run independently rehashed the E and B report files, **not** the original PE or native windows.\n+- **Evidence class:** historical STATIC byte attestations and conditional SYNTHETIC regression; INFERRED native semantics require follow-up. Gameplay DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; official READY=0.\n+- **Legal Golden gate:** unchanged old EXE and authenticated pre-karate-20x DAT, same-run G0 normal battle UI, G1 immediate prebattle SAVE bytes/SHA plus input timeline, G2 real MAP SHA and three sides plus ordered deployed Unit/Troop; G3 visible outcome and G4 World change. None acquired here.\n+- **Original source controls:** no original EXE/DAT/MAP/SAVE/ZIP, runtime screenshots, generated DB, or other owner's full report included. No forbidden/refused research payload reattempted. `PUBLISHED_INTAKE / NOT_CURATED` applies to this E-specific cross-check, and does not reverse any independently curated B native entry.\n+\n+## E-owned result (historical evidence; no new test run)\n+Native 0x579EB0 handles 26 buckets of 12-byte list structures, comparator path chooses +0xA0C in mode2 vs +0xA10 otherwise, and signed JLE suppresses +0xA14 addition at or below -2147483547. Historical byte checks 3/3, E8 CALLs 10/10 and instruction anchors 14/14. E synthetic 198/198 (144 score projections+54 distinct-list count conservation) PASS. No final attack/target or comparison precedence is proved. Additional CALL 0x57A8EC→0x5B6BBB and 0x4C5819→0x5B5B6D noted in E report, semantics UNKNOWN. Prior rank and kind8 RNG studies must not be counted again. **KB check this run:** 0x579EB0 already curated in existing knowledge as BattleCandidate_MergeBucketLists; this E acceptance fixture is the uncurated delta, not a new symbol.\n+\n+## VA / CALL / offsets\n+0x579EB0,0x57A830,0x5A3EA0,0x4C5800,0x57A8EC→0x5B6BBB,0x4C5819→0x5B5B6D; candidate+0xA0C/+0xA10/+0xA14.\n+\n+## T019 and acceptance state\n+No newly proven original-game Wiki/DAT/EXE contradiction. GameClear DAT13 versus TXT2 is previously resolved **search-scope difference**, while TXT loading, script2 priority, phase flags and later gwrite behavior remain VERIFY. A provenance-bound or interpretation correction is **not** an observed game defect. Existing formal MASTER checkpoint196/READY596 (A115/B229/C136/D116); 34 Task 9/21/4 previously reported, not freshly reclassified; no new official READY integration.\n+\n+## KB_CANDIDATE / next\n+`E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01` cross-references `B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01` as E-only acceptance/correction. Existing KB name/entry must be checked against source and corrected studies; no automatic symbol/REF/manifest update. B retains comparator ABI/secondary priority; E requires lawful G0/G1/G2 and UI-visible target output.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01.md",
+      "sha": "34020e17c61ed7aafe64ffb9dd0250524f9d1c6b",
+      "status": "added"
+    },
+    {
+      "additions": 26,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-INTAKE-MANIFEST-20261101-2352-T020-09H16H.md",
+      "changes": 26,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-INTAKE-MANIFEST-20261101-2352-T020-09H16H.md?ref=d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "deletions": 0,
+      "filename": "research/intake/E/E-INTAKE-MANIFEST-20261101-2352-T020-09H16H.md",
+      "patch": "@@ -0,0 +1,26 @@\n+# E/T020 PRIVATE intake manifest — 2026-11-01 23:52 JST\n+\n+Research batch ID: E-INTAKE-20261101-2352-T020-09H16H-01. Owner E/T020, cross-check T018/T019. Source snapshots are 2026-10-31 09–16H JST. Source E report and eight upstream B owner report SHA256 values were **independently rehashed by a read-only PC command on 2026-11-01**, 16/16 existing files. Each report is represented once, not an additional B discovery. Full B source text remains with B owner; all GitHub docs are E-only sanitized acceptance/errata summaries.\n+\n+| Hour | E-owned research ID | E report source SHA256 | Intake state |\n+|---|---|---|---|\n+| 09H | [E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01](E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01.md) | `97C6FF82814759FE26980B65B88144BAB27D5CA1001B5137F484E618D7DD7DCC` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 10H | [E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01](E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01.md) | `8CB2955649DFB0718B172476648FFD57C3DF0E5CA9037575D22D8F03E022F6F7` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 11H | [E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01](E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01.md) | `164EF3C77941FB985E8DC6119AD4EB371B0C8D8C50C35B7A2AEB69FC76A79182` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 12H | [E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01](E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01.md) | `AAA0FC6F03E48B25CCACBEF62CEB439976D0F6FB4BFF0F19977BBDC07BD2150F` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 13H | [E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01](E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01.md) | `157AD16C3163FDB6124564113BDF2BF63E9CA655146B25C784246C36F6D82785` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 14H | [E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01](E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01.md) | `7247DE5F9A2C5AB7347FDFEB67FC151D8EB8E703F15BD9B6E68E59AF0937DB1A` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 15H | [E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01](E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01.md) | `EDB29972F9CC7A6FAB72A94BBE531A18EFD3FB83896DBB0F8117BD4D3E1A1339` | PUBLISHED_INTAKE / NOT_CURATED |\n+| 16H | [E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01](E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01.md) | `D3FD0A6CC920785B335FF13B96637E518301646FD31EA8F44D87BD2C8E30588A` | PUBLISHED_INTAKE / NOT_CURATED |\n+\n+## Dedup / correction / existing curation\n+- Previous draft E PR #8 preserves 2026-11-01 05/10/13/14/15/16H offline source IDs. Draft E PR #11 preserves 2026-10-31 06/07/08H and 2026-11-01 00/01/02H acceptance source IDs. This batch's 09–16H IDs are distinct.\n+- B09/B11 native `0x4DEF40` already appears in current local knowledge as curated `Tree_EraseRange`, and B16 `0x579EB0` as curated `BattleCandidate_MergeBucketLists` (PC read-only `kb.py addr` this run). Do not republish either as a new symbol. **These eight E acceptance/correction reports are not yet curated even where underlying B static facts are.**\n+- T013 E13/B13 corrected E12/B12 preceding-item tied-low-score interpretation. Preserve the correction graph during any curation. E15 prevents interpreting a post-queue count<2 skip as no upstream RNG; E14 prevents interpreting rank return as final target.\n+- Historical E synthetic PASS counts 72,240,432,252,4032,128,80,198 are separately source-recorded; **none rerun in this intake run**. Native-byte attestation counts in individual notes are historic results, not re-executed today.\n+\n+## Formal acceptance / blocked boundaries\n+Official MASTER cp196 / READY596 (A115/B229/C136/D116); last-confirmed 34 Task DONE9/IN_PROGRESS21/VERIFY4; no new READY integrated. T018 C-NB02 G0 lawful unmodified UI battle start, G1 same-run immediate prebattle SAVE actual bytes/SHA and input chronology, G2 real MAP SHA/3 sides/ordered deployed Unit/Troop remain unattested. Pre-karate-20x DAT restoration must be authenticated. Original gameplay DYNAMIC OBSERVED 0 / actual Golden PASS 0 / strict MATCH 0. T019 newly confirmed original-game contradiction 0; GameClear DAT13/TXT2 search-scope difference RESOLVED; runtime script2/TXT/phase/gwrite VERIFY. Historical T018 table boundary, C T026/T032, D T030 TSV, protected 0x5710C0, and other safety-refused source/payloads were neither retried nor exported.\n+\n+## Pending cursor and curator instructions\n+**Next E-owned intake cursor: 2026-10-31 17H** (then 18–23H); the 2026-11-01 03–16H offline source-recovery backlog is independently unresolved, along with older 39-file inventory. Before intake: verify owner source SHA and prior ID, private-only redaction, source corrections and existing draft/curated records. E may stage only owner-specific `research/intake/E` on isolated private branch; only dedicated KB curator edits `develop`/REF/symbols/structs via approved workflow. No alternate-path recovery for prior safety-refused content.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/d2891492f86f19444252dd330cc7ee7baf2f9aef/research%2Fintake%2FE%2FE-INTAKE-MANIFEST-20261101-2352-T020-09H16H.md",
+      "sha": "7ee8b679a20acfbb24da1af57df8330748ddb5b6",
+      "status": "added"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6621e0ae8c772f313a19d36895b7301af8c71f64/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:57:44Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:57:44Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 09H acceptance E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01",
+        "tree": {
+          "sha": "ddac965fec4a28b2570f8703c38371e51d7dcc0d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/ddac965fec4a28b2570f8703c38371e51d7dcc0d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/6621e0ae8c772f313a19d36895b7301af8c71f64",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/6621e0ae8c772f313a19d36895b7301af8c71f64",
+      "node_id": "C_kwDOVb7AvNoAKDY2MjFlMGFlOGM3NzJmMzEzYTE5ZDM2ODk1YjczMDFhZjhjNzFmNjQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "sha": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/dad68c4fedf8a56e430af1ec8a7993e725ce610d"
+        }
+      ],
+      "sha": "6621e0ae8c772f313a19d36895b7301af8c71f64",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6621e0ae8c772f313a19d36895b7301af8c71f64"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b88d2caf022e8f50c40d4726b235804a295492a7/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:57:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:57:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 10H acceptance E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01",
+        "tree": {
+          "sha": "833b981f978ec2a42c2b4f9b71b403dadc6b9b85",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/833b981f978ec2a42c2b4f9b71b403dadc6b9b85"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/b88d2caf022e8f50c40d4726b235804a295492a7",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b88d2caf022e8f50c40d4726b235804a295492a7",
+      "node_id": "C_kwDOVb7AvNoAKGI4OGQyY2FmMDIyZThmNTBjNDBkNDcyNmIyMzU4MDRhMjk1NDkyYTc",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/6621e0ae8c772f313a19d36895b7301af8c71f64",
+          "sha": "6621e0ae8c772f313a19d36895b7301af8c71f64",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6621e0ae8c772f313a19d36895b7301af8c71f64"
+        }
+      ],
+      "sha": "b88d2caf022e8f50c40d4726b235804a295492a7",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b88d2caf022e8f50c40d4726b235804a295492a7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/ef2276fb87d2624afc57e3ee6dcaadbc44758d30/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:57:54Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:57:54Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 11H acceptance E-AUDIT-20261031-11H-T020-T011-SUCCESSOR-BEFORE-ERASE-01",
+        "tree": {
+          "sha": "df2cec98870f02a2eefb9719d6866af4b45b2ecc",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/df2cec98870f02a2eefb9719d6866af4b45b2ecc"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/ef2276fb87d2624afc57e3ee6dcaadbc44758d30",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/ef2276fb87d2624afc57e3ee6dcaadbc44758d30",
+      "node_id": "C_kwDOVb7AvNoAKGVmMjI3NmZiODdkMjYyNGFmYzU3ZTNlZTZkY2FhZGJjNDQ3NThkMzA",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b88d2caf022e8f50c40d4726b235804a295492a7",
+          "sha": "b88d2caf022e8f50c40d4726b235804a295492a7",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b88d2caf022e8f50c40d4726b235804a295492a7"
+        }
+      ],
+      "sha": "ef2276fb87d2624afc57e3ee6dcaadbc44758d30",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/ef2276fb87d2624afc57e3ee6dcaadbc44758d30"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/51e9cded4f51080356eb2223b87598419d84820c/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:57:58Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:57:58Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 12H acceptance E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01",
+        "tree": {
+          "sha": "520611866f9b0da805c65c9de0d82a9728045da4",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/520611866f9b0da805c65c9de0d82a9728045da4"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/51e9cded4f51080356eb2223b87598419d84820c",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/51e9cded4f51080356eb2223b87598419d84820c",
+      "node_id": "C_kwDOVb7AvNoAKDUxZTljZGVkNGY1MTA4MDM1NmViMjIyM2I4NzU5ODQxOWQ4NDgyMGM",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/ef2276fb87d2624afc57e3ee6dcaadbc44758d30",
+          "sha": "ef2276fb87d2624afc57e3ee6dcaadbc44758d30",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/ef2276fb87d2624afc57e3ee6dcaadbc44758d30"
+        }
+      ],
+      "sha": "51e9cded4f51080356eb2223b87598419d84820c",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/51e9cded4f51080356eb2223b87598419d84820c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:58:01Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:58:01Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 13H acceptance E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01",
+        "tree": {
+          "sha": "b94ce83105b9977251c4c55541867c5f965759f7",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/b94ce83105b9977251c4c55541867c5f965759f7"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14",
+      "node_id": "C_kwDOVb7AvNoAKDBiMWFkNGMyZTA2NGFhNmJmZjg3NTBhNGU5ZjRjNzYwYzcxZGVhMTQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/51e9cded4f51080356eb2223b87598419d84820c",
+          "sha": "51e9cded4f51080356eb2223b87598419d84820c",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/51e9cded4f51080356eb2223b87598419d84820c"
+        }
+      ],
+      "sha": "0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6afd0811c09bd2b7c0e13a9931ee73ba37757b39/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:58:03Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:58:03Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 14H acceptance E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01",
+        "tree": {
+          "sha": "d117604e9e1b1d583e81d091e73c70373acc091d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/d117604e9e1b1d583e81d091e73c70373acc091d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/6afd0811c09bd2b7c0e13a9931ee73ba37757b39",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/6afd0811c09bd2b7c0e13a9931ee73ba37757b39",
+      "node_id": "C_kwDOVb7AvNoAKDZhZmQwODExYzA5YmQyYjdjMGUxM2E5OTMxZWU3M2JhMzc3NTdiMzk",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14",
+          "sha": "0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/0b1ad4c2e064aa6bff8750a4e9f4c760c71dea14"
+        }
+      ],
+      "sha": "6afd0811c09bd2b7c0e13a9931ee73ba37757b39",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6afd0811c09bd2b7c0e13a9931ee73ba37757b39"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e7ba0c293c7e19b59502357b8fd4b99e173336e9/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:58:05Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:58:05Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 15H acceptance E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01",
+        "tree": {
+          "sha": "42db388d542fd669b875d3cc829f58a90ceea182",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/42db388d542fd669b875d3cc829f58a90ceea182"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/e7ba0c293c7e19b59502357b8fd4b99e173336e9",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/e7ba0c293c7e19b59502357b8fd4b99e173336e9",
+      "node_id": "C_kwDOVb7AvNoAKGU3YmEwYzI5M2M3ZTE5YjU5NTAyMzU3YjhmZDRiOTllMTczMzM2ZTk",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/6afd0811c09bd2b7c0e13a9931ee73ba37757b39",
+          "sha": "6afd0811c09bd2b7c0e13a9931ee73ba37757b39",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/6afd0811c09bd2b7c0e13a9931ee73ba37757b39"
+        }
+      ],
+      "sha": "e7ba0c293c7e19b59502357b8fd4b99e173336e9",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e7ba0c293c7e19b59502357b8fd4b99e173336e9"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a94ac5db109b29226262e6d1d439b1d4d8ac0731/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:58:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:58:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): source-verify T020 16H acceptance E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01",
+        "tree": {
+          "sha": "b152af4891e7255a807eea79957a2c9e70c08883",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/b152af4891e7255a807eea79957a2c9e70c08883"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/a94ac5db109b29226262e6d1d439b1d4d8ac0731",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/a94ac5db109b29226262e6d1d439b1d4d8ac0731",
+      "node_id": "C_kwDOVb7AvNoAKGE5NGFjNWRiMTA5YjI5MjI2MjYyZTZkMWQ0MzliMWQ0ZDhhYzA3MzE",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/e7ba0c293c7e19b59502357b8fd4b99e173336e9",
+          "sha": "e7ba0c293c7e19b59502357b8fd4b99e173336e9",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e7ba0c293c7e19b59502357b8fd4b99e173336e9"
+        }
+      ],
+      "sha": "a94ac5db109b29226262e6d1d439b1d4d8ac0731",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a94ac5db109b29226262e6d1d439b1d4d8ac0731"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d2891492f86f19444252dd330cc7ee7baf2f9aef/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:58:49Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:58:49Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(E): manifest 8 verified T020 studies, preserve formal Golden gates",
+        "tree": {
+          "sha": "9e9b86ccff679b58873ab44015d32ac5c632d01a",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/9e9b86ccff679b58873ab44015d32ac5c632d01a"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/d2891492f86f19444252dd330cc7ee7baf2f9aef",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "node_id": "C_kwDOVb7AvNoAKGQyODkxNDkyZjg2ZjE5NDQ0MjUyZGQzMzBjYzdlZTdiYWYyZjlhZWY",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/a94ac5db109b29226262e6d1d439b1d4d8ac0731",
+          "sha": "a94ac5db109b29226262e6d1d439b1d4d8ac0731",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a94ac5db109b29226262e6d1d439b1d4d8ac0731"
+        }
+      ],
+      "sha": "d2891492f86f19444252dd330cc7ee7baf2f9aef",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d2891492f86f19444252dd330cc7ee7baf2f9aef"
+    }
+  ],
+  "number": 14,
+  "reviews": []
+}

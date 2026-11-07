@@ -1,0 +1,760 @@
+{
+  "changed_files": [
+    {
+      "additions": 46,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "changes": 46,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/intake/B/B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "patch": "@@ -0,0 +1,46 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01\n+owner: B\n+source_relative_path: data/T024_52AD00_MERGE_TIE_LOCAL_STABILITY_NATIVE_20261101_17H.md\n+source_sha256_verified_2026-11-02_JST: B548261CF6A0A2C3968F2D7166183351CC3A70C43FDD1C60B5BDD3218656713E\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# T024｜0x52AD00 連結リスト・マージ同距離分岐（2026-11-01 17H JST）\n+\n+研究ID：B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01｜owner=B｜Task=T024（T011への位置依存影響）｜STATIC/INFERRED/VERIFY/NOT READY\n+**接続状態：PC ONLINE。** Local CompactでMASTER、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、T024、knowledge README/SYNC_STATUSを閲覧。HANDOFF直前は02H。旧search_index/README.md・BUILD_MANIFEST.jsonはENOENT（V9移行既知、接続障害ではない）。\n+**先行重複：** 13Hの距離ソート、14Hの32bit overflow、15HのNaN非推移性、16HのSAR中点丸めは既成果。今回の新規局所結論は同距離の2リスト・マージの左側優先（global stableとは別）。\n+\n+## 関数・静的制御と証拠\n+- 原作対象PE SHA-256（V9マニフェスト）：E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今run原本を再hash/実行していない。\n+- V9 search `function 0x0052AD00`: entry 0x52AD00、サイズ129 B、関数範囲0x52AD00～0x52AD80、Ghidra擬似Cは STATIC／ABI未検証。\n+- 0x52AD35 `E8 F6 B2 FF FF`→0x526030（距離比較）；0x52AD3A `84 C0` TEST AL；0x52AD3C `74 1B` JE comparator=false branch。\n+- Ghidra保存擬似Cでは comparator false のとき左側ノード `puVar2=*puVar2` に進み、true のとき右側ノードを左側の前へ 0x4C5800 でsplice。後段は残った右suffixを 0x4C5800 で移す。\n+- 0x52AD4C `E8 AF AA F9 FF`→0x4C5800、0x52AD72 `E8 89 AA F9 FF`→0x4C5800（残りsuffix）。後者の直接CALLを今回V9で追加クロス照合。\n+- 上位 0x529DC0 のマージ箇所は 0x529EAE / 0x529F04 / 0x529F74 → 0x52AD00 の3 E8直接CALL。以前の0x5296A8・0x529868→0x529DC0は旧13H成果であり再計数0。\n+- 15H静的証拠の0x526030：通常有限同距離で結果AL=0。したがって**局所マージに入力された左右先頭が同距離なら左側先頭を先に残す**（STATIC + INFERRED）。\n+- 合成例 left=[5A0,5A1], right=[5B0,5B1] は A0,A1,B0,B1。これは擬似実装の独立算術テストで、原作DYNAMIC/Goldenではない。\n+- **重要な制限：** 26bin上位マージのrun投入順序、0x4C5800の全副作用、NaN/overflow、alias、元リストの順番は未確定。よって全体ソート安定性は VERIFY のまま。最終AIの攻撃対象や移動先を確定しない。\n+\n+## 既存根拠・知識照合・KB候補\n+- 13H旧静的JSON `data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json` の機械語bytes・直接CALLと、PC V9 pseudocおよび上位CALLを照合。旧13H JSON SHA256=1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205。\n+- 統合V9 DB SHA256=2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE。`v9_coverage.py --inspect 0x0052AD00`: E8 caller3/callee3, unresolved0, dictionary登録0。`knowledge/kb.py addr`では未命名・関連索引0。GitHub private developのV9 B REVIEWとcuration protocol読取専用照合。\n+- KB_CANDIDATE: owner=B/T024、VA=0x52AD00、CALL=0x52AD35/4C/72, 上位0x529EAE/0x529F04/0x529F74、source=V9 0x0052AD00 pseudoc＋元PE命令bytes、STATIC/INFERRED/VERIFY、NOT READY、Golden0、全体安定性未確定。共有KBは専任キュレーターのみ更新。\n+\n+## 安全・未同期復旧・Golden\n+- 16H一次報告・証拠JSON・verify.pyをB所有 data/へ保存し実byte SHA照合済（3/3）。16H Libraryの旧readback receiptも別SHAでPCへ保存。**会話内16H最終receiptとは不一致**。詳細は当該B HANDOFF復旧節。16HオフラインHANDOFF deltaの正式統合・7～15H分45成果の同期・3H保存障害は未完了。\n+- 既存 SAFE134は10/31最終値を継承し今run全件再検証0。HOLD21安全拒否と10/25元文章・GitHub B raw回収gapは継続BLOCKED。今回新安全拒否0、旧拒否迂回0。\n+- 原作ゲーム実機Golden PASS=0、strict MATCH=0、DYNAMIC=0、新B READY=0、MASTER新統合=0、Task DONE増加0。\n+- 必要なGolden：ユーザー未改変原作DAT（10/22空手20倍テスト改変を排除）、同SAVE/MAP/input/RNG/tick、同距離左右複数Unit＋異距離混在、実listと後段0x569730/行動/対象観測。DESIGNED/NOT RUN。\n+- 次回：先に07～15H原ファイルと正本owner/研究ID/矛盾を一度だけ照合・回収。続いて 0x4C5800 のノード操作と 0x529691/0x529851 の基準座標、最終target、T011/T012/T013/T028 P0へ。禁止VA等に非介入。\n+\n+\n+### 17H補強：0x4C5800 もV9で読取専用確認（同一ID、別READYにはしない）\n+- 統合V9 `function 0x004C5800` は118B、0x4C5800～0x4C5875。Ghidra擬似C上でノードprev/nextの複数ポインタを書き換え、移動元と移動先listが異なる場合には個数フィールド `+0x4` を増減する。\n+- `0x4C5819 E8 4F 03 0F 00`→`0x5B5B6D` は要素数上限 `0x3ffffffe` との比較後の例外経路。通常ノードsplice解釈を補強するが、callee ABI未検証・境界到達性VERIFY。\n+- 元の `0x52AD4C/0x52AD72→0x4C5800` のマージ二経路とは区別し、0x4C5800自体は新規独立Golden/READYには昇格しない。左側優先の結論は有限の同距離かつ正常listの局所分岐に限定。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "sha": "9ee4f942e017cb8802c8a84884b92bfb6ee79fa5",
+      "status": "added"
+    },
+    {
+      "additions": 51,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "changes": 51,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/intake/B/B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "patch": "@@ -0,0 +1,51 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01\n+owner: B\n+source_relative_path: data/T011_T024_DUAL_REFERENCE_COORD_NATIVE_20261101_18H.md\n+source_sha256_verified_2026-11-02_JST: 4C4C5C55D7CCB849BB93CE445B6669CE2B8BC5A0F451088EBB4E42F944658FBC\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# 迫真戦記 新B T011/T024｜二系統基準座標のNative照合と未同期復旧（2026-11-01 18H JST）\n+\n+研究ID: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01\n+Owner B / Task T024主担当, T011関連 / T013 final-targetはVERIFY。\n+状態: STATIC_NATIVE / STATIC_V9 / INFERRED / VERIFY / NOT READY。\n+原作実機Golden PASS=0、strict MATCH=0、DYNAMIC=0、新規READY=0。\n+\n+## 証拠源と優先復旧\n+Desktop Commander Local CompactでPC ONLINE。MASTER_LEDGER、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、B安全復旧台帳、knowledge README/SYNC_STATUSを読取。private Github Hakushin067-Research-Knowledge develop の KNOWLEDGE_CURATION_PROTOCOL、GHIDRA_V9_B_REVIEW_TOP150、GHIDRA_V9_COVERAGE_REPORTを読取専用確認。旧search_index/README.md・BUILD_MANIFEST.jsonはENOENTだが、統合V9別名SQLite/CLIは利用可能。旧標準V3昇格の拒否は迂回しない。\n+\n+17Hの未回収32核心ファイルのうち08/09/10/11/12/14/15H各4件＝計28件を、会話およびChatGPT Libraryの既存保存原文からB所有dataへ復元。各時間の報告・証拠JSON・読取専用verifier・旧readback receiptを保全。PCでreceiptの期待SHA256/bytesと復元coreを独立照合：CORE_PASS=21、RECEIPT_PASS=7、ISSUES=0。旧receipt本体も元出典のSHA256と7/7一致。13H/16Hの8件は17Hに復元済みであり、本run二重反映なし。これにより17H時点の残32件は28件解決、残り07H核心4件だけ。07～16HのHANDOFF delta10件は17Hに既に原文復旧済みであり重複追記しない。\n+\n+残OPEN：07H原文4件はLibrary/PC dataファイル名で未発見、03H保存失敗は実在/SHA未照合、10/25元研究文の欠落、B生資料のGitHub不完全保存、既存安全保留21件。SAFE134全件の新規ハッシュ監査は実施せず。安全拒否済み証拠/VA/コマンドを別tool/path/ZIPで迂回せず、MASTER/他lane/knowledge/Git/原作EXEには書込なし。\n+\n+## 今回の新規STATIC Native：二経路の引数・グローバル記録先の独立照合\n+原作ゲームフォルダのVahren.exeは読取専用でSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。PE file bytesをpefile + Capstoneで限定2窓だけデコード。ゲーム実行ゼロ。検証スクリプト data/T024_20261101_18H_TWO_REFERENCE_COORD_NATIVE_READONLY_VERIFY.py。\n+\n+第1系統 0x529691（41 bytes窓SHA256=0FE94E8CD421DDE51B969600485745C329A044910D0D4D20173C7936892F8053）：\n+- 0x529691 89 3D 48 E0 8B 00 : mov dword ptr [0x008BE048],edi\n+- 0x529697 E8 E4 84 0A 00 : call 0x005D1B80\n+- 0x52969C push eax、0x52969D A3 4C E0 8B 00 : mov [0x008BE04C],eax\n+- 0x5296A2 push edi、0x5296A3 lea eax,[esp+0x64]、0x5296A7 push eax、0x5296A8 E8 13 07 00 00 : call 0x00529DC0。\n+\n+第2系統 0x529851（41 bytes窓SHA256=6CB93A097F9C377A2CF07F6AC29215D6C817DCD6BFB072997B2082AEAA37C6B0）：\n+- 0x529851 89 35 48 E0 8B 00 : mov dword ptr [0x008BE048],esi\n+- 0x529857 E8 24 83 0A 00 : call 0x005D1B80\n+- 0x52985C push eax、0x52985D A3 4C E0 8B 00 : mov [0x008BE04C],eax\n+- 0x529862 push esi、0x529863 lea eax,[esp+0x70]、0x529867 push eax、0x529868 E8 53 05 00 00 : call 0x00529DC0。\n+\n+相違点：座標系の入力レジスタは第1 EDI、第2 ESI。ソート対象も別スタック参照 [esp+0x64] / [esp+0x70]（**Unitフィールドではなく一時スタック位置**）。一方で記録先グローバル0x8BE048と0x8BE04Cは両系統共通、各CALL前に上書きされる。したがって二系統を同じ入力・単一ソートと機械的に統合すると危険。ただしEDIとESIの数値が常に異なるとは断言しない。共有グローバルの外部参照・並列/再入時影響はVERIFY。\n+\n+## V9/KB、重複防止\n+統合V9 read-only CLI function 0x528DB0（3104 bytes）擬似Cには、2回の別々のD3DXVec3TransformCoordから FUN_005D1B80、共通 _DAT_008BE048/+4C更新、FUN_00529DC0(appcStack_9c,uVar8,_DAT_008be04c) が現れる。これは原作ASMの置き換えではなくSTATIC擬似C。\n+V9 callers 0x529DC0 = direct E8 exactly 2 sites: 0x5296A8/0x529868（上記Native bytes完全一致）。function 0x529DC0から 0x529EAE/0x529F04/0x529F74→0x52AD00 までの3 E8を確認。以前の0x52AD35→0x526030（距離比較）および13H独立ソート、17H同距離局所左側優先を再計数しない。0x529DC0はV9 ABI_UNVERIFIED。\n+knowledge/kb.py addr 0x529DC0 は未命名・直接言及なし、addr 0x528DB0にはB/Dの先行証拠がある。Dの所有資料は読取だけ。旧11H～17H研究IDを継承し訂正・重複を防止。\n+KB_CANDIDATE：owner B/T024,T011、今回ID、VA 0x529691/0x529851/0x5296A8/0x529868/0x529DC0、global 0x8BE048/+4C、0x5D1B80、source original EXE SHA + 各Native窓SHA、data/T024_20261101_18H_TWO_REFERENCE_COORD_NATIVE_READONLY_VERIFY.py、当報告。STATIC=原作bytes/E8/V9照合、INFERRED=formation reference coordinates、VERIFY=上流座標数学/ABI/グローバル副作用/最終ターゲット/Golden。正式辞書登録は知識ベース専任のみ。\n+\n+## Golden・安全・次回\n+原作実測Golden0、strict MATCH0、READY0、DYNAMIC0。HOLD21維持。旧禁止0x5710C0..0x571500・既拒否XREF/対象には未接触。実機Goldenには原作DAT/MAP/SAVE、mode、両方のグループ一覧・参照座標・RNG/tick・同距離ノード、0x569730後続と実移動/対象との突合が必要。次回は07H残4原文と03H失敗保存を優先し、それ以外は0x5D1B80変換前の座標計算と0x569730作用をread-only調査する。すべてNOT READY。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "sha": "d49f785287fc69bb0f0d0d78588f8b44b86b1c09",
+      "status": "added"
+    },
+    {
+      "additions": 31,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "changes": 31,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/intake/B/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "patch": "@@ -0,0 +1,31 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01\n+owner: B\n+source_relative_path: data/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md\n+source_sha256_verified_2026-11-02_JST: C9B85AD939D58D49581F28794BF6E697D3ECFC1FFDB742194B6C8E91474C2EEF\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# B/T024 2026-11-02 00H｜0x542280 元ASM確認：10000.0 sentinel・二軸 atan2・+π（23H訂正）\n+research_id: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01\n+owner: B; tasks: T024 (T013最終ターゲット未確証); prior_id: B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01; cross_reference_existing: B-20261026-20H-T028-ATAN2-TRUNC-DISPATCH-01\n+status: STATIC_NATIVE / STATIC_V9 / INFERRED / VERIFY / NOT READY; original_Golden_PASS=0; strict_MATCH=0; DYNAMIC=0; new_READY=0.\n+## Source and reproducibility\n+Authorized PC Local Compact ONLINE. MASTER/PROTOCOL/B HANDOFF、knowledge README/SYNC_STATUS、PRIVATE GitHub develop curation/intake rules、V9 standalone CLIを確認。旧search_index README/BUILD_MANIFEST ENOENTは既知V9移行（接続拒否ではない）。\n+original source: ver0.67 Vahren.exe, SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (THIS RUN native read-only rehashed; not executed).\n+V9 source: rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite (previous manifest SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE; this run not fully rehashed); CLI search_unified_v9_20261023.py function/callers 0x542280 / function 0x5E743A / 0x5E4F10. Ghidra pseudo ABI UNVERIFIED.\n+original PE function [0x542280,0x5422BC] 61 bytes SHA256 2B3A75529CDEF9BDADCF051B86A9A3BE62DFC4B370A7A873DE0A46D177A0443A; B-owned verifier data/B_20261102_00H_T024_542280_NATIVE_READONLY_VERIFY.py.\n+## New native machine-code branch (not pseudo-C)\n+0x542281 FLD qword [ECX+0x50]; 0x542284 FLD qword [0x63B0B8]; 0x54228A FUCOMPP; 0x54228C FNSTSW AX; 0x54228E TEST AH,0x44; 0x542291 JNP 0x542298; 0x542293 FLD qword [ECX+0x50]; 0x542297 RET.\n+Original PE 0x63B0B8 bytes 000000000088C340 = IEEE754 double 10000.0. C3/C2 status selected by TEST AH,44 means ordered equal sets exactly one masked bit => JNP to fallback; ordinary ordered unequal returns +0x50; unordered NaN sets both masked bits => direct +0x50 (masked FP exceptions assumed; exception behavior VERIFY).\n+fallback: 0x542298 MOV EAX,[ECX+0x3C]; 0x54229B SUB EAX,[ECX+0x34]; 0x54229E MOV EDX,[ECX+0x40]; 0x5422A1 SUB EDX,[ECX+0x38]; 0x5422A4 MOV [ESP],EAX; 0x5422A7 FILD dword [ESP]; 0x5422AA MOV [ESP],EDX; 0x5422AD FILD dword [ESP].\n+0x5422B0 E8 85 51 0A 00 CALL 0x5E743A; 0x5422B5 FADD qword [0x62A190]; 0x5422BC RET. PE 0x62A190 bytes 00000060FB210940 => double 3.1415927410125732 (float-rounded π, not exact mathematical π).\n+Existing B/T028 2026-10-26 already established 0x5E743A descriptor 0x63B400='atan2' and 0x5E743F E9 tail JMP 0x5E4F10 CRT dispatcher. First FILD=(+0x3C-+0x34), second FILD=(+0x40-+0x38); x87 ST0=second, ST1=first, strongly supports atan2(dy,dx)+π as angle fallback. Native stack ABI/FP control/actual direction interpretation remain VERIFY.\n+## Correction, duplicates, safety\n+23H Ghidra pseudo-C only showed (+0x40-+0x38) as one argument to 0x5E743A. This is incomplete: native ASM has TWO independent integer differences (+0x3C-+0x34 AND +0x40-+0x38) fed via FILD. Preserve 23H as original candidate and append ERRATUM; do not count 26 Oct atan2 discovery as new. The sentinel numerical value 10000.0 and actual two-argument FP path are the new evidence.\n+Unresolved: +0x50 writer/sentinel lifetime, NaN/FP exceptions, direction range, 0x5271A0 callers 0x52722F/258/28B/29C/3BA, actual 0x528DB0/0x569730/Unit final decision. Next safe search writers of +0x50 outside denied areas and 0x5271A0 consumer; do not touch rejected VA 0x5710C0..0x571500 or refused 0x5769B0 XREF.\n+Recovery: 03H save UNKNOWN; 07H core4 missing; 10/25 source/54-byte conflict OPEN; historical safety HOLD21 unchanged; SAFE134 old snapshot not reaudited. Game not executed; strict Golden requires original unmodified DAT/MAP/SAVE/RNG/ticks and explicit conditional +0x50 observations at equality, unequal, NaN, downstream behavior. KB_CANDIDATE only; curator exclusively updates develop/REF/symbols/structs.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "sha": "830ec22f04011b43d0fa351a9fedf4c29e3e03b2",
+      "status": "added"
+    },
+    {
+      "additions": 64,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "changes": 64,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/intake/B/B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "patch": "@@ -0,0 +1,64 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01\n+owner: B\n+source_relative_path: data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md\n+source_sha256_verified_2026-11-02_JST: B111C5F2EE1DBC568E18F803288542AC120DF0EA4011D7B929AEB79DC29C01C6\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# 迫真戦記 新B・T011/T024｜Unit座標中央のSAR丸め・符号付き32bit差分境界（2026-11-01 16H JST）\n+\n+研究ID：`B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01`。owner=B、tasks=T011/T024。状態：**OFFLINE-UNSYNCED / STATIC / INFERRED / SYNTHETIC_ONLY / VERIFY / NOT READY**。原作実機Golden PASS=0、strict MATCH=0、正式READY=0。\n+\n+## 証拠源・未同期回収\n+\n+最初に Desktop Commander Local Compact で研究PCの `MASTER_LEDGER.md`、PROTOCOL、B HANDOFFなどの閲覧を試みたが、`UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org`。**安全拒否ではなく一時的な接続制限**。最新PC正本・3H保存失敗の有無・05〜16H成果のPC取り込みは未確認。研究PCへ書き込んでいない。\n+\n+今回はChatGPT Libraryから `13H` 原作機械語エビデンスJSONと13H・15H研究報告を取得し、既存ローカル保存済み14H/15H成果のmanifest SHAを**8/8**再確認して利用した。**16Hに原作EXE本体・SQLite・Ghidra擬似C原本を再取得してはいない**。13H記録に付された原作EXE SHA256=`E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`、13H機械語記録SHA256=`1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205`。今回の根拠は13H取得済STATIC再利用と独立合成テストである。原作EXE実行なし・禁止VAアクセスなし。\n+\n+GitHub非公開 `ButaMonky/Hakushin067-Research-Knowledge` の `develop` にある `symbols.tsv`（blob SHA `3fcf2d436c21f3fc91791a91e75c9a800167ca4d`）、`structs.tsv`（`d79f03b1dbac67012882b0cb691d6af479610a01`）、`REF_BATTLE_AI_MORALE.md`（`83fb9b91a84e8190042802ed7af5666ca51f7f8c`）、`KNOWLEDGE_CURATION_PROTOCOL.md`、V9レビュー表を読取専用で参照。上記3 KBファイルでは対象 `0x526030/0x529DC0/0x52AD00/0x52607F` の文字列直接一致は0件。**PC上の最新研究まで非重複と断定しない**。\n+\n+## 新しい派生結果：小さい負座標でもSARによる丸め差が出る\n+\n+既存13H研究は `0x526030` 内の Unit の `+0x40` と `+0x48` から比較用のX位置を構成することを同定済み。今回、13Hの記録を読み直し、**末尾の算術命令の組合せと境界値**を別研究IDで検査した。新たに未取得のASMを読んだと主張しない。\n+\n+```asm\n+0x526074: 8B5140      mov edx,[ecx+0x40]\n+0x526077: 8B4148      mov eax,[ecx+0x48]\n+0x52607A: 8B494C      mov ecx,[ecx+0x4C]\n+0x52607D: 2BC2        sub eax,edx\n+0x52607F: D1F8        sar eax,1\n+0x526081: 03C2        add eax,edx\n+```\n+\n+記号化：`a=Unit+0x40`、`b=Unit+0x48` とすると、**X = i32(a + (i32(b-a) SAR 1))**。`Y=Unit+0x4C` は13H先行確認。ここで `i32` は32bitレジスタのwrap。差分が符号付き範囲内なら、Xは数学的な `floor((a+b)/2)` に一致する。C/C++の符号付き整数除算 `(a+b)/2`（ゼロ方向丸め）と**負かつ奇数和**で異なる。例：a=-1、b=0 → ASMモデルX=-1、ゼロ方向の平均0。a=-3、b=0 → -2対-1。\n+\n+追加の合成テストでは `a,b ∈ [-256,256]` の**263,169組**を全検査。ASMモデルは数学的floorと**263,169/263,169一致**、ゼロ方向丸めの平均式とは**65,792組で不一致**。これは合成テストの合否でありゲーム内座標や原作Golden PASSを意味しない。\n+\n+## 新しい派生結果：32bit差分overflowで始点終点の入替が非対称になる\n+\n+境界の合成例：`a=-2147483648, b=0` では `i32(b-a)=-2147483648`、SAR後に `a` を加えると **+1073741824**。始点・終点を入れ替えた `a=0,b=-2147483648` では **-1073741824**。真の中点はいずれも -1073741824。したがって**巨大差分での2点の順序交換は原作機械語の中点結果に対して可換でない**。同様に a=INT32_MIN、b=INT32_MAX ではX=INT32_MAXにwrapし、数学的floor平均=-1と大きく食い違う。\n+\n+通常ゲームでこれらの異常値が入力されるかは不明（VERIFY）。13〜15Hの距離比較が `Unit+0x40/+0x48/+0x4C` に依存するという先行観測と組み合わせ、再実装時は**非負で小さい値だけを仮定した整数平均への置換を禁止候補**として記録する。さらにC/C++では符号付きoverflowが未定義となり得るので、もし完全一致実装を行うなら明示的な32bitレジスタ演算または符号なし演算から再解釈し、原作Goldenで比較する必要がある。\n+\n+## 追跡範囲・既存IDとの差分\n+\n+先行13Hの `0x52AD35 -> 0x526030` は直接E8 CALLとして**過去に確認済み**。今回新たなCALL経路を発見したとは主張しない。13Hは距離式とモード別ソート、14Hは平方和overflow/NaN条件、15HはNaN比較の関係を研究した。**16Hの新規差分は中点の負奇数丸め、演算順序による非対称overflow、および合成263,169組の再現回帰テスト**。以前の研究を再計上しない。\n+\n+`0x52AD00` 同距離の実際のノード移動順序、`0x529691`対`0x529851`の基準座標の意味、`0x569730`の行動結果、T011経験値・召喚、T012ダメージ・回復・状態、T013最終攻撃対象、T024 AI全体、T028士気・敗走は依然P0/VERIFY。`0x5710C0..0x571500`等の禁止範囲と拒否済XREF操作は再試行しない。安全保留21件と旧SAFE134（今回未全検証）はそのまま。\n+\n+## 検証・失敗記録とGolden条件\n+\n+検証スクリプト `data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py`、結果 `data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json`。**21/21個の限定アサーションPASS**（元の6命令bytesの既存記録と照合、境界ケース12組、グリッド全数1件＋差分存在1件、方向非対称1件）。これは**21個のASM検証ではない**。初回のアドレス表記 `0x`/`0X`正規化ミスでKeyError、続いてテストの予想値に数学的floorとゼロ方向丸めを混同したAssertionErrorを検出。検証コードと期待値を修正し、21/21 PASS。両失敗を消さず保持。\n+\n+Golden要件：原作ver0.67の同じEXE/DAT/MAP/SAVE上で、負奇数和の位置、通常正座標、同距離、軸点の前後逆転、32bit境界の到達可否、`0x526030`比較結果と`0x52AD00`ノード順をログ採取し、再実装とstrict比較する。**原作実機Golden PASS=0、strict MATCH=0、READY=0**。\n+\n+## KB_CANDIDATE・次の再開\n+\n+`KB_CANDIDATE` owner=B tasks=T011/T024、研究ID=`B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01`。VA `0x526030`、命令サイト `0x526074/77/7A/7D/7F/81`、先行CALL site `0x52AD35 -> 0x526030`。オフセット `Unit+0x40/+0x48/+0x4C`。出典：13H保存済検証JSON SHA256 `1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205`、擬似C `functions/0052/00526030.c` SHA256 `7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF` は**以前の記録を引用しただけ**。STATIC=元ASM保存記録、INFERRED=中点式の導出、SYNTHETIC_ONLY=境界と回帰、VERIFY=実際の到達と最終行動。訂正注意：`(a+b)/2` のC式では一般に原作と等価でない。**知識ベースへの自動確定・共有GitHubへのpushなし**。\n+\n+次の許可一手：PC復帰時にMASTER/PROTOCOL/B HANDOFF/03H回収とID・owner・HOLD競合を**先に**照合し、B許可領域へ一度だけ取り込んでreadback。オフライン継続なら過去の合成条件を再繰返しせず、`0x52AD00` の実際の同値マージ・`0x529691` と `0x529851` の座標が**別系統かどうか**を、許可済み原本または保存済静的証拠の範囲で追う。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Fintake%2FB%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "sha": "0d00bdc52cbbd541fdfa61d042054439ce485e64",
+      "status": "added"
+    },
+    {
+      "additions": 46,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "changes": 46,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/lane_b/B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "patch": "@@ -0,0 +1,46 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01\n+owner: B\n+source_relative_path: data/T024_52AD00_MERGE_TIE_LOCAL_STABILITY_NATIVE_20261101_17H.md\n+source_sha256_verified_2026-11-02_JST: B548261CF6A0A2C3968F2D7166183351CC3A70C43FDD1C60B5BDD3218656713E\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# T024｜0x52AD00 連結リスト・マージ同距離分岐（2026-11-01 17H JST）\n+\n+研究ID：B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01｜owner=B｜Task=T024（T011への位置依存影響）｜STATIC/INFERRED/VERIFY/NOT READY\n+**接続状態：PC ONLINE。** Local CompactでMASTER、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、T024、knowledge README/SYNC_STATUSを閲覧。HANDOFF直前は02H。旧search_index/README.md・BUILD_MANIFEST.jsonはENOENT（V9移行既知、接続障害ではない）。\n+**先行重複：** 13Hの距離ソート、14Hの32bit overflow、15HのNaN非推移性、16HのSAR中点丸めは既成果。今回の新規局所結論は同距離の2リスト・マージの左側優先（global stableとは別）。\n+\n+## 関数・静的制御と証拠\n+- 原作対象PE SHA-256（V9マニフェスト）：E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今run原本を再hash/実行していない。\n+- V9 search `function 0x0052AD00`: entry 0x52AD00、サイズ129 B、関数範囲0x52AD00～0x52AD80、Ghidra擬似Cは STATIC／ABI未検証。\n+- 0x52AD35 `E8 F6 B2 FF FF`→0x526030（距離比較）；0x52AD3A `84 C0` TEST AL；0x52AD3C `74 1B` JE comparator=false branch。\n+- Ghidra保存擬似Cでは comparator false のとき左側ノード `puVar2=*puVar2` に進み、true のとき右側ノードを左側の前へ 0x4C5800 でsplice。後段は残った右suffixを 0x4C5800 で移す。\n+- 0x52AD4C `E8 AF AA F9 FF`→0x4C5800、0x52AD72 `E8 89 AA F9 FF`→0x4C5800（残りsuffix）。後者の直接CALLを今回V9で追加クロス照合。\n+- 上位 0x529DC0 のマージ箇所は 0x529EAE / 0x529F04 / 0x529F74 → 0x52AD00 の3 E8直接CALL。以前の0x5296A8・0x529868→0x529DC0は旧13H成果であり再計数0。\n+- 15H静的証拠の0x526030：通常有限同距離で結果AL=0。したがって**局所マージに入力された左右先頭が同距離なら左側先頭を先に残す**（STATIC + INFERRED）。\n+- 合成例 left=[5A0,5A1], right=[5B0,5B1] は A0,A1,B0,B1。これは擬似実装の独立算術テストで、原作DYNAMIC/Goldenではない。\n+- **重要な制限：** 26bin上位マージのrun投入順序、0x4C5800の全副作用、NaN/overflow、alias、元リストの順番は未確定。よって全体ソート安定性は VERIFY のまま。最終AIの攻撃対象や移動先を確定しない。\n+\n+## 既存根拠・知識照合・KB候補\n+- 13H旧静的JSON `data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json` の機械語bytes・直接CALLと、PC V9 pseudocおよび上位CALLを照合。旧13H JSON SHA256=1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205。\n+- 統合V9 DB SHA256=2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE。`v9_coverage.py --inspect 0x0052AD00`: E8 caller3/callee3, unresolved0, dictionary登録0。`knowledge/kb.py addr`では未命名・関連索引0。GitHub private developのV9 B REVIEWとcuration protocol読取専用照合。\n+- KB_CANDIDATE: owner=B/T024、VA=0x52AD00、CALL=0x52AD35/4C/72, 上位0x529EAE/0x529F04/0x529F74、source=V9 0x0052AD00 pseudoc＋元PE命令bytes、STATIC/INFERRED/VERIFY、NOT READY、Golden0、全体安定性未確定。共有KBは専任キュレーターのみ更新。\n+\n+## 安全・未同期復旧・Golden\n+- 16H一次報告・証拠JSON・verify.pyをB所有 data/へ保存し実byte SHA照合済（3/3）。16H Libraryの旧readback receiptも別SHAでPCへ保存。**会話内16H最終receiptとは不一致**。詳細は当該B HANDOFF復旧節。16HオフラインHANDOFF deltaの正式統合・7～15H分45成果の同期・3H保存障害は未完了。\n+- 既存 SAFE134は10/31最終値を継承し今run全件再検証0。HOLD21安全拒否と10/25元文章・GitHub B raw回収gapは継続BLOCKED。今回新安全拒否0、旧拒否迂回0。\n+- 原作ゲーム実機Golden PASS=0、strict MATCH=0、DYNAMIC=0、新B READY=0、MASTER新統合=0、Task DONE増加0。\n+- 必要なGolden：ユーザー未改変原作DAT（10/22空手20倍テスト改変を排除）、同SAVE/MAP/input/RNG/tick、同距離左右複数Unit＋異距離混在、実listと後段0x569730/行動/対象観測。DESIGNED/NOT RUN。\n+- 次回：先に07～15H原ファイルと正本owner/研究ID/矛盾を一度だけ照合・回収。続いて 0x4C5800 のノード操作と 0x529691/0x529851 の基準座標、最終target、T011/T012/T013/T028 P0へ。禁止VA等に非介入。\n+\n+\n+### 17H補強：0x4C5800 もV9で読取専用確認（同一ID、別READYにはしない）\n+- 統合V9 `function 0x004C5800` は118B、0x4C5800～0x4C5875。Ghidra擬似C上でノードprev/nextの複数ポインタを書き換え、移動元と移動先listが異なる場合には個数フィールド `+0x4` を増減する。\n+- `0x4C5819 E8 4F 03 0F 00`→`0x5B5B6D` は要素数上限 `0x3ffffffe` との比較後の例外経路。通常ノードsplice解釈を補強するが、callee ABI未検証・境界到達性VERIFY。\n+- 元の `0x52AD4C/0x52AD72→0x4C5800` のマージ二経路とは区別し、0x4C5800自体は新規独立Golden/READYには昇格しない。左側優先の結論は有限の同距離かつ正常listの局所分岐に限定。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
+      "sha": "9ee4f942e017cb8802c8a84884b92bfb6ee79fa5",
+      "status": "added"
+    },
+    {
+      "additions": 51,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "changes": 51,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/lane_b/B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "patch": "@@ -0,0 +1,51 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01\n+owner: B\n+source_relative_path: data/T011_T024_DUAL_REFERENCE_COORD_NATIVE_20261101_18H.md\n+source_sha256_verified_2026-11-02_JST: 4C4C5C55D7CCB849BB93CE445B6669CE2B8BC5A0F451088EBB4E42F944658FBC\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# 迫真戦記 新B T011/T024｜二系統基準座標のNative照合と未同期復旧（2026-11-01 18H JST）\n+\n+研究ID: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01\n+Owner B / Task T024主担当, T011関連 / T013 final-targetはVERIFY。\n+状態: STATIC_NATIVE / STATIC_V9 / INFERRED / VERIFY / NOT READY。\n+原作実機Golden PASS=0、strict MATCH=0、DYNAMIC=0、新規READY=0。\n+\n+## 証拠源と優先復旧\n+Desktop Commander Local CompactでPC ONLINE。MASTER_LEDGER、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、B安全復旧台帳、knowledge README/SYNC_STATUSを読取。private Github Hakushin067-Research-Knowledge develop の KNOWLEDGE_CURATION_PROTOCOL、GHIDRA_V9_B_REVIEW_TOP150、GHIDRA_V9_COVERAGE_REPORTを読取専用確認。旧search_index/README.md・BUILD_MANIFEST.jsonはENOENTだが、統合V9別名SQLite/CLIは利用可能。旧標準V3昇格の拒否は迂回しない。\n+\n+17Hの未回収32核心ファイルのうち08/09/10/11/12/14/15H各4件＝計28件を、会話およびChatGPT Libraryの既存保存原文からB所有dataへ復元。各時間の報告・証拠JSON・読取専用verifier・旧readback receiptを保全。PCでreceiptの期待SHA256/bytesと復元coreを独立照合：CORE_PASS=21、RECEIPT_PASS=7、ISSUES=0。旧receipt本体も元出典のSHA256と7/7一致。13H/16Hの8件は17Hに復元済みであり、本run二重反映なし。これにより17H時点の残32件は28件解決、残り07H核心4件だけ。07～16HのHANDOFF delta10件は17Hに既に原文復旧済みであり重複追記しない。\n+\n+残OPEN：07H原文4件はLibrary/PC dataファイル名で未発見、03H保存失敗は実在/SHA未照合、10/25元研究文の欠落、B生資料のGitHub不完全保存、既存安全保留21件。SAFE134全件の新規ハッシュ監査は実施せず。安全拒否済み証拠/VA/コマンドを別tool/path/ZIPで迂回せず、MASTER/他lane/knowledge/Git/原作EXEには書込なし。\n+\n+## 今回の新規STATIC Native：二経路の引数・グローバル記録先の独立照合\n+原作ゲームフォルダのVahren.exeは読取専用でSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。PE file bytesをpefile + Capstoneで限定2窓だけデコード。ゲーム実行ゼロ。検証スクリプト data/T024_20261101_18H_TWO_REFERENCE_COORD_NATIVE_READONLY_VERIFY.py。\n+\n+第1系統 0x529691（41 bytes窓SHA256=0FE94E8CD421DDE51B969600485745C329A044910D0D4D20173C7936892F8053）：\n+- 0x529691 89 3D 48 E0 8B 00 : mov dword ptr [0x008BE048],edi\n+- 0x529697 E8 E4 84 0A 00 : call 0x005D1B80\n+- 0x52969C push eax、0x52969D A3 4C E0 8B 00 : mov [0x008BE04C],eax\n+- 0x5296A2 push edi、0x5296A3 lea eax,[esp+0x64]、0x5296A7 push eax、0x5296A8 E8 13 07 00 00 : call 0x00529DC0。\n+\n+第2系統 0x529851（41 bytes窓SHA256=6CB93A097F9C377A2CF07F6AC29215D6C817DCD6BFB072997B2082AEAA37C6B0）：\n+- 0x529851 89 35 48 E0 8B 00 : mov dword ptr [0x008BE048],esi\n+- 0x529857 E8 24 83 0A 00 : call 0x005D1B80\n+- 0x52985C push eax、0x52985D A3 4C E0 8B 00 : mov [0x008BE04C],eax\n+- 0x529862 push esi、0x529863 lea eax,[esp+0x70]、0x529867 push eax、0x529868 E8 53 05 00 00 : call 0x00529DC0。\n+\n+相違点：座標系の入力レジスタは第1 EDI、第2 ESI。ソート対象も別スタック参照 [esp+0x64] / [esp+0x70]（**Unitフィールドではなく一時スタック位置**）。一方で記録先グローバル0x8BE048と0x8BE04Cは両系統共通、各CALL前に上書きされる。したがって二系統を同じ入力・単一ソートと機械的に統合すると危険。ただしEDIとESIの数値が常に異なるとは断言しない。共有グローバルの外部参照・並列/再入時影響はVERIFY。\n+\n+## V9/KB、重複防止\n+統合V9 read-only CLI function 0x528DB0（3104 bytes）擬似Cには、2回の別々のD3DXVec3TransformCoordから FUN_005D1B80、共通 _DAT_008BE048/+4C更新、FUN_00529DC0(appcStack_9c,uVar8,_DAT_008be04c) が現れる。これは原作ASMの置き換えではなくSTATIC擬似C。\n+V9 callers 0x529DC0 = direct E8 exactly 2 sites: 0x5296A8/0x529868（上記Native bytes完全一致）。function 0x529DC0から 0x529EAE/0x529F04/0x529F74→0x52AD00 までの3 E8を確認。以前の0x52AD35→0x526030（距離比較）および13H独立ソート、17H同距離局所左側優先を再計数しない。0x529DC0はV9 ABI_UNVERIFIED。\n+knowledge/kb.py addr 0x529DC0 は未命名・直接言及なし、addr 0x528DB0にはB/Dの先行証拠がある。Dの所有資料は読取だけ。旧11H～17H研究IDを継承し訂正・重複を防止。\n+KB_CANDIDATE：owner B/T024,T011、今回ID、VA 0x529691/0x529851/0x5296A8/0x529868/0x529DC0、global 0x8BE048/+4C、0x5D1B80、source original EXE SHA + 各Native窓SHA、data/T024_20261101_18H_TWO_REFERENCE_COORD_NATIVE_READONLY_VERIFY.py、当報告。STATIC=原作bytes/E8/V9照合、INFERRED=formation reference coordinates、VERIFY=上流座標数学/ABI/グローバル副作用/最終ターゲット/Golden。正式辞書登録は知識ベース専任のみ。\n+\n+## Golden・安全・次回\n+原作実測Golden0、strict MATCH0、READY0、DYNAMIC0。HOLD21維持。旧禁止0x5710C0..0x571500・既拒否XREF/対象には未接触。実機Goldenには原作DAT/MAP/SAVE、mode、両方のグループ一覧・参照座標・RNG/tick・同距離ノード、0x569730後続と実移動/対象との突合が必要。次回は07H残4原文と03H失敗保存を優先し、それ以外は0x5D1B80変換前の座標計算と0x569730作用をread-only調査する。すべてNOT READY。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
+      "sha": "d49f785287fc69bb0f0d0d78588f8b44b86b1c09",
+      "status": "added"
+    },
+    {
+      "additions": 31,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "changes": 31,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/lane_b/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "patch": "@@ -0,0 +1,31 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01\n+owner: B\n+source_relative_path: data/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md\n+source_sha256_verified_2026-11-02_JST: C9B85AD939D58D49581F28794BF6E697D3ECFC1FFDB742194B6C8E91474C2EEF\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# B/T024 2026-11-02 00H｜0x542280 元ASM確認：10000.0 sentinel・二軸 atan2・+π（23H訂正）\n+research_id: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01\n+owner: B; tasks: T024 (T013最終ターゲット未確証); prior_id: B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01; cross_reference_existing: B-20261026-20H-T028-ATAN2-TRUNC-DISPATCH-01\n+status: STATIC_NATIVE / STATIC_V9 / INFERRED / VERIFY / NOT READY; original_Golden_PASS=0; strict_MATCH=0; DYNAMIC=0; new_READY=0.\n+## Source and reproducibility\n+Authorized PC Local Compact ONLINE. MASTER/PROTOCOL/B HANDOFF、knowledge README/SYNC_STATUS、PRIVATE GitHub develop curation/intake rules、V9 standalone CLIを確認。旧search_index README/BUILD_MANIFEST ENOENTは既知V9移行（接続拒否ではない）。\n+original source: ver0.67 Vahren.exe, SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (THIS RUN native read-only rehashed; not executed).\n+V9 source: rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite (previous manifest SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE; this run not fully rehashed); CLI search_unified_v9_20261023.py function/callers 0x542280 / function 0x5E743A / 0x5E4F10. Ghidra pseudo ABI UNVERIFIED.\n+original PE function [0x542280,0x5422BC] 61 bytes SHA256 2B3A75529CDEF9BDADCF051B86A9A3BE62DFC4B370A7A873DE0A46D177A0443A; B-owned verifier data/B_20261102_00H_T024_542280_NATIVE_READONLY_VERIFY.py.\n+## New native machine-code branch (not pseudo-C)\n+0x542281 FLD qword [ECX+0x50]; 0x542284 FLD qword [0x63B0B8]; 0x54228A FUCOMPP; 0x54228C FNSTSW AX; 0x54228E TEST AH,0x44; 0x542291 JNP 0x542298; 0x542293 FLD qword [ECX+0x50]; 0x542297 RET.\n+Original PE 0x63B0B8 bytes 000000000088C340 = IEEE754 double 10000.0. C3/C2 status selected by TEST AH,44 means ordered equal sets exactly one masked bit => JNP to fallback; ordinary ordered unequal returns +0x50; unordered NaN sets both masked bits => direct +0x50 (masked FP exceptions assumed; exception behavior VERIFY).\n+fallback: 0x542298 MOV EAX,[ECX+0x3C]; 0x54229B SUB EAX,[ECX+0x34]; 0x54229E MOV EDX,[ECX+0x40]; 0x5422A1 SUB EDX,[ECX+0x38]; 0x5422A4 MOV [ESP],EAX; 0x5422A7 FILD dword [ESP]; 0x5422AA MOV [ESP],EDX; 0x5422AD FILD dword [ESP].\n+0x5422B0 E8 85 51 0A 00 CALL 0x5E743A; 0x5422B5 FADD qword [0x62A190]; 0x5422BC RET. PE 0x62A190 bytes 00000060FB210940 => double 3.1415927410125732 (float-rounded π, not exact mathematical π).\n+Existing B/T028 2026-10-26 already established 0x5E743A descriptor 0x63B400='atan2' and 0x5E743F E9 tail JMP 0x5E4F10 CRT dispatcher. First FILD=(+0x3C-+0x34), second FILD=(+0x40-+0x38); x87 ST0=second, ST1=first, strongly supports atan2(dy,dx)+π as angle fallback. Native stack ABI/FP control/actual direction interpretation remain VERIFY.\n+## Correction, duplicates, safety\n+23H Ghidra pseudo-C only showed (+0x40-+0x38) as one argument to 0x5E743A. This is incomplete: native ASM has TWO independent integer differences (+0x3C-+0x34 AND +0x40-+0x38) fed via FILD. Preserve 23H as original candidate and append ERRATUM; do not count 26 Oct atan2 discovery as new. The sentinel numerical value 10000.0 and actual two-argument FP path are the new evidence.\n+Unresolved: +0x50 writer/sentinel lifetime, NaN/FP exceptions, direction range, 0x5271A0 callers 0x52722F/258/28B/29C/3BA, actual 0x528DB0/0x569730/Unit final decision. Next safe search writers of +0x50 outside denied areas and 0x5271A0 consumer; do not touch rejected VA 0x5710C0..0x571500 or refused 0x5769B0 XREF.\n+Recovery: 03H save UNKNOWN; 07H core4 missing; 10/25 source/54-byte conflict OPEN; historical safety HOLD21 unchanged; SAFE134 old snapshot not reaudited. Game not executed; strict Golden requires original unmodified DAT/MAP/SAVE/RNG/ticks and explicit conditional +0x50 observations at equality, unequal, NaN, downstream behavior. KB_CANDIDATE only; curator exclusively updates develop/REF/symbols/structs.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",
+      "sha": "830ec22f04011b43d0fa351a9fedf4c29e3e03b2",
+      "status": "added"
+    },
+    {
+      "additions": 64,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "changes": 64,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md?ref=8167e8401a2125e815ed5db846ad63b423b62d77",
+      "deletions": 0,
+      "filename": "research/lane_b/B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "patch": "@@ -0,0 +1,64 @@\n+# B research intake — verified PC-owned evidence\n+research_id: B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01\n+owner: B\n+source_relative_path: data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md\n+source_sha256_verified_2026-11-02_JST: B111C5F2EE1DBC568E18F803288542AC120DF0EA4011D7B929AEB79DC29C01C6\n+intake_status: PUBLISHED_INTAKE / NOT_CURATED / STATIC-VERIFY / NOT_READY\n+original_gameplay_Golden_PASS: 0\n+strict_MATCH: 0\n+source_note: The research below is the B-owned source report; its historical OFFLINE state describes its original capture. This archive was staged after source-file SHA confirmation on the authorized PC. Native ABI and game behavior remain unproven.\n+\n+---\n+\n+# 迫真戦記 新B・T011/T024｜Unit座標中央のSAR丸め・符号付き32bit差分境界（2026-11-01 16H JST）\n+\n+研究ID：`B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01`。owner=B、tasks=T011/T024。状態：**OFFLINE-UNSYNCED / STATIC / INFERRED / SYNTHETIC_ONLY / VERIFY / NOT READY**。原作実機Golden PASS=0、strict MATCH=0、正式READY=0。\n+\n+## 証拠源・未同期回収\n+\n+最初に Desktop Commander Local Compact で研究PCの `MASTER_LEDGER.md`、PROTOCOL、B HANDOFFなどの閲覧を試みたが、`UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org`。**安全拒否ではなく一時的な接続制限**。最新PC正本・3H保存失敗の有無・05〜16H成果のPC取り込みは未確認。研究PCへ書き込んでいない。\n+\n+今回はChatGPT Libraryから `13H` 原作機械語エビデンスJSONと13H・15H研究報告を取得し、既存ローカル保存済み14H/15H成果のmanifest SHAを**8/8**再確認して利用した。**16Hに原作EXE本体・SQLite・Ghidra擬似C原本を再取得してはいない**。13H記録に付された原作EXE SHA256=`E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`、13H機械語記録SHA256=`1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205`。今回の根拠は13H取得済STATIC再利用と独立合成テストである。原作EXE実行なし・禁止VAアクセスなし。\n+\n+GitHub非公開 `ButaMonky/Hakushin067-Research-Knowledge` の `develop` にある `symbols.tsv`（blob SHA `3fcf2d436c21f3fc91791a91e75c9a800167ca4d`）、`structs.tsv`（`d79f03b1dbac67012882b0cb691d6af479610a01`）、`REF_BATTLE_AI_MORALE.md`（`83fb9b91a84e8190042802ed7af5666ca51f7f8c`）、`KNOWLEDGE_CURATION_PROTOCOL.md`、V9レビュー表を読取専用で参照。上記3 KBファイルでは対象 `0x526030/0x529DC0/0x52AD00/0x52607F` の文字列直接一致は0件。**PC上の最新研究まで非重複と断定しない**。\n+\n+## 新しい派生結果：小さい負座標でもSARによる丸め差が出る\n+\n+既存13H研究は `0x526030` 内の Unit の `+0x40` と `+0x48` から比較用のX位置を構成することを同定済み。今回、13Hの記録を読み直し、**末尾の算術命令の組合せと境界値**を別研究IDで検査した。新たに未取得のASMを読んだと主張しない。\n+\n+```asm\n+0x526074: 8B5140      mov edx,[ecx+0x40]\n+0x526077: 8B4148      mov eax,[ecx+0x48]\n+0x52607A: 8B494C      mov ecx,[ecx+0x4C]\n+0x52607D: 2BC2        sub eax,edx\n+0x52607F: D1F8        sar eax,1\n+0x526081: 03C2        add eax,edx\n+```\n+\n+記号化：`a=Unit+0x40`、`b=Unit+0x48` とすると、**X = i32(a + (i32(b-a) SAR 1))**。`Y=Unit+0x4C` は13H先行確認。ここで `i32` は32bitレジスタのwrap。差分が符号付き範囲内なら、Xは数学的な `floor((a+b)/2)` に一致する。C/C++の符号付き整数除算 `(a+b)/2`（ゼロ方向丸め）と**負かつ奇数和**で異なる。例：a=-1、b=0 → ASMモデルX=-1、ゼロ方向の平均0。a=-3、b=0 → -2対-1。\n+\n+追加の合成テストでは `a,b ∈ [-256,256]` の**263,169組**を全検査。ASMモデルは数学的floorと**263,169/263,169一致**、ゼロ方向丸めの平均式とは**65,792組で不一致**。これは合成テストの合否でありゲーム内座標や原作Golden PASSを意味しない。\n+\n+## 新しい派生結果：32bit差分overflowで始点終点の入替が非対称になる\n+\n+境界の合成例：`a=-2147483648, b=0` では `i32(b-a)=-2147483648`、SAR後に `a` を加えると **+1073741824**。始点・終点を入れ替えた `a=0,b=-2147483648` では **-1073741824**。真の中点はいずれも -1073741824。したがって**巨大差分での2点の順序交換は原作機械語の中点結果に対して可換でない**。同様に a=INT32_MIN、b=INT32_MAX ではX=INT32_MAXにwrapし、数学的floor平均=-1と大きく食い違う。\n+\n+通常ゲームでこれらの異常値が入力されるかは不明（VERIFY）。13〜15Hの距離比較が `Unit+0x40/+0x48/+0x4C` に依存するという先行観測と組み合わせ、再実装時は**非負で小さい値だけを仮定した整数平均への置換を禁止候補**として記録する。さらにC/C++では符号付きoverflowが未定義となり得るので、もし完全一致実装を行うなら明示的な32bitレジスタ演算または符号なし演算から再解釈し、原作Goldenで比較する必要がある。\n+\n+## 追跡範囲・既存IDとの差分\n+\n+先行13Hの `0x52AD35 -> 0x526030` は直接E8 CALLとして**過去に確認済み**。今回新たなCALL経路を発見したとは主張しない。13Hは距離式とモード別ソート、14Hは平方和overflow/NaN条件、15HはNaN比較の関係を研究した。**16Hの新規差分は中点の負奇数丸め、演算順序による非対称overflow、および合成263,169組の再現回帰テスト**。以前の研究を再計上しない。\n+\n+`0x52AD00` 同距離の実際のノード移動順序、`0x529691`対`0x529851`の基準座標の意味、`0x569730`の行動結果、T011経験値・召喚、T012ダメージ・回復・状態、T013最終攻撃対象、T024 AI全体、T028士気・敗走は依然P0/VERIFY。`0x5710C0..0x571500`等の禁止範囲と拒否済XREF操作は再試行しない。安全保留21件と旧SAFE134（今回未全検証）はそのまま。\n+\n+## 検証・失敗記録とGolden条件\n+\n+検証スクリプト `data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py`、結果 `data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json`。**21/21個の限定アサーションPASS**（元の6命令bytesの既存記録と照合、境界ケース12組、グリッド全数1件＋差分存在1件、方向非対称1件）。これは**21個のASM検証ではない**。初回のアドレス表記 `0x`/`0X`正規化ミスでKeyError、続いてテストの予想値に数学的floorとゼロ方向丸めを混同したAssertionErrorを検出。検証コードと期待値を修正し、21/21 PASS。両失敗を消さず保持。\n+\n+Golden要件：原作ver0.67の同じEXE/DAT/MAP/SAVE上で、負奇数和の位置、通常正座標、同距離、軸点の前後逆転、32bit境界の到達可否、`0x526030`比較結果と`0x52AD00`ノード順をログ採取し、再実装とstrict比較する。**原作実機Golden PASS=0、strict MATCH=0、READY=0**。\n+\n+## KB_CANDIDATE・次の再開\n+\n+`KB_CANDIDATE` owner=B tasks=T011/T024、研究ID=`B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01`。VA `0x526030`、命令サイト `0x526074/77/7A/7D/7F/81`、先行CALL site `0x52AD35 -> 0x526030`。オフセット `Unit+0x40/+0x48/+0x4C`。出典：13H保存済検証JSON SHA256 `1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205`、擬似C `functions/0052/00526030.c` SHA256 `7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF` は**以前の記録を引用しただけ**。STATIC=元ASM保存記録、INFERRED=中点式の導出、SYNTHETIC_ONLY=境界と回帰、VERIFY=実際の到達と最終行動。訂正注意：`(a+b)/2` のC式では一般に原作と等価でない。**知識ベースへの自動確定・共有GitHubへのpushなし**。\n+\n+次の許可一手：PC復帰時にMASTER/PROTOCOL/B HANDOFF/03H回収とID・owner・HOLD競合を**先に**照合し、B許可領域へ一度だけ取り込んでreadback。オフライン継続なら過去の合成条件を再繰返しせず、`0x52AD00` の実際の同値マージ・`0x529691` と `0x529851` の座標が**別系統かどうか**を、許可済み原本または保存済静的証拠の範囲で追う。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8167e8401a2125e815ed5db846ad63b423b62d77/research%2Flane_b%2FB-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md",
+      "sha": "0d00bdc52cbbd541fdfa61d042054439ce485e64",
+      "status": "added"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e4dacccc3c5d10db1619af8313d205b94f999b9a/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:44Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:44Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+        "tree": {
+          "sha": "3944bc2cae57152830461fa5a0ec45da199def16",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/3944bc2cae57152830461fa5a0ec45da199def16"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/e4dacccc3c5d10db1619af8313d205b94f999b9a",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/e4dacccc3c5d10db1619af8313d205b94f999b9a",
+      "node_id": "C_kwDOVb7AvNoAKGU0ZGFjY2NjM2M1ZDEwZGIxNjE5YWY4MzEzZDIwNWI5NGY5OTliOWE",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "sha": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/dad68c4fedf8a56e430af1ec8a7993e725ce610d"
+        }
+      ],
+      "sha": "e4dacccc3c5d10db1619af8313d205b94f999b9a",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e4dacccc3c5d10db1619af8313d205b94f999b9a"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/75947196c419214b421d9d8264eb22d852459fc7/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:46Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:46Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+        "tree": {
+          "sha": "93e07f7d0878e50e60a19ecabcd1d55a3c306f88",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/93e07f7d0878e50e60a19ecabcd1d55a3c306f88"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/75947196c419214b421d9d8264eb22d852459fc7",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/75947196c419214b421d9d8264eb22d852459fc7",
+      "node_id": "C_kwDOVb7AvNoAKDc1OTQ3MTk2YzQxOTIxNGI0MjFkOWQ4MjY0ZWIyMmQ4NTI0NTlmYzc",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/e4dacccc3c5d10db1619af8313d205b94f999b9a",
+          "sha": "e4dacccc3c5d10db1619af8313d205b94f999b9a",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/e4dacccc3c5d10db1619af8313d205b94f999b9a"
+        }
+      ],
+      "sha": "75947196c419214b421d9d8264eb22d852459fc7",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/75947196c419214b421d9d8264eb22d852459fc7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1973d1641f9e60541e7764660cbb8240cd1e526a/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:50Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:50Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01",
+        "tree": {
+          "sha": "cc278b5c811c22f78a977563f4d422fa779c7bca",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/cc278b5c811c22f78a977563f4d422fa779c7bca"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/1973d1641f9e60541e7764660cbb8240cd1e526a",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/1973d1641f9e60541e7764660cbb8240cd1e526a",
+      "node_id": "C_kwDOVb7AvNoAKDE5NzNkMTY0MWY5ZTYwNTQxZTc3NjQ2NjBjYmI4MjQwY2QxZTUyNmE",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/75947196c419214b421d9d8264eb22d852459fc7",
+          "sha": "75947196c419214b421d9d8264eb22d852459fc7",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/75947196c419214b421d9d8264eb22d852459fc7"
+        }
+      ],
+      "sha": "1973d1641f9e60541e7764660cbb8240cd1e526a",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1973d1641f9e60541e7764660cbb8240cd1e526a"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a331637c416dfd21564249ad958a6ff3e6ee3bf7/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01",
+        "tree": {
+          "sha": "cd82445798174d6d3cf8455a3379e41221b4f8b9",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/cd82445798174d6d3cf8455a3379e41221b4f8b9"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/a331637c416dfd21564249ad958a6ff3e6ee3bf7",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/a331637c416dfd21564249ad958a6ff3e6ee3bf7",
+      "node_id": "C_kwDOVb7AvNoAKGEzMzE2MzdjNDE2ZGZkMjE1NjQyNDlhZDk1OGE2ZmYzZTZlZTNiZjc",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/1973d1641f9e60541e7764660cbb8240cd1e526a",
+          "sha": "1973d1641f9e60541e7764660cbb8240cd1e526a",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1973d1641f9e60541e7764660cbb8240cd1e526a"
+        }
+      ],
+      "sha": "a331637c416dfd21564249ad958a6ff3e6ee3bf7",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a331637c416dfd21564249ad958a6ff3e6ee3bf7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/3b38df41b0b938b6cb27e659c8944084e4be923e/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:56Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:56Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01",
+        "tree": {
+          "sha": "2327faecd588547fdef328619adf683685a127b9",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/2327faecd588547fdef328619adf683685a127b9"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/3b38df41b0b938b6cb27e659c8944084e4be923e",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/3b38df41b0b938b6cb27e659c8944084e4be923e",
+      "node_id": "C_kwDOVb7AvNoAKDNiMzhkZjQxYjBiOTM4YjZjYjI3ZTY1OWM4OTQ0MDg0ZTRiZTkyM2U",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/a331637c416dfd21564249ad958a6ff3e6ee3bf7",
+          "sha": "a331637c416dfd21564249ad958a6ff3e6ee3bf7",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a331637c416dfd21564249ad958a6ff3e6ee3bf7"
+        }
+      ],
+      "sha": "3b38df41b0b938b6cb27e659c8944084e4be923e",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/3b38df41b0b938b6cb27e659c8944084e4be923e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/54da37d06fc5f4010b1c6a9761a635f2d3461b93/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:15:59Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:15:59Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01",
+        "tree": {
+          "sha": "ad42a3d21f861cba1f4e3493ad7b1d90c6f6b13d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/ad42a3d21f861cba1f4e3493ad7b1d90c6f6b13d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/54da37d06fc5f4010b1c6a9761a635f2d3461b93",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/54da37d06fc5f4010b1c6a9761a635f2d3461b93",
+      "node_id": "C_kwDOVb7AvNoAKDU0ZGEzN2QwNmZjNWY0MDEwYjFjNmE5NzYxYTYzNWYyZDM0NjFiOTM",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/3b38df41b0b938b6cb27e659c8944084e4be923e",
+          "sha": "3b38df41b0b938b6cb27e659c8944084e4be923e",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/3b38df41b0b938b6cb27e659c8944084e4be923e"
+        }
+      ],
+      "sha": "54da37d06fc5f4010b1c6a9761a635f2d3461b93",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/54da37d06fc5f4010b1c6a9761a635f2d3461b93"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/5f1207454591ba0e4cadde9168d1472316d71452/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:16:05Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:16:05Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01",
+        "tree": {
+          "sha": "edc2ec7335967080ccb52405d6febff948a0c809",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/edc2ec7335967080ccb52405d6febff948a0c809"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/5f1207454591ba0e4cadde9168d1472316d71452",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/5f1207454591ba0e4cadde9168d1472316d71452",
+      "node_id": "C_kwDOVb7AvNoAKDVmMTIwNzQ1NDU5MWJhMGU0Y2FkZGU5MTY4ZDE0NzIzMTZkNzE0NTI",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/54da37d06fc5f4010b1c6a9761a635f2d3461b93",
+          "sha": "54da37d06fc5f4010b1c6a9761a635f2d3461b93",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/54da37d06fc5f4010b1c6a9761a635f2d3461b93"
+        }
+      ],
+      "sha": "5f1207454591ba0e4cadde9168d1472316d71452",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/5f1207454591ba0e4cadde9168d1472316d71452"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8167e8401a2125e815ed5db846ad63b423b62d77/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T15:16:08Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T15:16:08Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence intake: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01",
+        "tree": {
+          "sha": "f560af20573c2405f49c796c4da92bb4b78af9b2",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/f560af20573c2405f49c796c4da92bb4b78af9b2"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/8167e8401a2125e815ed5db846ad63b423b62d77",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8167e8401a2125e815ed5db846ad63b423b62d77",
+      "node_id": "C_kwDOVb7AvNoAKDgxNjdlODQwMWEyMTI1ZTgxNWVkNWRiODQ2YWQ2M2I0MjNiNjJkNzc",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/5f1207454591ba0e4cadde9168d1472316d71452",
+          "sha": "5f1207454591ba0e4cadde9168d1472316d71452",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/5f1207454591ba0e4cadde9168d1472316d71452"
+        }
+      ],
+      "sha": "8167e8401a2125e815ed5db846ad63b423b62d77",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8167e8401a2125e815ed5db846ad63b423b62d77"
+    }
+  ],
+  "number": 15,
+  "reviews": []
+}

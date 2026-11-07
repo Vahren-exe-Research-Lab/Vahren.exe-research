@@ -1,0 +1,478 @@
+{
+  "changed_files": [
+    {
+      "additions": 4,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/KNOWLEDGE_CURATION_PROTOCOL.md",
+      "changes": 4,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/KNOWLEDGE_CURATION_PROTOCOL.md?ref=f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "deletions": 0,
+      "filename": "KNOWLEDGE_CURATION_PROTOCOL.md",
+      "patch": "@@ -50,3 +50,7 @@ Purpose: give AI a small, trustworthy map without destroying or blindly copying\n - When a curator edits symbols.tsv in a dedicated worktree, invoke that worktree's tools/v9_coverage.py with `--root <research-root> --out <isolated-kb> --symbols <isolated-kb>/symbols.tsv --export`. This keeps the indexed original PE/V9 and research.sqlite under the authorized read-only research root while using the curated symbol dictionary from the isolated worktree.\n - Without --symbols, the backward-compatible default reads <research-root>/knowledge/symbols.tsv, which may be an unrelated user checkout. Never equate that older dictionary with the isolated candidate version.\n - The full V9 function crosswalk remains in the local research root's knowledge/generated directory; GitHub receives only lightweight report and priority TSVs. Candidate counts are descriptive STATIC metadata, not proof or READY.\n+\n+## User directive 2026-11-01: publish reusable research, not just local notes\n+The latest user-approved rule is [RESEARCH_INTAKE_PROTOCOL_20261101.md](RESEARCH_INTAKE_PROTOCOL_20261101.md).\n+The earlier prohibition on A-E/REA editing the **curated KB** (`symbols.tsv`, `structs.tsv`, `REF_*`, `develop`) remains. An explicit exception now allows each source owner to archive **their own sanitized, source-linked, potentially VERIFY** research in a PRIVATE `research/intake/<owner>/` path on an isolated owner branch. The dedicated curator alone accepts into `develop` by non-force fast-forward after audit and preserves source confidence, corrections and safety refusals. Research capture must end in one of PUBLISHED_INTAKE / CURATED / DUPLICATE_LINKED / BLOCKED / OFFLINE_UNSYNCED with a specific next action; creating only a local report does not complete the GitHub discoverability obligation.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/KNOWLEDGE_CURATION_PROTOCOL.md",
+      "sha": "f0c222330def2ce51aeec2c2f28f06cefbd8aaa5",
+      "status": "modified"
+    },
+    {
+      "additions": 5,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/README.md",
+      "changes": 5,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/README.md?ref=f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "deletions": 0,
+      "filename": "README.md",
+      "patch": "@@ -198,3 +198,8 @@ python -B knowledge\\tools\\research_index.py --check\n - 実行例（研究ROOTが参照できる専用knowledge worktreeから）：python -B tools/v9_coverage.py --root <研究ROOT> --out <同knowledge worktree> --export\n - 任意アドレスの原作CALL元・CALL先・命令バイトを確かめる：python -B tools/v9_coverage.py --root <研究ROOT> --inspect 0x004496C4\n - 既存V9 SQLiteと元ゲームファイルは一切Gitに含めない。保護アドレス・拒否済み解析の迂回なし。原作Golden PASS/strict MATCHは実機証拠がない限り0。\n+\n+## 未収録研究をGitHubから再利用する（2026-11-01）\n+- [研究入庫・バックログ収録ルール](RESEARCH_INTAKE_PROTOCOL_20261101.md) — owner別の安全なPRIVATE GitHub保全、未検証と確定知識の二段階管理、拒否/機密保護。\n+- [未整理・未同期研究の入口](research/intake/README.md) — EのG0/G1/G2とT019/T020、REA/B等の未回収状況と担当キュー。\n+- 研究ID/SHAが目録にあるだけではGitHubに研究原文があるとは限らない。`research/intake/`は一次証拠ではなく、元reportの検証済み抜粋と出典への再開路線。確定事項だけが `REF_*`・辞書へ昇格する。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/README.md",
+      "sha": "86ec0aac71e7d6f6ea37417df24b460b5374009a",
+      "status": "modified"
+    },
+    {
+      "additions": 25,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/RESEARCH_INTAKE_PROTOCOL_20261101.md",
+      "changes": 25,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/RESEARCH_INTAKE_PROTOCOL_20261101.md?ref=f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "deletions": 0,
+      "filename": "RESEARCH_INTAKE_PROTOCOL_20261101.md",
+      "patch": "@@ -0,0 +1,25 @@\n+# 研究成果のGitHub優先収録規約（2026-11-01 ユーザー明示変更）\n+研究ID: KB-POLICY-20261101-RESEARCH-INTAKE-PRIORITY-01。対象: 迫真戦記 ver0.67 A/B/C/D/E/REA・専任KB統合。\n+正本: PRIVATE `ButaMonky/Hakushin067-Research-Knowledge` の `develop`。この規約は研究資料の公開・統合の新手順を定め、原作実ゲームの互換性やREADYを宣言しない。\n+\n+## 方針: 研究成果を埋もれさせない\n+- **保存した研究を検索不能なローカル/Libraryだけに残さない**。担当は研究終了時、既収録研究ID・出典SHA・版・訂正関係を調べ、PRIVATE GitHubへの収録、担当固有 intake branchへの保全、または BLOCKED/OFFLINE-UNSYNCEDを記録する。新研究より過去の未同期回収を優先してよい。\n+- **二段階に分ける**。①`research/intake/<owner>/` は安全確認済み研究の出典・仮説・未検証も状態を明記して保全する（発見可能性）。②`REF_*.md`/`symbols.tsv`/`structs.tsv` は専任curatorが原本を検証・既存訂正と照合した確定事項のみ採用する（知識の信頼性）。①への保管はREADYや実機Goldenの証明ではない。\n+- Owner A-E/REAは**自分の研究成果・同意済み出典だけ**をPRIVATE GitHubの`intake/<owner>-<date>-<ID>`等の固有隔離ブランチに`research/intake/<owner>/`配下の安全な要約/manifestとして保存してよい（本ユーザー指示に基づく新規許可）。他owner本文、`develop`、共有辞書/REF/生成DBは依然変更不可。curatorだけが吟味して `develop` に ff-only で反映する。READMEや規約の今回の変更はユーザー明示の特例。\n+- PCオフラインでGitHubだけ使えるときも、現物確認した内容だけを`OFFLINE-UNSYNCED`として隔離branchに保全できる。未確認SHA/原作挙動/PC同期を捏造しない。ブランチ保存も不能ならE担当文書/会話に理由と再開位置を明記する。\n+\n+## 研究1件の必須記録\n+`research_id`, `owner`, `tasks`, `observed_at/source_snapshot`, `source_relative_paths`, 実測`sha256`とその検証時刻、`VA / function_range / CALLsite / offsets`（なければnull）、`evidence_kind`（STATIC/INFERRED/SYNTHETIC/VERIFY/DYNAMIC）、`golden_status`, `ready_status`, `prior_ids`, `supersedes/errata`, `limitations`, `next_validation`、既存`REF`/辞書候補。各資料に1行の要約と検索可能な研究IDを入れる。SHAのない実体は`UNVERIFIED_SOURCE`として別扱い。\n+- 研究本文を保存できる場合は機密を除去したMarkdownと小さな再現手順・純粋fixtureを必要に応じて添付する。**目録だけ**で原文を復元できると主張しない。大きな原資料はSHAと相対パスで参照し、GitHubに全22kファイルを無差別同期しない。\n+- バックログは`research/intake/README.md`から owner / 日付 /研究ID/保管先 / 入力不足 / 採録済みを追跡する。各実行で旧未収録の確認可能な数件以上を実際に処理し、`PUBLISHED_INTAKE`/`CURATED`/`DUPLICATE_LINKED`/`BLOCKED`/`MISSING_SOURCE`で区別する。量が多くても**未処理件数と続きのID/パス**を維持し、同じ調査を毎時反復しない。\n+- 定期curatorは新規研究より**残存バックログの安全な入庫・重複/訂正/索引処理**を優先し、取り込める未検証研究も`VERIFY`を保持してGitHubで参照可能にする。重要度でT018 G0/G1/G2・T019修正・B/REAの未同期と未回収を扱う。収録済みIDは再コミットしない。\n+\n+## 禁止と検証ゲート\n+- PRIVATE可視性・最終`develop` HEAD・他AIのworktree/lock/dirty・担当所有権を確認してから行う。作業用固有branch、通常commit/push、SHA照合、競合時は停止、`develop`統合はcuratorが ff-only/正常検査後だけ実施。reset/stash/rebase/amend/force、ユーザーworktreeのswitch/上書きは禁止。\n+- 名前・メール・絶対Windowsユーザーパス・認証情報・Cookie/HAR・生ログ、元EXE/DAT/MAP/ZIP/SAVE、復号セーブ・巨大SQLite/Ghidra生成DB、他者の非公開データをGitHubへ出さない。機密抜き要約と出典SHAに限る。\n+- **安全拒否された元操作/本文/対象は新許可でも再実行・分割・代替shell/tool/path/Remote/ZIPで取得・出版しない**。拒否ID/影響/既存保存有無のメタデータだけ（保護対象の具体内容を含めず）を残してBLOCKEDを保持。\n+- STATIC、合成PASS、索引のCALL/XREFは原作実動作ではない。原作合法G0/G1/G2の一次証拠と比較が無ければDYNAMIC OBSERVED/Golden PASS/strict MATCHは0、新しい正式READYは未証明扱い。\n+- curatorは追記前に同ID/同SHA/版、owner、出典・訂正、機密、lint/テスト、`SOURCE_MANIFEST`、GitHub readbackを点検。結果はGitHubのcommit SHA/リンク/未処理件数/次カーソルで報告する。push拒否・ロック・権限/接続障害は原因別に保全し、別経路で拒否を迂回しない。\n+\n+## 旧運用との関係\n+従来`KNOWLEDGE_CURATION_PROTOCOL.md`の「A-E/REAは共有KBへ直接書かない」は**共有辞書・REF・develop正本に限って継続**。`research/intake/<owner>`をprivate隔離branchに保管する行為を新たに許可する。READYのMASTER正式統合は従来通りEのみ。旧スケジュールの有効/停止・頻度は変更しない。Workも自動利用しない。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/RESEARCH_INTAKE_PROTOCOL_20261101.md",
+      "sha": "ee1440e948c978aad553adbf2f9012e1cfdd327f",
+      "status": "added"
+    },
+    {
+      "additions": 29,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/research%2Fintake%2FE%2FE-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md",
+      "changes": 29,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FE%2FE-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md?ref=f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "deletions": 0,
+      "filename": "research/intake/E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md",
+      "patch": "@@ -0,0 +1,29 @@\n+# Eレーン未収録知見：Golden受入と研究回収の入口（2026-11-01）\n+研究ID: E-PC-20261101-2110-T018-T019-T020-KB-CURATOR-DELTA-01\n+owner E / T018,T019,T020。状態: `STATIC`/`VERIFY`/`SYNTHETIC_PRIOR_ONLY`/`ARCHIVED_UNVERIFIED`、実機Golden PASS=0、strict MATCH=0、新規READY=0。\n+**このファイルは原作の一次資料ではなく、許可済みPCのE所有報告に基づく検索・回収用要約。**\n+\n+## 対応するPC原文と出典SHA256\n+| 研究ID（短縮） | PC相対資料 | SHA256 |\n+|---|---|---|\n+| E17H-G012 | `tests/T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md` | `F3014188EC9729B8786569CC1CD8A03585E601C46B3A14F9B594976E4A9637CA` |\n+| E18H-OFFLINE39 | `tests/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md` | `D7A4498270737DC4E756638758BCAB1B9FD0E1EBF68592614D85F08FE66B7245` |\n+| E19H-KB | `tests/T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md` | `11FF3B1318C85E3748D811BB36EF83962CCF51AA9FAFEE697444150C96F0CF95` |\n+| E20H-G0 | `tests/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md` | `21AD936F1A013F88E10E1FE05D51880708247DD1DADAEDB63FD1721DBA4D466F` |\n+| T018 | `tests/T018_GOLDEN_CORPUS.md` | `CD79030E92A2091B0043E40B9C50473A92ACD3DF7FD4B3FA65CD52077DD9E120` |\n+| T019 | `wiki/T019_CONTRADICTIONS.md` | `102AFAB94359902D5E74E4B8C55D06CD46269B85DB1B7D0A426FCDE2ED6FC25B` |\n+これらのSHAは既存EのPC実測受入記録と今回のPC readbackに基づく。GitHub`RESEARCH_SOURCE_CATALOG.tsv`はE17～20Hの6個のreport/receiptを列挙するが原文本文のGitHub保存証明ではない。\n+\n+## 将来のAIが参照すべき結論\n+- **T018 G0/G1/G2:** 原作の合法UIによる同一戦闘開始、直前同一runのSAVE byte SHA/入力時系列、実MAP・3陣営・順序付きUnit/Troopを一つのbattle_key/runへ結合する。候補`s16.map`や保存側Spot/Unitを実配備結果にしない。別PID、同PID別戦闘時間窓、観測ファイルの再利用は不適格。\n+- **T020:** 原作と新実装が同一不変SAVE/MAP等を`SHARED_IMMUTABLE_INPUT`として共有することは正当な試験設計になり得る。一方`ORIGINAL_INDEPENDENT_OBSERVATION`と`REIMPLEMENT_INDEPENDENT_OBSERVATION`は各run別の一次証拠とSHA/ファイルID/時刻である必要がある。旧検証器の無条件同パス拒否は入力/観測の役割別に限定する。Windows file identity・親folder再解析・atomic captureは未実証。\n+- **T019:** GameClear `DAT13/TXT2`は検索対象範囲の差で訂正済み`RESOLVED`。script2同名優先、TXT runtime読込、phase flag、gwrite後段は`VERIFY`で、新規原作確定バグ0。候補VA `0x50C9A0`等を独立STATIC再照合なしに辞書へ登録しない。\n+- **過去合成試験:** E09～15Hの381/381・E16Hの19/19は各過去の合成fixture結果であって、本GitHub収録時の再実行・原作ゲーム互換性の証明ではない。\n+\n+## 残る未同期・保全の順番\n+1. 2026-11-01 03～16HのオフラインE研究は現行GitHub目録に該当研究ID 0件。旧07～16Hの39ファイル・合計1,338,930バイトの過去SHA検証履歴があるが、**今回は39実体の再取り込みはしていない**。Library/PC実体と当時のmanifestを再検証し、ID/同一SHA重複を除き安全な要約と機械可読manifestだけを収録する。\n+2. REAは11/1 03～16H Library研究群（以前のcurator監査では67ファイル）と未同期原文、BはHOLD21・10/25欠落と03H/07H保全失敗を元ownerと再照合する。拒否済みデータ本体の代替取得はしない。\n+3. source`MASTER_LEDGER.md`の最終公式checkpoint196/READY596（A115/B229/C136/D116）、34 Task DONE9/IN_PROGRESS21/VERIFY4は**旧最終確認値**であり、この収録で更新しない。新実機Golden/strict MATCH=0。\n+\n+## Curatorの次の安全な一手\n+PC `tests/T020_E_KB_CANDIDATE_HANDOFF_20261101_19H.json`、`tests/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_RECEIPT_20261101_20H.json` と上記ソースSHAを照合して、既存`REF_BATTLE_TAKEOVER.md`との差分だけE/T018受入一覧へ統合。旧安全拒否・他owner・ゲーム原本を保護。生SAVE/原作EXEや個人PCパスをGitへ送らない。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/research%2Fintake%2FE%2FE-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md",
+      "sha": "32527d655eb7c5ac80908078e7e7140a348956b3",
+      "status": "added"
+    },
+    {
+      "additions": 15,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/research%2Fintake%2FREADME.md",
+      "changes": 15,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREADME.md?ref=f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "deletions": 0,
+      "filename": "research/intake/README.md",
+      "patch": "@@ -0,0 +1,15 @@\n+# Private research intake index\n+このディレクトリは**研究成果の保全と発見性**の入口であり、実機確認や正式READYの認定ではありません。\n+\n+- [収録規約と担当・curatorの権限](../../RESEARCH_INTAKE_PROTOCOL_20261101.md)\n+- [E/T018-T020: C-NB02 G0/G1/G2と未同期回収候補](E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md)\n+\n+## 保全状態\n+| 対象 | 今回の確認 | 次の処理 |\n+|---|---|---|\n+| E 11/1 17–20H | GitHub元目録に6 entries（原文本文は別） | source SHAと要約を分野別REFに照合 |\n+| E 11/1 03–16H | 研究ID未収録、旧07–16H 39ファイルの過去検証記録 | PC/Library元実体をowner照合後に順次保全 |\n+| REA 11/1 03–16H | 以前の監査でLibrary67ファイル、今回再棚卸し無し | 専任curatorがID/SHA/拒否を仕分け |\n+| B未回収・10/25欠落 | HOLD/未回収が存在（内容はこの索引に未掲載） | 許可済み出典のみ扱い拒否を迂回しない |\n+\n+新規研究の収録時は本表に owner/研究ID/source SHA/収録先/状態/次のカーソルを追加し、既存IDを別発見として再計数しない。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/research%2Fintake%2FREADME.md",
+      "sha": "68088dcd95a27fc745a25efd2cb53663ce2662eb",
+      "status": "added"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8915e8e330a532c910612b4ff519022ff527d96c/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T12:42:19Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T12:42:19Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "knowledge: add owner-safe research intake and backlog archival entry",
+        "tree": {
+          "sha": "c37f297f65d0d2ec6c5bc5fed9fdcf1ba9a5fa8e",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/c37f297f65d0d2ec6c5bc5fed9fdcf1ba9a5fa8e"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/8915e8e330a532c910612b4ff519022ff527d96c",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8915e8e330a532c910612b4ff519022ff527d96c",
+      "node_id": "C_kwDOVb7AvNoAKDg5MTVlOGUzMzBhNTMyYzkxMDYxMmI0ZmY1MTkwMjJmZjUyN2Q5NmM",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/a7a7bc300e97429fc58e4c7bfc3eaa311a430e15",
+          "sha": "a7a7bc300e97429fc58e4c7bfc3eaa311a430e15",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/a7a7bc300e97429fc58e4c7bfc3eaa311a430e15"
+        }
+      ],
+      "sha": "8915e8e330a532c910612b4ff519022ff527d96c",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8915e8e330a532c910612b4ff519022ff527d96c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1b49967e94065b8517ccf6364e4fc9ff8bba8c18/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T12:42:22Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T12:42:22Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "knowledge: add owner-safe research intake and backlog archival entry",
+        "tree": {
+          "sha": "e0599e9c30534de1d496c4626e59c65e91e37256",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/e0599e9c30534de1d496c4626e59c65e91e37256"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/1b49967e94065b8517ccf6364e4fc9ff8bba8c18",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/1b49967e94065b8517ccf6364e4fc9ff8bba8c18",
+      "node_id": "C_kwDOVb7AvNoAKDFiNDk5NjdlOTQwNjViODUxN2NjZjYzNjRlNGZjOWZmOGJiYThjMTg",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8915e8e330a532c910612b4ff519022ff527d96c",
+          "sha": "8915e8e330a532c910612b4ff519022ff527d96c",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8915e8e330a532c910612b4ff519022ff527d96c"
+        }
+      ],
+      "sha": "1b49967e94065b8517ccf6364e4fc9ff8bba8c18",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1b49967e94065b8517ccf6364e4fc9ff8bba8c18"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d5855f7637608aae15595e0ae0447f3ba34ce7e5/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T12:42:24Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T12:42:24Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "knowledge: add owner-safe research intake and backlog archival entry",
+        "tree": {
+          "sha": "9d6cc78b025cde531744375640c5b5e8a27ee850",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/9d6cc78b025cde531744375640c5b5e8a27ee850"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/d5855f7637608aae15595e0ae0447f3ba34ce7e5",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/d5855f7637608aae15595e0ae0447f3ba34ce7e5",
+      "node_id": "C_kwDOVb7AvNoAKGQ1ODU1Zjc2Mzc2MDhhYWUxNTU5NWUwYWUwNDQ3ZjNiYTM0Y2U3ZTU",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/1b49967e94065b8517ccf6364e4fc9ff8bba8c18",
+          "sha": "1b49967e94065b8517ccf6364e4fc9ff8bba8c18",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/1b49967e94065b8517ccf6364e4fc9ff8bba8c18"
+        }
+      ],
+      "sha": "d5855f7637608aae15595e0ae0447f3ba34ce7e5",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d5855f7637608aae15595e0ae0447f3ba34ce7e5"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9d7a2111d0ccd0689326d1a8ab7820aa206245d9/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T12:42:27Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T12:42:27Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "knowledge: authorize private owner intake while retaining curated develop ownership",
+        "tree": {
+          "sha": "7c6abd73d32a8cb9e3ca3a28b32200e84d62f037",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/7c6abd73d32a8cb9e3ca3a28b32200e84d62f037"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/9d7a2111d0ccd0689326d1a8ab7820aa206245d9",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/9d7a2111d0ccd0689326d1a8ab7820aa206245d9",
+      "node_id": "C_kwDOVb7AvNoAKDlkN2EyMTExZDBjY2QwNjg5MzI2ZDFhOGFiNzgyMGFhMjA2MjQ1ZDk",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/d5855f7637608aae15595e0ae0447f3ba34ce7e5",
+          "sha": "d5855f7637608aae15595e0ae0447f3ba34ce7e5",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d5855f7637608aae15595e0ae0447f3ba34ce7e5"
+        }
+      ],
+      "sha": "9d7a2111d0ccd0689326d1a8ab7820aa206245d9",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9d7a2111d0ccd0689326d1a8ab7820aa206245d9"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T12:42:30Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T12:42:30Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "knowledge: link research intake and reusable E backlog",
+        "tree": {
+          "sha": "d92b8d332615be3e473fb2aab85f596572393b19",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/d92b8d332615be3e473fb2aab85f596572393b19"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "node_id": "C_kwDOVb7AvNoAKGY0OGVlN2MwZmQ4ZWY5NTIwZGM5NTljMjc4NmM4MjczY2UxODE1Y2I",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/9d7a2111d0ccd0689326d1a8ab7820aa206245d9",
+          "sha": "9d7a2111d0ccd0689326d1a8ab7820aa206245d9",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9d7a2111d0ccd0689326d1a8ab7820aa206245d9"
+        }
+      ],
+      "sha": "f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f48ee7c0fd8ef9520dc959c2786c8273ce1815cb"
+    }
+  ],
+  "number": 5,
+  "reviews": []
+}
