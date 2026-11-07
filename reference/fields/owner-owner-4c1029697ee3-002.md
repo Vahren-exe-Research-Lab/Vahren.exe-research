@@ -4,8 +4,32 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-300"></a>
+## owner + 0x300
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 10](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L10-L10) — ## 新規局所STATIC 1：`owner+0x2FC`と`owner+0x300`は同一treeオブジェクト内で連結
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 870](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L870-L870) — [CONFIRMED-SAVED-NATIVE] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F54C..0x45F5B2：owner+0x54=0後、owner+0x2E0 Power treeを順次走査しmapped Power[node+0x28]のbyte+0x1D !=0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 582](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L582-L582) — [CONFIRMED-SAVED-NATIVE / A58-A59から独立増分] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45F54C..0x45F5B2。既知の4群復元→Unit/Spot後処理→numeric runtime再設定→zone flag再計算の後、Power
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-30c"></a>
 ## owner + 0x30C
+
+- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 10](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L10-L10) — - 0x463CD9 EAX=ECX(name ptr), 0x463CDB ESI=EDX(owner), 0x463D0C EBX=owner+0x30C。0x463D19 CALL 0x4C1200 は検索結果iterator候補をcaller localへ書き込む（検索calleeはV3擬似C）。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 14](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L14-L14) — - 0x463D7E CALL 0x436560 は辞書候補（文字列キー＋格納値ポインタ）の構築。V3擬似Cの+0x1C=param_2->pointer と整合。0x463D9B CALL 0x4A69B0 は owner+0x30C の辞書へのinsert、0x463DCB MOV EAX,EDI は新32Bオブジ
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 679](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L679-L679) — [CONFIRMED-SAVED-NATIVE] B所有read-only `exe/T011_STRUCTURE_DISPATCH_PROBE.txt` のUnit系区画、VA0x41419D..0x4141A9は`push eax`→`ECX=0x637680`→`EDX=EDI`→`call 0x463A90`、
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1187](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1187-L1187) — [CONFIRMED-SAVED-NATIVE / A77 DELTA] A所有 `data/T014_GLOBAL_SAVE.md` A77節（668行へ追記・再読済）。`exe/T014_LOAD_CORE_DUMP.txt` 0x45E392..0x45E3B7 の第1wrapper経由 `0x45E1E0` r
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

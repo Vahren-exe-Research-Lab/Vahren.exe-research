@@ -7,6 +7,9 @@
 <a id="field-178"></a>
 ## Unit + 0x178
 
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md 行 9](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md?plain=1#L9-L9) — 【2026-10-25 ON-STAND-010訂正】原作EXEに術者Unit+0x178～0x17Cの**召喚子Unitポインタ一覧**が存在し、登録・召喚枠上限判定・術者死亡時のelement_lost消滅に使用されていることを既存Ghidra V9から確認。下記の『独立召喚所有台帳』は仕様テスト用であり、本番で親
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/stand_proto/README.md 行 39](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/stand_proto/README.md?plain=1#L39-L39) — - [ON-STAND-010] **原作EXEには元から親子vector（親Unit+0x178/17C/180）が存在**するため、このPython ledgerはあくまでルールを独立検証するモデル。本編へ別台帳を重複実装しない。../SUMMON_PARENT_NATIVE_DAT_BOUNDARY_202610
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
@@ -342,8 +345,5 @@
 
 - [research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md?plain=1#L10-L10) — [GOLDEN-DESIGNED/NOT RUN] 同一合法rush/summon系Skillの連続2回使用、pool begin/end空/満、対象Unit+0x1D0=0/非0、同seedで表示投射・効果レコード・移動/HP/MP/RNGの差を旧実機/新で比較。内部ptr/capacityのみの観測はINELIGI
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 72](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L72-L72) — 同一原作EXE SHA / 同一DAT / SAVE / MAP / 入力 / RNG seed と状態で、合法な `allfunc` ミサイル技能を採り、候補vectorが0/1/2/3件の場合と、2件中1件不適格・index10/非10・Skill+0x2A8 sentinel/zero・Unit+0x1D0 nu
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -7,6 +7,9 @@
 <a id="field-540"></a>
 ## Unit + 0x540
 
+- [research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md?plain=1#L4-L4) — - [SAVED NATIVE] At 0x575DFD -> 0x4DDD80(&Unit+0x540), return 0x575E02, then W=Unit+0x5B0 at 0x575E16, W=Unit+0x800 at 0x575E6F, W=Unit+0x89C at 0x575EC8 are pr
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch11/reports/REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.md?plain=1#L7-L7) — - [BRANCH NONZERO] 同global byteが非0の初回呼出は graph=(Unit+0x540,virtual_slot=0x54,return_pc=0x4DDD99)、frame.next_va=0x4DDD97 を返す。graphがNoneという初回条件は以後満たさない。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
@@ -172,6 +175,9 @@
 - [research/recovered/b_batch11/data/T028_WEB_VARIANT_UNIT_CLASS_DEAD_EVENT_SOURCE_20261016.md 行 10](../../research/recovered/b_batch11/data/T028_WEB_VARIANT_UNIT_CLASS_DEAD_EVENT_SOURCE_20261016.md?plain=1#L10-L10) — [FACT/VERIFY] 宣言文字列と原文親・変更先・個別dead_event存在はCONFIRMED SOURCE。実効継承の上書き/属性順、Unit+0x1861C effective field、Rank・合法旧battle dispatch・士気/limit効果、原作の別eventはVERIFY。原作BUG・
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 110](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L110-L110) — - Parser name dead_event is at VA 0x627FF8; construction copies callback name to Unit+0x1861C; native death path 0x5789F2 checks nonempty and invokes dispatcher
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 47](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L47-L47) — - Parser name dead_event is at VA 0x627FF8; construction copies callback name to Unit+0x1861C; native death path 0x5789F2 checks nonempty and invokes dispatcher
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -211,6 +217,9 @@
 - [research/recovered/b_batch7/data/T012_POSTSELECT_RESET_REARM_RADIUS_CROSSJOIN_20261014.md 行 5](../../research/recovered/b_batch7/data/T012_POSTSELECT_RESET_REARM_RADIUS_CROSSJOIN_20261014.md?plain=1#L5-L5) — [REARM FACT] 別保存0x5779B1..0x5779EDはUnit+0x18654が非0の選択後正常枝において、渡されたSkill+0x4C>0の時のみ0x5779DC..0x5779EDでUnit+0x1E530=global[0x65BC5C]。後続でUnit+0x18638と+0x1863Cを更新しA
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 185](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L185-L185) — - The adjacent `0x577600` reader has count-zero and nonzero local paths, including `0x5779CD -> 0x576450` and conditional `Unit+0x18638/+0x1863C` updates. B20 a
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 122](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L122-L122) — - The adjacent `0x577600` reader has count-zero and nonzero local paths, including `0x5779CD -> 0x576450` and conditional `Unit+0x18638/+0x1863C` updates. B20 a
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -225,6 +234,9 @@
 
 <a id="field-18650"></a>
 ## Unit + 0x18650
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 11](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L11-L11) — \| Script-owned candidate list register/remove \| `0x4A7A90 -> 0x574D70/0x574E30`, `Unit+0x18650/+0x18654` \| B20 \| Actual DAT command or complete alias/writer cov
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 7](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L7-L7) — [SCOPE CORRECTION] Unit+0x18650/+0x18654 primary candidate head/count (B20/B21) and Unit+0x186B0/+0x186B4 alternative list/count (B22) are separate. No alias or
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
@@ -267,6 +279,21 @@
 
 - [research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md 行 18](../../research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md?plain=1#L18-L18) — [RECOVERY/STATE/NEXT] 今回の新規安全拒否0/接続障害0、旧HOLD21再提出0、GitHub raw保全gap OPEN。次はcontext+0x28を直接読む所有関数/書込み元、Unit+0x18654 writer、最後の対象選択consumerを既研究IDと照合して絞り込む。T011召喚EX
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 162](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L162-L162) — - **B15** `B-20261031-15H-T013-KIND8-RANDOM-PAYLOAD-QUEUE-01` — `data/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md`: after the previously established
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 167](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L167-L167) — - **P0/next**: determine the actual `Unit+0x18654` writer, any direct or indirect `record/context+0x28` consumer beyond this callback, exceptional/overflow comp
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 172](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L172-L172) — - Independent original PE proof: B19 has 4/4 bounded end-exclusive SHA windows and 4/4 direct E8 targets matched, full original PE hash matched. This extends th
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 178](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L178-L178) — - The World script dispatcher `0x4A7A90` directly calls `0x574D70` at `0x4AB946` and `0x574E30` at `0x4ABF81`, original direct E8 **2/2 matched**. `0x574D70` in
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 184](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L184-L184) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md 行 15](../../research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md?plain=1#L15-L15) — - Next priority: legal G0/G1/G2 receipts; only then old/new data match. B owner to verify Unit+0x18654 count producer, list input ABI, secondary comparator and
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
@@ -333,35 +360,5 @@
 
 - [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 10](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L10-L10) — [INIT AND DOWNSTREAM] V9 0x56F880擬似CではUnit+0x18654の4byteがゼロ初期化され、+0x18650に空リストheadを用意。既B15H/16H/17Hの0x579EB0はcountを参照し対象listをソート類似処理へ渡す。このcounterは候補一覧の要素数と整合するが
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-- [research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md 行 16](../../research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md?plain=1#L16-L16) — - **Next:** original G0→G1→G2 receipts remain P0. B-owned future search for actual +0x28 consumers, Unit+0x18654 writer and final target; E-owned future regress
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-1867c"></a>
-## Unit + 0x1867C
-
-- [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 11](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L11-L11) — 0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUn
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
-
-- [research/intake/B/B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md 行 12](../../research/intake/B/B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md?plain=1#L12-L12) — 0x569360の近接ratio集計はUnit+0x1867C==0かつ+0x1867E==0を要求する一方、0x526030の距離ソートanchorは+0x1867C==0だけ。flags=(0,1)は合成上取り扱い差が生じる。この2関数のフィルタをalive等の単一述語に統一しない。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
-
-- [research/recovered/b_batch10/data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md 行 10](../../research/recovered/b_batch10/data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md?plain=1#L10-L10) — STATIC V3 Ghidra 0x00569730: Troop候補+0x0C/+0x10の4byte構成員ポインタvectorに生存候補(Unit+0x1867C==0)が無ければ早期return、条件成立時に0x5699C0で候補を作る経路。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L7-L7) — 【NEW 3 / FIRST LIVE】0x56954F～0x56957Dで登録順にUnit参照をたどり、Unit+0x1867C==0の最初の候補に限って、0x56957D→0x569730 E8直接CALLで配置処理を呼ぶ。呼出位置はUnit+0x214/+0x218を整数2つとしてPUSH、Troop+0x28の
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md?plain=1#L7-L7) — NEW GATE: 0x5699C0はTroop候補+0x0C/+0x10の4-byte構成員vectorを走査、Unit+0x1867C==0と追加フラグ時Unit+0x1F9==0の候補を0x4C52D0を介して一時リンク構造に収める。後段は適格候補なしで生成処理をskip。既18時の同フィルタは再計上0。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md 行 41](../../research/recovered/b_batch10/data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md?plain=1#L41-L41) — 条件設計（DESIGNED / NOT RUN）: 同一無改変原作EXE/DAT/SAVE/MAP/input/seed/capture SHAで、Unit+0x1BCキーの同値／負零正、整列済みUnit数2/3/32/33、Unit+0x1867C適格／不適格、+0x1F9=0/1と分岐flag=0/1、座標pair
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 11](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L11-L11) — - +0x1D!=0枝: [EDI+0xC/+0x10]の4Bポインタspanを走査、各Unit+0x1867C!=0の要素では0x5684EBでUnit+0x1867D=0、0x568501 CALL0x5B6720で残部を前詰め、[EDI+0x10]を-4。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 13](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L13-L13) — - +0x1D==0枝: 0x56857Bで生存候補countを0初期化、0x568585..59AでUnit+0x1867C==0の要素数を集計。count>0なら先頭Unit+0x8C==0かつ+0x1F8!=0を判定し0x5685C5 JMP0x527EA0、条件を満たさない場合は0x568614側へ終了。0x5
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

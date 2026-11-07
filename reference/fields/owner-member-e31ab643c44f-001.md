@@ -25,6 +25,9 @@
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 61](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L61-L61) — - **Golden必要条件**：同一ver0.67でAL0/1の4経路、group+0x1D=0/1、member vector空/1/複数、member+0x1867C=0/1、member+0x1867D=0/1、`+0x186A4/A8`のBefore/After、グループ+0x1C/+0x1E、タイマー・DA
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 214](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L214-L214) — - `B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01` (T013, original `data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md`, actual PC SHA256 `CEB2CE15CD
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 <a id="field-1867d"></a>
 ## member + 0x1867D
 

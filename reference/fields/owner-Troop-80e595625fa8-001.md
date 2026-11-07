@@ -118,6 +118,9 @@
 - [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 24](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L24-L24) — 未解明P0: 0x0056AB20への実仮想CALL site、Troop+0x44すべてのwriter、0x00569730実副作用、0x005E3B70 FPU/NaN、+0x34算術ABI、士気・逃走/戦闘AIとの実関係。T011/T012/T024/T028の別P0は継続。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 225](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L225-L225) — \| `B-20261023-1708-T013-TROOP-RTTI-RATIO-GATE-01` **CURATION_READY_STATIC / UNMERGED (native-validated, pending Git manifest gate)** \| Original PE RTTI locator
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 <a id="field-1d0"></a>
 ## Troop + 0x1D0
 

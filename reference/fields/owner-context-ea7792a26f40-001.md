@@ -274,6 +274,12 @@
 - [research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md 行 18](../../research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md?plain=1#L18-L18) — [RECOVERY/STATE/NEXT] 今回の新規安全拒否0/接続障害0、旧HOLD21再提出0、GitHub raw保全gap OPEN。次はcontext+0x28を直接読む所有関数/書込み元、Unit+0x18654 writer、最後の対象選択consumerを既研究IDと照合して絞り込む。T011召喚EX
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 165](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L165-L165) — - **B18** `B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01` — `data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md`: record `+0x28` is copied by `0
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 167](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L167-L167) — - **P0/next**: determine the actual `Unit+0x18654` writer, any direct or indirect `record/context+0x28` consumer beyond this callback, exceptional/overflow comp
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 102](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L102-L102) — - **B18** `B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01` — `data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md`: record `+0x28` is copied by `0
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -354,11 +360,5 @@
 
 - [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md 行 7](../../research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md?plain=1#L7-L7) — [NEW E T020 FIXTURE] 2 global[0x65BD9E] states × 2 context+0xE4 states × 4 native caller margin values(100,200,400,600) × 10 synthetic signed points = 160 uniqu
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 9](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L9-L9) — [T020 FIXTURE] 7 synthetic ASCII returned values ('off','on','offx','off ','of','OFF','') x 7 second-key values x context+0xE4 {0,1} x PtInRect AL {0,1} x ESI {
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

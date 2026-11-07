@@ -7,6 +7,9 @@
 <a id="field-c"></a>
 ## free + 0xC
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 49](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L49-L49) — - After successful 0x5D5B51 -> 0x5DA070 conversion, 0x5D5B60 frees the source and 0x5D5B6C zeroes its owner slot. Failure cleanup revisits only remaining non-nu
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 39](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L39-L39) — - After successful 0x5D5B51 -> 0x5DA070 conversion, 0x5D5B60 frees the source and 0x5D5B6C zeroes its owner slot. Failure cleanup revisits only remaining non-nu
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

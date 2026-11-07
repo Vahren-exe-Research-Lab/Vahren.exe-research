@@ -1,0 +1,76 @@
+{
+  "captured_utc": "2026-11-05T05:27:25.973868+00:00",
+  "base": "190bf0987f4a7d14f6e2d0f38fc703996d15b9ec",
+  "repository": "ButaMonky/Hakushin067-Research-Knowledge",
+  "repository_private": true,
+  "default_branch": "develop",
+  "remote_default_sha": "190bf0987f4a7d14f6e2d0f38fc703996d15b9ec",
+  "open_prs": 13,
+  "open_issues": 6,
+  "pr_has_next_page": false,
+  "issue_has_next_page": false,
+  "previous_capture_base": "2a6af7b389d82a92b85bef475aaf981d31d1990d",
+  "previous_pr_locations": 1695,
+  "previous_unique_blobs": 1145,
+  "current_pr_locations": 1696,
+  "current_unique_blobs": 1146,
+  "discovery_states": {
+    "EXACT_ALREADY_DEVELOP": 770,
+    "AVAILABLE_QUEUE_ONLY": 891,
+    "SAME_PATH_CHANGED": 35
+  },
+  "path_changes": {
+    "UNCHANGED": 1684,
+    "BLOB_CHANGED": 11,
+    "ADDED": 1,
+    "REMOVED": 0
+  },
+  "changed_heads": [
+    {
+      "pr": 16,
+      "previous_head_sha": "68c5ec9ec766776f027ac27e77c8b50d0f3b80de",
+      "current_head_sha": "1814c1b6fbf4d8695e2516850faaa9d487c205d6"
+    },
+    {
+      "pr": 17,
+      "previous_head_sha": "f22c89d3a691ab6b431cbfaa56cbcdd01ea593d2",
+      "current_head_sha": "f6c8a41f1db9ef2ce5284b031027f8bf90850ba6"
+    },
+    {
+      "pr": 18,
+      "previous_head_sha": "885ad7a069a2b67cf3ba378e7241341ad951128b",
+      "current_head_sha": "d3e4a85c280794e28e5aa3970e581db1e3f15174"
+    }
+  ],
+  "reused_immutable_heads": 10,
+  "fetched_metadata_trees": 3,
+  "accepted_ledger_rows": 1839,
+  "unique_saved_destinations": 1819,
+  "exact_ledger_pr_links": 186,
+  "ledger_sources_with_pr_blob_match": 112,
+  "limits": "Metadata only. No PR/Issue bodies, comment text, diffs, source blobs, originals, native or linked payloads fetched; no closure or semantic adoption. Entire pinned research trees, not diff-only studies.",
+  "graphql_query": "query { repository(owner:\"ButaMonky\", name:\"Hakushin067-Research-Knowledge\") { nameWithOwner isPrivate defaultBranchRef { name target { oid } } pullRequests(states:OPEN, first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { number title url state updatedAt headRefOid headRefName comments { totalCount } } } issues(states:OPEN, first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { number title url state updatedAt comments { totalCount } } } } }",
+  "previous_receipt_table_hashes_verified": {
+    "GITHUB_QUEUE.tsv": true,
+    "GITHUB_SOURCE_CATALOG.tsv": true,
+    "GITHUB_DISCOVERY_DIFF.tsv": true,
+    "GITHUB_EXACT_BODY_LINKS.tsv": true
+  },
+  "metadata_hashes": {
+    "GITHUB_DISCOVERY_DIFF.tsv": "6068494353b929a44e6147243cd0ee300fac886ad9ac78892af7fde345847665",
+    "GITHUB_EXACT_BODY_LINKS.tsv": "262e32672d17884c434f87e8b08c1050b86322f268bdc3ccdffadf747e1e0530",
+    "GITHUB_QUEUE.tsv": "1e5f7bea0a6f09f248f6001327cc828acc5d2f0e75a39af33c66f1727936864e",
+    "GITHUB_SOURCE_CATALOG.tsv": "b01f2f539d813a751c76b0fcfe90520b8ccf970cd2dd2ac1f5776fdf6edeca5b",
+    "HEAD_CHANGES.tsv": "2746e2bca6c5a85cd86eb10b0ae6a5407b658979de68d703cac575c66968e039",
+    "INPUT_PINS.tsv": "2a6b6c6e5f58198b1ae97c788785fa58591bf190107ee34415583cdc141a8945",
+    "LEDGER_GIT_BLOB_MAP.tsv": "2761f17659502fe89df3e2b814ca55d047d014ccc9816d845de2b13aa712487c",
+    "NONANCESTRAL_SCOPE_CROSSWALK.tsv": "0e1bf975b8c40d926987f81ef18f8a15a52ce61374f34943ed663f078bc61a1b",
+    "PARENT_SELECTION_LEADS.tsv": "d514b8450ba91e3341ea8c37a56ba9dbfaa54651b88051a4168b40cbc1bb475a",
+    "PATH_CHANGES.tsv": "613c73de9f193c4a552e884e13d551e72e2c37a332af87da1811a7817eb2283a",
+    "QUEUE_CHANGES.tsv": "773e55c47b7eaf29418759b7fa62588b184e16a6de0905b876b00fbb18ffb43a",
+    "TREE_RECEIPTS.tsv": "edc307322ad33c9d931de89ca486da3cb5ebf6bf028a0605197d8d8ebf597810"
+  },
+  "graphql_response_sha256": "db0a5caba95db281decb2ea1b3b0a7ffc0a1c3f9e55088a818537d6f59d69807",
+  "timing_limits": "Captured sequentially; mutable queue metadata reflects the GraphQL response, fixed-head trees are immutable. Default develop was verified at GraphQL capture, not continuously monitored.",
+  "prior_capture_history": "Existing root tables and immutable SOURCE_CAPTURE history unchanged."
+}

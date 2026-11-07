@@ -4,6 +4,24 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1f4"></a>
+## record + 0x1F4
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1f8"></a>
+## record + 0x1F8
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1fc"></a>
+## record + 0x1FC
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-200"></a>
 ## record + 0x200
 

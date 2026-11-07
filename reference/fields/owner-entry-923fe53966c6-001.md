@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-0"></a>
+## entry + 0x0
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md 行 24](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md?plain=1#L24-L24) — owner `REA/T015`、参照VA `0x5D9F40/0x5DA070/0x5DFE10/0x5DFFC0/0x5E0DC0/0x5E6E10`、CALL site `0x5DFE5C/0x5DFE68/0x5D5922/0x5D5B51`、offset `inner+0xB20`, `entry+0x00`
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
 <a id="field-10"></a>
 ## entry + 0x10
 

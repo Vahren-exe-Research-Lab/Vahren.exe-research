@@ -31,6 +31,30 @@
 - [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 155](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L155-L155) — - STATIC new distinction: `0x428680` wrapper subobject outer+0x10 yields nested pointer outer+0x48, `0x4293D0` wrapper subobject outer+4 yields nested pointer o
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
+<a id="field-1c"></a>
+## outer + 0x1C
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 11](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L11-L11) — - **Distinct from 06H:** `0x005CF06B -> 0x005D3DA0` calls init helper; `0x005D3DC4 -> 0x005D1C71` requests `calloc(1,0xE50)` and `0x005D3DCC` assigns result to
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 12](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L12-L12) — - **Important guard boundary:** `0x005D4168..0x005D4178` tests `outer+0x1C` and returns error if NULL, constraining **inner block allocation failure**. This doe
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 19](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L19-L19) — \| `06H_MODE_LIFECYCLE` \| `REA-OFFLINE-20261101-06H-P0-VORBIS-MODE-ALLOC-LIFECYCLE-STATIC-01` \| Mode allocation/cleanup, `0x005D4160/0x005D3DE0/0x005CF010`, inne
+  制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
+
+<a id="field-34"></a>
+## outer + 0x34
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 207](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L207-L207) — - Original x86 `0x5D1539` initializes `outer+0x34=1`; `0x5D132B/31` saves an initial serial value; `0x5D140D` calls `0x5CF4D0`, and the nonnegative branch at `0
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 19](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L19-L19) — **Owner evidence:** 09H report lines 15–21, 25–30, 34–40 and 09H EVIDENCE JSON. `0x005D1490` initializes `outer+0x34=1`, a 32-byte initial header in `outer+0x48
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 22](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L22-L22) — \| `09H_CACHE_RECORD` \| `REA-OFFLINE-20261101-09H-P0-OGG-CACHED-HEADER-SERIAL-INDEX-PRODUCER-BRIDGE-STATIC-01` \| Producer bridge for 08H; `0x005D1490/0x005D1310/
+  制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
+
 <a id="field-38"></a>
 ## outer + 0x38
 
@@ -52,11 +76,29 @@
 <a id="field-40"></a>
 ## outer + 0x40
 
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 17](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L17-L17) — - **Bounded paths:** `0x005CFA10` scans known serials `outer+0x40`, stores matching `outer+0x60` index, transitions `outer+0x58` to state3 at `0x005CFC16`; then
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 19](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L19-L19) — **Owner evidence:** 09H report lines 15–21, 25–30, 34–40 and 09H EVIDENCE JSON. `0x005D1490` initializes `outer+0x34=1`, a 32-byte initial header in `outer+0x48
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 21](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L21-L21) — \| `08H_CACHED_STREAM_STATE3` \| `REA-OFFLINE-20261101-08H-P0-VORBIS-CACHED-STREAM-STATE3-REENTRY-STATIC-01` \| Cached serial/state3 branch, `0x005CFA10/0x005D0B60
+  制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
+
 - [research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L19-L19) — - 次カーソル **09H** `REA-OFFLINE-20261101-09H-P0-OGG-CACHED-HEADER-SERIAL-INDEX-PRODUCER-BRIDGE-STATIC-01`、`0x005D1490` producer／`outer+0x40/+0x48` serial record、in
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
 <a id="field-44"></a>
 ## outer + 0x44
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 141](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L141-L141) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 145](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L145-L145) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 146](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L146-L146) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
@@ -91,6 +133,21 @@
 <a id="field-48"></a>
 ## outer + 0x48
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 145](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L145-L145) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 146](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L146-L146) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 207](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L207-L207) — - Original x86 `0x5D1539` initializes `outer+0x34=1`; `0x5D132B/31` saves an initial serial value; `0x5D140D` calls `0x5CF4D0`, and the nonnegative branch at `0
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 17](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L17-L17) — - **Bounded paths:** `0x005CFA10` scans known serials `outer+0x40`, stores matching `outer+0x60` index, transitions `outer+0x58` to state3 at `0x005CFC16`; then
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 19](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L19-L19) — **Owner evidence:** 09H report lines 15–21, 25–30, 34–40 and 09H EVIDENCE JSON. `0x005D1490` initializes `outer+0x34=1`, a 32-byte initial header in `outer+0x48
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -124,6 +181,9 @@
 <a id="field-4c"></a>
 ## outer + 0x4C
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 145](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L145-L145) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -138,6 +198,12 @@
 
 <a id="field-50"></a>
 ## outer + 0x50
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 141](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L141-L141) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 146](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L146-L146) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
@@ -169,6 +235,9 @@
 <a id="field-54"></a>
 ## outer + 0x54
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 141](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L141-L141) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -180,6 +249,12 @@
 
 <a id="field-58"></a>
 ## outer + 0x58
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 31](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L31-L31) — - Both branches converge on native cleanup calls `0x005CF1F2 -> 0x005D3DE0`, `0x005CF1FB -> 0x005D3D00`, with state `outer+0x58=2` at `0x005CF20A`. Separate pac
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 17](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L17-L17) — - **Bounded paths:** `0x005CFA10` scans known serials `outer+0x40`, stores matching `outer+0x60` index, transitions `outer+0x58` to state3 at `0x005CFC16`; then
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 21](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L21-L21) — - Both branches converge on native cleanup calls `0x005CF1F2 -> 0x005D3DE0`, `0x005CF1FB -> 0x005D3D00`, with state `outer+0x58=2` at `0x005CF20A`. Separate pac
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
@@ -211,11 +286,29 @@
 <a id="field-60"></a>
 ## outer + 0x60
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 207](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L207-L207) — - Original x86 `0x5D1539` initializes `outer+0x34=1`; `0x5D132B/31` saves an initial serial value; `0x5D140D` calls `0x5CF4D0`, and the nonnegative branch at `0
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 17](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L17-L17) — - **Bounded paths:** `0x005CFA10` scans known serials `outer+0x40`, stores matching `outer+0x60` index, transitions `outer+0x58` to state3 at `0x005CFC16`; then
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 21](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L21-L21) — Consumers `0x005D0B60` (site `0x005D0D48`) and `0x005CFA10` (site `0x005CFC03`) record selected serial index in `outer+0x60`. Cached-header accesses `0x005CF990
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
 - [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 6](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L6-L6) — 2. V9と一致する同じcalleeへの後段 `0x005D0D67 E804ECFFFF CALL 0x005CF970` は既存08H調査済み。前段で`0x005D0D48`に既知serial indexを`outer+0x60`へ、`0x005D0D4B`にstate=3を`outer+0x58`へ格納後に呼ぶ経
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 <a id="field-68"></a>
 ## outer + 0x68
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 126](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L126-L126) — - ID `REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`. At `0
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 129](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L129-L129) — - ID `REA-LOCAL-20261031-16H-P0-VORBIS-POSTINIT-OTHER-CALLERS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md`. Or
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 116](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L116-L116) — - ID `REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`. At `0
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
@@ -267,26 +360,5 @@
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 654](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L654-L654) — [CONFIRMED-SAVED-X86 / NEW CROSS-HANDLER] A保管のread-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CDEを再読。activeTroop/sleepTroopは対象vector/outer+0x1D0/0x44
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-<a id="field-1e0"></a>
-## outer + 0x1E0
-
-- [research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md 行 35](../../research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md?plain=1#L35-L35) — - **次回P0**：`0x005CF970`/`0x005CFA10` の `outer+0x1E0` 初期値・再初期化所有権と `0x005D4D20` の後処理失敗条件を独立追跡。未実測のNULL/例外・OOM/実ゲーム到達性はVERIFY。
-  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 21](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L21-L21) — - `0x5CF9E0` は `outer+0x1E0/+0x250` の解放と状態2への変更を行うが、Ghidraの `unaff_ESI` はABI未確定。通常ゲーム経路が条件付きリーク前提を満たすかは未証明。
-  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-<a id="field-2c8"></a>
-## outer + 0x2C8
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 82](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L82-L82) — - REA/T015 ID REA-LOCAL-20261031-00H-P0-OGG-FILE-CLOSE-CALLBACK-STATIC-01; source rea_lab/decomp_task/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md with EVIDENC
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-- [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 9](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L9-L9) — - **新規の例外境界**：`0x005CFE00` は `0x005CFEE3` で `outer+0x2C8` の関数ポインタを読み、`outer[0]!=0` かつ関数ポインタ非NULLなら `0x005CFEEE call eax` を実行する。これは22Hに解決した内部descriptor型デストラクタ3箇所
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md 行 7](../../research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md?plain=1#L7-L7) — - `0x005D1490` の `0x005D14D7 mov ecx,[ebp+0x18]` → `0x005D14EE mov [esi+0x2C8],ecx` でclose callbackをオブジェクトに保存。これにより前回23Hの未同定 `outer+0x2C8` 設定元を標準ファイル読込経路に限り解決した
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

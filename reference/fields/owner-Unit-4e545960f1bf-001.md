@@ -328,6 +328,9 @@
 - [research/recovered/dev_reports/MAIN_DECOMP_STAGE_20261011.md 行 27](../../research/recovered/dev_reports/MAIN_DECOMP_STAGE_20261011.md?plain=1#L27-L27) — - 通常キーの書込後、Unit+0x8C!=0なら0x578E28で追加描画ルートを飛ばす。ゼロなら全7状態を順次見て負値の場合に0x4DFD80へ要求。呼出indexはキー順に (5,1,3,2,4,0,6)。最初の未解析calleeから先を実行済みとは言えない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 156](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L156-L156) — - In the `0x577A20` callee the native gates inspect `Unit+0x8C/+0x1F8/+0x1F9` and branch on dispatch kind 8. This confirms a **static per-Unit kind-8 call contr
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 9](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L9-L9) — [POST GATE] Conditional static gate is Unit+0x8C==0, byte+0x1F8!=0, updated alt count +0x186B4==0, and +0x5F0!=0x80000008. Success may enter virtual calls and l
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -348,8 +351,5 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 93](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L93-L93) — - In the `0x577A20` callee the native gates inspect `Unit+0x8C/+0x1F8/+0x1F9` and branch on dispatch kind 8. This confirms a **static per-Unit kind-8 call contr
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 229](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L229-L229) — - constructor discriminatorは隣接byte pair `Unit+0x8C/+0x8D` に現れ、SimpleUnitは `0x0001`、SimpleStaticUnitは `0x0101` をword writeする。
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

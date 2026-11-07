@@ -7,6 +7,9 @@
 <a id="field-c"></a>
 ## FILE + 0xC
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 25](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L25-L25) — **REA 00H** `REA-LOCAL-20261102-00H-P0-CRT-FILE2-LOCK-INDEX-VS-POINTER-STATIC-01`: original `rea_lab/decomp_task/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GETSTREAM_LOCK_STATIC.md 行 22](../../research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GETSTREAM_LOCK_STATIC.md?plain=1#L22-L22) — - 研究ID上記、`0x005D2165` body `[0x005D2165,0x005D228B]`、helper `0x005D228F`、FILEロック `0x005D21D3/0x005D21EA`、global lock/unlock `0x005D217A/0x005D2291`、追加CALL site
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -21,6 +24,9 @@
 
 <a id="field-20"></a>
 ## FILE + 0x20
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 25](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L25-L25) — **REA 00H** `REA-LOCAL-20261102-00H-P0-CRT-FILE2-LOCK-INDEX-VS-POINTER-STATIC-01`: original `rea_lab/decomp_task/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/rea_batch3/reports/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md 行 7](../../research/recovered/rea_batch3/reports/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md?plain=1#L7-L7) — 1. `0x005BDB12 __lock_file2` は `[EBP+8]` の `_Index` を `0x14`（20）と符号比較し、`0x005BDB1D JGE` で分岐。index<20は `0x005BDB1F ADD EAX,0x10`、`0x005BDB23 -> 0x005C1041` でinde
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION

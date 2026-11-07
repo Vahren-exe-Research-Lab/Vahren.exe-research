@@ -1,0 +1,11 @@
+{
+  "queries": [
+    "REA_OFFLINE_UNSYNCED",
+    "REA_OFFLINE_20261101_16H_NATIVE_CALLBACK_REPORT.md"
+  ],
+  "provider": "Pages find_pages",
+  "responses": "Each ended next_cursor=null,partial_results=false and returned only the unrelated guide metadata; no exact report/Page/file reference observed",
+  "exact_title_or_reference_matches": 0,
+  "linked_library_bodies_fetched": 0,
+  "limits": "Bounded Page search is not Library-wide enumeration or absence proof; unrelated guide content not read; original14report/evidence bodies not fetched; 4 recovered compilations kept distinct"
+}

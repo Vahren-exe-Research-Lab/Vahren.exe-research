@@ -7,6 +7,9 @@
 <a id="field-10"></a>
 ## totalSize + 0x10
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 75](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L75-L75) — - 0x005E6E10 rejects bit requests above 32. Its short-packet path checks rounded required bytes; on EOF, 0x005E6EE9..0x005E6F03 sets currentPtr+0xC=NULL, cursor
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 65](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L65-L65) — - 0x005E6E10 rejects bit requests above 32. Its short-packet path checks rounded required bytes; on EOF, 0x005E6EE9..0x005E6F03 sets currentPtr+0xC=NULL, cursor
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

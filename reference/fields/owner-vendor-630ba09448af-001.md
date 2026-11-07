@@ -7,6 +7,9 @@
 <a id="field-c"></a>
 ## vendor + 0xC
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 60](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L60-L60) — - Original 0x005D4030 allocates comment pointer and length arrays with calloc(count+1,4); when successful, the extra element is zero initialized, not a (count+1
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 50](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L50-L50) — - Original 0x005D4030 allocates comment pointer and length arrays with calloc(count+1,4); when successful, the extra element is zero initialized, not a (count+1
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
