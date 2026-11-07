@@ -1,0 +1,4 @@
+scope	state	reason	checked_date
+APPROVED_MARKDOWN_BODIES	ZERO_BODY_DEFERRALS	All 45 approved literal Markdown bodies reviewed; no held-owner dependency found.	2026-11-05
+LINKED_JSON_SCRIPTS_LOGS_NATIVE_EXE_SQLITE_HANDOFF	NOT_READ_NOT_EXECUTED	References are historical text only; no linked payload authority.	2026-11-05
+5710C0..571500;58021E..580340;5769B0;5767B0;FUN00580280;HELD_COMPOSITES	EXCLUDED_NO_RETRY	No such original body or native ownership payload read; approved bodies do not depend on these ranges.	2026-11-05

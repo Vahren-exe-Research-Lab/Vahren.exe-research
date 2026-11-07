@@ -96,3 +96,7 @@ E資料の選別では、除外指定した3報告が一括読み取りに含ま
 ## VMの型付き項目とE/REAの対応
 
 [VMメモリの採録範囲](VM_MEMORY_REVIEW.md)と[ScriptEngine事典](../../reference/structs/ScriptEngine.md)に、型の根拠がある6項目・18関係を追加した。[E追加報告](e_batch2/README.md)と[REA追加報告](rea_batch3/README.md)は90原本パスを82件の新しい本文と8件の別名対応に整理し、本文の重複コピーを避けた。合成検証・過去の保留・現在の正式REFとの違いは各台帳の制約を確認する。
+
+## 時間制限の参照関係と追加90報告
+
+[時間制限メモリの根拠](BATTLE_LIMIT_MEMORY_REVIEW.md)では、getLimitの処理位置→取得ヘルパー→既存グローバル値という経路と、現在値の更新を区別する。[E追加45報告](e_batch3/README.md)と[REA追加45報告](rea_batch4/README.md)はすべて原本と同じバイト列で保存し、実機・合成検証・過去の訂正の区分を維持した。

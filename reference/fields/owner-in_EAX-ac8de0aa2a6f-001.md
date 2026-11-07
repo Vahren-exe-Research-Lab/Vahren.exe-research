@@ -40,4 +40,10 @@
 - [research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md 行 34](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md?plain=1#L34-L34) — - 各枠の `slot+0x78` が非0の場合、カーソル相当の `in_EAX+0x32C/+0x330` から、枠の `slot+0x40/+0x44` を引いて `POINT` を作り、`PtInRect((RECT *)(slot+0x94), pt)` を実行する。TRUEなら `0x005264BE → 0
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-1eed78"></a>
+## in_EAX + 0x1EED78
+
+- [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 12](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L12-L12) — 0x431FB0（ABI未認証）の擬似Cでは in_EAX+0x1EED78 == +0x1EED7C と、各index=0x80000008 または vector-count<=index という二条件をすべて満たすと0、満たさなければ1を返す。これはGhidra未認証の暗黙EAX基点であり、vector実型・Tas
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

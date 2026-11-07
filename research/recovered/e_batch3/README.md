@@ -1,0 +1,71 @@
+# E batch 3 authored Markdown recovery
+
+Checked 2026-11-05. Approval label: `hakushin-e-batch3-approved.tsv`. Original root is represented only as `ORIGINAL_ROOT`; repository root as `WORK_REPO`. Baseline supplied by curator: `69de6a29` (no git operation run).
+
+45 approved literal E-authored Markdown paths were read directly in full as bounded UTF-8 texts. Selection was not expanded and linked payloads were not followed. Catalog owner, approved source SHA256 and byte size were checked before writing. The initial output truncation affecting three middle documents was resolved by bounded direct rereads; review contains no unresolved text truncation.
+
+Result: 45 new bodies, 45 exact, 0 privacy variants, 0 exact aliases, 0 approved-source deferrals. Each body preserves every source byte. REPORT_LEDGER.tsv supplies the nine columns required for curator integration; no root ledger was changed. IDENTITIES.tsv records current source/copy identity and per-report review focus. TRANSFORMS.tsv records no transformations. DEFERRED.tsv is header-only because every approved source completed review.
+
+Exact baseline/root-ledger and within-batch SHA duplicates were checked before copying; none matched. Same-filename variants would retain distinct destinations rather than overwrite. All destination files were absent before creation. Baseline comparison used repository manifest and root recovery ledger metadata, without a git invocation.
+
+The texts contain historical static analyses, archived observation audits, synthetic test claims and evidence-admission designs. Historical PASS counts are author claims preserved as history, not rerun results. Limited original G0 transitions, non-atomic RAW populations, synthetic assertions, Golden qualification and gameplay effects remain separate. Source pins and schema success do not establish actual G0-G4 capture, native execution, strict compatibility or READY.
+
+No referenced EXE, SQLite, JSON/JSONL, probe, log, script, HANDOFF or other original payload was read or executed. No native/runtime tests were run. There is no new native observation, actual Golden PASS, strict MATCH or READY. Shared code, dictionaries, builds, root ledger and original files were unchanged.
+
+Binding exclusions from e_reports/SCOPE_AUDIT.md remain in force, including the three 2026-10-31 T011 09H/10H/11H reports and the 2026-10-28 13H excluded parent. Incidental historical blocked/refusal references in approved notes are not authorization to open related payloads. Excluded 5710C0..571500, 58021E..580340, 5769B0/downstream 5767B0/whole FUN00580280 body composites remain deferred outside this batch.
+
+Full text privacy review found no personal absolute filesystem path or secret requiring redaction. Strict UTF-8 decoding found no replacement characters or substantive damage. No original private token is published in metadata. Input metadata uses redacted labels and the approval basename only.
+
+Local Compact connection returned HTTP429. Authorized built-in local execution was used; Remote was not used. A metadata-only inline command had a Python syntax error before execution; it was corrected, with no file writes or source execution. Writes were confined to this new batch directory. Source readback/SHA/size and destination byte equality were verified.
+
+## Navigation
+
+[Reviewed reports](#reports) · [Recovery ledger](REPORT_LEDGER.tsv)
+
+## Reports
+
+- [T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md](T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md)
+- [T020_CNB02_PREPOST_ACTIVE_POINTER_RETENTION_AUDIT_20261026_17H.md](T020_CNB02_PREPOST_ACTIVE_POINTER_RETENTION_AUDIT_20261026_17H.md)
+- [T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md](T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md)
+- [T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md](T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md)
+- [T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md](T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md)
+- [T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md](T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md)
+- [T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md](T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md)
+- [T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md](T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md)
+- [T020_DAT_RESTORE_EPOCH_PROVENANCE_20261024_08H.md](T020_DAT_RESTORE_EPOCH_PROVENANCE_20261024_08H.md)
+- [T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md](T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md)
+- [T020_DEMO_SOURCE_TAIL_PHASE_CROSSWALK_20261024_0153.md](T020_DEMO_SOURCE_TAIL_PHASE_CROSSWALK_20261024_0153.md)
+- [T020_DUAL_WATCH_FAILURE_EPOCH_AUDIT_20261024_0951.md](T020_DUAL_WATCH_FAILURE_EPOCH_AUDIT_20261024_0951.md)
+- [T020_E21_ARTIFACT_BYTE_ATTESTATION_AUDIT_20261028_23H.md](T020_E21_ARTIFACT_BYTE_ATTESTATION_AUDIT_20261028_23H.md)
+- [T020_E21_G2_SCHEMA_BRIDGE_AUDIT_20261028_22H.md](T020_E21_G2_SCHEMA_BRIDGE_AUDIT_20261028_22H.md)
+- [T020_E23_SOURCE_PROJECTION_BINDING_AUDIT_20261029_00H.md](T020_E23_SOURCE_PROJECTION_BINDING_AUDIT_20261029_00H.md)
+- [T020_E23_TYPED_G2_CROSS_CONTRACT_AUDIT_20261029_02H.md](T020_E23_TYPED_G2_CROSS_CONTRACT_AUDIT_20261029_02H.md)
+- [T020_E23_TYPED_PROJECTION_JSON_CONFORMANCE_AUDIT_20261029_01H.md](T020_E23_TYPED_PROJECTION_JSON_CONFORMANCE_AUDIT_20261029_01H.md)
+- [T020_E_ARCHIVED_CAPTURE_PROVENANCE_AUDIT_20261029_16H.md](T020_E_ARCHIVED_CAPTURE_PROVENANCE_AUDIT_20261029_16H.md)
+- [T020_E_CAPTURE_FAILURE_TAXONOMY_AUDIT_20261029_12H.md](T020_E_CAPTURE_FAILURE_TAXONOMY_AUDIT_20261029_12H.md)
+- [T020_E_COMPARATOR_KIND_BOUNDARY_AUDIT_20261029_07H.md](T020_E_COMPARATOR_KIND_BOUNDARY_AUDIT_20261029_07H.md)
+- [T020_E_DAT_EPOCH_SOURCE_SET_RECONCILIATION_20261029_10H.md](T020_E_DAT_EPOCH_SOURCE_SET_RECONCILIATION_20261029_10H.md)
+- [T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md](T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md)
+- [T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md](T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md)
+- [T020_E_G0_POSTBATTLE_ATTACK_COUNT_EPOCH_AUDIT_20261029_19H.md](T020_E_G0_POSTBATTLE_ATTACK_COUNT_EPOCH_AUDIT_20261029_19H.md)
+- [T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md](T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md)
+- [T020_E_G0_SAVE_WIRE_TEMPORAL_PROVENANCE_AUDIT_20261029_18H.md](T020_E_G0_SAVE_WIRE_TEMPORAL_PROVENANCE_AUDIT_20261029_18H.md)
+- [T020_E_G0_WATCH_VS_LIVE_CAPTURE_SOURCE_SEPARATION_20261029_17H.md](T020_E_G0_WATCH_VS_LIVE_CAPTURE_SOURCE_SEPARATION_20261029_17H.md)
+- [T020_E_G2_TEMPORAL_SIDE_RECEIPT_BOUNDARY_20261029_20H.md](T020_E_G2_TEMPORAL_SIDE_RECEIPT_BOUNDARY_20261029_20H.md)
+- [T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md](T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md)
+- [T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md](T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md)
+- [T020_E_NATIVE_RUNNER_EVIDENCE_BOUNDARY_20261029_08H.md](T020_E_NATIVE_RUNNER_EVIDENCE_BOUNDARY_20261029_08H.md)
+- [T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md](T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md)
+- [T020_E_OFFLINE_LIBRARY_BYTE_RECONCILIATION_20261029_04H.md](T020_E_OFFLINE_LIBRARY_BYTE_RECONCILIATION_20261029_04H.md)
+- [T020_E_PC_SOURCE_INVENTORY_GOLDEN_BOUNDARY_20261029_05H.md](T020_E_PC_SOURCE_INVENTORY_GOLDEN_BOUNDARY_20261029_05H.md)
+- [T020_E_SOURCE_PIN_ADMISSION_AUDIT_20261029_06H.md](T020_E_SOURCE_PIN_ADMISSION_AUDIT_20261029_06H.md)
+- [T020_E_UNSAVED_NOTRUN_RECOVERY_REGISTER_20261029_0255.md](T020_E_UNSAVED_NOTRUN_RECOVERY_REGISTER_20261029_0255.md)
+- [T020_E_V9_POINTER_LITERAL_BINDING_AUDIT_20261029_15H.md](T020_E_V9_POINTER_LITERAL_BINDING_AUDIT_20261029_15H.md)
+- [T020_E_V9_SOURCE_EPOCH_ACCEPTANCE_20261029_14H.md](T020_E_V9_SOURCE_EPOCH_ACCEPTANCE_20261029_14H.md)
+- [T020_E_WATCH_READY_ID_ALIAS_AUDIT_20261029_13H.md](T020_E_WATCH_READY_ID_ALIAS_AUDIT_20261029_13H.md)
+- [T020_F720_CALLER_NULL_CONTRACT_CROSSWALK_20261024_0344.md](T020_F720_CALLER_NULL_CONTRACT_CROSSWALK_20261024_0344.md)
+- [T020_F720_OWNER_CONTAINER_PROVENANCE_CROSSWALK_20261024_0447.md](T020_F720_OWNER_CONTAINER_PROVENANCE_CROSSWALK_20261024_0447.md)
+- [T020_F720_REBUILD_PHASE_CROSSWALK_20261024_05H.md](T020_F720_REBUILD_PHASE_CROSSWALK_20261024_05H.md)
+- [T020_FASTSIM_CLEANUP_CFG_AUDIT_20261023_2252.md](T020_FASTSIM_CLEANUP_CFG_AUDIT_20261023_2252.md)
+- [T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md](T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md)
+- [T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md](T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md)

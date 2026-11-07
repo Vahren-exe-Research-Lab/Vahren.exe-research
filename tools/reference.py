@@ -6,6 +6,7 @@ Run `python tools/reference.py search 解雇 --json`, `build`, or `check`.
 import argparse
 import csv
 import hashlib
+from functools import lru_cache
 import json
 from pathlib import Path
 import re
@@ -268,6 +269,12 @@ def recovered_citations(root):
     return citations
 
 
+@lru_cache(maxsize=None)
+def recovered_citation_pattern(label):
+    """Compile each ledger label once; larger corpora exceed re's shared cache."""
+    return re.compile(r"(?<![\w./\\-])" + re.escape(label) + r"(?![\w./\\-])")
+
+
 def attach_citations(row, registry, recovered=()):
     row["source_links"] = []
     row["unresolved_citations"] = []
@@ -288,8 +295,7 @@ def attach_citations(row, registry, recovered=()):
         row["source_links"].append({"label": label, "path": entry["path"], "anchor": anchor,
                                     "limitations": entry.get("limitations", "")})
     for citation in recovered:
-        pattern = r"(?<![\w./\\-])" + re.escape(citation["label"]) + r"(?![\w./\\-])"
-        if re.search(pattern, row["source"]):
+        if recovered_citation_pattern(citation["label"]).search(row["source"]):
             row["source_links"].append(citation)
 
 
