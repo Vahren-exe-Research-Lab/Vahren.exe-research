@@ -1,0 +1,94 @@
+{
+  "initial_request": {
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 1200
+  },
+  "retrieval_start": "2026-11-05T12:11:41.382Z",
+  "retrieval_end": "2026-11-05T12:13:13.838Z",
+  "selected_expansion": {
+    "at": "2026-11-05T12:15:42.620Z",
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "thread_id": "6ad7b038-1444-83ec-81b2-18c1da996089",
+    "turns": [
+      {
+        "id": "928cd8c0-8bb3-488a-85a1-b09a293ec5eb",
+        "startedAt": 1792582070.103308,
+        "completedAt": 1792614109.298714,
+        "items": [
+          {
+            "id": "928cd8c0-8bb3-488a-85a1-b09a293ec5eb",
+            "type": "agentMessage",
+            "utf16_length": 1870,
+            "truncated": false
+          },
+          {
+            "id": "716ef385-a306-45d5-b2fd-10868f70f8e6",
+            "type": "agentMessage",
+            "utf16_length": 2943,
+            "truncated": false
+          },
+          {
+            "id": "79a159d8-93e0-41a8-a2f2-bcec80b775bf",
+            "type": "agentMessage",
+            "utf16_length": 3337,
+            "truncated": false
+          },
+          {
+            "id": "9ea79dd8-6a67-4323-9ce3-9bbd6a1da2fc",
+            "type": "agentMessage",
+            "utf16_length": 2954,
+            "truncated": false
+          },
+          {
+            "id": "751296ba-5689-45ae-9788-89a7964277da",
+            "type": "agentMessage",
+            "utf16_length": 4396,
+            "truncated": false
+          },
+          {
+            "id": "268cb97b-4d08-419a-a414-d94b5d966107",
+            "type": "agentMessage",
+            "utf16_length": 4588,
+            "truncated": false
+          },
+          {
+            "id": "c9b28618-0a8c-462b-9dc0-82580658e00d",
+            "type": "agentMessage",
+            "utf16_length": 3491,
+            "truncated": false
+          },
+          {
+            "id": "58a94efd-3d8f-43c3-b359-1beb52577a80",
+            "type": "agentMessage",
+            "utf16_length": 3151,
+            "truncated": false
+          },
+          {
+            "id": "48e49215-6474-4eda-8e41-6e7d9d20fe72",
+            "type": "agentMessage",
+            "utf16_length": 3661,
+            "truncated": false
+          },
+          {
+            "id": "d7ffc055-2ad2-4771-bf57-7fb173a993bc",
+            "type": "agentMessage",
+            "utf16_length": 3042,
+            "truncated": false
+          }
+        ]
+      }
+    ]
+  },
+  "initial_agent_items": 20,
+  "initial_user_items": 11,
+  "user_bodies": "NOT_REVIEWED_OR_SAVED",
+  "source_sha256": "ec2adfa013280da21fc2050ee6876d473c88da5245dac800605a7f13085de8d0",
+  "destination_sha256": "b1c42cdaad517d52e7eb5baae6d185bc020865dee8857e465f535219f4c91843",
+  "timestamp_limits": "Turn timestamps only; no individual agent message time. Expansion is a distinct snapshot; only same selected ID body reviewed."
+}

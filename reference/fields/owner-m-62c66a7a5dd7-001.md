@@ -8,22 +8,22 @@
 ## m + 0x77
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2706](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2706-L2706) — - m+0x77 または +0x75。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-7a"></a>
 ## m + 0x7A
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2707](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2707-L2707) — - m+0x7A が立っていない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-c0"></a>
 ## m + 0xC0
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2705](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2705-L2705) — - m+0xC0 < thr。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2708](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2708-L2708) — - x = chop(0x587CC0(m,1) × (m+0xC0 / thr) + 0.5)（FIDIV のあと FMULP）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-1d4"></a>
 ## m + 0x1D4

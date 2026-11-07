@@ -14,7 +14,7 @@
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included; historical save terminology/counts require later REF_SAVE_FORMAT.md S1101 correction crosscheck; no current semantics promoted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1029](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1029-L1029) — \| 0x467579 \| flag=1（push 1）、level obj=EAX=0（直前 test eax,eax で0確定） \| 0x4673B0（addPower op6 0x4A8B53、シナリオ開始 0x45BE10×2）。Power（ctor 0x590560）+0x24 の名前が 0x467DE0 で見
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 32](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
   制約・訂正　Existing full body linked; catalog revision differs
@@ -161,7 +161,7 @@
 ## Power + 0xC4
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1403](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1403-L1403) — - 勢力ごと（+0x1C が真のとき）: 0x595170 / 0x595320 / 0x49ED90、context 値（0x46F4C0）、Power+0xC4（100 上限で加算）、0x593550 で全 Unit を集め、各 Unit について:
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-d0"></a>
 ## Power + 0xD0
@@ -173,7 +173,7 @@
 ## Power + 0xD4
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1224](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1224-L1224) — \| Power+0xD4 / +0xD8 \| training_average / training_up \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L7-L7) — - [DIRECT FOUR-BYTE TAG B] 同型0x596822..0x59682C CALL0x42E700→0x596831..0x59684B状態検査→正常0x596851..0x59685BでPower+0xD4にcommit。失敗は0x596A7AのLoadException経路。両CALLのGhi
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
@@ -194,16 +194,16 @@
 ## Power + 0xDC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1223](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1223-L1223) — \| Power+0xDC \| Power 初期化 0x590880（← 0x4673B0 0x46749D）: scenario "base_level"（0x590E9C）＋ power "base_level"（0x5914D0 = 0x4693F0("power", tag, key@scen 優先)、0x590
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1236](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1236-L1236) — - 追加テスト: SYNTHETIC 1件（Power+0xDC の合算と scenario 版キー）。専用テスト 94件 OK。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1277](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1277-L1277) — - コード変更なし（Power+0xDC は §45 の `power_level_object_dc` のまま。hire 系 entry の level object 型が未確定なので、`create_for_entry` への自動接続はしていない）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1343](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1343-L1343) — \| 仕様確定・未実装 \| Power+0xDC、戦闘終了LvUp・Unit生成と HP 初期化の規則（§36/§43）、雇用系生成入口（obj 型以外） \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1176](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1176-L1176) — [CONFIRMED-SAVED-NATIVE / DERIVED-CONDITIONAL] A所有 `data/T014_GLOBAL_SAVE.md` A76節。`exe/T014_NORMAL_LOAD_PROBE.txt` Power fallback 0x45F6AF..0x45F6EE（Power+0xDC
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain

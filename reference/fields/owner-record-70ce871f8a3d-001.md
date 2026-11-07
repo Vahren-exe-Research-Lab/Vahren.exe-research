@@ -35,7 +35,7 @@
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation

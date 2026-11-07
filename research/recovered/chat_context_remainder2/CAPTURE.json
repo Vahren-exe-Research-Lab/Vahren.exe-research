@@ -1,0 +1,16 @@
+{
+  "thread_id": "6acdb64f-3fc8-83e8-88d8-bd76f5453244",
+  "message_id": "ebf82892-6bb3-4d89-a410-e870669cc768",
+  "page": {
+    "order": "newest_first",
+    "limit": 1,
+    "nextCursor": "65fd720f-fe85-4f32-a294-ccb21c124050",
+    "hasMore": true
+  },
+  "turn_id": "65fd720f-fe85-4f32-a294-ccb21c124050",
+  "source_representation": "connector agentMessage.text Unicode encoded UTF-8, no normalization",
+  "max_chars": 10000,
+  "bytes": 9971,
+  "sha256": "fc8c345c4d769cc7d782de127e479cab35bda5a73016db6083a64ffadecb0c95",
+  "review": "Full returned message; no native/linked/script execution or original property corpus copied; selected synthetic/parser claims remain historical; no new original-game compatibility proof."
+}

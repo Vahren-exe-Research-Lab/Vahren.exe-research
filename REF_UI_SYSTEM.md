@@ -69,3 +69,12 @@
 - 実機確認：UI スレッドが長く止まる（パネル作成など）と DirectInput のバッファがあふれ、ゲートがボタンの状態を見失って ARMING（ボタンを止めない状態）から進まなくなる。表を出している間もボタン状態の取り直しを続ける必要がある。
 - 実機確認：押し判定用の読取りは DISCL_BACKGROUND にする（FOREGROUND では表が前面の間 Acquire できない）。閉じた後にクリックを止める時間は 150ms で足りる。
 - 出典：dev_lab/docs/DAT_UI_V4_RESEARCH_20261101.md §4、dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md「2026-10-31〜11-01」。
+
+
+## RetreatVoice更新とSimpleStaticUnit無効化の検索入口
+
+`0x4E04F0`は、[保存チャットの局所報告](research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md)に基づくRetreatVoice更新の推定項目です。負/0/正のcounter状態による待機・再配置・上移動を区別し、画面上の演出や音声との実機対応を確定しません。[既保存RTTI/vtableとの限定照合](research/recovered/chat_rea_remainder2/FOLLOWUP.md)が版とアドレスの対応を補います。
+
+`0x55B030`は[既保存B primary](research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md)の無効flag検査/設定と後段呼出を事典に採録しました。新規の原作解析ではありません。下位の空間処理や全死亡グラフを、この短いcallee契約から確定しません。
+
+同チャットの`0x589150`退却メッセージ/乱数の報告は、発言単体に対象buildの明示がなく、今回は正式な関数項目にしません。本文検索と[候補票](research/recovered/chat_rea_remainder2/FUNCTION_CANDIDATES.tsv)から確認でき、版対応・実機動作は未確認です。

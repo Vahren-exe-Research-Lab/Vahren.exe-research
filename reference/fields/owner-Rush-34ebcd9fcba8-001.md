@@ -20,7 +20,7 @@
 ## Rush + 0x1D8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3445-L3445) — \| 発動者 \| 弾 +0x78 と Rush +0x1D8 が同じポインタ \| フィールドの意味を実測で確定 \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-1f0"></a>
 ## Rush + 0x1F0
@@ -47,7 +47,7 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3181](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3181-L3181) — \| R5 連撃の生成 \| T0 \| next_first=on、子 joi の rush=2、root の homing=0 \| 0x54F720(joi, 0, &角度)。Rush+0x1F4 = 4（interval） \| — \| vf31 0x57EA48..5D、0x54F990 \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L6-L6) — [ASM CROSSWALK FROM B] Skill+0x78 copied into Rush+0x1F4 at 0x54F9D4. 0x5501AE increments then 0x5501C4 signed JL, 0x5501CA resets on threshold. 0x5503BE increm
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded

@@ -89,4 +89,9 @@
   - → 現在の解釈　Vector32_Append_4C2240: 保存済み局所解析では、owner+0x64/+0x68/+0x6Cで管理する4B要素vectorへ値を追加する補助。Bの呼出し箇所はTask待機列の文脈。旧T031のscene乱数reset後の呼出し記録を、callee自体の乱数専用処理とは一般化しない。全caller型・実機動作は未確認。
   - 確度　推定（保存済み著者の局所静的報告。今回の原作再検証・実機実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L3-L5)
 
+- [Unit_DispatchBattleAction](symbols/0057EB40.md) · `CORRECTION-ACTION-AL-NOT-EFFECT-SUCCESS` · `corrected`。旧説明の「ALの成功・失敗」を、技能効果の成功と一律に読まないよう限定する。
+  - 訂正済みの旧解釈（履歴）　探索更新後の行動候補を処理し、戻り値 AL の成功・失敗で上位側が分岐する。呼び出し側には mode 0 と mode 1 の経路がある。
+  - → 現在の解釈　ALは上位制御の分岐値。射撃ラッチを更新した後にAL0で早期returnする経路があり、MP減算や技能効果の成功とは分ける。
+  - 確度　保存済みチャットの著者静的報告。今回の原作再解析・実機確認なし。 対象は研究Bのver0.67文脈。短報単体にEXE SHAの提示なし。。対象　ver0.67。[訂正の根拠](../research/recovered/chat_b_remainder2/reports/B_20261013_SKILL_HANDLERS_CHAT.md?plain=1#L5-L13)
+
 [事典の入口](README.md)

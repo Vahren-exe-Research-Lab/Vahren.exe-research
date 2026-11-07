@@ -8,6 +8,6 @@
 ## rec + 0x1C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3026](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3026-L3026) — - gread(k, v[, L]): VarMap_Set(v は生の名前, rec+0x1C, 1)。3番目の引数は '@' を外さない生のキーで、[rec の文字列] を入れる。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

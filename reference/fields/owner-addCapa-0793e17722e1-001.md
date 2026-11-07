@@ -8,6 +8,6 @@
 ## addCapa + 0x88
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3055](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3055-L3055) — - spot（0x467E90）: addGain +0x80（0x4AC407）、addCastle +0x84（0x4AC4ED）、addCapa +0x88（0x4AC5D3。加算・代入の後に 24 で頭打ち）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

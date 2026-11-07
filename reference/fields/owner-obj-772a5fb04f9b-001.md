@@ -26,7 +26,7 @@
 ## obj + 0x38
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3742](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3742-L3742) — - +4（slot 1）: 0x42E74E / 0x43A3DD / 0x4709D0 の 3 箇所。いずれも iostream の sentry で、`[[obj]+4]+obj+0x38` の streambuf の vf1 を呼んでいる。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 114](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L114-L114) — - 仮想呼び出しの変位で照合: slot 16（+0x40）の呼び出しはない。slot 17（+0x44）は 1 箇所（0x559666、D3D デバイスの vtbl+0x44 = Present）だけ。slot 1（+4）は 3 箇所（0x42E74E / 0x43A3DD / 0x4709D0）あるが、いずれも i
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
@@ -107,13 +107,13 @@
 ## obj + 0xDC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 691](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L691-L691) — - 0x466F60 の呼出元は21箇所。例: Script_DispatchWorldCommand 0x4A92B6 は **0xAB42F8** を渡す（→ scenario の `base_level` を加算）。MercenaryWnd 0x4D7C93 は [esp+0x2C] のオブジェクトを渡す（→ o
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 918](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L918-L918) — - **base_level 経路**（ECX == 0xAB42F8）は `scenario.base_level` を加算する（0x58B916..0x58B94B）。**obj 経路**は obj+0xDC を加算する。この2つは別物で、obj の型は **V**。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 977](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L977-L977) — 2. obj+0xDC の型（雇用・城・傭兵の入口）と、VERIFY の入口4組の引数。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-e4"></a>
 ## obj + 0xE4

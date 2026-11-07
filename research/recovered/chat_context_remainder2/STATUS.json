@@ -1,0 +1,870 @@
+[
+  {
+    "thread_id": "6aeb4da9-7664-83e8-bcda-9853f18824ce",
+    "source_title": "返信文を提案",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "86e1f23c-de77-4449-b34b-c83ee96b64aa",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "7a10df5d-f4e1-44f0-be56-630100c5d00a",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae9ef47-834c-83e8-84ca-9b90ef144611",
+    "source_title": "使い方説明",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/VANISH_TEST_20261104.md",
+    "review_note": "Named test deployment report already preserved.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "906e6899-d676-4c63-b344-3693691f606a",
+        "returned_characters": 1099,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "d903570c-49fb-4b66-ba0b-66963e5e9479",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae9c320-2a78-83e8-a543-6303e5a8c737",
+    "source_title": "差分確認と切り分け",
+    "state": "EXISTING_INDEX_OR_STATUS",
+    "existing_destination": "REF_STARTUP_LOADING.md",
+    "review_note": "Issue20/PR19 historical publication notice; current startup reference already linked.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "4cc70596-20ab-4fec-acd7-a50f9bd4396c",
+        "returned_characters": 556,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "df6be686-c2d2-417c-9430-fbcf5d8afc74",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae9910e-6680-83ec-9b26-d776105c4e67",
+    "source_title": "DAT routine依頼文確認",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/DAT_ROUTINE_BUS.md",
+    "review_note": "Extension implementation handoff; current contract preserved separately.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "832bdd39-47df-4442-9834-fe9c4e93a915",
+        "returned_characters": 1078,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "0153ca5f-e068-4fda-adab-649b078de4dc",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae91ec5-1df4-83ee-946e-32662d9bceb2",
+    "source_title": "召喚戦闘テストDAT作成",
+    "state": "TEST_SETUP_SUMMARY",
+    "existing_destination": "",
+    "review_note": "Complete latest reply is test setup changes, no new runtime result; no original DAT captured.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "c54a69fa-ddc5-4893-b5a6-5345a7c6bd5d",
+        "returned_characters": 835,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "3304f68c-9083-42ff-88e6-28e9ad014afe",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae788a7-c750-83e8-9195-f49d33e72e62",
+    "source_title": "x64dbg MCP解説",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "723f907d-8f1c-464a-8d9c-dfa37da8321b",
+        "returned_characters": 905,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "5ba1e502-10f8-4006-acf5-2302552daf5b",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae74db2-5e04-83e8-89d7-05391850188a",
+    "source_title": "戦闘乗っ取り計画整理",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "d57b07bb-45d1-4a29-a906-8484f6ab5e41",
+        "returned_characters": 1088,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "df796e70-8b61-4f15-a1ac-1e75a66c6b8c",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae6f3fd-97a4-83e8-bbe8-fe63a175c1d7",
+    "source_title": "ツール機能比較",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "0545f53b-f963-4ee7-a025-0751fbceaaa9",
+        "returned_characters": 709,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "e96fae30-3ea5-42a9-9a73-626f3b77b3b4",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae3373e-a980-83e8-86e2-30a570acd6d2",
+    "source_title": "辞書拡張作業依頼",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "af3fe570-21ad-4874-9f4f-dff997515736",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "62b0924b-2f7a-45c7-8fee-32cc713311b3",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae2d552-6a24-83e8-9451-ffed68cee808",
+    "source_title": "解析ツール名回答",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "365403c4-933f-4db0-bac7-0e58f50da520",
+        "returned_characters": 386,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae2ccb9-9a28-83e8-b455-a26f9b263f30",
+    "source_title": "デバッグウィンドウ追加案",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "7d733c49-a85a-45db-a829-f45a294023ab",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "cb85d71c-7241-4835-8b2b-a86ef4f6b64b",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6adc9ca0-c6fc-83e8-9c15-d62160b25d3a",
+    "source_title": "迫真戦記世界観分析",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SIMPLIFIED_CPU_BATTLE_DISC_RESEARCH_20261026.md",
+    "review_note": "Named report is already preserved; prefix is a design summary.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "b33c08c8-20b2-4d01-9e90-b069e3647ad8",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "6d1b5ee6-72b6-40f9-b8bb-8f6c8db0822a",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6adebeaa-eb28-83e8-8b67-205ecd438f1b",
+    "source_title": "信用度回復調査",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/plugin_reports1/reports/UNIT_SAVE_STAT_SNAPSHOT_CROSSWALK_20261026.md",
+    "review_note": "Prefix/table agrees with saved stat snapshot topic; full reply not acquired.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "f7fbf4b9-6f61-4b22-b9c3-f62543486e52",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "b66a78b1-eaf7-4641-b520-50b0e63a9534",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6adac20f-e620-83ee-84c3-8739bb9db7b3",
+    "source_title": "戦闘乗っ取り情報整理",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "8ef9a13b-ccfb-43ce-b3e5-591910190e8b",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "65459723-f337-4a53-a00b-fb3647c66d62",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6adad268-8540-83ee-80c3-bf4b3f62a46f",
+    "source_title": "ゲーム内検索ツール実装方法",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "d6312310-d654-458d-9765-4af31e6be903",
+        "returned_characters": 1057,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "479850c1-7d60-4675-9d4d-82d6a9c77f45",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad84e16-c020-83ee-8fd4-60a5f9e6cc53",
+    "source_title": "雇用画面ファイル特定",
+    "state": "USER_ONLY_RETURNED_WINDOWS",
+    "existing_destination": "",
+    "review_note": "Latest and one cursor window had no assistant reply. Older history not exhausted.",
+    "returned_agent_items": 0,
+    "items": [],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "d7eec1f4-9358-44da-aaa0-0e4151a7c63e",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad8860e-7df8-83ec-8d06-25cec93cbc0b",
+    "source_title": "戦闘遷移解析レポート",
+    "state": "KNOWN_SCOPE_METADATA_ONLY",
+    "existing_destination": "",
+    "review_note": "Prefix contains known 4C28D0 dispatcher-internal findings; no full capture or reconstruction.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "1b3ac455-296c-4339-a972-33372770bd61",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "0cd4d67e-e2e2-4ced-a50a-94ae041ecd70",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad8f7cb-cce8-83ec-b3aa-024cba2635b6",
+    "source_title": "ステータス20倍変更",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "79b4943c-e116-4db7-9b5b-bf02b63803d8",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad8663e-8764-83ee-b218-bf95f456946e",
+    "source_title": "経験値処理解析",
+    "state": "EXISTING_PRIMARY_REUSED",
+    "existing_destination": "research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md",
+    "review_note": "Full selected message reviewed; CP22-24 retained in current primary and five dictionary descriptions refined.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "e6cc09b3-9d36-434d-b82c-57809a80a31f",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "ee30e6e1-0497-4c82-8734-44f564e45d42",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad8a323-3788-83ee-8be9-822ca986d093",
+    "source_title": "枝分かれ · 雇用画面ファイル特定",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "9574b826-8448-4e44-bdba-7c3ab3aa8ec8",
+        "returned_characters": 406,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "873a906a-b7a4-481f-9f88-db843a4bd092",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad5a848-fa50-83e8-8cb6-e0f7b01fdb34",
+    "source_title": "逆コンパイル比較",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/rea_batch10/reports/REA_20261022_0137_T014_STRINGBUF_VTABLE_SLOT_GAP_STATIC.md",
+    "review_note": "Vtable-slot-gap topic located; full reply not acquired, no same-payload claim with held stream studies.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "54fd5653-2b4f-4f7d-8757-13ca6b4ad1e3",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "ebacb2b8-4c48-493b-9019-adb52aaf50e0",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad71188-c464-83ee-98e5-0d3a4dcb5337",
+    "source_title": "関数フック解説",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "48a9e74d-b97b-47a4-b3f2-3a0412be42c9",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "3c74a7b2-148d-45ce-b360-2bb66d46a770",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad74c7c-5ebc-83ee-acb2-394317c57eeb",
+    "source_title": "Ghidra解析環境確認",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md",
+    "review_note": "Four summon callers already in current REF; prefix not a new primary.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "0eca8951-07d6-4e1a-95c0-776534cb75a6",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "015c7a33-c3d4-4f6c-8ce8-9c5fbee9a097",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad73707-bbcc-83ec-b49e-76833c671f95",
+    "source_title": "AI再現可能性の比較",
+    "state": "PUBLIC_SPEC_DISCUSSION_PREFIX",
+    "existing_destination": "",
+    "review_note": "Wiki explanation only; not newly checked against current engine.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "bbc96e72-c8ab-48c5-a617-0145b4689714",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "90082d5a-7103-4bd4-ab57-31b9dab4af6f",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad71e5a-a358-83ee-a747-2820118ff326",
+    "source_title": "作者比較調査",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "67ad9ebf-0981-4e56-ab26-79ac9124ce76",
+        "returned_characters": 755,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad70cd7-8f58-83ec-93c4-3a0b5d85a7c5",
+    "source_title": "代理雇用機能提案",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "8fae12e7-63a0-4107-9faa-99e0827d565e",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "1fe2cf0c-ecec-410b-913c-5e75e0ebb065",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad6444f-a87c-83ec-8f24-43a9b0c979dc",
+    "source_title": "Ghidra Java設定修正",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "913cbe46-5ce6-4dbd-af51-8efcbedfc22a",
+        "returned_characters": 1066,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ad57c66-ecf8-83ee-9285-d4b30970f8fe",
+    "source_title": "大規模プロジェクト認識",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "15903198-ca9f-4c59-8c45-cfa7a46774e9",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "de0b82a3-3077-44c6-8071-881f5ec6fb6c",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acdbf86-c8a0-83ee-ad75-0e58b283873f",
+    "source_title": "作業速度比較",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "07fd4b25-6b06-4ba6-9c8d-a2e605212e83",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "044d5957-ca66-4914-91dc-ae16b1841593",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acdb64f-3fc8-83e8-88d8-bd76f5453244",
+    "source_title": "Wiki DAT研究引継ぎ",
+    "state": "FOLLOWUP_RESULT_SAVED",
+    "existing_destination": "",
+    "review_note": "Latest was user-only; one older cursor yielded complete parser/at-override research summary, selected separately.",
+    "returned_agent_items": 0,
+    "items": [],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "fb92a670-b30c-405f-b3d7-253e3cb18a99",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acda8e8-daa4-83ee-93a7-a1cb0d574e8d",
+    "source_title": "戦闘エンジン実装進捗",
+    "state": "TRUNCATED_RESEARCH_PREFIX_UNRESOLVED",
+    "existing_destination": "",
+    "review_note": "Recovery-pool implementation progress; not fully acquired or adopted. No global or whole-payload hold inferred.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "04ccf6c1-b374-4242-a702-63e937e66ba3",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "ff9f3a2d-1b66-4f8e-87a9-87d9dc46d7fb",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acb64f1-56e4-83ee-bcb9-72b770d3bb87",
+    "source_title": "迫真戦記 原作観測データ4",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "577a1064-b5eb-4a6d-864b-2e29982220a8",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "ee1aa762-3c55-4e54-9e01-1d97669c2e97",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acabcff-40cc-83ee-aef7-741afa3d2c26",
+    "source_title": "逆コンパイルの価値 оценки",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "79324473-9b8a-4a99-814f-896fd8b47bc7",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "3ff5e87c-f474-4897-b266-0045c5371cc7",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ac9222b-7078-83e8-9f60-5d0a859edb6d",
+    "source_title": "迫真戦記 原作観測データ",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "acd473ac-3778-4f59-9756-dae67bc89891",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "4483a0e6-5fb0-417c-91a2-19f1b5766c78",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ac7aa46-0434-83ee-b163-39fb33a5c1f5",
+    "source_title": "逆コンパイル環境の技術選定",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "7ddcbe5b-aef2-4b7e-812e-2eb413bb735b",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "fb93e3e3-9906-47d3-824a-510bb5f98fa7",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6aea2f75-5444-83ee-b09e-4ce089085974",
+    "source_title": "試験DAT追加依頼",
+    "state": "EXISTING_PRIMARY_LOCATED",
+    "existing_destination": "research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_COMPLETION_20261104.md",
+    "review_note": "Named completion report already preserved.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "845cb54c-7254-46c0-94f8-bbd254a0c864",
+        "returned_characters": 302,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "fef11af9-1eb0-4907-a08d-ae9f2299d468",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae9f607-a65c-83ec-aa04-e12b88740897",
+    "source_title": "枝分かれ · 使い方説明",
+    "state": "EXTENSION_IMPLEMENTATION_PREFIX",
+    "existing_destination": "",
+    "review_note": "HakushinExp HXL_Entry ledger description; extension code is a separate repo. Prefix only, no game field/type adoption.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "3f8ea02c-858e-42d0-86c3-293899cdab85",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "a7f1a7d5-4980-470d-8d78-772653821e9e",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6aea0c5a-d020-83ee-9abe-9aff94922c96",
+    "source_title": "枝分かれ · 枝分かれ · 使い方説明",
+    "state": "PUBLIC_SPEC_DISCUSSION_PREFIX",
+    "existing_destination": "",
+    "review_note": "Wiki versus local EXP discussion; preserved CP22-24 remain source-scoped.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "fce37404-aa39-41a6-ad60-4800861f7218",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "eac5b839-9439-4a51-aa21-b637dd070854",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6ae378c0-1e8c-83ee-a84a-1b712d985d50",
+    "source_title": "戦闘置換の難易度",
+    "state": "CONTEXT_OR_OPERATIONS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Latest returned scope is general advice, planning, setup or historical status; older research history not assessed.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "fcc0963f-f14a-406f-8f1d-c4c8c928c1b9",
+        "returned_characters": 1168,
+        "truncated": false
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "21022adf-038f-43da-b643-843c5437901b",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  },
+  {
+    "thread_id": "6acaa822-22cc-83ec-92d6-1e347bb712c9",
+    "source_title": "迫真戦記 原作観測データ2",
+    "state": "IMPLEMENTATION_PROGRESS_PREFIX",
+    "existing_destination": "",
+    "review_note": "Standalone viewer progress; original definition corpus was not captured.",
+    "returned_agent_items": 1,
+    "items": [
+      {
+        "id": "4ced0a6e-abce-4f79-8de0-1483538d49f0",
+        "returned_characters": 1200,
+        "truncated": true
+      }
+    ],
+    "page": {
+      "order": "newest_first",
+      "limit": 1,
+      "nextCursor": "cddbe91b-650f-4957-94be-cdccdbd0b751",
+      "hasMore": true
+    },
+    "scope": "latest one requested turn; cap1200 per item; no tools or attachment bodies"
+  }
+]

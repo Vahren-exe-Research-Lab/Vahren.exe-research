@@ -23,7 +23,7 @@
 ## actor + 0x8C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4183](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4183-L4183) — - 簡易戦闘のユニット（actor+0x8C≠0）は、加算の直後に判定する（0x551FBA → 0x551FD3）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 36](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L36-L36) — - 簡易戦闘のユニット（actor+0x8C≠0）は、加算の直後に判定する（0x551FBA → 0x551FD3）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -119,7 +119,7 @@
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4174](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4174-L4174) — - EDI＝加算先 UnitData（＝actor+0x1C8）、EDX＝加算量、ESI＝context（[esi]＝actor の BattleUnit）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 27](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L27-L27) — - EDI＝加算先 UnitData（＝actor+0x1C8）、EDX＝加算量、ESI＝context（[esi]＝actor の BattleUnit）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -143,7 +143,7 @@
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 28](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L28-L28) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -179,7 +179,7 @@
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 28](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L28-L28) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.

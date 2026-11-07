@@ -8,7 +8,7 @@
 ## Unit + 0x168
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 769](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L769-L769) — - Unit+0x168 summon_max = 0x585AD0(def, "summon_max")。0 なら `unit_summon_min`（0x46F4C0、既定値 1）、負なら 0（0x5729C0..0x572A28）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md 行 12](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md?plain=1#L12-L12) — 内部ではUnit+0x168=Lv、+0x16C=累積EXP、+0x170=次の閾値候補。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
@@ -161,13 +161,13 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1886](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1886-L1886) — - 金額の元は、Unit 登録 GM+0x1EEBDC（0x49E6B0: 名前 → Unit）の **Unit+0x1B4**（部隊の功績。戦闘中に加算される）。def+0x1B4 ではない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1887](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1887-L1887) — - support: help の各 spot について、spot の配下が空で要素も不可視の場合は除く。それ以外は、Σ Unit+0x1B4 × 率 + 0.5 を chop した額を、援軍の勢力が受け取り、防衛側（byte ≠ 0）または攻撃側（byte 0）が支払う。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1888](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1888-L1888) — - arbeit: spot の配下が空で、要素も不可視の spot（傭兵）だけが対象。その set の最初の def の +0x174 に chop(Unit+0x1B4 × 率 + 0.5) を加え、同じ額を勢力が支払う。率が 0 の側は処理しない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 42](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L42-L42) — 0x00493630後半にはUnit関連らしい +0xBC/+0x1B4/+0x78/+0x7A、結果集計、金銭/忠誠・退却・死亡・継承/EXP等の後処理、World dispatcher 0x00432EE0等があり、返るものは結果のboolではなく世界内データの副作用。Unit+0x1B4(功績)とshared d
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
@@ -296,16 +296,16 @@
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 649](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L649-L649) — ### 23.1 Unit+0x1C8 / +0x1CC / +0x1D0 の正体（**C**、Unit 生成 0x56F880 の 0x56FEAF..0x56FEE3）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1083](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1083-L1083) — \| 保存先 \| **def+0x16C**（Unit+0x1C8のdef）。Unitには保持しない \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1126](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1126-L1126) — \| 表示関数 \| 戦闘ステータス欄 0x407300（呼出元 0x4071DA）。選択Unit [0x660F70] → def=Unit+0x1C8（0x4073AE/0x4073B3） \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3335](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3335-L3335) — \| Unit の定義とタグ \| [Unit+0x1C8] → def、def+0x1C のタグ \| T011、§14 \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json 行 95](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json?plain=1#L95-L95) — "Unit+0x1c8 and +0x1d0 may be null or carry runtime-only references",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.

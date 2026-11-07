@@ -32,7 +32,7 @@
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3167](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3167-L3167) — 2. +1 した結果がちょうど wait_time で、かつ sound リスト（Skill+0x30≠+0x34）があれば、FUN_004b9f70 で効果音を鳴らして戻る。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-34"></a>
 ## Skill + 0x34
@@ -220,6 +220,9 @@
 - [research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md 行 7](../../research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md?plain=1#L7-L7) — [PRE-SAVED EXE XREF] target EXE SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（既保存値）。既T012§32 native loader VA0x59CDA3..0x59CDFB（str/ra
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md 行 147](../../research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md?plain=1#L147-L147) — \| `Skill+0x4C`（special） \| 3 \| **合成入力**。`m_heal` に直接指定なし \|
+  制約・訂正　Connector agentMessage Unicode encoded UTF8, not service database bytes. Historical Work parser/synthetic/static-reachability claims; no new native/runtime/type/Golden/READY credit. Full original DAT/property corpus and linked JSON not acquired.
+
 - [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 79](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L79-L79) — _raw_s32(raw_4c,"Skill+0x4C")
   制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
 
@@ -323,9 +326,6 @@
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 - [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 1](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L1-L1) — # B-20261013-1920-02｜T011/T012/T013 Skill+0x74の保存済みnative setterと2消費側接続
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 24](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L24-L24) — [CURRENT BOUNDARY] `Skill+0x74` bounded producer still B-1920-02; cross-lane Work use exact `rush` raw name with parsed int getter, but source→live Skill, @/var
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

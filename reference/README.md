@@ -194,6 +194,7 @@
 | 0x4DEC70 | [Tree_EraseIteratorNode](symbols/004DEC70.md) | func | 部分範囲消去側の単一node削除下位処理。node+0x15のiterator検査、freeとcount条件減算。通常の訓練全消去では必達でない。 |
 | 0x4DEF40 | [Tree_EraseRange](symbols/004DEF40.md) | func | 先頭と終端を受ける範囲消去。全区間では0x4ED030、部分区間では0x4DEC70へ分岐。一般的なABIと異常系は未検証。 |
 | 0x4DFBB0 | [SkillEffectRingRecord_InitializeAndDelegate](symbols/004DFBB0.md) | func | Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY |
+| 0x4E04F0 | [RetreatVoice_Update](symbols/004E04F0.md) | func | RetreatVoiceのTask更新という保存チャットの著者報告。+0x70の負/0/正で待機・再配置・上移動を分け、正のcounterが64を超えると0へ戻す。+0x5Cは減算後0へclamp。表示/音声の実機対応・全ABIは未確認。 |
 | 0x4E4C70 | [Unit_ApplyKnockMovementHelper](symbols/004E4C70.md) | func | ノックバック時の位置移動補助として 0x57AC5C 以降から使われる。移動可能残量の分岐の後で呼ばれる。 |
 | 0x4E4F60 | [SpatialCell_RemoveMatchingPointer](symbols/004E4F60.md) | func | Native branch on +0x3C selects identity-gated scalar clear or matching-pointer vector removal; death/move direct callers; gameplay and ownership VERIFY |
 | 0x4E53B0 | [Unit_RefreshTargetLatch](symbols/004E53B0.md) | func | Unit+0xC の参照元と本人を入力に取り、戻り値を Unit+0x1E570 に保存する処理で使われる。値の厳密な論理名は未確定。 |
@@ -265,13 +266,13 @@
 | 0x54F245 | [Summon_LinkChildCall](symbols/0054F245.md) | code | 通常戦闘の召喚 0x54E7B0 内の 0x5774A0(parent, child) 呼び出し。このとき召喚に使ったスキルが呼び出し元の [esp+0x44]（呼ばれた側の [esp+0x50]）にある。スキルのデータの先頭 +0x00 はキー名の std::string。 |
 | 0x5501A0 | [Rush_UpdateFrame](symbols/005501A0.md) | func | Rush の vtable +0x04 に登録された更新処理。GameTask 側の仮想更新ゲートから呼ばれる。 |
 | 0x550D80 | [Damage_ComputeSkillStrength](symbols/00550D80.md) | func | Skill+0x27C の str mode 1〜5を解釈し、Unit能力値と +0x280/+0x288 の係数から攻撃基礎値を作る。 |
-| 0x550E70 | [Damage_ComputeAttackDefense](symbols/00550E70.md) | func | 攻撃と防御に別々の乱数を掛けて差を求め、耐性・距離・最低値の特殊分岐を処理する中核。耐性10はゼロ、耐性0は特殊な大値となる。 |
+| 0x550E70 | [Damage_ComputeAttackDefense](symbols/00550E70.md) | func | 攻撃と防御に別々の乱数を掛け、耐性・距離・最低値の分岐を処理する中核。確認経路ではHP用補正値とEXPへ渡す保持計算値を分ける。実際に減ったHPだけからEXPを再計算する処理ではない。耐性10はゼロ、耐性0は特殊な大値。 |
 | 0x5510E5 | [Damage_ZeroOnFullResistance](symbols/005510E5.md) | code | ダメージ計算中に耐性index10で最終値をゼロにし、通常の最低ダメージ補正を通さない分岐。 |
-| 0x551167 | [Damage_ExpAwardCall](symbols/00551167.md) | code | ダメージ処理 0x550E70 内の 0x551E50(victim, damage, victim最大HP) 呼び出し。攻撃した側は [ctx]、スキルは [ctx+8]。1 ヒットごとに必ず通る（exp_per=off でも）。 |
-| 0x551490 | [Skill_ApplyHealStatus](symbols/00551490.md) | func | 回復・状態変更の共通処理。Skill+0x158 の add2 由来リストを参照する経路を持つ。 |
+| 0x551167 | [Damage_ExpAwardCall](symbols/00551167.md) | code | 0x550E70内の経験値helper呼出位置。確認経路ではHP変更後、保持した攻撃計算値EDIと対象UnitData+0x178を渡す。実HP減少量へ分子を切り詰めない。actor=[ctx]、skill=[ctx+8]、獲得可否のgateはcallee側。 |
+| 0x551490 | [Skill_ApplyHealStatus](symbols/00551490.md) | func | 回復・状態変更の共通処理。Skill+0x158のadd2由来リストを参照する経路を持つ。EXPへは上限調整前の計算量を渡す。同一contextを再利用する複数項目処理は、外部resetがなければ項目数ぶんの再加算にはならない。 |
 | 0x551574 | [Skill_ReadAdd2RuntimeVector](symbols/00551574.md) | code | 回復・状態処理が Skill+0x158 の add2 リストを読み始める位置。 |
-| 0x551C6A | [StatusSkill_ExpAwardCall](symbols/00551C6A.md) | code | 0x551490 内の 0x551E50(receiver, amount, …) 呼び出し。補助スキルが 1 体に効くごとに通る。 |
-| 0x551E50 | [Hit_LinkedAward](symbols/00551E50.md) | func | 戦闘中の経験値の付与 |
+| 0x551C6A | [StatusSkill_ExpAwardCall](symbols/00551C6A.md) | code | 0x551490の回復・状態変更経路から経験値helperを呼ぶ位置。元の計算量を渡し、実回復量への差替えではない。同一context再使用時の重複防止gateはcallee側にあり、項目ごとの呼出を獲得回数と同一視しない。 |
+| 0x551E50 | [Hit_LinkedAward](symbols/00551E50.md) | func | 戦闘中の経験値付与。確認経路ではcontext+0xCの重複防止gateを持つ。heal(kind3)の割合は固定2%で、実回復量への単純比例ではない。対象選別・所属・exp_per等の条件は別に残る。 |
 | 0x551FB2 | [Hit_LinkedAward_AddExp](symbols/00551FB2.md) | code | 0x551E50 内の経験値加算 add [edi+0x16C],edx（6バイト）。EDI=加算先 UnitData、EDX=量、ESI=context（[esi]=actor）。DLL のフック候補。 |
 | 0x552EF0 | [Summon_DispatchAlternativeSkill](symbols/00552EF0.md) | func | 0x553390 を呼ぶ種別4の上流分岐。技能種別と後続召喚経路を結ぶ。 |
 | 0x553390 | [Summon_ProcessAlternativeKind4](symbols/00553390.md) | func | もう一方の召喚処理 producer。Skill+0x74 の繰り返しや零値fallbackを含み、0x577310 に記録を渡す。 |
@@ -283,6 +284,7 @@
 | 0x555F19 | [Main_MessageLoop](symbols/00555F19.md) | code | メインスレッドのメッセージループ |
 | 0x55A000 | [Unit_DestroyStaticVariant](symbols/0055A000.md) | func | 静的ユニット系の破棄処理。共通 BattleUnit 破棄関数 0x543E00 を呼び出す。 |
 | 0x55B010 | [Unit_DeleteStaticVariant](symbols/0055B010.md) | func | 静的ユニット系の deleting destructor 相当。flag の bit0 が立つ場合にオブジェクト本体も解放する。 |
+| 0x55B030 | [SimpleStaticUnit_Disable](symbols/0055B030.md) | func | SimpleStaticUnitのvirtual+0x58に対応する無効化処理。保存済み局所報告ではUnit+0x1867Cが非0なら復帰し、0なら1を設定して0x49D9F0、0x4E4F60を呼ぶ。各calleeの全副作用、型/実機動作は未確認。 |
 | 0x55B590 | [StatusWnd_Hide](symbols/0055B590.md) | func | 詳細パネルを閉じる（StatusWnd 系の仮想関数 vf04） |
 | 0x55B5B0 | [StatusWnd_OpenForUnit](symbols/0055B5B0.md) | func | 詳細パネル（ボタンあり）をユニットで開く |
 | 0x55BAB0 | [TempStatusWnd_OpenForUnit](symbols/0055BAB0.md) | func | 一時の詳細パネルをユニットで開く（表示状態 0x80000008 を渡す）。先に閉じる→0x8BCF00設定→組立て0x55BC60を1回→表示。所要は初回のユニット52〜435ms（中央値128）、2回目以降24〜90ms（中央値44） |
@@ -347,7 +349,7 @@
 | 0x57DF90 | [Status_ApplyNaturalRecovery](symbols/0057DF90.md) | func | 行動カウントに連動して HP/MP と7つの状態ゲージを回復し、unit_status_hp をゲージ上限にする。 |
 | 0x57E1D0 | [Unit_ExecuteActionRoute](symbols/0057E1D0.md) | func | Unit の戦闘行動処理経路の一つ。ダメージ計算 0x550E70 への呼び出し元を含む。 |
 | 0x57E4E0 | [Unit_RefreshActionSearch](symbols/0057E4E0.md) | func | Unit+0x1E534 を探索閾値にして 0x57B870 を呼び、ターゲット再探索を強制する経路を持つ。 |
-| 0x57EB40 | [Unit_DispatchBattleAction](symbols/0057EB40.md) | func | 探索更新後の行動候補を処理し、戻り値 AL の成功・失敗で上位側が分岐する。呼び出し側には mode 0 と mode 1 の経路がある。 |
+| 0x57EB40 | [Unit_DispatchBattleAction](symbols/0057EB40.md) | func | 探索更新後の行動候補を処理し、ALを上位分岐に使う。保存済み著者報告では射撃ラッチ2を設定してAL=0で早期returnし、後続MP減算へ進まない経路がある。ALだけを攻撃成功/失敗へ一律対応させない。mode0/1のcaller経路は別。 |
 | 0x57F570 | [Skill_EvaluateSupportCandidate](symbols/0057F570.md) | func | 支援技能の候補キャッシュを参照し、空なら失敗を返す。MPと射程による後段フィルタに接続する。 |
 | 0x57FC90 | [Skill_EvaluateSupportAlternative](symbols/0057FC90.md) | func | 支援候補キャッシュを用いる別の技能実行経路。候補が空なら早期失敗し、射程・MPなどを再評価する。 |
 | 0x57FFD0 | [Skill_ExecuteAllfuncKind2](symbols/0057FFD0.md) | func | kind2 技能で allfunc が指定された場合の候補ループと乱数・MP境界を扱う。通常AIの直接技能選択とは別段階。 |
@@ -516,7 +518,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7788 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7798 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -533,12 +535,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 503 件、フィールド 122 件、根拠付き関係 165 件。
+辞書項目 505 件、フィールド 122 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 74855 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 74903 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 16 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 17 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2382 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2385 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

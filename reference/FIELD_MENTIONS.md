@@ -417,6 +417,7 @@
 | def + 0x1D0 | 2 | [1](fields/owner-def-cb8379ac2098-002.md#field-1d0) |
 | deferred + 0x54 | 1 | [1](fields/owner-deferred-a706016085b2-001.md#field-54) |
 | definition + 0x40 | 1 | [1](fields/owner-definition-4c4ed1afbfda-001.md#field-40) |
+| definition + 0x70 | 1 | [1](fields/owner-definition-4c4ed1afbfda-001.md#field-70) |
 | definition + 0x74 | 1 | [1](fields/owner-definition-4c4ed1afbfda-001.md#field-74) |
 | definition + 0x78 | 2 | [1](fields/owner-definition-4c4ed1afbfda-001.md#field-78) |
 | definition + 0x1D0 | 1 | [1](fields/owner-definition-4c4ed1afbfda-001.md#field-1d0) |
@@ -1735,6 +1736,7 @@
 | residue + 0x10 | 1 | [1](fields/owner-residue-de790defb852-001.md#field-10) |
 | resolved + 0x1A4 | 1 | [1](fields/owner-resolved-dc676b428599-001.md#field-1a4) |
 | result + 0x194 | 4 | [1](fields/owner-result-f6a214f7a5fc-001.md#field-194) |
+| RetreatVoice + 0x70 | 1 | [1](fields/owner-RetreatVoice-72893f6eae8d-001.md#field-70) |
 | return + 0x1D | 2 | [1](fields/owner-return-7187f0675eb3-001.md#field-1d) |
 | return + 0x20 | 1 | [1](fields/owner-return-7187f0675eb3-001.md#field-20) |
 | return + 0x48 | 1 | [1](fields/owner-return-7187f0675eb3-001.md#field-48) |
@@ -1840,8 +1842,8 @@
 | Skill + 0x40 | 30 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-40) |
 | Skill + 0x44 | 3 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-44) |
 | Skill + 0x48 | 6 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-48) |
-| Skill + 0x4C | 44 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-4c) |
-| Skill + 0x74 | 31 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-74) / [2](fields/owner-Skill-6df1bb18a59a-002.md#field-74) |
+| Skill + 0x4C | 45 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-4c) |
+| Skill + 0x74 | 32 | [1](fields/owner-Skill-6df1bb18a59a-001.md#field-74) / [2](fields/owner-Skill-6df1bb18a59a-002.md#field-74) |
 | Skill + 0x78 | 14 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-78) |
 | Skill + 0x7C | 1 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-7c) |
 | Skill + 0x80 | 2 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-80) |
@@ -1855,7 +1857,7 @@
 | Skill + 0x130 | 2 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-130) |
 | Skill + 0x134 | 14 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-134) |
 | Skill + 0x13C | 4 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-13c) |
-| Skill + 0x14C | 12 | [1](fields/owner-Skill-6df1bb18a59a-002.md#field-14c) / [2](fields/owner-Skill-6df1bb18a59a-003.md#field-14c) |
+| Skill + 0x14C | 12 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-14c) |
 | Skill + 0x158 | 8 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-158) |
 | Skill + 0x15C | 2 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-15c) |
 | Skill + 0x194 | 1 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-194) |
@@ -1869,11 +1871,11 @@
 | Skill + 0x208 | 2 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-208) |
 | Skill + 0x20C | 2 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-20c) |
 | Skill + 0x210 | 6 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-210) |
-| Skill + 0x230 | 14 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-230) |
+| Skill + 0x230 | 15 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-230) |
 | Skill + 0x234 | 3 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-234) |
 | Skill + 0x238 | 1 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-238) |
-| Skill + 0x248 | 16 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-248) |
-| Skill + 0x24C | 3 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-24c) / [2](fields/owner-Skill-6df1bb18a59a-004.md#field-24c) |
+| Skill + 0x248 | 18 | [1](fields/owner-Skill-6df1bb18a59a-003.md#field-248) / [2](fields/owner-Skill-6df1bb18a59a-004.md#field-248) |
+| Skill + 0x24C | 3 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-24c) |
 | Skill + 0x250 | 4 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-250) |
 | Skill + 0x254 | 3 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-254) |
 | Skill + 0x258 | 1 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-258) |
@@ -1884,11 +1886,11 @@
 | Skill + 0x26F | 2 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-26f) |
 | Skill + 0x270 | 6 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-270) |
 | Skill + 0x274 | 4 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-274) |
-| Skill + 0x278 | 20 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-278) |
+| Skill + 0x278 | 21 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-278) |
 | Skill + 0x27C | 9 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-27c) |
 | Skill + 0x280 | 17 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-280) |
-| Skill + 0x288 | 20 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-288) |
-| Skill + 0x290 | 4 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-290) / [2](fields/owner-Skill-6df1bb18a59a-005.md#field-290) |
+| Skill + 0x288 | 20 | [1](fields/owner-Skill-6df1bb18a59a-004.md#field-288) / [2](fields/owner-Skill-6df1bb18a59a-005.md#field-288) |
+| Skill + 0x290 | 4 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-290) |
 | Skill + 0x294 | 3 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-294) |
 | Skill + 0x2A0 | 3 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-2a0) |
 | Skill + 0x2A8 | 17 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-2a8) |
@@ -1899,7 +1901,7 @@
 | Skill + 0x3B0 | 1 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-3b0) |
 | Skill + 0x3C8 | 1 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-3c8) |
 | Skill + 0x3E8 | 3 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-3e8) |
-| Skill + 0x6F0 | 6 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-6f0) |
+| Skill + 0x6F0 | 9 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-6f0) |
 | Skill + 0x6F4 | 4 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-6f4) |
 | Skill + 0x9F4 | 2 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-9f4) |
 | Skill + 0x9F5 | 1 | [1](fields/owner-Skill-6df1bb18a59a-005.md#field-9f5) |
@@ -2333,7 +2335,7 @@
 | Unit + 0x214 | 4 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-214) |
 | Unit + 0x21C | 1 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-21c) |
 | Unit + 0x220 | 2 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-220) |
-| Unit + 0x228 | 12 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-228) / [2](fields/owner-Unit-4e545960f1bf-006.md#field-228) |
+| Unit + 0x228 | 11 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-228) / [2](fields/owner-Unit-4e545960f1bf-006.md#field-228) |
 | Unit + 0x230 | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-230) |
 | Unit + 0x2FC | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-2fc) |
 | Unit + 0x430 | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-430) |
@@ -2342,6 +2344,7 @@
 | Unit + 0x540 | 4 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-540) |
 | Unit + 0x5AC | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-5ac) |
 | Unit + 0x5B0 | 2 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-5b0) |
+| Unit + 0x6CC | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-6cc) |
 | Unit + 0x738 | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-738) |
 | Unit + 0x800 | 6 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-800) |
 | Unit + 0x878 | 3 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-878) |
@@ -2373,7 +2376,7 @@
 | Unit + 0x186CC | 2 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186cc) |
 | Unit + 0x186D0 | 1 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d0) |
 | Unit + 0x186D4 | 5 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d4) |
-| Unit + 0x186D8 | 3 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d8) |
+| Unit + 0x186D8 | 2 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d8) |
 | Unit + 0x186DC | 1 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186dc) |
 | Unit + 0x186E4 | 1 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186e4) |
 | Unit + 0x1E49C | 2 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-1e49c) |

@@ -420,4 +420,19 @@
   本文 SHA256 `f82a9b7ac3b6ff18d036a162ca0510e3e67479677c058d3265a32cb7b58f62b5`
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6606124364</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2429-L2429)。
 
+- [今回の新しい確認：SickFlashの位置更新](../../research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md?plain=1#L1-L1) — `research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_VARIANT。以前の収録状況 Fixed 8 unselected REA-title chats; no exact raw/destination SHA in baseline2428。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2430-L2430)。制約・訂正 Returned agent-message UTF8 representation, not original wire bytes; full returned message only; quoted historical author STATIC/PASS claims not rerun; no linked original/native/Library acquisition; no type/ABI/runtime/Golden/READY promotion; current corrections prevail
+  本文 SHA256 `14d1271729aebdd33e90a55f8de9e29c4fa440a1d205ca40290830d7018fd5cc`
+  元パス <code>chatgpt://6acd004b-c5f8-83e8-bb8d-fbf919259c27/messages/b31243e0-a304-4265-b43f-7866611b9172</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2430-L2430)。
+
+- [研究Bをさらに進めました](../../research/recovered/chat_b_remainder2/reports/B_20261013_SKILL_HANDLERS_CHAT.md?plain=1#L1-L1) — `research/recovered/chat_b_remainder2/reports/B_20261013_SKILL_HANDLERS_CHAT.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 EXTERNAL_CHAT_MESSAGE_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2431-L2431)。制約・訂正 Provider agentMessage.text Unicode encoded UTF8, not serverDB raw. One profile span replaced; all byte gaps exact. Historical static author summary only; no native/linked/source execution or ABI/type/Golden/READY promotion. Turn times are not individual message times.
+  本文 SHA256 `b1c42cdaad517d52e7eb5baae6d185bc020865dee8857e465f535219f4c91843`
+  元パス <code>chatgpt://6ac95c4a-db44-83ec-80c6-2c960e4200f6/messages/b4c99dee-0a74-46af-9391-733243bc7c5f</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2431-L2431)。
+
+- [最新の進捗を確認](../../research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md?plain=1#L1-L1) — `research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNSELECTED_PROJECT_CONTEXT_CHAT_FOLLOWUP。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2432-L2432)。制約・訂正 Connector agentMessage Unicode encoded UTF8, not service database bytes. Historical Work parser/synthetic/static-reachability claims; no new native/runtime/type/Golden/READY credit. Full original DAT/property corpus and linked JSON not acquired.
+  本文 SHA256 `fc8c345c4d769cc7d782de127e479cab35bda5a73016db6083a64ffadecb0c95`
+  元パス <code>chatgpt://6acdb64f-3fc8-83e8-88d8-bd76f5453244/messages/ebf82892-6bb3-4d89-a410-e870669cc768</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2432-L2432)。
+
 [前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

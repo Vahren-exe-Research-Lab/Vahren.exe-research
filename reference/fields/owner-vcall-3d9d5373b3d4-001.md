@@ -14,7 +14,7 @@
 ## vcall + 0x54
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1355](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1355-L1355) — \| 42 showSpot \| 名前ごとに 0x467E90 で spot を解決（失敗なら無視）。GM+0x1EEBCC の要素マップに無ければ作成（0x5A8110）して表示（vcall +0x54） \| 0x4A2F00.. 疑似C \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-5c"></a>
 ## vcall + 0x5C

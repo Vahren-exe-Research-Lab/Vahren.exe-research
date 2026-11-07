@@ -1,0 +1,26 @@
+{
+  "scope": "Parent-reported aggregate triage of existing default Claude CLI session location; this subagent did not read local session files or acquire CLI bodies",
+  "default_location_role": ".claude/projects (default local storage only; not all CLI installations/history)",
+  "jsonl_sessions": 32,
+  "jsonl_bytes": 8109693,
+  "json_parse_errors": 0,
+  "decoded_unicode_casefold_related_marker_sessions": 9,
+  "marker_terms": [
+    "_redev_research",
+    "hakushin",
+    "peer_script01",
+    "vahren",
+    "迫真戦記"
+  ],
+  "assistant_marker_headers_reviewed_by_parent": 6,
+  "header_max_characters": 700,
+  "short_headers_complete": 4,
+  "long_headers_prefix_only": 2,
+  "observed_header_roles": "x32dbg state/thread/register/CallStack/module-base/tool-list diagnostic fragments",
+  "reusable_independent_function_memory_report_or_save_locator_identified_in_reviewed_headers": false,
+  "remaining_scope": "Not all assistant statements within9candidates reviewed;23nonmatching sessions not body-reviewed; default-store and marker matching do not prove research absence or complete history",
+  "raw_session_user_tool_or_dump_bodies_saved_to_git": 0,
+  "raw_bytes_zero_marker_result": "SUPERSEDED_INVALID_AS_COMPLETENESS_TEST; escaped Unicode was missed; not used",
+  "evidence_basis": "Parent communication aggregate final correction32/9/6 on2026-11-05; no independently read session-body evidence or source-author inference",
+  "scope_state": "LIMITED_TRIAGE_NO_REPORT_IDENTIFIED_NOT_NO_RESEARCH_HISTORY"
+}

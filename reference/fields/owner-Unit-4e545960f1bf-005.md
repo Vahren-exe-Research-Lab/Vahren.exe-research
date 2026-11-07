@@ -68,7 +68,7 @@
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md 行 51](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L51-L51) — - 現状`Unit+0x1D0`の意味を「召喚者リンク」と断定しない。既存T013・召喚系B/REAの参照を重複照合したのち適切なruntime親IDを取得する。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -194,7 +194,7 @@
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-1e0"></a>
 ## Unit + 0x1E0
@@ -230,16 +230,16 @@
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3547](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3547-L3547) — - Work の native モデル（`native_unit_tick` の engine = Unit+0x1E0）とは一致している。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3579](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3579-L3579) — - 読む値: G の +8 と +0x1EF144、E の +0x1EEC3C/40/44/48、+0x1EED18〜60、+0x1EEDB8、陣営スロットとその Unit 数、タスクの種類別の数、`Unit+0x1E0 == E` かどうか。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3595](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3595-L3595) — - 戦闘中、`Unit+0x1E0 == G+0x504` が True だった。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L6-L6) — - POSTLETHAL CALLER A: 0x544CA5 PUSH 1; 0x544CA7 PUSH 0; 0x544CA9 PUSH 0; 0x544CAB SUB ESP,0x1C (string); 0x544CC1 PUSH [Unit+0x1E0]; 0x544CC2 CALL 0x4321B0。入口S
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
@@ -257,7 +257,7 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-1f8"></a>
 ## Unit + 0x1F8
@@ -323,7 +323,7 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3519](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3519-L3519) — - Unit+0x214 は突進中も動かない。表示上の矩形だけが動く。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_MODE6_FTOL_20261011.md 行 38](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_MODE6_FTOL_20261011.md?plain=1#L38-L38) — - Skill+0x250==0ならVA0x551044から0x5510E1へ分岐し、距離sqrt・倍率・新たなint convertを**まるごとskip**。+0x250非zeroではsource/target x/y(Unit+0x214/+0x218)の符号付き32bit差を取り、2つのIMULとADDの低32
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded

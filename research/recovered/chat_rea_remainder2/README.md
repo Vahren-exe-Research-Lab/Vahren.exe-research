@@ -1,0 +1,17 @@
+# REA題名8チャットの最新窓確認
+
+基準2919666733f4784f10c86813502d17d152fbf5ac、root台帳2428行。旧STATUSのaccepted_selected_messages=0、recorded_whole_message_deferrals=0、RESEARCH_OR_AUDIT_TITLE_LEAD、題名REAという固定8件だけを対象とした。
+
+各read_threadは最新turnLimit1/includeOutputs=false/maxOutputCharsPerItem1200。8呼出しから26 agent itemsが返り、24 itemsはprovider truncated=true。古い2chatsは1turnに各10agent itemsを含んだ。hasMore=falseでもmessage切詰めは残る。最新窓は全履歴・全添付の完全回収を意味しない。previewは本文支持として追加採用していない。
+
+保存1発言、本文1ファイル、個人パスだけの全体variant1、whole known-scope保留0。残り7chatsは取得窓のstatus/案内・既存primaryに対応する題名/時刻の報告として判定した。切詰めた末尾や未追跡cursorを無内容/安全と判定していない。新発見数・全chat完了数には数えない。
+
+保存候補は親へID/理由を先に報告し、同一messageだけmax6000で追加取得した。5125文字、provider truncated=falseで全返却本文をreviewし、原文の個人絶対path1spanだけ置換した。元テキストをUTF8化したidentityであり、serverのraw wire bytesのidentityではない。PRIVACY_SPANSにtokenSHAとbyte offsets・前後一致の証明がある。改行・他の文字は保持した。
+
+当該messageはSickFlash/RetreatVoice/SimpleStaticUnit等の局所更新と短い選別proofを含む。Task型別vtable定数はあるが、既知4C28D0 traversal/NULL/compaction/mergeや4BC9C0 removalの内部payloadを再構成しない。SOURCE_RECOVERY_DAMAGE_STATUSという未取得compositeやDEATH64 refusalへの参照はopaqueのまま維持し、過去受理/著者statusによるhold解除はしない。linked body・Library・native・元PC・code・assets・DB・archiveの取得/実行なし。
+
+FUNCTION_CANDIDATESの3件は著者報告へ接続する採録候補で、coreへ反映していない。当該message自身にver0.67/EXE SHAの明示はなく、正式採録時の対象build対応は別途確認が必要。現行root REF_*.md/symbols/structs/relationsで4E04F0/589150/55B030/4E0380のliteral検索は0hitだったが、全保存本文に意味がないとは断定しない。静的照合28/28や7成果保存、原作Golden0等は当時の著者主張のみ。新テスト・実機確認・ABI/型/READY昇格なし。
+
+既存primary14 locatorは台帳と保存先SHAを確認したmetadata対応であり、切詰めchat全文との意味同一証明ではない。STATUS/REVIEW_IDENTITYに26窓・未追跡cursorを残した。共有/core/Git変更なし。OUTPUT_MANIFESTは自身を除く出力をhashする。
+
+後続: [指定6保存資料の限定追跡](FOLLOWUP.md)で55B030の既存primary重複、4E04F0の版/VA metadata橋渡し、589150の版未解決を区別した。候補の最新判定はFUNCTION_CANDIDATESのfollowup列を参照。

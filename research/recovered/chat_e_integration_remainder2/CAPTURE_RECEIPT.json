@@ -1,0 +1,62 @@
+{
+  "baseline": "2919666 (parent-supplied HEAD short ID)",
+  "root_ledger_rows": 2428,
+  "root_ledger_sha256": "6db81c5846985ab54d4d39221ee4a0a9dd76fbfc14c17532353be33c51bd01e0",
+  "frozen_status_sha256": "1676ff836d255a42b02d8ce8282704cc90a3bd4369e99fe77c49a877a22dc175",
+  "old_catalog_sha256": "f14e3bd401a836039f678e9238c6490e2200385efb0fbb602e62f626ec679cf4",
+  "selected_threads": 24,
+  "read_thread_calls": 24,
+  "request": {
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 1200,
+    "cursor": null
+  },
+  "receipt_utc": "2026-11-05T12:23:31.415038+00:00",
+  "latest_agent_returned": 21,
+  "user_only_latest_turn": 3,
+  "latest_at1200_cap": 14,
+  "states": {
+    "STATUS_OPS_OR_FAILURE_HEADER_NO_ARCHIVE": 11,
+    "NO_AGENT_IN_RETURNED_LATEST_TURN": 3,
+    "RESEARCH_HEADER_EXISTING_SOURCE_OR_UNRESOLVED_REMAINDER": 9,
+    "PRACTICAL_RESEARCH_CANDIDATE_SELECTIVE_ACCESS_REQUIRED": 1
+  },
+  "accepted_body_captures": 0,
+  "whole_message_holds_newly_adjudicated": 0,
+  "specific_useful_candidate_pending": 1,
+  "source_hash_scope": "Returned Unicode UTF8; capped text hashes are prefix-only, not full source hashes",
+  "cursor_calls": 0,
+  "fuller_window_calls": 0,
+  "library_original_native_linked_source_acquisitions": 0,
+  "user_tool_attachment_bodies_selected_or_saved": 0,
+  "extra_nonlatest_ordering_check_headers": [
+    {
+      "thread_id": "6aea0b19-a4dc-83ee-a15c-24f3fec315f3",
+      "message_id": "99addf7b-9b19-4b05-9b78-374d54f81396",
+      "scope": "First-item800-character header displayed during response ordering check; not used as latest and not preserved"
+    },
+    {
+      "thread_id": "6ae7b594-2590-83e8-ab9f-621efd8ea945",
+      "message_id": "88fe0ad7-c9db-47c3-8b2e-b08f64f98a9f",
+      "scope": "First-item800-character header displayed during response ordering check; not used as latest and not preserved"
+    },
+    {
+      "thread_id": "6adadc63-dfe4-83e8-899f-8a874548e601",
+      "message_id": "d63cd8ee-d3d8-447d-8178-4bced4f3626b",
+      "scope": "First-item800-character header displayed during response ordering check; not used as latest and not preserved"
+    },
+    {
+      "thread_id": "6ad112da-ef80-83e8-96b0-fc863a1ea725",
+      "message_id": "f2985c5c-7070-4759-aa6f-4d5bc65a281d",
+      "scope": "First-item800-character header displayed during response ordering check; not used as latest and not preserved"
+    },
+    {
+      "thread_id": "6acd9e5c-191c-83ee-af0a-09044a76572a",
+      "message_id": "04b493ce-9d9a-4a79-981f-7d2df6e041db",
+      "scope": "First-item800-character header displayed during response ordering check; not used as latest and not preserved"
+    }
+  ],
+  "limits": "Other returned agent prefixes were not systematically reviewed or preserved. Only last agent item represents latest when present; returned page flags do not prove full service/conversation completeness.",
+  "shared_core_git_mutations": 0
+}

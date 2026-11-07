@@ -10,6 +10,12 @@
 - [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 6](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L6-L6) — - STATIC CALL site 0x550219 -> 0x54E7B0: [definition+0x40]==4側の生成処理。これ以外の分配には 0x55037F -> 0x580280 のCALLが存在。単純に両方常時実行ではない。
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-70"></a>
+## definition + 0x70
+
+- [research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md 行 44](../../research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md?plain=1#L44-L44) — \| `definition+0x70 == 2` \| `t_retmsgf` \|
+  制約・訂正　Returned agent-message UTF8 representation, not original wire bytes; full returned message only; quoted historical author STATIC/PASS claims not rerun; no linked original/native/Library acquisition; no type/ABI/runtime/Golden/READY promotion; current corrections prevail
+
 <a id="field-74"></a>
 ## definition + 0x74
 
