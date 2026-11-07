@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## dest + 0x10
+
+- [research/recovered/b_batch8/data/T013_CASE8_STRING_FIRST_ELEMENT_COPY_20261024_05H.md 行 8](../../research/recovered/b_batch8/data/T013_CASE8_STRING_FIRST_ELEMENT_COPY_20261024_05H.md?plain=1#L8-L8) — [NEW-3 SOURCE TYPE] 0x402710のnative 0x40271C source+0x10長を取得、0x402721 position範囲検査、0x40272F～0x402739でcopy長min(srcLen-pos,count)を生成。0x40276B/0x402785/0x4027B7でde
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-40"></a>
+## dest + 0x40
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L5-L5) — [RELEASE/RESET] 0x4DFBBA byte[EDI+0x78] !=0ならEDI+0x6CをESIへ、0x4DFBC4 byte[EDI+0x78]=0→0x4DFBC7 call0x41E160。旧レコードの登録解除・所有者解放までの正確な意味はcallee UNKNOWN。0x4DFBD0..0x4
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-6c"></a>
 ## dest + 0x6C
 
@@ -16,8 +28,20 @@
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L7-L7) — [METRICS/END] dest+0x6C linked recordのaxis span([+48]-[+40], [+4C]-[+44])と初期dest spanを符号付きabs様演算で比較。X/Y各差のおよそ半分を0x4DFCA1 dest+0x70／0x4DFCBB dest+0x74に書込（正確にはx86
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-74"></a>
+## dest + 0x74
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L7-L7) — [METRICS/END] dest+0x6C linked recordのaxis span([+48]-[+40], [+4C]-[+44])と初期dest spanを符号付きabs様演算で比較。X/Y各差のおよそ半分を0x4DFCA1 dest+0x70／0x4DFCBB dest+0x74に書込（正確にはx86
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-78"></a>
 ## dest + 0x78
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L6-L6) — [COPY/FLAGS] 0x4DFC23 cmp arg2 (EBP) vs0、positiveの場合だけarg1(0x4DFC27 mov EAX,[ESP+14])を24byte strideでarg2件コピーしてdest+0x84以下へ連続配置する。各recordはDWORD6個を同offsetでcopy、so
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-84"></a>
+## dest + 0x84
 
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L6-L6) — [COPY/FLAGS] 0x4DFC23 cmp arg2 (EBP) vs0、positiveの場合だけarg1(0x4DFC27 mov EAX,[ESP+14])を24byte strideでarg2件コピーしてdest+0x84以下へ連続配置する。各recordはDWORD6個を同offsetでcopy、so
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained

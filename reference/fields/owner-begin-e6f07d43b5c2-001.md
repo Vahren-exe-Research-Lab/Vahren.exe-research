@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20"></a>
+## begin + 0x20
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1386](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1386-L1386) — [NEW DELTA/EVIDENCE] `data/T031_RANDOM_EVENT_SCHEDULER.md`同ID節。保存 `exe/T031_PHASE_PREDICATE_HANDLERS.txt` VA0x44F6A8..0x44F6DE、既知isComTurn opcode12の詳細：engine+1E
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-38"></a>
 ## begin + 0x38
 

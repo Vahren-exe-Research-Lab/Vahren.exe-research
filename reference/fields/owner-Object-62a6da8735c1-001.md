@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-94"></a>
+## Object + 0x94
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 23](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L23-L23) — 0x00583C70: 暗黙入力Object+0x94が0なら Object+0x1A4 を起点に+0x2F0の木/コンテナを走査し、条件付きで0x00597B00を呼ぶ。fallbackはObject+0x1A4+0x58。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-b0"></a>
+## Object + 0xB0
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 22](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L22-L22) — 0x00597B00: 暗黙入力Object+0xB0を起点に、その+0x2E0の木/コンテナを走査。条件付きで要素node[10]を返し、候補がなければObject+0xB0+0x58を返す。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1a4"></a>
 ## Object + 0x1A4
 

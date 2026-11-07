@@ -16,6 +16,18 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 199](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L199-L199) — [CONFIRMED-SAVED-NATIVE] common save writer `0x46067D..0x460687` はWriteFile(handle ebp, buffer eax, size ebx, bytesWritten=&stack+0x20, overlapped=0)を呼ぶ。直後 `0x4
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+<a id="field-6f"></a>
+## stack + 0x6F
+
+- [research/recovered/tests_batch5/T020_E_T028_POSTRELEASE_NOTIFY_ACCEPTANCE_20261030_04H.md 行 10](../../research/recovered/tests_batch5/T020_E_T028_POSTRELEASE_NOTIFY_ACCEPTANCE_20261030_04H.md?plain=1#L10-L10) — - `0x495586` と `0x49558C` はESI+0x77またはESI+0x75の非0を要求、`0x495596` はstack+0x6F非0を要求。どちらか不成立なら `0x49516F` の次要素経路へ。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-74"></a>
+## stack + 0x74
+
+- [research/recovered/ac_tests6/reports/T020_T028_TREE_FLAG_AGGREGATION_PROVENANCE_20261028_02H.md 行 11](../../research/recovered/ac_tests6/reports/T020_T028_TREE_FLAG_AGGREGATION_PROVENANCE_20261028_02H.md?plain=1#L11-L11) — [PROVENANCE GUARD] node+0x14をUnitステータス/召喚親ID/陣営名と誤変換しない。stack+0x74は一時セルで永続ポインタとみなさない。B01 F54/F55集約先、B00 config、B23 mode consumerのowner/run同一性は未証明。
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 <a id="field-7c"></a>
 ## stack + 0x7C
 
@@ -38,6 +50,18 @@
 ## stack + 0x1EED78
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 957](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L957-L957) — [DELTA / GLOBAL FRAME READ] A所有の保存済命令 `exe/T010_FRAME_HELPER_PROBE.txt` 0x4339B1..0x4339F1。descriptor stack +0x1EED78/7C が非空なら、0x4339C3..0x4339DEで +0x1EED98/9C（
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eed98"></a>
+## stack + 0x1EED98
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 218](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L218-L218) — 第1引数（local `[esp+0x8C]`）は両setup pathでexecution auxiliary stack +0x1EED98へ保存される。意味はVERIFY。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eeda8"></a>
+## stack + 0x1EEDA8
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 113](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L113-L113) — `return` はframe-type stack +0x1EEDA8を上から探索し、marker==0を境界として扱う。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

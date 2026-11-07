@@ -49,6 +49,9 @@
 - [research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md 行 11](../../research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md?plain=1#L11-L11) — [REIMPLEMENT] 召喚要求のproducer_kind、source_unit_like参照S、holder H、effect+0x7C、Group、座標様ECX、子Unitを独立fieldで保持し、別S候補を推測で同一親へ正規化しない。召喚EXP還元先・真parent pointer・AI最終target・
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 19](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L19-L19) — [STATIC-ASM] 0x54EE7Fで召喚処理がeffect+0x7Cから召喚者BattleUnitを取得、ECX=thisの0x54EE82→0x577260を呼ぶ。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
+
 - [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 27](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L27-L27) — 1. **元Unitのツリーを使う**：[STATIC VERIFIED] `0x54EE7F MOV ECX,[effect+0x7C]` → `0x54EE82 CALL 0x577260`。`0x577260` は `sourceUnit+0x1E4B4` を検索し、`+0x1E4B8` と一致すればNULL（`
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
@@ -85,7 +88,34 @@
 <a id="field-a0"></a>
 ## effect + 0xA0
 
+- [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 7](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L7-L7) — [CONSISTENCY / NOT NEW BODY] +0x04関数0x54E420はSkill[effect+0x88]の+0x48分岐後、+0x9C正の系統は0x54E522以降で正値を消費して0x4C60F0へ進み、当call中0x551490へ非到達。+0x9C非正かつ対象Unit+0x1867C==0の系
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 16](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L16-L16) — [GOLDEN DESIGN] 無改変原作EXE＋20倍改造前DAT／同一SAVE・MAP・入力・RNG。Skill+0x48経路、effect+0x9C>0→0、effect+0xA0<0xB4→到達、pending/active複数、連続Healでpool再使用、target死/状態変化、表示・HP/MP/効果回数
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+<a id="field-a4"></a>
+## effect + 0xA4
+
+- [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 8](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L8-L8) — [HELPER SLOT] +0x24関数0x54E3F0は既B-20261019-1811-01のSkill+0x3E8/+0x3ECおよびeffect+0xA4に依存する項目選択helper。今回は「vtable+0x24からこの既知helperを参照する」と静的結合。既数式・parser cap32/fallba
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-1d0"></a>
+## effect + 0x1D0
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 8](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L8-L8) — - STATIC: effect+0x1F0の回数候補を加算。[definition+0x74] <= counterなら0x5503F9 CALL 0x4C22B0後にeffect+0x1D0(byte)=0。上限未満でも[definition+0x78]!=0なら当該呼出しからreturn; 0なら同一関数内でwh
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-1f0"></a>
+## effect + 0x1F0
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 8](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L8-L8) — - STATIC: effect+0x1F0の回数候補を加算。[definition+0x74] <= counterなら0x5503F9 CALL 0x4C22B0後にeffect+0x1D0(byte)=0。上限未満でも[definition+0x78]!=0なら当該呼出しからreturn; 0なら同一関数内でwh
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-1f8"></a>
+## effect + 0x1F8
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 7](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L7-L7) — - STATIC: [definition+0x1D0]!=0の場合、非zero戻り候補と旧effect+0x1F8が共に有効なら候補+0x194へ旧tail、旧tail+0x198へ候補を書込。続いてeffect+0x1F8へ生成結果候補を書込。分配先別の戻り値/NULL/所有権はVERIFY。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

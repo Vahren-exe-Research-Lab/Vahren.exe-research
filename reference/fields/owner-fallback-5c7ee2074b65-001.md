@@ -10,6 +10,9 @@
 - [research/recovered/ac_tests6/reports/T020_T028_FALLBACK_C4_EDI_LIFETIME_SCOPE_20261028_08H.md 行 8](../../research/recovered/ac_tests6/reports/T020_T028_FALLBACK_C4_EDI_LIFETIME_SCOPE_20261028_08H.md?plain=1#L8-L8) — - B08 static ASM: constructor 0x582AA0 at 0x582C1E/23/29 writes 100 to fallback+0xC0 and fallback+0xC4; fallback identity 0xB05A28, hence +0xC4 address 0xB05AEC
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
 
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md 行 8](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md?plain=1#L8-L8) — - 0x582AA0の原作x86-32 ASM：0x582C1E MOV EAX,0x64、0x582C23 MOV [ESI+0xC0],EAX、0x582C29 MOV [ESI+0xC4],EAX。引数ESI=0xB05A28で初期化されればfallback+0xC0=100・+0xC4=100。Ghidra擬似
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-c4"></a>
 ## fallback + 0xC4
 
@@ -25,10 +28,19 @@
 - [research/recovered/ac_tests6/reports/T020_T028_SELF_SEED_SENTINEL_EDI_GATE_20261028_07H.md 行 21](../../research/recovered/ac_tests6/reports/T020_T028_SELF_SEED_SENTINEL_EDI_GATE_20261028_07H.md?plain=1#L21-L21) — - Priority 1: legal same-original-run G0/G1/G2 receipts. Priority 2: B verifies 0x494886 EDI producer, 0x582AA0 fallback +0xC4 type, 0x5882F0 vector caller/owne
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
 
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md 行 9](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md?plain=1#L9-L9) — - 0x59177D..0x591794のmiss合流では[0xB05BCC]=input+0xE0由来、byte[0xB05A9C]=0、byte[0xB05A9F]=0、return EAX=0xB05A28。ここにfallback+0xC4を書き換える命令はない。ただし後から他関数が+0xC4を変更する可能性は未
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 13](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L13-L13) — - 旧Ghidra検索DBのdata_refsで0xB05A28への直接参照は0x591762/0x591794の2site、0xB05AEC(共有fallback+0xC4)直接refは0。これは抽出済み静的直接参照の範囲限定であり、+0xC4への間接/alias writer不存在の証明ではない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-1a4"></a>
 ## fallback + 0x1A4
 
 - [research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md 行 25](../../research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md?plain=1#L25-L25) — - NEXT P0: obtain same original legal battle run with G0+G1+G2 primary receipts. NEXT P1: independently confirm caller's fallback +0x1A4 reads, alias/writer lif
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 10](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L10-L10) — - アドレス算術を原本ASMと照合：0xB05BCC=0xB05A28+0x1A4、0xB05A9C=base+0x74、0xB05A9F=base+0x77。よって fallback+0x1A4はconstructorで0にされた後、**初回・再使用を問わずmissごとに入力+0xE0由来へ上書き**される。+0x7
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

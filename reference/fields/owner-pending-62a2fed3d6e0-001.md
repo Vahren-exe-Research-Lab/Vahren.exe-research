@@ -16,13 +16,28 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 733](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L733-L733) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_SELECT_RESULT_COMMIT.txt` 0x441237でDialog pending+0x290をsentinel化→0x441241で座標準備0x455D90→0x44125Dで[0x609264]通知→0x44126Dで0x4
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 734](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L734-L734) — - CONFIRMED-SAVED-NATIVE：ChoiceWndのpending +0x168は0x80000008 sentinelならwriter未実行。valid pendingでも0x41EC59 hit-test=0なら0x41EC61から数値writerをskip。hitでのみ0x41EC80 `0x4
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 804](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L804-L804) — [CONFIRMED-SAVED-NATIVE / CHOICE] `exe/T006_CHOICE_VMETHODS.txt` 0x41EBED..0x41ECB7。pending+0x168がsentinel以外なら旧indexから候補pointerを作り、0x41EC1Fで+0x168をsentinelへ戻し、0
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-290"></a>
 ## pending + 0x290
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 696](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L696-L696) — [CONFIRMED-SAVED-NATIVE / CLASS CONTRAST] `exe/T006_CHOICE_VMETHODS.txt` 0x41ECC0..0x41ED37のChoiceWnd no-hitは+0x16Cに対して同様のsentinel検査/0x4463F0/再設定を関数内で実施、別slot0x
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 713](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L713-L713) — [CONFIRMED-SAVED-NATIVE / CONDITIONAL] `exe/T006_DIALOG_VMETHODS.txt` 0x44113D..0x441158でpending+0x290がsentinel以外なら即return1。0x441180..0x4411C2ではhit i=0..count-1
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 723](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L723-L723) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_CHOICE_VMETHODS.txt` VA0x41EC1F pending+0x168=sentinel→0x41EC29 [0x609264]→0x41EC39 0x453C20→0x41EC59 [0x609268]再hit。EAX=0
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 733](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L733-L733) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_SELECT_RESULT_COMMIT.txt` 0x441237でDialog pending+0x290をsentinel化→0x441241で座標準備0x455D90→0x44125Dで[0x609264]通知→0x44126Dで0x4
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 805](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L805-L805) — [CONFIRMED-SAVED-NATIVE / DIALOG] `exe/T006_SELECT_RESULT_COMMIT.txt` 0x44120E..0x44129A。pending+0x290が非sentinelなら0x441237でsentinelへ戻し、0x44125D external[0x60926
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

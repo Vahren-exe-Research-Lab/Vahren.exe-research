@@ -7,7 +7,16 @@
 <a id="field-1fa"></a>
 ## member + 0x1FA
 
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 530](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L530-L530) — ## 62. D-20261013-0933-02 — active/sleepとctrl/unctrlは別opcode・別writer（内側member+0x1FA）
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 532](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L532-L532) — [MEMBER WRITER] 同保存native 0x4B5D94..0x4B5E6Eの候補resolver・型一致後にinner+0x0C..0x10を走査し、member pointerごとに0x4B5E62..65でそのALを[member+0x1FA]へ格納する。通常のunctrlTroop literal一
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 534](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L534-L534) — [REIMPLEMENT / GOLDEN NOT RUN] script別registry+opcode+subject filter、inner+0x70とmember+0x1FAを分ける。合法導線にctrl/unctrlがあれば可視命令時点の操作可否・部隊状態を旧/new対照、RTSではwave起動前後の+0x7
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 540](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L540-L540) — [EMPTY INPUT IMPLICATION] 0x4B5D7A..89は引数vector begin=endならAL0で0x4B656Bへreturnするが、その判定は上記unctrl prefixの後である。したがって「引数無し＝全副作用無し」と正規化できない。合法実ゲームで引数空到達、prefixed cal
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-1867c"></a>
@@ -21,6 +30,9 @@
 
 - [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 10](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L10-L10) — V3 0x00568FB0 pseudoC: when Group+0x1D !=0, clears member +0x1867D flags, calls 0x00576F70 for still-alive entries, logically empties group vector, then recalcu
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 20](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L20-L20) — - **AL=0の残り3件**（`0x420269`、`0x528356`、`0x528416`）：直後は `ESI` に対象を設定し `E8->0x568460`。こちらは生存メンバーの `Unit+0x186A4` と `+0x186A8` に `0x80000008` を書き込む (`0x568487`,`0x5
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 61](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L61-L61) — - **Golden必要条件**：同一ver0.67でAL0/1の4経路、group+0x1D=0/1、member vector空/1/複数、member+0x1867C=0/1、member+0x1867D=0/1、`+0x186A4/A8`のBefore/After、グループ+0x1C/+0x1E、タイマー・DA
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail

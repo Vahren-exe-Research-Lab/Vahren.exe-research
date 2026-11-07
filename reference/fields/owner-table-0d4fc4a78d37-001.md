@@ -10,4 +10,10 @@
 - [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 11](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L11-L11) — [RDATA SHA] 各table raw[table-4,table+0x98) SHA256: SimpleUnit=FD24FB02E612BA8930CA2734B9751B4CC161D205F18F38A6DDD592092F2559E8; StaticUnit=B0A635F547E36852077E3
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+<a id="field-8797e0"></a>
+## table + 0x8797E0
+
+- [research/recovered/script_topics/T005_FORMAL_GRAMMAR.md 行 224](../../research/recovered/script_topics/T005_FORMAL_GRAMMAR.md?plain=1#L224-L224) — [CONFIRMED-SAVED-NATIVE] `exe/T005_STRING_GLOBAL_MAP.txt`、`T005_PARSER_DISPATCH_INIT.txt` のspecial parser token registryには `exp_mul` なし。未登録fieldはgeneric parser
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

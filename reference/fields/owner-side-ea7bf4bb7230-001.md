@@ -13,4 +13,10 @@
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 638](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L638-L638) — [IMPACT/STRICT] isAllDeadを単純team全滅boolや『emptyなら常に1』へ畳まず、phase{setup writer→later writers→side outer→unit eligible predicate→mode-specific zero gate→return}をtrac
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+<a id="field-1d4"></a>
+## side + 0x1D4
+
+- [research/recovered/e_batch2/reports/tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md 行 10](../../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md?plain=1#L10-L10) — - 既存REA `BATTLE_STAGE13_INPUT_COVERAGE_20261022.json` 現物SHA256: 17FE5C34BF60A680736E2B0F6FEEF13F46EE8C2BC54B726560E6674BB34D4DCB。Stage13の延べ4190 Unit観測でrecord/tr
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

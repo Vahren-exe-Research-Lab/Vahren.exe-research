@@ -19,4 +19,16 @@
 - [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 14](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L14-L14) — 5. **drag reset** `MiniMapWnd::vf16` = `0x4DE690` は window+0x168 と +0x16C の2DWORDを **0x80000008** に設定して0を返す。+0x170のhover/press関連値とは同一視しない。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
+<a id="field-178"></a>
+## window + 0x178
+
+- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 13](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L13-L13) — 4. **原座標・入力** `0x4DE410` は `PtInRect` でwindow+0x178の矩形に入力点があるか判定し、分岐後に `FUN_00520800` (viewport移動core) や `FUN_00528870` へ接続。`0x4DCB70/0x4DCCB0` はモード次第で `D3DXVec
+  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
+<a id="field-238"></a>
+## window + 0x238
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 27](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L27-L27) — - BattleWnd副vtable+4=0x40E220が0x40E2F0を呼ぶ。0x40E2F0の0x40E447はwindow+0x238を読み、0x40E46Eで配列要素のvirtual+4を実行する。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

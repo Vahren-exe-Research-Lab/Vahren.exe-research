@@ -37,16 +37,34 @@
 - [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 17](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L17-L17) — NEXT P0: resolve 0x569280 register ABI/callee FPU arithmetic and consumers of Group+0x34; distinguish formation metric vs AI morale before any engine implementa
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 6](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L6-L6) — 既存先行: B-20261023-1519-T013-GROUP-AGGREGATE-LIFECYCLE-01 に 0x569280 writer・5 caller・Group+0x34集計と breast_width/+0x38 が既存。ここを再発見として計上しない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 9](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L9-L9) — 今回増分3: 候補対に対し Group+0x34 + 2*Unit+0x228候補 と FUN_0x005E3B70 戻り値候補を比較、条件成立数/評価対象数を定数引数（_DAT_0063B050）と比較する構造。距離/結束判定の可能性は INFERRED、厳密FPU引数・不等号・NaN・0除算枝はVERIFY。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 14](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L14-L14) — 分類: 統計に見える Group+0x34 を『士気』とは確定しない。ペア状態/距離・隊列維持候補としてT013/T028の境界に保留。CALLとDATA pointerは別物。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 16](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L16-L16) — 未解明P0: 0x00639A34 vtable所属および外側indirect dispatch; 0x00569360のfloat比較/比率ABI; 0x00569730の実副作用; Group+0x34他consumer; T024 AIとT028逃走・士気との接続。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-38"></a>
 ## Group + 0x38
 
 - [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 14](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L14-L14) — Never unify Group+0x34 derived recalculation with Person+0x48 candidate vector or Group+0x1D prune gate; object/register identity and +0x34 consumer meaning are
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-3c"></a>
+## Group + 0x3C
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 11](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L11-L11) — 今回増分5: 0x0056AB20 は Group+0x3Cを増分後、%100==0 の条件付きブロックから2 CALLを評価する。外側の +0x1C と engine+0x1EF148 の条件があるので100tick無条件実行とはいえない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-44"></a>
+## Group + 0x44
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 10](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L10-L10) — 今回増分4: 0x0056AB20 内の PE E8 site 0x0056ADC1 と 0x0056AE85 はどちらも 0x00569360 を呼ぶ（V3 PE relative target検証済、E8 bytes e89ae5ffff / e8d6e4ffff）。CALLの一方の条件はGroup+0x44。返値
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

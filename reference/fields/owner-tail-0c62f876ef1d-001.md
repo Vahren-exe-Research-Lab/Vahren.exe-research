@@ -10,4 +10,10 @@
 - [research/recovered/DEVLAB_NORMAL_SAVE_WIRE_COMPLETE_20261011.md 行 47](../../research/recovered/DEVLAB_NORMAL_SAVE_WIRE_COMPLETE_20261011.md?plain=1#L47-L47) — - Unit名追加1412・削除4・共通名の内容変更1362。Unit総数7355→8763。書込slot+0xBCは共通名1353個で値が変化し、tail+0x168/0x16C等は1116個だが、ゲーム内HPや毒や経験値の作用とは未対応。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included; historical save terminology/counts require later REF_SAVE_FORMAT.md S1101 correction crosscheck; no current semantics promoted
 
+<a id="field-198"></a>
+## tail + 0x198
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 7](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L7-L7) — - STATIC: [definition+0x1D0]!=0の場合、非zero戻り候補と旧effect+0x1F8が共に有効なら候補+0x194へ旧tail、旧tail+0x198へ候補を書込。続いてeffect+0x1F8へ生成結果候補を書込。分配先別の戻り値/NULL/所有権はVERIFY。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -4,14 +4,50 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-0"></a>
+## vtable + 0x0
+
+- [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L16-L16) — - [stream+0]のdecoderについて、0x005021AF/0x005021B2でvtable+0x10を呼んだあと、0x005021BC/0x005021C0でvtable+0x00を引数1付きで呼び出す。0x005021C2/0x005021C5に双方の所有ポインタをNULL化する命令が存在。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_READBACK.md 行 16](../../research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_READBACK.md?plain=1#L16-L16) — 報告は0x004C2825の非NULL要素vtable+0x00、0x004C27C1のvtable+0x14述語後の条件付きvtable+0x00を区別。原作実ゲームでの到達・同一owner同定はVERIFY。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_STATIC.md 行 22](../../research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_STATIC.md?plain=1#L22-L22) — 管理ループ`0x004C24B0`では`0x004C27AE`で該当要素vtable`+0x14`の関数ポインタを取得し、`0x004C27B3`で呼び、戻り値AL==0の場合だけ`0x004C27BB MOV EDX,[EAX]; 0x004C27BD PUSH 1; 0x004C27C1 CALL EDX`でvta
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-4"></a>
 ## vtable + 0x4
+
+- [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 13](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L13-L13) — [NEXT] 元vtable+0x04への合法な間接dispatch callerを既検索索引と許可済み元PE近傍で追跡し、現実に発動までつながる条件を限定する。0x54E0B0即coreと0x54E420遅延coreの双方を同一functionとして誤統合しない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md?plain=1#L12-L12) — - 0x0040D0A0→0x40D0C6 E8 CALL 0x0040F320。0x40F320は0x40F39D/0x40F3AFで各globalをECXに取り、主vtable+0x04を0x40F3AD/0x40F3BAのFF D0で呼ぶ。DemoPerson主vtable実バイト: 0x638034→0x514
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md 行 27](../../research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md?plain=1#L27-L27) — - 両DemoPersonを新規生成するケースで、主vtable +0x04後に+0x08両側実行→第1(+0x18=0)/第2(+0x18=1)、+0x1C相互参照、+0x20=100を同run/同時点で観測する。旧原作の合法な観測・捕捉が得られるまでPASSとしない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 14](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L14-L14) — `0x0050238D MOV EAX,[ESP+8]` はbytes1、`0x0050239B MOV EAX,[ESP+0x18]` はpush3個後のptr1参照。0x005023A0でdecoder vtable+0x04を `(ptr1,bytes1,0,0)` で間接CALLする。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 12](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L12-L12) — - 0x005023A0：decoder側vtable+0x04間接CALL（返値の成否判定なし）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 19](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L19-L19) — - Lock成功→0x0050249E decoder vtable+0x04→0x005024BD Unlock。戻り値を検査せずEDI=1へ切替（0x005024BF）。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md 行 41](../../research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md?plain=1#L41-L41) — P0: 子の解放責任が `0x005B1310` 等の別処理・イベント/共有所有者にあるのかを、許可範囲で静的証拠により同定する。親vtable+0x04を実際に呼ぶ箇所の親型証明、子配列へ外部経路から登録される型、vptr変更/要素数変動もVERIFY。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-8"></a>
 ## vtable + 0x8
+
+- [research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md 行 22](../../research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md?plain=1#L22-L22) — - +0x74==0のときのみvtable+0x08判定true→0x5AA32F CALL0x4C2240、vtable+0x48判定true→0x5AA346 CALL0x4C3DC0を経由し、0x5AA350 CALL0x4BC920で登録。0x5AA355 MOV BYTE [ESI+0x74],1。3直接CA
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md?plain=1#L4-L4) — [TYPE R: EFFECT RECORD] 0x551CE6 `LEA EDI, [Unit+0x928 + 0x264*slot]` で生成/選択され、0x551CED call0x4DFBB0、関数中 EDI=R（可変容量2D/24B effect dataを持つvtable/座標のあるsubrecord）。`
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -25,10 +61,28 @@
 - [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 13](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L13-L13) — - 重要な関数関係: 0x470A93→0x426E00（catch）、0x470AC5→0x426E00（normal cleanup）、0x470AE3=未解決computed CALL vtable+0x08。0x470A78はGhidra Catch_All・size45、0x470AA5が関数範囲直後に位置す
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+- [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 24](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L24-L24) — - 次のP0: 0x470AE3のvtable+0x08仮想calleeの既存許可済み証拠を照合し、stateを書き換える可能性を評価。0x470ACA以降の実ASMが正規保存済み資料にない場合はABI推測をVERIFIEDへ昇格させない。既存同ID/owner競合確認後の正本統合のみ許す。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md 行 13](../../research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md?plain=1#L13-L13) — - 同じ0x40F320後段の0x4103B6/0x4103D7が各globalをECXに取る。0x4103D5/0x4103E2のFF D0は主vtable+0x0Cを呼ぶ。DemoPersonであれば**両方0x00447810**（先行21Hの+0xA5 RTTI判定）へ到達する。主vtable+0x08の間接C
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_READBACK.md 行 5](../../research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_READBACK.md?plain=1#L5-L5) — - 別のread-only PythonプロセスでMD/JSONを再取得し、JSON構文と研究IDを独立検査。専用研究EXEのSHA再計算一致、JSON内35項目の機械語バイト35/35、DemoPerson vtable+0x08の32bit pointer 1/1、合計36/36 PASS。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md 行 6](../../research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md?plain=1#L6-L6) — ## 今回新規：DemoPerson主vtable +0x08 の両陣営交差初期化 ABI（機械語確定）
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md 行 12](../../research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md?plain=1#L12-L12) — - 前回の `0x40F3D6/0x40F3F3` は2オブジェクトの主vtable+0x08初期化。今回、`0x4103D5/0x4103E2` がそれぞれ `[vptr+0x0C]` を `CALL EAX` すること、DemoPerson主vtable `[0x0063803C]=0x00447810` をPEか
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-c"></a>
 ## vtable + 0xC
 
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 13](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L13-L13) — [RUSH GETTER ASM] Rush vtable +0x0C と +0x10 は両方0x54E0A0。元PE 0x54E0A0 MOV AL,BYTE PTR[ECX+0x210]; 0x54E0A6 RET。Rush+0x210は既存0x54F990 initializer内0x54F9C5 / 0x54F
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 15](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L15-L15) — [CONTRAST] 09H Heal用vtable+0xC/+0x10 は常0返却。Rush側は同じ更新loopでも+0x210の動的値次第で更新可能、双方の発火ゲートを一律実装してはいけない。実際のmanager同一性・次tick・実技能・RNG効果はVERIFY。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 - [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
@@ -40,14 +94,32 @@
 - [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 10](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L10-L10) — primary vtable+0x0C、PE VA 0x00638080に原EXE実ポインタ 0x00452D90 を確認。secondary+0x04は別の 0x0040E220 であり混同禁止。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
+- [research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md 行 13](../../research/recovered/rea_batch10/reports/REA_20261023_23H_P0_BATTLEWND_DEMO_GLOBAL_IDENTITY_STATIC.md?plain=1#L13-L13) — - 同じ0x40F320後段の0x4103B6/0x4103D7が各globalをECXに取る。0x4103D5/0x4103E2のFF D0は主vtable+0x0Cを呼ぶ。DemoPersonであれば**両方0x00447810**（先行21Hの+0xA5 RTTI判定）へ到達する。主vtable+0x08の間接C
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_READBACK.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_READBACK.md?plain=1#L11-L11) — - 次P0: 0x4103D5/0x4103E2の主vtable+0x0Cで0x447810へ遷移した時、+0x20=100と+0x18=0/1をどう消費するかをxrefs・native ASMで追跡。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md 行 35](../../research/recovered/rea_batch10/reports/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md?plain=1#L35-L35) — - 次P0: 0x40F320の主vtable +0x0C両側CALL site 0x4103D5/0x4103E2が+0x20=100の直後に何を変更するかを静的に追跡。0x40D0A0の入場呼出しと0x40E2F0更新時の+0x18/peer参照を別証拠で照合。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch8/reports/REA_20261025_18H_P0_OGG_VSLOT10_RELOAD_STATIC.md 行 33](../../research/recovered/rea_batch8/reports/REA_20261025_18H_P0_OGG_VSLOT10_RELOAD_STATIC.md?plain=1#L33-L33) — - 次のP0は0x004BEAD9の上位ctor呼出元・0x00502220・0x00501E20戻り値無視からのエラー処理を追い、失敗したOggの所有者破棄・例外後状態をVERIFY。0x00502020への外部仮想呼出し（vtable+0x0C）の発生元も未同定。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch8/reports/REA_20261026_00H_P0_OGG_QUERYINTERFACE_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_00H_P0_OGG_QUERYINTERFACE_STATIC.md?plain=1#L14-L14) — 0x005022C4: CALL EAX（[ecx]vtable+0x0C）。CreateSoundBuffer候補。直後0x005022C6 TEST EAX,EAX / 0x005022C8 JS 0x00502314により負HRESULTならcleanup。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 35](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L35-L35) — 3つのポインタは全て同じ型・同じ配列とは言えない。0x00492890で3対象vtable+0x0C、0x00493630で3対象vtable+0x14を呼ぶことは既知。C再開発のordered 3side配列とこの3対象を一対一で同一視しない。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-10"></a>
 ## vtable + 0x10
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 11](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L11-L11) — 2. 原本PEのPlayer(0x639B08)、Enemy(0x638B60)、DemoPerson(0x638030)のvtable+0x10はいずれも0x514AA0。前回確定の通常Unitと、この回確認したSimpleUnit(0x63A4BC)のvtable[0]はいずれも0x570C90。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 50](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L50-L50) — - DemoPersonのvtable+0x10=0x514AA0。同関数は陣営+0x48の通常個体、+0x58の静的個体、+0x38の部隊の順に、非NULL要素のvirtual slot0へflag=1を渡す。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L10-L10) — `h=[stream+0x28]>>1`（0x005023EC/0x005023F0）。workerは `0x00502445` でGetCurrentPosition（vtable+0x10）を呼ぶ。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
@@ -58,14 +130,44 @@
 - [research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md 行 16](../../research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md?plain=1#L16-L16) — - 従って、**このコンストラクタから渡されたvptrが維持される経路**に限り、間接CALL `0x0050202A` は `0x00501EB0`（vtable+0x10）に解決する。一般の仮想呼出し全体を解決したわけではない。
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
+- [research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md 行 31](../../research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md?plain=1#L31-L31) — P0：0x00501E20（owner生成/破棄caller）と0x0050202A（load前のvtable+0x10間接CALL）を追跡し、旧FILE*のcleanupから新規loadへ進む順序、例外・abort分岐の所有権をVERIFY。必要なところのみASMとstatic xrefを追加。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 - [research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md 行 6](../../research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md?plain=1#L6-L6) — - 直前研究：REA-LOCAL-20261025-1836-P0-OGG-VSLOT10-RELOAD-LIFETIME-STATIC-01。OggDecoder vtable +0x10 -> 0x00501EB0、再ロード前cleanup、constructor戻値がファイル読込の成否を表さないことは既発見。今回
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 7](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L7-L7) — - 19時台ID REA-LOCAL-20261025-1934-P0-OGG-STREAM-GATE-STATIC-01 は状態+0x44の上位失敗判定とワーカースレッド開始まで確認済み。18時台はOggDecoder vtable +0x10 cleanupを解決済み。これらを新発見に二重計上しない。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L16-L16) — - [stream+0]のdecoderについて、0x005021AF/0x005021B2でvtable+0x10を呼んだあと、0x005021BC/0x005021C0でvtable+0x00を引数1付きで呼び出す。0x005021C2/0x005021C5に双方の所有ポインタをNULL化する命令が存在。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 11](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L11-L11) — - vtable+0x10を0x00502445（再生カーソル取得）、+0x2Cを0x00502479/0x0050250D（Lock）、decoder+0x04を0x0050249E/0x0050252E（Ogg設定なら0x00501F10）、+0x4Cを0x005024BD/0x0050254D（Unlock）で呼
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 17](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L17-L17) — - 0x00502445：DirectSoundBuffer8 vtable+0x10で再生カーソルposを取得（HRESULT検査無し）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 10](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L10-L10) — 3. 0x00502580: [ESI+0x58]==0 はAL=0。==2 はvtable+0x10 (CALL site 0x005025AA)でカーソル取得し、HRESULT>=0 かつplayCursor < (size+0x28)/2 なら 0x005025B6 で+0x58=1へ移行。この呼出しではAL=0
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 - [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 11](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L11-L11) — 4. +0x58が非0かつ2以外の場合、vtable+0x10 (CALL site 0x005025D4)でカーソル取得し、HRESULT>=0 かつunsigned playCursor >= [ESI+0x54] なら 0x005025E3 でAL=1。それ以外はAL=0。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 749](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L749-L749) — [CONFIRMED-SAVED-NATIVE / CALLBACK GATE] 同VA0x44140B..0x44144FでEDI vtable+0x10を引数1で実行。さらに[EDI+0x184]>1の時だけ、stage[+0x298]==1ならliteral 0x635DC8、そうでなければ0x635DD4を選択
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 751](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L751-L751) — [REIMPLEMENT] `choiceCommit`を(1)条件付き変数writer→(2)2組counter周期/残数更新→(3)+0x1F8の2分岐→(4)vtable+0x10処理→(5)+0x184 gateの通知callbackという独立ordered stageでtraceする。単純なcallback失
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 761](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L761-L761) — [CONFIRMED-SAVED-NATIVE / NOTIFICATION LITERALS] commit後半VA0x44140B..0x441447はvtable+0x10 call後に+0x184>1を検査し、+0x298==1なら0x635DC8、他なら0x635DD4を選択。`exe/T006_SELECT
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 762](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L762-L762) — [VERIFY / BOUNDARY] +0x184=1で初期化した直後であっても後段vtable+0x10が同値を変更する可能性があるため、`decide12/decide4`通知の必然的抑止は未証明。+0x290を書き戻す別writer・reset helperの正規caller、+0x1B8等の下位helper副
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 764](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L764-L764) — [NEXT] 0x43F240 caller→+0x290再設定writer→0x441200入口の到達を保存済みcallsiteで追い、通知直前のvtable+0x10が+0x184へ与える作用、frame/Yield再開を検証。T005 special duplicate、T014+0x32C、T031 resee
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-14"></a>
 ## vtable + 0x14
@@ -76,13 +178,43 @@
 - [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 17](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L17-L17) — - vtable +0x14(第5スロット)と2引数は IDirectMusicAudioPath8::SetVolume(LONG, DWORD) に一致。duration=0 msの即時適用を指定し、ユーザー側fadeは別途+0x20による逐次更新で制御する。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_READBACK.md 行 16](../../research/recovered/rea_batch9/reports/REA_20261025_00H_P0_ARMYCHIP_OWNER_QUEUE_DESTRUCTOR_READBACK.md?plain=1#L16-L16) — 報告は0x004C2825の非NULL要素vtable+0x00、0x004C27C1のvtable+0x14述語後の条件付きvtable+0x00を区別。原作実ゲームでの到達・同一owner同定はVERIFY。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 35](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L35-L35) — 3つのポインタは全て同じ型・同じ配列とは言えない。0x00492890で3対象vtable+0x0C、0x00493630で3対象vtable+0x14を呼ぶことは既知。C再開発のordered 3side配列とこの3対象を一対一で同一視しない。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md 行 41](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md?plain=1#L41-L41) — 0x00493630の前段はmode2時の3対象vtable+0x14、active+1EEC44=0、pending list/root清掃、Unit対象準備。E+0x1EED28==0では**raw result flag判定による通常戦略処理の手前で別の終端へ進む**。非0で、保存ASM 0x00494858 c
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-18"></a>
 ## vtable + 0x18
+
+- [research/recovered/b_batch8/data/T012_TWIN_EFFECT_FACTORIES_20261013.md 行 7](../../research/recovered/b_batch8/data/T012_TWIN_EFFECT_FACTORIES_20261013.md?plain=1#L7-L7) — [ENTRY/RETURN] 550580は先行54E7B0の0x54ED8A callerのEAX recordとして使われ、record+0x90まで初期化側writerが存在。550980は先行54E0B0の0x54E11E callerがEAX recordとして受け、record+0xA4まで別writerが
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_TWIN_EFFECT_FACTORIES_20261013.md 行 9](../../research/recovered/b_batch8/data/T012_TWIN_EFFECT_FACTORIES_20261013.md?plain=1#L9-L9) — [VERIFY/GOLDEN] 0x63A65Cと0x63A604のvtable+0x18の実相違、alloc error、pool lifetime/end-of-battle/Task登録、mix sceneで両pool同時使用、同一技能2回/100/1000境界近傍・HP/MP/表示/RNG比較。単なるメモリ観測
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md?plain=1#L8-L8) — [REUSE/GROW] 0x550BB3..0x550BD2は選択poolのpointer vectorを走査し、候補record byte+0x6C==0なら0x550C33へ、対応recordのvtable+0x18間接call→EAX=record pointerで0x550D5Aへ。空き無しなら0x550BD
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md?plain=1#L10-L10) — [DELTA/REIMPLEMENT] 前ID B-20261013-1122-01は54E0B0→550980→551490のcall順まで確定。本件の独立増分はpool初期化・reuse判定+0x6C・record+0xA8初期化・vtable+0x18 callback・return pointer/append
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md 行 10](../../research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md?plain=1#L10-L10) — - バッファ位置/残量が利用可能なら現在byteをunsigned 0..255に広げる経路がある。不足時はvtable+0x18を呼び、返ったuintが0xFFFFFFFFならcleanupへ進む。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md?plain=1#L12-L12) — - 0xFFFFFFFF以外なら、バッファ消費可能時にはポインタ+1/残量-1/取得数+1、そうでなければvtable+0x1C呼出後に取得数+1の候補経路。vtable+0x18に対応するcomputed site 0x470A1B、+0x1Cにsite 0x470A66、tie側computed site 0x47
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md?plain=1#L11-L11) — - sentry成功後の1-byte候補取得: 0x470A1B CALL EAX（vtable+0x18候補）または0x470A11 MOVZX EAX, BYTE PTR [EAX]（buffer）。0x470A1D MOV [EBP-0x14],EAXで取得値を退避。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md 行 23](../../research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md?plain=1#L23-L23) — - 情報の出典VA/CALL: 0x470611→0x470980、0x4709D5→0x42EC60、0x470A1B computed vtable+0x18、0x470A2F→0x470AAC（GhidraはCALLと登録、実ASMはJMP）、0x470AC5→0x426E00。**索引CALL分類とASMに不一
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 27](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L27-L27) — - byte/構造/出典 24/24 PASS：EXE SHA1、RTTI 4、vtable+0x18ポインタ4、命令・field書込等実バイト15。DB validator=V9_INDEPENDENT_READBACK_PASS。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md 行 23](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md?plain=1#L23-L23) — 重複回避：先行 `REA-OFFLINE-20261022-1433-T014-UPSTREAM-CATCH-VCALL-STATIC-01` は `0x43400E → FadeOutSheet vtable+0x18 → 0x543AE0` を**条件付き**で特定済み。E/T020 `E-OFFLINE-2026
@@ -97,13 +229,34 @@
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
+- [research/recovered/rea_batch10/reports/REA_20261021_2135_T014_SHORTREAD_STATE_GAP_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261021_2135_T014_SHORTREAD_STATE_GAP_STATIC.md?plain=1#L11-L11) — - `0x4297D0` (217 bytes, code SHA 851F477F38B06755F148F603E3D5387DE54DDCF5FB726345BD836EC30D9CAD2D): 読込可能分があればmemcpy＋ポインタ/残量更新、残量なしはvtable+0x1C (`0x42985F`のcomp
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md?plain=1#L12-L12) — - 0xFFFFFFFF以外なら、バッファ消費可能時にはポインタ+1/残量-1/取得数+1、そうでなければvtable+0x1C呼出後に取得数+1の候補経路。vtable+0x18に対応するcomputed site 0x470A1B、+0x1Cにsite 0x470A66、tie側computed site 0x47
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md 行 18](../../research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md?plain=1#L18-L18) — - 0x470A61..0x470A66のvtable+0x1C呼出しでEAXが変わっても、0x470A1Dで既に[EBP-0x14]へ退避している。最終返値候補は取得時EAXであり消費時のvcall返値ではない。ただし実際の出口のMOV EAX,[EBP-0x14]とRETの命令は保存ASMの切出しが0x470AC5
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 30](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L30-L30) — - 0x004BF630の0x004BF64Aはstream+0x9C vtable+0x1C（08時台IIDよりIBasicAudio::put_Volumeに整合）。
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 22](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L22-L22) — - 成功時は0x004BEE61のIGraphBuilder vtable+0x34（RenderFile相当）、続いて0x004BEE6BのIMediaControl vtable+0x1C（Run相当）へ進む。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md 行 38](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md?plain=1#L38-L38) — 0x543425  mov eax, [edx+0x1C]   ; 二次vtable +0x1C
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1735_T014_KEYED_TREE_VCALL_AUDIT.md 行 21](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1735_T014_KEYED_TREE_VCALL_AUDIT.md?plain=1#L21-L21) — ## 2. 新規増分：木構造登録の直後に同形式のvtable+0x1C CALLが11関数で反復
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1946_T014_MAP_COUNT_FIRST_INSERT_AUDIT.md 行 72](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1946_T014_MAP_COUNT_FIRST_INSERT_AUDIT.md?plain=1#L72-L72) — 0x4322E7 call edx             ; vtable+0x1Cから取得
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md 行 68](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md?plain=1#L68-L68) — - `context+0x10`の実際のwriter、動的型、vptr設定、`vtable+0x1C`実装先VAは**未解決（VERIFY）**。関数先を推測で埋めない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0033_T014_MAP_OUTPARAM_ABI_AUDIT.md 行 61](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0033_T014_MAP_OUTPARAM_ABI_AUDIT.md?plain=1#L61-L61) — `context+0x10`への書込元、実際のvptr、`0x543428`の実装先は**未解決**。他の候補をvtable+0x1Cだからという理由だけで同一実装へ割り当てない。次は既存SQLiteのxrefsや該当コンストラクタを使ったコンテキスト所有者の遡及を優先し、原作実機Goldenを必要に応じ設計する。PC
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md?plain=1#L31-L31) — ## 増分発見B: vptr設定と`vtable+0x1C`の具体的関数VAが解決候補に
@@ -118,8 +271,26 @@
 - [research/recovered/rea_batch10/reports/REA_20261021_1835_T014_READ_EH_FRAME_SPLIT_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261021_1835_T014_READ_EH_FRAME_SPLIT_STATIC.md?plain=1#L12-L12) — - `0x42ECF0`（31 bytes、code SHA 509ABCB0231F72EE6B7D32D3F197B65F895CDFE2812F22188DBE481B45285E21）は `0x42ED07` の未解決間接CALL `CALL EAX`（vtable+0x20）を行う。疑似Cは`void`だがc
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+- [research/recovered/rea_batch10/reports/REA_20261021_2135_T014_SHORTREAD_STATE_GAP_STATIC.md 行 9](../../research/recovered/rea_batch10/reports/REA_20261021_2135_T014_SHORTREAD_STATE_GAP_STATIC.md?plain=1#L9-L9) — - `0x42ECF0` (code SHA 509ABCB0231F72EE6B7D32D3F197B65F895CDFE2812F22188DBE481B45285E21): site `0x42ED07` はvtable+0x20への間接CALL。Ghidraは戻り型`void`、親は`uint64`として消費す
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md?plain=1#L17-L17) — - 0x42ECF0→vtable+0x20 CALLsite0x42ED07、0x42E700→0x42ECF0 CALLsite0x42E77F。0x42E700 codeSHA=E50363BD394C5A7820AADE195D5B53B5B02CF000DA9C4AE12D6EB29C168C8A76。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch6/reports/REA_20261027_11H_P0_DIMENSION_ABI_GATE_STATIC.md 行 34](../../research/recovered/rea_batch6/reports/REA_20261027_11H_P0_DIMENSION_ABI_GATE_STATIC.md?plain=1#L34-L34) — 次回は`0x005555A8`のDirect3D vtable+0x20をCOM interfaceの定義と原作初期化経路で突合し、DisplayMode構造体の幅・高さと`0x00555710`以降のDevice生成に渡る値を追跡する。必要なら画面モード条件ごとの未実測Golden fixtureをDESIGNED/
+  制約・訂正　Historical STATIC/VERIFY author claims only; current applicable REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; historical audit PASS and 64/64 not repeated or recounted
+
+- [research/recovered/rea_batch6/reports/REA_20261027_12H_P0_D3D9_DISPLAY_MODE_CHAIN_STATIC.md 行 13](../../research/recovered/rea_batch6/reports/REA_20261027_12H_P0_D3D9_DISPLAY_MODE_CHAIN_STATIC.md?plain=1#L13-L13) — 標準IDirect3D9 ABIではvtable +0x20は**GetAdapterDisplayMode**。ただし実行時COM vptrを直接観測していないため、意味付けは**ABI整合の強いSTATIC候補**であり実ゲームGoldenではない。
+  制約・訂正　Historical STATIC/VERIFY author claims only; current applicable REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; historical audit PASS and 64/64 not repeated or recounted
+
+- [research/recovered/rea_batch7/reports/REA_20261027_05H_P0_D3D9_INIT_RETURN_ABI_STATIC.md 行 10](../../research/recovered/rea_batch7/reports/REA_20261027_05H_P0_D3D9_INIT_RETURN_ABI_STATIC.md?plain=1#L10-L10) — - 失敗ゲート1：0x005596B0のvtable+0x20経由CALL後にTEST EAX,EAX（0x005596B2）、成功ならJNS 0x005596DD。負値ならMessageBoxA、0x005596CC XOR AL,AL、0x005596D4 cookie-check、RET 0x005596DC。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_LOOP_STATIC.md 行 8](../../research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_LOOP_STATIC.md?plain=1#L8-L8) — 2. 0x004BF6A0 (113 bytes): stream+8≠0、+0x98≠NULL、+0x0A≠0を検査。0x004BF6D8のvtable+0x20に3つの出力ポインタと1ms timeoutを渡す。IMediaEvent::GetEventにABI一致。0x004BF6DA TEST EAX / 0x
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_LOOP_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_LOOP_STATIC.md?plain=1#L14-L14) — 7. 0x004BF780のDirectShow分岐では0x004BF7ADでvtable+0x20 GetEvent相当をCALLした後、EAX/HRESULTを確認せず、0x004BF7AFで[ESP+4]に置かれたeventCode相当値を1と比較、0x004BF7B5でSETNE ALする。この出力ローカルを事
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 99](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L99-L99) — 次のP0として、`[owner+0x188]`がどの条件で`0x008BE7F4`を指すかを`0x48A5B0`の登録元/`0x51EF80`の受信者作成経路から調べ、次いで`+0x1EF148`の別名writerを探索する。別件の`vtable+0x20`実行時CALL siteもVERIFYとして継続。全関数再抽出
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
@@ -130,8 +301,29 @@
 <a id="field-24"></a>
 ## vtable + 0x24
 
+- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 15](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L15-L15) — [OTHER SLOT +0x24 CAVEAT] 0x54E31Fがvector非空なら0x54E32F CALL0x4B9F70、内部0x4BA009がvtable+0x24を呼ぶ。しかし0x54E327..2Eはfirst stack arg=[[EDI+0xC]+4]、second arg=EDIであり、cal
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 8](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L8-L8) — [HELPER SLOT] +0x24関数0x54E3F0は既B-20261019-1811-01のSkill+0x3E8/+0x3ECおよびeffect+0xA4に依存する項目選択helper。今回は「vtable+0x24からこの既知helperを参照する」と静的結合。既数式・parser cap32/fallba
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md 行 14](../../research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md?plain=1#L14-L14) — - 0x49D1EC..0x49D201：queue begin!=endかつ`[ESI+0x1EEC3C]==2`の場合に限り、0x49D203 `[ESI+4]` objectのvtable+0x24を0x49D212 CALL。0x49D20B PUSH0、0x49D20D PUSH 0x631B78。原PE文字
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L11-L11) — - 0x44C74Fのmanager+0x18非零または0x44C75Eのmanager+0xA5非零なら0x49D1B0をskip。両方0なら0x44C755..0x44C767でESI=[manager+4]+0x504をセットしCALL0x49D1B0。その関数はvectorを巡回しvtable+0x58間接CA
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 373](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L373-L373) — [GATE] 0x5284A0では+8C/+1F8/+1867C/+1D0/+1867E/+1FAを確認して+358に対する0x568710/0x5695B0。0x5282C0では+1C・子+1FAと既登録同一ポインタ探索後、0x5299E0/0x5695B0/0x529B60。helper呼出時点で[ESP+1B]=
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 749](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L749-L749) — [CONFIRMED-SAVED-NATIVE / CALLBACK GATE] 同VA0x44140B..0x44144FでEDI vtable+0x10を引数1で実行。さらに[EDI+0x184]>1の時だけ、stage[+0x298]==1ならliteral 0x635DC8、そうでなければ0x635DD4を選択
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 761](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L761-L761) — [CONFIRMED-SAVED-NATIVE / NOTIFICATION LITERALS] commit後半VA0x44140B..0x441447はvtable+0x10 call後に+0x184>1を検査し、+0x298==1なら0x635DC8、他なら0x635DD4を選択。`exe/T006_SELECT
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-28"></a>
 ## vtable + 0x28
@@ -142,223 +334,7 @@
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 3](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L3-L3) — [SOURCE/PROOF] B exe/T012_HEAL_EFFECT_RECORD_4DFBB0_NATIVE_20261013.txtをLocal readback。isolate read-only target SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 244](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L244-L244) — [CONFIRMED-SAVED-NATIVE] 通常sav writerの0x4605EAでstatus/mode byteのbit0x6をtestし、zeroならstream-like object vtable+0x28(0x46060A)をcallして2出力を取得、nonzeroならglobal 0x6098B
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
-
-- [research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md 行 133](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md?plain=1#L133-L133) — - Saved exe/T015_INPUT_POLL_DISASM.txt: mouse call 0x4BCFBB and keyboard call 0x4BD0D5 use vtable+0x28 (GetDeviceData), cbObjectData=0x14, flags=0, maximum255/6
-  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
-
-- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 424](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L424-L424) — [VERIFY] vtable+0x28 concrete target、mask0x6の各bitの意味/branch reachability、fallback globalのbuffer境界と0x42A340の入出力、WriteFile error/short writeの実効。ゲーム側の正常saveで各経路が起こ
-  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
-
-<a id="field-2c"></a>
-## vtable + 0x2C
-
-- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 12](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L12-L12) — `0x00502370/74/78/7C` は4つの出力localを呼出前に0初期化。COM vtable+0x2C Lockは0x00502387、`TEST EAX,EAX; JS 0x005023C9` のため負のHRESULTでは後片付けへ進む。
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L11-L11) — `0x00502479` のLock（vtable+0x2C）はカーソル `>=h` の場合、`offset=0, dwBytes=h, flags=0`。
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 10](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L10-L10) — - 0x00502387: CALL EAX＝buffer8 vtable+0x2C（IDirectSoundBuffer8::Lock想定）。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-30"></a>
-## vtable + 0x30
-
-- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_PARAMS_VERIFY_ADDENDUM.md 行 4](../../research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_PARAMS_VERIFY_ADDENDUM.md?plain=1#L4-L4) — 0x004BF6A0はGetEvent相当 (0x004BF6D8) が成功した場合、0x004BF700で vtable+0x30 (=IMediaEvent::FreeEventParamsに整合) を呼んでから復帰する。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-34"></a>
-## vtable + 0x34
-
-- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L5-L5) — [RELEASE/RESET] 0x4DFBBA byte[EDI+0x78] !=0ならEDI+0x6CをESIへ、0x4DFBC4 byte[EDI+0x78]=0→0x4DFBC7 call0x41E160。旧レコードの登録解除・所有者解放までの正確な意味はcallee UNKNOWN。0x4DFBD0..0x4
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 13](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L13-L13) — [VERIFY/NEXT] 0x49ED30 lookupと4E1FA0/510850 erase/writer、Unit+878 runtime count、4DFD80 survivor refresh、vtable+0x34/+0x8/+0x48/+0x44のsubtype dispatch、4C3E40/4BC
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 7](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L7-L7) — [FINISH A] 0x54E4A8..0x54E4F8：vtable+0x34→0x4BBBD0、vtable+8真で0x54E4C1 EAX=[holder+4]→0x54E4C6 ADD EAX,0xC→0x54E4C4 PUSH EBX(=0) / 0x54E4C5 PUSH ESI(effect*)→0x5
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 22](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L22-L22) — - 成功時は0x004BEE61のIGraphBuilder vtable+0x34（RenderFile相当）、続いて0x004BEE6BのIMediaControl vtable+0x1C（Run相当）へ進む。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-3c"></a>
-## vtable + 0x3C
-
-- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 31](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L31-L31) — - 0x004BF66Bはstream+0xA0内のインタフェース vtable+0x3C（DirectSoundBuffer8::SetVolumeに整合）。
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-<a id="field-44"></a>
-## vtable + 0x44
-
-- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-48"></a>
-## vtable + 0x48
-
-- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 9](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L9-L9) — [NEW REGISTRATION BRANCH] Sentinel equal path after bounds update:4E01BF indirect vtable+0x8, AL!=0 only then4E01CC CALL4C2240(pending Task, prior B);4E01D8 ind
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 11](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L11-L11) — [POST EFFECT] 0x54F2D7 effect vtable+8→条件付き0x4C2240、vtable+0x48→0x4C3DC0、0x54F305 call0x4BC920。特定EAX==3/flag成立なら0x41EF50→0x41F850。Skill+0x30/+0x34が非空時0x54F364 c
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
-
-- [research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md 行 10](../../research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md?plain=1#L10-L10) — - 0x004BF318 CALL EDX は[buffer vtable+0x48]を使用。IDirectSoundBuffer8であればStop。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-4c"></a>
-## vtable + 0x4C
-
-- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 17](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L17-L17) — `0x005024BD` / `0x0050254D` はDirectSound vtable+0x4C（Unlock）へ `(COM,ptr1,bytes1,ptr2,bytes2)` の全組をスタック経由で渡す。Ghidraのunaff_EBX/EBP/ESI/EDIは推定不正確。
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-<a id="field-54"></a>
-## vtable + 0x54
-
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 723](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L723-L723) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_CHOICE_VMETHODS.txt` VA0x41EC1F pending+0x168=sentinel→0x41EC29 [0x609264]→0x41EC39 0x453C20→0x41EC59 [0x609268]再hit。EAX=0
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
-
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 804](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L804-L804) — [CONFIRMED-SAVED-NATIVE / CHOICE] `exe/T006_CHOICE_VMETHODS.txt` 0x41EBED..0x41ECB7。pending+0x168がsentinel以外なら旧indexから候補pointerを作り、0x41EC1Fで+0x168をsentinelへ戻し、0
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-<a id="field-5c"></a>
-## vtable + 0x5C
-
-- [research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md 行 10](../../research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md?plain=1#L10-L10) — [OTHER CALLER OUTCOME] 0x57D99B真→0x57D9B7、偽かつ0x57D99D ESI==0→0x57D9A9 vtable+0x5C CALL→0x57D9AB AL=1。異なるmarginの具体的UI/gameplay単位と仮想CALL副作用はVERIFY。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md 行 14](../../research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md?plain=1#L14-L14) — [KB_CANDIDATE] owner B/T013、本ID。VA 0x45A240/0x45A253/0x45A26F/0x45A274/0x45A296/0x45A2C6/0x45A2D0/0x42F860/0x42F889/0x57D994/0x57D99B/0x57D99F/0x57D9A9。offset g
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 8](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L8-L8) — [AI GATE] 0x57D994 CALL0x4C1860; if PtInRect AL!=0 then skip vcall; even with AL==0, secondary ESI!=0 skips. Only AL==0 AND ESI==0 reaches the [vtable+0x5C] ind
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md 行 11](../../research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md?plain=1#L11-L11) — [CALLER SPLIT] B/T013 original evidence: 0x57DE95 uses margin100 and gates C8/CC write→alternate-list clear→tail reset versus head fallback. 0x57D994 uses Unit+
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md 行 20](../../research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md?plain=1#L20-L20) — [NEXT] Once allowed source exists, test 0x4C1690 coordinate transform and 0x57D9A9 vtable+0x5C side effects from authorized static evidence; original C-NB02 G0/
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-<a id="field-64"></a>
-## vtable + 0x64
-
-- [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 20](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L20-L20) — NEXT: vtable+0x64 slotの実体、0x5A9CC0呼出時EAX/ESIのオブジェクト同一性と0x4BC9C0のkey、二vector producer、T028士気敗走、T013最終target、T024戦闘AI、T011召喚、T012ダメージ。安全拒否の迂回無し、原本/MASTER/他lane/RE
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 9](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L9-L9) — - 既04Hで接続済の第1vector manager+0x1EEC94..98: 0x48CFB3 MOV ECX,ESI→0x48CFB7 E8 CALL0x49E490→0x48CFBE TEST ESI,ESI、非NULLなら0x48CFC4 vtable+0x64→0x48CFC9 indirect CALL
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 10](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L10-L10) — - 第2vector manager+0x1EECA4..A8: 0x48D065 MOV ECX,ESI→0x48D069 E8 CALL0x49E490→0x48D070 TEST ESI,ESI、非NULLなら0x48D076 vtable+0x64→0x48D07B indirect CALL→AL gate。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 13](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L13-L13) — \| 0x435246 \| 0x435244 MOV AL,1 \| 0x435234 vtable+0x64 真後の1 \|
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 22](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L22-L22) — - 0x431BE0..0x431BFC は [ESI] vtable+0x64 を0x431BE7 CALL、0x431BE9 TEST ALし、falseで0x431BFC RET4。trueのみ0x431BEDで[ESP+4]のbyteをALへ再設定し、0x431BF1 ECX=ESI+0x260、0x431BF
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md 行 15](../../research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md?plain=1#L15-L15) — - 0x4189B0のnative：0x4189B6 [vtable+0x64]→0x4189BB CALL EDX→0x4189BD TEST AL→falseなら0x4189D0。true時0x4189C1 EAX=[ESP+0xC]でmodeを受け、0x4189C5 ESI+=0x1E0→0x4189CB CAL
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md 行 20](../../research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md?plain=1#L20-L20) — - 0x4A3B46..50は候補vectorの4byteポインタ件数でloop。0x4A3B66 [vtable+0x64]→0x4A3B69 CALL EAX、falseはskip。trueならmode>=0時0x4A3B8F CALL0x4189B0、mode<0時0x4A3BA7 CALL0x431BE0。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-<a id="field-68"></a>
-## vtable + 0x68
-
-- [research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md 行 15](../../research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md?plain=1#L15-L15) — [FAILURE] 0x5682CB EAX==0→0x5682CF..0x568325で既存global stringへCP932 literal VA 0x628B4Cを連結し非零文字列pointerをEAXに返す。原生53 byte CP932は「の部隊は退却に失敗しました\n退却出来る領地がありません」。0x5
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md 行 16](../../research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md?plain=1#L16-L16) — [SUCCESS] EAX非零なら0x568329 MOV [EBP+0x1B4],EAX、0x56832F INC DWORD [EAX+0xB8]を先に実行し、0x568335以降で各Unitの+0x1867Cを検査→既知0x56835C vtable+0x68(PUSH1)へ。+0x1B4リンクと+0xB8参照数
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 17](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L17-L17) — - 0x44D002 unit[+0x1867C]!=0はskip。残りはunit[+0x1D0] pointer非NULLが必須。0x44D00B unit[+0x18615]==0の場合はpointer非NULLだけで0x44D033へ、+18615!=0の場合はpointer[+0x1F]!=0かつpointer
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-<a id="field-70"></a>
-## vtable + 0x70
-
-- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 14](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L14-L14) — [EXISTING JOIN] 前08HのSimpleUnit 0x544790とUnit 0x578370の+0x1867C/HP・Unit限定0xF4241/+0x1E568分岐は既存、死亡イベントdead_event_a/dは07H既存。今回新しいのは正確なRTTI→vtable+0x70→入口の4系統区別とSt
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 65](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L65-L65) — 1. **T013/T012最優先**：`0x00550E70` の `candidate.vtable+0x70` の派生先、`0x00551E50` の結果反映（候補のHP/回復/状態、死亡判定）の実経路。以前拒否されたVAやコマンドに立ち入らず、許可済み証拠からのみ絞る。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 11](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L11-L11) — ### 1. `vtable+0x70` の3 CALL siteは *同じ4スタック引数* を異なる文脈から渡す（PE+SQLite照合）
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 19](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L19-L19) — 3 siteとも`FF D2`（CALL EDX）の実バイトを確認。各直前にreceiverのvtableから`[vtable+0x70]`をロードする。関数群の署名は少なくとも`this=ECX + 4 stack args`と整合するが、各引数の厳密なゲーム意味/所有権はVERIFY。3 siteは旧研究に登場済み
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 41](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L41-L41) — - `0x5510E5: cmp edx,10`。等しい場合 `0x5510EA: xor edi,edi`、`0x5510EC: jmp 0x551156`。この経路は通常のtarget `vtable+0x70`（`0x551154: call edx`）をskipする。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 74](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L74-L74) — 次のP0は `0x00550E70` の **target vtable+0x70 の実派生先**と対象HP/状態書換えの接続、`0x00547DB0` の候補vector writer・途中増減（loopでbegin/end再取得）、EXP flagが二次呼出で変更される副作用、T024のAIが選ぶ行動との合流。T0
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md 行 10](../../research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md?plain=1#L10-L10) — StaticUnitの vtable+0x70 = `0x0055ABA0` の死亡・文字列非空経路では、`0x0055AC35 SUB ESP,0x1C` で28バイトの一時文字列用領域を確保。`0x0055AC54 CALL 0x00402710`で`Unit+0x1E7F8`から文字列を複製し、`0x0055AC
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical refused-query incident is author disclosure only; report excludes that query output; no refused payload read
-
-<a id="field-80"></a>
-## vtable + 0x80
-
-- [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 8](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L8-L8) — [CRITICAL AL/MP ORDER] Upper caller57F9E8 reads Skill+0x278 cost→57F9EE subtract Unit+0x94 **BEFORE** optional57FA8F Unit vtable+0x80 and57FA99 call54E0B0. On r
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 16](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L16-L16) — [DEDUP] 既B T012_BATTLE_CALC.mdには0x55B060のHP handler単体解析あり、新関数/再READYとしては加算0。既T012 vtable+4、既T012 Unit vtable+0x80、既07-08H二入口・死イベントも再計上0。B主資料とB HANDOFFの検索では今回の4型
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1253-01｜WRQ-B-SKILL：Unit vtable+0x80 →0x579290軌道座標列設定関数（T012/T013）
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 10](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L10-L10) — - [DIRECT TAIL REBASE] 直行時ESP=S。0x546C5A/5B PUSH EAX×2、0x546C5C SUB ESP,8後ESP=S-0x10。0x546C62 LEA EAX,[ESP+0x20]=S+0x10(B)→PUSH、0x546C67 LEA ECX,[ESP+0x2C]=S+0x
-  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-<a id="field-98"></a>
-## vtable + 0x98
-
-- [research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md?plain=1#L14-L14) — - `0x004BE7C0 MOV EAX,[ESI+0x70]`、`0x004BE7C3 CMP [EAX+EDI*4],0`、非NULL要素に対し`0x004BE7D7 CALL EDX`（vtable+0x98、既報CloseDown同定）、`0x004BE7E5 CALL EDX`（vtable+8、Relea
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-b0"></a>
-## vtable + 0xB0
-
-- [research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md 行 25](../../research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md?plain=1#L25-L25) — `InitAudio`の同定には、COMインターフェースのvtable配置と7個の引数を使用しました。保存済みコードの`vtable+0xB0`は、DirectMusicPerformance8の`InitAudio`に対応します。:chatgpt-content-reference{index="0"}
-  制約・訂正　Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
-
-<a id="field-c0"></a>
-## vtable + 0xC0
-
-- [research/recovered/rea_batch7/reports/REA_20261027_08H_P0_D3DX_CAMERA_GEOMETRY_READBACK.md 行 18](../../research/recovered/rea_batch7/reports/REA_20261027_08H_P0_D3DX_CAMERA_GEOMETRY_READBACK.md?plain=1#L18-L18) — 次回: vtable +0xC0 GetViewport（0x00559A28）正常値・失敗分岐、D3DXPlaneIntersectLine（0x00559C1D）の未交差時出力契約、`0x00879838` の複数consumerを限定照合。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-cc"></a>
-## vtable + 0xCC
-
-- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 44](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L44-L44) — - 次P0: 0x004BF630の未同定+0x78→vtable+0xCC→slot+0x14のowner/ABIと、音量0/極小音量でのfade-in slope<0境界を限定追跡。どちらも元の旧証拠やレーンDとの重複照合を先行する。
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L14-L14) — - 4BF679で LEA EDX,[ESP+4]。これはPROLOGUEの PUSH ECX で積んだローカルDWORDを出力領域として指す。4BF67D/7Eで outポインタ/performance-this を積み、4BF67Fで vtable+0xCC を取得、4BF685で間接CALL。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 15](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L15-L15) — - vtable +0xCC(第51スロット) + 引数(out IDirectMusicAudioPath**)は DirectX SDK の IDirectMusicPerformance8::GetDefaultAudioPath に一致する（推定API同定。runtime vptr未採取）。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

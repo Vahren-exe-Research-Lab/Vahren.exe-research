@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-28"></a>
+## BattleWnd + 0x28
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 4](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L4-L4) — - 16時台REA FASTSIM: 0x0040E2F0の500 tick、50 tickごとの検査、戻り値0/1/2は既知。17時台REA BattleWnd secondary vptr: 0x0040E220・BattleWnd+0x28は既知。今回これらは新規計上しない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md 行 27](../../research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md?plain=1#L27-L27) — - 次P0: 0x44AE70/0x44B240/0x44BBB0/0x44CD70のEBX receiver originを原作ASMで追ってDemoPerson実体への到達を検証し、+0xA5/+0x18の定義とstate4→結果1/2への動的可到達性を分離する。続いてBattleWnd +0x28 vslot+0
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-190"></a>
 ## BattleWnd + 0x190
 
@@ -16,8 +25,17 @@
 - [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 10](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L10-L10) — - EDX: 通常/scriptでは &E+0x1EED20、BattleWndでは [BattleWnd+0x194] の値。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
+<a id="field-1c8"></a>
+## BattleWnd + 0x1C8
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 49](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L49-L49) — - 0x40F000はBattleWnd+0x1C8/+0x1CCの2陣営へvirtual+0x10を実行する。これらはUnitDataではなく陣営ポインタ。BattleUnit+0x1C8と同一視しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
 <a id="field-238"></a>
 ## BattleWnd + 0x238
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 14](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L14-L14) — 5. 0x40E2F0は反復処理を持ち、BattleWnd+0x238の配列要素のvirtual+4を実行。SimpleUnitのvirtual+4は0x545740、そこから0x545CC0へ接続。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
 - [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md 行 63](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md?plain=1#L63-L63) — - 新接続A: BattleWnd+0x238 update roster→SimpleUnit virtual+4=545740→545CC0→近接virtual7C=546C90→550E70→551E50、回復551490→551E50。+8C=1で条件付き即時58A650。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain

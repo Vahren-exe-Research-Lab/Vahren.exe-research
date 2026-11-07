@@ -4,10 +4,28 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-18"></a>
+## DemoPerson + 0x18
+
+- [research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md 行 13](../../research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md?plain=1#L13-L13) — - B側T013ではTroop+0x30のmode writer 0x569530とcase8 Num/String・同Troop dedupが別の型と経路で確認された。DemoPerson+0x18のside byte=0/1とTroop+0x30 modeを同じ意味・領域として統合しない。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+<a id="field-20"></a>
+## DemoPerson + 0x20
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 34](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L34-L34) — - 次は0x0051E6F0→0x0040CCF0のライフサイクルとDemoPerson+0x20のwriter/意味、BattleWnd secondary dispatch元をREAD-ONLYで追う。原本、A～E/MASTER/T018、QUEUE/PROGRESS/runs、dev_lab/Work、Git、ス
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md 行 6](../../research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md?plain=1#L6-L6) — - 既存19時台の0x44CF80状態4 writer/4 caller、18時台のDemoPerson+0x20 state getter、17時台のBattleWnd・16時台の500反復は既発見として非重複。本件の新規差分は **DemoPerson由来のvirtual更新入口から既writerへの静的連結を証明
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-90"></a>
 ## DemoPerson + 0x90
 
 - [research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md 行 25](../../research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md?plain=1#L25-L25) — - 次P0: DemoPerson +0x90 slot+4 に到達する実行時indirect CALL siteの同定と、0x44A1A0/0x514740を経由する初期state+0x20、0xA5/+0x18の型/書込元を追跡。原作GoldenはE-ownerと区別しNOT RUN維持。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_22H_P0_DEMO_DUAL_VCALL_STATIC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261023_22H_P0_DEMO_DUAL_VCALL_STATIC.md?plain=1#L7-L7) — - 既知: 20hのDemoPerson+0x90 secondary vptrとstate4 writer、21hの+0xA5 RTTI gate、18hのstate getter、16hの500反復。今回の新規差分は**反復ループ内の2箇所の実indirect CALL site**と**Player側virtua
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

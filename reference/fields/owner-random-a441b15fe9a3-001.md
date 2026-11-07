@@ -10,4 +10,7 @@
 - [research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md 行 9](../../research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md?plain=1#L9-L9) — - Dedup: B12/B13 score rank, B14 kind8 caller and B15 record+0x28 random producer are antecedents. No evidence that random+0x28 directly enters the native 0x5A3
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 18](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L18-L18) — [NEXT P0] 0x579F7D list-pop/swapと0x57A830の入出力list実ABI、0x5A3DF0のrandom+0x28とscore consumer関係、Unit+0x18654更新writerをread-only特定。別B T011召喚R→親恒久EXP、T012通常damage/stat
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

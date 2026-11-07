@@ -13,6 +13,9 @@
 <a id="field-48"></a>
 ## vector + 0x48
 
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 14](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L14-L14) — ## 2. Person候補vector +0x48 の3種類の寿命処理
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 - [research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md 行 23](../../research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md?plain=1#L23-L23) — - 次の調査: side unit vector +0x48/+0x58との実unlink/解放の順、native battle exitでのvirtual slot0到達、Rと戦略UnitDataの別参照。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
@@ -28,10 +31,31 @@
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 35](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L35-L35) — - 上記treeの後は literal `fixtype` → raw dword +0xD0、`train_max`→ +0xD4、`train_up`→ +0xD8、`base_level`→ +0xDC、`home_spot`→ vector +0xC0/+0xC4 の順。home_spot vectorは28-
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+<a id="field-d4"></a>
+## vector + 0xD4
+
+- [research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md 行 11](../../research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md?plain=1#L11-L11) — 0x59845F PUSH EBP(第2引数)、0x598465 ESI+=0x1C、0x598469 E8 CALL0x416080；0x59846E/472で戻りの2iteratorをpushし、0x59847C E8 CALL0x415CF0。このペアはvector+0xD4/+0xD8走査より前に無条件で現れる
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-158"></a>
 ## vector + 0x158
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md 行 14](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md?plain=1#L14-L14) — - sourceはSkill+0x14C非zeroなら+0x13Cからmap-based builder、そうでなければSkill vector +0x158/+0x15C。emptyなら発動RNGもskip。候補ありでVA0x5511C5直接rand15→0x5D1B80百分率相当→roll>=Skill+0x230
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; historical ZIP SHA later changed as recorded in STATUS_DEXT; no archive opened
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 94](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L94-L94) — - ローダ0x599BD0@0x59A79Bは文字列add(0x6248EC)を指定し、0x59A7C8でcompiled Skill+0x13Cへ設定。0x59E81Cはadd2(0x625508)、0x59E897は候補vector+0x158を指定する。除外対象のappend helper本体は読んでいない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-1e584"></a>
+## vector + 0x1E584
+
+- [research/recovered/rea_batch10/reports/REA_20261019_2338_T013_T031_DIRECT_RAND_CALL_COUNT_QC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261019_2338_T013_T031_DIRECT_RAND_CALL_COUNT_QC.md?plain=1#L7-L7) — - [EARLY EXIT] 0x57B87Fのsigned CMPでU+0x1E534<global[0x65BCAC]なら0x57B887..0x57B8DB/0x57BB94から帰還。直CALL 0x5B6EABは0回で支援vector+0x1E584/588/58Cの本関数内更新も0。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-1eed8c"></a>
+## vector + 0x1EED8C
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 939](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L939-L939) — [RESTART] A保存 `exe/T010_SCRIPTIF_DISASM.txt` 0x433B00..0x433B81、`data/T010_EVENT_SCHEDULER.md` frame vector+0x1EED8C記述、0x4339B1継続先と0x433E40実body、T006 variable/l
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

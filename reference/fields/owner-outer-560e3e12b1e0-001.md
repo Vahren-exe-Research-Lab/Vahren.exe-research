@@ -115,6 +115,9 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L11-L11) — - malloc/callocが成功し通常heap契約が保たれる限り、`outer+0x48/+0x4C` の2つの生存heapブロックとouter自身は別allocationであり、直接のフィールド別名参照は生じない。一方NULL返却、破損ポインタ、サイズ・リンク数不整合、free後使用、再入による状態変化は否定でき
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+- [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 12](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L12-L12) — - `0x005CF4D0` の `0x005CF5BE→0x005CF010` はstack上の一時領域を渡す別caller。すべての使用例がouter+0x48/+0x4Cと解釈されるわけではない。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 - [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 155](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L155-L155) — - STATIC new distinction: `0x428680` wrapper subobject outer+0x10 yields nested pointer outer+0x48, `0x4293D0` wrapper subobject outer+4 yields nested pointer o
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
@@ -253,7 +256,13 @@
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 516](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L516-L516) — [READER EXACT] isActive caseは文字列→0x49C450→0x49E780でouter対象を解決し、outer非nullなら [outer+0x1D0] をeaxへ取り、そのinner+0x70を比較（0x451BC7..0x451BD5）。innerが非nullでbyte+0x70==0なら
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 525](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L525-L525) — [WRITER GATES] 非空でも各outer+0x1D0 nullなら0x4B5C92→0x4B5CDBでskip、0x44D070の比較結果が不一致でも0x4B5CB3→同skip。条件合格時のみ0x4B5CBAのinner+0x70 writer、直後0x5158E0側へ進む。既知§10/§60の+0x70
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 542](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L542-L542) — [WRITER AND LIMIT] 0x4B5D94→0x49C450/0x49E8B0で対象候補vectorを解決し、outer+0x1D0・型gateを経たinner Unit member[+0x0C..+0x10]を走査し、0x4B5E62..65で[Unit+0x1FA]=unctrl1/ctrl0。前段0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 568](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L568-L568) — [NATIVE SUBJECT AND GATES] 入力名前解決0x49C450→candidate 0x49E8B0→vectorが空なら0x4B5AEEから0x4B5BBC cleanupへ。各outer+0x1D0 inner非NULL・0x44D070型照合一致した場合のみ内側の分岐を実行。AL[-0x76]
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 654](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L654-L654) — [CONFIRMED-SAVED-X86 / NEW CROSS-HANDLER] A保管のread-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CDEを再読。activeTroop/sleepTroopは対象vector/outer+0x1D0/0x44

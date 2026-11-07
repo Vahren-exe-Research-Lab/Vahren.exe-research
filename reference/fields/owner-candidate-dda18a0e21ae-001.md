@@ -10,16 +10,46 @@
 - [research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md 行 6](../../research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md?plain=1#L6-L6) — 新発見を狭く限定: 既存の 0x528DB0 → 0x569730、二つの距離ソート後 CALL (0x529750/0x529921) と、10/23の T013 Troop 配送研究は先行成果。**今回の新規差分は先行 B 5-owner markdown/HANDOFF に字句未掲載の 0x528E86 入口と、
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md 行 25](../../research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md?plain=1#L25-L25) — **区別**：0x528E86は事前のcandidate+0x1C分岐とqword stack源を持つ。0x529750/921は先行18/19Hの変換後浮動座標・ftol連鎖の結果を配送に渡す。後2siteに+0x1C gateがどの上位経路にも存在しないという一般化はしていない。param ABI（push 1/1
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 11](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L11-L11) — ## 新規分岐 crosswalk（従来20Hのcandidate+0x1C gateは再計上しない）
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 20](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L20-L20) — 先行 B-20261101-20H-T013-T024-528E86-ONEC-DISPATCH-GATE-01 のcandidate+0x1C条件と、既存0x569730/T013 2026-10-23 Troop配送は別発見として再計上しない。B所有T011/T012/T013/T024/T028 Markdown
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 - [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 21](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L21-L21) — KB_CANDIDATE：owner B/T013,T024、VA 0x528DB0/0x528DFB/0x528E01/0x528E45/0x528E4D/0x528E59/0x528E6A/0x528E86/0x528E93、off owner+0x34C/+0x474/+0x348,candidate+0x1C。
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
 - [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 22](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L22-L22) — 原作Golden要件：同一runの無改変原作EXE/DAT・SAVE/MAP/input/RNG、owner+0x34C=0/非0、mode0/他、list空/非空、candidate+0x1C=0/1/混在、それぞれのcall出現/候補順/翌tickの結果を独立観測。NOT RUN。
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
+<a id="field-20"></a>
+## candidate + 0x20
+
+- [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 16](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L16-L16) — 4. 0x583C70のGhidra擬似Cは in_EAX+0x94==0のときのみ in_EAX+0x1A4のowner候補を使い、owner+0x2F0 treeのcandidate+0x20を比較。条件成立で0x597B00の結果へ進み、それ以外はowner+0x58のpointer式を返す。無候補=単純NULL
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-40"></a>
 ## candidate + 0x40
 
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 11](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L11-L11) — [PREDICATE SECONDARY] ctx+0x1C非0で0x5A3F1F以降はcandidate+0x40とctx+8一致時、candidate+0x110およびctx+0xCで0x416920判定を両者分試み、結果が異なれば0x5A3F63..0x5A3F6Cで返す。続いてcandidate+0x4C正/0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
+
 - [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 17](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L17-L17) — [GOLDEN REQUIRED] 無改変原作ver0.67、変更前DAT、同一SAVE/MAP/Unit/Seed/input/tickでlist件数0/1/2/26+、mode2/非2、score sentinel/負/同点/+0xA14境界、candidate+0x40/+0x4C/+0x60/+0x110/+0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
+
+<a id="field-4c"></a>
+## candidate + 0x4C
+
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 11](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L11-L11) — [PREDICATE SECONDARY] ctx+0x1C非0で0x5A3F1F以降はcandidate+0x40とctx+8一致時、candidate+0x110およびctx+0xCで0x416920判定を両者分試み、結果が異なれば0x5A3F63..0x5A3F6Cで返す。続いてcandidate+0x4C正/0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
+
+<a id="field-60"></a>
+## candidate + 0x60
+
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 11](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L11-L11) — [PREDICATE SECONDARY] ctx+0x1C非0で0x5A3F1F以降はcandidate+0x40とctx+8一致時、candidate+0x110およびctx+0xCで0x416920判定を両者分試み、結果が異なれば0x5A3F63..0x5A3F6Cで返す。続いてcandidate+0x4C正/0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
 
 <a id="field-74"></a>
@@ -37,17 +67,32 @@
 <a id="field-75"></a>
 ## candidate + 0x75
 
+- [research/recovered/ac_tests6/reports/T020_T028_STACK_SLOT_VECTOR_VS_RB_GATE_20261028_11H.md 行 11](../../research/recovered/ac_tests6/reports/T020_T028_STACK_SLOT_VECTOR_VS_RB_GATE_20261028_11H.md?plain=1#L11-L11) — - 0x497BB0ではcandidate+0x75と+0x77が共に0、ECX非NULLの局所枝のみ0x4C1290へ、ECX NULLなら0x463590へ、flagのいずれか非0なら0x5846A0側へ分岐。vector appendをRB set insertと扱わず、効果成功も推測しない。
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 17](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L17-L17) — 0x497BB0 の既12H原作ASM: 0x497C0D CMP BYTE [candidate+0x77],0 と0x497C12 CMP BYTE [candidate+0x75],0 の**両方0**の枝だけ0x497C17でECX==0を検査。ECX==0なら0x497C21 CALL0x463590→own
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-77"></a>
 ## candidate + 0x77
 
+- [research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md 行 9](../../research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md?plain=1#L9-L9) — - 0x497C0D/0x497C12のcandidate+0x77/+0x75両方zeroの時、ECX非0なら0x497C31→0x4C1290 vector append、ECX==0なら0x497C21→0x463590 cleanup経路。flag非0は別枝であり「null ECXなら常に破棄」と単純化しない。
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md 行 7](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L7-L7) — 既11H/12Hの0x497C0D/0x497C12 candidate+0x77/+0x75両0なら即vector追加/清掃、片方非0なら別枝へ、という分岐は既知で再計上しない。今回はその**非0枝** 0x497C3B..0x497CB4 の数値と文字列producerを照合。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 17](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L17-L17) — 0x497BB0 の既12H原作ASM: 0x497C0D CMP BYTE [candidate+0x77],0 と0x497C12 CMP BYTE [candidate+0x75],0 の**両方0**の枝だけ0x497C17でECX==0を検査。ECX==0なら0x497C21 CALL0x463590→own
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md 行 9](../../research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md?plain=1#L9-L9) — - callee 0x497BB0 のnative 0x497C0D/0x497C12はcandidate+0x77=0 AND +0x75=0を検査。両方0の枝では0x497C17 ECX(受けた配列ポインタ)!=0なら0x497C2B LEA EAX,[ESP+0x1C]、0x497C2F MOV EDI,ECX→
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md 行 11](../../research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md?plain=1#L11-L11) — - candidate flagsのいずれか非0の別枝では0x497C3F CALL0x5846A0へ進む。後段0x4984AB/0x498D78 CALL0x460E90到達時、0x460EA0/+A4でcandidate+0x77..0x7Aを0、0x460EA8 +0xBC=0、0x460EAE +0xC0=10
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/tests_batch5/T020_E_T028_RETRY_MODE1_CFG_ACCEPTANCE_20261030_05H.md 行 10](../../research/recovered/tests_batch5/T020_E_T028_RETRY_MODE1_CFG_ACCEPTANCE_20261030_05H.md?plain=1#L10-L10) — - `0x5AC3AF/0x5AC3B5/0x5AC3B9`のcandidate+0x77/+0x75両0は`0x5AC5E3`に直接分岐し`0x5AC5E7`の`0x598450(mode1)` CALL siteへ到達し得る。このCFG上の明示枝は、RET直後に位置することだけを理由に到達不能扱いしない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-78"></a>
 ## candidate + 0x78
@@ -67,6 +112,12 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-b0"></a>
+## candidate + 0xB0
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 12](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L12-L12) — - 近傍セルの各occupantに対してgrid branchと同じ4つのフラグ／関係フィルタの後、0x4E8169呼出`0x44D8F0`（距離関連）＋0x4E8172の定数加算＋0x4E817Bの整数化helperを使用。candidate側はcandidate+0xB0/+0xA8両0かつcandidate+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-c0"></a>
 ## candidate + 0xC0
 
@@ -82,6 +133,18 @@
 - [research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md 行 13](../../research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md?plain=1#L13-L13) — - 対応する他方の処理でも0x4958A7集合非member時 0x4958C1 CALL0x5882F0→0x4958F4..0x495910同じbyte/整数条件→0x495916 SUB [candidate+0xC0],EDX→0x49591E SETS→0x495928 store。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-110"></a>
+## candidate + 0x110
+
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 11](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L11-L11) — [PREDICATE SECONDARY] ctx+0x1C非0で0x5A3F1F以降はcandidate+0x40とctx+8一致時、candidate+0x110およびctx+0xCで0x416920判定を両者分試み、結果が異なれば0x5A3F63..0x5A3F6Cで返す。続いてcandidate+0x4C正/0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
+
+<a id="field-18c"></a>
+## candidate + 0x18C
+
+- [research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md 行 25](../../research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md?plain=1#L25-L25) — - primary SimpleUnit（owner+0x48）内ではstrict `newDistance<bestDistance`の時だけbestを更新、同距離で先勝ち。primary bestがcandidate+0x18C範囲内ならそのままfast return。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-1b0"></a>
 ## candidate + 0x1B0
 
@@ -91,11 +154,32 @@
 <a id="field-1c0"></a>
 ## candidate + 0x1C0
 
+- [research/recovered/b_batch9/data/T013_FALLBACK_SELF_EXCLUSION_CORRECTION_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_FALLBACK_SELF_EXCLUSION_CORRECTION_20261013.md?plain=1#L4-L4) — [PRIMARY SELF CHECK] 0x514DBE `CMP ESI,[ESP+0x3C]`→0x514DC2 JE0x514E3F はprimary Unit候補の自己除外。候補生存0x514DB1 +0x1867C==0を確認した直後。stealth candidate+0x1C0はその後に読まれ、self
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L7-L7) — - [PER CANDIDATE] 第1配列では0x514DB1のbyte(candidate+0x1867C)!=0を除外、0x514DBEでcandidate==selfを除外。その後0x514DC4でdword(candidate+0x1C0)!=0の時だけ0x514DCF CALL 0x5B6EABを1回実行す
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 - [research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md 行 4](../../research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md?plain=1#L4-L4) — - [LOCAL ASM] 既存exe/T013_TARGET_SELECTOR_PROBE.txt VA0x514DB1..0x514DF5: candidate+0x1867C!=0は除外、candidate==selfは除外、candidate+0x1C0==0なら乱数CALLをskip、それ以外は0x514DC
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-1d0"></a>
+## candidate + 0x1D0
+
+- [research/recovered/rea_batch14/reports/REA_WAVE4_T013_NEW_VERIFIED_SOURCE_RECOVERY_20261011.md 行 22](../../research/recovered/rea_batch14/reports/REA_WAVE4_T013_NEW_VERIFIED_SOURCE_RECOVERY_20261011.md?plain=1#L22-L22) — - 選択pool+0x48..+0x4Cを走査、Unit+0x1867C==0 かつ global`0x87984F`有効またはcandidate+0x1D0!=0で、距離helper`0x5E3B70`→record追加`0x5154F0`。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-228"></a>
+## candidate + 0x228
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 12](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L12-L12) — - 近傍セルの各occupantに対してgrid branchと同じ4つのフラグ／関係フィルタの後、0x4E8169呼出`0x44D8F0`（距離関連）＋0x4E8172の定数加算＋0x4E817Bの整数化helperを使用。candidate側はcandidate+0xB0/+0xA8両0かつcandidate+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-290"></a>
+## candidate + 0x290
+
+- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 11](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L11-L11) — [PREDICATE SECONDARY] ctx+0x1C非0で0x5A3F1F以降はcandidate+0x40とctx+8一致時、candidate+0x110およびctx+0xCで0x416920判定を両者分試み、結果が異なれば0x5A3F63..0x5A3F6Cで返す。続いてcandidate+0x4C正/0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
 
 <a id="field-a0c"></a>
 ## candidate + 0xA0C
@@ -133,6 +217,12 @@
 - [research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md 行 8](../../research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md?plain=1#L8-L8) — [NEW RNG+SCORE WRITER] 0x57A7E3 CALL0x5B6EAB→0x57A7E8 raw RNG保存→0x57A7EC FILD→0x57A7F0 FMUL qword[0x63B080]=1/32768→0x57A7F6 FMUL qword[0x63B090]=-8.0→0x57A7FC
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; -4..+3 relies on normal truncation conditions, actual FP state/distribution unverified; record+0x28 is distinct
 
+- [research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md 行 9](../../research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md?plain=1#L9-L9) — [NUMERIC CONDITIONAL] rand()出力0..32767・有限小数のzero向き整数化が成立すれば、ftol(-8*raw/32768)は0..-7、candidate+0xA14は-4..+3の8段階（INFERRED、実際のseed/CW/SSE/例外を未観測）。0x63B080元8byte=0
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; -4..+3 relies on normal truncation conditions, actual FP state/distribution unverified; record+0x28 is distinct
+
+- [research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md 行 10](../../research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md?plain=1#L10-L10) — [NEW CAUSAL CONNECTION TO SORT] 既B16Hで静的確認した比較子0x5A3EA0はctx+4 mode==2なら候補+0xA0C、それ以外+0xA10をscoreとして選択し、各元score signed > 0x80000065 の時0x5A3EDA/0x5A3EEC ADD candi
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; -4..+3 relies on normal truncation conditions, actual FP state/distribution unverified; record+0x28 is distinct
+
 <a id="field-1867c"></a>
 ## candidate + 0x1867C
 
@@ -144,5 +234,11 @@
 
 - [research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md 行 4](../../research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md?plain=1#L4-L4) — - [LOCAL ASM] 既存exe/T013_TARGET_SELECTOR_PROBE.txt VA0x514DB1..0x514DF5: candidate+0x1867C!=0は除外、candidate==selfは除外、candidate+0x1C0==0なら乱数CALLをskip、それ以外は0x514DC
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-1e530"></a>
+## candidate + 0x1E530
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 12](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L12-L12) — - 近傍セルの各occupantに対してgrid branchと同じ4つのフラグ／関係フィルタの後、0x4E8169呼出`0x44D8F0`（距離関連）＋0x4E8172の定数加算＋0x4E817Bの整数化helperを使用。candidate側はcandidate+0xB0/+0xA8両0かつcandidate+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

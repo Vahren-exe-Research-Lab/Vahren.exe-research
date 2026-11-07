@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## local + 0xC
+
+- [research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md?plain=1#L4-L4) — [ABI/ENTRY] 3既存B caller 0x57FA99/0x57FE17/0x54DF8C（既知caller部分を重複READYにしない）で ECX=target候補、EDX=術者相当、EBX=Skill相当。0x54E0C4 Skill+0x48 byte==0時は0x54E0D2でgeometry用ECX
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-20"></a>
 ## local + 0x20
 
@@ -15,6 +21,18 @@
 
 - [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 4](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L4-L4) — [ABI/INPUT] 0x54E7FCでESI=entry EDX(Skill*候補)、0x54E7FE local+0x30=entry ECX、[EBP+8]/[EBP+C]/[EBP+0x10]/[EBP+0x14]各stack受渡し。0x550219の既存上位callerでEDX=Skill、ECX=位置構造
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
+
+<a id="field-68"></a>
+## local + 0x68
+
+- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 13](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L13-L13) — group走査後、0x44BDE8 CMP DWORD PTR [ESP+0x68],0が非0なら0x44BEC5へ。0の経路は0x44BDF5で[[EBP+4]+0x1EF22C]を確認し、その値が非0の場合0x44BE0A MOV DWORD PTR [EBP+0x20],3。続いてmanager+0x38..3C
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-76"></a>
+## local + 0x76
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 531](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L531-L531) — [OWNER/T030][CONFIRMED-SAVED-NATIVE / NEW] A保存exe/T006_TROOP_REGISTRY_INDEX.tsvでactiveTroop/sleepTroop=opcode10、unctrlTroop/ctrlTroop=opcode11。exe/T010_BATTLE_C
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-94"></a>
 ## local + 0x94

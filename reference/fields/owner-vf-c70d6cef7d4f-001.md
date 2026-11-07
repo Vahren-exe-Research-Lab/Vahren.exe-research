@@ -13,6 +13,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3570](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3570-L3570) — \| battle{} の設置 \| 0x492890（VM の 0x433E58 から）：ScriptIF root、モード 2、active 1、3陣営の vf+0xC \| §79 と B で一致。0x48D6A0 と 0x492890 のどちらがモード 2 を先に書くかは VERIFY \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE11_20261022.md 行 33](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE11_20261022.md?plain=1#L33-L33) — 原作PEのvf+0x0Cを見ると、Player/Enemy・GUI等で停止時の呼出許可が異なる。既存のFALSE関数0x43B5A0、TRUE関数0x431910も原本3byteで再確認。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-14"></a>
 ## vf + 0x14
 

@@ -4,8 +4,35 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## Troop + 0x4
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md 行 20](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md?plain=1#L20-L20) — 各RAWの48Troop、延べ384組について、Troop+0x04は当該GameManager*、Troop+0x08は所属Sideオブジェクト*と完全一致した。Unit+0x1D0とTroopメンバー一覧の往復参照も照合した。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-8"></a>
+## Troop + 0x8
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md 行 20](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md?plain=1#L20-L20) — 各RAWの48Troop、延べ384組について、Troop+0x04は当該GameManager*、Troop+0x08は所属Sideオブジェクト*と完全一致した。Unit+0x1D0とTroopメンバー一覧の往復参照も照合した。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-c"></a>
+## Troop + 0xC
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 6](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L6-L6) — 【NEW 2 / PRECONDITION】0x569534～0x569547でTroop+0x0C/+0x10のメンバvector要素数を算出。0要素でも+0x30書込後にRETし、後続配置関数はCALLしない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 12](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L12-L12) — 0x00569360（Ghidra未検証prototype: `FUN_00569360(int param_1,double param_2)`）はTroop+0x0C/+0x10構成員vectorを走査。最初にUnit+0x1867C==0 かつ +0x1867E==0のUnitを「アンカー」に選び、同関数内で後続
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-1d"></a>
 ## Troop + 0x1D
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 11](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L11-L11) — 【+0x38 / PRIOR】既0x568080が+0x38を`FUN_0046F4C0(owner+0x1B8,15)`で初期化、既0x568710はTroop+0x1D==0かつ最初の構成員追加の枝で`breast_width`を設定し、0なら同ヘルパーへfallbackする。既15H/19H研究との照合で、+0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 24](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L24-L24) — - Golden必要: 無改変旧EXE・20倍強化前DAT・同SAVE/MAP/input/RNGでTroop+0x1D(0/非0)×Unit+0x1867C(0/非0)×候補数0/1/複数×先頭Unit+0x8C/+0x1F8、別系でglobal+0x1EF148/PtInRect/arg0と+0x14を観測、+0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md 行 23](../../research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md?plain=1#L23-L23) — Next P0: discover producer for Troop+0x1D/+0x1C and Unit+0x45D=1, 0x528700 owner+358 alias/lifetime, 0x56BA80 virtual-slot effects, and source-level AI target s
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
@@ -19,10 +46,76 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 148](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L148-L148) — - 追加上書き: Troop+0x1F!=0なら0x572765で+0x18614/+0x18615を同時に1へ設定する。共通EXP helperだけでなく通常型の遅延Lv判定0x575110も前者を検査する。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 149](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L149-L149) — - Troop+0x1Fへの明示的byte store候補は0x4F9510@0x4F9833/0x4FA036。castle_guard生成枝、handle/red設定の条件付き生成枝に対応。0x567EE0直後からTroopを追跡。全setter不存在を証明したものではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 175](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L175-L175) — - 未確定だった+0x18614の設定を0x571B70の機械語で追った。初期値は所属参照先、陣営、関連UnitDataの条件から決まり、さらにTroop+0x1Fが非0なら+0x18614/+0x18615へ1を書き込む。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 177](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L177-L177) — - Troop+0x1Fを立てる処理を0x4F9510で確認。castle_guardを扱う生成枝と、handle/redによる条件付き生成枝がある。これはエンジンの除外条件の一部を具体化したもの。設定の正式な全意味、実際にどの原作個体がこの枝を通るかは未確定。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 178](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L178-L178) — - 元MODの590 DATの直接単一行castle_guard指定は今回0件。従って『迫真戦記の特定召喚獣はこの設定で成長不能』とは未確認。通常召喚のtroop/troop2/troop3と、今回の特殊生成Troop+0x1Fを混同しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md 行 113](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md?plain=1#L113-L113) — - 保存済みCP16: +0x18614初期条件、Troop+0x1F上書き、castle_guard/handle/redへの接続候補、原作DAT直接指定数、既存live captureのEXP bytes不足。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 15](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L15-L15) — - CP19: +0x18614の初期設定とTroop+0x1Fによる上書き、castle_guard/handle/red生成枝を追跡。MODの直接castle_guard指定は今回未検出。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+<a id="field-28"></a>
+## Troop + 0x28
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L7-L7) — 【NEW 3 / FIRST LIVE】0x56954F～0x56957Dで登録順にUnit参照をたどり、Unit+0x1867C==0の最初の候補に限って、0x56957D→0x569730 E8直接CALLで配置処理を呼ぶ。呼出位置はUnit+0x214/+0x218を整数2つとしてPUSH、Troop+0x28の
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-30"></a>
+## Troop + 0x30
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 1](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L1-L1) — # T013｜Troop+0x30モード設定と先頭生存Unit起点の配置再配送（22時台）
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 10](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L10-L10) — 【NEW 6 / SECOND CONSUMER】0x0056A790 cached GhidraもTroop+0x30==1 / ==2 / otherwiseで別配置経路を分岐し、mode1では+0x38を構成員数上限に使用。既0x5699C0の3分岐と別のconsumerを確認。+0x28角度更新とD3DX回転が
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md 行 1](../../research/recovered/b_batch10/data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md?plain=1#L1-L1) — # T013｜Troop+0x30への値producerとcase8条件付き伝播（23時台）
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md 行 42](../../research/recovered/b_batch10/data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md?plain=1#L42-L42) — 次回優先: T013で生成pair数を規定するTroop+0x30 writer/+0x38 setterと、元Unit+0x1BC writer→実sorted ordinalのクロスジョイン。0x5769B0の既拒否XREFは対象外。T011/T012/T024/T028のP0はこの成果だけで解消しない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md 行 13](../../research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md?plain=1#L13-L13) — - B側T013ではTroop+0x30のmode writer 0x569530とcase8 Num/String・同Troop dedupが別の型と経路で確認された。DemoPerson+0x18のside byte=0/1とTroop+0x30 modeを同じ意味・領域として統合しない。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+<a id="field-34"></a>
+## Troop + 0x34
+
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 14](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L14-L14) — 距離側候補はアンカー+0x220/+0x224と相手+0x220/+0x224の座標差二乗和から `0x00569453 → 0x005E3B70`へ渡す。上限候補はTroop+0x34 + 2*アンカーUnit+0x228（Unit+0xB0/+0xA8/+0x1E530の代替0値条件あり）。正確なFPU特殊値はVE
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-38"></a>
+## Troop + 0x38
+
+- [research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md 行 8](../../research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md?plain=1#L8-L8) — NEW MODE: Troop候補+0x30==1、==2、それ以外の3分岐を持つ。mode1ではTroop+0x38を候補数側の上限として読む条件が存在。mode2/その他の分岐には0x5E3B70→0x5B6ED0とFPU丸め候補がある。式・ゲーム上の名称・signed/float幅はVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-3c"></a>
+## Troop + 0x3C
+
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 11](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L11-L11) — Troop 0x0056AB20は+0x1Cが非zero、またはengine+0x1EF148が0なら周期更新へ進まない。通過時Troop+0x3Cを増加、`%100==0`の条件付き経路で0x0056ADC1/0x0056AE85→0x00569360を使用（他gateあり）。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-44"></a>
 ## Troop + 0x44
 
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 19](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L19-L19) — Troop+0x44は `0x00568080`で0へ初期化。0x0056AB20内部でも0へ戻す枝が2つ、`0x0056B0A7 mov byte ptr [ebp+0x44],1` の枝がある。状態保持の意味や他writerの網羅はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 23](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L23-L23) — GOLDEN DESIGNED/NOT RUN: 無改変同一EXE/DAT/SAVE/MAP/入力・RNGで適格Unit 0/1/2/3/4、+1867C/+1867E、座標距離が境界±1、Troop+0x44=0/1、+0x3C 99/100/101。可視命令/配置/移動・HP/MP・候補順/ターンを時系列照合。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 24](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L24-L24) — 未解明P0: 0x0056AB20への実仮想CALL site、Troop+0x44すべてのwriter、0x00569730実副作用、0x005E3B70 FPU/NaN、+0x34算術ABI、士気・逃走/戦闘AIとの実関係。T011/T012/T024/T028の別P0は継続。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 <a id="field-1d0"></a>

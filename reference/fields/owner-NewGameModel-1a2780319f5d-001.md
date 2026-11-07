@@ -7,7 +7,19 @@
 <a id="field-38"></a>
 ## NewGameModel + 0x38
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 18](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L18-L18) — ## 1. 結論：0x00492A70はNewGameModel+0x38へエンジンポインタを格納する
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 50](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L50-L50) — └─ [NewGameModel+0x38] = Engine*
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 92](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L92-L92) — Golden取得の設計観測点：`0x00433E58`前のESI・スクリプト引数、`0x00492A4E`/`0x00492A5B`/`0x00492A68`の受信者とvptr、`0x00492A70`直前のNewGameModel+0x38（初期値0）と直後の値、`0x00492A73`の分岐値、`0x00492AA
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 96](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L96-L96) — - P0/VERIFY: NewGameModel+0x38を読む関数／解除・破棄時の初期化元をxrefsとレジスタ別名経路から探索。現段階では`0x00492A70`が唯一のwriterとは断定しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 143](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L143-L143) — 次回P0の優先順：① `0x00564160`から書かれる`0x0067B938`～`0x0067B94C`の**消費先と後続上書き**、② 分岐ゼロ側EDI（`event`/`FUN_00597A20`/フォールバック）の実体と`param_1`センチネル条件、③ NewGameModel+0x38のreaderと解
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

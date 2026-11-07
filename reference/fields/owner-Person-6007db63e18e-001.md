@@ -13,7 +13,16 @@
 <a id="field-48"></a>
 ## Person + 0x48
 
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 30](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L30-L30) — - `0x005684B0`は、Ghidra擬似C上では`unaff_EDI+0x0C / +0x10` のグループ内vectorを走査し、フラグ`+0x1D`が立つ経路では `Unit+0x1867C != 0` の個体を`memcpy`で詰め、endを4バイト縮める。**対象はグループvector**であって、前節
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 31](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L31-L31) — - `0x00575DF0`の`0x00575E2E → 0x004C22B0`も確認。`0x004C22B0`は、別のmanager側で`+0x2C..+0x30`内の一致要素を0化し、`+0x64..+0x68`のvectorを`memcpy`で前詰めし、条件付きで`+0x54..+0x58`へ後処理予約する。ここ
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 - [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 14](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L14-L14) — Never unify Group+0x34 derived recalculation with Person+0x48 candidate vector or Group+0x1D prune gate; object/register identity and +0x34 consumer meaning are
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md 行 14](../../research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md?plain=1#L14-L14) — [NEXT] 許可済みB証拠からPerson+0x48 vector writerと0x547DB0参照管理実体の同一性、0x5149C0 this pointerを原作ASMで独立確認。拒否済0x514C50には介入しない。T024/T028未解決維持。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

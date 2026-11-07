@@ -16,4 +16,7 @@
 - [research/recovered/b_batch5/data/T011_SUPER_COLON_TOKEN_CTOR_NATIVE_20261024_23H.md 行 19](../../research/recovered/b_batch5/data/T011_SUPER_COLON_TOKEN_CTOR_NATIVE_20261024_23H.md?plain=1#L19-L19) — 原DAT「32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat」には u_diplo_nt3..nt6 : u_diplo_nt2 の親宣言がある。構文「:」→token string initializer→比較一致→super ScriptData生成はSTATICとINFERREDで接続。ただし各Skill
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+- [research/recovered/b_batch8/data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md 行 24](../../research/recovered/b_batch8/data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md?plain=1#L24-L24) — Golden設計：無改変旧EXE＋20倍改造前原DAT＋同SAVE/MAP/入力/RNGで u_diplo_nt2直接とnt3～nt6派生のロード時compiled +0x288、対象/HP/MP/状態/次tickを比較。super欠損/NULL/空値の局所フラグは合法DAT fixtureを別途確認するまでDESIG
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

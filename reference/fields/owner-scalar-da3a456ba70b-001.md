@@ -10,6 +10,9 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 264](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L264-L264) — [CONFIRMED-SAVED-NATIVE] 0x45C152..0x45C281第5container clear→@gamemode/@scenario→context default→scenario-specific 0x464290 presence test→0x4647D0 property look
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 442](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L442-L442) — [CONFIRMED-SAVED-NATIVE] `exe/T014_VAR_CALLSITE_PROBE.txt` 0x45C152..0x45C16Eは第5container sentinel+0x330を自己参照に戻しcount+0x334をzero化。直後0x45C189 @gamemode writer→0x
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-16c"></a>
 ## scalar + 0x16C
 

@@ -4,11 +4,32 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## offset + 0xC
+
+- [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 44](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L44-L44) — - 次回P0は0x005B7D14の__beginthreadのハンドル返却・終了処理、0x005023E0の全exitを検索基盤から追跡。次に0x005022C4のCOM vtable offset+0x0C実体とdecoder破棄経路を独立検証する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md 行 18](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md?plain=1#L18-L18) — - `0x42AA80`は `(offset+0x14のbit2 != 0)`、`(offset+0x0Cのbit2/bit4 == 0)`を満たす場合に間接virtual **`+0x34`** の戻り値`-1`をチェックし、失敗なら`0x426E00`（CALL site **`0x42AAF9`**）へ進む。**
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-14"></a>
+## offset + 0x14
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md 行 18](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md?plain=1#L18-L18) — - `0x42AA80`は `(offset+0x14のbit2 != 0)`、`(offset+0x0Cのbit2/bit4 == 0)`を満たす場合に間接virtual **`+0x34`** の戻り値`-1`をチェックし、失敗なら`0x426E00`（CALL site **`0x42AAF9`**）へ進む。**
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-18"></a>
 ## offset + 0x18
 
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 428](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L428-L428) — [INDEPENDENT ASM ↔ PSEUDO READBACK] 同RUNの`479A30_procedure_assembly.json`と`479A30_procedure_pseudo_code.json`をEがJSON.parseして0x479A68 `ADD ESI,0x1C`（28byte strid
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 429](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L429-L429) — [LIMIT / REIMPLEMENT] この範囲でpayload24byteとmetadata4byteが一緒に全record swapされるとはしない。offset+0x18が動かない理由・writer/reader・実script shuffle可視影響は依然VERIFY。REAの古いPROGRESSのTODO
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_SCENE_OBJECT_BRANCH_AUDIT_20261011_0534.md 行 13](../../research/recovered/rea_legacy1/reports/REA_EVENT_SCENE_OBJECT_BRANCH_AUDIT_20261011_0534.md?plain=1#L13-L13) — - 条件ゼロ側 (0x432BE8以下): 0x34 bytes確保 (0x5B6C2B)、0x543A30初期化、vtable 0x6388D4 (FadeOutSheet)、virtual offset +0x18へ引数0xA (10)を渡す。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-1c"></a>
 ## offset + 0x1C
@@ -16,17 +37,44 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md 行 8](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md?plain=1#L8-L8) — - Logical records: key string, aux string, signed int32 value; mapped value offset +0x1C. gwrite performs UPSERT, not append and not key deletion; setting zero
   制約・訂正　Frozen complete canonical baseline copy; identity only, no new semantic review; stable versioning exception authorized
 
+<a id="field-28"></a>
+## offset + 0x28
+
+- [research/recovered/rea_batch14/reports/REA_T014_STREAM_FAIL_STATE_TO_WRITE_AUDIT_20261011_1036.md 行 13](../../research/recovered/rea_batch14/reports/REA_T014_STREAM_FAIL_STATE_TO_WRITE_AUDIT_20261011_1036.md?plain=1#L13-L13) — - mask=0の分岐は0x4605F1..60Aで仮想関数offset+0x28を呼ぶ（引数0,0,1,2）。0x46060Cと0x460613が返却された長さ/位置候補をEAX・EBXへ格納し0x460638に合流。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 6](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L6-L6) — [KIND8 NATIVE CALL] 0x577D37 MOV EAX,[ESI+0x18650]、0x577D3F LEA EBP,[ESI+0x18650]、0x577D47 CALL0x57A7D0、0x577D73 CALL0x402710、0x577D7C PUSH EAX/0x577D7D PUSH ES
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
 <a id="field-3c"></a>
 ## offset + 0x3C
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 783](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L783-L783) — [CONFIRMED-SAVED-NATIVE / VTABLE] `exe/T006_UI_RTTI_PROBE.txt` のDialogWnd primary vtable 0x6389FCは、index15/16/17/18 (byte offset +0x3C/+0x40/+0x44/+0x48)が順に0x44
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
+<a id="field-3d"></a>
+## offset + 0x3D
+
+- [research/recovered/b_batch10/data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md 行 9](../../research/recovered/b_batch10/data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md?plain=1#L9-L9) — STATIC-3: 0x4EE170は同じ形式のInputState候補の奇数offset +0x3D,+0x3F,...,+0x43,...,+0x57を0へclearする一方、対応偶数offset+0x42は同関数でclearしない。+0x42=current-latch、+0x43=edge-latchという解釈
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-42"></a>
+## offset + 0x42
+
+- [research/recovered/b_batch10/data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md 行 9](../../research/recovered/b_batch10/data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md?plain=1#L9-L9) — STATIC-3: 0x4EE170は同じ形式のInputState候補の奇数offset +0x3D,+0x3F,...,+0x43,...,+0x57を0へclearする一方、対応偶数offset+0x42は同関数でclearしない。+0x42=current-latch、+0x43=edge-latchという解釈
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-b4"></a>
 ## offset + 0xB4
 
 - [research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md 行 14](../../research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md?plain=1#L14-L14) — [KB_CANDIDATE] ID B-20261031-23H-T013-RECT-INSET-BOOL-ABI-01、owner B/T013、VA 0x4C1860/0x4E34E0/0x4C1690/0x57D8B0/0x57DD10、CALL0x57D994/0x57DE95/0x4C1899、offset
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-d0"></a>
+## offset + 0xD0
+
+- [research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md 行 19](../../research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md?plain=1#L19-L19) — B既存 T013 B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01は0x44AEB0、0x44B6F1、0x44C6F2、0x44CF2Fでmanager+0xD0とのx87比較、0x44AEBF/0x44B700/0x44C705/0x44CF3Eの次段c
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-18654"></a>
 ## offset + 0x18654

@@ -10,4 +10,10 @@
 - [research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md 行 21](../../research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md?plain=1#L21-L21) — Golden needed: legitimate original-game inputs with signed delta lengths <8,=8,>8 and previous +0x50, same DAT/SAVE/MAP/input/RNG/ticks, observable next call 0x
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
+<a id="field-198"></a>
+## previous + 0x198
+
+- [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 6](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L6-L6) — [RESULT LINK] VA0x55038F follow!=0 gateを経てもresult EBPがNULLなら有効なリンク先は得られない。非NULL時のRush+0x1F8、result+0x194、previous+0x198は条件付き効果オブジェクト参照であり、Unit召喚親ID、同一生成世代、EXP配分
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

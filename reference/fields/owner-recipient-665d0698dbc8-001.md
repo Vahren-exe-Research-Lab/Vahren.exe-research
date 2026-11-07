@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-48"></a>
+## recipient + 0x48
+
+- [research/recovered/b_batch3/T013_MODE2_VECTOR_RANGE_INSERT_UNIT_GATE_NATIVE_20261030_18H.md 行 16](../../research/recovered/b_batch3/T013_MODE2_VECTOR_RANGE_INSERT_UNIT_GATE_NATIVE_20261030_18H.md?plain=1#L16-L16) — 同じ二条件でもUnit+0x1F9!=0なら0x569107..113でrecipient+0x48=候補Unitを保存後RET。二条件が非成立なら0x569116..119で先に+0x48=候補を保存し、NULLか否かで後続枝が異なる。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-58"></a>
 ## recipient + 0x58
 

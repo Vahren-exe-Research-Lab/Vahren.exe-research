@@ -25,6 +25,12 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 197](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L197-L197) — \| knowledge structs UnitDef+0x78 \| 「独立部隊（中立）のリーダーの印」（F§26 の初期の解釈） \| 部隊の隊長の印（F§58・§62.1 で訂正済み） \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
+<a id="field-e8"></a>
+## UnitDef + 0xE8
+
+- [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 49](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L49-L49) — Goldenの前提：同一原作EXE、DAT/MAP/SAVE、同一Unit/Group構成・先頭Unit、3つのsignedフィールド、group+0x34の正負/境界値、`0x529043` の整数変換結果（95/96境界）、UnitDef+0xE8の0/非0、両リスト件数0/1/2、オーバーフロー/負のIDIV境界
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
 <a id="field-158"></a>
 ## UnitDef + 0x158
 

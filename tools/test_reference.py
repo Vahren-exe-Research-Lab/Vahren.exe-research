@@ -370,6 +370,42 @@ class ReferenceTests(unittest.TestCase):
         self.assertFalse(reference.search(data, "esp+0x24"))
         self.assertEqual(len(data["field_mentions"]), 3)
 
+    def test_local_field_tokens_separate_japanese_prose_from_ascii_owners(self):
+        rows = reference.local_field_mentions(
+            "AL1ならengine+0x1EEC3C。calleeはowner+0x2EC、bodyとslot+0x90。"
+            "処理はUnit+0x90を読む。ScriptEngine + 0x1EED60を初期化。"
+            "Ns::Unit+0x28 / owner\u3000+\u30000x2EC", "report.md", "a" * 64, {}, 7)
+        self.assertEqual([(row["owner_text"], row["offset"]) for row in rows], [
+            ("engine", "0x1EEC3C"), ("owner", "0x2EC"), ("slot", "0x90"),
+            ("Unit", "0x90"), ("ScriptEngine", "0x1EED60"), ("Ns::Unit", "0x28")])
+        self.assertTrue(all(row["source"] == {
+            "path": "report.md", "sha256": "a" * 64, "start_line": 7, "end_line": 7}
+            for row in rows))
+
+    def test_local_field_tokens_keep_identifier_and_offset_boundaries(self):
+        content = ("Unit状態+0x90 0x005470FF+0x28 eax+0x20 R8D+0x20 "
+                   "owner+0x90G owner+0x90_tail ::Unit+0x28 "
+                   "fooUnit+0x90 Unit+0x9a unit+0x9A")
+        rows = reference.local_field_mentions(content, "report.md", "a" * 64, {}, 1)
+        self.assertEqual([(row["owner_text"], row["offset"]) for row in rows], [
+            ("fooUnit", "0x90"), ("Unit", "0x9A"), ("unit", "0x9A")])
+
+    def test_japanese_adjacent_field_lookup_preserves_saved_source(self):
+        report, ledger = self.add_recovery_ledger()
+        payload = "# 日本語の研究\r\n処理はUnit+0x90を読む。AL1ならengine+0x1EEC3C。\r\n".encode("utf-8")
+        report.write_bytes(payload)
+        digest = hashlib.sha256(payload).hexdigest()
+        ledger.write_text("destination\tdestination_sha256\tlimitations\n"
+                          f"research/recovered/native.md\t{digest}\tLocal owner only\n", encoding="utf-8")
+        data = reference.load(self.root)
+        hits = reference.search(data, "Unit+0x90")
+        self.assertEqual(len(hits), 1)
+        self.assertEqual(hits[0]["kind"], "field_mention")
+        self.assertEqual(hits[0]["source"], {
+            "path": "research/recovered/native.md", "sha256": digest, "start_line": 2, "end_line": 2})
+        self.assertEqual([row["owner_text"] for row in data["field_mentions"]], ["Unit", "engine"])
+        self.assertEqual(report.read_bytes(), payload)
+
     def test_field_index_links_context_is_stable_and_honors_aliases(self):
         report = self.add_field_report()
         self.add_layout_alias(["TempStatusWnd"])

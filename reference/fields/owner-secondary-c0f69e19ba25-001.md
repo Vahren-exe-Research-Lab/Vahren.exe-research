@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## secondary + 0x4
+
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 10](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L10-L10) — primary vtable+0x0C、PE VA 0x00638080に原EXE実ポインタ 0x00452D90 を確認。secondary+0x04は別の 0x0040E220 であり混同禁止。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 32](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L32-L32) — - 関数0x0040E220のBattleWnd secondary +0x04への**実行時virtual CALL site**は依然未解明。今回のDemoPerson vptrとBattleWnd secondary vptrを混同しない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-78"></a>
 ## secondary + 0x78
 
@@ -16,10 +25,22 @@
 - [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 33](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L33-L33) — 0x40E220 native 0x40E22CでEAX=0x80000008、0x40E231は[secondary+0x78]、0x40E23Aは[secondary+0x7C]と比較してから進む。後者はBattleWnd primary+0xA4に相当する。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
+<a id="field-16c"></a>
+## secondary + 0x16C
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 696](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L696-L696) — [CONFIRMED-SAVED-NATIVE / CLASS CONTRAST] `exe/T006_CHOICE_VMETHODS.txt` 0x41ECC0..0x41ED37のChoiceWnd no-hitは+0x16Cに対して同様のsentinel検査/0x4463F0/再設定を関数内で実施、別slot0x
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-19c"></a>
 ## secondary + 0x19C
 
+- [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 9](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L9-L9) — 両mode一致でもsecondary+0x19Cのbyteが0なら何も実行せずreturn（擬似C分岐）。return0の描画制御byte primary+0x84とは別フィールド。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
 - [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 10](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L10-L10) — secondary+0x19C!=0のとき0x40E25E CALL 0x431FB0。返値非zeroなら0x40E26D CALL 0x4338D0(1,0)に進み、その回は0x40E2F0を呼ばない。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 24](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L24-L24) — NEXT: 条件分岐と実行中のsecondary +0x19C/selector/描画ゲートを一次記録で結び、G3/G4と切り分ける。同一runのG0-G2の合法旧UI証拠取得が最優先。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

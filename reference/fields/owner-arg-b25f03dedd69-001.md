@@ -4,11 +4,23 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-78"></a>
+## arg + 0x78
+
+- [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 6](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L6-L6) — [NATIVE LEADER] 0x472299 PUSH EBP→0x47229E CALL0x583DC0→0x4722A3 [ESP+0x30]=EAX。0x583DC0は既KBの UnitDef_FindLeaderOfVassal（推定ラベル）、入口arg+0x78/+0x94と+0x1A4→ctx+0x30
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 <a id="field-80"></a>
 ## arg + 0x80
 
 - [research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md 行 53](../../research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md?plain=1#L53-L53) — **キーの出自:** `0x00515420`は呼出引数を`[esp+4]`から読んで`[arg+0x80]`のSkill候補フラグ`+0x1FD`を確認。さらに`0x00515441: lea eax,[esp+0x1C]`はスタック調整後**元の`[entry ESP+4]`（同じ引数ワード）のアドレス**を指す。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-1eec30"></a>
+## arg + 0x1EEC30
+
+- [research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md 行 9](../../research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md?plain=1#L9-L9) — [KEY/LOOKUP] 0x49DAC2 SHL EBX,16（Y側）/0x49DAD8 AND ECX,0xFFFF（X側）/0x49DADE OR ECX,EBXで32bit整数key構成。0x49DAE0..0x49DB18はarg+0x1EEC30 tree headerを使いmap/set様検索。値比較・U
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1eed40"></a>
 ## arg + 0x1EED40

@@ -10,4 +10,10 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1314](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1314-L1314) — [ROOT/DELTA] `exe/T006_TARGET_DISPATCH.md`同ID節に保存/読戻し。新たにA既存 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433C3C/433C4Cからglobal ScriptIF frame+0x1EED98（[engine+0x1EEC3C]
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+<a id="field-1eeda8"></a>
+## frame + 0x1EEDA8
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1314](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1314-L1314) — [ROOT/DELTA] `exe/T006_TARGET_DISPATCH.md`同ID節に保存/読戻し。新たにA既存 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433C3C/433C4Cからglobal ScriptIF frame+0x1EED98（[engine+0x1EEC3C]
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

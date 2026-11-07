@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-77"></a>
+## UnitData + 0x77
+
+- [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 15](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L15-L15) — [ENTRY-GATE] FUN_00588470 Ghidra擬似CではUnitData+0x77または+0x75が真の経路内で先にEXP閾値判定を行い、この係数処理へ続く。全Unit/全死亡で必ず到達は未証明。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
+
+<a id="field-c8"></a>
+## UnitData + 0xC8
+
+- [research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md 行 9](../../research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md?plain=1#L9-L9) — [NEW GATES] 0x472254 UnitData+0x168 level と既定上限候補をCMP→0x47225A JGE skip；0x47226F UnitData+0xC8とresolver値CMP→0x472275 JGE skip；0x47227D CALL0x5857E0後0x472284 JNE
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 <a id="field-168"></a>
 ## UnitData + 0x168
 
@@ -13,20 +25,56 @@
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 33](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L33-L33) — [LEVEL] UnitData+0x168 level / +0x16C EXP / +0x170 next threshold。0x58A650即時SimpleUnit、0x575110通常Unitの遅延処理。11field再計算及び0x58AFA0 skill/property刷新は未完全動的確認。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 
+- [research/recovered/exp/EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md 行 29](../../research/recovered/exp/EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md?plain=1#L29-L29) — - `0x466BA0`がUnitData+0x168/+0x16C/+0x170を個別に値コピーする（保存擬似C）。生成用一時元とは少なくともLv・EXP・閾値は**独立の数値ストレージ**になる。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; section2 unresolved DAT key names clarified as add/add2 in EXP_ENDTRANSFER CP10, not next/next2
+
 <a id="field-16c"></a>
 ## UnitData + 0x16C
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 53](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L53-L53) — - 既研究の0x578B70は対象のUnitData+0x16Cを減算し、攻撃側UnitData+0x16Cへ加算する。0x578DCA ADD [ECX+0x16C],EAXを再確認。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 136](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L136-L136) — - 原本0x578D8Bの属性照合文字列は0x627E34="drain"。この枝がUnitData+0x16Cを変更する経験値吸収であることと、MODに吸収攻撃が定義されていることは別の命題。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 33](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L33-L33) — - 共通helperは0x551FB2でUnitData+0x16Cへ加算。SimpleUnit constructorの0x5442E4は+0x8C=1/+0x8D=0を設定し、0x551FBAの方式判定と閾値判定を通れば0x551FD3→0x58A650の即時Lv更新へ。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 14](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L14-L14) — - Training function 0x471E80 uses UnitData+0x170 for a threshold and writes experience to UnitData+0x16C at 0x4723D8; 0x4723DE calls 0x58A650 for level update.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 786](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L786-L786) — [NEW VERIFIED] 原本PEで0x588D77 ECX=0x62723C文字列dead_penalty→0x588D7C CALL0x46F4C0、0x588D85..0x588DE0はUnitData+0x16C×係数/100に+0.5して整数書戻し。原作context.dat L110=dead_pena
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 787](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L787-L787) — [NEW VERIFIED] 訓練0x4723C7非正回数skip、0x4723D0 next threshold UnitData+0x170→0x4723D8 UnitData+0x16C上書き→0x4723DE CALL0x58A650→0x4723E4 loop。通常hit 0x551FB2 ADDと処理が異な
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-170"></a>
 ## UnitData + 0x170
+
+- [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 49](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L49-L49) — [KEY BYTES] 原本EXE 0x627620 ASCII='exp'、0x627624='exp_max'、0x62762C='exp_mul'。0x58A400の閾値更新Ghidra擬似Cはこれらの設定を読み、UnitData+0x170へ累積次閾値を構築する。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 14](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L14-L14) — - Training function 0x471E80 uses UnitData+0x170 for a threshold and writes experience to UnitData+0x16C at 0x4723D8; 0x4723DE calls 0x58A650 for level update.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 787](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L787-L787) — [NEW VERIFIED] 訓練0x4723C7非正回数skip、0x4723D0 next threshold UnitData+0x170→0x4723D8 UnitData+0x16C上書き→0x4723DE CALL0x58A650→0x4723E4 loop。通常hit 0x551FB2 ADDと処理が異な
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-178"></a>
+## UnitData + 0x178
+
+- [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 30](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L30-L30) — [RATIO] 対象+0x185FCが基礎報酬、攻撃の分母は対象UnitData+0x178。ceil(base×ratio)→数値exp_per二次丸め。heal kind3=2%、summon kind4=1%の固定枝は旧EXP研究の証拠を参照。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 204](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L204-L204) — - 分母はHP callbackから戻った後に0x551156でtarget+0x1C8を読み、0x55115CでUnitData+0x178を読む。これはHP成長フィールド（成長名配列0x68D7D4→"hp"と先行UnitData対応）。target+0x90の現在HPではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 212](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L212-L212) — - HP項目の上限ポインタはtarget+0xDC。攻撃側の分母UnitData+0x178とは参照先が異なる。ただしfunc=heal(kind3)は共通EXP関数の固定2%枝を通るので、渡した分子/分母の比率自体を採用しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 6](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L6-L6) — - **攻撃:** HP callbackへ渡すECXとEXP分子EDIは別。HP側の最低値・特殊補正、残HPで切り詰めた有効量をEXPへそのまま流用しない。分母はcallback後のUnitData+0x178。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 <a id="field-1b1"></a>
 ## UnitData + 0x1B1
@@ -37,10 +85,19 @@
 <a id="field-1c4"></a>
 ## UnitData + 0x1C4
 
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 7](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L7-L7) — ## 新增分1：0x515060はUnitData+0x1C4の二集計（native）
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 22](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L22-L22) — - Golden条件: x20前DATと無改変原EXEの同SAVE/MAP/input/RNGで、managerとgroupのUnit vector(0/1/複数)、Unit+0x1867C/+0x1D0、UnitData+0x1C4、前後+0x88/+0x8C/+0xB0/+0xD0、FPU status、0x449
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L9-L9) — 0x515060 iterates obj vector and excludes Unit+0x1867C nonzero; UnitData+0x1C4 contributes to obj+0x88 and conditionally to +0x8C if Unit+0x1D0 nonzero. It is *
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-1cc"></a>
+## UnitData + 0x1CC
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 147](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L147-L147) — - +0x18614は0x571B70@0x572403で所属参照+0x1D8側の+0x10、陣営+0x18、関連UnitData+0x1CCと0x583A80の条件から設定される。0x583A80のゲーム上の正式意味名は未確定。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

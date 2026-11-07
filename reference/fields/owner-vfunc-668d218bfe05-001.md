@@ -4,6 +4,24 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## vfunc + 0x10
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 435](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L435-L435) — - variable writeはDialogWnd close/releaseより前。commit後にvfunc +0x10へ1を渡し、result stateに応じてinternal callback `decide12` / `decide4` を発火する。dispatcherがYield済みなのでresume前
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-18"></a>
+## vfunc + 0x18
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 364](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L364-L364) — - opcode19 title/title2 (0x4A2192) はarg1 y座標が負なら `abs(y)% * screenHeight` へ変換し、正ならpixel yとして使用。0x30-byte objectを0x4A01B0で構築しvtable 0x638DC0、RTTI `FadeMessageShe
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 381](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L381-L381) — - flag=1 pathはcollector対象を直接vfunc +0x18 cleanupへ送る。flag=0 pathではRTTI `MsgMark` / `MiniMapWnd` は常にcleanupし、それ以外はexecutionModeとscene条件により一部sheetを保持し得る。この時scene by
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 422](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L422-L422) — - erase/win共通core 0x52BFF0(flag=0)の通常sheet保持条件を追加確定。MsgMark/MiniMapWndはRTTI判定で保持条件を迂回し常にcleanup。その他sheetはexecutionMode==1かつ0x431FB0(engine)==true、またはexecutionMo
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-54"></a>
 ## vfunc + 0x54
 
@@ -15,5 +33,26 @@
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 421](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L421-L421) — - write後にChoiceWnd vfunc +0x54（0x41E6D0）を呼び、`choice` markerをparent UI/event containerからreleaseした後 `decide1` を発火する。dispatcher側choice handlerは既知どおりAL=1 Yieldなので、c
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-58"></a>
+## vfunc + 0x58
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 334](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L334-L334) — - opcode45は同じcanonical keyを構築してmap検索し、存在時だけvfunc +0x58を呼ぶ。record自体はmapから削除しないためhide→linkで同objectを再表示できる。resolve失敗/record不存在はno-op Continue。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-60"></a>
+## vfunc + 0x60
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 146](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L146-L146) — - `0x435C10` は `worldbase+0x504` 配下のRB-tree (`+0x1EEBD0`) を走査し、RTTI dynamic_cast相当で `SpotElm` / `SpotEscapePath` / `SpotPath` を分類する。各分類ごとに name を書き、object vfunc
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 159](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L159-L159) — - SpotElm/SpotEscapePath/SpotPath 各vfunc +0x60 payloadの内部field順はまだ未展開。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-70"></a>
+## vfunc + 0x70
+
+- [research/recovered/rea_batch13/reports/CROSSWAVE_ACTION_AI_RECOVERY_20261010.md 行 14](../../research/recovered/rea_batch13/reports/CROSSWAVE_ACTION_AI_RECOVERY_20261010.md?plain=1#L14-L14) — 3. recovery core `0x57DF90`で `poi<0 && hprec>=0` はHP回復blockをskip、`sil<0 && mprec>=0` はMP回復blockをskip。負のhprec/mprecは各skip条件外。HP計算結果が負ならvfunc+0x70へのdeath-like分岐があ
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

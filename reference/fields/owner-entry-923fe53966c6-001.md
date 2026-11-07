@@ -22,6 +22,12 @@
 <a id="field-18"></a>
 ## entry + 0x18
 
+- [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_READBACK.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_READBACK.md?plain=1#L12-L12) — - 次回は `0x005DA930` と共有codebook entry+0x18利用、または `0x005DFFC0` / `0x005E3240` の間接dispatch tableのread-only到達性を確認。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md 行 28](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md?plain=1#L28-L28) — - **次回**: `0x005DA930` のbitstream読込とcodebook entry+0x18の利用、または `0x005DFFC0` / `0x005E3240` の間接dispatch先テーブルの読取専用照合で到達性を検証する。動作GoldenはNOT RUN。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
 - [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
@@ -30,6 +36,9 @@
 
 <a id="field-1c"></a>
 ## entry + 0x1C
+
+- [research/recovered/ac_tests6/reports/T020_T028_BATTLE_CONFIG_MODE_PRODUCER_GATE_20261028_00H.md 行 7](../../research/recovered/ac_tests6/reports/T020_T028_BATTLE_CONFIG_MODE_PRODUCER_GATE_20261028_00H.md?plain=1#L7-L7) — [MODE SELECTOR] 0x565BA4 player_battle既定1、0x565BE2 enemy_battle既定0。明示entry+0x1C非0は1、0は0。0x490A83 AL==0かつmanager+0x1EED55==0なら mode=NOT enemy_battle（0x490A98）、それ
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
 
 - [research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md 行 10](../../research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md?plain=1#L10-L10) — [MAP CAVEAT] 既Ghidra 0x463CA0はengine+0x30C/0x310 treeをlookupし、miss時0x20-byte entry+0x1c=0を生成して挿入する擬似Cを示す。missing variableの実副作用/例外/複数scopeはASM・実戦で要検証、現時点では0戻りの厳密
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.

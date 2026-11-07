@@ -19,4 +19,10 @@
 - [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 64](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L64-L64) — 3. **T011**：`object+0x54` stampのreader群と `grid+0x28`マスク初期化、Skill `+0x134/+0x1FD`のwriter範囲。
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-48"></a>
+## grid + 0x48
+
+- [research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md 行 7](../../research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md?plain=1#L7-L7) — - NEW-2 [STATIC]: 非0側0x4E507E/5081/5084のgrid+0x48からセルを取得、0x4E5086 CMP DWORD PTR [EAX+ECX*4],0 -> 0x4E5089 SETE DL -> 0x4E508C EAX=EDX。範囲内かつ空セルなら1、非空又は範囲外なら0。これは
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## callback + 0x8
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md?plain=1#L6-L6) — [CHILD POSITION AND TASK EDGE] 41E0D1 `ECX=[newChild+4]`。そこからchild-linked recordの+40/+44/+48/+4Cを親矩形幅・高さ（算術absolute signed32とX,Y）を用いて位置替え。41E11B virtual callbac
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-48"></a>
+## callback + 0x48
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md?plain=1#L6-L6) — [CHILD POSITION AND TASK EDGE] 41E0D1 `ECX=[newChild+4]`。そこからchild-linked recordの+40/+44/+48/+4Cを親矩形幅・高さ（算術absolute signed32とX,Y）を用いて位置替え。41E11B virtual callbac
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-58"></a>
 ## callback + 0x58
 

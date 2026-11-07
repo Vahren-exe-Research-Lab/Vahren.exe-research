@@ -16,4 +16,7 @@
 - [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 6](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L6-L6) — [RESULT LINK] VA0x55038F follow!=0 gateを経てもresult EBPがNULLなら有効なリンク先は得られない。非NULL時のRush+0x1F8、result+0x194、previous+0x198は条件付き効果オブジェクト参照であり、Unit召喚親ID、同一生成世代、EXP配分
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
+- [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 8](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L8-L8) — [TEST LIMITS] helperに渡すsynthetic_numericはスタブ値であり原作numeric getterの出力実測ではない。memory pointer等価でも寿命・親子identityを保証しない。result+0x194等の名称は論理意味未確定。Skill+0x1D0の他consumer・原
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

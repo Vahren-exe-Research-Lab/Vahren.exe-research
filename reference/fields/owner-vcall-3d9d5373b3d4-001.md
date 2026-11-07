@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-18"></a>
+## vcall + 0x18
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L17-L17) — ## 新発見2｜両vcall +0x18の実装先は0x005146E0
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-54"></a>
 ## vcall + 0x54
 
@@ -13,7 +19,16 @@
 <a id="field-5c"></a>
 ## vcall + 0x5C
 
+- [research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md 行 12](../../research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md?plain=1#L12-L12) — [V9 CROSSCHECK] 0x45A2C6 belongs 0x459610; 0x57D9A9 belongs 0x57D8B0。V9 0x42F860 caller0x45A2C6 native E8  e89555fdff、0x42F889→0x402C40 e8b233fdff、0x57D994→0x4C
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
 - [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 11](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L11-L11) — [NEGATIVE CONDITIONS] 'of','offx','off ','OFF','' never count as the exact returned off bytes. Quarter helper need not execute when quota non-off. D3DX_REQUIRED
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-c0"></a>
+## vcall + 0xC0
+
+- [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 12](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L12-L12) — ## NEW STATIC: vcall+0xC0結果を検査しない
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

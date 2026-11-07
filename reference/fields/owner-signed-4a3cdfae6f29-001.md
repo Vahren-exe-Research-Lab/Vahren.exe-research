@@ -7,6 +7,9 @@
 <a id="field-1bc"></a>
 ## signed + 0x1BC
 
+- [research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md 行 17](../../research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md?plain=1#L17-L17) — V9 Ghidra擬似C: 0x0047BB50 は要素数<=32で 0x0044D6A0 挿入ソート、>32で 0x0047BCC0 partition等を使用。0x0044D6A0 は comparator(x,y)の真でxを前方へ移す。比較式からsigned +0x1BC昇順がSTATIC-DERIVED。全サイ
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md 行 22](../../research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md?plain=1#L22-L22) — 原作配列順、signed +0x1BC 比較、同値、負/零/正、候補0/1/2/3/32/33と死亡/flag除外を別軸にする。>32はソート安定性と実際の機会の有無をVERIFY。現時点で実ゲームの可視配送順とnative Unit参照同一性は未確認。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
