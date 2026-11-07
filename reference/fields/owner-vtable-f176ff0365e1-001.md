@@ -97,6 +97,9 @@
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 30](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L30-L30) — - 0x004BF630の0x004BF64Aはstream+0x9C vtable+0x1C（08時台IIDよりIBasicAudio::put_Volumeに整合）。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 22](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L22-L22) — - 成功時は0x004BEE61のIGraphBuilder vtable+0x34（RenderFile相当）、続いて0x004BEE6BのIMediaControl vtable+0x1C（Run相当）へ進む。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
@@ -183,6 +186,12 @@
 
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 22](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L22-L22) — - 成功時は0x004BEE61のIGraphBuilder vtable+0x34（RenderFile相当）、続いて0x004BEE6BのIMediaControl vtable+0x1C（Run相当）へ進む。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-3c"></a>
+## vtable + 0x3C
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 31](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L31-L31) — - 0x004BF66Bはstream+0xA0内のインタフェース vtable+0x3C（DirectSoundBuffer8::SetVolumeに整合）。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 <a id="field-44"></a>
 ## vtable + 0x44
@@ -333,6 +342,9 @@
 
 <a id="field-cc"></a>
 ## vtable + 0xCC
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 44](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L44-L44) — - 次P0: 0x004BF630の未同定+0x78→vtable+0xCC→slot+0x14のowner/ABIと、音量0/極小音量でのfade-in slope<0境界を限定追跡。どちらも元の旧証拠やレーンDとの重複照合を先行する。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L14-L14) — - 4BF679で LEA EDX,[ESP+4]。これはPROLOGUEの PUSH ECX で積んだローカルDWORDを出力領域として指す。4BF67D/7Eで outポインタ/performance-this を積み、4BF67Fで vtable+0xCC を取得、4BF685で間接CALL。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency

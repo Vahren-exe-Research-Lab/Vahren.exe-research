@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-77"></a>
+## offsets + 0x77
+
+- [research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md 行 13](../../research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md?plain=1#L13-L13) — - B06 locates nonmember candidate loops at 0x494931 and 0x4958C1, guards byte offsets +0x77==0, +0x75!=0, +0x7A==0, signed dword+0x80<3, followed by [candidate+
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 <a id="field-a0c"></a>
 ## offsets + 0xA0C
 

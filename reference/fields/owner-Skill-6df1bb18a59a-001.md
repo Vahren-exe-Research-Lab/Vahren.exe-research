@@ -88,6 +88,9 @@
 <a id="field-48"></a>
 ## Skill + 0x48
 
+- [research/recovered/ac_tests6/reports/T020_T013_VTABLE_SLOT_STATIC_ROUTE_NEGATIVE_GATE_20261027_08H.md 行 5](../../research/recovered/ac_tests6/reports/T020_T013_VTABLE_SLOT_STATIC_ROUTE_NEGATIVE_GATE_20261027_08H.md?plain=1#L5-L5) — [STATIC CALL] 0x54E420内部の保存E8呼出位置0x54E4A3と0x54E595は共に0x551490。Skill+0x9C正の系統は当該呼出中の0x551490へ必ず至る訳ではなく0x4C60F0側へ進む。対象生存/Skill+0x48/効果待ち閾値は局所条件。別の即時候補0x54E317→0x5
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md?plain=1#L4-L4) — [ABI/ENTRY] 3既存B caller 0x57FA99/0x57FE17/0x54DF8C（既知caller部分を重複READYにしない）で ECX=target候補、EDX=術者相当、EBX=Skill相当。0x54E0C4 Skill+0x48 byte==0時は0x54E0D2でgeometry用ECX
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
@@ -369,11 +372,5 @@
 
 - [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 5](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L5-L5) — [NEW T020 BOUNDARY] 原作VA0x59B928/0x59B962/0x59B999: raw follow「on」の比較真経路はcompiled Skill+0x1D0=1。その他はnative numeric getter経由。raw off、raw 0、raw 20/30/48をcompiler後
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-1d8"></a>
-## Skill + 0x1D8
-
-- [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L6-L6) — [STATE WRITERS] 0x5792A3 Unit+0x1E49C=[EBP+0x1C]、0x5792A9 Unit byte+0x186D0=1、0x5792B2/+BB Unit+0x1E4A4/+0x1E4A8=pointB X/Y、0x5792C4 Unit+0x186D4=0、0x5792D4 Uni
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

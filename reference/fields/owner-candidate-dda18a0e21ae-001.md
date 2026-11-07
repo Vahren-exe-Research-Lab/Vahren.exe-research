@@ -64,6 +64,12 @@
 <a id="field-c0"></a>
 ## candidate + 0xC0
 
+- [research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md 行 13](../../research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md?plain=1#L13-L13) — - B06 locates nonmember candidate loops at 0x494931 and 0x4958C1, guards byte offsets +0x77==0, +0x75!=0, +0x7A==0, signed dword+0x80<3, followed by [candidate+
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+- [research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md 行 14](../../research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md?plain=1#L14-L14) — - The word loyal_down and default10 do NOT establish that candidate+0xC0 is a native loyalty field: T012 Unit+0xC0 para belongs to a possibly different struct;
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md 行 12](../../research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md?plain=1#L12-L12) — - 非memberかつ名前解決成功時 0x494931 CALL 0x5882F0→4byte参照配列を走査。0x494968..84で候補byte+0x77==0、byte+0x75!=0、byte+0x7A==0、signed dword+0x80<3 のゲートを満たす候補だけ0x494986で [candidat
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
@@ -81,6 +87,9 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L7-L7) — - [PER CANDIDATE] 第1配列では0x514DB1のbyte(candidate+0x1867C)!=0を除外、0x514DBEでcandidate==selfを除外。その後0x514DC4でdword(candidate+0x1C0)!=0の時だけ0x514DCF CALL 0x5B6EABを1回実行す
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md 行 4](../../research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md?plain=1#L4-L4) — - [LOCAL ASM] 既存exe/T013_TARGET_SELECTOR_PROBE.txt VA0x514DB1..0x514DF5: candidate+0x1867C!=0は除外、candidate==selfは除外、candidate+0x1C0==0なら乱数CALLをskip、それ以外は0x514DC
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 <a id="field-a0c"></a>
 ## candidate + 0xA0C
@@ -117,5 +126,8 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L7-L7) — - [PER CANDIDATE] 第1配列では0x514DB1のbyte(candidate+0x1867C)!=0を除外、0x514DBEでcandidate==selfを除外。その後0x514DC4でdword(candidate+0x1C0)!=0の時だけ0x514DCF CALL 0x5B6EABを1回実行す
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md 行 4](../../research/recovered/rea_batch13/reports/REA_20261020_0135_T013_T031_STEALTH_QUANTIZED_THRESHOLD_QC.md?plain=1#L4-L4) — - [LOCAL ASM] 既存exe/T013_TARGET_SELECTOR_PROBE.txt VA0x514DB1..0x514DF5: candidate+0x1867C!=0は除外、candidate==selfは除外、candidate+0x1C0==0なら乱数CALLをskip、それ以外は0x514DC
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

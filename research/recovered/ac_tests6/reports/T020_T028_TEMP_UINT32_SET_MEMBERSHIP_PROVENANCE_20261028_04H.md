@@ -1,0 +1,22 @@
+# E-AUDIT-20261028-04H-T020-T028-UINT32-TEMP-SET-PROVENANCE-01
+Status: STATIC EVIDENCE / SYNTHETIC EXECUTED / VERIFY / NOT READY. 2026-10-28 04H JST.
+## Source and ownership
+- PC Desktop Commander Local Compact online. Read-only: MASTER, lane protocol/A-D handoffs, REA PROGRESS, dev_lab implementation plan, T018 Golden and T019 contradictions, previous E 03H fixture, search_index README/BUILD_MANIFEST, B 04H source. No Work, Ghidra/Java rerun, original game execution or Git action.
+- B owner ID B-20261028-0410-T028-TEMP-SET-INSERT-ABI-01, file data/T028_TEMP_SET_INSERT_ABI_NATIVE_20261028_04H.md, exact SHA256 AB31AFD5B811219E62525F053F0AA08B100B6935DB776551EEA297ADCEEDE76C verified in new unittest.
+- B03 file data/T028_TREEFLAG_TEMP_MAP_DUAL_UPDATE_NATIVE_20261028_03H.md exact SHA256 4018F36F45B1A73EFBBDB2727702C8AC24A6BE5E96F685DF573A3B0729F58F81 verified. B owner documents are read-only.
+- Original bundled PE identity per 2026-10-21 manifest SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187; E did not rehash original PE this run. Search CLI read-only function 0x498EE0 source pseudo-C SHA FDD9B4CB4C5468ED2FF5C884F766C61292A075F44BDF35F93D29F0FAF097F3A8.
+## E new delta and provenance limits
+- 0x498EE0 reads uint32 source elements in +4 increments between begin/end; calls 0x565780 node allocation, 0x40EBE0 RB-tree insertion, or 0x5AF0F0 general duplicate-aware insertion. B original ASM confirmed E8 7/7; E direct extracted pseudocode lists exactly 7 outgoing CALL records.
+- Native callgraph shows 13 total direct call sites of 0x498EE0, only 0x493AD1 and 0x493AF4 belong to current B03 0x493630 local path. 13 generic callers are NOT 13 battle effects.
+- B03 N=0 (exact-key miss), N=1 (hit node flag nonzero), N=2 (hit flag zero) remain conditional. The two call sites pass separate stack+0x7C and stack+0xA0 temporary integer-key sets. Matching key membership never proves same container, manager, battle epoch, or node.
+- New E synthetic model distinguishes empty inputs, repeated uint32 keys, inner/boundary examples, signed-negative or >UINT32_MAX errors, booleans/floats/string invalids, unknown input vectors, zero/nonzero node flag, and two different temporary sets.
+- Membership/unique count in this synthetic fixture is *not* native exact tree rotation/order, allocation success, battle event outcome, morale/death/unit EXP, nor G2 deployed roster. Keep native consumer, source key role, identity and successful insertions VERIFY. Do not infer key duplicates suppress a gameplay effect.
+- B04 only STATIC/VERIFY/NOT READY; no E MASTER READY registration. T019 new confirmed contradictions 0. GameClear 13 DAT + 2 TXT source-scope RESOLVED; script2 winner/phase semantics, TXT live loading, gwrite resume VERIFY.
+## T020 execution and T018 Golden
+- New code: tests/t020_t028_temp_uint32_set_membership_gate_20261028_04H.py SHA256 71B06A7626106799A62E2E1DBD5B8A3FA3813E9C2CF5DF853541917E821F7193.
+- Local Python -B final run: new 31/31 PASS, existing E 03H 20/20 PASS, total 51/51 PASS, 0 failures. These are SYNTHETIC contract tests, not original gameplay.
+- Legal Golden G0 original unmodified UI battle start/source spot and input, G1 same-run immediate prebattle SAVE bytes/SHA + input timeline, G2 actual MAP SHA/three identifiable sides/ordered deployed Unit/Troop; G3 battle result and G4 World diff all NOT RUN. Original DYNAMIC OBSERVED new 0, actual Golden PASS 0, strict MATCH 0.
+- Task state: checkpoint196 / READY596=A115/B229/C136/D116 and 34 Tasks (DONE9, IN_PROGRESS21, VERIFY4) inherited from last confirmed 03H E run; E did NOT independently recount the full MASTER READY ledger or all Task statuses this run. New formal READY 0.
+- Old refusals T018 table/session-join, T019 denied XREF, C T026/T032, D T030 TSV, disallowed 0x5710C0 and other refused payloads remain BLOCKED. No denied operation was retried or rerouted. 2026-10-25 OFFLINE-UNSYNCED full content and cross-owner semantic duplicate audit remain unresolved.
+- Authorized edits only this E-owned test and this E-owned note. MASTER/other lanes/REA/dev_lab/original PE/DAT/ZIP/SAVE/Git/Work/settings/schedule unchanged. No new safety refusal/connection problem. Store/readback SHA for this note separately.
+- Next priority: legal C-NB02 G0/G1/G2 one-run primary receipts. Then B04 per-container key producer+consumer mapping and 0x498EE0 set identity into same battle/epoch; require native proof before Golden promotion or one-to-one implementation matching.

@@ -13,6 +13,9 @@
 <a id="field-e0"></a>
 ## input + 0xE0
 
+- [research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md 行 9](../../research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md?plain=1#L9-L9) — - Existing Ghidra search.py function 0x5916E0 verified miss-only write: input+0xE0 -> shared fallback address 0xB05BCC, i.e. base 0xB05A28 + 0x1A4; +0x74 and +0
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch2/T028_NAMED_RESOLVER_SENTINEL_ROSTER_SEED_NATIVE_20261028_07H.md 行 11](../../research/recovered/b_batch2/T028_NAMED_RESOLVER_SENTINEL_ROSTER_SEED_NATIVE_20261028_07H.md?plain=1#L11-L11) — - miss（EAX=0）では0x59175C/762の一回限りのlazy init flag [0xB05BFC] を通り0x59176B CALL0x582AA0、0x591775 atexit登録。0x59177D [0xB05BCC]=[input+0xE0]を書き、0x591788/78Eで2バイト状態を0へ
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 

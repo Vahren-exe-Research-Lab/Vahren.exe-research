@@ -62,6 +62,26 @@ class KnowledgeSecurityTests(unittest.TestCase):
             issues,_=sync.safe_files(root)
             self.assertTrue(any("サイズ" in s for s in issues))
 
+    def test_redacted_home_placeholder_retains_exact_research_bytes(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(
+                sync, "FILES", ("symbols.tsv", "structs.tsv", ".gitignore")):
+            root = Path(td)
+            self.fixture(root)
+            prefix = "C:" + chr(92) + "Users" + chr(92)
+            placeholder = prefix + "..."
+            for suffix in (chr(92) + "Vahren.pdb", "", "\n"):
+                body = (placeholder + suffix).encode("utf-8")
+                (root / "symbols.tsv").write_bytes(body)
+                issues, _ = sync.safe_files(root)
+                self.assertEqual(issues, [])
+                self.assertEqual((root / "symbols.tsv").read_bytes(), body)
+            for name in ("Researcher", ".Researcher", "...Researcher",
+                         "...é", "...研究者", "... Researcher", "...`Researcher"):
+                (root / "symbols.tsv").write_text(
+                    prefix + name + chr(92) + "Vahren.pdb", encoding="utf-8")
+                issues, _ = sync.safe_files(root)
+                self.assertTrue(any("機密" in issue for issue in issues), name)
+
     def test_missing_source_stops(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)

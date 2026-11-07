@@ -7,6 +7,9 @@
 <a id="field-80"></a>
 ## dword + 0x80
 
+- [research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md 行 13](../../research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md?plain=1#L13-L13) — - B06 locates nonmember candidate loops at 0x494931 and 0x4958C1, guards byte offsets +0x77==0, +0x75!=0, +0x7A==0, signed dword+0x80<3, followed by [candidate+
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md 行 12](../../research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md?plain=1#L12-L12) — - 非memberかつ名前解決成功時 0x494931 CALL 0x5882F0→4byte参照配列を走査。0x494968..84で候補byte+0x77==0、byte+0x75!=0、byte+0x7A==0、signed dword+0x80<3 のゲートを満たす候補だけ0x494986で [candidat
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 

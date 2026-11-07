@@ -7,6 +7,27 @@
 <a id="field-1eed30"></a>
 ## context + 0x1EED30
 
+- [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 26](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L26-L26) — - **Correction/next:** the EH finalizer has both a full-range clear/reset branch and an alternate erase/decrement branch; exact iterator/balance invariants, exc
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_17H_P0_F720_UI_ALIAS_OUTPUT_VECTOR_SCOPE_STATIC.md 行 23](../../research/recovered/rea_batch2/reports/REA_20261102_17H_P0_F720_UI_ALIAS_OUTPUT_VECTOR_SCOPE_STATIC.md?plain=1#L23-L23) — - **Next:** inspect a **bounded, new** original-x86 region `0x40FCB5..0x40FDC6` only if not covered by later owner results, then distinguish remaining output-bu
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md?plain=1#L10-L10) — 2. `0x40FD32/35` reads `[begin+EDI*4]` and writes its dword to `[end]`; alternative `0x40FD91` stores EBX to `[end]`. `0x40FD93/99/9C` reload, advance by 4 and
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md?plain=1#L24-L24) — - **Unresolved:** who actually inserts into `context+0x1EED30/34`; indirect aliases and transitive side effects of `0x501A40`, `0x567EE0`, `0x544290`, `0x568710
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md?plain=1#L12-L12) — 3. `0x410019..0x410108`: reads global vector-like begin/end/cap `0x8B8EC8/0x8B8ECC/0x8B8ED0`. At `0x41009D` or `0x4100F9` the code stores a dword at `[end]`; at
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md?plain=1#L24-L24) — - **Limitation/erratum:** this resolves the prior `0x40FF24` tail cursor but DOES NOT identify a write into `context+0x1EED30/34`; local and global vectors, two
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md 行 15](../../research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md?plain=1#L15-L15) — 4. Distinct callee `0x410420` (V9 `[0x410420,0x410BE1)`, 1,986 native bytes; V9 indexes 35 direct E8 calls) begins by reading active context via `[0x8B8D28]` an
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
 - [research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md 行 27](../../research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md?plain=1#L27-L27) — - Do not conflate objects at `0x8B8E58/5C` (0x188-byte class instances), output vectors at `0x8B8E68/6C/70` or `0x8B8EC8/CC/D0`, and excluded RB-tree `context+0
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
@@ -63,6 +84,12 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md?plain=1#L8-L8) — - Clear end `0x4F8F01 MOV [EAX+4],EAX`, `0x4F8F07 MOV [EAX],EAX`, `0x4F8F0D MOV [EAX+8],EAX` sets the header links to itself; `0x4F8F10 MOV [EDI+8],0` sets cont
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+<a id="field-1eed4c"></a>
+## context + 0x1EED4C
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 40](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L40-L40) — 呼出元`0x00490180`は、`0x4901DB TEST EAX,EAX`などで事前条件を検査してから`0x49021A CALL 0x00488290`を呼び、`0x49021F MOV [ESP+0x17],AL`でこの結果を保持する。入口ガードには`0x00597A50()>0`、`[context+0x1
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 <a id="field-1eed64"></a>
 ## context + 0x1EED64

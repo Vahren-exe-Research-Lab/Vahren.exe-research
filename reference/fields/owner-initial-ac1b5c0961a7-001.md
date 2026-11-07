@@ -10,4 +10,10 @@
 - [research/recovered/rea_batch2/reports/REA_20261102_23H_P0_F720_VPTR_PHASE_NULL_PRECONDITION_STATIC.md 行 5](../../research/recovered/rea_batch2/reports/REA_20261102_23H_P0_F720_VPTR_PHASE_NULL_PRECONDITION_STATIC.md?plain=1#L5-L5) — - Predecessor: same-ID 2026-11-02 21H/22H addenda and existing B/T013/T028 2026-10-30 12H plus E/T020 2026-10-24 01:53. Their `0x447810` and initial +0x0C slot
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
+<a id="field-1a4"></a>
+## initial + 0x1A4
+
+- [research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md 行 10](../../research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md?plain=1#L10-L10) — - Existing search.py function 0x582AA0 independently confirms constructor +0xD4/+0xD8/+0xDC zeros and +0xC0/+0xC4=100 in constructed object. B-native ASM confir
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

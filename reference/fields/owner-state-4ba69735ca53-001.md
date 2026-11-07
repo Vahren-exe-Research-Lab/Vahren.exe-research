@@ -34,6 +34,51 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md 行 32](../../research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md?plain=1#L32-L32) — 独立Golden試験案：11,025Hz mono16/stereo16の有効Oggと44,100Hz stereo16対照を用意し、Lock HRESULT/返却領域サイズ、OvRead返却byte数、Unlock成否、PCM境界、state+0x54/+0x58、停止時刻を採取する。今回実ゲーム観測は0件。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-190"></a>
+## state + 0x190
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md 行 40](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md?plain=1#L40-L40) — 非モード4経路では二つのコンテナを集計したのち、`0x52EE93 CALL 0x005D1B80` の結果（整数）を使用する。モード3だけは `0x52EE98 CMP ... ,3`、`0x52EEA3 CDQ`、`0x52EEA4 SUB EAX,EDX`、`0x52EEA6 SAR EAX,1` により**符号
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-4a8"></a>
+## state + 0x4A8
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 51](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L51-L51) — **重要な境界:** `0x0052EB20` は、グローバル木 `DAT_008BA6F8` が空の場合 `0x0052EB72` から処理後半へ飛ぶ。上記の書込みはそのループが実際に回り、新規キーがあるときだけ成立する。実行時の正本 `context+0x1EED30` との同一オブジェクト性、寿命、全書込元の網羅
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 82](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L82-L82) — `0x0052EB20` の `state+0x4A8` のモード1/3/4とポインタ更新履歴を追い、`0x004F9000 → 0x004F91A0` における重複判定・キーの由来を静的追跡する。`0x00521D90` のイベント選択後に `0x00490180` / `0x00490590` がどう状態参照するか
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md 行 21](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md?plain=1#L21-L21) — `0x0052EB20` では保存状態 `state+0x4A8` を `1`、`3`、`4` と比較して、いずれかなら一時的なキーのフラグを `1`、それ以外なら `0` に設定する。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md 行 38](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md?plain=1#L38-L38) — `0x52ED57 CMP [state+0x4A8],4` → `0x52ED5E JE 0x52EFEC` は反復中の `0x52ECC0 CALL 0x004F9000` **より後**に配置されている。すなわちモード4は候補/除外集合への処理を飛ばすのではなく、**反復処理後の追加評価・費用更新を飛ばす**。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md 行 51](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md?plain=1#L51-L51) — **注意**: `state+0x4A8` の値域が本当に上表のすべての値に到達すること、`[EAX+0xC4]` がゲーム画面で何と表示されるかは未確定。ゲーム固有の金銭/信頼などの名称に昇格しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-4ac"></a>
+## state + 0x4AC
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 17](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L17-L17) — 前回15時台の研究は、`0x00490180` から `0x0052E9E0` への呼び出しによって `state+0x4AC`（候補集合）と `state+0x4B0`（除外集合）へのポインタ保存、および `diplo_help_test` という文字列の共有までを確認した。**今回追加されたのは、保存先を実際に読み
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md 行 68](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_17H_MODE_CONTRACT_AUDIT.md?plain=1#L68-L68) — `0x52EFF3 MOV [ESI+0x4A8],EDI`（ここではEDI=0）により正常復帰前にモードが0に戻る。`0x52EFF9 CALL 0x005A4520` は終了直前に呼び出される。正常末尾は `0x52F011 RET 4`。`state+0x4AC/+0x4B0` を**この関数内で明示的にNULL
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-4b0"></a>
+## state + 0x4B0
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 17](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L17-L17) — 前回15時台の研究は、`0x00490180` から `0x0052E9E0` への呼び出しによって `state+0x4AC`（候補集合）と `state+0x4B0`（除外集合）へのポインタ保存、および `diplo_help_test` という文字列の共有までを確認した。**今回追加されたのは、保存先を実際に読み
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 73](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L73-L73) — - `state+0x4B0` が元の `context+0x1EED30` と同一ポインタで保たれる実行時条件と、解除/寿命/破棄の順序。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-b20"></a>
 ## state + 0xB20
 

@@ -1,0 +1,30 @@
+{
+  "thread_id": "6ad880c3-7988-83ee-95c5-49722fa77752",
+  "title": "V4追加解析報告",
+  "updated_at": 1792574879.426053,
+  "turn_id": "47375d5b-4fc8-4cf4-9573-df0218d5661a",
+  "message_id": "dd779633-2aef-40b7-9f83-f1ac135d05aa",
+  "page": {
+    "order": "newest_first",
+    "limit": 1,
+    "nextCursor": null,
+    "hasMore": false
+  },
+  "returned_turns": 1,
+  "returned_agent_messages": 1,
+  "returned_user_messages": 1,
+  "selected_utf16_chars": 2074,
+  "max_chars": 14000,
+  "source_uri": "chatgpt://6ad880c3-7988-83ee-95c5-49722fa77752/messages/dd779633-2aef-40b7-9f83-f1ac135d05aa",
+  "selected_utf8_bytes": 4628,
+  "selected_utf8_sha256": "a1c5d44079b00e870e322a9896353fef7a5ed077d9251398afa3d9b4cd3bfc96",
+  "hash_scope": "Exact selected agentMessage.text Unicode encoded UTF-8 without BOM/added header/newline normalization; not internal service DB bytes",
+  "capture_scope": "Last assistant message in newest returned turn only. Returned userMessage is not selected or preserved. No separate review of user input, earlier turns, tools, attachments or linked artifacts. Provider response preview duplicates assistant text; not separately captured.",
+  "target_project_id": "g-p-6ac2cd94e3ec81918581f7710c715c76",
+  "membership_source": "Published CHAT_CANDIDATES metadata exact id/title/project at baseline9e7cb388",
+  "checked_date": "2026-11-05",
+  "native_or_runtime_validation": "NONE; author historical claims only",
+  "schedule_or_chat_mutations": "NONE",
+  "source_read_tool": "mcp__codex_app__read_thread",
+  "max_output_chars_per_item": 14000
+}

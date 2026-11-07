@@ -25,4 +25,10 @@
 - [research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md 行 12](../../research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md?plain=1#L12-L12) — 0x48CD08 cap比較・0x48CD0D index3位置=begin+0x54、0x48CD13 heap ptr/0x48CD1B inline ptrをold[ESP+0x30]へ保存（旧01H既知）。今回新たに0x48CD4F cap比較・0x48CD54 index4位置=begin+0x70、0x48
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1eefa0"></a>
+## begin + 0x1EEFA0
+
+- [research/recovered/ac_tests6/reports/T020_T028_COUNT_QUEUE_LIFETIME_OWNER_SEPARATION_20261027_22H.md 行 6](../../research/recovered/ac_tests6/reports/T020_T028_COUNT_QUEUE_LIFETIME_OWNER_SEPARATION_20261027_22H.md?plain=1#L6-L6) — [STATIC BRANCH] B元資料の0x4923C6 CMP(begin,end)・0x4923C8 JEで空ならskip。非空時0x4923D0→0x417160、0x4923E0→0x415A60、0x4923E5 end=begin（begin+0x1EEFA0/end+0x1EEFA4/cap+0x1EE
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

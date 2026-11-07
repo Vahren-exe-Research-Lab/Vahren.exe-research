@@ -55,6 +55,15 @@
 - [research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md 行 6](../../research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md?plain=1#L6-L6) — [NEW CROSSSITE-B2] VA0x54E533で[ESI+0x9C]-=EDI。0x54E539..0x54E552でowner pointer [ESI+0x94]の+0x40/+0x48中点をECXに作り、EAX=[owner+0x4C]−[ESI+0x9C]を作る。0x54E554 PUSH [ESI
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+<a id="field-70"></a>
+## owner + 0x70
+
+- [research/recovered/rea_batch13/reports/REA_SAVED_NATIVE_PREFIX_CONTINUITY_20261013.md 行 29](../../research/recovered/rea_batch13/reports/REA_SAVED_NATIVE_PREFIX_CONTINUITY_20261013.md?plain=1#L29-L29) — - [SOURCE CODE CONDITION] 現行`native_unit_tick.py` 263..274はrecord一致後にbyte0=0→membersの最終slot swap/pop→owner+0x70=end-4を先行commitし、`WindowDetachTrace(nextVA=0x41E1
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_SAVED_NATIVE_PREFIX_CONTINUITY_20261013.md 行 49](../../research/recovered/rea_batch13/reports/REA_SAVED_NATIVE_PREFIX_CONTINUITY_20261013.md?plain=1#L49-L49) — - [INNER COMMIT] native_unit_tick.py UnitWindowRegistry.detach(): first matching record byte0=0、members tail swap/pop、owner+0x70 -=4が先にcommit。pending=WindowDeta
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-a0"></a>
 ## owner + 0xA0
 
@@ -109,6 +118,9 @@
 <a id="field-2dc"></a>
 ## owner + 0x2DC
 
+- [research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md 行 10](../../research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md?plain=1#L10-L10) — \| 4 Power runtime \| 0x45EE9B / 0x45EEE3 \| 0x45EF03→0x45F66E \| alloc 0x138 / init `0x590560` / reader `0x5964C0`; `0x463280` at owner+0x2DC \| 0x45F758→0x45EE8E \|
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -117,6 +129,9 @@
 
 <a id="field-2ec"></a>
 ## owner + 0x2EC
+
+- [research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md 行 9](../../research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md?plain=1#L9-L9) — \| 3 Spot runtime \| 0x45EE20 / 0x45EE68 \| 0x45EE88→0x45F75D \| alloc 0xD0 / init `0x5971A0` / reader `0x598980`; `0x463280` at owner+0x2EC \| 0x45F809→0x45EE13 \|
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
@@ -130,11 +145,17 @@
 <a id="field-2fc"></a>
 ## owner + 0x2FC
 
+- [research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md 行 26](../../research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md?plain=1#L26-L26) — P0：C-NB02合法原作G0+G1+G2同run一次受入。P1：0x497BB0のnull ECX producer、owner+0x2FC/+0x32C索引と候補の参照寿命、別vector+第2RB集合の真consumerを局所callと実ゲーム効果に分けて追跡する。
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 9](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L9-L9) — 0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIF
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 10](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L10-L10) — ## 新規局所STATIC 1：`owner+0x2FC`と`owner+0x300`は同一treeオブジェクト内で連結
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md 行 8](../../research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md?plain=1#L8-L8) — \| 2 Unit runtime \| 0x45EDA5 / 0x45EDED \| 0x45EE0D→0x45F80E \| alloc 0x1D4 / init `0x582AA0` / reader `0x58E870`; `0x463280` at owner+0x2FC \| 0x45F89D→0x45ED98 \|
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

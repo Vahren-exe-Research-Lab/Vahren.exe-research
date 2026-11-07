@@ -1,0 +1,8 @@
+input_path	sha256	bytes	role	interpretation
+structs.tsv	5535a4994cef66186a1a86cd6414fdc5afcb36ad4e629146981d21d45d02814d	16004	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+symbols.tsv	21021b3c0aaf0a3a758bb1fb087c35a0131ea7e2f02d040bbbde3449b80e6252	118296	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+reference/relations.jsonl	5bc6b781228f0a129425fbc58e60af23388dec4734cfa158a53a5491c1adb42a	91541	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+REF_SCRIPT_VM_CONTEXT.md	fe1b9a5657ba54e663d68dddff3d9eb6a6f019db2db2ffd9c7a1987fb6144638	4583	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+REF_SKILL_POST_ACTION.md	4ce80d1398ab3b428b96026ae194e066e7311f1e8a6e06a1e59b4d9d4ed2492a	27100	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+research/recovered/RECOVERY_LEDGER.tsv	94af345a72f9d921f60b43b3543788fb5e5f0d0cbbc4ce866443306b9c9798a0	915181	read-only baseline dictionary/curated/acceptance metadata	Snapshot unchanged after proposal; no original or linked payload read
+research/recovered/script_topics/T010_EVENT_SCHEDULER.md	1f07c79b4b9ff6a0b674548b77082b53ebf6e8bb9313ff5efa2127c72d96ef2b	44012	accepted authored Markdown source	Snapshot unchanged after proposal; no original or linked payload read

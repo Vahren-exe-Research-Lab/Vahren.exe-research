@@ -31,6 +31,15 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 140](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L140-L140) — - 主要4group直後、writer VA 0x460585 は stream を `0x471D20` へ渡し、engine world-base (`engine+0x2C`) の `+0x1EF4B4` objectをserializeする。reader VA 0x45E53E は対になる `0x471AF0`
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-34"></a>
+## engine + 0x34
+
+- [research/recovered/ac_tests6/reports/T033_LEGACY_SCENARIO_NATIVE.md 行 7](../../research/recovered/ac_tests6/reports/T033_LEGACY_SCENARIO_NATIVE.md?plain=1#L7-L7) — - new-game/scenario initializer VA 0x45C1A2..0x45C1BE takes engine scenario runtime string `engine+0x34` and writes it to persistent symbol `@scenario` via 0x46
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_EXE_METADATA_SUMMARY
+
+- [research/recovered/ac_tests6/reports/T033_LEGACY_SCENARIO_NATIVE.md 行 13](../../research/recovered/ac_tests6/reports/T033_LEGACY_SCENARIO_NATIVE.md?plain=1#L13-L13) — - immediately after restoring `engine+0x34`, normal-load uses generic field accessor 0x4647D0 with structure kind `scenario` and a property key such as `zone`.
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_EXE_METADATA_SUMMARY
+
 <a id="field-2e0"></a>
 ## engine + 0x2E0
 
@@ -55,6 +64,9 @@
 <a id="field-300"></a>
 ## engine + 0x300
 
+- [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 50](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L50-L50) — - 同関数の疑似コードには `engine+0x310` 数値map、`engine+0x300` Unit/保存側データと複数serializerの走査、`CreateFileA`→`WriteFile`→`CloseHandle`が表示される。既存T014のsave group構造と整合。ただしGhidraが `W
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 94](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L94-L94) — - engine +0x300 groupは各nodeのkeyを0x470830、mapped valueをserializer 0x58EFD0へ渡す。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -63,6 +75,9 @@
 
 <a id="field-30c"></a>
 ## engine + 0x30C
+
+- [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 9](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L9-L9) — - `0x4637A0` はparam3で分岐し、`engine+0x30C` 側のマップを変更する呼出経路を持つ。既存A/T014/T006の数値変数mapの見解と整合。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 256](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L256-L256) — - 0x4637A0 は engine+0x30C/+0x310 numeric mapへ結果を書くことを既に確認。ただしこの証拠だけで全numeric APIs・battle-local変数の保存/寿命を一般化しない。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
@@ -75,6 +90,9 @@
 
 <a id="field-310"></a>
 ## engine + 0x310
+
+- [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 50](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L50-L50) — - 同関数の疑似コードには `engine+0x310` 数値map、`engine+0x300` Unit/保存側データと複数serializerの走査、`CreateFileA`→`WriteFile`→`CloseHandle`が表示される。既存T014のsave group構造と整合。ただしGhidraが `W
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 112](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L112-L112) — - engine +0x310 は key string + mapped string + int32 のscript persistent-state map。helper 0x4637A0/0x463CA0も同じ +0x30C/+0x310 mapを更新・参照する。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
