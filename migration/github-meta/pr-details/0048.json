@@ -1,0 +1,186 @@
+{
+  "changed_files": [
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/.gitignore",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/.gitignore?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": ".gitignore",
+      "patch": "@@ -3887,3 +3887,5 @@\n !/research/recovered/recovery_corpus1/VERIFICATION.md\r\n !/research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_READBACK.md\r\n !/research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md\r\n+!/AGENTS.md\r\n+!/CONTRIBUTING.md\r",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/.gitignore",
+      "sha": "304bb4ef8ef68ab7e0973aeeffc53018506e1e36",
+      "status": "modified"
+    },
+    {
+      "additions": 10,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/AGENTS.md",
+      "changes": 10,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/AGENTS.md?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "AGENTS.md",
+      "patch": "@@ -0,0 +1,10 @@\n+# このリポジトリで研究を追加するAIへ\n+\n+- まず `README.md` と短い入口 `CONTRIBUTING.md` を確認する。詳細規約は変更に関係する箇所だけ参照する。\n+- 関数・メモリの現行の意味は辞書・REF・訂正から確認し、研究IDと根拠を残す。未検証の研究は状態付きで保存し、確定情報へ自動昇格させない。\n+- 通常の研究担当は自分の `research/intake/<owner>/` と既存担当PRへ。共有辞書・REF・回収台帳・正本統合は既存の統合担当の権限に従う。\n+- 本文を置くだけで終えず、保存先と採録候補を引き継ぐ。統合担当は台帳・索引・根拠リンクを更新し、検索から辿れることを確認する。\n+- 元の研究本文・他担当の作業・既存保留を守る。生成ページは元データから再生成する。\n+- 確認は変更の影響に合わせる。誤字修正のために研究IDを増やしたり、無関係な実験・全原資料の再確認を行ったりしない。\n+\n+この入口は既存の担当権限、公開設定、保留・同期手順を変更しない。具体例と必要な手順は `CONTRIBUTING.md` にまとめている。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/AGENTS.md",
+      "sha": "42bfd250668e4c58309d783f0c6bebb7b1c2145a",
+      "status": "added"
+    },
+    {
+      "additions": 75,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/CONTRIBUTING.md",
+      "changes": 75,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/CONTRIBUTING.md?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "CONTRIBUTING.md",
+      "patch": "@@ -0,0 +1,75 @@\n+# 研究を追加・訂正する人とAIへ\n+\n+**研究本文を保存し、関数・メモリの意味から根拠へ辿れるようにする。未確認は未確認として残す。** このガイドは日常の入口です。詳しい規約は必要な箇所だけ参照してください。既存の担当権限・保留範囲・公開設定は変えません。\n+\n+## まず、どこへ書くか\n+\n+| やりたいこと | 書く場所・担当 |\n+|---|---|\n+| 新しい研究、仮説、まだ検証途中の結果を残す | 研究担当が `research/intake/<owner>/` の既存担当ブランチ・PRへ。研究IDと短い結論、根拠、未確認事項を本文に残す |\n+| ローカルやチャットにしかない過去の研究を取り込む | 統合担当が収録範囲を確認し、本文を `research/recovered/` へ固定保存。`RECOVERY_LEDGER.tsv` に原本と保存版の対応を記録する |\n+| 関数・グローバルの意味を採録する | 統合担当が `symbols.tsv` と関連する `REF_*.md` へ。命令途中の位置は関数入口と分ける |\n+| 構造体・フィールドを採録する | 統合担当が `structs.tsv` へ。所有者、オフセット、型・幅、意味を分け、不明な型は `unknown` のまま残す |\n+| 呼出・読み書き・型の利用を結ぶ | 統合担当が `reference/relations.jsonl` に一主張一行、既存項目IDと出典付きで記録する |\n+| 古い解釈を訂正する | 現行の説明を直し、`reference/corrections.jsonl` に旧解釈・新解釈・根拠を結ぶ。元の研究本文は履歴として保持する |\n+| 人が読む案内を直す | READMEなどの手書き文書を編集。`reference/` の生成ページは元データから再生成する |\n+\n+`<owner>` は既存の担当名を使います。新しい担当や保存先が必要なら、作業権限に沿って決めます。他担当の本文や共有辞書を無断で変更しません。\n+\n+## 普段はこの5ステップ\n+\n+1. **先に探す。** READMEから現行の事典・REF・訂正を確認し、研究ID、関数のVA、構造体＋オフセットで検索する。同じIDの報告・証拠票・別名コピーを別の発見に数えない。\n+2. **短い結論を先に書く。** 何が分かったか、どの関数・メモリに関係するか、根拠はどこか、何が未確認かを一つの研究本文にまとめる。長い引継ぎ・チャット・Issueだけを唯一の保存先にしない。\n+3. **本文と根拠を残す。** 下のひな型を使い、元の相対パスまたは出典URI、実測SHA、行範囲・確認日時を記録する。実体がなければ「未取得」、未測定SHAは「未確認」とし、推測して埋めない。引用する固定保存版は保持し、改版は版と訂正関係を追えるようにする。\n+4. **入口につなぐ。** 研究担当は既存PR・引継ぎに研究ID、保存先、採録候補と未処理部分を示す。統合担当は本文を台帳へ登録し、根拠を確認できた意味だけを辞書・REF・関係へ反映する。ファイルをGitHubへ置いただけでは、事典検索に入ったことにはならない。\n+5. **見つかることを確かめる。** 統合担当が索引を更新し、研究ID・ファイル名・代表VAまたはオフセットで検索して、本文と根拠へ進めることを確認する。GitHubから読めた保存先とコミット、まだ終わっていない部分を報告する。\n+\n+同じ研究は既存本文・PRへまとめ、単に実行時刻が変わっただけで新しい研究IDやPRを増やしません。別の観測・対象版・訂正は区別して残します。\n+\n+## 研究本文の小さなひな型\n+\n+既存の研究様式があればそれを使えます。項目名をそろえるためだけの書き直しは不要です。該当しない項目は「該当なし」、実施していないものは「未実施」と短く書きます。\n+\n+```text\n+# 研究ID — 内容が分かる題名\n+担当 / 課題 / 観測日・出典の版:\n+対象: 迫真戦記ver0.67 / 関数VA・範囲・CALL位置 / 所有者+オフセット\n+結論: 分かったことを1〜3文。操作・条件・返り値・副作用を区別\n+確度: STATIC / INFERRED / VERIFY / DYNAMIC（主張ごとに区別）\n+根拠: 保存済み本文・証拠の相対パスまたは固定出典 / 実測SHA256 / 行範囲 / 確認日時\n+関連: 先行研究ID・同内容の別名 / 訂正する旧解釈と理由\n+採録候補: 既存の関数・フィールドID / REF / 呼出・読み書き関係\n+未確認・不足: 入力不足、型・幅、別経路、未取得の原始証拠など\n+実機Golden / READY: 実際に行った確認とその範囲。未実施なら未実施\n+次の確認: 結論を進めるために必要な最小の確認\n+保存状態: ローカルのみ / 担当PRに保存 / 正本に反映（パス・コミット）\n+```\n+\n+静的解析、合成テスト、ファイル保存の成功は、それぞれの範囲で記録します。保存成功を実機確認・Golden・READYへ読み替えません。本文中の `owner+0x28` などの局所記号も、正式な型名や型同一性の証明にはしません。\n+\n+## 統合担当の更新確認\n+\n+新しい本文を検索へ入れる場合は、`research/recovered/RECOVERY_LEDGER.tsv` に出典と保存版SHA・状態・制約を登録します。新規入庫の本文も、保存した場所にかかわらずこの登録を経て本文検索へ入ります。部分版・個人情報を伏せた版・同一内容の別名は区別します。\n+\n+辞書・台帳を更新したら、通常は次を実行します。\n+\n+```powershell\n+python -B tools/reference.py build\n+python -B tools/recovery_coverage.py build\n+python -B tools/reference.py check\n+python -B tools/recovery_coverage.py check\n+```\n+\n+新しい本文・生成ページは `tools/sync_knowledge.py` の許可リストとGit追跡対象へ確認して追加し、マニフェストも更新します。[同期手順](SYNC_PROTOCOL.md)に沿って作業ブランチを検証・送信し、正本反映は統合担当が行います。元PCのDBやゲームがなくても、別のGitHubコピーから対象本文・根拠・検索を使えることを確認します。\n+\n+**確認は変更の大きさに合わせます。** 誤字・案内リンクの修正なら、関係するリンク・表示・収録整合性を確認すれば足ります。新しい研究IDの発行や原作の再実験は不要です。索引処理や検索を変える場合は、その挙動のテストを行います。毎回すべての原資料を読み直したり、完了済みの確認を理由なく繰り返したりしません。機密検査・担当権限・既存保留はそのまま守ります。\n+\n+## 迷ったときだけ読む詳細\n+\n+- [事典の形式・出典・追加と訂正](reference/UPDATING.md)\n+- [研究成果の保存と担当別入庫](RESEARCH_INTAKE_PROTOCOL_20261101.md)\n+- [担当と統合・状態の区別](KNOWLEDGE_CURATION_PROTOCOL.md)\n+- [同期と競合防止](SYNC_PROTOCOL.md)\n+- [既存の取り込みキュー](research/intake/README.md)、[回収状況・保留](research/recovered/README.md)\n+\n+不足がある研究も、分かる範囲と次の確認を残して引き継げます。重要なのは、後の人やAIが保存場所・意味・根拠・未確認事項を追えることです。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/CONTRIBUTING.md",
+      "sha": "907cb536d4054a13cf11ec162c87bf87b6de7e7a",
+      "status": "added"
+    },
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/README.md",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/README.md?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "README.md",
+      "patch": "@@ -6,6 +6,8 @@\n \r\n ## まず調べる\r\n \r\n+**研究を書き足す方・AIへ：先に[短い追加・訂正ガイド](CONTRIBUTING.md)を確認してください。** 保存先、根拠の残し方、関数・メモリへの採録、検索への反映を5ステップでまとめています。\r\n+\r\n | 調べたいこと | 入口と読み方 |\r\n |---|---|\r\n | 関数・アドレス・グローバル値 | [関数・メモリ事典](reference/README.md)で名前やVAを探し、個別ページの意味・確度・根拠を読む |\r",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/README.md",
+      "sha": "331e3a589bedf978d130bb2d1542286083787146",
+      "status": "modified"
+    },
+    {
+      "additions": 7,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/SOURCE_MANIFEST.tsv",
+      "changes": 12,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/SOURCE_MANIFEST.tsv?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 5,
+      "filename": "SOURCE_MANIFEST.tsv",
+      "patch": "@@ -1,8 +1,10 @@\n # Generated locally by sync_knowledge.py\n path\tsha256\tbytes\n .gitattributes\t4F49D5DC8CE1EEFC5E4D7236D1DD3781D03B932C78043D2FA96637116290F47A\t133\n-.gitignore\tDBC5C7C49EB1AE08D2B476EA9648BAF9A43DA326C15D1564780AA195BD84CA1A\t257610\n+.gitignore\tBCB96837AE998A567CDA122C081C1E3D82444C077805C2434AF5306867D2E377\t257642\n+AGENTS.md\tABF8D628661A3C7BDBD1FE721DA8AE4C927BB0388320D6034930312952F0D80F\t1224\n CANDIDATE_RANKING_20261030.md\tFE2BA8FD6C405DDB8C94E5C6D59FDCA22C570AC09C39CBC2DF197D17DE6A9600\t8752\n+CONTRIBUTING.md\tB11F39EF45BE379386F2AD0851908CA710BDFB204475345790AA6F6DE0D7383E\t7472\n DB_OPTIMIZATION_REPORT_20261030.md\tC0592460A3ADC935836A810A9E8DD1311FA7BBA19534F3ACE85E845F889878D4\t7582\n GHIDRA_V9_AUDIT_RUN_20261031.md\t4372BC7F91F9DBBD533F479BEA0A8D8C3F79FA92894FF0FAAC24159B538C2C95\t31633\n GHIDRA_V9_B_REVIEW_TOP150.tsv\tDB319BD6E97368E2F0B46B5A2C35B6BD336D936AE88A4DC7E0726F13B6860C42\t19917\n@@ -13,7 +15,7 @@ GHIDRA_X32DBG_VERIFICATION_20261030.md\t915F17B221C97D9991E3CA240717C8BD5E9D8EF5B\n KB_SYNC_BLOCKED_20261029.md\t9455C895C050AF7039A26D8827F9D335C7CCF7906E2D252495198148CBC6839E\t3524\n KB_WORKFLOW_125_REPORT_20261029.md\tEE7E6EE8748293E0CB756ADDDCFDCE14EAD695949D70F2A82AEA652193F37158\t5964\n KNOWLEDGE_CURATION_PROTOCOL.md\tE3C2A3ACDC8AAA973971BCE6B9C66610B5EBC9FDFC1C5830B3D1DE60B2A01035\t12301\n-README.md\t154EAB4300DEB075D391E2936561790AFD17FED3D8A61C29B5CF1C95CB3288FA\t11050\n+README.md\tDA6E811A654DC35B6165EF5E2E803EEF20A94261B647CF8A8517BEE7B5C72B05\t11306\n REF_AUDIO_VORBIS.md\tB7E25931488A0D778393CD91D48A6FBD4D50C99878AA78A0378C886C75717AFB\t50783\n REF_BATTLE_AI_MORALE.md\tCA7C6B7D02D8B6189D7B00004DBC07F35F15E481B4F7D2B42B6C075368C63D20\t112385\n REF_BATTLE_TAKEOVER.md\t1EAB43AE2FB2501A17C6ACBF80BD9BB1337A38245FBA9C07A81D10C2ABBFC650\t50627\n@@ -44,7 +46,7 @@ reference/CORRECTIONS.md\tD063156A36A879BA1DBA573BB883ABA1D0E46CB4E560D221D12FC63\n reference/DOCUMENTS.md\t4A3C78F0CCCF879797710B8C41ACBBE099A7F980DC412C909EA8977990F800E6\t4902\n reference/FIELD_MENTIONS.md\t5CB85597C35A910204B53D02A6F985D71AE6BCB7E90939BF2DEDAC5D56CA7846\t163623\n reference/README.md\t6376AD338A16F30F4AA6CB8300ED6B257F3B72DF46F166BA5DA079DA3FE4C32D\t97336\n-reference/UPDATING.md\t4A983C6964943FC22FE6CE439636A96F924152EABE35DCD0CF1F1212DF1AF0E9\t13484\n+reference/UPDATING.md\t2B01E513D30E6BBAD50F3D0B5E8708B1CE9C0F685C5B53E8E2B01775EDCF2DD4\t13689\n reference/corrections.jsonl\t858A04077F9D947D81E6F20E98651E2E55EAD614A3753DAAB83B6239179E5F21\t10045\n reference/documents/page-001.md\t93DBDAA185D3C4BD98911C7FF56EFC5DDBCF8FC8041508DCEDB7619BAE10AED9\t88598\n reference/documents/page-002.md\t729D55D9AF42C1A7E095C034AF7234A759F9DE077B2B02E8727875C057852D54\t78515\n@@ -1323,7 +1325,7 @@ research/intake/REA/REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md\t36A527E2FFE1D3E\n research/intake/REA/REA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md\t026E9C29E6707FDA87112FD052627FAF2113682B1EDB0FFFFD41720AEA7DEE64\t4462\n research/intake/REA/REA_20261102_00H_CRT_FILE2_LOCK_INDEX_POINTER_STATIC.md\t2B8D7DBA21C3EB2258A48D475AF7F27C1F090A0BFF3340F4C075D5BA4B1D296D\t4120\n research/intake/REA/REA_20261102_01H_DUAL_ENTRY_ESI_ABI_STATIC.md\t3C04D798EDAC0DEA371EEC4223FA38087038A4B77E83EEE860AE937186D20BE1\t4012\n-research/intake/README.md\tAAC5B4B302C81E6F7D36CD5AF8286FB741B6AB39BAE2A4E3F42F2B7B6DD21256\t83574\n+research/intake/README.md\tC3EA92D6BC647DC7DBADA42F4947C13C6C1C2D9294043194F7D303D0C45FC537\t83801\n research/rea/INDEX.md\tE254B812A2555D40CED666638EB2D162F7DC355B1620F2A7853BC0470436BB76\t6227\n research/rea/REA_20261101_17H_P0_FTELL_FRAME_STATIC.md\t1B4E5F70C04CB60DF97E762A11B5B48ED6EA98DF42E3DD8AA7A90DF4C1ED13EC\t6379\n research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md\t294608BA2F0FF4523B4129CBE082FD8B759E3977C9C820CE6B625B79C0C5B2A4\t3644\n@@ -3525,7 +3527,7 @@ tools/rank_candidates.py\tFA5233312E52D98D1777AE1BFE5730187CCF87D0ED9566D2F7F53E9\n tools/recovery_coverage.py\t27179A634A2F8CEB0EF9E68E9DD6B5ADAA307D5D38AA97903F05BD78E6FEAFD6\t10089\n tools/reference.py\tC65B8D345D796FBF557E279035D6FAD349FBB538E1C95DBAE0256658622A3D97\t50105\n tools/research_index.py\t3F7FCE70B25FF4F4EAD8AD1489AD3DC2D72F5A27E7E4D4FE364D4CE1B64D00CF\t14521\n-tools/sync_knowledge.py\tF6D20926FC511BB7158F013FA5420AF080E5B88CF0419D69F5858A0D20C18624\t278309\n+tools/sync_knowledge.py\t25695B513C1FDE416C8A6EE576B00F2533CAA7D0B4C284238D6B4D0784D97A24\t278351\n tools/test_debugger_exports.py\t825FB7B8AD0E27B42374FCD99CD88A72DC6845BA5C1B09F06489F25D2E3053BB\t1677\n tools/test_kb_workflow.py\t018EFD30A15937F9DA8A6B72758859B5DF66A76AD630A3E3C3A608E7F28537FB\t6077\n tools/test_rank_candidates.py\tEBF782F833F617AB90BA096A2147E779E7E49F1800D617A098BB6100FDB0BB8B\t2895",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/SOURCE_MANIFEST.tsv",
+      "sha": "512cb4607bb8eb33258c216a51015001c811b7a2",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/reference%2FUPDATING.md",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/reference%2FUPDATING.md?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "reference/UPDATING.md",
+      "patch": "@@ -1,5 +1,7 @@\n # 関数・メモリ事典の追加と訂正\r\n \r\n+初めて追加する方・AIは、先に[短い追加・訂正ガイド](../CONTRIBUTING.md)を参照してください。このページは形式や例外が必要になったときの詳細です。\r\n+\r\n 対象は迫真戦記 ver0.67。アドレスは原作VAで、基準は0x400000。別版の同じアドレスは別の対象として扱う。\r\n \r\n ## 調べる\r",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/reference%2FUPDATING.md",
+      "sha": "89c66fd40045498b91811876fc5f8eb2411dcf81",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/research%2Fintake%2FREADME.md",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREADME.md?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "research/intake/README.md",
+      "patch": "@@ -1,5 +1,7 @@\n # Private research intake — owner ID/source links\n \n+新しい研究を残す方・AIは[追加・訂正ガイド](../../CONTRIBUTING.md)から始めてください。担当の本文保全と、統合担当による辞書・検索への採録を分けて説明しています。\n+\n This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.\n \n ",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/research%2Fintake%2FREADME.md",
+      "sha": "4037ca7cf29544705a2a7c04f857818078c65e66",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/tools%2Fsync_knowledge.py",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/tools%2Fsync_knowledge.py?ref=c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "deletions": 0,
+      "filename": "tools/sync_knowledge.py",
+      "patch": "@@ -1863,6 +1863,8 @@\n     'research/recovered/recovery_corpus1/VERIFICATION.md',\r\n     'research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_READBACK.md',\r\n     'research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md',\r\n+    'AGENTS.md',\r\n+    'CONTRIBUTING.md',\r\n )\r\n # Reviewed portable reference and recovered research paths.\r\n FILES += (\r",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/tools%2Fsync_knowledge.py",
+      "sha": "23647fc23e08dd3425e4e7b077324c9aaa28674e",
+      "status": "modified"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-05T02:17:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "Umonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-05T02:17:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "Umonky"
+        },
+        "message": "Add concise contribution guide and AI entry for reusable research",
+        "tree": {
+          "sha": "e2aad6947c6c8d0a988662474f1790826757e1f1",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/e2aad6947c6c8d0a988662474f1790826757e1f1"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "node_id": "C_kwDOVb7AvNoAKGM1Zjc3OTliNmEwMzZlMDZlZjlmNWM4NGI0YzVjOGE4MGE5MjVlODk",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/5c4218a43c46e851c3481f2aea54e2565c9f2dae",
+          "sha": "5c4218a43c46e851c3481f2aea54e2565c9f2dae",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/5c4218a43c46e851c3481f2aea54e2565c9f2dae"
+        }
+      ],
+      "sha": "c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89"
+    }
+  ],
+  "number": 48,
+  "reviews": []
+}

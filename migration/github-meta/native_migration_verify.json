@@ -1,0 +1,13 @@
+{
+  "src_issue_count": 7,
+  "dest_imported_issues": 7,
+  "src_open_prs": 14,
+  "dest_imported_open_prs": 14,
+  "source_comments_total": 131,
+  "dest_tagged_comments_total": 137,
+  "mismatches": [],
+  "source": "ButaMonky/Hakushin067-Research-Knowledge",
+  "destination": "Vahren-exe-Research-Lab/Vahren.exe-research",
+  "source_comments_with_native_issues_or_open_prs": 130,
+  "native_comment_matches": 130
+}

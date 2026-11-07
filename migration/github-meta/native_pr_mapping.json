@@ -1,0 +1,104 @@
+{
+  "source": "ButaMonky/Hakushin067-Research-Knowledge",
+  "target": "Vahren-exe-Research-Lab/Vahren.exe-research",
+  "prs": {
+    "7": {
+      "status": "created",
+      "target_pr": 9,
+      "source_draft": true,
+      "original_body_length": 1412,
+      "source_comments": 0
+    },
+    "8": {
+      "status": "created",
+      "target_pr": 10,
+      "source_draft": true,
+      "original_body_length": 1502,
+      "source_comments": 0
+    },
+    "9": {
+      "status": "created",
+      "target_pr": 11,
+      "source_draft": true,
+      "original_body_length": 1803,
+      "source_comments": 1
+    },
+    "10": {
+      "status": "created",
+      "target_pr": 12,
+      "source_draft": true,
+      "original_body_length": 1989,
+      "source_comments": 0
+    },
+    "11": {
+      "status": "created",
+      "target_pr": 13,
+      "source_draft": true,
+      "original_body_length": 2241,
+      "source_comments": 0
+    },
+    "12": {
+      "status": "created",
+      "target_pr": 14,
+      "source_draft": true,
+      "original_body_length": 1019,
+      "source_comments": 1
+    },
+    "13": {
+      "status": "created",
+      "target_pr": 15,
+      "source_draft": true,
+      "original_body_length": 2186,
+      "source_comments": 0
+    },
+    "14": {
+      "status": "created",
+      "target_pr": 16,
+      "source_draft": true,
+      "original_body_length": 2190,
+      "source_comments": 0
+    },
+    "15": {
+      "status": "created",
+      "target_pr": 17,
+      "source_draft": true,
+      "original_body_length": 1451,
+      "source_comments": 0
+    },
+    "16": {
+      "status": "created",
+      "target_pr": 18,
+      "source_draft": true,
+      "original_body_length": 140229,
+      "source_comments": 17
+    },
+    "17": {
+      "status": "created",
+      "target_pr": 19,
+      "source_draft": true,
+      "original_body_length": 75203,
+      "source_comments": 22
+    },
+    "18": {
+      "status": "created",
+      "target_pr": 20,
+      "source_draft": true,
+      "original_body_length": 116230,
+      "source_comments": 20
+    },
+    "19": {
+      "status": "created",
+      "target_pr": 21,
+      "source_draft": true,
+      "original_body_length": 850,
+      "source_comments": 1
+    },
+    "64": {
+      "status": "created",
+      "target_pr": 22,
+      "source_draft": false,
+      "original_body_length": 1083,
+      "source_comments": 0
+    }
+  }
+}

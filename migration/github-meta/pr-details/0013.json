@@ -1,0 +1,560 @@
+{
+  "changed_files": [
+    {
+      "additions": 24,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FINDEX.md",
+      "changes": 24,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREA%2FINDEX.md?ref=8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "deletions": 0,
+      "filename": "research/intake/REA/INDEX.md",
+      "patch": "@@ -0,0 +1,24 @@\n+# REA owner intake | research recoverability and curation cursor\n+\n+**Status:** PRIVATE branch intake only / NOT CURATED / NOT READY. These documents preserve prior source-owner research in a compact, searchable, source-SHA-linked form. The authoritative shared `develop` dictionaries and `REF_*.md` are curator-only. No source-game executable, original script, large Ghidra SQLite, evidence JSON, unredacted local path or raw log is stored here.\n+\n+**Original target source SHA256** (2026-11-01 local readback): `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; current V9 composite SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. V9 quick_check=ok. Static archive/metadata; no gameplay was executed.\n+\n+| Owner research ID | Functional key | Intake source | Ingestion stage |\n+| --- | --- | --- | --- |\n+| `REA-LOCAL-20261031-22H-P0-VORBIS-GROWTH-CALLER-PAIR-STATIC-01` | `0x5E0960/0x5E0B80` two-stage grow | [older grow/callback crosswalk](REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261031-23H-P0-VORBIS-GROWTH-TAIL-BOUNDARY-STATIC-01` | `0x5E0CF0/0x5E0DC0` function ranges + denominators | [older grow/callback crosswalk](REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-00H-P0-VORBIS-INDIRECT-CALLBACK-DISPATCH-STATIC-01` | `0x612E60/0x61AEA0`, sites `0x5DF717/0x5DF788/0x5DF991` | [older grow/callback crosswalk](REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01` | `0x5C3500` four E8 CALL sites, trampoline | [EH4 and __fsopen](REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-22H-P0-FSOPEN-EMPTY-NAME-UNWIND-STATIC-01` | `0x5D1CB1` empty filename `errno=22`, scope `0x641798`, cleanup `0x5D1D63` | [EH4 and __fsopen](REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+\n+| `REA-LOCAL-20261101-01H-P0-VORBIS-RESIDUE-TYPE2-PARSER-GATE-STATIC-01` | `0x5D4160` accepts type2, rejects type>=3; callback `0x5D42C6` | [01H–02H residue crosswalk](REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-FIRST-DIVISOR-PARSER-ERROR-LATCH-STATIC-01` | `0x5DFE50/0x5DFE75` EOF->NULL; `0x5E0DFE` first stride divisor condition | [01H–02H residue crosswalk](REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-COMPILED-BOOK-DIVISOR-STATIC-02` | selected book dimension >=1 then copied to compiled book; `0x5E0E0C` second divisor conditional | [01H–02H residue crosswalk](REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+| `REA-LOCAL-20261101-23H-P0-GETSTREAM-LOCK-OWNERSHIP-STATIC-01` | `0x5D2165 __getstream` global vs per-FILE critical section ownership, 49/49 original-x86 static checks | [23H getstream original-x86 crosswalk](REA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md) | PUBLISHED_INTAKE / VERIFY |\n+\n+**Predecessor already curated in develop, not repeated as new findings:** REA 2026-11-01 17H, 19H and 20H are in [research/rea/INDEX.md](../../rea/INDEX.md), [REF_AUDIO_VORBIS.md](../../../REF_AUDIO_VORBIS.md) and [symbols.tsv](../../../symbols.tsv). 18H is a partial EVIDENCE JSON under a separate **SAFETY-HOLD** and was **not** ingested; refusal is not bypassed.\n+\n+**Remaining recovery cursor:** next 03H–16H offline [Issue #3](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3) covers **14 IDs / 67 Library files**, pending PC/hash/dedup verification. 17/19/20H curated and 18H SAFETY-HOLD are excluded from this intake batch. Other uninspected REA docs remain uncounted; **9 preserved source IDs is not a global completion percentage**.\n+\n+**Release gate:** Owner branch write/readback is `PUBLISHED_INTAKE` only. Curator checks duplicate/errata and original source, then uses protected isolated worktree, source manifest, privacy audit, tests, and ff-only integration to promote only confirmed content. No new REA formal VERIFIED, original Golden PASS, strict MATCH or READY: all **0** for this batch.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FINDEX.md",
+      "sha": "ed3b16c4d173b36d0eec2079caaac865ec59cc72",
+      "status": "added"
+    },
+    {
+      "additions": 28,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md",
+      "changes": 28,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREA%2FREA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md?ref=8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "deletions": 0,
+      "filename": "research/intake/REA/REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md",
+      "patch": "@@ -0,0 +1,28 @@\n+# REA/T015 recovery intake | 2026-10-31 22H–23H → 2026-11-01 00H\n+\n+**State:** PUBLISHED_INTAKE / PRIOR_OWNER_NATIVE_STATIC / VERIFY / NOT READY. These are **three historic distinct owner research IDs**, recovered as sanitized findings with locally rechecked source-file SHA256 (2026-11-01 JST). This intake does not rerun the earlier full native audits and does not convert asserted allocation-failure concerns to observed faults. Original PE was independently rehashed in the separate current 22H audit: `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; V9 SQLite: `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`, quick_check=ok.\n+\n+## 1. REA-LOCAL-20261031-22H-P0-VORBIS-GROWTH-CALLER-PAIR-STATIC-01\n+\n+Owner report: `rea_lab/decomp_task/REA_20261031_22H_P0_VORBIS_GROWTH_CALLER_PAIR_STATIC.md`; measured byte SHA256 `4F954FD128EC42CF610223CF02A99ABC385692E346550E8AA51BEC069F9E8B41`. Supporting owner `rea_lab/decomp_task/REA_20261031_22H_P0_GROW_PAIR_EVIDENCE.json`; SHA256 `8C59C675A774BD02E977F9B7DF5FDABF2EA52972BCAA907E7C54873AF41E3EBA`. Reported original-source audit **49/49 PASS** (previous run only).\n+\n+**Semantic difference vs 21H**: `0x005E0960` and `0x005E0B80` are two more original-x86 CALLER paths of the existing `0x005D4980` allocator. `0x5E09C8/0x5E09F2` and `0x5E0BDA/0x5E0BE8` perform two-stage allocations; later `0x5E09FE` / `0x5E0BF4` write the second allocation pointer through the first without a local NULL test. The observed local stride denominators `0x5E09B1`/`0x5E0BC2` are unproven nonzero, but **`0x5E0C04` divides by an already-positive input count** and must not be misreported as another divide-by-zero candidate. Failure reachability and ABI remain VERIFY. Do not recount 10/31 19–21H's same grow function.\n+\n+## 2. REA-LOCAL-20261031-23H-P0-VORBIS-GROWTH-TAIL-BOUNDARY-STATIC-01\n+\n+Owner report: `rea_lab/decomp_task/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md`; measured SHA256 `7C78FA5A8B4CB8163EC80453C4587799E8890615E834CF72D2CC7BA3AA728744`. Evidence `rea_lab/decomp_task/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_EVIDENCE.json` SHA256 `92A1465A0419038E3DA0CAD2849581B6E8DB8250E816533B35354C97AF43FB3E`. Prior owner original-source audit **64/64 PASS** (not rerun).\n+\n+**Correct native function boundaries:** `0x005E0CF0` (body through `0x5E0DB2`) and `0x005E0DC0` (three disjoint body ranges, last to `0x5E0F50`) supersede the informal mid-function target labels `0x5E0D00` / `0x5E0E00`. The first allocates via `0x5E0D1A -> 0x5D4980` and conditionally uses the returned pointer; the second uses denominators at `0x5E0DFE` and `0x5E0E0C`, then allocates at `0x5E0E17`. Their direct native E8 callers=0 **does not** imply unreachability. The upper-level producer and successful parser preconditions are separate VERIFY; later 01–02H owner findings further constrain denominator claims and must be checked before promotion.\n+\n+## 3. REA-LOCAL-20261101-00H-P0-VORBIS-INDIRECT-CALLBACK-DISPATCH-STATIC-01\n+\n+Owner report `rea_lab/decomp_task/REA_20261101_00H_P0_VORBIS_INDIRECT_CALLBACK_DISPATCH_STATIC.md`; measured SHA256 `D0941E70482A001839EEE9021450ECB6F2ABF0FC504657CE995D7C3AD5C20FBA`. Evidence `rea_lab/decomp_task/REA_20261101_00H_P0_VORBIS_CALLBACK_DISPATCH_EVIDENCE.json` SHA256 `4402B2DCF437087C06FA17254FF907B52D9538D65492591978AB1511E1E8FECC`. Earlier owner original-source audit **45/45 PASS** (not rerun).\n+\n+**Semantic correction to the preceding E8-only index:** selector table root `0x00612E60` points to group table `0x0061AEA0` for selector 2. This group stores callbacks `+0x14 -> 0x005E0B80`, `+0x18 -> 0x005E0CF0`, `+0x1C -> 0x005E0DC0`. The indirect instruction sites are `0x005DF717 CALL ECX`, `0x005DF788 CALL EDX`, and `0x005DF991 CALL ECX`. Direct E8=0 and actual indirect dispatch are not contradictory. Invalid/other selector values may be rejected earlier; a later 01H owner report explicitly studies parser acceptance and must be linked before curator claims actual selector reachability. ABI, runtime Ogg type distribution, allocation failure and crash are not observed.\n+\n+## Common provenance / curation contract\n+\n+- Owner/task: REA / T015. Confidence: bounded original-PE static facts **STATIC**, conditional source-level interpretation **INFERRED**, real runtime state **VERIFY**, game original Golden PASS=0 / strict MATCH=0 / READY=0. Newly complete REA five-method function evidence=0; new official VERIFIED=0; official TODO/VERIFY/BLOCKED deltas=0/0/0. The 64 historic formal VERIFIED functions are not recounted.\n+- Only metadata and semantic summaries are stored on the private owner branch. Source binary, generated DB, raw pseudocode ZIP, original EVIDENCE JSON and personal files are **not** uploaded. Owner original report/EVIDENCE SHA above verified from the PC's saved bytes; historic audit PASS figures were not independently rerun in this intake.\n+- **Backlog continuation:** 2026-11-01 01H parser type2 acceptance; 02H first-divisor EOF latch and second-divisor compiled-book producer; then offline 03H–16H Library ID queue in [Issue #3](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3). Their current source hashes must be checked before intake, and **02H includes two different research IDs**, not one. Current 22H fsopen work and 21H unwind crosswalk are in [the adjacent intake report](REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md).\n+- This file is **PUBLISHED_INTAKE, not CURATED**. Only the authorized curator may update [REF_AUDIO_VORBIS](../../../REF_AUDIO_VORBIS.md), [symbols.tsv](../../../symbols.tsv) or `develop` after source/owner/conflict/allowlist/readback checks. The 18H incomplete safety-refused JSON must never be reconstructed or published by alternate routes.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md",
+      "sha": "b9a5102da86b6b4dc6d02466bd6bb8bf147527fa",
+      "status": "added"
+    },
+    {
+      "additions": 33,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md",
+      "changes": 33,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREA%2FREA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md?ref=8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "deletions": 0,
+      "filename": "research/intake/REA/REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md",
+      "patch": "@@ -0,0 +1,33 @@\n+# REA/T015 | 2026-11-01 01H–02H — Vorbis residue type2 input gate / two divisor provenance\n+\n+**Stage:** PRIVATE owner intake only / source PC SHA readback / original x86 STATIC and conditional INFERRED / VERIFY / NOT READY. This is a **recovery of three older research IDs**, not three newly verified functions.\n+**Original PE SHA256:** `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`.\n+**V9 SQLite SHA256:** `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. These baseline full SHA checks were repeated in the separate 23H static audit; older 01H/02H original owner reports have independent bounded original-x86 byte checks.\n+\n+## 01H — parser accepts residue type2 and rejects selector >=3\n+\n+**ID** `REA-LOCAL-20261101-01H-P0-VORBIS-RESIDUE-TYPE2-PARSER-GATE-STATIC-01`.\n+- At parser `0x005D4160`, `0x005D4298 -> 0x005E6E10` obtains a 16-bit selector, `0x005D42A0` saves it in setup `+0x520` slot and `0x005D42A8/0x005D42B1` rejects negative or >=3. The accepted integer types are 0/1/2; type2 is a supported **static parser path**, not proof that any real game OGG uses it.\n+- `0x005D42B7` reads callback group `0x00612E60 + selector*4`, then `0x005D42C6` indirect-calls parser in group+4; `0x005D42CD/CF` rejects NULL result. For type2, table group `0x00612E68 -> 0x0061AEA0`, parser `0x0061AEA4 -> 0x005DFE10`.\n+- The `0x00612E6C` adjacent pointer belongs to a **different mapping selector** (`0x005D4324` rejects type>=1), and must not be misreported as a fourth valid residue kind. 00H prior callback work is a predecessor, not another discovery.\n+- Source: `rea_lab/decomp_task/REA_20261101_01H_P0_VORBIS_RESIDUE_TYPE2_PARSER_GATE_STATIC.md`, SHA256 `C53F251C1125984A2B3CC1A6417ECC5687BB0C00F4181FE8279CE1B93045C271`. Evidence `REA_20261101_01H_P0_RESIDUE_TYPE2_EVIDENCE.json`, SHA256 `D2E1D821D121A1FC3976F791DE5642B8F332F742062DA112016B15EF27850C16`. Owner earlier reported **42 independent static audit checks PASS**, not repeated for this recovery batch.\n+\n+## 02H A — first divisor: normal-return parser EOF latch\n+\n+**ID** `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-FIRST-DIVISOR-PARSER-ERROR-LATCH-STATIC-01`.\n+- Parser `0x005DFE10` reads 24 bits at `0x005DFE50`, increments at `0x005DFE55`, writes `residue+8` at `0x005DFE59`: a successful read 0..0xFFFFFF maps to 1..0x1000000. Reader failure -1 maps to zero, **but** subsequent 8-bit read from the same EOF-latched reader fails and `0x005DFE75 -> 0x005DFF98` takes NULL-result error return.\n+- Decoder `0x005E0DC0` first stride divisor uses `[residue+8]` at `0x005E0DCD`, then `0x005E0DFE idiv`. Under **successful parser return + no later mutation** the stride is nonzero; uninitialized/modified state, alternate routes, and actual runtime zero-divide are not excluded.\n+- Source: `rea_lab/decomp_task/REA_20261101_02H_P0_VORBIS_RESIDUE_FIRST_DIVISOR_EOF_LATCH_STATIC.md`, SHA256 `DE075C58955045FE4A9C4AC1D22730D98382773B1486697E54EA621AF60C37F8`. Evidence `REA_20261101_02H_P0_RESIDUE_DIVISOR_EVIDENCE.json`, SHA256 `C7566A72FEC7A944431E54CA3538838626F981F1ED5AA830D370145A7F280AC5`. Owner earlier reported **32/32 native static checks PASS**.\n+\n+## 02H B — second divisor: selected book dimension producer chain\n+\n+**ID** `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-COMPILED-BOOK-DIVISOR-STATIC-02`.\n+- `0x005DFE10` parser selects book via `residue+0x14` and setup `+0x720` array; at `0x005DFF70/0x005DFF72` rejects book dimension <1. Initialization `0x005D57C0` type2 callback table `0x0061AEA8 -> 0x005DFFC0` loads compiled books from setup `+0xB20`, indexed by book number*0x38, and stores pointer into runtime residue `+0x10`.\n+- Constructors `0x005DA070` and `0x005D9F40` each copy book dimension to the compiled record's first DWORD. Decoder `0x005E0DC0` reads `[residue+0x10]` then the compiled record's dimension; `0x005E0E0C idiv ecx` uses it. **Only under same-book, normally successful init with no later modification** can the second divisor be treated >=1. This is NOT a global no-zero-division proof.\n+- Source: `rea_lab/decomp_task/REA_20261101_02H_P0_VORBIS_RESIDUE_SECOND_DIVISOR_COMPILED_BOOK_STATIC.md`, SHA256 `AC900C5CE98F24F3934A75173F927EB22329A3169CF3BCC7C9556723F410C158`. Evidence `REA_20261101_02H_RESIDUE_BOOK_CHAIN_EVIDENCE.json`, SHA256 `D14C5C68037191B75D765CD1FBD4990EE5C5D95117CEC826639EA24B17F1E48A`. Owner earlier reported **37/37 static checks PASS**.\n+\n+## Curation / errata / limits\n+- Cross-check earlier 00H callback table & 10/31 23H decoder sites; do not recast those as new. 2026-11-01 03H/04H offline candidate reports subsequently qualify some **residue power bound assumptions**; issue #3 governs corrections before any shared KB promotion.\n+- No original-game Golden PASS, strict MATCH, formal new REA 5-method completion, new VERIFIED or READY resulted from this recovery; **all remain 0**. Full replication rate unmeasured. These 3 source IDs are neither 3 measured gameplay findings nor 3 newly acquired dynamic functions.\n+- **KB_CANDIDATE:** `0x005D4160`, `0x005DFE10`, `0x005E6E10`, `0x005D57C0`, `0x005DFFC0`, `0x005DA070`, `0x005D9F40`, `0x005E0DC0`, `0x005E0DFE`, `0x005E0E0C`; offsets `+0x520/+0x720/+0xB20/+0x14/+0x10/+8`; owner REA/T015. Curator should attach corrected assertions to REF_AUDIO_VORBIS or a focused residue index, not overwrite source history.\n+- **Next VERIFY:** original game OGG type2 incidence without unauthorized execution, alternate book writers/mutation, allocator-failure entry into decoder, exception-safe reimplementation tests. Old source files remain on authorized PC; only these sanitized findings and hash pointers appear in GitHub.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md",
+      "sha": "4bd67ceee5880d17c1720dab43d54fd0370686f3",
+      "status": "added"
+    },
+    {
+      "additions": 26,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md",
+      "changes": 26,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREA%2FREA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md?ref=8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "deletions": 0,
+      "filename": "research/intake/REA/REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md",
+      "patch": "@@ -0,0 +1,26 @@\n+# REA/T015 | EH4 local-unwind caller map and __fsopen empty-filename cleanup\n+\n+Status: **PUBLISHED_INTAKE / NATIVE-STATIC / INFERRED-RUNTIME / VERIFY / NOT READY**. This is an owner-authored, sanitized PRIVATE intake record, **not curated develop semantics**, not an ABI promise, and not a native gameplay test.\n+\n+- Owner/task: `REA / P0-T015`; observed 2026-11-01 JST; reference original ver0.67 PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; V9 composite SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. Both whole-file hashes rechecked locally for the 22H audit; V9 SQLite quick_check=ok.\n+- Evidence classification: original x86 **STATIC** only for the enumerated instructions/table records. V9 pseudocode and source-level control-flow meaning remain **INFERRED** where not independently checked; engine FILE* state, full ABI, runtime SEH delivery, allocator failure and fault effects **VERIFY**. Golden PASS=0, strict MATCH=0, READY=0; newly completed formal REA 5-method sets=0, new official VERIFIED=0; TODO/VERIFY/BLOCKED official deltas=0/0/0.\n+\n+## REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01\n+\n+**Prior owner report source:** `rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md`; SHA256 **`89314B1069E2A57A928C1320A4C80DC79D6C2C4A3FA65137F082B7634351F2D6`** (2026-11-01 local file readback). Supporting `rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_EVIDENCE.json`, SHA256 `6CC68C653B82E3CCE07ECBC9CF6350EFA88E856FBCDCF536D296CA3138163AAE`. Its original owner static audit reported **7/7 PASS**, not game observation; this intake did not rerun that 7-site audit.\n+\n+`0x005C3500 (__local_unwind4)` has four verified direct E8 CALL sites: `0x005C35BD`, `0x005C35E6`, `0x005C3646`, `0x005D1D33`. The third belongs to the preceding 20H EH4 work and is **not** an additional semantic discovery. The fourth belongs to `0x005D1CB1 (__fsopen)`. Bounded direct E8 sites `0x005C356E -> 0x005CC2B5` and `0x005C357B -> 0x005CC2D4` and trampoline `0x005CC2D4: CALL EAX; RET` are additional static call-chain anchors. Do not treat the `0x005C3590` code fragment or the cleanup helper as independently callable native DLL ABI. Earlier IDs: `REA-LOCAL-20261101-19H-P0-FTELL-SEH4-SCOPE-STATIC-01` and `REA-LOCAL-20261101-20H-P0-EH4-DISPATCH-PHASE-STATIC-01` already cover the ftell scope and EH search/unwind split (see [curated index](../../rea/INDEX.md)).\n+\n+## REA-LOCAL-20261101-22H-P0-FSOPEN-EMPTY-NAME-UNWIND-STATIC-01\n+\n+**New semantic delta, not a new function:** after successful/nonNULL `0x005D1CFD -> 0x005D2165 __getstream`, `__fsopen` checks the first filename byte at `0x005D1D19/1B`; a zero byte falls through to `__errno()` at `0x005D1D1D`, stores errno 22 at `0x005D1D22`, then pushes target `-2` / local frame `[EBP-0x10]` / pointer `0x0065A220` before **`0x005D1D33 -> 0x005C3500 __local_unwind4`**. The `0x005D1D38` stack cleanup then jumps toward NULL-return path `0x005D1CE0`. This refines the prior 21H Ghidra-pseudocode-only inference with a bounded **original-x86** condition and 3 explicit unwind arguments.\n+\n+The original 28-byte EH4 scope table at `0x00641798` has seven DWORD values `[-2,0,-44,0,-2,0,0x005D1D63]`; the last scope entry's null filter and cleanup pointer name `0x005D1D63`. That 10-byte helper reads its parent's `[EBP+8]` then calls `0x005BDB44 (__unlock_file)`. Normal `__fsopen` return independently sets scope `-2` at `0x005D1D4E` and directly CALLs **the same helper** from `0x005D1D55`. This is a static common-cleanup relationship; neither a guarantee of actual runtime lock release in all exceptions nor proof of null-file failure. `0x005C355D` cursor update and `0x005C357B` indirect cleanup call were already found in 20H, not newly counted.\n+\n+**Owner full report:** `rea_lab/decomp_task/REA_20261101_22H_P0_FSOPEN_EMPTY_NAME_UNWIND_STATIC.md`, byte SHA256 `614554CF6BC019DAC8E1AD955F1BE2D511020D4724E67858BBA93D47122C10DE`. Owner evidence JSON SHA256 `BE8DFE4A64F895EF5C2BAE3D1AF052D44B8A9182FED65902A35AB7DE55120A27`; owner audit Python SHA256 `7A7D44A2BB3556C9D8807D097BDC969780EDFC5E73071A4A1E4D1DDC588F2862`. New independent PE/V9 checks **29/29 PASS**, evidence JSON independently reread and code audit successfully rerun without rewriting evidence. Window SHA256s are in the owner JSON (not uploaded, to preserve large/secondary source boundaries); the report itself is 4,953 bytes.\n+\n+**Five-evidence coverage:** info=V9, pseudo=V9 machine output, assembly=bounded original x86, callers=V9+specific original E8, callees=bounded original E8 and V9. A formal full function-level `info/pseudo/assembly/callers/callees` completion is **not** claimed. No new REA run.\n+\n+**KB_CANDIDATE** for curator: `0x005D1CB1` and `0x005D1D63` / `0x00641798`; offsets `[EBP-4]` (scope) and `[EBP-0x10]` (frame); links from [REF_AUDIO_VORBIS](../../../REF_AUDIO_VORBIS.md) or future CRT/EH REF. Deduplicate 17H ftell/19H SEH4/20H phase/21H caller set. Next P0: verify `0x005D2165 __getstream` FILE* lock lifetime and the two unlock paths' frame/return assumptions in bounded native code. Safety-held 18H partial evidence **not used or copied**; prohibited addresses and refused extraction not revisited.\n+\n+**Release gate:** This file lives only on the owner-isolated branch until curator verifies original source ID/SHA/semantic conflicts and promotes it. The GitHub branch intake is **not** an auto-approved change to `symbols.tsv`, `REF_*.md`, `develop`, original game sources or READY.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md",
+      "sha": "400835d49396167271986b6900ff3cf37113ecd0",
+      "status": "added"
+    },
+    {
+      "additions": 23,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md",
+      "changes": 23,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FREA%2FREA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md?ref=8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "deletions": 0,
+      "filename": "research/intake/REA/REA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md",
+      "patch": "@@ -0,0 +1,23 @@\n+# REA/T015 | 2026-11-01 23H — CRT __getstream two-level lock ownership\n+\n+**Research ID:** `REA-LOCAL-20261101-23H-P0-GETSTREAM-LOCK-OWNERSHIP-STATIC-01`.\n+**Stage:** PUBLISHED_INTAKE only / NATIVE-STATIC + conditional INFERRED / VERIFY / NOT READY. No original gameplay test.\n+**Original PE SHA256:** `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`.\n+**V9 composite SQLite SHA256:** `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE` (read-only quick_check=ok).\n+\n+## Static crosswalk: what differs from 22H\n+- Previous `REA-LOCAL-20261101-22H-P0-FSOPEN-EMPTY-NAME-UNWIND-STATIC-01` established `__fsopen 0x005D1CB1` directly calling `__getstream 0x005D2165` at `0x005D1CFD`, with caller scope cleanup `0x005D1D63`. That CALL is **not** a new finding here.\n+- **New independent bounded native x86 evidence:** `__getstream` body `0x005D2165..0x005D228B` (295B); owner local original-PE window SHA256 `973BE2F2ADBB309B94ECB05282358E56E05445532EF36EFBDCD2EDF9632F2B46`. Its 9B global-unlock helper `0x005D228F..0x005D2297` has SHA256 `07DC33ADD7C561A7C3CF4B869E86CC7FC74442EF106CEE681CD4BA8A1D4141AC`.\n+- **Global table lock:** `0x005D2178/0x005D217A` push 1/call `0x005C1041`; common exit `0x005D227F -> 0x005D228F` calls `0x005C0F68` at `0x005D2291` with argument 1. Names `__lock/__unlock` come from V9 CRT labels, not DLL ABI proof.\n+- **Existing stream candidate:** flags at `FILE+0x0C` tested against `0x83` and `0x8000` (`0x005D21A5/0x005D21A9`); `0x005D21D3 -> 0x005BDB12 __lock_file2` followed by `0x005D21E2` recheck. When now occupied, `0x005D21EA -> 0x005BDB80 __unlock_file2` and scan continues. When free, FILE* is returned without an intervening **per-FILE** unlock.\n+- **Fresh stream candidate:** `malloc(0x38)` at `0x005D21FB/0x005D21FD`; null result returns null. `0x005D2221` indirect critical-section initialization (V9 labels `InitializeCriticalSectionAndSpinCount`, `spin=4000`); a zero result frees and clears the slot (`0x005D2233/0x005D223E`), then returns null. Successful initialization routes through `0x005D224A` indirect enter-critical-section call, stores returned FILE* and clears flags. **IAT API names were not independently re-proven**.\n+- **Return boundary:** `0x005D2262` masks flags, `0x005D2274` sets `_file=-1`, `0x005D2278` deactivates scope, `0x005D227F` releases **table-level** lock, `0x005D2284` puts FILE* into EAX and then epilog/RET. Thus a successful normal return **appears to transfer a locked FILE* to caller**; `__fsopen` 22H caller's `__unlock_file` cleanup is consistent. Real concurrency and exceptional unwind remain VERIFY.\n+- **Bounded failure nuance:** failed lock initialization `0x005D21C4`, malloc null `0x005D220E`, or critical-section init failure `0x005D2241` goes straight to common return rather than scanning later slots. This is a static branch description, **not** an observed fault.\n+\n+## Provenance / tests / limits\n+- Source-owner report: `rea_lab/decomp_task/REA_20261101_23H_P0_GETSTREAM_LOCK_STATIC.md`, SHA256 `289B7D015CE3A6917946F26E2EF2C62EEE772B994CF242C55BBE1099342DE8A8`.\n+- Machine-verifiable receipt: `rea_lab/decomp_task/REA_20261101_23H_P0_GETSTREAM_LOCK_EVIDENCE.json`, SHA256 `35F8B4C164DDFEDB024FF92E00F2213E57FD65C39953EB7F6B42F77F72AD5273`. Owner audit: `REA_20261101_23H_P0_GETSTREAM_LOCK_AUDIT.py`, SHA256 `363DA5C1DA80183907BA55BE05A06B7264919A4D86D08FE888CF875710177621`.\n+- Independent static check: PE/V9 SHA, read-only SQLite check and PE32, two full x86 decode windows, 35 original opcode sites, nine E8 targets = **49/49 PASS**. Code and evidence remain on authorized source PC, not copied to GitHub.\n+- V9 info/pseudo index available; assembly is bounded native x86; callers is a single earlier `__fsopen` E8; callees are bounded nine E8. **New official five-evidence complete=0, new REA VERIFIED=0, official TODO/VERIFY/BLOCKED delta=0/0/0; original-game Golden PASS=0, strict MATCH=0, READY=0.** Previous 64 formally verified are historical, not incremented.\n+- **KB_CANDIDATE:** search `__getstream`, `__fsopen`, `0x5D2165`, `0x5D228F`, `0x5D21D3`, `0x5D21EA`, `0x5D2221`, `0x5D224A`, `0xB13A00` stream table, `0xB14A20` slot count. Curator destination CRT/FILE/IO reference and selected `symbols.tsv` only after independent review.\n+- **Next VERIFY:** native implementation of `0x005BDB12 __lock_file2` / `0x005BDB80 __unlock_file2`, unverified Windows import symbols, caller frame and exceptional lock ownership; no original game execution.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/8fb6fca041740e69d58434cfedc64037d204b3fd/research%2Fintake%2FREA%2FREA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md",
+      "sha": "edd16c8e2ae6bb250c2f5a987f867846b8d807e8",
+      "status": "added"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8987d4ee30d2c15df06674a27f8d4f0405fa3955/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T13:49:43Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T13:49:43Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(REA): preserve 21H unwind callers and 22H fsopen scope evidence",
+        "tree": {
+          "sha": "56bc60f5414f91e5339d81f61253c4af5b6284f9",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/56bc60f5414f91e5339d81f61253c4af5b6284f9"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/8987d4ee30d2c15df06674a27f8d4f0405fa3955",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8987d4ee30d2c15df06674a27f8d4f0405fa3955",
+      "node_id": "C_kwDOVb7AvNoAKDg5ODdkNGVlMzBkMmMxNWRmMDY2NzRhMjdmOGQ0ZjA0MDVmYTM5NTU",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "sha": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/dad68c4fedf8a56e430af1ec8a7993e725ce610d"
+        }
+      ],
+      "sha": "8987d4ee30d2c15df06674a27f8d4f0405fa3955",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8987d4ee30d2c15df06674a27f8d4f0405fa3955"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/543486872665b34478e8394263b8c7702d434c68/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T13:50:29Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T13:50:29Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(REA): recover three prior growth and indirect-callback research IDs",
+        "tree": {
+          "sha": "218bd424068eb8dcd754b679cdd0ad6f1d8d2bcf",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/218bd424068eb8dcd754b679cdd0ad6f1d8d2bcf"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/543486872665b34478e8394263b8c7702d434c68",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/543486872665b34478e8394263b8c7702d434c68",
+      "node_id": "C_kwDOVb7AvNoAKDU0MzQ4Njg3MjY2NWIzNDQ3OGU4Mzk0MjYzYjhjNzcwMmQ0MzRjNjg",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8987d4ee30d2c15df06674a27f8d4f0405fa3955",
+          "sha": "8987d4ee30d2c15df06674a27f8d4f0405fa3955",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8987d4ee30d2c15df06674a27f8d4f0405fa3955"
+        }
+      ],
+      "sha": "543486872665b34478e8394263b8c7702d434c68",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/543486872665b34478e8394263b8c7702d434c68"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f9384eeb024e25a871438e56cffeef064245cd0b/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T13:50:57Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T13:50:57Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(REA): index five preserved IDs and next recovery cursor",
+        "tree": {
+          "sha": "85d35b352d59ee3f008a15e3013d735784d4539e",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/85d35b352d59ee3f008a15e3013d735784d4539e"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/f9384eeb024e25a871438e56cffeef064245cd0b",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/f9384eeb024e25a871438e56cffeef064245cd0b",
+      "node_id": "C_kwDOVb7AvNoAKGY5Mzg0ZWViMDI0ZTI1YTg3MTQzOGU1NmNmZmVlZjA2NDI0NWNkMGI",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/543486872665b34478e8394263b8c7702d434c68",
+          "sha": "543486872665b34478e8394263b8c7702d434c68",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/543486872665b34478e8394263b8c7702d434c68"
+        }
+      ],
+      "sha": "f9384eeb024e25a871438e56cffeef064245cd0b",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f9384eeb024e25a871438e56cffeef064245cd0b"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d280edf916549c901605d0e915e986b2d552db07/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:45:16Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:45:16Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(rea): preserve bounded __getstream two-level lock research",
+        "tree": {
+          "sha": "c3a3b0b57547a14cc3a32a83b1257e286e36e081",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/c3a3b0b57547a14cc3a32a83b1257e286e36e081"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/d280edf916549c901605d0e915e986b2d552db07",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/d280edf916549c901605d0e915e986b2d552db07",
+      "node_id": "C_kwDOVb7AvNoAKGQyODBlZGY5MTY1NDljOTAxNjA1ZDBlOTE1ZTk4NmIyZDU1MmRiMDc",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/f9384eeb024e25a871438e56cffeef064245cd0b",
+          "sha": "f9384eeb024e25a871438e56cffeef064245cd0b",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f9384eeb024e25a871438e56cffeef064245cd0b"
+        }
+      ],
+      "sha": "d280edf916549c901605d0e915e986b2d552db07",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d280edf916549c901605d0e915e986b2d552db07"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9e283ecaa805435b1bc7b0929a945679572c901e/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:45:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:45:52Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(rea): recover residue type2 and two nonzero-divisor source chains",
+        "tree": {
+          "sha": "c7a8b9c0dc0ab2ccb6f8f0addf4e961002b7637d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/c7a8b9c0dc0ab2ccb6f8f0addf4e961002b7637d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/9e283ecaa805435b1bc7b0929a945679572c901e",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/9e283ecaa805435b1bc7b0929a945679572c901e",
+      "node_id": "C_kwDOVb7AvNoAKDllMjgzZWNhYTgwNTQzNWIxYmM3YjA5MjlhOTQ1Njc5NTcyYzkwMWU",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/d280edf916549c901605d0e915e986b2d552db07",
+          "sha": "d280edf916549c901605d0e915e986b2d552db07",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/d280edf916549c901605d0e915e986b2d552db07"
+        }
+      ],
+      "sha": "9e283ecaa805435b1bc7b0929a945679572c901e",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9e283ecaa805435b1bc7b0929a945679572c901e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8fb6fca041740e69d58434cfedc64037d204b3fd/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:46:11Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:46:11Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "intake(rea): link four recovered source IDs and advance remaining cursor",
+        "tree": {
+          "sha": "3360988714154541f79be417d15741e61c88cfd6",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/3360988714154541f79be417d15741e61c88cfd6"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/8fb6fca041740e69d58434cfedc64037d204b3fd",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "node_id": "C_kwDOVb7AvNoAKDhmYjZmY2EwNDE3NDBlNjlkNTg0MzRjZmVkYzY0MDM3ZDIwNGIzZmQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/9e283ecaa805435b1bc7b0929a945679572c901e",
+          "sha": "9e283ecaa805435b1bc7b0929a945679572c901e",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/9e283ecaa805435b1bc7b0929a945679572c901e"
+        }
+      ],
+      "sha": "8fb6fca041740e69d58434cfedc64037d204b3fd",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/8fb6fca041740e69d58434cfedc64037d204b3fd"
+    }
+  ],
+  "number": 13,
+  "reviews": []
+}

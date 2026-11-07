@@ -1,0 +1,760 @@
+{
+  "changed_files": [
+    {
+      "additions": 17,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "changes": 17,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/intake/B/B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "patch": "@@ -0,0 +1,17 @@\n+# B 23H: 0x542280のdouble優先と整数差fallback（STATIC V9）\n+research_id: B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01\n+owner: B; tasks: T024; T013の最終対象接続はVERIFY; observed_at: 2026-11-01 23H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md; rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite (DB is NOT uploaded)\n+source_sha256: 7054AB145A67A5CA10D60C9850CA0256690EFBF1061C945893BB3C0D0A1A4BEC (PC report Get-FileHash and text readback on 23H)\n+v9_database_sha256: 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE (prior manifest; DB not rehashed this run)\n+original_exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (prior manifest, EXE not rehashed this run)\n+individual_ghidra_pseudoc_sha: UNVERIFIED_SOURCE (composite V9 row read, per-C-file SHA/line not obtained)\n+evidence_kind: STATIC_V9 / INFERRED / VERIFY; golden_status: ORIGINAL_GAME_PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: B-20261101-22H-T024-DUAL-CALLER-FACTOR-PROVENANCE-CROSSJOIN-01 (2 caller producers), 20H/21H T013/T024 mode0 dispatch gates. This ID adds internal 0x542280 branch, not a new claim of final target.\n+## 直接確認した限定静的証拠\n+V9 Ghidra pseudoc function 0x542280 body [0x542280,0x5422BC], 61B: if global double at 0x63B0B8 differs from object double at +0x50, return object+0x50; else return FUN_005E743A( object int+0x40 minus object int+0x38 ) plus global double at 0x62A190. The sentinel interpretation, original FP compare direction and native ABI are VERIFY, not guaranteed C semantics.\n+V9 direct E8 0x5422B0 bytes E8 85 51 0A 00 ->0x5E743A. V9 0x5E743A 10-byte pseudoc __cintrindisp2(), 0x5E743F E9 CC DA FF FF ->0x5E4F10 is tail JMP, NOT a CALL. Exact intrinsic conversion/time/RNG side effects not inferred.\n+V9 caller 0x5271A0 uses direct E8 0x52722F/0x527258/0x52728B/0x52729C/0x5273BA ->0x542280, then 0x5272AB ->0x528DB0 or 0x52727A ->0x569730 along distinct routes. 0x528870 instead 0x528919/0x5289EF ->0x5E743A directly, adds 0x62A190, and 0x528A04 ->0x528DB0 / 0x52893D ->0x569730. These input producers must not be conflated; their actual gameplay effect not yet proven.\n+KB_CANDIDATE: VAs 0x542280,0x5E743A,0x5E4F10,0x5271A0,0x528870,0x528DB0,0x569730; CALL 0x5422B0->0x5E743A; JMP 0x5E743F->0x5E4F10; offsets object+0x50/+0x40/+0x38, globals 0x63B0B8/0x62A190.\n+next_validation: native 0x542280 comparison instruction/constant actual values, +0x50 writer, 0x5E4F10 ABI, legal unmodified original gameplay same EXE/DAT/MAP/SAVE/input/RNG/tick through selected Unit action. Golden0/strict0/READY0.\n+recovery: 03H UNKNOWN、07H core4 missing、10/25 missing source/54byte discrepancy OPEN、旧HOLD21 safety refusal unchanged; no retries of rejected VA/XREF. Curator alone may update develop/REF/symbols/structs.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "sha": "dfb4ed3d2a7e6391bc2ca2bb3df67e72f8504c89",
+      "status": "added"
+    },
+    {
+      "additions": 16,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "changes": 16,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "patch": "@@ -0,0 +1,16 @@\n+# B 13H: 2つの距離ソート経路とmode3 Unit展開\n+research_id: B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 13H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_NONMODE3_DISTANCE_ORDER_AND_MODE3_MEMBER_GRID_NATIVE_20261101_13H.md\n+source_sha256: 91C075A695E87CA039EE4DCE07281F56C0C893A4F6903AB83A02195C227E46B6 (PC Get-FileHash実測2026-11-01 23H、既存19H source map一致)\n+original_exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録。本run原EXE再hashなし)\n+evidence_kind: PRIOR_STATIC_ASM / GHIDRA / INFERRED / VERIFY; golden_status: ORIGINAL_GAME_PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01, B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01。11HのA/B分類と12HのB→A連結は再計上しない。\n+## 再利用可能な具体証拠\n+非mode3で、0x5296A8 -> 0x529DC0 が一方のlinked listをソートして 0x529750 -> 0x569730 に送り、0x529868 -> 0x529DC0 が別listをソートして0x529921 -> 0x569730 に送る。2つの基準座標を単一ソートへ勝手に統合してはならない。\n+0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUnit+0x1867C==0の初回候補を選び、Unit+0x40/+0x48/+0x4Cの幾何と基準点を使用。0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZを経る。通常の有限・非overflow入力では近距離優先というINFERREDが支持されるが、全同距離安定性・実機最終対象はVERIFY。\n+mode3の別経路0x5291D0..0x529313はgroup VectorをUnit Vectorへ展開し、0x529328..0x529352は展開後Unit件数Nをもとにsqrt(N)+0.5に関係する配置数を作る。group数とUnit数を混同しない。\n+先行出典: headless_analysis/full_pseudoc_20261020/HAKUSHIN067_FULL_PSEUDOC.zip!/functions/0052/00528DB0.c SHA256=A2444391476AF79BF31F64465B3D344C30EA3E499E9D722D5D01F11D639CBEBC; 00529DC0.c SHA256=F605233079DA84144A713022957740E4541A4F34A398305B03DD7541F5577EBE; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8; 00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF。これらは13H報告由来で23Hには擬似C ZIP実体を再読していない。\n+KB_CANDIDATE: VA 0x529DC0,0x52AD00,0x526030,0x569730; calls 0x5296A8/0x529868/0x52AD35/0x529750/0x529921; group+0xC/+0x10, Unit+0x40/+0x48/+0x4C/+0x1867C, manager+0x474。元13H static検査57/57は過去記録で本run再実行なし。\n+next_validation: 原作同一EXE/DAT/MAP/SAVEとUnit配置・2基準座標・mode1/2/3・乱数/tickを固定し、0x526030比較結果、0x569730順序とUnitの可視行動を実測。実機Golden0/strict0/READY0。\n+recovery: 03H UNKNOWN、07H core4欠落、10/25原文と54-byte差OPEN、既拒否HOLD21維持。curatorだけがdevelop/REF/辞書へ正式採録。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "sha": "6f5168d72a0bc98af9a3757d78d496a9a5ad5dec",
+      "status": "added"
+    },
+    {
+      "additions": 16,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "changes": 16,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/intake/B/B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "patch": "@@ -0,0 +1,16 @@\n+# B 14H: 32bit距離比較の境界値とUnit適格条件の差\n+research_id: B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 14H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md\n+source_sha256: 2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63 (PC Get-FileHash実測23H、19H source map一致)\n+exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録、14Hと本runのEXE実体再hashなし)\n+evidence_kind: PRIOR_CAPTURED_STATIC / INFERRED / SYNTHETIC_ONLY / VERIFY; golden_status: PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: 13H DISTANCE-SORT-MODE-GATE-01, 10H GROUP34-PROXIMITY-GATE-01。関数や距離ソート自体の発見を二重計上せず、境界条件・適格条件差のみ追加。\n+## 静的元命令と合成反例\n+以前採取した0x526030内のx86: 0x52607D 2B C2（SUB）、0x52607F D1 F8（SAR1）、0x526081 03 C2（ADD）。X=i32(left+SAR32(i32(right-left),1))で符号つき差をfloor方向へ割る。(left,right)=(10,7)は8。INT_MINとINT_MAXの合成例では32bit wrapで結果INT_MAXとなり、数学的中点-1とは違う。実ゲームでこの境界へ到達可能かはVERIFY。\n+0x52608E 0F AF C0 / 0x526091 0F AF C9 / 0x526094 03 C1 は二乗と加算を32bitで行い、dx=46341,dy=0の合成ではsigned結果 -2147479015。無限精度距離式への書換えはstrict互換ではない。0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZではordered greater以外が偽側の条件付き静的モデル。負値平方根→NaN・x87例外制御とゲーム到達性はVERIFYで、原作BUG認定をしない。\n+0x569360の近接ratio集計はUnit+0x1867C==0かつ+0x1867E==0を要求する一方、0x526030の距離ソートanchorは+0x1867C==0だけ。flags=(0,1)は合成上取り扱い差が生じる。この2関数のフィルタをalive等の単一述語に統一しない。\n+CALL site 0x52AD35 -> 0x526030。先行Ghidra ZIP相対path functions/0052/00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8; 0056/00569360.c SHA256=309A88BD46955E9873936F91AF03731C50156A1B2476FAAA18EEE9F5696AAF1C（14H報告由来、本run擬似C再読なし）。\n+KB_CANDIDATE: 0x526030,0x569360,0x52AD00; Unit+0x40/+0x48/+0x4C/+0x1867C/+0x1867E。元14H検査のnative記録17件＋合成16件=33/33は旧結果であり今run再試験していない。\n+next_validation: 無改変原作同一DAT/MAP/SAVE/input/Unit群/tickにおけるx87状態、入力範囲、0x526030返値、0x52AD00ノード順・条件flagを観測。Golden0/READY0。\n+recovery: 03H UNKNOWN、07H core4 MISSING、10/25原文と54byte差OPEN、旧安全HOLD21維持。curator以外のdevelop/REF/辞書変更は禁止。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "sha": "e6b158b140f785ecfc3405f487dad36a6103db3c",
+      "status": "added"
+    },
+    {
+      "additions": 15,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "changes": 15,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Fintake%2FB%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/intake/B/B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "patch": "@@ -0,0 +1,15 @@\n+# B 15H: NaN混入時の比較器同値推移律破綻の条件付き反例\n+research_id: B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 15H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md\n+source_sha256: F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952 (PC Get-FileHash実測23H、19H map一致)\n+exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録、15H/今runはEXE再hashなし)\n+evidence_kind: PRIOR_STATIC_CAPTURE / INFERRED / SYNTHETIC_ONLY / VERIFY; golden_status: PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: 13H DISTANCE-SORT-MODE-GATE-01（距離sortとNative）、14H DISTANCE-COMPARE-BOUNDARY-01（32bit overflowとx87分岐）。今回の固有差分は非推移的な同値関係の合成反例だけ。\n+## 再利用可能な反例と境界\n+先行ASM 0x52608E/91/94は32bit signed平方和を構成、(dx,dy)=(46341,0)の場合wrap結果-2147479015。先行0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZ、0x526122 MOV EAX,1、0x526134 XOR EAX,EAX。比較結果の条件付きモデルはordered greaterで1、ordered less/equal/unorderedで0。0x52AD35 CALL ->0x526030 と0x52AD3A TEST AL/0x52AD3C JEがmerge判断へ繋がる。\n+もし負数平方根の無効値がマスクされたx87例外でNaNとなり、この比較まで到達すれば、a=1,b=NaN,c=2についてaとb、bとcはどちら向きもfalseで同値扱いなのにaとcは順序付きで非同値。等価関係の推移律が破れ、標準的なstrict-weak-order比較器への無条件置換は危険（SYNTHETIC/INFERRED）。原作でNaNが生成する、ゲームで到達する、ソートBUGを起こすという主張ではない。\n+先行擬似C relative paths: headless_analysis/full_pseudoc_20261020/HAKUSHIN067_FULL_PSEUDOC.zip!/functions/0052/00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8。元証拠JSON: data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json SHA256=1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205、14H JSON SHA256=9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392。これらは過去receiptで今回JSON/ZIPの再hash無し。\n+KB_CANDIDATE: VA 0x526030,0x52AD00,0x529DC0; CALL 0x52AD35->0x526030; instructions 0x52608E/91/94/117/11D/120/122/134。過去72 checks PASSはprior+syntheticであり原作Gameplayや今run再実行PASSを意味しない。\n+next_validation: 認可済み無改変原作同一DAT/MAP/SAVE/input/RNG/tickで平方和、sqrt/x87制御語、0x526030返値、0x52AD00の実ノード順を同一run計測。NaN到達が未証明ならVERIFYのまま。Golden0/READY0。\n+recovery: 03H保存UNKNOWN、07H 4原文欠落、10/25原文と54byte差OPEN、旧安全HOLD21維持。専任curatorのみdevelop/REF/辞書採録。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Fintake%2FB%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "sha": "b520458f6783d477cdb031cad3c15532ec513b4d",
+      "status": "added"
+    },
+    {
+      "additions": 17,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "changes": 17,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/lane_b/B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "patch": "@@ -0,0 +1,17 @@\n+# B 23H: 0x542280のdouble優先と整数差fallback（STATIC V9）\n+research_id: B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01\n+owner: B; tasks: T024; T013の最終対象接続はVERIFY; observed_at: 2026-11-01 23H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md; rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite (DB is NOT uploaded)\n+source_sha256: 7054AB145A67A5CA10D60C9850CA0256690EFBF1061C945893BB3C0D0A1A4BEC (PC report Get-FileHash and text readback on 23H)\n+v9_database_sha256: 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE (prior manifest; DB not rehashed this run)\n+original_exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (prior manifest, EXE not rehashed this run)\n+individual_ghidra_pseudoc_sha: UNVERIFIED_SOURCE (composite V9 row read, per-C-file SHA/line not obtained)\n+evidence_kind: STATIC_V9 / INFERRED / VERIFY; golden_status: ORIGINAL_GAME_PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: B-20261101-22H-T024-DUAL-CALLER-FACTOR-PROVENANCE-CROSSJOIN-01 (2 caller producers), 20H/21H T013/T024 mode0 dispatch gates. This ID adds internal 0x542280 branch, not a new claim of final target.\n+## 直接確認した限定静的証拠\n+V9 Ghidra pseudoc function 0x542280 body [0x542280,0x5422BC], 61B: if global double at 0x63B0B8 differs from object double at +0x50, return object+0x50; else return FUN_005E743A( object int+0x40 minus object int+0x38 ) plus global double at 0x62A190. The sentinel interpretation, original FP compare direction and native ABI are VERIFY, not guaranteed C semantics.\n+V9 direct E8 0x5422B0 bytes E8 85 51 0A 00 ->0x5E743A. V9 0x5E743A 10-byte pseudoc __cintrindisp2(), 0x5E743F E9 CC DA FF FF ->0x5E4F10 is tail JMP, NOT a CALL. Exact intrinsic conversion/time/RNG side effects not inferred.\n+V9 caller 0x5271A0 uses direct E8 0x52722F/0x527258/0x52728B/0x52729C/0x5273BA ->0x542280, then 0x5272AB ->0x528DB0 or 0x52727A ->0x569730 along distinct routes. 0x528870 instead 0x528919/0x5289EF ->0x5E743A directly, adds 0x62A190, and 0x528A04 ->0x528DB0 / 0x52893D ->0x569730. These input producers must not be conflated; their actual gameplay effect not yet proven.\n+KB_CANDIDATE: VAs 0x542280,0x5E743A,0x5E4F10,0x5271A0,0x528870,0x528DB0,0x569730; CALL 0x5422B0->0x5E743A; JMP 0x5E743F->0x5E4F10; offsets object+0x50/+0x40/+0x38, globals 0x63B0B8/0x62A190.\n+next_validation: native 0x542280 comparison instruction/constant actual values, +0x50 writer, 0x5E4F10 ABI, legal unmodified original gameplay same EXE/DAT/MAP/SAVE/input/RNG/tick through selected Unit action. Golden0/strict0/READY0.\n+recovery: 03H UNKNOWN、07H core4 missing、10/25 missing source/54byte discrepancy OPEN、旧HOLD21 safety refusal unchanged; no retries of rejected VA/XREF. Curator alone may update develop/REF/symbols/structs.",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01.md",
+      "sha": "dfb4ed3d2a7e6391bc2ca2bb3df67e72f8504c89",
+      "status": "added"
+    },
+    {
+      "additions": 16,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "changes": 16,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/lane_b/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "patch": "@@ -0,0 +1,16 @@\n+# B 13H: 2つの距離ソート経路とmode3 Unit展開\n+research_id: B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 13H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_NONMODE3_DISTANCE_ORDER_AND_MODE3_MEMBER_GRID_NATIVE_20261101_13H.md\n+source_sha256: 91C075A695E87CA039EE4DCE07281F56C0C893A4F6903AB83A02195C227E46B6 (PC Get-FileHash実測2026-11-01 23H、既存19H source map一致)\n+original_exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録。本run原EXE再hashなし)\n+evidence_kind: PRIOR_STATIC_ASM / GHIDRA / INFERRED / VERIFY; golden_status: ORIGINAL_GAME_PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01, B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01。11HのA/B分類と12HのB→A連結は再計上しない。\n+## 再利用可能な具体証拠\n+非mode3で、0x5296A8 -> 0x529DC0 が一方のlinked listをソートして 0x529750 -> 0x569730 に送り、0x529868 -> 0x529DC0 が別listをソートして0x529921 -> 0x569730 に送る。2つの基準座標を単一ソートへ勝手に統合してはならない。\n+0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUnit+0x1867C==0の初回候補を選び、Unit+0x40/+0x48/+0x4Cの幾何と基準点を使用。0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZを経る。通常の有限・非overflow入力では近距離優先というINFERREDが支持されるが、全同距離安定性・実機最終対象はVERIFY。\n+mode3の別経路0x5291D0..0x529313はgroup VectorをUnit Vectorへ展開し、0x529328..0x529352は展開後Unit件数Nをもとにsqrt(N)+0.5に関係する配置数を作る。group数とUnit数を混同しない。\n+先行出典: headless_analysis/full_pseudoc_20261020/HAKUSHIN067_FULL_PSEUDOC.zip!/functions/0052/00528DB0.c SHA256=A2444391476AF79BF31F64465B3D344C30EA3E499E9D722D5D01F11D639CBEBC; 00529DC0.c SHA256=F605233079DA84144A713022957740E4541A4F34A398305B03DD7541F5577EBE; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8; 00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF。これらは13H報告由来で23Hには擬似C ZIP実体を再読していない。\n+KB_CANDIDATE: VA 0x529DC0,0x52AD00,0x526030,0x569730; calls 0x5296A8/0x529868/0x52AD35/0x529750/0x529921; group+0xC/+0x10, Unit+0x40/+0x48/+0x4C/+0x1867C, manager+0x474。元13H static検査57/57は過去記録で本run再実行なし。\n+next_validation: 原作同一EXE/DAT/MAP/SAVEとUnit配置・2基準座標・mode1/2/3・乱数/tickを固定し、0x526030比較結果、0x569730順序とUnitの可視行動を実測。実機Golden0/strict0/READY0。\n+recovery: 03H UNKNOWN、07H core4欠落、10/25原文と54-byte差OPEN、既拒否HOLD21維持。curatorだけがdevelop/REF/辞書へ正式採録。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md",
+      "sha": "6f5168d72a0bc98af9a3757d78d496a9a5ad5dec",
+      "status": "added"
+    },
+    {
+      "additions": 16,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "changes": 16,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/lane_b/B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "patch": "@@ -0,0 +1,16 @@\n+# B 14H: 32bit距離比較の境界値とUnit適格条件の差\n+research_id: B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 14H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md\n+source_sha256: 2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63 (PC Get-FileHash実測23H、19H source map一致)\n+exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録、14Hと本runのEXE実体再hashなし)\n+evidence_kind: PRIOR_CAPTURED_STATIC / INFERRED / SYNTHETIC_ONLY / VERIFY; golden_status: PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: 13H DISTANCE-SORT-MODE-GATE-01, 10H GROUP34-PROXIMITY-GATE-01。関数や距離ソート自体の発見を二重計上せず、境界条件・適格条件差のみ追加。\n+## 静的元命令と合成反例\n+以前採取した0x526030内のx86: 0x52607D 2B C2（SUB）、0x52607F D1 F8（SAR1）、0x526081 03 C2（ADD）。X=i32(left+SAR32(i32(right-left),1))で符号つき差をfloor方向へ割る。(left,right)=(10,7)は8。INT_MINとINT_MAXの合成例では32bit wrapで結果INT_MAXとなり、数学的中点-1とは違う。実ゲームでこの境界へ到達可能かはVERIFY。\n+0x52608E 0F AF C0 / 0x526091 0F AF C9 / 0x526094 03 C1 は二乗と加算を32bitで行い、dx=46341,dy=0の合成ではsigned結果 -2147479015。無限精度距離式への書換えはstrict互換ではない。0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZではordered greater以外が偽側の条件付き静的モデル。負値平方根→NaN・x87例外制御とゲーム到達性はVERIFYで、原作BUG認定をしない。\n+0x569360の近接ratio集計はUnit+0x1867C==0かつ+0x1867E==0を要求する一方、0x526030の距離ソートanchorは+0x1867C==0だけ。flags=(0,1)は合成上取り扱い差が生じる。この2関数のフィルタをalive等の単一述語に統一しない。\n+CALL site 0x52AD35 -> 0x526030。先行Ghidra ZIP相対path functions/0052/00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8; 0056/00569360.c SHA256=309A88BD46955E9873936F91AF03731C50156A1B2476FAAA18EEE9F5696AAF1C（14H報告由来、本run擬似C再読なし）。\n+KB_CANDIDATE: 0x526030,0x569360,0x52AD00; Unit+0x40/+0x48/+0x4C/+0x1867C/+0x1867E。元14H検査のnative記録17件＋合成16件=33/33は旧結果であり今run再試験していない。\n+next_validation: 無改変原作同一DAT/MAP/SAVE/input/Unit群/tickにおけるx87状態、入力範囲、0x526030返値、0x52AD00ノード順・条件flagを観測。Golden0/READY0。\n+recovery: 03H UNKNOWN、07H core4 MISSING、10/25原文と54byte差OPEN、旧安全HOLD21維持。curator以外のdevelop/REF/辞書変更は禁止。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md",
+      "sha": "e6b158b140f785ecfc3405f487dad36a6103db3c",
+      "status": "added"
+    },
+    {
+      "additions": 15,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "changes": 15,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/research%2Flane_b%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md?ref=b12461bcbeec5f276a5db703166e65f03a535c80",
+      "deletions": 0,
+      "filename": "research/lane_b/B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "patch": "@@ -0,0 +1,15 @@\n+# B 15H: NaN混入時の比較器同値推移律破綻の条件付き反例\n+research_id: B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01\n+owner: B; tasks: T011,T024; observed_at: 2026-11-01 15H JST; intake_at: 2026-11-01 23H JST\n+source_relative_paths: data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md\n+source_sha256: F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952 (PC Get-FileHash実測23H、19H map一致)\n+exe_sha256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (先行記録、15H/今runはEXE再hashなし)\n+evidence_kind: PRIOR_STATIC_CAPTURE / INFERRED / SYNTHETIC_ONLY / VERIFY; golden_status: PASS0; strict_match: 0; dynamic: 0; ready_status: NOT_READY; intake: PUBLISHED_INTAKE/NOT_CURATED\n+prior_ids: 13H DISTANCE-SORT-MODE-GATE-01（距離sortとNative）、14H DISTANCE-COMPARE-BOUNDARY-01（32bit overflowとx87分岐）。今回の固有差分は非推移的な同値関係の合成反例だけ。\n+## 再利用可能な反例と境界\n+先行ASM 0x52608E/91/94は32bit signed平方和を構成、(dx,dy)=(46341,0)の場合wrap結果-2147479015。先行0x526117 FCOMP、0x52611D TEST AH,0x41、0x526120 JNZ、0x526122 MOV EAX,1、0x526134 XOR EAX,EAX。比較結果の条件付きモデルはordered greaterで1、ordered less/equal/unorderedで0。0x52AD35 CALL ->0x526030 と0x52AD3A TEST AL/0x52AD3C JEがmerge判断へ繋がる。\n+もし負数平方根の無効値がマスクされたx87例外でNaNとなり、この比較まで到達すれば、a=1,b=NaN,c=2についてaとb、bとcはどちら向きもfalseで同値扱いなのにaとcは順序付きで非同値。等価関係の推移律が破れ、標準的なstrict-weak-order比較器への無条件置換は危険（SYNTHETIC/INFERRED）。原作でNaNが生成する、ゲームで到達する、ソートBUGを起こすという主張ではない。\n+先行擬似C relative paths: headless_analysis/full_pseudoc_20261020/HAKUSHIN067_FULL_PSEUDOC.zip!/functions/0052/00526030.c SHA256=7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF; 0052AD00.c SHA256=F733FD10A1DB29D30C54096EC23DFC45152BBF06805554C099F755A467ED80C8。元証拠JSON: data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json SHA256=1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205、14H JSON SHA256=9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392。これらは過去receiptで今回JSON/ZIPの再hash無し。\n+KB_CANDIDATE: VA 0x526030,0x52AD00,0x529DC0; CALL 0x52AD35->0x526030; instructions 0x52608E/91/94/117/11D/120/122/134。過去72 checks PASSはprior+syntheticであり原作Gameplayや今run再実行PASSを意味しない。\n+next_validation: 認可済み無改変原作同一DAT/MAP/SAVE/input/RNG/tickで平方和、sqrt/x87制御語、0x526030返値、0x52AD00の実ノード順を同一run計測。NaN到達が未証明ならVERIFYのまま。Golden0/READY0。\n+recovery: 03H保存UNKNOWN、07H 4原文欠落、10/25原文と54byte差OPEN、旧安全HOLD21維持。専任curatorのみdevelop/REF/辞書採録。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/b12461bcbeec5f276a5db703166e65f03a535c80/research%2Flane_b%2FB-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md",
+      "sha": "b520458f6783d477cdb031cad3c15532ec513b4d",
+      "status": "added"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/036124c7dc8e4164a48d3382dc2098189b4128b2/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:11Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:11Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B research intake B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "a32893a209614ec993e6817091cdadf31e72050d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/a32893a209614ec993e6817091cdadf31e72050d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/036124c7dc8e4164a48d3382dc2098189b4128b2",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/036124c7dc8e4164a48d3382dc2098189b4128b2",
+      "node_id": "C_kwDOVb7AvNoAKDAzNjEyNGM3ZGM4ZTQxNjRhNDhkMzM4MmRjMjA5ODE4OWI0MTI4YjI",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "sha": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/dad68c4fedf8a56e430af1ec8a7993e725ce610d"
+        }
+      ],
+      "sha": "036124c7dc8e4164a48d3382dc2098189b4128b2",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/036124c7dc8e4164a48d3382dc2098189b4128b2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/10075f4a4d6aae0a02489472145ca3175075690e/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:13Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:13Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B research intake B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "89814873455ce41ff42233ed7a44e215c9224c3d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/89814873455ce41ff42233ed7a44e215c9224c3d"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/10075f4a4d6aae0a02489472145ca3175075690e",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/10075f4a4d6aae0a02489472145ca3175075690e",
+      "node_id": "C_kwDOVb7AvNoAKDEwMDc1ZjRhNGQ2YWFlMGEwMjQ4OTQ3MjE0NWNhMzE3NTA3NTY5MGU",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/036124c7dc8e4164a48d3382dc2098189b4128b2",
+          "sha": "036124c7dc8e4164a48d3382dc2098189b4128b2",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/036124c7dc8e4164a48d3382dc2098189b4128b2"
+        }
+      ],
+      "sha": "10075f4a4d6aae0a02489472145ca3175075690e",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/10075f4a4d6aae0a02489472145ca3175075690e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/149f703dc94e51760ca166422fc05965a6fb142f/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:16Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:16Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B research intake B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "393bbf114de49774b2129a26d41483f0a7c56e10",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/393bbf114de49774b2129a26d41483f0a7c56e10"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/149f703dc94e51760ca166422fc05965a6fb142f",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/149f703dc94e51760ca166422fc05965a6fb142f",
+      "node_id": "C_kwDOVb7AvNoAKDE0OWY3MDNkYzk0ZTUxNzYwY2ExNjY0MjJmYzA1OTY1YTZmYjE0MmY",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/10075f4a4d6aae0a02489472145ca3175075690e",
+          "sha": "10075f4a4d6aae0a02489472145ca3175075690e",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/10075f4a4d6aae0a02489472145ca3175075690e"
+        }
+      ],
+      "sha": "149f703dc94e51760ca166422fc05965a6fb142f",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/149f703dc94e51760ca166422fc05965a6fb142f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b1d20c89fd654529f3bb1882b62ec1e5528af49f/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:18Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:18Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B research intake B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "355ea9d73c81e51123333bf2eb61a70b86de51ac",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/355ea9d73c81e51123333bf2eb61a70b86de51ac"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/b1d20c89fd654529f3bb1882b62ec1e5528af49f",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b1d20c89fd654529f3bb1882b62ec1e5528af49f",
+      "node_id": "C_kwDOVb7AvNoAKGIxZDIwYzg5ZmQ2NTQ1MjlmM2JiMTg4MmI2MmVjMWU1NTI4YWY0OWY",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/149f703dc94e51760ca166422fc05965a6fb142f",
+          "sha": "149f703dc94e51760ca166422fc05965a6fb142f",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/149f703dc94e51760ca166422fc05965a6fb142f"
+        }
+      ],
+      "sha": "b1d20c89fd654529f3bb1882b62ec1e5528af49f",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b1d20c89fd654529f3bb1882b62ec1e5528af49f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/691108267f3c5b0ecad2083ee49c5bc08cb86c8a/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:28Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:28Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence mirror B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "26ad09bcf3a9edde0005dc74234ee65baf9df220",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/26ad09bcf3a9edde0005dc74234ee65baf9df220"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/691108267f3c5b0ecad2083ee49c5bc08cb86c8a",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/691108267f3c5b0ecad2083ee49c5bc08cb86c8a",
+      "node_id": "C_kwDOVb7AvNoAKDY5MTEwODI2N2YzYzViMGVjYWQyMDgzZWU0OWM1YmMwOGNiODZjOGE",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b1d20c89fd654529f3bb1882b62ec1e5528af49f",
+          "sha": "b1d20c89fd654529f3bb1882b62ec1e5528af49f",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b1d20c89fd654529f3bb1882b62ec1e5528af49f"
+        }
+      ],
+      "sha": "691108267f3c5b0ecad2083ee49c5bc08cb86c8a",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/691108267f3c5b0ecad2083ee49c5bc08cb86c8a"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/912265cb62341d3d38497c66d27e5fe0c105f4cd/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:30Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:30Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence mirror B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "0e0c2c0b754c2131c7336d92d8642cdc58730b31",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/0e0c2c0b754c2131c7336d92d8642cdc58730b31"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/912265cb62341d3d38497c66d27e5fe0c105f4cd",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/912265cb62341d3d38497c66d27e5fe0c105f4cd",
+      "node_id": "C_kwDOVb7AvNoAKDkxMjI2NWNiNjIzNDFkM2QzODQ5N2M2NmQyN2U1ZmUwYzEwNWY0Y2Q",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/691108267f3c5b0ecad2083ee49c5bc08cb86c8a",
+          "sha": "691108267f3c5b0ecad2083ee49c5bc08cb86c8a",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/691108267f3c5b0ecad2083ee49c5bc08cb86c8a"
+        }
+      ],
+      "sha": "912265cb62341d3d38497c66d27e5fe0c105f4cd",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/912265cb62341d3d38497c66d27e5fe0c105f4cd"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/af799fff8f0a07a407e50d06a8e96c47b9fc892d/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:34Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:34Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence mirror B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "85a7e659290df64ad01da46b4d2d3dfcc0ffe531",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/85a7e659290df64ad01da46b4d2d3dfcc0ffe531"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/af799fff8f0a07a407e50d06a8e96c47b9fc892d",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/af799fff8f0a07a407e50d06a8e96c47b9fc892d",
+      "node_id": "C_kwDOVb7AvNoAKGFmNzk5ZmZmOGYwYTA3YTQwN2U1MGQwNmE4ZTk2YzQ3YjlmYzg5MmQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/912265cb62341d3d38497c66d27e5fe0c105f4cd",
+          "sha": "912265cb62341d3d38497c66d27e5fe0c105f4cd",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/912265cb62341d3d38497c66d27e5fe0c105f4cd"
+        }
+      ],
+      "sha": "af799fff8f0a07a407e50d06a8e96c47b9fc892d",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/af799fff8f0a07a407e50d06a8e96c47b9fc892d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b12461bcbeec5f276a5db703166e65f03a535c80/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-01T14:18:37Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-01T14:18:37Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "ButaMonky"
+        },
+        "message": "B evidence mirror B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01 STATIC VERIFY NOT READY",
+        "tree": {
+          "sha": "fce395ed30ac2fa3be5a5c7ca2c3dc0dfaa8fdd8",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/fce395ed30ac2fa3be5a5c7ca2c3dc0dfaa8fdd8"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/b12461bcbeec5f276a5db703166e65f03a535c80",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b12461bcbeec5f276a5db703166e65f03a535c80",
+      "node_id": "C_kwDOVb7AvNoAKGIxMjQ2MWJjYmVlYzVmMjc2YTVkYjcwMzE2NmU2NWYwM2E1MzVjODA",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/af799fff8f0a07a407e50d06a8e96c47b9fc892d",
+          "sha": "af799fff8f0a07a407e50d06a8e96c47b9fc892d",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/af799fff8f0a07a407e50d06a8e96c47b9fc892d"
+        }
+      ],
+      "sha": "b12461bcbeec5f276a5db703166e65f03a535c80",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/b12461bcbeec5f276a5db703166e65f03a535c80"
+    }
+  ],
+  "number": 12,
+  "reviews": []
+}

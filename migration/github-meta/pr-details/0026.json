@@ -1,0 +1,138 @@
+{
+  "changed_files": [
+    {
+      "additions": 3,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/SOURCE_MANIFEST.tsv",
+      "changes": 6,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/SOURCE_MANIFEST.tsv?ref=f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "deletions": 3,
+      "filename": "SOURCE_MANIFEST.tsv",
+      "patch": "@@ -40,7 +40,7 @@ docs/superpowers/plans/2026-11-05-reference.md\t142F4AD4A347B79A0E5D76200AE2C1556\n kb.py\t4020EEC0205353613CE8D9885300A10648A4B267D65AEAE2AAE03BF37E4B2D63\t15531\n reference/FIELD_MENTIONS.md\t083A9D3C350F397E76B2954B39C49FB3B0EF324053C753585027198C17EF475C\t40485\n reference/README.md\t46FBB2EFB2F0097CE65EBC9AEFB9F7BA626280891E2F82A618BFECC17BC88B11\t95311\n-reference/UPDATING.md\t5469F1BFFC3EC6B2F3A5F67CF94FEFE8B6D72D10D96E3ADBA34571B56976184D\t4404\n+reference/UPDATING.md\t69068A6B181027DA9C4C625F7E413B9CC16C3143300473FD57F507F5E5860375\t4712\n reference/fields/owner-B%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AFSkill-9a75118c880e-001.md\t9A63C61FE3CB0BF2776A4885DA0F39BF898001638CFA19079590D6DC8A26E3C6\t968\n reference/fields/owner-BattleUnit-00e02c9dd7e7-001.md\tEA784DE79A4D65DB4F63E365DF3B45545D7A542D53EC1D0E2E14DBE4966195E3\t1535\n reference/fields/owner-BattleWnd-f883f037623b-001.md\tEF59C1DE918196FE45C179182DAD2B37F42A4D461A3CC595E25EFD9DEF933D81\t3255\n@@ -992,14 +992,14 @@ tools/rank_candidates.py\tFA5233312E52D98D1777AE1BFE5730187CCF87D0ED9566D2F7F53E9\n tools/recovery_coverage.py\t8FD46AAB9EB50D43C172C640DBAADD67451D6796AD624A12AF8E8707F617063A\t8872\n tools/reference.py\tDF095027AE15CC50F43A3378AC16D651BA9DC963DE911038AE77E5BC6D78FEC9\t30074\n tools/research_index.py\t3F7FCE70B25FF4F4EAD8AD1489AD3DC2D72F5A27E7E4D4FE364D4CE1B64D00CF\t14521\n-tools/sync_knowledge.py\t903DB471E14CC484FCF1AC4CBAE96AB996E1F2A07D231A8B7AC31F17EB828DE2\t64523\n+tools/sync_knowledge.py\t8190CFA5F3DFF3D0377515A4BC044A8A0DAF05AFE76828631F95DB4AF3770123\t66096\n tools/test_debugger_exports.py\t825FB7B8AD0E27B42374FCD99CD88A72DC6845BA5C1B09F06489F25D2E3053BB\t1677\n tools/test_kb_workflow.py\t018EFD30A15937F9DA8A6B72758859B5DF66A76AD630A3E3C3A608E7F28537FB\t6077\n tools/test_rank_candidates.py\tEBF782F833F617AB90BA096A2147E779E7E49F1800D617A098BB6100FDB0BB8B\t2895\n tools/test_recovery_coverage.py\t29BD5EB6CF95B6789BF81ED7EE3D89F5E880E672C08BB277A266EB7ABA041882\t6835\n tools/test_reference.py\t249D61390A7CF2689FC327D3373A2D7C5A6105F7A3D294F79D5D9CEDD3CD5891\t25185\n tools/test_research_inventory.py\tDC94A93C70A0555F3DE04392DF60B0B121DA0081947EB40A275AD1DDF4B32F9A\t3794\n-tools/test_sync_knowledge.py\t7AAF6CA2798399D7778396991C2DB7E9059ABAA62B3FAFB7A16B20275C606371\t6801\n+tools/test_sync_knowledge.py\t28C462EA380914643CCCD54B1907CFBB1D5FEBE9BD704084C5E77D5DE9AD4BC9\t12577\n tools/test_v9_coverage.py\tDE0D56E0FE56E65C6440A20ECF60CAB22C0072A4C44530B1A9B1B2FFE97A8558\t6860\n tools/test_x32dbg_database.py\t84B03EBA9011307FAF318AED0112CDFDE92492B9DF222E2EFABAE6FC8214389B\t1942\n tools/v9_coverage.py\tC691AB33DA3C494C1F9E662797587CD99DFCE37CFF69A0F9F45744889B73789E\t22904",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/SOURCE_MANIFEST.tsv",
+      "sha": "532b6a7648a9a95626126e96e279acd91d4c8283",
+      "status": "modified"
+    },
+    {
+      "additions": 2,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/reference%2FUPDATING.md",
+      "changes": 2,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/reference%2FUPDATING.md?ref=f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "deletions": 0,
+      "filename": "reference/UPDATING.md",
+      "patch": "@@ -39,3 +39,5 @@ reference/sources.jsonに出典の接頭辞、収録本文のパスとSHA256、\n 所有者＋オフセット表記の詳細は所有者ごとに最大100表記で分割する。新しい資料や表記が増えたら索引と詳細ページをまとめて再生成し、旧生成ページが残る場合は確認して整理する。各表記の出典と制約を維持する。\n \n GitHubへのpublish時には、人向けページと本文収録照合表の鮮度検査を自動実行する。辞書や台帳を更新した後はreference.py buildとrecovery_coverage.py buildを実行し、許可リスト・マニフェストも更新する。索引が古い場合は送信を止める。\n+\n+送信前には、生成ページ・回収台帳と掲載先・引用元・関係の根拠が、許可リストとGitの追跡対象に含まれるかも検査する。ローカルだけに存在する新しい本文やページがあれば、明示的に確認して登録するまで送信を止める。",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/reference%2FUPDATING.md",
+      "sha": "086dc6473f289056f4ad26bb50b822072f1b3304",
+      "status": "modified"
+    },
+    {
+      "additions": 32,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/tools%2Fsync_knowledge.py",
+      "changes": 32,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/tools%2Fsync_knowledge.py?ref=f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "deletions": 0,
+      "filename": "tools/sync_knowledge.py",
+      "patch": "@@ -5,6 +5,7 @@\n \"\"\"\n import argparse\n import contextlib\n+import csv\n import hashlib\n import json\n import os\n@@ -14,6 +15,8 @@\n import sys\n from datetime import datetime, timezone\n \n+import reference\n+\n KB = Path(__file__).resolve().parent.parent\n REPO = \"ButaMonky/Hakushin067-Research-Knowledge\"\n MAIN = \"develop\"\n@@ -1209,6 +1212,34 @@ def checkpoint(task):\n         journal(\"checkpoint\",\"LOCAL_ONLY\",task,sha)\n         print(\"LOCAL_CHECKPOINT\",sha)\n \n+def verify_portable_publication():\n+    \"\"\"Require portable exports and their reviewed evidence in the explicit Git set.\"\"\"\n+    ledger = \"research/recovered/RECOVERY_LEDGER.tsv\"\n+    registry = \"reference/sources.json\"\n+    try:\n+        data = reference.load(KB)\n+        required = set(reference.render(KB, data))\n+        required.update((ledger, registry, \"reference/relations.jsonl\"))\n+        with (KB / ledger).open(encoding=\"utf-8-sig\", newline=\"\") as stream:\n+            required.update(row[\"destination\"] for row in csv.DictReader(stream, delimiter=\"\\t\"))\n+        citations = json.loads((KB / registry).read_text(encoding=\"utf-8-sig\"))\n+        required.update(entry[\"path\"] for entry in citations.values())\n+        required.update(row[\"source\"][\"path\"] for row in data[\"relations\"])\n+    except (OSError, ValueError, KeyError, TypeError) as error:\n+        raise Blocked(\"Portable publication inputs invalid; rerun reference/coverage checks: \" + str(error)) from error\n+    tracked = set(git(\"ls-files\", \"-z\")[0].split(\"\\0\"))\n+    issues = []\n+    for name in sorted(required):\n+        if name not in ALLOWED:\n+            issues.append(\"not explicitly ALLOWED: \" + name)\n+        if name not in tracked:\n+            issues.append(\"not Git-tracked: \" + name)\n+    if issues:\n+        raise Blocked(\"Portable publication blocked: \" + \"; \".join(issues[:8])\n+                      + \". Review these exact paths, update FILES/.gitignore as needed, \"\n+                      \"then checkpoint them before publishing.\")\n+\n+\n def publish():\n     hashes=audit_or_block(True)\n     with lock(\"publish\"):\n@@ -1224,6 +1255,7 @@ def publish():\n             raise Blocked(\"作業ブランチと基準SHAが異なる\")\n         for script in (\"reference.py\", \"recovery_coverage.py\"):\n             command((sys.executable, \"-B\", str(KB / \"tools\" / script), \"check\"))\n+        verify_portable_publication()\n         git(\"fetch\",\"origin\",MAIN)\n         if git(\"rev-parse\",\"origin/\"+MAIN)[0]!=base.get(\"base\"):\n             raise Blocked(\"リモートdevelopが進んでいる。競合確認が必要\")",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/tools%2Fsync_knowledge.py",
+      "sha": "0809bbecb2a48c62551fca15356bd210199a7bf5",
+      "status": "modified"
+    },
+    {
+      "additions": 76,
+      "blob_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/tools%2Ftest_sync_knowledge.py",
+      "changes": 76,
+      "contents_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/contents/tools%2Ftest_sync_knowledge.py?ref=f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "deletions": 0,
+      "filename": "tools/test_sync_knowledge.py",
+      "patch": "@@ -9,6 +9,8 @@\n from unittest.mock import patch\n \n import sync_knowledge as sync\n+import reference\n+import recovery_coverage\n \n class KnowledgeSecurityTests(unittest.TestCase):\n     def fixture(self, root):\n@@ -113,6 +115,80 @@ def test_no_branch_start_from_dirty_checkout(self):\n             with self.assertRaises(sync.Blocked):\n                 sync.start(\"KB-TEST\")\n \n+    def test_publish_requires_portable_inputs_in_allowlist_and_git_index(self):\n+        # Local content/freshness checks accept these files even when Git omits them.\n+        for kind in (\"page\", \"ledger_source\", \"citation_source\", \"relation_source\", \"registry\", \"ledger\"):\n+            for missing in (\"allowlist\", \"tracked\"):\n+                with self.subTest(kind=kind, missing=missing), tempfile.TemporaryDirectory() as folder:\n+                    root = Path(folder)\n+                    def write(name, content):\n+                        path = root / name\n+                        path.parent.mkdir(parents=True, exist_ok=True)\n+                        path.write_text(content, encoding=\"utf-8\")\n+                    write(\".gitignore\", \"/*\\n\")\n+                    def sha(name):\n+                        return hashlib.sha256((root / name).read_bytes()).hexdigest()\n+                    write(\"symbols.tsv\", \"0x55BC60\\tfunc\\tTest\\tSummary\\tStatic\\tF§1\\n\")\n+                    write(\"structs.tsv\", \"StatusWnd\\t0x1C6\\tu8\\tflag\\tSummary\\tStatic\\tF§1\\n\")\n+                    for name in (\"ledger_source.md\", \"citation_source.md\", \"relation_source.md\"):\n+                        write(name, \"Reviewed text without addresses.\\n\")\n+                    ledger = \"research/recovered/RECOVERY_LEDGER.tsv\"\n+                    write(ledger, \"source_path\\tsource_sha256\\tdestination\\tdestination_sha256\\treview\\n\"\n+                          + \"original/never-open.md\\t\" + sha(\"ledger_source.md\")\n+                          + \"\\tledger_source.md\\t\" + sha(\"ledger_source.md\") + \"\\treviewed\\n\")\n+                    write(\"reference/sources.json\", json.dumps({\"F\": {\n+                        \"path\": \"citation_source.md\", \"sha256\": sha(\"citation_source.md\"),\n+                        \"sections\": {}}}))\n+                    write(\"reference/relations.jsonl\", json.dumps({\n+                        \"id\": \"test\", \"subject\": \"va:0x0055BC60\", \"predicate\": \"writes\",\n+                        \"object\": \"field:StatusWnd:0x1C6\", \"summary\": \"Summary\",\n+                        \"confidence\": \"Static\", \"target_version\": \"0.67\",\n+                        \"source\": {\"path\": \"relation_source.md\", \"sha256\": sha(\"relation_source.md\"),\n+                                   \"start_line\": 1, \"end_line\": 1}}) + \"\\n\")\n+                    write(\"RESEARCH_SOURCE_CATALOG.tsv\", \"\\t\".join(recovery_coverage.CATALOG_COLUMNS) + \"\\n\")\n+                    pages = reference.render(root, reference.load(root))\n+                    for name, content in pages.items():\n+                        write(name, content)\n+                    required = set(pages) | {ledger, \"reference/sources.json\", \"reference/relations.jsonl\",\n+                                             \"ledger_source.md\", \"citation_source.md\", \"relation_source.md\"}\n+                    # The complete publication set succeeds without admitting unrelated files.\n+                    with patch.object(sync, \"KB\", root), \\\n+                         patch.object(sync, \"ALLOWED\", required), \\\n+                         patch.object(sync, \"git\", return_value=(\"\\0\".join(sorted(required)) + \"\\0\", 0)) as index:\n+                        sync.verify_portable_publication()\n+                        index.assert_called_once_with(\"ls-files\", \"-z\")\n+                    target = {\"page\": \"reference/symbols/0055BC60.md\", \"ledger\": ledger,\n+                              \"registry\": \"reference/sources.json\"}.get(kind, kind + \".md\")\n+                    allowed = required - ({target} if missing == \"allowlist\" else set())\n+                    tracked = required - ({target} if missing == \"tracked\" else set())\n+                    # Both existing portable checks' content comparisons still pass.\n+                    self.assertTrue(all((root / name).read_text(encoding=\"utf-8\") == content\n+                                        for name, content in reference.render(root, reference.load(root)).items()))\n+                    coverage = recovery_coverage.render(recovery_coverage.inventory(root, tracked))\n+                    for name, content in coverage.items():\n+                        write(name, content)\n+                    self.assertEqual(coverage, recovery_coverage.render(recovery_coverage.inventory(root, tracked)))\n+                    branch = \"work/kb-PORTABLE-TEST\"\n+                    write(\".git/kb-sync-base.json\", json.dumps({\"branch\": branch, \"base\": \"base\"}))\n+                    def fake_git(*arguments, **kwargs):\n+                        if arguments == (\"ls-files\", \"-z\"):\n+                            return \"\\0\".join(sorted(tracked)) + \"\\0\", 0\n+                        self.fail(\"Publication reached remote Git before blocking: \" + repr(arguments))\n+                    with patch.object(sync, \"KB\", root), \\\n+                         patch.object(sync, \"ALLOWED\", allowed), \\\n+                         patch.object(sync, \"audit_or_block\", return_value={}), \\\n+                         patch.object(sync, \"lock\", return_value=contextlib.nullcontext()), \\\n+                         patch.object(sync, \"branch\", return_value=branch), \\\n+                         patch.object(sync, \"clean\", return_value=True), \\\n+                         patch.object(sync, \"verify_manifest\", return_value=True), \\\n+                         patch.object(sync, \"private_repo\"), \\\n+                         patch.object(sync, \"git\", side_effect=fake_git), \\\n+                         patch.object(sync, \"command\", return_value=(\"PASS\", 0)) as check:\n+                        with self.assertRaisesRegex(sync.Blocked, target):\n+                            sync.publish()\n+                        self.assertEqual([Path(call.args[0][2]).name for call in check.call_args_list],\n+                                         [\"reference.py\", \"recovery_coverage.py\"])\n+\n     def test_publish_blocks_stale_reference_before_remote_changes(self):\n         with tempfile.TemporaryDirectory() as folder:\n             root = Path(folder)",
+      "raw_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/raw/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/tools%2Ftest_sync_knowledge.py",
+      "sha": "c55eeeae6692071161da7d9e515b6a8677306b16",
+      "status": "modified"
+    }
+  ],
+  "commits": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f47008b024f789bce4c99f7c83f3b16cdc88c1d9/comments",
+      "commit": {
+        "author": {
+          "date": "2026-11-04T19:07:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "Umonky"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-11-04T19:07:07Z",
+          "email": "326354213+ButaMonky@users.noreply.github.com",
+          "name": "Umonky"
+        },
+        "message": "Block publication when portable evidence or export files are omitted from Git",
+        "tree": {
+          "sha": "9ceba38d41f0a547c5a4ac1b8bef9cda2d779270",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/9ceba38d41f0a547c5a4ac1b8bef9cda2d779270"
+        },
+        "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/git/commits/f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+        "verification": {
+          "payload": null,
+          "reason": "unsigned",
+          "signature": null,
+          "verified": false,
+          "verified_at": null
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/326354213?v=4",
+        "events_url": "https://api.github.com/users/ButaMonky/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ButaMonky/followers",
+        "following_url": "https://api.github.com/users/ButaMonky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ButaMonky/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ButaMonky",
+        "id": 326354213,
+        "login": "ButaMonky",
+        "node_id": "U_kgDOE3PFJQ",
+        "organizations_url": "https://api.github.com/users/ButaMonky/orgs",
+        "received_events_url": "https://api.github.com/users/ButaMonky/received_events",
+        "repos_url": "https://api.github.com/users/ButaMonky/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ButaMonky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ButaMonky/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ButaMonky",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "node_id": "C_kwDOVb7AvNoAKGY0NzAwOGIwMjRmNzg5YmNlNGM5OWY3YzgzZjNiMTZjZGM4OGMxZDk",
+      "parents": [
+        {
+          "html_url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/57c70a85762e5b616706a95a6655c660b35a9c68",
+          "sha": "57c70a85762e5b616706a95a6655c660b35a9c68",
+          "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/57c70a85762e5b616706a95a6655c660b35a9c68"
+        }
+      ],
+      "sha": "f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+      "url": "https://api.github.com/repos/ButaMonky/Hakushin067-Research-Knowledge/commits/f47008b024f789bce4c99f7c83f3b16cdc88c1d9"
+    }
+  ],
+  "number": 26,
+  "reviews": []
+}
