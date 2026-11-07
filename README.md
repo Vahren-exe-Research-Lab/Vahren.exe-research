@@ -20,7 +20,7 @@
 | 呼び出し元・呼び出し先 | 各関数ページの静的CALL一覧。収録済みのV9直接CALLが対象で、間接CALLや全関数の網羅ではない |
 | 未回収・保留・原本との対応 | [回収状況](research/recovered/README.md)、[現在のローカル所在](research/recovered/current_inventory/README.md)、[元の目録と収録の照合](research/recovered/COVERAGE.md) |
 | PR・Issue・研究チャットに残る成果 | [今回のGitHub履歴・変更HEAD監査](research/recovered/remainder_github_audit1/README.md)、[チャットの回収範囲](research/recovered/remainder_chats_audit1/README.md)、[今回の限定回収と残作業](research/recovered/intake_remainder_audit_20261105/README.md)、[前回の本文所在照合](research/recovered/github_reconcile2/README.md)、[以前の照合と旧チャット案内](research/recovered/SCHEDULE_CHAT_CHECK.md)。取得時点と未取得範囲を区別して読む |
-| Claude関連の関数・メモリ研究 | [主要解析記録と事典への入口](research/recovered/findings/README.md)、[Claude関連成果の具体的な対応と制約](research/recovered/claude_coverage2/README.md)、[dev_lab現文書の照合](research/recovered/claude_docs_current2/README.md)、[後続のEXP改版](research/recovered/claude_current_update3/INTEGRATION.md)。主要記録の部分版・伏せ字版・未確認のCLI履歴を、全文回収と混同しない |
+| Claude関連の関数・メモリ研究 | [主要解析記録と事典への入口](research/recovered/findings/README.md)、[Claude関連成果の具体的な対応と制約](research/recovered/claude_coverage2/README.md)、[dev_lab現文書の照合](research/recovered/claude_docs_current2/README.md)、[後続のEXP改版](research/recovered/claude_current_update3/INTEGRATION.md)、[CLI関連9セッションの後続判定](research/recovered/claude_cli_followup4/README.md)。主要記録の部分版・伏せ字版・未確認のCLI履歴を、全文回収と混同しない |
 
 GitHubだけでページと収録本文を読めます。通常の事典検索にも、元PCの大容量DBやゲーム本体は必要ありません。件数は更新されるため、現在値は[生成された事典](reference/README.md)と[本文一覧](reference/DOCUMENTS.md)を参照してください。
 

@@ -25,3 +25,9 @@ Owner: A/T014. Main report data/T014_GLOBAL_SAVE.md; native evidence exe/T014_GL
 - Type/name inference must stay separate from exact native offsets, command flags and source order. Reconstruct encrypted file payload schemas using evidence, not a guessed generic dictionary.
 - Verify actual original global.sav and normal .sav fixtures, shortened rewrite tail handling (normal .sav: physical stale tail confirmed on real files 2026-11-01, REF_SAVE_FORMAT.md §3; save3 loaded in-game without problems (user, 2026-11-01); auto not yet), RNG seed during fresh encryption, save-load event marker persistence, and reader/writer boundary conditions. No strict MATCH until same unmodified original fixture is observed.
 - T014 as a whole is IN_PROGRESS. T003/T022 encrypted DAT roundtrips and synthetic global codec successes are distinct from game-play/save Golden.
+
+## 保存失敗を扱うときの注意
+
+保存済み[stream状態分岐の局所報告](research/recovered/rea_batch14/reports/REA_T014_STREAM_FAIL_STATE_TO_WRITE_AUDIT_20261011_1036.md?plain=1#L11-L20)では、0x460000のstream状態mask非0の枝もWriteFileへ合流するとされる。「stream異常なら一切書き込まない」と実装へ固定しない。[bytecount由来の報告](research/recovered/rea_batch14/reports/REA_T014_STREAM_WRITE_BYTECOUNT_ORIGIN_AUDIT_20261011_1136.md?plain=1#L9-L15)も、実行時global値を常に-1と決めつけていない。実際の書込成功・破損・例外・上位完了通知は未確認であり、今回の原作再検証はない。
+
+見出し保存・byte writerの例に残っていた「外交+0x14/+0x09/+0x0A」は、既存のターン進行オブジェクト訂正に合わせて辞書表記を統一した。新しいレイアウトや型を追加したものではない。

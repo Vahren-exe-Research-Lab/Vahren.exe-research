@@ -15,4 +15,9 @@
   本文 SHA256 `14ec52ae7c3835a104171b7224b15ac1ad60fb6d8fc9412a9aa158dfeff490e2`
   元パス <code>https://chatgpt.com/c/6ad112da-ef80-83e8-96b0-fc863a1ea725#message-cea85078-f6fd-4452-b663-9ab89a5383de</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2448-L2448)。
 
+- [t020_e_t028_retreat_strict_type_admission_20261105.py](../../research/recovered/e_unreturned5_review4/reports/t020_e_t028_retreat_strict_type_admission_20261105.py?plain=1#L1-L1) — `research/recovered/e_unreturned5_review4/reports/t020_e_t028_retreat_strict_type_admission_20261105.py`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Exact4090B/blobSHA metadata-only lead in prior PR17 catalog; no existing rootledger source/destination rawSHA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。制約・訂正 Authored finite synthetic validator only, not native/Golden/READY evidence. No execution/import/fixtureJSON/native/code-neighbor acquisition. Historical28/28 from browser summary not rerun or independently proved. Source is exact pinned GitHub blob, destination proposed for parent integration.
+  本文 SHA256 `f54476ec1e0980599676f3d93228a6030a3ebfbe4f9df96db7cc88f89aff3215`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
+
 [前のページ](page-024.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

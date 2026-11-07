@@ -1,0 +1,10 @@
+{
+  "scope": "Metadata-only privacy variant; zero chat bodies copied",
+  "source_manifest_sha256": "0d2d9ba0bd5a4c20f1d4d6d9b6f3b74e44facc30146c4b9b7526133e04c700b0",
+  "approved_inputs_source_sha256": "aebe85b6751f1b4bfc3edc0f60259258ab591a78420c064d4c71fee2096afd84",
+  "approved_inputs_destination_sha256": "a8ebd1c7295c53f336dbd26d982cdd02b8089d1b9c97fc78ca0fca8162f37534",
+  "readme_source_sha256": "82a9fec964d0c54add81e9cba270f0598c2500fc427c898becca77a1529051f6",
+  "readme_destination_sha256": "640321f6c9a06db27b423528e6d1b4c7d4f2256d10cd56c48833a08ee6d6aecd",
+  "transformation": "Only9 private bucket path values replaced by <project-bucket>; field renamed redacted_private_relative_path. Source UUID/hash/coordinates/classifications unchanged; README explains redaction.",
+  "original_preserved": true
+}

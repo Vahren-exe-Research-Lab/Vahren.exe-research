@@ -4887,6 +4887,34 @@ FILES += (
     'research/recovered/chat_cursor_followup3/old_e/RETURNED_ITEMS.tsv',
     'research/recovered/chat_cursor_followup3/old_e/STATUS.tsv',
 )
+FILES += (
+    'research/recovered/chat_b_followup4/DEFERRED.tsv',
+    'research/recovered/chat_b_followup4/OUTPUT_MANIFEST.tsv',
+    'research/recovered/chat_b_followup4/README.md',
+    'research/recovered/chat_b_followup4/REPORT_LEDGER.tsv',
+    'research/recovered/claude_cli_followup4/APPROVED_INPUTS.tsv',
+    'research/recovered/claude_cli_followup4/ASSISTANT_ITEMS.tsv',
+    'research/recovered/claude_cli_followup4/OUTPUT_MANIFEST.tsv',
+    'research/recovered/claude_cli_followup4/PUBLIC_VARIANT.json',
+    'research/recovered/claude_cli_followup4/README.md',
+    'research/recovered/claude_cli_followup4/REPORT_LEDGER.tsv',
+    'research/recovered/claude_cli_followup4/SCOPE.json',
+    'research/recovered/claude_cli_followup4/SESSION_STATUS.tsv',
+)
+FILES += (
+    'research/recovered/e_unreturned5_review4/INPUT_RECEIPTS.tsv',
+    'research/recovered/e_unreturned5_review4/INTEGRATION.md',
+    'research/recovered/e_unreturned5_review4/OUTPUT_MANIFEST.tsv',
+    'research/recovered/e_unreturned5_review4/README.md',
+    'research/recovered/e_unreturned5_review4/REPORT_LEDGER.tsv',
+    'research/recovered/e_unreturned5_review4/RETRIEVAL_RECEIPT.json',
+    'research/recovered/e_unreturned5_review4/STATUS.tsv',
+    'research/recovered/e_unreturned5_review4/reports/t020_e_t028_retreat_strict_type_admission_20261105.py',
+    'research/recovered/rea_unreturned5_review4/OUTPUT_MANIFEST.tsv',
+    'research/recovered/rea_unreturned5_review4/PARENT_UI_REVIEW.json',
+    'research/recovered/rea_unreturned5_review4/README.md',
+    'research/recovered/rea_unreturned5_review4/STATUS.tsv',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.
