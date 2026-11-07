@@ -9,6 +9,8 @@ import unittest
 from unittest.mock import patch
 
 import sync_knowledge as sync
+import reference
+import recovery_coverage
 
 class KnowledgeSecurityTests(unittest.TestCase):
     def fixture(self, root):
@@ -112,6 +114,80 @@ class KnowledgeSecurityTests(unittest.TestCase):
              patch.object(sync,"clean",return_value=False):
             with self.assertRaises(sync.Blocked):
                 sync.start("KB-TEST")
+
+    def test_publish_requires_portable_inputs_in_allowlist_and_git_index(self):
+        # Local content/freshness checks accept these files even when Git omits them.
+        for kind in ("page", "ledger_source", "citation_source", "relation_source", "registry", "ledger"):
+            for missing in ("allowlist", "tracked"):
+                with self.subTest(kind=kind, missing=missing), tempfile.TemporaryDirectory() as folder:
+                    root = Path(folder)
+                    def write(name, content):
+                        path = root / name
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        path.write_text(content, encoding="utf-8")
+                    write(".gitignore", "/*\n")
+                    def sha(name):
+                        return hashlib.sha256((root / name).read_bytes()).hexdigest()
+                    write("symbols.tsv", "0x55BC60\tfunc\tTest\tSummary\tStatic\tF§1\n")
+                    write("structs.tsv", "StatusWnd\t0x1C6\tu8\tflag\tSummary\tStatic\tF§1\n")
+                    for name in ("ledger_source.md", "citation_source.md", "relation_source.md"):
+                        write(name, "Reviewed text without addresses.\n")
+                    ledger = "research/recovered/RECOVERY_LEDGER.tsv"
+                    write(ledger, "source_path\tsource_sha256\tdestination\tdestination_sha256\treview\n"
+                          + "original/never-open.md\t" + sha("ledger_source.md")
+                          + "\tledger_source.md\t" + sha("ledger_source.md") + "\treviewed\n")
+                    write("reference/sources.json", json.dumps({"F": {
+                        "path": "citation_source.md", "sha256": sha("citation_source.md"),
+                        "sections": {}}}))
+                    write("reference/relations.jsonl", json.dumps({
+                        "id": "test", "subject": "va:0x0055BC60", "predicate": "writes",
+                        "object": "field:StatusWnd:0x1C6", "summary": "Summary",
+                        "confidence": "Static", "target_version": "0.67",
+                        "source": {"path": "relation_source.md", "sha256": sha("relation_source.md"),
+                                   "start_line": 1, "end_line": 1}}) + "\n")
+                    write("RESEARCH_SOURCE_CATALOG.tsv", "\t".join(recovery_coverage.CATALOG_COLUMNS) + "\n")
+                    pages = reference.render(root, reference.load(root))
+                    for name, content in pages.items():
+                        write(name, content)
+                    required = set(pages) | {ledger, "reference/sources.json", "reference/relations.jsonl",
+                                             "ledger_source.md", "citation_source.md", "relation_source.md"}
+                    # The complete publication set succeeds without admitting unrelated files.
+                    with patch.object(sync, "KB", root), \
+                         patch.object(sync, "ALLOWED", required), \
+                         patch.object(sync, "git", return_value=("\0".join(sorted(required)) + "\0", 0)) as index:
+                        sync.verify_portable_publication()
+                        index.assert_called_once_with("ls-files", "-z")
+                    target = {"page": "reference/symbols/0055BC60.md", "ledger": ledger,
+                              "registry": "reference/sources.json"}.get(kind, kind + ".md")
+                    allowed = required - ({target} if missing == "allowlist" else set())
+                    tracked = required - ({target} if missing == "tracked" else set())
+                    # Both existing portable checks' content comparisons still pass.
+                    self.assertTrue(all((root / name).read_text(encoding="utf-8") == content
+                                        for name, content in reference.render(root, reference.load(root)).items()))
+                    coverage = recovery_coverage.render(recovery_coverage.inventory(root, tracked))
+                    for name, content in coverage.items():
+                        write(name, content)
+                    self.assertEqual(coverage, recovery_coverage.render(recovery_coverage.inventory(root, tracked)))
+                    branch = "work/kb-PORTABLE-TEST"
+                    write(".git/kb-sync-base.json", json.dumps({"branch": branch, "base": "base"}))
+                    def fake_git(*arguments, **kwargs):
+                        if arguments == ("ls-files", "-z"):
+                            return "\0".join(sorted(tracked)) + "\0", 0
+                        self.fail("Publication reached remote Git before blocking: " + repr(arguments))
+                    with patch.object(sync, "KB", root), \
+                         patch.object(sync, "ALLOWED", allowed), \
+                         patch.object(sync, "audit_or_block", return_value={}), \
+                         patch.object(sync, "lock", return_value=contextlib.nullcontext()), \
+                         patch.object(sync, "branch", return_value=branch), \
+                         patch.object(sync, "clean", return_value=True), \
+                         patch.object(sync, "verify_manifest", return_value=True), \
+                         patch.object(sync, "private_repo"), \
+                         patch.object(sync, "git", side_effect=fake_git), \
+                         patch.object(sync, "command", return_value=("PASS", 0)) as check:
+                        with self.assertRaisesRegex(sync.Blocked, target):
+                            sync.publish()
+                        self.assertEqual([Path(call.args[0][2]).name for call in check.call_args_list],
+                                         ["reference.py", "recovery_coverage.py"])
 
     def test_publish_blocks_stale_reference_before_remote_changes(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -5,6 +5,7 @@ Never uses reset, rebase, stash, amend, force, or writes to original game files.
 """
 import argparse
 import contextlib
+import csv
 import hashlib
 import json
 import os
@@ -13,6 +14,8 @@ import re
 import subprocess
 import sys
 from datetime import datetime, timezone
+
+import reference
 
 KB = Path(__file__).resolve().parent.parent
 REPO = "ButaMonky/Hakushin067-Research-Knowledge"
@@ -1209,6 +1212,34 @@ def checkpoint(task):
         journal("checkpoint","LOCAL_ONLY",task,sha)
         print("LOCAL_CHECKPOINT",sha)
 
+def verify_portable_publication():
+    """Require portable exports and their reviewed evidence in the explicit Git set."""
+    ledger = "research/recovered/RECOVERY_LEDGER.tsv"
+    registry = "reference/sources.json"
+    try:
+        data = reference.load(KB)
+        required = set(reference.render(KB, data))
+        required.update((ledger, registry, "reference/relations.jsonl"))
+        with (KB / ledger).open(encoding="utf-8-sig", newline="") as stream:
+            required.update(row["destination"] for row in csv.DictReader(stream, delimiter="\t"))
+        citations = json.loads((KB / registry).read_text(encoding="utf-8-sig"))
+        required.update(entry["path"] for entry in citations.values())
+        required.update(row["source"]["path"] for row in data["relations"])
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        raise Blocked("Portable publication inputs invalid; rerun reference/coverage checks: " + str(error)) from error
+    tracked = set(git("ls-files", "-z")[0].split("\0"))
+    issues = []
+    for name in sorted(required):
+        if name not in ALLOWED:
+            issues.append("not explicitly ALLOWED: " + name)
+        if name not in tracked:
+            issues.append("not Git-tracked: " + name)
+    if issues:
+        raise Blocked("Portable publication blocked: " + "; ".join(issues[:8])
+                      + ". Review these exact paths, update FILES/.gitignore as needed, "
+                      "then checkpoint them before publishing.")
+
+
 def publish():
     hashes=audit_or_block(True)
     with lock("publish"):
@@ -1224,6 +1255,7 @@ def publish():
             raise Blocked("作業ブランチと基準SHAが異なる")
         for script in ("reference.py", "recovery_coverage.py"):
             command((sys.executable, "-B", str(KB / "tools" / script), "check"))
+        verify_portable_publication()
         git("fetch","origin",MAIN)
         if git("rev-parse","origin/"+MAIN)[0]!=base.get("base"):
             raise Blocked("リモートdevelopが進んでいる。競合確認が必要")
