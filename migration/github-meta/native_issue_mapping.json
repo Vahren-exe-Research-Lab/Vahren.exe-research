@@ -1,0 +1,48 @@
+{
+  "source": "ButaMonky/Hakushin067-Research-Knowledge",
+  "destination": "Vahren-exe-Research-Lab/Vahren.exe-research",
+  "issues": {
+    "1": {
+      "target_issue": 2,
+      "original_comments": 0,
+      "source_state": "open",
+      "source_title": "[KB recovery] KB-RC-20261031-22H-LOCAL-PREFLIGHT-SAFETY-01 — Local preflight safety refusal"
+    },
+    "2": {
+      "target_issue": 3,
+      "original_comments": 0,
+      "source_state": "open",
+      "source_title": "[KB GH-only VERIFY] KB-20261101-GITHUB-ONLY-TRIAGE-01: 9 nonstandard ID pairs + V9 current baseline"
+    },
+    "3": {
+      "target_issue": 4,
+      "original_comments": 5,
+      "source_state": "open",
+      "source_title": "[KB REA recovery] REA-20261101-03H-16H-TRIAGE: 14 IDs / 67 Library files / GH README entry fixes"
+    },
+    "4": {
+      "target_issue": 5,
+      "original_comments": 60,
+      "source_state": "open",
+      "source_title": "[KB linkage] KB-LINKAGE-20261101-1937 — source ID traceability and uncurated research queue"
+    },
+    "6": {
+      "target_issue": 6,
+      "original_comments": 0,
+      "source_state": "open",
+      "source_title": "[REA KB_CANDIDATE] 2026-11-01 17–21H CRT/EH4 native source map + recovery backlog"
+    },
+    "20": {
+      "target_issue": 7,
+      "original_comments": 1,
+      "source_state": "open",
+      "source_title": "【研究索引・起動障害】Vahren.exe が1〜3秒で終了（コード0）／DATのファイルロック（2026-11-03）"
+    },
+    "67": {
+      "target_issue": 8,
+      "original_comments": 2,
+      "source_state": "open",
+      "source_title": "公開用Organization／汎用研究リポジトリへの安全な切り出し（非公開維持）"
+    }
+  }
+}
