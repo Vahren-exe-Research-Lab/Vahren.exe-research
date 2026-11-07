@@ -267,8 +267,9 @@ class ReferenceTests(unittest.TestCase):
         pages = reference.render(self.root, data)
         index = pages["reference/FIELD_MENTIONS.md"]
         self.assertIn("Unit + 0x18654", index)
-        self.assertIn("native.md?plain=1#L2-L2", index)
-        self.assertIn("Historical local owner labels", index)
+        field_pages = "\n".join(value for key, value in pages.items() if key.startswith("reference/fields/"))
+        self.assertIn("native.md?plain=1#L2-L2", field_pages)
+        self.assertIn("Historical local owner labels", field_pages)
         self.assertIn("FIELD_MENTIONS.md", pages["reference/README.md"])
         self.assertEqual(pages, reference.render(self.root, reference.load(self.root)))
         report.write_text("changed", encoding="utf-8")
@@ -337,12 +338,38 @@ class ReferenceTests(unittest.TestCase):
         report.write_text("changed", encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "Stale"):
             reference.load(self.root)
+
         report.unlink()
         with self.assertRaisesRegex(ValueError, "Missing"):
             reference.load(self.root)
         ledger.write_text("destination\tdestination_sha256\n../escape.md\t00\n", encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "escapes"):
             reference.load(self.root)
+
+    def test_large_field_groups_are_paginated_without_losing_context(self):
+        self.add_field_report()
+        data = reference.load(self.root)
+        sample = data["field_mentions"][0]
+        data["field_mentions"] = [dict(sample, id=f"field-{i}", owner_text="Unit", offset="0x28",
+                                       summary=f"unique-source-{i}") for i in range(205)]
+        pages = reference.render(self.root, data)
+        field_pages = {name: text for name, text in pages.items() if name.startswith("reference/fields/")}
+        self.assertEqual(len(field_pages), 3)
+        self.assertLess(len(pages["reference/FIELD_MENTIONS.md"]), 2000)
+        content = "\n".join(field_pages.values())
+        for i in range(205):
+            self.assertEqual(content.count(f"unique-source-{i}</") + content.count(f"unique-source-{i}\n"), 1)
+        self.assertTrue(all(text.count("native.md?plain=1") <= 100 for text in field_pages.values()))
+
+    def test_field_owner_names_cannot_collide_on_windows(self):
+        self.add_field_report()
+        data = reference.load(self.root)
+        row = data["field_mentions"][0]
+        data["field_mentions"] = [dict(row, owner_text="Unit"), dict(row, owner_text="unit")]
+        pages = reference.render(self.root, data)
+        paths = [name for name in pages if name.startswith("reference/fields/")]
+        self.assertEqual(len(paths), 2)
+        self.assertEqual(len({name.casefold() for name in paths}), 2)
 
     def add_layout_alias(self, aliases):
         with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:

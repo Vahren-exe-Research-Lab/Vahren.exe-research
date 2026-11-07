@@ -1,0 +1,16 @@
+# C-20261015-0024-01 | T025/T016｜sc_free初回の放浪ユニット二段Lv補正と選択イベント境界
+- 判定：READY＝原作ver0.67正規化SCRIPTの呼出字面、57個の有効Spot参照、二群のLv命令順に限定。VERIFY／未観測＝旧EXEのevent queue・vector API・実ユニットLv・合法画面。原作Gameplay Golden PASS0／新旧strict MATCH0、Task DONE追加0。
+- 原本相対位置：a_default/script/7000_その他シナリオ/free_ev_world.dat:144-149,693-725、100_イベント汎用/event_01_共通イベント２.dat:203-353。使用したのは原作ZIP/EXEでなく既存normalized read-onlyコピー。
+- [CONFIRMED-SCRIPT 入口] wev_freeのturn1/NewTurn/yet(firstsetupfree1)条件でevent(firstsetupfree1)を発行（既存T025§96）。そのbodyのisScenario(sc_free)内はevent(tdnisastk)→event(chuboss_ques_free)→event(roamfriend_get)→event(roam_levelup)→event(naisei_up)の記述順。watch/外交初期化はその分岐後で、別firstsetupfree2はさらに別のWorld側入口。
+- [CONFIRMED-SCRIPT 群1] roam_levelup内で39件のstoreUnitOfSpot(spot,@aaa)に各addv(@bbb,@aaa)を続け、setLevel(@bbb,1)→addLevel(@bbb,4)を1回ずつ呼び、clear(@aaa),clear(@bbb)。
+- 群1の有効Spot（39・重複0）：sp2b,sp7b,sp11b,sp11c,sp11d,sp14b,sp16,sp17,sp19,sp21,sp24,sp28,sp29,sp30,sp31,sp33,sp37,sp50,sp52,sp53,sp53b,sp55,sp56,sp57,sp61,sp62,sp63b,sp67,sp68a,sp68b,sphzn,sp73,sp76,sp79,sp80,spfight,spkmn2,spkmn3,sp82。
+- [CONFIRMED-SCRIPT 群2] 上記clear後、別18Spotについて同じstoreUnitOfSpot→addv列を実行し、setLevel(@bbb,1)→addLevel(@bbb,9)を呼んで両vectorをclearする。
+- 群2の有効Spot（18・重複0、群1との重複0）：sp3,sp20,sp23,sp26,sp36,sp38b,sp41,sp42,sp44,sp46,sp48,sp51,sp60,sp63c,sp64,sp77,sp78,spsam5。
+- [コメント除外] sp81/sp83/speastはblock comment、sp43はline comment内のため現行有効57件には含めない。39+18=57は「有効Spot照会命令数」であり、対象Unit実数・実在Spot数・処理成功数ではない。
+- [選択対照] roamfriend_get bodyはselect→真ならroutine(push_rndm_routine)、setud(@rndmunit_memory,@rndmunit)、roamfriend_on=1を記述。sourceではこのevent発行がroam_levelup発行より先で、後にはnaisei_up発行がある。ただしqueue/FIFO/Yield/選択待ちと子bodyの実完了順は未観測。
+- [VERIFY] storeUnitOfSpotが出力vectorを置換/追記するか、addvのalias・重複・Unit存在判定、setLevel/addLevelの実加算/上限、前段選択がspot所属やScratchを変えるか、同turn再入・save/load時に両groupがどの回数適用されるかは未確定。「全57Spotの全員が必ずLv5/10」「初回バグ」を確定しない。
+- [REIMPLEMENT] firstsetupfree1のchild event境界とroamfriend選択、群1の39個照会→Lv(1,+4)→clear、群2の18個照会→Lv(1,+9)→clear、naisei_upおよびfirstsetupfree2を独立VM stageにする。二群を無根拠に合体、開始時一括Lv補正、コメント済4Spotを有効化、queueを同期実行に変更しない。
+- [GOLDEN DESIGNED/NOT RUN] 合法sc_free turn1の初期状態とroamfriend_get選択Yes/No、初回event前後・同turn背景再入・turn2、代表sp2b/sp82とsp3/spsam5、コメント除外sp81/sp43を可視比較。旧SAVE・scenario・input・capture各SHAと新build/captureを分離し、Unit identity/Spot所属/Lv・選択結果・雇用範囲・イベント発火数を同条件で記録。旧game actualなし＝DESIGNED_NOT_RUN、内部queue不可視はINELIGIBLE。
+- [重複防止] T025§96の二setup/6直接event・firstsetupfree1子5発行列、T025§9のnaisei_up補助、E checkpoint148のrsc初期Training@dddは既存。新しい増分はroam_levelup二段57Spotの具体的有効命令とroamfriend_get選択との境界だけ。
+- [他P0/復旧] boss_dead setv/clear/erasePower、World War po/pooとinactive/self union、sc_free native queue、T029 castleturn/50000、T026教師temp、T027 wallet/stock、T033旧ID到達性はVERIFY継続。C-RC-20261014-1824-01および旧T026/T032等の安全拒否はBLOCKED維持、元拒否内容の再提出・別tool/shell/path/Remote迂回無し。
+- [所有・統合] 本成果はC-owner証拠、正式MASTER取り込みはE所有で未実施。E cp148 528件（A115/B185/C122/D106）を開始・書込直前に確認。原本/MASTER/T018/他lane/rea_lab/dev_lab/Work/Git/push/Remote/MCP/automation変更禁止。

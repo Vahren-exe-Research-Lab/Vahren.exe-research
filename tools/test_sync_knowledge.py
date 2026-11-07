@@ -2,6 +2,7 @@
 """Offline regression tests for knowledge source audits and Git safety gates."""
 import contextlib
 import hashlib
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -111,6 +112,34 @@ class KnowledgeSecurityTests(unittest.TestCase):
              patch.object(sync,"clean",return_value=False):
             with self.assertRaises(sync.Blocked):
                 sync.start("KB-TEST")
+
+    def test_publish_blocks_stale_reference_before_remote_changes(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / ".git").mkdir()
+            branch = "work/kb-PORTABLE-TEST"
+            (root / ".git/kb-sync-base.json").write_text(
+                json.dumps({"branch": branch, "base": "base"}), encoding="utf-8")
+            def fake_git(*arguments, **kwargs):
+                if arguments == ("rev-parse", "origin/develop"):
+                    return "base", 0
+                if arguments == ("rev-parse", "HEAD"):
+                    return "head", 0
+                if arguments[0] == "ls-remote":
+                    return "head\trefs/heads/" + branch, 0
+                return "", 0
+            with patch.object(sync, "KB", root), \
+                 patch.object(sync, "audit_or_block", return_value={}), \
+                 patch.object(sync, "lock", return_value=contextlib.nullcontext()), \
+                 patch.object(sync, "branch", return_value=branch), \
+                 patch.object(sync, "clean", return_value=True), \
+                 patch.object(sync, "verify_manifest", return_value=True), \
+                 patch.object(sync, "private_repo"), \
+                 patch.object(sync, "git", side_effect=fake_git) as git, \
+                 patch.object(sync, "command", side_effect=sync.Blocked("stale reference")):
+                with self.assertRaisesRegex(sync.Blocked, "stale reference"):
+                    sync.publish()
+                git.assert_not_called()
 
 if __name__=="__main__":
     unittest.main(verbosity=2)

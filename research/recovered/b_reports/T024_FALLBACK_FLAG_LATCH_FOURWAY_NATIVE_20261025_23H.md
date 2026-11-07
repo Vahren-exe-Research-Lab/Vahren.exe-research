@@ -1,0 +1,21 @@
+# B-20261025-2313-T024-FALLBACK-FLAG-LATCH-FOURWAY-01｜T024 最終fallbackの状態ビット消費と4分岐dispatch
+- 時点：2026-10-25 23時台 JST。担当 B/T024。分類 STATIC-ORIGINAL-PE-ASM / STATIC-GHIDRA-DERIVED / INFERRED / VERIFY / NOT READY。旧原作Gameplay Golden PASS=0、strict MATCH=0。
+- 対象正本：rea_lab/targets/hakushin067_Vahren.exe 実SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。現旧search.sqlite実SHA 0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF（manifest一致）。原本実行・改変なし。
+- 既存出典：search_index/search.py function 0x526A40; full_pseudoc_20261020/functions/0052/00526A40.c (Ghidra疑似C・STATIC)。PE 0x526A40 1036B限定窓SHA256 640A58C56F11784B98F7EACBBB3D4B6F5D7DAECC4096B6D0C2C679C7B0CF1606（Capstone・read-only）。
+- CALL境界：前17Hの既知 0x5264FF→0x526A40（他に0x521B34 caller）。本回の独立増分はfallback内部の検査順/副作用と4way dispatch及び索引欠落。既知priority CALLを再計数しない。
+- 初期gate：0x526A6B READ owner+0x334、非0なら0x526A82→0x520920の別経路。0の場合owner+0x18C指示のbyte-pair群を順次評価。
+- consume-first：0x526A92/+0x526A9D は state+0x52/53 非0検査後WORD=0、成立時0x526AAE→0x520920。続く0x526ABE/+0x526AC9 は+0x54/55同様、成立時0x526AD8→0x520920。
+- +0x3C/3D（0x526AE8/0x526AF3）も消費して分岐。成立時はglobal 0x67B313等による別条件処理、0x526B59→0x4C21F0等へ。0のとき0x526B79 owner+0x14==0なら0x526B7E AL0→return（後続pair群未消費）。
+- +0x3E/3F（0x526B8B/0x526B96）成立時はowner+0x48..0x4CのUnitポインタspanを走査し、Unit+0x1867C==0、+0x8C==0、+0x1F8!=0を満たす要素へ 0x526BCF Unit+0x18684=2、0x526BD9→0x576660、0x526BE3→0x576F70。その後0x526C03→0x56BE50(1)。全Unitへの一律作用ではない。
+- 次は+0x40/41（0x526C13/1E）成立で0x526C29→0x527F60(0)。以降の+0x48/49,+0x4A/4B,+0x4C/4D,+0x4E/4F は 0x526C44/69/91/B9でそれぞれWORD=0に消費、発火した最初のpairが ECX=0/1/2/3 を付けて0x4C7040へ進み、後続pairは未消費で共通復帰。状態のゲーム上の名称は未確定。
+- E8実byte: 0x526C4E e8ed03faff→0x4C7040；0x526C76 e8c503faff→0x4C7040；0x526C9E e89d03faff→0x4C7040；0x526CC6 e87503faff→0x4C7040（4/4原作PE一致）。
+- 重要索引差分：search.py function 0x4C7040 のcaller一覧は上記最初の3件のみ。原作 E8直検証では4番目 0x526CC6 も同じ先へのCALLであり、**旧search.sqlite のdirect CALL索引はこの入口1件を欠落**。索引や他レーンDBは変更せずB側erratumとして保存。
+- callee 0x4C7040 545B PE限定窓SHA256 14AB2AD148AAFAEF3423A69DD4AAC753B6978C762BCD511C1BA2389E7565B4D1；Ghidra疑似Cでは fastcall ECX indexに+2しglobal配列からstride 0x1Cの要素を走査、0x528320/0x5695B0/0x568FB0/0x568460/0x542960や0x56BA80等に接続。名称・成功条件・全副作用はVERIFY。
+- +0x44/45, +0x46/47も各0x526CED/0x526D05 WORD=0。+0x46まで両0なら0x526E34 AL1、どちらか成立ならglobal+0x65EB64に応じて0x526D25→0x527F60(arg 1/2) または0x526D38以降のcandidate reset/scan、0x526E2F→0x527EA0へ。上記は正常な局所経路のみ。
+- 既存B差分：21H postunlink/tail JMP、22H temp UI adapter、17H final fallback入口と混同しない。B owner T024/T028/HANDOFF の新主要VA 0x526C4E,0x526CC6,0x526A9D,0x526B96,0x526D05 は事前exact文字列検索0件；他レーン/旧回収22＋後続10＋Library/14H OFFLINE全文は意味重複未照合。
+- Golden必要条件：無改変同EXE・20倍強化前DAT・同SAVE/MAP/input/RNGで個別pair単独/複数同時、owner+0x334 / +0x14・state+0x18C各WORD・候補span前後・call 0x4C7040各ECX・次tick/可視行動を比較。未実施、Golden PASS0 / strict MATCH0。
+- 未解明P0：pair群の設定位点/ゲーム語義、0x4C7040 4分岐効果、+0x45D=1生成側、Troop+0x1D/+0x1C writer、間接/vtableおよび実機Golden。次回は 0x4C7040 caller欠落の同種索引負例や+0x18C pair setterをread-only限定検索。
+- 安全：拒否済 0x5710C0..0x571500/既拒否証拠には非接触。原本/Ghidra/REA/MASTER/他レーン/dev_lab/Git/Work/設定/schedule変更なし。READY/DONE/MASTER増分=0。
+- 復旧 B-RC-20261025-2313-PE-UNICODE-PATH-01 OTHER/RECOVERED：PowerShell pipeでのPython UTF8日本語pathが????へ化けWinError123。拒否ではない。同一の許可済PEをPython chr Unicode構築の正パスで読み戻し、機械語窓1036B+545BとE8を独立取得。初回失敗出力は証拠として不採用。未保存は保存readbackで最終確定。
+
+- [CURRENT-V3 CROSSCHECK / IMPORTANT SCOPE] 保存済みCURRENT_ACTIVE_RESEARCH_STATE_LATEST.jsonはHAKUSHIN067_CURRENT_CANONICAL_V3_20261022.sqliteを現行指定。read-only `search_current.py callers 0x4C7040 --limit 20` は4行、0x526C4E/76/9E/CC6すべて `E8_DIRECT_CALL` / `independently_verified_target=1` と返した。したがって欠落は**旧2026-10-21 search.sqlite限定**であり、現在のV3に欠落・修正必要とは判定しない。新規修復TASK・READYは0。先行の旧DB欠落記述はこの限定で読む。

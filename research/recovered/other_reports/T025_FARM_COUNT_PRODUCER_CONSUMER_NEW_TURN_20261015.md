@@ -1,0 +1,15 @@
+# C-20261015-2328-01 | T025/T016 | NewTurn農業枠 producer→consumer の静的契約
+- 状態: CONFIRMED-SCRIPT / READY（原作ver0.67の有効命令と順序のみ）。VERIFY/未観測/NOT READY＝旧EXEのVM event queue・変数寿命・UI実効・Gameplay一致。旧原作Golden PASS0、新旧strict MATCH0、新Task DONE0。
+- 原本相対: a_default/script/event_world.dat:74-88,249-255；7000_その他シナリオ/free_ev_world.dat:5-6,32-40,82-89；5000_ランダムシナリオ/ev_rnd.dat:3-4,~250-263,307-316；6000_スキルテスト/sel_item.dat:863-943,945-995,1251-1277；対照43_内政_教育/lecture.dat:267-297。
+- CONFIRMED caller: sci1/sc_free/rscのNewTurn重複guardを通った後、set(multi_count,multi_sporter)→event(lecture_nankai_dekirukana)→event(farm_nankai_dekirukana)。NewTurn turn1等で商人枝が不成立でも後二つのevent命令候補は存在する（T025既存§106の順序自体は再計上しない）。
+- CONFIRMED farm producer: sel_item.dat:1271-1277のevent farm_nankai_dekirukanaはset(farm_count,2)、countSpot(@plap)>10なら+1、>20なら追加+1。通常の単純条件評価ではSpot0..10→2回、11..20→3回、21以上→4回のsource算術。isPlayer(po12/poo12/po18/poo18/po22/poo22/po23/poo23)でさらに+1する行1274はコメントで無効。
+- CONFIRMED farm consumer: sel_item.dat:863-943のevent poli_farmはcmd_farm有効・cmd_farm_on有効の後、farm_count==0の時のみ「このターンは、これ以上農業コマンドを使えません」と通知。値が負の場合の専用<=0 guardはこの分岐にはないが負値の合法到達は未観測。
+- CONFIRMED successful-consumption boundary: 所有アイテム候補と内政P条件通過後、choice_farm_item→choice_farm_itemkazuを経て yappa_yameru1==0 && yappa_yameru2==0 内だけで増産、item_set_check、内政P減算、sub(farm_count,1) (:909-925)。不成立/取消分岐内にはこのsubがない（別経路・nativeによる更新不存在の証明ではない）。
+- SOURCE crosscheck: 同sel_item.dat:945-995でアイテム選択取消をyappa_yameru1へ、数量選択取消をyappa_yameru2へ伝搬。教育lecture.dat:268-297も同じ2/3/4領地閾値だが講師履歴shift・13科目count resetを追加し、農業は独立farm_count変数と独立成功減算を使用。
+- Search scope: normalized a_default/script/**/*.dat の literal farm_countは7行／ファイル1件（sel_item.dat:869,900,925,1273,1274コメント,1275,1276）。このliteral censusは動的名前参照・EXE native・SAVE初期値の全網羅ではない。
+- NEWNESS/DEDUP: T025§106／E cp158は三Worldの商人→教育→農業 event発行と教育countを既統合済み、同節はfarm本文未確認と記載。本IDの増分は未解明だった農業回数producerの閾値・無効コメント、poli_farmの0専用guardと成功時だけの消費の横断接続に限定。
+- VERIFY: event() childがいつ開始/完了するか、@plapが親WorldのstorePowerOfUnit後に子イベントでどの値を参照するか、countSpotのnative count・再入中のPower変更、旧saveのfarm_count初期値と負数生成、キャンセル/増産の実UIとSAVE、内部Done/queue/FIFO/parent resumeは未観測。Sourceのevent発行を同一passの完走とみなさない。
+- REIMPLEMENT: lecture_countとfarm_countを統合しない。後者のresetは独立event handlerで保持し、ターン暦ベースで先行確定させない。farm_count==0と成功時decrement/取消フラグを原文通り区別し、負数clamp・領地閾値>=変更・旧特殊Powerコメントを勝手に有効化しない。
+- GOLDEN（DESIGNED/NOT RUN）: 合法sci1/sc_free/rscのNewTurn直前Spot数10/11/20/21、初期/再入/次turn、農業0回/1回/取消（商品選択/数量選択）/成功/最後の1回消費/4回消費を同一旧SAVE SHAと同入力で旧new比較。観測対象は農業メニューの残り回数、実増産Unit/Item・polip・教育回数別trace、次turn初期化。非合法・内部不可視はINELIGIBLE。旧EXE起動0。
+- P0依存: T025 sc_free event queue/VM Yield・boss_dead setv/clear/erasePower・WW poo/po inactive/self union；T029 Castle5/50000、T026教師一時値、T027財布/在庫、T033旧IDは全VERIFY。A所有VM Nativeの上書き/新解析なし。原作確定BUG0。
+- OWNER/INTEGRATION: C所有新証拠のみ。MASTER cp158=公式548件(A115/B190/C131/D112)には本ID未統合、正式採否はEのみ。過去C/T026/T032/C-20261015-2026安全拒否は別BLOCKED、再提出/経路迂回なし。

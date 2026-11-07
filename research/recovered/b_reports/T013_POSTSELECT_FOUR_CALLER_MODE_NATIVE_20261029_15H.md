@@ -1,0 +1,21 @@
+# B-20261029-15H-T013-CALLER-MODE-ENTRY-NATIVE-01｜T013 0x57D8B0の4入口・初期化系mode1と通常不適格fallback mode0の原作native ABI結合
+Owner B / T013（T011・T024・T028参照）｜2026-10-29 15時台 JST｜STATIC ORIGINAL PE ASM + 既存Ghidra STATIC / INFERRED / VERIFY / NOT READY
+## 事前照合・証拠源
+- Desktop Commander Local Compact ONLINE。MASTERはE所有・最終正式checkpoint196/READY596（旧集計、今回再計算なし）。ANALYSIS_LANES_PROTOCOL、B T011/T012/T013/T024/T028のowner末尾・B HANDOFF・未同期/拒否旧索引を先読。旧SAFE134/HOLD21・B147うち54件末尾1byte差・2026-10-25原文欠落は未解決。
+- 10/29の整理で旧search_index/README.md・BUILD_MANIFEST.jsonは _history_20261029 に退避。旧search.sqliteはその場所に無く、immutable read-only接続はsqlite3.OperationalError（未取得）。現 CURRENT_ACTIVE_RESEARCH_STATE_LATEST.jsonはuser選択V9、HAKUSHIN067_UNIFIED_V9_20261023.sqliteを指す。実SHA256=2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE、immutable/query_only quick_check=ok。旧DBの再生成・別経路回収を実施しない。
+- 原作解析copy rea_lab/targets/hakushin067_Vahren.exe は実SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。V9 search_unified_v9_20261023.py function/callers + 原PE限定Capstone逆ASMで局所照合。原本ゲーム実行・新Ghidra本体稼働/重解析・原本書込なし。PC上Vahren.exeプロセスはあったが操作・観測せず。
+## 元の既知との重複
+- B-20261021-1914-01は4 CALL site 0x544D9C/0x545CA2/0x5782B9/0x57B35Bを列挙済。B-20261015-0409-01はmode0の2不適格枝と戻りAL→cleanup（0x57C600/0x57DF90）をnative済。今回これらは再発見・新READYとして計上0。
+- 今回の新規差分は**残るmode1の2入口**の原PE PUSH値・初期flag契約と、mode1/0で共有するcallee内部のparam_2 bypassを原PE nativeで接続したこと。B所有361ファイルで0x544D23、0x544D37、0x544D83、0x578155、0x5782C3、0x57D9B7、0x57D9CE、0x57D9E9の先行literal一致0。他lane/10/25全文の意味的完全dedupはVERIFY。
+## ORIGINAL ASM：mode1入口（今回nativeで結合）
+- 0x544D10 entry: 0x544D1A CMP BYTE [EBX+0x1867E],0 / 0x544D21 JE0x544D2C。非ゼロ時0x544D23 XOR AL,AL→0x544D29 RET4（既設定時はここから下流を処理しない）。ゼロなら0x544D2C FLD1→0x544D31 Unit+0x1E550=1.0、0x544D37 Unit+0x1867E=1、0x544D44 Unit+0x1867F=入力byte、0x544D4A Unit+0x1E54C=0。その後0x544D77..96でUnit+0x186C0/C4/C8/CC=0x80000008・+0x186BC=0を記録、0x544D83 PUSH1、0x544D8F PUSH EBX(Unit)→0x544D9C E8 CALL0x57D8B0。入口窓152B SHA256=2D94652123CFAA8666A79B6740D9CACCBB91F2DB51D3363B0ECAD762B4F655D6。
+- 0x578110 entry: 0x578149 [ESI+0x1867E]→0x578151 CMP/0x578153 JE。非ゼロは0x578155 XOR AL,AL→epilogue（同一flag早期帰還）。ゼロでは0x57815C FLD1、任意の+0x186AC state復元・+0x1E550=1.0と+0x1E54C=0、Ghidra擬似C上の「retreat」文字列経路（実効果/到達はVERIFY）後、0x578294..B3で同じ4 sentinel+0x186BC=0を設定。0x5782A0 PUSH1、0x5782AC PUSH ESI(Unit)→0x5782B9 CALL0x57D8B0、0x5782C3 MOV BL,AL。入口窓486B SHA256=FC551294F41905F8EFF72F88CD94387990EA67441DDCCCDE82C5C3FC907E01DE。
+## ORIGINAL ASM：mode0既知callerとの照合とcallee共通gate
+- mode0既知2 CALLsiteをPEバイト再検証（重複研究0）：0x545C9F PUSH0/0x545CA1 PUSH ESI→0x545CA2 CALL0x57D8B0→0x545CA7 TEST AL、0x57B358 PUSH0/0x57B35A PUSH EBP→0x57B35B CALL0x57D8B0→0x57B360 TEST AL。各AL=0時に0x57C600→0x57DF90へ（10/15既知）。
+- 新cross-join 0x57D9B7 CMP BYTE [ESP+0x4C],0（callee第2引数。+0x57D9BC FLD1/+0x57D9BE reset後）、0x57D9CE JNE0x57D9EF。よってmode1はこの局所subgateの0x57D9D2 CALL0x5146B0・0x57D9E2 CALL0x40ED80を**評価せず**0x57D9EFへ進む。mode0は0x5146B0 AL非0、または0x40ED80 EAX==0のとき同出口へ進み、両方不成立なら0x57D9E9 JNE0x57DB9Eでpostselectの角度/座標計算をskipする。callee全体762B SHA256=A21AA1F9F53BDF680B52B0F76886B01EA08ED3A4D8FBD4D79CB36D11B6D5160B。
+- 重要境界：mode1でも0x57D8B0入口のUnit+0xC0/+0xD0符号gate、+0x1867Eと関連early return、対象探索/clock/距離500の後段gateを飛ばすわけではない。「mode1なら必ず移動」とは言えない。0x5767B0は既存安全保留のため今回callee本文へ入っていない。
+## 実装影響・Golden・状態
+- Reimplementation：mode1の初期化/retreat様入口とmode0の不適格通常tick後処理を同一無条件callerに統合しない。Unit+0x1867E/+0x1867F/+0x1E550/+0x1E54Cと4 sentinel、modebyte、0x57D9B7のbranch、二helper結果、postselect実行有無、戻りAL、次tickを独立traceにする。人間語「retreat」と実動作の同値性・Unit型・真の移動/最後のtargetはVERIFY。
+- Golden: 未改変原作EXEと20倍改変**前**DAT、同SAVE/MAP/input/RNGで両mode、Unit+1867E 0/1、Unit+C0/D0正負、0x5146B0 0/非0、0x40ED80 0/非0、clock100/101、各CALL結果と可視ターゲット/次tickを同一run合法採取するまでDESIGNED_NOT_RUN。旧Gameplay Golden PASS0、strict MATCH0、今回新正式READY0、MASTER統合0、Task DONE0。
+- 既存安全保留21・0x5710C0..0x571500・その他既拒否コマンド/証拠は未再試行、別tool/path/shell/Remote/ZIPで迂回0。初回read-only native抽出のPowerShell/Python引数引用符SyntaxErrorはOTHER/RECOVERED（PC書込前）、旧search.sqlite read-only接続エラーはOTHER/旧DB退避後不在；正式V9を使って継続。新SAFETY_REFUSAL0。
+- NEXT P0: V9 callers(0x544D10/0x578110)の上流合法到達・入力byte+0x1867F writer、0x57D9EF以降角度4区画パラメータのwriter（ただし既拒否禁止範囲や0x5767B0本文は触れない）、T024通常戦闘AIとT028士気敗走、T011 summon/EXP、T012 damage。STATIC / INFERRED / VERIFY / NOT READY。原本/MASTER/他lane/REA/dev_lab/Git/Work/設定/schedule不変更。

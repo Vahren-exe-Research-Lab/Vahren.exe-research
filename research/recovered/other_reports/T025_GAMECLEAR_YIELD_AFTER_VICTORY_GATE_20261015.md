@@ -1,0 +1,13 @@
+# T025 World victory setGameClear() → native Yield → setup gate / C-20261015-0322-01
+[ID/OWNER] C-20261015-0322-01 | T025/T016 | C所有 | 2026-10-15 03:22 JST。
+[STATUS] READY = 原作ver0.67のSCRIPTとA保存Nativeの既知ABIを結んだ静的crosswalkのみ。旧EXE実経路・Gameplay・strict MATCHはNOT READY / VERIFY / 未観測。
+[ORIGINAL SCRIPT] normalized CORE a_default/script/event_world.dat:283-315, 7000_その他シナリオ/free_ev_world.dat:120-149,655-661。元ZIP/EXEへの書込なし。
+[CONFIRMED-SCRIPT] sci1/sc_freeのED勝利と観戦countPower()<2勝利は、いずれもbare setGameClear()（引数0）を記述。ED側は後段playBGM/volume/image/wait/image、観戦側はwait/dialogを記述。さらに先で独立yet(firstsetup1/firstsetupfree1) && isNewTurn()==1 && turn1のevent発行gateがあるが、その間に明示return()は無い。
+[CONFIRMED-SAVED-NATIVE/A OWNER READ-ONLY] exe/T006_TARGET_DISPATCH.md:scene-controlとsetGameClear argument-presence節、exe/T006_GAMECLEAR_ARG_PROBE.txt VA0x4A5CD3..0x4A5CEA。0x4A5CD3でarg-vector begin/end比較、0引数なら0x4A5CE3 call 0x474070（short helper）、0x4A5CE8 mov al,1→common epilogue 0x4A633C。1以上なら0x4A5CC4へ分岐しcall 0x4740A0、AL=1で同様に復帰する。A既存証拠のAL=1はVM Yieldであり同一dispatchのContinueと異なる。
+[NEW C CROSSWALK] 上記両scenarioの勝利命令はゼロ引数なので、0x474070のshort GameClear + opcode Yieldに接続する。先行C-20261015-0225-01の『原文で明示return無し』は、新事実を踏まえると『無中断で直後の初回setupを同期実行する』ことを示さない。旧EXEでは少なくとも当該builtin直後にVM Yield境界がある。
+[VERIFY / NOT OBSERVED] Yieldから同じWorld frameへいつ/そもそも復帰するか、scene transitionで停止/破棄されるか、ED固有の後段BGM/画像や観戦dialogの到達、firstsetupのenqueue/Done/reentry、GameClear flag engine+0x1EF4BEの実writer時刻、合法turn1で勝利条件が成立するか、全て旧原作Gameplay未確認。Nativeのshort helper内部が早期終端するとは断言しない。
+[REIMPLEMENT IMPACT] opcode63引数0のshort helperとYieldを分離実装し、後続world event命令とsetup gateを消さず、その到達性はVM frame/scene schedulerが裁定する契約にする。『setGameClear後に直ちに同期setup』『setGameClearだから必ず後段一切skip』の両決め打ちを避ける。arg1以上のfull helperは本callsiteへ誤適用しない。
+[GOLDEN DESIGNED/NOT RUN] 合法sci1/sc_freeのNewTurn turn1、watch/非watch、Power count1/2、clearflag/ed1/yet(po23_ed_A)/yet(firstsetup)各成立ケースで、旧SAVE SHA・同UI入力・勝利演出/後続設定画面・turn2の可視Unit/Power/Trainingをold/new別キャプチャ比較。GameClear直後の内部opcode/frame・byteは合法可視不可ならINELIGIBLE。旧Gameplay Golden actual PASS0、新旧strict MATCH0。
+[DEDUP] C-20261015-0225-01は原作の勝利→setupソース隣接のみでE checkpoint151統合済。A/T006 opcode63 short+Yieldも既知NativeでありC新Native件数0。本IDの増分は既存Native制御契約をこの二scenario四勝利callsiteへ具体的に結び直したことのみ。旧拒否C-RC-20261014-1824-01・T026/T032とは独立し、元操作再提出0。
+[OTHER P0] T025 boss_dead setv/clear/erasePower、World War po/poo self/inactive union、sc_free queueの実順、T029 castleturn5/50000 sentinel、T026 teacher/student temporary、T027 wallet==5P stock5、T033 legacy rsc2-rsc5到達性は従前どおりVERIFY。
+[OWNER/RUN] EのみMASTER正式統合可。本証拠とC LANE_C_HANDOFF以外の原本、MASTER/T018、他lane/REA/dev_lab/Work/WRQ、Git/push/Remote/MCP/automationを変更しない。Desktop Commander Local Compactのみ。CPU実率未観測・既存PID21336待機非介入・旧EXE/Ghidra/Java/REA重量起動0・新Task DONE0。
