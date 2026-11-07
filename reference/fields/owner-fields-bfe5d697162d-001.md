@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-9"></a>
+## fields + 0x9
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 158](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L158-L158) — - Diplomacy fixed fields +0x09/+0x0A/+0x14/+0x38 のユーザー可視意味（友好/同盟/共通外交のどの選択・閾値・indexに対応するか）は更なるcondition/UI xrefまたは実save fixtureで命名する。 **【解決 2026-11-01】** +0x14＝
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-c"></a>
 ## fields + 0xC
 

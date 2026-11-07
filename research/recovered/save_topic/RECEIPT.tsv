@@ -1,0 +1,17 @@
+field	value
+source_path	data/T014_GLOBAL_SAVE.md
+catalog_sha256	3af1da2ea16c41e1b069416e6a669a0b24da99eea75a6a78e18a305229e574e6
+catalog_bytes	160682
+catalog_lines	772
+current_sha256	a07cc0081722b4370540a51ca7b8cded919ad1a4eb54cd4b69463a8ad2df586a
+current_bytes	160803
+current_lines	772
+byte_delta	121
+body_count	1
+body_coverage	FULL_EXACT_CURRENT_SOURCE
+privacy_derivative_count	0
+deferred_body_count	0
+catalog_revision_recovered	NO
+canonical_precedence	REF_SAVE_FORMAT.md; TurnState supersedes historical Diplomacy labels
+validation	Archive identity and full authored-text review only; no new native/runtime/Golden/READY
+checked_date	2026-11-05

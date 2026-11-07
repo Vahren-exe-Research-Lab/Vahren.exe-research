@@ -80,3 +80,7 @@ E資料の選別では、除外指定した3報告が一括読み取りに含ま
 ## メモリ関係と研究チャットの照合
 
 [メモリの読み書き採録](MEMORY_RELATION_REVIEW.md)は既存の関数・フィールドに出典を付けて関係を追加する。[研究チャットの保存先照合](SCHEDULE_CHAT_CHECK.md)は直近B/E/REAの回答とPR HEADを比較し、保存済みと正式採録済みを分ける。[ランダムイベント効果の全文](random_events/README.md)と[C分野資料の回収範囲・保留](c_topics/README.md)も個々の出典・未確認点を保持する。
+
+## 訂正と通常セーブの主要原本
+
+[旧解釈の訂正レビュー](CORRECTION_REVIEW.md)と[訂正一覧](../../reference/CORRECTIONS.md)から、訂正前の説明・現在の解釈・根拠を比較する。[T014通常セーブ研究](save_topic/README.md)は現在の772行を全文回収し、目録版との改版差を記録した。現在の形式・命名は[REF_SAVE_FORMAT.md](../../REF_SAVE_FORMAT.md)を先に確認する。

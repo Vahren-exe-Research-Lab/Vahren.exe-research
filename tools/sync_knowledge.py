@@ -1228,6 +1228,32 @@ FILES += (
     'research/recovered/random_events/REPORT_LEDGER.tsv',
     'research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md',
 )
+FILES += (
+    'docs/superpowers/plans/2026-11-05-correction-provenance.md',
+    'reference/CORRECTIONS.md',
+    'reference/corrections.jsonl',
+    'reference/fields/owner-Ctx-10bc96af1f29-001.md',
+    'reference/fields/owner-Spot%E3%82%92-86db90a433ce-001.md',
+    'reference/fields/owner-T014-d43fb78d4340-001.md',
+    'reference/fields/owner-clear%E6%99%82-963870b0e0a7-001.md',
+    'reference/fields/owner-ctor%E3%81%AB%E7%9B%B8%E5%BD%93%E3%81%99%E3%82%8B%E9%A0%98%E5%9F%9F%E3%81%A7-8b5566a857f1-001.md',
+    'reference/fields/owner-evidence%E3%81%AE%E6%9C%89%E7%84%A1%E3%81%A8Unit-5d2cfb872aa5-001.md',
+    'reference/fields/owner-group1%E3%81%AF-7dddea228436-001.md',
+    'reference/fields/owner-iterator%E3%81%8Cengine-c22fe15eb5c1-001.md',
+    'reference/fields/owner-key%E3%81%AE%E6%9C%89%E7%84%A1%E3%81%A8Power-1edbfa67b634-001.md',
+    'reference/fields/owner-node%E3%82%92-7756baa4e59f-001.md',
+    'reference/fields/owner-object%E3%81%AE-7dd355f516b5-001.md',
+    'reference/fields/owner-returns%E3%81%B8%E3%81%AE-91a84dafe099-001.md',
+    'reference/fields/owner-save%E3%81%AB%E7%9B%B4%E6%8E%A5%E5%85%A5%E3%82%8B%E5%9B%BA%E5%AE%9Afield%E3%81%AF-caf84873cc8b-001.md',
+    'reference/fields/owner-state%E3%81%AF%E9%80%9A%E5%B8%B8save%E3%81%AE-097d2d7eab47-001.md',
+    'reference/fields/owner-vcall%E6%84%8F%E5%91%B3%E3%81%A8-6b2a90e8b316-001.md',
+    'reference/fields/owner-worldbase-55e6d56a52f8-001.md',
+    'research/recovered/CORRECTION_REVIEW.md',
+    'research/recovered/save_topic/README.md',
+    'research/recovered/save_topic/RECEIPT.tsv',
+    'research/recovered/save_topic/REPORT_LEDGER.tsv',
+    'research/recovered/save_topic/T014_GLOBAL_SAVE.md',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 RESTRICTED = (
     re.compile(r"(?i)\b[A-Z]:[\\/]+Users[\\/]+[A-Za-z0-9._-]+"),
@@ -1451,6 +1477,9 @@ def verify_portable_publication():
         citations = json.loads((KB / registry).read_text(encoding="utf-8-sig"))
         required.update(entry["path"] for entry in citations.values())
         required.update(row["source"]["path"] for row in data["relations"])
+        required.update(row["source"]["path"] for row in data.get("corrections", []))
+        if (KB / "reference/corrections.jsonl").exists():
+            required.add("reference/corrections.jsonl")
         for name in ("reference/static_calls.tsv", "reference/static_calls_source.json",
                      "tools/export_static_calls.py"):
             if (KB / name).exists():

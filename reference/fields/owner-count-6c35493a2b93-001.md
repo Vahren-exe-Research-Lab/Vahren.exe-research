@@ -10,6 +10,12 @@
 - [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 14](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本見出しID; owner B/T011; VA 0x4726C1/0x4DEF40/0x4DEF57/0x4ED030/0x4ED046/0x49F6A0/0x4DEFCF/0x4DEC70; node sentinel byte +0x15, tree head +0x4, count
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-334"></a>
+## count + 0x334
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 566](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L566-L566) — [REIMPLEMENT / VERIFY] load後のflag計算は上記前提で `nozone_record_value==1 ? 1 : (owner[+0x33C]==owner[+0x340] ? 1 : 0)`。第5tree(+0x32C head+0x330 count+0x334)と隣接+0x33C/+
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-186b4"></a>
 ## count + 0x186B4
 

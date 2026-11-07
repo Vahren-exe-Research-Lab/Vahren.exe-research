@@ -38,6 +38,115 @@ class ReferenceTests(unittest.TestCase):
         (self.root / "reference/relations.jsonl").write_text(
             json.dumps(self.relation, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    def write_corrections(self, rows):
+        (self.root / "reference/corrections.jsonl").write_text(
+            "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+
+    def correction(self, **changes):
+        return dict({"id": "dismiss-history", "subject": "va:0x0055BC60", "status": "corrected",
+                     "previous_interpretation": "obsolete redraw routine",
+                     "current_interpretation": "current dismiss button layout",
+                     "summary": "Historical label corrected", "confidence": "文書照合",
+                     "target_version": "ver0.67", "source": dict(self.relation["source"])}, **changes)
+
+    def test_corrections_search_old_current_wording_and_endpoint_without_live_claims(self):
+        self.write_corrections([self.correction(kind="func"), self.correction(
+            id="field-history", subject="field:StatusWnd:0x1C6")])
+        data = reference.load(self.root)
+        for query in ("obsolete redraw", "current dismiss", "0x55BC60", "StatusWnd_Layout",
+                      "StatusWnd+0x1C6", "field:StatusWnd:0x1C6"):
+            with self.subTest(query=query):
+                hits = [row for row in reference.search(data, query) if row.get("kind") == "correction"]
+                self.assertTrue(hits)
+                self.assertTrue(all(row["status"] == "corrected" for row in hits))
+        self.assertEqual(len(data["relations"]), 1)
+        self.assertFalse(any("obsolete redraw" in json.dumps(row) for row in data["symbols"] + data["fields"] + data["relations"]))
+        command = [sys.executable, "-B", str(Path(reference.__file__)), "--root", str(self.root),
+                   "search", "obsolete redraw", "--json"]
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual({row["kind"] for row in json.loads(result.stdout)}, {"correction"})
+
+    def test_corrections_render_history_source_links_and_overview(self):
+        self.write_corrections([self.correction(), self.correction(
+            id="field-history", subject="field:StatusWnd:0x1C6")])
+        pages = reference.render(self.root, reference.load(self.root))
+        for name in ("reference/symbols/0055BC60.md", "reference/structs/StatusWnd.md",
+                     "reference/CORRECTIONS.md"):
+            with self.subTest(page=name):
+                self.assertIn(name, pages)
+                self.assertIn("訂正履歴", pages[name])
+                self.assertIn("訂正済みの旧解釈", pages[name])
+                self.assertIn("obsolete redraw routine", pages[name])
+                self.assertIn("現在の解釈", pages[name])
+                self.assertIn("current dismiss button layout", pages[name])
+                self.assertIn("evidence.md?plain=1#L2-L2", pages[name])
+                self.assertIn("ver0.67", pages[name])
+        self.assertIn("CORRECTIONS.md", pages["reference/README.md"])
+        self.assertIn("symbols/0055BC60.md", pages["reference/CORRECTIONS.md"])
+        self.assertIn("structs/StatusWnd.md#field-1c6", pages["reference/CORRECTIONS.md"])
+
+    def test_optional_corrections_absence_keeps_search_and_build_available(self):
+        data = reference.load(self.root)
+        self.assertEqual(data.get("corrections", []), [])
+        self.assertTrue(reference.search(data, "0x55BC60"))
+        self.assertIn("reference/README.md", reference.render(self.root, data))
+
+    def test_correction_accepts_explicit_ver067_image_base_target(self):
+        self.write_corrections([self.correction(
+            target_version="迫真戦記 ver0.67 / Vahren.exe image base 0x400000")])
+        self.assertEqual(len(reference.search(reference.load(self.root), "obsolete redraw")), 1)
+
+    def test_human_cli_marks_old_interpretation_as_corrected_history(self):
+        self.write_corrections([self.correction()])
+        result = subprocess.run(
+            [sys.executable, "-B", str(Path(reference.__file__)), "--root", str(self.root),
+             "search", "obsolete redraw"], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("訂正済みの旧解釈", result.stdout)
+        self.assertIn("obsolete redraw routine", result.stdout)
+        self.assertIn("現在の解釈", result.stdout)
+        self.assertIn("current dismiss button layout", result.stdout)
+
+    def test_corrections_reject_invalid_identity_status_and_required_text(self):
+        invalid = [{"subject": "va:0x00000001"}, {"subject": "struct:StatusWnd"},
+                   {"status": "current"}, {"target_version": "ver0.68"},
+                   {"id": "dismiss-write"}, {"id": "va:0x0055BC60"},
+                   {"id": "field:StatusWnd:0x1C6"}]
+        for key in ("id", "subject", "status", "previous_interpretation", "current_interpretation",
+                    "summary", "confidence", "target_version"):
+            invalid.extend(({key: "  "}, {key: 1}, {key: None}))
+        for changes in invalid:
+            with self.subTest(changes=changes):
+                self.write_corrections([self.correction(**changes)])
+                with self.assertRaises(ValueError):
+                    reference.load(self.root)
+        self.write_corrections([self.correction(), self.correction()])
+        with self.assertRaisesRegex(ValueError, "Duplicate"):
+            reference.load(self.root)
+
+    def test_corrections_verify_source_checksum_path_and_line_bounds(self):
+        cases = [{"sha256": "0" * 64}, {"path": "../outside.md"}, {"path": "missing.md"},
+                 {"start_line": 0}, {"start_line": 2, "end_line": 1}, {"end_line": 3},
+                 {"start_line": True}, {"end_line": "2"}, {"sha256": None}, {"path": None}]
+        for changes in cases:
+            with self.subTest(changes=changes):
+                self.write_corrections([self.correction(source=dict(self.relation["source"], **changes))])
+                with self.assertRaises(ValueError):
+                    reference.load(self.root)
+
+    def test_corrections_reject_missing_keys_and_malformed_rows(self):
+        for row in ([], "invalid", {"id": "partial"}, self.correction(source=None)):
+            with self.subTest(row=row):
+                self.write_corrections([row])
+                with self.assertRaises(ValueError):
+                    reference.load(self.root)
+        correction = self.correction()
+        del correction["source"]["end_line"]
+        self.write_corrections([correction])
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+
     def test_address_names_and_reverse_field_lookup(self):
         data = reference.load(self.root)
         for query in ("0x55BC60", "0055bc60", "Vahren.exe+15BC60", "StatusWnd_Layout", "解雇"):

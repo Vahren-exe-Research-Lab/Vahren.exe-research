@@ -10,6 +10,15 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1c"></a>
+## record + 0x1C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 298](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L298-L298) — [CONFIRMED-TARGET / 保存済みnative] `exe/T006_SELECT_SETTER_FULL.txt` 0x4637A0..0x4638A2を再読。setter 0x4637A0 は entry時にキーをstring化後、`0x46380A push 0x20`→`0x463810 call
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 434](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L434-L434) — [REIMPLEMENT] record+0x1C numeric access、save buffer acquisition、ExplicitNull literalを別の仕様軸として扱う。set/add永続化・battle/RTS再入場でのclear・stream vtable具体targetを推測で埋めない。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-28"></a>
 ## record + 0x28
 

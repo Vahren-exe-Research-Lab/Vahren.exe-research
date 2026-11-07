@@ -71,6 +71,16 @@
 
 - [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x24 master](../structs/Power.md#field-24)。通常セーブへ Power.master を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L151) · `MEM-POWER-SERIALIZE-24`
 
+## 訂正履歴
+
+旧解釈は訂正済みの履歴です。現在の意味は辞書と各訂正の確度・対象を確認してください。
+
+- [Power + 0x24 master](../structs/Power.md#field-24) · `CORRECTION-POWER-MASTER-UNIT-KEY` · `corrected`。勢力名から盟主 Unit の個体キーへ訂正する。
+  - 訂正済みの旧解釈（履歴）　勢力の名前。
+  - → 現在の解釈　盟主の Unit の個体キー。0x4673B0 が 0x467DE0 で Unit として引く。
+  - 確度　静的確認（元の辞書・報告の確認範囲。今回の原作再検証なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../../structs.tsv?plain=1#L58-L58)
+
+
 <a id="field-40"></a>
 ## 0x40 str40
 

@@ -19,6 +19,12 @@
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-28"></a>
+## vtable + 0x28
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 424](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L424-L424) — [VERIFY] vtable+0x28 concrete target、mask0x6の各bitの意味/branch reachability、fallback globalのbuffer境界と0x42A340の入出力、WriteFile error/short writeの実効。ゲーム側の正常saveで各経路が起こ
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-34"></a>
 ## vtable + 0x34
 

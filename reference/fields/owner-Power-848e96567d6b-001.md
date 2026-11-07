@@ -19,6 +19,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1029](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1029-L1029) — \| 0x467579 \| flag=1（push 1）、level obj=EAX=0（直前 test eax,eax で0確定） \| 0x4673B0（addPower op6 0x4A8B53、シナリオ開始 0x45BE10×2）。Power（ctor 0x590560）+0x24 の名前が 0x467DE0 で見
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1d"></a>
+## Power + 0x1D
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 583](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L583-L583) — [VERIFY / REIMPLEMENT] Power+0x1D/Unit+0x74の意味、二つのowner pointerがUI上で何を選択するか、tree走査順とユーザーの直前選択状態の関係、空集合時の表示、0x432010/0x471980等後続の作用は未確定。「player faction」「active h
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-24"></a>
 ## Power + 0x24
 
@@ -66,5 +72,14 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1343](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1343-L1343) — \| 仕様確定・未実装 \| Power+0xDC、戦闘終了LvUp・Unit生成と HP 初期化の規則（§36/§43）、雇用系生成入口（obj 型以外） \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 662](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L662-L662) — [CONFIRMED-SAVED-NATIVE / CROSS-CONNECTION] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F6AF..0x45F6EEはPower復元時、Power+0xDC==0x80000008なら`@scenario`をキーとして`0x463CA0`を
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-2dc"></a>
+## Power + 0x2DC
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 312](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L312-L312) — [CONFIRMED-TARGET / four maps] 同じロード時初期化区間0x45EB74..0x45EC0DはUnit +0x2FC/+0x300、Spot +0x2EC/+0x2F0、Power +0x2DC/+0x2E0の各mapも解放・sentinel reset・count=0化する。これは通常sa
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

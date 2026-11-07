@@ -83,6 +83,16 @@ DAT の数値変数の表
 
 読み手・書き手の個別採録は未実施です。
 
+## 訂正履歴
+
+旧解釈は訂正済みの履歴です。現在の意味は辞書と各訂正の確度・対象を確認してください。
+
+- [GameManager + 0x1EF4B4 turnState](../structs/GameManager.md#field-1ef4b4) · `CORRECTION-GAMEMANAGER-TURNSTATE` · `corrected`。所有先の旧名「外交状態」を訂正する。
+  - 訂正済みの旧解釈（履歴）　外交状態（旧 T014 の名前）。
+  - → 現在の解釈　ターン進行オブジェクト。構造体 TurnState。
+  - 確度　静的確認（元の辞書・報告の確認範囲。今回の原作再検証なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../../structs.tsv?plain=1#L43-L43)
+
+
 <a id="field-1ef4be"></a>
 ## 0x1EF4BE gameClear
 

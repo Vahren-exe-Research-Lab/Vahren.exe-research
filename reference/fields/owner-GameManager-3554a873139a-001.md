@@ -16,6 +16,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3836](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3836-L3836) — - **タイトル画面**: base+0x6AD434（GameManager+0x1EF144）は場面番号。0＝タイトル（0x48AD30、'title_name'）、1＝ワールド、2＝戦闘・マップイベント、4＝シナリオ選択、5＝シナリオ開始、6＝ロード、7＝マップテスト。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1ef4b4"></a>
+## GameManager + 0x1EF4B4
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 6](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L6-L6) — - **「Diplomacy runtime state」は誤った名前**。GameManager+0x1EF4B4 はターン進行オブジェクト（F§59・§62.1・§71.2・§79.2 で静的確認。GM+0x10 がこれを指す）。保存される +0x14 は経過ターン（0x472714 で +1）、+0x38 は段階
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-1ef4ec"></a>
 ## GameManager + 0x1EF4EC
 
