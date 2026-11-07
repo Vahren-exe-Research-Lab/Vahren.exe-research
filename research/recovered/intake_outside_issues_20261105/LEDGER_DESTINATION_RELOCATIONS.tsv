@@ -1,0 +1,2 @@
+source_path	old_destination	new_destination	unchanged_destination_sha256	proof
+dev_lab/docs/REF_SAVE_FORMAT_20261101.md	REF_SAVE_FORMAT.md	research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md	ab8ad91a089936864ce06657fd35decb1a9fa2e65a437ffa1f88c85323026366	Existing accepted bytes relocated to identical immutable source snapshot; mutable canonical bytes unchanged

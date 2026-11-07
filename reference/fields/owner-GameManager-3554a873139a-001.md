@@ -19,7 +19,7 @@
 <a id="field-504"></a>
 ## GameManager + 0x504
 
-- [REF_SAVE_FORMAT.md 行 206](../../REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 206](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE2_20261021.md 行 12](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE2_20261021.md?plain=1#L12-L12) — EはGameEvent=GameManager+0x504。以下E+はGameEvent基準（絶対アドレスでない）。
@@ -76,7 +76,7 @@
 <a id="field-1ef4ec"></a>
 ## GameManager + 0x1EF4EC
 
-- [REF_SAVE_FORMAT.md 行 200](../../REF_SAVE_FORMAT.md?plain=1#L200-L200) — \| knowledge structs GameManager+0x1EF4EC \| 「flag（意味は未確認）」u8 \| ターン進行+0x38（phase、F§71.2） \| KB 修正案 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 200](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L200-L200) — \| knowledge structs GameManager+0x1EF4EC \| 「flag（意味は未確認）」u8 \| ターン進行+0x38（phase、F§71.2） \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,15 @@
+# Verification: knowledge_history1
+
+Verified 2026-11-05 after the coordinator-required stable-snapshot adjustment.
+
+- Exact approved selection: 11 original paths, 146,100 bytes; all current source SHA-256 and byte counts match metadata. All 11 source relative-path identity checks were previously recorded and remain YES.
+- REPORT_LEDGER.tsv: exact nine-column root schema, 10 accepted rows. Coverage is seven fully reviewed complete historical bodies (108,887 bytes) and three complete canonical-baseline snapshots (28,861 bytes), with one metadata-only whole-body deferral (8,352 bytes).
+- Ten archived bodies total 137,748 bytes. Every destination is within this task folder and equals its complete original byte for byte, with matching source/destination SHA-256. There are no privacy changes, trims, normalization or encoding conversions. Every source strictly decodes as UTF-8.
+- Three original/canonical equalities were rechecked before freezing REF_SAVE_FORMAT, REF_SAVE_PERSISTENCE and RESEARCH_INTEGRATION_SNAPSHOT. These copies preserve baseline identity when canonical references later change. They are an explicitly authorized versioning exception to duplicate-body avoidance, not new semantic review. Canonical paths and comparison hashes remain in metadata/identity tables.
+- All 13 preparation input receipts (selection, 1,576-row baseline root ledger and 11 explicitly allowed canonical files) matched their recorded SHA-256 and sizes at final verification. These are preparation-point receipts; later coordinator edits do not constitute an assertion that current workspace files remain unchanged forever.
+- Table row counts: metadata 11, identity 11, scope 11, transform 10, accepted 10, deferred 1. Accepted and deferred paths partition the exact approved list. Transform proofs cover all 10 complete copies with full byte ranges and no replacements.
+- Catalog comparison: seven SHA matches and four historical-catalog revisions, including the same-size integration-snapshot revision. The selection describes current original bytes; no old content was reconstructed.
+- The eight differing bodies received full bounded authored-body review; the three equal canonical files received identity comparison only. Whole held REF_BATTLE_TAKEOVER has no archived body or extracted excerpt. Independent B training-erasure history and periodic castleturn/siegeturn text retain their separate provenance; denied E acceptance and established postbattle/rsc payloads were not fetched.
+- Archived filenames are exactly the ten accepted basenames; REF_BATTLE_TAKEOVER.md is absent. Current canonical files and root-ledger bytes matched input receipts. Writes were restricted to research/recovered/knowledge_history1/. No native/runtime/script command, historical procedure, Git operation, linked target or network fetch ran.
+
+This verifies recovery integrity and scope, not native semantics, runtime behavior, source claim correctness, ABI identity, READY/Golden status or new dictionary adoption. Current canonical REF priority remains explicit.

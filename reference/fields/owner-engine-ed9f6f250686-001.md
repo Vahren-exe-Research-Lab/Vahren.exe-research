@@ -91,6 +91,9 @@
 <a id="field-310"></a>
 ## engine + 0x310
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md 行 18](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md?plain=1#L18-L18) — - Normal writer entry 0x460000 follows command save handler 0x4A17C8 / state builder 0x45F960. It serializes script persistent state at engine+0x310 and separat
+  制約・訂正　Frozen complete canonical baseline copy; identity only, no new semantic review; stable versioning exception authorized
+
 - [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 50](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L50-L50) — - 同関数の疑似コードには `engine+0x310` 数値map、`engine+0x300` Unit/保存側データと複数serializerの走査、`CreateFileA`→`WriteFile`→`CloseHandle`が表示される。既存T014のsave group構造と整合。ただしGhidraが `W
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
@@ -103,7 +106,7 @@
 <a id="field-32c"></a>
 ## engine + 0x32C
 
-- [REF_SAVE_FORMAT.md 行 192](../../REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 192](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 7](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L7-L7) — - **「第5コンテナ」engine+0x32C は放浪中の Unit の集合**（F§26: 0x460E90 が追加、0x460F10 が除去。structs の Ctx+0x32C roamingSet）。セーブには入らない。ロードで空にした後、+0x84（放浪先）が空でない Unit に 0x460E90 を呼
@@ -219,6 +222,12 @@
 
 <a id="field-1eec71"></a>
 ## engine + 0x1EEC71
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 188](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L188-L188) — - しかし両helper帰還後に共通tail VA 0x4A2DADへ進み、`byte [engine+0x1EEC71]=0` と `byte [viewport+0x4A4]=0` を必ず書く。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 190](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L190-L190) — - playWorld coreは通常world playlist start path VA 0x48F00Bで `engine+0x1EEC71=1` を設定し、既にflag==1ならrestartを避けるbranchも持つ。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 292](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L292-L292) — - opcode40 `setWorldMusic` は副作用が `byte [engine+0x1EEC71]=1` のみ、opcode41 `resetWorldMusic` は同byte=0のみ。双方Continue。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
@@ -363,6 +372,9 @@
 
 <a id="field-1ef4be"></a>
 ## engine + 0x1EF4BE
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 164](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L164-L164) — - `isGameClear` はcondition opcode 0で、evaluator case0 VA 0x44F530は `engine+0x1EF4BE` byteをboolとして返す。flag writer/transition timingはVERIFY継続。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 238](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L238-L238) — - condition registryでは `isGameClear` = condition opcode 0。evaluator VA 0x44F470 のcase0 VA 0x44F530は `engine+0x1EF4BE` のbyteをそのままbool結果として返す。flagのexact writer/tr
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read

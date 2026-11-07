@@ -1,0 +1,11 @@
+# Verification
+
+PASS,2026-11-05JST. Both full selected issue bodies have exact UTF-8 roundtrips, returned UTF-16 character counts, SHA256 and byte-size agreement with capture and nine-column ledgers. Two accepted snapshots total15,263bytes; no baseline body alias, privacy edit or whole-body deferral. SourceURIs are the exact returned issue URLs; body-only scope is explicit in receipts.
+
+The18path crosswalk covers exactly nine Issue2 table pairs:11accepted paths,seven unaccepted; only pairs2,7,9 have two accepted targets. All49input SHA/byte receipts match immutable Git7def491b8b982b624f8c301c6c903047e99b1a2e metadata or explicitly permitted accepted Markdown. Eleven accepted evidence documents match ledger destination hashes. Every saved literal excerpt matches its exact pinned lines. Pair7's storage receipt lists the hash of the accepted research report. All canonical source-cell ID/path hit totals are zero for this bounded nine-pair set; that is not semantic-absence proof.
+
+Fixed catalog1937/795non-UNSET IDs/861UNSET/170shared-ID groups/19recorded-SHA duplicate groups are metadata-only comparisons. Issue4's old29/766/74 linkage numerators, V9,Library,PC-current identity and native results were not rerun. Thirty-two identity metadata files do not constitute a universal primary-ID registry.
+
+Both issue bodies were reviewed in full before retaining them. Existing scope boundaries remain: no substantive held payload/assets or unresolved privacy found. Opaque refusal/status history was kept separate from native-acquisition and owner-write claims. Existing operational instructions were inert. Exactly two network calls fetched issue bodies; comments,linked PR/source/native/script/JSON/log/DB/archive/game artifacts and originals were not fetched. No posting/status/dictionary/Git/shared mutation occurred. Only the assigned folder was written.
+
+All output text strictly decodes as UTF-8. Privacy scanner rejects raw personal profile paths,credential-shaped strings and private-key markers; no findings. OUTPUTS.tsv records final output SHA256 and sizes,excluding itself. This is a mutable latest-body snapshot and bounded crosswalk,not full history,all-comment coverage,automatic CURATED adoption or issue closure.

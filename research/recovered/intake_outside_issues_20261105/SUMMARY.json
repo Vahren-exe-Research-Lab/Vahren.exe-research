@@ -1,0 +1,19 @@
+{
+  "base": "7def491b8b982b624f8c301c6c903047e99b1a2e",
+  "local_accepted_rows": 23,
+  "fully_reviewed_historical_local": 20,
+  "canonical_identity_only_frozen_snapshots": 3,
+  "existing_body_destinations_frozen_without_duplication": 1,
+  "selected_issue_snapshots": 2,
+  "new_root_rows": 25,
+  "root_ledger_rows": 1601,
+  "outside_scope_paths": 24,
+  "outside_scope_accepted": 23,
+  "outside_scope_deferred": 1,
+  "issue_pair_paths_current_accepted": 12,
+  "issue_pair_paths_unaccepted": 6,
+  "issue_pairs_both_present": 4,
+  "newly_available_pair3_draft": true,
+  "original_cleanup": "NOT_PERFORMED",
+  "scope": "23exactliteral local originals checked; heldtakeover original notopened byparent. Two capturedIssuebodies exactUTF8 snapshots,no comments/history/linkedpayloads. No canonicalsemantic/native/runtime promotion."
+}

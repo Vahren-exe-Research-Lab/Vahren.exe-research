@@ -64,7 +64,7 @@
 <a id="field-504"></a>
 ## base + 0x504
 
-- [REF_SAVE_FORMAT.md 行 206](../../REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 206](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 11](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L11-L11) — - world-base+0x504 は FINDINGS §82 の E（スクリプトエンジン、G+0x504）と同じ。世界地図グラフはその中の木（E+0x1EEBCC/+0x1EEBD0）。

@@ -58,6 +58,15 @@
 <a id="field-44"></a>
 ## outer + 0x44
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 136](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L136-L136) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L12-L12) — - `0x5D4A68`で管理構造体 `outer+0x68` をEBXへ読込み、`0x5D4A6C`にてリスト後処理 `0x5D49F0` を実行。`0x5D4A77/79`で `outer+0x44` が非NULLならfreeする。`0x5D4A84/86`では**配列親EBXのみ**NULL判定し、NULLなら全
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -81,6 +90,12 @@
 
 <a id="field-48"></a>
 ## outer + 0x48
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 136](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L136-L136) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md 行 7](../../research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md?plain=1#L7-L7) — - `0x428680` sets `EDI=incoming_ECX+0x58`, then `ESI=EDI-0x48=incoming_ECX+0x10`, writes `[ESI]=0x63848C`, calls context-ESI `0x42A9A0`, and calls `0x4296E0(ECX
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
@@ -106,6 +121,9 @@
 <a id="field-4c"></a>
 ## outer + 0x4C
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVID
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L12-L12) — - `0x005D4A23`は `outer+0x50`を取得、`0x005D4A26/28`で0か検査。**非0の場合のみ** `0x005D4A2A..0x005D4A34`で `realloc(outer+0x44, outer+0x4C + outer+0x50)` を呼ぶ（E8 `0x005D4A34→0x0
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -117,6 +135,12 @@
 
 <a id="field-50"></a>
 ## outer + 0x50
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 136](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L136-L136) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L24-L24) — - Native .rdata at `0x6384E4` contains little-endian **0x50**, the adjustment read from `[outer vptr+4]` after `0x42A2DD mov [outer],0x6384E0`. Thus `0x42A4C0`
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
@@ -142,6 +166,9 @@
 <a id="field-54"></a>
 ## outer + 0x54
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 131](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L131-L131) — - ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATI
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L11-L11) — - `0x005D49F0..0x005D4A52` は `outer+0x54` の単方向リストを、各ノードの次ポインタ `node+4` を退避してからペイロード・ノード順にfreeし、`outer+0x54/+0x48`をNULLにする。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -150,6 +177,9 @@
 
 <a id="field-58"></a>
 ## outer + 0x58
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 21](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L21-L21) — - Both branches converge on native cleanup calls `0x005CF1F2 -> 0x005D3DE0`, `0x005CF1FB -> 0x005D3D00`, with state `outer+0x58=2` at `0x005CF20A`. Separate pac
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 6](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L6-L6) — 2. V9と一致する同じcalleeへの後段 `0x005D0D67 E804ECFFFF CALL 0x005CF970` は既存08H調査済み。前段で`0x005D0D48`に既知serial indexを`outer+0x60`へ、`0x005D0D4B`にstate=3を`outer+0x58`へ格納後に呼ぶ経
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
@@ -184,6 +214,15 @@
 <a id="field-68"></a>
 ## outer + 0x68
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 116](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L116-L116) — - ID `REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`. At `0
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 119](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L119-L119) — - ID `REA-LOCAL-20261031-16H-P0-VORBIS-POSTINIT-OTHER-CALLERS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md`. Or
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 125](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L125-L125) — - ID `REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L14-L14) — - `0x005D4D20` は入力outerの `+0x68`（`0x5D4D2A..2F`）、`+0x04`（`0x5D4D37..39`）、`[outer+4]+0x1C`（`0x5D4D3B..40`）の順にNULLを検査し、いずれか欠損なら `0x005D4D31` から **-1** で早期returnする
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -216,6 +255,9 @@
 
 <a id="field-2c8"></a>
 ## outer + 0x2C8
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 82](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L82-L82) — - REA/T015 ID REA-LOCAL-20261031-00H-P0-OGG-FILE-CLOSE-CALLBACK-STATIC-01; source rea_lab/decomp_task/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md with EVIDENC
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 9](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L9-L9) — - **新規の例外境界**：`0x005CFE00` は `0x005CFEE3` で `outer+0x2C8` の関数ポインタを読み、`outer[0]!=0` かつ関数ポインタ非NULLなら `0x005CFEEE call eax` を実行する。これは22Hに解決した内部descriptor型デストラクタ3箇所
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS

@@ -7,6 +7,15 @@
 <a id="field-1eed30"></a>
 ## context + 0x1EED30
 
+- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md 行 14](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md?plain=1#L14-L14) — - **Bounded negative evidence only:** inspected direct dereferences of the sixth/arg8 tree-container pointer are reads/comparisons; **no direct store through th
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md 行 18](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md?plain=1#L18-L18) — - **Next lawful cursor:** identify true `context+0x1EED30/34` tree writer via bounded original-x86 callers/field xrefs, then inspect other `0x48F9E0` callers an
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md?plain=1#L8-L8) — - Clear end `0x4F8F01 MOV [EAX+4],EAX`, `0x4F8F07 MOV [EAX],EAX`, `0x4F8F0D MOV [EAX+8],EAX` sets the header links to itself; `0x4F8F10 MOV [EDI+8],0` sets cont
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
 - [research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md?plain=1#L19-L19) — - **Next legal cursor:** inspect only an independently warranted source writer/alias path for `context+0x1EED30/34` (not inferred from this read-only helper), a
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 

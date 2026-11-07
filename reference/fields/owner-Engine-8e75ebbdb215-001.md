@@ -10,6 +10,12 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 48](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L48-L48) — └─ [Engine+0x08] = 0x008BE378  (GameWindow)
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+<a id="field-310"></a>
+## Engine + 0x310
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md 行 20](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md?plain=1#L20-L20) — - Engine+0x310 script map includes @evtend_<event> execution markers. yet(name) tests the marker; common event invocation 0x4321B0 can mark it. event/call and r
+  制約・訂正　Frozen complete canonical baseline copy; identity only, no new semantic review; stable versioning exception authorized
+
 <a id="field-1e8630"></a>
 ## Engine + 0x1E8630
 

@@ -1,0 +1,36 @@
+[
+  {
+    "number": 2,
+    "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/2",
+    "title": "[KB GH-only VERIFY] KB-20261101-GITHUB-ONLY-TRIAGE-01: 9 nonstandard ID pairs + V9 current baseline",
+    "updated_at": "2026-10-31T22:48:23Z",
+    "created_at": "2026-10-31T22:48:23Z",
+    "state": "open",
+    "comments_count_metadata_only": 0,
+    "utf16_chars": 7942,
+    "body_bytes": 7946,
+    "body_sha256": "769d2c8fe764dd457e14be32650498c6adbc562b163b9585477800a3cbb58e28",
+    "capture_utc": "2026-11-05T01:20:52.647387+00:00",
+    "tool": "GitHub connector fetch_issue",
+    "selection": "Latest returned issue.body Unicode string only; no comments/history/linked artifacts",
+    "hash_scope": "Exact selected Unicode body encoded as UTF-8, not GitHub server database bytes",
+    "body_lines": 41
+  },
+  {
+    "number": 4,
+    "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4",
+    "title": "[KB linkage] KB-LINKAGE-20261101-1937 — source ID traceability and uncurated research queue",
+    "updated_at": "2026-11-05T01:09:45Z",
+    "created_at": "2026-11-01T12:21:22Z",
+    "state": "open",
+    "comments_count_metadata_only": 52,
+    "utf16_chars": 7087,
+    "body_bytes": 7317,
+    "body_sha256": "fc981e228ed7f19f5b59ac07f4077d871b03ddf4c31d92e04c012d45aa601064",
+    "capture_utc": "2026-11-05T01:20:52.648394+00:00",
+    "tool": "GitHub connector fetch_issue",
+    "selection": "Latest returned issue.body Unicode string only; no comments/history/linked artifacts",
+    "hash_scope": "Exact selected Unicode body encoded as UTF-8, not GitHub server database bytes",
+    "body_lines": 33
+  }
+]

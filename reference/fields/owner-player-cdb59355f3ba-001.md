@@ -10,6 +10,12 @@
 - [research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md 行 9](../../research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md?plain=1#L9-L9) — - Normal playBGM passes playback arg3=1, stored as player +0x0A=1; therefore MP3 EC_COMPLETE is consumed by predicateA and current track is restarted in-place.
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
+<a id="field-38"></a>
+## player + 0x38
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 450](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L450-L450) — [OLD CLAIM / SUPERSEDE ONLY] D-20261013-0241-02等の局所表記「player+0x38==playlist index」を新実装の現行仕様へ転記しない。元Dレーン資料をEから書換えず、正本E監査で解釈差だけを明示。過去に確定済みのstop/fade/EOF処理そのものを無効化
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 <a id="field-a0"></a>
 ## player + 0xA0
 

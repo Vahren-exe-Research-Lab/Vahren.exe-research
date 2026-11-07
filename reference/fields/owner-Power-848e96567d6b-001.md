@@ -7,9 +7,6 @@
 <a id="field-1c"></a>
 ## Power + 0x1C
 
-- [REF_SAVE_FORMAT.md 行 32](../../REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
-  制約・訂正　Existing full body linked; catalog revision differs
-
 - [research/recovered/DEVLAB_NATIVE_SAVE_COMPLETE_WIRE_20261011.md 行 11](../../research/recovered/DEVLAB_NATIVE_SAVE_COMPLETE_WIRE_20261011.md?plain=1#L11-L11) — - 0x4708A0はRAMの1byteをゼロ拡張したu32LEで書き込む（PUSH size=4→0x4628F0）。Unit+0x74～0x7A, +0xE8／Power+0x1C, +0x1D／Diplomacy 2flags／WorldGraph Path+0x88を含む。古いunit_runtime_pref
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included; historical save terminology/counts require later REF_SAVE_FORMAT.md S1101 correction crosscheck; no current semantics promoted
 
@@ -18,6 +15,9 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1029](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1029-L1029) — \| 0x467579 \| flag=1（push 1）、level obj=EAX=0（直前 test eax,eax で0確定） \| 0x4673B0（addPower op6 0x4A8B53、シナリオ開始 0x45BE10×2）。Power（ctor 0x590560）+0x24 の名前が 0x467DE0 で見
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 32](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
+  制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 176](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L176-L176) — - 保存済みnative writer (0x460000 / 0x58EFD0 / 0x598CE0 / 0x596AA0 / 0x471D20 / 0x435C10 + vtable 0x5A93F0/0x5B0600)、Ghidra全関数疑似C、ユーザー原作実savを照合。Unitメモリbyte+0x74..7A
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
@@ -31,10 +31,10 @@
 <a id="field-24"></a>
 ## Power + 0x24
 
-- [REF_SAVE_FORMAT.md 行 199](../../REF_SAVE_FORMAT.md?plain=1#L199-L199) — \| knowledge structs Power+0x24 \| 「勢力の名前」 \| 盟主の Unit の個体キー（出典 F§32 自体がそう書いている） \| KB 修正案 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 199](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L199-L199) — \| knowledge structs Power+0x24 \| 「勢力の名前」 \| 盟主の Unit の個体キー（出典 F§32 自体がそう書いている） \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
-- [REF_SAVE_FORMAT.md 行 204](../../REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 204](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
@@ -55,7 +55,7 @@
 <a id="field-74"></a>
 ## Power + 0x74
 
-- [REF_SAVE_FORMAT.md 行 208](../../REF_SAVE_FORMAT.md?plain=1#L208-L208) — 未確認のまま: Unit の +0x76・+0x130 の表、+0x79 の詳しい意味、Spot +0x64、Power +0x74・+0xB4、+0x40 の正体、auto（7 世代の残り）がゲームで読めるか（save3 は実機確認済み）。
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 208](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L208-L208) — 未確認のまま: Unit の +0x76・+0x130 の表、+0x79 の詳しい意味、Spot +0x64、Power +0x74・+0xB4、+0x40 の正体、auto（7 世代の残り）がゲームで読めるか（save3 は実機確認済み）。
   制約・訂正　Existing full body linked; catalog revision differs
 
 <a id="field-b0"></a>
@@ -76,6 +76,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1224](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1224-L1224) — \| Power+0xD4 / +0xD8 \| training_average / training_up \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-d8"></a>
+## Power + 0xD8
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 34](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L34-L34) — - Original PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187` was independently read back. Native E8 at `0x472081` calls `0x595320`; t
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-dc"></a>
 ## Power + 0xDC
 
@@ -90,6 +96,9 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1343](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1343-L1343) — \| 仕様確定・未実装 \| Power+0xDC、戦闘終了LvUp・Unit生成と HP 初期化の規則（§36/§43）、雇用系生成入口（obj 型以外） \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 473](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L473-L473) — [OPEN CONTRADICTION / DO NOT INFER] 宣言なしrsc2..rsc5、旧SAVEのscenario文字列復元可能性、generic lookupの欠落許容はそれぞれ別契約。後続のfield+0x20値、Power+0xDC、他のvalidation、World/Spot/Unit復帰、選
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 662](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L662-L662) — [CONFIRMED-SAVED-NATIVE / CROSS-CONNECTION] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F6AF..0x45F6EEはPower復元時、Power+0xDC==0x80000008なら`@scenario`をキーとして`0x463CA0`を
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
