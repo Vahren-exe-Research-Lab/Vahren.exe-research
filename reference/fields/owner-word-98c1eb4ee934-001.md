@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-74"></a>
+## word + 0x74
+
+- [research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md?plain=1#L6-L6) — [NEW/PATH] 候補なし時0x54F75A push0x218→0x5B6C2B allocate、非NULL時[ESI]=0x63A6B4（vtable候補）、[ESI+8]=0x63A544、+0x14/+0x48/+4C/+50/+54/+58/+5C/+60を0、+0x64=0xFF、+0x68=0xFF
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-78"></a>
 ## word + 0x78
 

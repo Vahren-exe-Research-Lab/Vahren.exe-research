@@ -4,10 +4,22 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-b0"></a>
+## input + 0xB0
+
+- [research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md 行 9](../../research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md?plain=1#L9-L9) — - `0x00597B00` は入力EAXの `+0xB0` が指す所有領域から `+0x2DC` を経由しリスト/ツリーを検索。候補オブジェクトの `+0x68` と `0x00415460` の比較値が不一致なら候補ポインタを返す。該当無しなら `[input+0xB0]+0x58` を返す。リストの意味・キーの型
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-e0"></a>
 ## input + 0xE0
 
 - [research/recovered/b_batch2/T028_NAMED_RESOLVER_SENTINEL_ROSTER_SEED_NATIVE_20261028_07H.md 行 11](../../research/recovered/b_batch2/T028_NAMED_RESOLVER_SENTINEL_ROSTER_SEED_NATIVE_20261028_07H.md?plain=1#L11-L11) — - miss（EAX=0）では0x59175C/762の一回限りのlazy init flag [0xB05BFC] を通り0x59176B CALL0x582AA0、0x591775 atexit登録。0x59177D [0xB05BCC]=[input+0xE0]を書き、0x591788/78Eで2バイト状態を0へ
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-1a4"></a>
+## input + 0x1A4
+
+- [research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md 行 10](../../research/recovered/rea_batch9/reports/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md?plain=1#L10-L10) — - `0x00583C70` は入力EAXの `+0x94` を検査し、非ゼロなら `[input+0x1A4]+0x58` へ。ゼロなら `[input+0x1A4]+0x2F0` の候補リストを走査、候補 `+0x20` と `0x00415460` の値を照合。不一致時は `0x583CDD MOV EAX,ES
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

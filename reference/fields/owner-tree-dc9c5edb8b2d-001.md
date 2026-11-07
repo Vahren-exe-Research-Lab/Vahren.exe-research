@@ -10,4 +10,10 @@
 - [research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md 行 15](../../research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md?plain=1#L15-L15) — [KB_CANDIDATE] B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01 / owner B/T011 / source 上記PE window SHA / CALL 0x4DEFCF→0x4DEC70 / offsets node+0x15, tree+0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-2c"></a>
+## tree + 0x2C
+
+- [research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md 行 5](../../research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md?plain=1#L5-L5) — [CALLEE] 0x005149C0はPerson様containerの+0x48/+0x4C、+0x58/+0x5C、+0x38/+0x3Cのvector終端を先頭へ戻し、tree +0x2C/+0x30、+0x24、+0x08もresetするGhidra静的C。単一vector専用関数ではない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

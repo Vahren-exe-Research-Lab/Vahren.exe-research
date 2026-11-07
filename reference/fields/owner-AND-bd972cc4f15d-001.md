@@ -10,4 +10,16 @@
 - [research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md 行 9](../../research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md?plain=1#L9-L9) — - callee 0x497BB0 のnative 0x497C0D/0x497C12はcandidate+0x77=0 AND +0x75=0を検査。両方0の枝では0x497C17 ECX(受けた配列ポインタ)!=0なら0x497C2B LEA EAX,[ESP+0x1C]、0x497C2F MOV EDI,ECX→
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-a8"></a>
+## AND + 0xA8
+
+- [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L7-L7) — V3 FUNCTION 0x00569280 (222 bytes, stored Ghidra pseudoC, ABI_UNVERIFIED): writes group-like object +0x34=0 on entry, walks [object+0x0C, +0x10) Unit pointers,
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-1e530"></a>
+## AND + 0x1E530
+
+- [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L7-L7) — V3 FUNCTION 0x00569280 (222 bytes, stored Ghidra pseudoC, ABI_UNVERIFIED): writes group-like object +0x34=0 on entry, walks [object+0x0C, +0x10) Unit pointers,
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

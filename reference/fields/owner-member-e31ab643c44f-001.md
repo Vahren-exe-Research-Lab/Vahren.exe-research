@@ -13,6 +13,9 @@
 <a id="field-1867d"></a>
 ## member + 0x1867D
 
+- [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 10](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L10-L10) — V3 0x00568FB0 pseudoC: when Group+0x1D !=0, clears member +0x1867D flags, calls 0x00576F70 for still-alive entries, logically empties group vector, then recalcu
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 61](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L61-L61) — - **Golden必要条件**：同一ver0.67でAL0/1の4経路、group+0x1D=0/1、member vector空/1/複数、member+0x1867C=0/1、member+0x1867D=0/1、`+0x186A4/A8`のBefore/After、グループ+0x1C/+0x1E、タイマー・DA
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 

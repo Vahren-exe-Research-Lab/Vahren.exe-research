@@ -64,6 +64,18 @@
 - [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 4](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L4-L4) — [CALLSITE] root Skill+0x26F!=0・stage-A解決child+0x74!=0で57EA58/70→54F720、後続root Skill+0xF4!=0・stage-B child+0x74!=0で57EB17→54F720（各callee正常return等が前提）。stage間にUnit
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-88"></a>
+## child + 0x88
+
+- [research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_STATIC.md 行 17](../../research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_STATIC.md?plain=1#L17-L17) — - 内部本体 `0x005B1330～0x005B13CB` は子オブジェクト中の2つのリンク構造を掃除する。Ghidra出力と命令参照の対応は `child+0x94 / +0x98` と `child+0x88 / +0x8C`。それぞれ先頭（sentinel）と要素数と解釈される。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+<a id="field-94"></a>
+## child + 0x94
+
+- [research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_STATIC.md 行 17](../../research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_STATIC.md?plain=1#L17-L17) — - 内部本体 `0x005B1330～0x005B13CB` は子オブジェクト中の2つのリンク構造を掃除する。Ghidra出力と命令参照の対応は `child+0x94 / +0x98` と `child+0x88 / +0x8C`。それぞれ先頭（sentinel）と要素数と解釈される。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-1c8"></a>
 ## child + 0x1C8
 

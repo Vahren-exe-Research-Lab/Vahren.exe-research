@@ -64,6 +64,9 @@
 - [research/recovered/b_batch6/data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md 行 50](../../research/recovered/b_batch6/data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md?plain=1#L50-L50) — `KB_CANDIDATE` owner=B tasks=T011/T024、研究ID=`B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01`。VA `0x526030`、命令サイト `0x526074/77/7A/7D/7F/81`、先
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L6-L6) — [KIND4] Skill+0x40==4 reaches 0x54FA3F onward for angular/distance selection. Depending on provided coordinate pointer & optional command ref, calculates dx²+dy
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3215](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3215-L3215) — - ユニットの判定矩形は Unit+0x40..+0x4C。Unit+0x230≠0 なら、その半径の正方形（下端基準）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -280,6 +283,12 @@
 - [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 14](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L14-L14) — 距離側候補はアンカー+0x220/+0x224と相手+0x220/+0x224の座標差二乗和から `0x00569453 → 0x005E3B70`へ渡す。上限候補はTroop+0x34 + 2*アンカーUnit+0x228（Unit+0xB0/+0xA8/+0x1E530の代替0値条件あり）。正確なFPU特殊値はVE
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L7-L7) — V3 FUNCTION 0x00569280 (222 bytes, stored Ghidra pseudoC, ABI_UNVERIFIED): writes group-like object +0x34=0 on entry, walks [object+0x0C, +0x10) Unit pointers,
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 8](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L8-L8) — 今回増分2: 0x00569360 は先頭候補/比較相手に Unit+0x1867C==0 および +0x1867E==0 を要求し、Unit+0xB0/+0xA8/+0x1E530の条件に従って Unit+0x228 または0を使う。生存者集計の0x569280と違い+0x1867Eも除外条件。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 19](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L19-L19) — アンカーごとの近接許容半径の候補値は、通常の符号付き32bit非オーバーフロー範囲で `R = group+0x34 + 2 * anchorUnit+0x228`。ただしアンカーについて `Unit+0xB0==0 && Unit+0xA8==0 && Unit+0x1E530 < global[0x65BC5C]`
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
@@ -372,20 +381,5 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3468](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3468-L3468) — - Unit+0x130 は ch_karate を指していたため、選択中の技能を示すフィールドではない。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-134"></a>
-## Unit + 0x134
-
-- [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 9](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L9-L9) — - Skill+0x40がkind1 → Unit+0x134=1（VA0x5739E4..FA）。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-<a id="field-135"></a>
-## Unit + 0x135
-
-- [research/recovered/b_batch5/data/T011_SKILL4C_DUAL_WRITER_MP_GATE_20261013.md 行 8](../../research/recovered/b_batch5/data/T011_SKILL4C_DUAL_WRITER_MP_GATE_20261013.md?plain=1#L8-L8) — [GOLDEN-DESIGNED/NOT RUN] 原作sourceで0x624878プロパティ名が独立許可の既存証拠から確定した場合に限り、値0/1/正とcost10,actorMP9/10,MPREC-1/0/1、Unit+0x135 bow flag、通常heal/normal missile/allfuncの合
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md 行 7](../../research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md?plain=1#L7-L7) — [PRIOR MP NATIVE] B既存T011_SPECIAL_PROPERTY_SKILL4C_20261013.md/B-20261013-1740-01: Skill parser 0x59A30E..0x59A398はon→+0x4C=1 /その他 numeric getter→+0x4C。raw off
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

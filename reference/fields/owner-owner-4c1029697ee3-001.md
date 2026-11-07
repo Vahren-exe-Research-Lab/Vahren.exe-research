@@ -181,6 +181,9 @@
 <a id="field-1ef4c8"></a>
 ## owner + 0x1EF4C8
 
+- [research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md 行 59](../../research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md?plain=1#L59-L59) — EAX = [owner + 0x1EF4C8]
+  制約・訂正　Historical claims; PC save/readback not newly proven; no linked evidence read; no new READY/DONE/Golden/runtime credit
+
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 420](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L420-L420) — [CONFIRMED SAVED X86 / NEW DELTA] A既存`exe/T031_PHASE_OVERLAP_PROBE.txt` VA0x46B858..0x46B8A3は、ある条件枝でEAX=0x7FFFFFFF(0x46B86D)を返し、別枝0x46B874..0x46B89Fでは`EAX -= [o
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 

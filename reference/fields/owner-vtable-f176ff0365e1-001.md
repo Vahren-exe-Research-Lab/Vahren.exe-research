@@ -73,6 +73,12 @@
 - [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 17](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L17-L17) — - vtable +0x14(第5スロット)と2引数は IDirectMusicAudioPath8::SetVolume(LONG, DWORD) に一致。duration=0 msの即時適用を指定し、ユーザー側fadeは別途+0x20による逐次更新で制御する。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+<a id="field-18"></a>
+## vtable + 0x18
+
+- [research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md?plain=1#L10-L10) — [DELTA/REIMPLEMENT] 前ID B-20261013-1122-01は54E0B0→550980→551490のcall順まで確定。本件の独立増分はpool初期化・reuse判定+0x6C・record+0xA8初期化・vtable+0x18 callback・return pointer/append
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
@@ -204,6 +210,12 @@
 
 - [research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md 行 20](../../research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md?plain=1#L20-L20) — - 0x4A3B46..50は候補vectorの4byteポインタ件数でloop。0x4A3B66 [vtable+0x64]→0x4A3B69 CALL EAX、falseはskip。trueならmode>=0時0x4A3B8F CALL0x4189B0、mode<0時0x4A3BA7 CALL0x431BE0。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-68"></a>
+## vtable + 0x68
+
+- [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 17](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L17-L17) — - 0x44D002 unit[+0x1867C]!=0はskip。残りはunit[+0x1D0] pointer非NULLが必須。0x44D00B unit[+0x18615]==0の場合はpointer非NULLだけで0x44D033へ、+18615!=0の場合はpointer[+0x1F]!=0かつpointer
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-70"></a>
 ## vtable + 0x70

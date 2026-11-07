@@ -202,6 +202,12 @@
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 138](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L138-L138) — - `isMap/isEvent` opcode4 -> VA 0x44F5B0: `engine+0x1EF140 == 2`
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
+<a id="field-1ef148"></a>
+## engine + 0x1EF148
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 11](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L11-L11) — 今回増分5: 0x0056AB20 は Group+0x3Cを増分後、%100==0 の条件付きブロックから2 CALLを評価する。外側の +0x1C と engine+0x1EF148 の条件があるので100tick無条件実行とはいえない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-1ef175"></a>
 ## engine + 0x1EF175
 
