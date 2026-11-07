@@ -247,6 +247,12 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 955](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L955-L955) — - [C OWNED EVIDENCE] `evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json`（4494B、schema V1、3件×3 capture、Power逆参照、Spot.member counts、Unit+0x84、actu
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 879](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L879-L879) — [CONFIRMED-TARGET-SAVED-UNIT-INDEX] save1 sp50 Spot.member=0でもUnit isamaはunlistedで別Unit+0x84のSpot参照sp50を保持。save2 sp50 Spot.member=83の内部にisamaが入り、+0x84は保存別参照名簿に現
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 880](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L880-L880) — [CONTRAST] C-NB02/01は保存Spot.memberが存在するのに参照Power無し。C-NB03はpo29の保存Power参照有り／Unit+0x84とSpot.memberの違い有り。よって比較用G0で中立守備・po29所有などを自動補完せず、実力関係を合法UI画面と開戦直前SAVE／ランタイム状態
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 328](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L328-L328) — [VERIFY] engine+0x32Cの具体的用途、save groupとの対応、load後の再構築経路、戦闘/ターン跨ぎの寿命は未解明。第5「永続save group」と呼ぶ根拠はまだ無く、一時cache/別種mapの可能性を保持する。 **【解決 2026-11-01】** 放浪中の Unit の集合（F§26
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -345,14 +351,5 @@
 
 - [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 393](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L393-L393) — [NEW ORIGINAL ASM] 0x41F007 JE0x41F07E: mode0はouter ownerを順走査し先頭Unit+0x8C==0/+0x1F8!=0の最初のownerで0x41F0C1→0x41F0CF/0x41F0DF「そのownerのinner length +3」を計算して0x41F0E2
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
-
-<a id="field-8d"></a>
-## Unit + 0x8D
-
-- [research/recovered/b_batch6/data/T012_FLASH_PROPERTY_EFFECT_RING_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_FLASH_PROPERTY_EFFECT_RING_20261013.md?plain=1#L5-L5) — [HEAL CALLER] B保存exe/T012_HEAL_ATTR_PROBE.txt 0x551C7F..0x551CED：回復/属性効果call551E50後、ctx byte+0xE!=0且つSkill+0x248 signed>0且つtarget Unit+0x1867C==0 / Unit+0x8D==0
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md?plain=1#L6-L6) — [OPTIONAL-CHILD] ctx+E!=0、Skill+0x248 signed>0、Unit+0x1867C==0かつUnit+0x8D==0の場合、0x551CBEでUnit+0x185F8++、>=8なら0に戻し、0x551CD9で8×(? exact stride0x264) のslot pointer
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

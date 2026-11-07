@@ -304,6 +304,9 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 427](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L427-L427) — [CONFIRMED-SAVED-NATIVE] variable/list opcode40 shuffle の handler は `exe/T031_STRINGOP_HANDLERS.txt` 0x4B044F..0x4B04BD。0x4B0492 でlookup結果を engine+0x1E8640 のsen
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 402](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L402-L402) — [NATIVE HANDLER→CORE / A所有証拠をread-only直接照合] `exe/T031_STRINGOP_HANDLERS.txt` のvariable/list opcode40 `shuffle` handler VA0x4B044F..0x4B04BD：lookup nodeがsentinel
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 <a id="field-1e8b34"></a>
 ## engine + 0x1E8B34
 
@@ -375,8 +378,5 @@
 
 - [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 11](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L11-L11) — - CRITICAL IMPLICATION: 死亡後両callerの明示flag=1は「常にhistory writerへ行く」を意味しない。0x49CD60を2回呼んだ後のlive engine+0x1EEC44状態に応じて0x4321B0内部のdispatch・履歴処理が異なる。先行virtual+58/0x49
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 20](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L20-L20) — - 入口`in_stack_0000002c !=0 && engine+0x1EEC44 !=0`はearly special route（0x4321B0のgeneral bodyをskip）。このbranchは同関数内数値writer`0x4637A0`のsite 0x432379、通常の`0x40B200`3
-  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -327,8 +327,8 @@
 0x4A2793	code	World_DispatchSkinRebuild	スクリプト worldskin（opcode24）の処理位置。derived world skin を作り直す 0x5B47B0 を呼ぶ。	静的確認	T015§worldskin / showSpot / hideSpot
 0x4A2ED6	code	Spot_DispatchShowSpot	スクリプト showSpot（opcode42）の処理位置。Spot 表示オブジェクトを取得または生成して表示する。	静的確認	T015§worldskin / showSpot / hideSpot
 0x4A304A	code	Spot_DispatchHideSpot	スクリプト hideSpot（opcode43）の処理位置。既存Spotの表示オブジェクトの非表示処理を呼ぶ。	静的確認	T015§worldskin / showSpot / hideSpot
-0x4A71AA	code	Power_RegisterUnionPower	World の builtin 登録領域で unionPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録
-0x4A6FE1	code	Power_RegisterAddPower	同じ World builtin 登録領域で addPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録
+0x4A71AA	code	Power_RegisterUnionPower	World の builtin 登録領域で unionPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録; data/T025_STRATEGIC_PROGRESSION.md lines188-191 [locator-only; recovered=research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md; sha256=ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa; registration site, not handler entry or power-map effects]
+0x4A6FE1	code	Power_RegisterAddPower	同じ World builtin 登録領域で addPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録; data/T025_STRATEGIC_PROGRESSION.md lines188-191 [locator-only; recovered=research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md; sha256=ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa; registration site, not handler entry or power-map effects]
 0x5973AF	code	Spot_ApplyCapacityFallback	Spot 読込時に固有 capacity が0なら scenario 側の容量値を採用する分岐。	静的確認	T009§Capacity / range normalization correction
 0x597412	code	Spot_ClampCapacityTo24	Spot 容量の最終値を最大24へ制限する付近の位置。	静的確認	T009§Capacity / range normalization correction
 # ---- 画面・入力・音 ----

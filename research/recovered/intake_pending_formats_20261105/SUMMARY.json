@@ -1,0 +1,33 @@
+{
+  "base": "a06d86cc84a565d03a58b668209010b03907646d",
+  "new_root_rows": 6,
+  "new_local_source_rows": 5,
+  "existing_aliases": 8,
+  "new_exact_generated_inventories": 2,
+  "new_schema_only_partial": 1,
+  "new_pointer_only": 1,
+  "new_historical_git_snapshot": 1,
+  "root_ledger_rows": 1619,
+  "documents": 1591,
+  "technical_schema_value_spans": 206,
+  "new_privacy_edits": 0,
+  "existing_privacy_variant_revalidated": 1,
+  "inventory_states": {
+    "RECOVERY_RECEIPT_PRESENT": 1494,
+    "KNOWN_REVIEW_HOLD": 100,
+    "DEFERRED_OTHER_OR_PENDING": 5,
+    "UNREVIEWED_CURRENT_PATH": 1
+  },
+  "catalog_states": {
+    "CATALOG_ONLY_UNRESOLVED": 1054,
+    "EXACT_BODY_AVAILABLE": 834,
+    "RECOVERED_REVIEWED_VARIANT": 37,
+    "PARTIAL_BODY_AVAILABLE": 1,
+    "SOURCE_REVISION_DIFFERS": 11
+  },
+  "symbol_source_locators": 2,
+  "unchanged_dictionary_citation_ranges": 4,
+  "semantic_core": "488symbols/355functions/120fields/159relations/15corrections unchanged in meaning",
+  "original_cleanup": "NOT_PERFORMED",
+  "new_full_primary_reports": 1
+}

@@ -40,6 +40,12 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1165](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1165-L1165) — - [A OWNED NATIVE REFERENCE] A data/T031_RANDOM_EVENT_SCHEDULER.md A-20261013-2103-02、保存exe/T031_PHASE_PREDICATE_HANDLERS.txt 0x44F6A8..DE：phaseByte==DLはfalse側、
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1017](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1017-L1017) — [A SAVED NATIVE / READ-ONLY] A-owned data/T031_RANDOM_EVENT_SCHEDULER.mdのA-20261013-2103-02、および保存exe/T031_PHASE_PREDICATE_HANDLERS.txt VA0x44F6A8..0x44F6DE。isCo
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1018](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1018-L1018) — [NEW C CROSSWALK] 4 Worldの「同COM・同turn・timing2なら重複return」は、その内側比較まで到達した場合に限る。選択Power NULL／object+0x1D非zeroという旧native false経路では、4 WorldのCOM重複判定・@checkcom writer・後
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 392](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L392-L392) — [CONFIRMED / ZERO-ARG RESULT] 同無引数枝では0x471DC0の返値がNULL、または返したobject+0x1D byteが非zeroなら共通falseへ。object非NULLかつ+0x1D==0なら0x44F6D9でEAX=1としてreturnへ。0x471DC0の選択Power ac
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
@@ -117,6 +123,9 @@
 
 <a id="field-70"></a>
 ## object + 0x70
+
+- [research/recovered/immutable_ref_versions1/REF_RTS_SCENARIO_PRE_CORRECTION_76819fcb.md 行 15](../../research/recovered/immutable_ref_versions1/REF_RTS_SCENARIO_PRE_CORRECTION_76819fcb.md?plain=1#L15-L15) — - activeTroop and sleepTroop use a native shared command route writing a target-object +0x70 byte as 1/0; exact effective movement/spawn behavior is VERIFY.
+  制約・訂正　HISTORICAL_SUPERSEDED_REF; old empty-candidates=false claim corrected by CORRECTION-RTS-EMPTY-SIDE-NOT-ALWAYS-FALSE; current REF_RTS_SCENARIO.md section5 prevails; Git blob identity only, no current local original read or native proof
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 265](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L265-L265) — [CONFIRMED-SAVED-NATIVE / LIMIT] 既存D§10/保存済A evidence exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C04..0x4B5CBAでactiveTroop/sleepTroop handlerが対象解決後object+0x70を1/0へ書
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1eef70"></a>
+## registry + 0x1EEF70
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 189](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L189-L189) — [CONFIRMED-TARGET REGISTRY] レーンAのread-only証拠 `exe/T006_SECONDARY_REGISTRY_INDEX.tsv` で `unionPower` 登録site VA 0x4A71AA、`addPower` 0x4A6FE1は同じ engine+0x1EEF60 のw
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 <a id="field-1eef80"></a>
 ## registry + 0x1EEF80
 
