@@ -1,5 +1,8 @@
 # このリポジトリで研究を追加するAIへ
 
+- **唯一の正本（2026-11-07以降）**: Private `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。新規Issue・PR・pushは新正本のみに行う。旧 `ButaMonky/Hakushin067-Research-Knowledge` は参照専用・書込禁止。
+- 旧リンク・旧PR番号は過去の出典として保全する。公開前の権利・機密監査は未完了。
+
 - まず `README.md` と短い入口 `CONTRIBUTING.md` を確認する。詳細規約は変更に関係する箇所だけ参照する。
 - 関数・メモリの現行の意味は辞書・REF・訂正から確認し、研究IDと根拠を残す。未検証の研究は状態付きで保存し、確定情報へ自動昇格させない。
 - 通常の研究担当は自分の `research/intake/<owner>/` と既存担当PRへ。共有辞書・REF・回収台帳・正本統合は既存の統合担当の権限に従う。

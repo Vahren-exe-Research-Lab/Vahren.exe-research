@@ -1,7 +1,7 @@
 # 研究知識ベースの正本・競合防止（KB-SYNC-01）
 
 対象は `_REDEV_RESEARCH/knowledge` のみ。研究ROOT全体、原作EXE・DAT・MAP・SAVE・ZIPはGit管理しない。
-予定正本: 非公開 `ButaMonky/Hakushin067-Research-Knowledge` の `develop`。存在とPRIVATE設定を確認してから同期する。
+正式正本（2026-11-07切替）: 非公開 `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。旧 `ButaMonky/Hakushin067-Research-Knowledge` は履歴保全用で新規push禁止。存在とPRIVATE設定を確認してから同期する。
 過去の拒否・復旧履歴は `KB_SYNC_BLOCKED_20261029.md` を参照。現在の実行状態は `SYNC_STATUS.md` を参照。安全拒否された操作は迂回しない。
 
 ## Gitに含める内容

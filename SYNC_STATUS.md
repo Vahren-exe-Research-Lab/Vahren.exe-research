@@ -1,8 +1,11 @@
 # 研究知識ベース同期状態
 
+> **2026-11-07 正本切替:** [Vahren-exe-Research-Lab/Vahren.exe-research](https://github.com/Vahren-exe-Research-Lab/Vahren.exe-research) の `develop` が正本。旧リポジトリはPrivateバックアップ。以下の古いPR/URLは歴史的出典。
+> GitHub公開は未承認。旧リポジトリへの新規push禁止。
+
 - 作業ID: KB-SYNC-01-20261029
 - 状態: **SYNCED / PRIVATE / DEVELOP CLEAN（最終のGitHub側とローカルのSHAを都度照合する）**
-- 正本: https://github.com/ButaMonky/Hakushin067-Research-Knowledge （非公開）
+- 正本: https://github.com/Vahren-exe-Research-Lab/Vahren.exe-research （非公開）
 - 正本ブランチ: `develop`。**現在の先端SHAは `git rev-parse HEAD` とGitHubの `git ls-remote origin refs/heads/develop` を必ず照合する。** 古いSHAを固定参照しない。
 - **2026-10-29時点の履歴検証**: `work/kb-KB-SYNC-01-VERIFY` で `start` → `checkpoint` → `publish` 成功。private確認・GitHub側の同一SHA確認後、`git merge --ff-only` で正本に統合。現時点の最新GitHub先端と混同しない。
 - Git管理対象: `tools/sync_knowledge.py` の許可リスト掲載原本＋生成SHA台帳。許可外はステージ/同期禁止。
@@ -10,7 +13,7 @@
 - Git管理から除外: 最新の全文索引DB（422.8MB）・旧DBバックアップ（506.4MB）、生成ラベル/目録、原作EXE・DAT・MAP・セーブ・ZIP、個人情報・トークン。
 - 同期の形式: **必要なときに手動実行**。バックグラウンドで自動pushする仕組みではない。
 - 作業ルール: `python -B tools/sync_knowledge.py status` → `start TASK_ID` → `checkpoint TASK_ID` → `publish`。担当別作業ブランチ、ff-only統合。force/reset/stash/rebase/amend禁止。
-- 同期確認: `git status --short --branch`、`git rev-parse HEAD`、`git ls-remote --heads origin refs/heads/develop`、`gh repo view ButaMonky/Hakushin067-Research-Knowledge --json visibility`。
+- 同期確認: `git status --short --branch`、`git rev-parse HEAD`、`git ls-remote --heads origin refs/heads/develop`、`gh repo view Vahren-exe-Research-Lab/Vahren.exe-research --json visibility`。
 - 失敗/再開: `KB_SYNC_BLOCKED_20261029.md`、`SYNC_PROTOCOL.md`、ローカル `.git/kb-sync-journal.jsonl`。
 - 生成DBの復元: 原作を扱う許可済PC上の研究ROOTにて `python -B knowledge/tools/build_kb.py`。GitHubには原作・V9実DBのバックアップはない。
 

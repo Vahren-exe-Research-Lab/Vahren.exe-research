@@ -159,6 +159,25 @@ class KnowledgeSecurityTests(unittest.TestCase):
             with self.assertRaises(sync.Blocked):
                 sync.private_repo()
 
+    def test_canonical_remote_and_push_url_guard(self):
+        good = "https://github.com/" + sync.REPO + ".git"
+        bad = "https://github.com/ButaMonky/Hakushin067-Research-Knowledge.git"
+        with patch.object(sync, "ensure_root", return_value=True), \
+             patch.object(sync, "git", return_value=(good, 0)), \
+             patch.object(sync, "command", return_value=("PRIVATE", 0)):
+            sync.private_repo()
+        def fake_git(*args, **kwargs):
+            if args == ("remote", "get-url", "origin"):
+                return good, 0
+            if args == ("remote", "get-url", "--push", "origin"):
+                return bad, 0
+            raise AssertionError(args)
+        with patch.object(sync, "ensure_root", return_value=True), \
+             patch.object(sync, "git", side_effect=fake_git), \
+             patch.object(sync, "command", return_value=("PRIVATE", 0)):
+            with self.assertRaises(sync.Blocked):
+                sync.private_repo()
+
     def test_lock_exclusive_and_cleanup(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)

@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 import reference
 
 KB = Path(__file__).resolve().parent.parent
-REPO = "ButaMonky/Hakushin067-Research-Knowledge"
+REPO = "Vahren-exe-Research-Lab/Vahren.exe-research"
 MAIN = "develop"
 MANIFEST = "SOURCE_MANIFEST.tsv"
 FILES = (
@@ -5054,6 +5054,9 @@ def private_repo():
                 f"git@github.com:{REPO}", f"git@github.com:{REPO}.git")
     if url not in accepted:
         raise Blocked("origin URLが指定の非公開研究リポジトリと一致しない")
+    push_url, _ = git("remote", "get-url", "--push", "origin")
+    if push_url not in accepted:
+        raise Blocked("origin push URL does not match canonical private repo")
     vis, _ = command(("gh","repo","view",REPO,"--json","visibility","--jq",".visibility"))
     if vis.upper() != "PRIVATE":
         raise Blocked("GitHub private 設定を確認できない")

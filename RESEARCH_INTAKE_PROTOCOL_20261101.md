@@ -1,6 +1,6 @@
 # 研究成果のGitHub優先収録規約（2026-11-01 ユーザー明示変更）
 研究ID: KB-POLICY-20261101-RESEARCH-INTAKE-PRIORITY-01。対象: 迫真戦記 ver0.67 A/B/C/D/E/REA・専任KB統合。
-正本: PRIVATE `ButaMonky/Hakushin067-Research-Knowledge` の `develop`。この規約は研究資料の公開・統合の新手順を定め、原作実ゲームの互換性やREADYを宣言しない。
+正本: PRIVATE `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。この規約は研究資料の公開・統合の新手順を定め、原作実ゲームの互換性やREADYを宣言しない。
 
 ## 方針: 研究成果を埋もれさせない
 - **保存した研究を検索不能なローカル/Libraryだけに残さない**。担当は研究終了時、既収録研究ID・出典SHA・版・訂正関係を調べ、PRIVATE GitHubへの収録、担当固有 intake branchへの保全、または BLOCKED/OFFLINE-UNSYNCEDを記録する。新研究より過去の未同期回収を優先してよい。

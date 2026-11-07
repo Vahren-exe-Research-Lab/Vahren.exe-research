@@ -1,5 +1,9 @@
 # 迫真戦記 ver0.67 研究知識ベース
 
+> **正式な正本（2026-11-07以降）:** [Vahren-exe-Research-Lab/Vahren.exe-research](https://github.com/Vahren-exe-Research-Lab/Vahren.exe-research) の `develop`。新しい研究・Issue・PRは新正本へ。
+> 旧 [ButaMonky/Hakushin067-Research-Knowledge](https://github.com/ButaMonky/Hakushin067-Research-Knowledge) はPrivateの歴史資料・バックアップで、新規pushは禁止。
+> 両リポジトリはPrivate。権利・個人情報・履歴の監査を終えるまでPublicへ変更しません。
+
 関数とメモリの意味を調べ、その根拠になった研究本文まで辿るための事典です。人がGitHubで読むページと、AIが検索するデータは同じ辞書・出典から生成しています。
 
 現在の正本はこの非公開リポジトリの `develop` です。関数・メモリの事典、研究本文の検索、新発見の追加手順を使えます。全研究履歴の完全回収や公開設定への切替とは区別します。 **[現在使える範囲と継続する研究](REMAINING_WORK.md)** に最終照合の結果と未取得・保留範囲をまとめています。
@@ -92,7 +96,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 
 ## 研究PC専用の解析環境
 
-Ghidra・x32dbgへのラベル反映、元SQLiteを使う全文索引の再生成などは、原作と専用データがある研究PC向けです。[従来のPC専用手順と作業履歴](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b070349917d2692c6a4e6498dc62e9aa3e5097ae/README.md)を固定版として残しています。そこにある旧件数・過去の完了記録・旧更新ルールは当時の情報です。現在の事典の利用・更新には上の入口と現行手順を使ってください。
+Ghidra・x32dbgへのラベル反映、元SQLiteを使う全文索引の再生成などは、原作と専用データがある研究PC向けです。[従来のPC専用手順と作業履歴](https://github.com/Vahren-exe-Research-Lab/Vahren.exe-research/blob/b070349917d2692c6a4e6498dc62e9aa3e5097ae/README.md)を固定版として残しています。そこにある旧件数・過去の完了記録・旧更新ルールは当時の情報です。現在の事典の利用・更新には上の入口と現行手順を使ってください。
 
 拡張製品コードは関連する非公開 `HakushinExtensions`、研究知識とその根拠はこのリポジトリで管理します。
 

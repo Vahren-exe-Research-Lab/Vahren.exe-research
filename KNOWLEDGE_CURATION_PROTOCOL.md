@@ -1,6 +1,6 @@
 # Central research knowledge integration policy
 
-Repository: private ButaMonky/Hakushin067-Research-Knowledge, protected workflow on develop.
+Repository (canonical since 2026-11-07): private Vahren-exe-Research-Lab/Vahren.exe-research, review workflow on develop. The old ButaMonky/Hakushin067-Research-Knowledge is preserved private, no new pushes.
 Local research authority: authorized PC _REDEV_RESEARCH, including MASTER_LEDGER and A-E/REA source receipts.
 Purpose: give AI a small, trustworthy map without destroying or blindly copying research history.
 
