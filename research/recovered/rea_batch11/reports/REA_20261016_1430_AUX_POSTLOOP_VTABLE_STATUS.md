@@ -1,0 +1,20 @@
+# REA-20261016-1430-AUX-POSTLOOP-STATUS-01｜補助反復後のvirtual継続と戻り値
+- OWNER: independent REA / WRQ-20261013-REA-DEATH P0 / T012,T013。新規REA・Ghidra実行なし。分類 STATIC SAVED X86、ゲーム実機未検証。
+- SOURCE: exe/T012_DAMAGE_CALLER_CONTEXTS.txt、対象0x546B68..0x546C85。SHA256 9A2ED3B4DAA72ECB2D32511471BBDD18CC1E883EC5CFBCD31B4FD6B1A4566CA3 を今回Localで再照合一致。
+- [CALLER FLOW] 0x546B6E CMP [eax+0xAC],[eax+0xA8] → 0x546B74 JE 0x546C45。補助処理反復より前のこの条件でも同じ終了側へ合流する。
+- 0x546BD9 skill+0x74の符号付きDWORDを取り、0は1へ置換、0x546BE7 JLE 0x546C45で負の値は反復を省略する。0は反復1回となる（callee正常帰還を条件）。
+- 反復された場合は0x546C22/0x546C3Aの分岐後0x546C42 DEC EDI;0x546C43 JNE 0x546BEB。回数消化後に同じ0x546C45へ合流する。
+- [COMMON TAIL] 0x546C45 EAX=[Unit+0x130]、0x546C4B FLD QWORD [0x63B260]。0x546C51 EDX=[Unit.vtable]、0x546C54 EDX=[EDX+0x80]。0x546C5A/5Bは同じEAXを2回PUSHし、0x546C5C..6Bはdouble値と2つのローカル領域アドレスを準備、0x546C6C ECX=Unit、0x546C6E CALL EDX。
+- CALL EDXが正常に戻れば0x546C70 MOV AL,1、レジスタ復元後0x546C79 RET 4。CALL先の返値をこの経路でTEST/CMPしていないため、AL=1はcall先の成功確認を意味しない。
+- [CONTRAST] 別の0x546C7C失敗出口は0x546C7F XOR AL,AL、復元後0x546C85 RET 4。先行分岐からこちらへ直接流入する例は0x546ADC JGE 0x546C7C。すべての異常退出・callee帰還条件を列挙したものではない。
+- [NEW INCREMENT] 0x546B74 / 0x546BE7 / 0x546C42から同一vtable+0x80後段へ合流し、正常帰還後にAL=1を代入することを既保存x86でクロス確認。0x547FC0入口EBP引数に関する13:40拒否済み保存payloadとは別件であり、再提出していない。
+- [VERIFY] vtable+0x80実callee、単位内の0x130 pointerとlocal引数の意味、x87定数値、例外/コールバック帰還、0x547FC0第3引数の実消費、0x580280副作用、575A60→575DF0→5684B0の外側Task正常帰還。ゲームの動的効果・命中・BUG認定は行わない。
+- [DEDUP] 既存REA_20261016_1034/1138/1240の反復回数・stack cleanup・caller引数は新発見として再計上せず、既存B T012に同VA 0x546C45の記録検索結果0は検索範囲限定の事実。A-E資料はread-only。
+- [WAVES] RUN_RESULT最新20261011T153309850Zとprogress_sync_20261011T153958076Zを確認。Wave1 16/16、W2 10/10、W3 10/10、W4 12/12、W5 16/16、計64/64 VERIFIED。今回増加0、P0 29/29、P1 35/35、新規5種Ghidra evidence ID0。
+- [W6] 正式QUEUE 0/16。候補P0 5/P1 11、未試行TODO12、安全拒否BLOCKED4(0x515750/0x515790/0x5159B0/0x57D180)、結果VERIFY0。既往拒否VAと0x5710C0..0x571500/REA抽出の新規試行0。
+- [MASTER/GAME] 正本最新checkpoint162、研究DONE9/34・IN_PROGRESS21/34・VERIFY4/34。旧未改変EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] Desktop Commander Local Compactのみ。CPU load 3%、空き物理メモリ17946432KiB≈17.11GiB、先行Java/Ghidra/REAプロセスをLocal process listで検出せず、active.lockは一覧になし、承認済み対象コピーSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。
+- [RECOVERY REA-RC-20261016-1430-PREFLIGHT-QUOTING-01 / OTHER / RESOLVED] 最初のPowerShell二重起動による$変数展開でParserError、読み取り検査のみ失敗・保存差分0。後続の別個の単純なLocal読み取り専用Get-CimInstance/Get-FileHashは正常。拒否迂回なし。
+- [RUN DECISION] QUEUE/PROGRESSは既往rename EPERMの古い表示で、正式Wave6未登録、現行README runner pinned REA6.4.0対保存成功run6.1.0、4候補安全拒否により、run_decompile.ps1/sync_progress.mjsは起動0。新Ghidra実行時間0秒。軽量調査総時間未計測。
+- [NEXT] P0: 許可済み保存済みvtable/caller x86から+0x80の特定とcall後の状態検査、0x547FC0第3引数の消費証拠の有無、正常死亡Task callbackへの接続を独立VERIFY。過去拒否操作は再試行しない。
+- [BOUNDARY] 原本ZIP/EXE・他owner A-E/MASTER/T018・製品Work/WRQ・Git/push・MCP設定・automationへの変更0。拒否済みREA-20261016-1340-547FC0-EBP-FRAME-01はPC未保存/BLOCKED維持。

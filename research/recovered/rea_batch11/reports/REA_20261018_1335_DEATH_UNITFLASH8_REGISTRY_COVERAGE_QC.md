@@ -1,0 +1,16 @@
+# REA-20261018-1335-DEATH-UNITFLASH8-REGISTRY-COVERAGE-01｜死亡後段UnitFlash8枠とWork window登録の対応未証明
+- [OWNER/REQUEST] REA独立、WRQ-20261013-REA-DEATH P0、T010/T012/T013。Desktop Commander Local Compactのみ。既存Native証拠とWork実装のread-only照合。原本/Work/他lane/QUEUE/PROGRESSの変更なし。
+- [PRIMARY READ] MASTER checkpoint182、ANALYSIS_LANES_PROTOCOL、README/QUEUE/PROGRESS、最新RUN_RESULT 20261011T153309850Z、sync 20261011T153958076Z、REA-ND-20261013-001、保存SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md ND-GRAPH-TAILを確認。
+- [SAVED NATIVE] 0x575F41から計8枠を順に確認し、base=U+0x928+i*0x264、active byte=base+0x78=U+0x9A0+i*0x264。非activeはskip。activeではowner=mem32(base+0x6C)を使用し、0x575F51でactiveを先に0にしてから0x575F54→0x41E160をcall。戻り位置0x575F59。i=0..7、通常帰還/副作用完了は引き続きVERIFY。
+- [NATIVE PROVENANCE] 既保存SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md ND-GRAPH-TAIL/UnitFlash ctor crosswalk。logs/NORMAL_DEATH_CONTRACT_VERIFY_20261013.json はcontract REA-ND-20261013-001、134チェック、failure0の保存済STATIC検証。旧EXE動的観測ではない。
+- [WORK CURRENT BIND] dev_lab/src/hakushin_compat/native_battle_session.py bind_unit_window_registry はregistry.membersのrecord+4からwindowsへのmappingを作り、MotionChildを_motion_children[Unit]へ保存。recordとchild identityの検査は行うが、上記UnitFlash 8個のbase/active byte/owner+0x6Cとの全件一致をこのAPI単体では検査しない。
+- [WORK CURRENT GRAPH] native_battle_outcome.pyのNormalDisableGraphFrameはobject_ref/virtual_slot/return_pc/parent_return_pc/marker_return_pc/marker_returned/world_pointerを持つが、UnitFlashの8枠index・active先行commit・owner別のreturn receiptは保持しない。native_battle_session.py continue_resolved_normal_disable_graph は最初のDotまたはW+5B0のgraph entryで停止する。
+- [NEW LIMITED DELTA] prebindされたUnitWindowRegistry/MotionChild一覧が、死亡後段8 UnitFlashの現在のactive集合と同一とは証明できない。既存unregister_resolved_windowを順番に呼ぶだけでは、(i)nativeのslot順、(ii)active=0の事前書込、(iii)slotごとのlive owner、(iv)0x41E160の正常帰還を受理したことにならない。
+- [CLASSIFICATION] 既存Nativeの証拠をWorkの具体API/fieldへ接続する新規STATIC INTEGRATION GAPのみ。UnitFlashの実生存vptr/動的owner差/旧実機不一致・原作BUGは未確定。過去のND-GRAPH-TAILを新しい関数VERIFIEDとして重複計上しない。
+- [ACCEPTANCE PROPOSAL/NOT RUN] 将来のWork ownerは四windowの終了後、8固定slotを別stageにする。各iでlive UnitFlash pointer/active/ownerを検証し、activeを先に0化した後でowner指定41E160の途中停止位置を保持する。実record一致と4C5CC0/4BC9C0のreturn receipt後に次iへ。Session位相ガードを無理にACTIVEへ戻さない。
+- [EVIDENCE] 今回取得の新Ghidra info/pseudo/assembly/callers/callees IDは0、関数境界の新認定0、STATIC VERIFIED増分0。承認済コピー再SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。一切のEXE実行なし。
+- [PROGRESS] 保存sync W1=16/16 W2=10/10 W3=10/10 W4=12/12 W5=16/16、累計64/64(P0=29/29,P1=35/35)。Wave6正式0/16、暫定候補P0=5/P1=11、未試行TODO12/BLOCKED4、結果VERIFY0。raw QUEUE16/64とPROGRESS15/16はrename EPERMによる古い表示。
+- [MASTER/GOLDEN] 最新MASTER checkpoint182、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] Local接続成功、CPU Load52%、空き物理メモリ11312368KiB（約10.79GiB）、Java/Ghidra/REA名称の起動検出なし、active.lock ENOENT、承認済コピーSHA256一致。Node/Codexなど多数稼働。低負荷と断定せず、Wave6未登録/旧拒否四VA/runner REA6.4.0対成功6.1.0/rename EPERMのため重量解析実行0秒。CPU/RAM/Hash照会はLocalで実行、全軽量調査時間未計測。
+- [LIMIT/RESTART] 単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。次回はUnitFlash8枠のowner/active/41E160 returnを保存済nativeで更に照合し、先行四window→8slot→575F62部隊update→575F95→575C54→575D0D→5789F2の未帰還点を独立管理する。
+- [SAFETY] 0x5710C0..0x571500、既拒否済Wave6四VA、REA text exporter、既安全拒否文書/操作を迂回・再試行しない。原本ZIP/EXE/SAVE、A-E/MASTER/T018、Work/WRQ、Git/push、MCP設定・automation・既存runner/QUEUE/PROGRESS変更0。

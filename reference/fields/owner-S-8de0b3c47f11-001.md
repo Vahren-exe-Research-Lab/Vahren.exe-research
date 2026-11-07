@@ -10,6 +10,12 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-b"></a>
+## S + 0xB
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md?plain=1#L6-L6) — - [NEW RESULT BRIDGE] 上記push2個後のESP=S-0x24。0x546C13 `FSTP QWORD [ESP+0x28]` の書込先は `[S+4..S+0xB]`（scratch直後より更に4byte上）。続く0x546C17/19/1Bで3pushしESP=S-0x30。0x546C1C
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-c"></a>
 ## S + 0xC
 
@@ -25,6 +31,12 @@
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L7-L7) — - [POINT B ORIGINAL WRITERS] 0x546A9A..A0はPEER=[EBP+0x1E570]の+0x40/+0x48/+0x4Cを使用し、0x546AA3/AA5/A7でX中点を算出。0x546AA9/AAAの2 PUSH後0x546AAB [ESP+0x18]=X、0x546AAF [ES
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 10](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L10-L10) — - [DIRECT TAIL REBASE] 直行時ESP=S。0x546C5A/5B PUSH EAX×2、0x546C5C SUB ESP,8後ESP=S-0x10。0x546C62 LEA EAX,[ESP+0x20]=S+0x10(B)→PUSH、0x546C67 LEA ECX,[ESP+0x2C]=S+0x
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
@@ -33,6 +45,9 @@
 
 <a id="field-14"></a>
 ## S + 0x14
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L7-L7) — - [POINT B ORIGINAL WRITERS] 0x546A9A..A0はPEER=[EBP+0x1E570]の+0x40/+0x48/+0x4Cを使用し、0x546AA3/AA5/A7でX中点を算出。0x546AA9/AAAの2 PUSH後0x546AAB [ESP+0x18]=X、0x546AAF [ES
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
@@ -43,14 +58,50 @@
 <a id="field-18"></a>
 ## S + 0x18
 
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L6-L6) — - [POINT A ORIGINAL WRITERS] 0x546A83 EAX=[EBP+0x40]、0x546A86 EDX=[EBP+0x48]、0x546A89 EDI=[EBP+0x4C]、0x546A8C/8E/90でX=(x48-x40 arithmetic_shift_right_1)+x40。0x5
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 10](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L10-L10) — - [DIRECT TAIL REBASE] 直行時ESP=S。0x546C5A/5B PUSH EAX×2、0x546C5C SUB ESP,8後ESP=S-0x10。0x546C62 LEA EAX,[ESP+0x20]=S+0x10(B)→PUSH、0x546C67 LEA ECX,[ESP+0x2C]=S+0x
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 <a id="field-1c"></a>
 ## S + 0x1C
 
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L6-L6) — - [POINT A ORIGINAL WRITERS] 0x546A83 EAX=[EBP+0x40]、0x546A86 EDX=[EBP+0x48]、0x546A89 EDI=[EBP+0x4C]、0x546A8C/8E/90でX=(x48-x40 arithmetic_shift_right_1)+x40。0x5
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+<a id="field-2c"></a>
+## S + 0x2C
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md 行 8](../../research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md?plain=1#L8-L8) — - [SEPARATE OUTPUT SLOT] 0x546BC3 `MOV [ESP+0x48],ESP` はscratch基底S-0x1Cを別slot `[S+0x2C]`へ記録し、前述A.y=[S]や結果qword=[S+4]のwriterではない。この窓の保存情報だけでA.y=[S]の初期化元を確定しない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-30"></a>
+## S + 0x30
+
+- [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 10](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L10-L10) — PUSH×2後ESP=S-8。0x5AC609 LEA ESI,[ESP+0x38]でESI=S+0x30（out iterator）、0x5AC60D LEA EAX,[ESP+0x3C]でEAX=S+0x34（tree localを指す）。0x5AC611 CALL 0x510850。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-34"></a>
+## S + 0x34
+
+- [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 10](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L10-L10) — PUSH×2後ESP=S-8。0x5AC609 LEA ESI,[ESP+0x38]でESI=S+0x30（out iterator）、0x5AC60D LEA EAX,[ESP+0x3C]でEAX=S+0x34（tree localを指す）。0x5AC611 CALL 0x510850。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-38"></a>
+## S + 0x38
+
+- [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 8](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L8-L8) — 0x5AC601: MOV EAX,[ESP+0x38]。この直前ESPをSとするとP=[S+0x38]（一時木head）。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 11](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L11-L11) — callee 0x510850 PUSH ECX、0x510851 MOV ECX,[ESP+8]でECX=B、0x510855 MOV EDX,[ESP+0xC]でEDX=P。0x51085A MOV EDI,EAX、0x51085C MOV EAX,[EDI+4]でEAX=[S+0x38]=P。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-cc"></a>
 ## S + 0xCC

@@ -1,0 +1,14 @@
+# REA-20261018-1530-DEATH-DETACH-NOHIT-SCOPE-01｜41E160非一致と外側死亡処理の完了範囲
+- [OWNER] 独立REA / WRQ-20261013-REA-DEATH / T010,T012,T013。Desktop Commander Local Compactのみ。既存保存NativeとWorkソースのread-only照合。新規Ghidra実行0。
+- [NATIVE SOURCE] REA-ND-20261013-001 / SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md ND-DETACH・ND-GRAPH-TAIL。41E160はEAX=W,ESI=owner Oでrecord+4==Wの最初の一致を探索する。空/非一致はrecord変更なしで関数から帰還。一致時はrecord byte0=0、末尾swap/end-4を先行commit、41E1C3で4C5CC0へ入る。
+- [WORK SOURCE] dev_lab/src/hakushin_compat/native_unit_tick.py 219-274: UnitWindowRegistry.detachは非一致でWindowDetachTrace(target,next_va=0x41E18A if members else 0x41E1CB,complete=True)を返し、pendingは作らない。WindowDetachTrace.caller_return_pcの既定値はtick用0x57AB68。
+- [THREE CASES] 原作死亡後段の四固定call+八UnitFlashについて (A) Flash active=0なら41E160自体を呼ばない、(B) 呼んだがrecord非一致なら内部41E160のみ正常帰還、(C) 一致ならvector先行commit後に4C5CC0正常帰還待ち、を区別。Bのcomplete=Trueは41E160局所の完了であって575DF0/575A60や致死hit handlerの完走ではない。
+- [RETURN BOUNDARY] 四固定callの外側returnは0x575F1A/0x575F25/0x575F30/0x575F3B、Flash callの外側returnは0x575F59。41E18A/41E1CBとtick既定0x57AB68はこれらを代用しない。hit時のinner4C5CC0 return_pc=0x41E1C8はさらに別。
+- [NEW DELTA] 既往のhit時のPC不一致に加え、record非一致のcomplete=Trueを死亡側全体完了へ誤昇格させない必要がある。非active skip・非一致return・一致pendingの三者を明示的なcallsite/slot/owner状態で管理する。
+- [VERIFY] 各実UnitFlashのruntime active/owner、record有無、仮想呼出先と実帰還、部隊更新への合法到達、Work全モジュールの別名resumeの有無、旧EXE実機一致は未確認。原作BUGや動的不一致の確定ではない。
+- [EVIDENCE] 既存contract REA-ND-20261013-001、REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md。今回取得のGhidra info/pseudo/assembly/callers/callees evidence IDは各0、関数VERIFIED増加0。承認コピーsource SHA指定値E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（今回はファイル再SHAなし）。
+- [COUNTS] 保存sync 20261011T153958076Z: W1 16/16、W2 10/10、W3 10/10、W4 12/12、W5 16/16、累計64/64 P0=29/29 P1=35/35。Wave6正式0/16、候補P0=5/P1=11、TODO12/BLOCKED4/結果VERIFY0。QUEUE/PROGRESS rawはWindows rename EPERMで古い。
+- [MASTER/GOLDEN] 最新MASTER checkpoint182、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0、ゲーム再実装率未測定。
+- [PC/EXEC] Local CPU=47%、空きRAM=8.12GiB。先行java/ghidra/reaの確認はプロセス名一覧のみ、decomp_task active.lockは一覧で未検出。高めの負荷と正式Wave6未登録・現runner6.4.0対既run6.1.0/EPERMのため重量run/syncは実行しない。Ghidra実行時間0秒、軽量作業全体は未計測。
+- [NEXT] 575F54非一致returnを起点に、flash index/owner更新後575F59→次slot・loop exit→575F62 troop更新→575F95→575C54/575D0Dの実帰還証拠を既存資料で段階的に照合。Wave6は既安全拒否操作を再実行しない。
+- [SAFETY] 他owner、MASTER、T018、原本ZIP/EXE/SAVE、Work製品、runner/QUEUE/PROGRESS、Git/push、MCP設定、既存automationは変更しない。禁止0x5710C0..0x571500・拒否済REA text exporter・拒否済Wave6の別tool/path/shell/Remote迂回なし。

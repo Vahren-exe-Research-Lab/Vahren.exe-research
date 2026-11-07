@@ -1,0 +1,56 @@
+[
+  {
+    "source_path": "data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json",
+    "id_field": "run_id",
+    "reported_id": "B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+    "scope": "Verbatim historical author identifier; no native/runtime/ABI/READY promotion."
+  }
+]

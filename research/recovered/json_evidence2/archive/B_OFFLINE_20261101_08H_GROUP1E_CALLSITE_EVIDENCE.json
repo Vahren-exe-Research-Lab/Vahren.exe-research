@@ -1,0 +1,424 @@
+{
+  "research_id": "B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01",
+  "owner": "B",
+  "tasks": [
+    "T011",
+    "T013"
+  ],
+  "relation_T028": "VERIFY only",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC_NATIVE",
+    "STATIC_GHIDRA",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "source_sha256": {
+    "exe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "archive": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "db": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "recovery": "059B91381C1B58214353769006E0F4049FCDE393A6B7970F4513602878A2B2C9"
+  },
+  "offline_zip_crc_pass": 34,
+  "recovery_zip_crc_pass": 136,
+  "sqlite_quick_check": "ok",
+  "recovery_inventory": {
+    "included_files_snapshot": 134,
+    "excluded_safety_held_snapshot": 21,
+    "prior_covered_addresses_in_safe_zip": []
+  },
+  "total_direct_E8_sites": 25,
+  "distinct_callers": 14,
+  "AL_zero_sites": 21,
+  "AL_one_sites": 4,
+  "continuations": {
+    "0:AL0_follow_group_0x568FB0": 18,
+    "0:AL0_follow_member_sentinel_0x568460": 3,
+    "1:AL1_follow_0x529B60": 1,
+    "1:AL1_no_immediate_recognized_helper": 3
+  },
+  "call_sites": [
+    {
+      "call_site": "0x00402031",
+      "caller_function": "0x00401EE0",
+      "caller_source": "full_pseudoc_20261020/functions/0040/00401EE0.c",
+      "caller_pseudoc_sha256": "610E962038957EF9B47DD2FE45746E7541B6D8E35333CCA962D010531ED7480C",
+      "AL": 0,
+      "AL_setter_site": "0x0040202F",
+      "AL_setter_bytes": "32c0",
+      "E8": "e87a751600",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004021C7",
+      "caller_function": "0x00401EE0",
+      "caller_source": "full_pseudoc_20261020/functions/0040/00401EE0.c",
+      "caller_pseudoc_sha256": "610E962038957EF9B47DD2FE45746E7541B6D8E35333CCA962D010531ED7480C",
+      "AL": 0,
+      "AL_setter_site": "0x004021C5",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8e4731600",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x0041FF3B",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x0041FF39",
+      "AL_setter_bytes": "32c0",
+      "E8": "e870961400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x0042003E",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x0042003C",
+      "AL_setter_bytes": "32c0",
+      "E8": "e86d951400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004201C4",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x004201C2",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8e7931400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00420218",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x00420216",
+      "AL_setter_bytes": "32c0",
+      "E8": "e893931400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00420269",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x00420267",
+      "AL_setter_bytes": "32c0",
+      "E8": "e842931400",
+      "continuation": "AL0_follow_member_sentinel_0x568460",
+      "following_instruction_pattern": "mov esi,ebx; call 0x568460"
+    },
+    {
+      "call_site": "0x004202FD",
+      "caller_function": "0x0041FE00",
+      "caller_source": "full_pseudoc_20261020/functions/0041/0041FE00.c",
+      "caller_pseudoc_sha256": "0689A570BFC42040671C7A1FDE51CA5C095B600A195D8BDF36A6223AB4C88213",
+      "AL": 0,
+      "AL_setter_site": "0x004202FB",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8ae921400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004B5D5A",
+      "caller_function": "0x004B4710",
+      "caller_source": "full_pseudoc_20261020/functions/004B/004B4710.c",
+      "caller_pseudoc_sha256": "37F39C93461A5E98D65A1E1044693E2FE8928BDBB4446FE33C5AD07BECBCD28F",
+      "AL": 0,
+      "AL_setter_site": "0x004B5D58",
+      "AL_setter_bytes": "32c0",
+      "E8": "e851380b00",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004C709E",
+      "caller_function": "0x004C7040",
+      "caller_source": "full_pseudoc_20261020/functions/004C/004C7040.c",
+      "caller_pseudoc_sha256": "1BD32D7F611339B9E2F9B041FB43125FFBC4EA18C98DD6B33ED45525A455E928",
+      "AL": 0,
+      "AL_setter_site": "0x004C709C",
+      "AL_setter_bytes": "32c0",
+      "E8": "e80d250a00",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004C74DF",
+      "caller_function": "0x004C72C0",
+      "caller_source": "full_pseudoc_20261020/functions/004C/004C72C0.c",
+      "caller_pseudoc_sha256": "CD5C45C5C5D0D123314443AFA8D08D510357D5CDD4EBCB949C8671DAC761FBD0",
+      "AL": 0,
+      "AL_setter_site": "0x004C74DD",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8cc200a00",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x004C7576",
+      "caller_function": "0x004C72C0",
+      "caller_source": "full_pseudoc_20261020/functions/004C/004C72C0.c",
+      "caller_pseudoc_sha256": "CD5C45C5C5D0D123314443AFA8D08D510357D5CDD4EBCB949C8671DAC761FBD0",
+      "AL": 0,
+      "AL_setter_site": "0x004C7574",
+      "AL_setter_bytes": "32c0",
+      "E8": "e835200a00",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00526D38",
+      "caller_function": "0x00526A40",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00526A40.c",
+      "caller_pseudoc_sha256": "ACC060FB6EDC324EF28733EE93FA27A4596213E43C13F69142C03EE183146862",
+      "AL": 0,
+      "AL_setter_site": "0x00526D36",
+      "AL_setter_bytes": "32c0",
+      "E8": "e873280400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00526FB2",
+      "caller_function": "0x00526E50",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00526E50.c",
+      "caller_pseudoc_sha256": "2BE2D035DBB1F99D4DA50282936E53A7059B419D8D1A772A4F86512D244DA04B",
+      "AL": 0,
+      "AL_setter_site": "0x00526FB0",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8f9250400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00527A92",
+      "caller_function": "0x00527890",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00527890.c",
+      "caller_pseudoc_sha256": "3D4FFBA5638A78A365E462C18769B3C11FF47F5E40834F95997030457785ECE2",
+      "AL": 0,
+      "AL_setter_site": "0x00527A90",
+      "AL_setter_bytes": "32c0",
+      "E8": "e8191b0400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00527BAD",
+      "caller_function": "0x00527890",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00527890.c",
+      "caller_pseudoc_sha256": "3D4FFBA5638A78A365E462C18769B3C11FF47F5E40834F95997030457785ECE2",
+      "AL": 1,
+      "AL_setter_site": "0x00527BAB",
+      "AL_setter_bytes": "b001",
+      "E8": "e8fe190400",
+      "continuation": "AL1_no_immediate_recognized_helper",
+      "following_instruction_pattern": "no recognized helper immediately after CALL"
+    },
+    {
+      "call_site": "0x00527C9A",
+      "caller_function": "0x00527890",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00527890.c",
+      "caller_pseudoc_sha256": "3D4FFBA5638A78A365E462C18769B3C11FF47F5E40834F95997030457785ECE2",
+      "AL": 0,
+      "AL_setter_site": "0x00527C98",
+      "AL_setter_bytes": "32c0",
+      "E8": "e811190400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x00527F95",
+      "caller_function": "0x00527F60",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00527F60.c",
+      "caller_pseudoc_sha256": "66F99ACBC0FAFF91D18DFA1E48A4A53CF10F67E06F30755DC0E211E27382D3C0",
+      "AL": 0,
+      "AL_setter_site": "0x00527F93",
+      "AL_setter_bytes": "32c0",
+      "E8": "e816160400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x005280C9",
+      "caller_function": "0x00527F60",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00527F60.c",
+      "caller_pseudoc_sha256": "66F99ACBC0FAFF91D18DFA1E48A4A53CF10F67E06F30755DC0E211E27382D3C0",
+      "AL": 1,
+      "AL_setter_site": "0x005280C7",
+      "AL_setter_bytes": "b001",
+      "E8": "e8e2140400",
+      "continuation": "AL1_no_immediate_recognized_helper",
+      "following_instruction_pattern": "no recognized helper immediately after CALL"
+    },
+    {
+      "call_site": "0x00528186",
+      "caller_function": "0x00528150",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00528150.c",
+      "caller_pseudoc_sha256": "EE7EE2CDB1C5CF8CB4D6776F0C92B5E75FC71EF3DB3EAEAEDF570822FC9F11CA",
+      "AL": 0,
+      "AL_setter_site": "0x00528184",
+      "AL_setter_bytes": "32c0",
+      "E8": "e825140400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    },
+    {
+      "call_site": "0x0052830C",
+      "caller_function": "0x005282C0",
+      "caller_source": "full_pseudoc_20261020/functions/0052/005282C0.c",
+      "caller_pseudoc_sha256": "8149E8403BA551A91FA070116D0C06ACD6C3BD1FC1FB0E75B080083EDB4B9994",
+      "AL": 1,
+      "AL_setter_site": "0x0052830A",
+      "AL_setter_bytes": "b001",
+      "E8": "e89f120400",
+      "continuation": "AL1_follow_0x529B60",
+      "following_instruction_pattern": "push edi; call 0x529B60"
+    },
+    {
+      "call_site": "0x00528356",
+      "caller_function": "0x00528320",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00528320.c",
+      "caller_pseudoc_sha256": "F6B962EBC77F61ED287A772CA4B7A28C5E0437DDD96FF93BAADAEF0F6A498C27",
+      "AL": 0,
+      "AL_setter_site": "0x00528354",
+      "AL_setter_bytes": "32c0",
+      "E8": "e855120400",
+      "continuation": "AL0_follow_member_sentinel_0x568460",
+      "following_instruction_pattern": "mov esi,[edi+8]; call 0x568460"
+    },
+    {
+      "call_site": "0x00528416",
+      "caller_function": "0x00528320",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00528320.c",
+      "caller_pseudoc_sha256": "F6B962EBC77F61ED287A772CA4B7A28C5E0437DDD96FF93BAADAEF0F6A498C27",
+      "AL": 0,
+      "AL_setter_site": "0x00528414",
+      "AL_setter_bytes": "32c0",
+      "E8": "e895110400",
+      "continuation": "AL0_follow_member_sentinel_0x568460",
+      "following_instruction_pattern": "mov esi,[edi+8]; call 0x568460"
+    },
+    {
+      "call_site": "0x005284EA",
+      "caller_function": "0x005284A0",
+      "caller_source": "full_pseudoc_20261020/functions/0052/005284A0.c",
+      "caller_pseudoc_sha256": "36DF032FF99091B55A6674207CB78A4F4272FB1100A6B833CC709867D21C399E",
+      "AL": 1,
+      "AL_setter_site": "0x005284E8",
+      "AL_setter_bytes": "b001",
+      "E8": "e8c1100400",
+      "continuation": "AL1_no_immediate_recognized_helper",
+      "following_instruction_pattern": "no recognized helper immediately after CALL"
+    },
+    {
+      "call_site": "0x0052857C",
+      "caller_function": "0x00528540",
+      "caller_source": "full_pseudoc_20261020/functions/0052/00528540.c",
+      "caller_pseudoc_sha256": "B9A83F95740A979DA3B88930C4ED346B37D6A07F629493EE7D0D986A39750314",
+      "AL": 0,
+      "AL_setter_site": "0x0052857A",
+      "AL_setter_bytes": "32c0",
+      "E8": "e82f100400",
+      "continuation": "AL0_follow_group_0x568FB0",
+      "following_instruction_pattern": "push esi; call 0x568FB0"
+    }
+  ],
+  "focus_functions": {
+    "0x005695B0": {
+      "size_bytes": 89,
+      "native_sha256": "BC79B73E1CED9430DCF6E2D73651FAFAA4A9BE62CA4E8FB8BA806771B868DD21",
+      "pseudoc_sha256": "E77606970E7A7CFD3A614DE73111383A632C7C52773251301AD044D2DE613D96",
+      "source": "full_pseudoc_20261020/functions/0056/005695B0.c",
+      "pseudoc_lines": 35
+    },
+    "0x00568FB0": {
+      "size_bytes": 146,
+      "native_sha256": "B7E752BDA6DDDB0F8653BD4B9758B5AEE1B676A14843ED7EEAD9FADD4316AA50",
+      "pseudoc_sha256": "D7BAF26F8AAD7FA6E86AECACD45197400EE7F5484D9141C3FCAD25C0102AFD79",
+      "source": "full_pseudoc_20261020/functions/0056/00568FB0.c",
+      "pseudoc_lines": 44
+    },
+    "0x00568460": {
+      "size_bytes": 79,
+      "native_sha256": "1EC352D287FECF02F3CA3CF83332B32273301655B0E521429081B6F22EC47BF3",
+      "pseudoc_sha256": "927E3DCB39A67DF02A3BAA5A10F572D5957B720DC619CEC113E2A2EE3BA12CFB",
+      "source": "full_pseudoc_20261020/functions/0056/00568460.c",
+      "pseudoc_lines": 36
+    },
+    "0x005282C0": {
+      "size_bytes": 92,
+      "native_sha256": "F6B491371D0F0B3056A71E601582E341AB2A187B4060BC7D608495DB8BECF932",
+      "pseudoc_sha256": "8149E8403BA551A91FA070116D0C06ACD6C3BD1FC1FB0E75B080083EDB4B9994",
+      "source": "full_pseudoc_20261020/functions/0052/005282C0.c",
+      "pseudoc_lines": 35
+    },
+    "0x005284A0": {
+      "size_bytes": 81,
+      "native_sha256": "14CA7ECA265976A84D8DBB73B68E3C4B987DBB90379A2F30CB1F3CC011C07A15",
+      "pseudoc_sha256": "36DF032FF99091B55A6674207CB78A4F4272FB1100A6B833CC709867D21C399E",
+      "source": "full_pseudoc_20261020/functions/0052/005284A0.c",
+      "pseudoc_lines": 22
+    },
+    "0x00576F70": {
+      "size_bytes": 393,
+      "native_sha256": "F50B5F5DBA55850DFC0BDEFCF7D64A4885731427865A7F87D03CB6ED28D65C08",
+      "pseudoc_sha256": "B76A73CC017F04CC4EEC1E5E37827EFA8BC43D6B4D0C5A64F54A1910FE946963",
+      "source": "full_pseudoc_20261020/functions/0057/00576F70.c",
+      "pseudoc_lines": 72
+    }
+  },
+  "critical_native_bytes": {
+    "0x005695B6": "88451e",
+    "0x00568FB6": "807d1d00",
+    "0x00568FBC": "7473",
+    "0x00568FDD": "c6817d86010000",
+    "0x00568FD6": "80b97c86010000",
+    "0x00569027": "897d10",
+    "0x00568487": "89b9a4860100",
+    "0x0056848D": "89b9a8860100",
+    "0x0056847E": "80b97c86010000"
+  },
+  "critical_native_E8": [
+    {
+      "site": "0x00568FED",
+      "target": "0x00576F70",
+      "bytes": "e87edf0000"
+    },
+    {
+      "site": "0x0056902C",
+      "target": "0x00569280",
+      "bytes": "e84f020000"
+    }
+  ],
+  "semantic_limits": [
+    "AL 0/1 is immediate static call input only; reachability/path frequency require original golden",
+    "0x568FB0 executes its body only when group+0x1D !=0 and is not equivalent to 0x568460",
+    "group+0x1C, group+0x1D, group+0x1E are separate byte fields",
+    "Ghidra pseudocode undefined register inputs do not settle hook ABI or semantics",
+    "No game-native golden tests executed; no simulated runs promoted to original pass"
+  ],
+  "golden_PASS": 0,
+  "strict_MATCH": 0,
+  "new_READY": 0,
+  "pc_sync": false,
+  "github_sync": false,
+  "no_game_execution": true,
+  "no_forbidden_va_read": true
+}

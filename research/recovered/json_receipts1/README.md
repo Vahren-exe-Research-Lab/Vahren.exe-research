@@ -46,3 +46,7 @@ The40 declared artifacts were compared only with the fixed baseline recovery led
 - [B_OFFLINE_20261101_15H_READBACK_RECEIPT.json](archive/B_OFFLINE_20261101_15H_READBACK_RECEIPT.json) → [T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md](../../../research/recovered/b_batch6/data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md) — `EXACT_SAVED_BYTES`
 - [B_OFFLINE_20261101_16H_READBACK_RECEIPT.json](archive/B_OFFLINE_20261101_16H_READBACK_RECEIPT.json) → [T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md](../../../research/recovered/b_batch6/data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md) — `EXACT_SAVED_BYTES`
 - [B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json](archive/B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json) → [T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md](../../../research/recovered/b_batch6/data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md) — `EXACT_SAVED_BYTES`
+
+## Later recovery of declared evidence
+
+[EvidenceJSON follow-up](../json_evidence2/README.md) now preserves nine declared artifacts and proves ten declarations against saved bytes (thetwo16Hreceipts share oneartifact). The earlier MANIFEST_LINKS table remains a fixed historical comparison, not current missing-file status. The follow-up table and its limits distinguish the combined17/3/20 result without claiming original-game validation.

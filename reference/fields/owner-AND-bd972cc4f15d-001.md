@@ -7,6 +7,9 @@
 <a id="field-75"></a>
 ## AND + 0x75
 
+- [research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md 行 11](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L11-L11) — - 条件表（STATIC）: (+0x77==0 AND +0x75==0)は従来のECX null/non-null早期枝（本分岐不実行）。それ以外の枝で (+0x74!=0)→decide3/500、(+0x74==0 && [param-like +0x1D]==0)→decide11/10、(+0x74==0
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md 行 9](../../research/recovered/b_batch2/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md?plain=1#L9-L9) — - callee 0x497BB0 のnative 0x497C0D/0x497C12はcandidate+0x77=0 AND +0x75=0を検査。両方0の枝では0x497C17 ECX(受けた配列ポインタ)!=0なら0x497C2B LEA EAX,[ESP+0x1C]、0x497C2F MOV EDI,ECX→
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 

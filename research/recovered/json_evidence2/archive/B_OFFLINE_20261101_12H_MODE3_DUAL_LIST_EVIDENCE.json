@@ -1,0 +1,243 @@
+{
+  "research_id": "B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "offline_pack_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "offline_index_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "native_windows": [
+    {
+      "va": "0x0052909A",
+      "bytes_hex": "8d4424348d7c2468",
+      "sha256": "686CC010024FFD1E48BFE591D1DF861A001C54336E0691885451BCD31E11430A",
+      "meaning": "A-list insertion argument setup"
+    },
+    {
+      "va": "0x005290A7",
+      "bytes_hex": "8b463401442418",
+      "sha256": "A039E692C95001BBEB84FB4E412D22AB63F949F1121536A8128F7D213B87BB69",
+      "meaning": "A sum += group+0x34"
+    },
+    {
+      "va": "0x005290D1",
+      "bytes_hex": "ff442460",
+      "sha256": "D3F620B931F85E4808DBCAA73C262D5C8E025A2E95056719DC9825422DE38B9B",
+      "meaning": "B list count ++"
+    },
+    {
+      "va": "0x005290DD",
+      "bytes_hex": "8b563401542420",
+      "sha256": "F1B116F28B89A5E85C9A9759BCA5FFDE17F27E698A52DA0A5EBF23CC46F61CFC",
+      "meaning": "B sum += group+0x34"
+    },
+    {
+      "va": "0x005290F2",
+      "bytes_hex": "8b7424688b4c2460",
+      "sha256": "97F3A7B1199BA5C99966EFF0422B4E9A10161474CBE84AA5EE8D94517C5EA9E4",
+      "meaning": "A-list head and B count loaded"
+    },
+    {
+      "va": "0x00529100",
+      "bytes_hex": "3bcb",
+      "sha256": "907C166A0E62D3659D2FFADC800BB1303007CA46F69E6CD68DBD247088D8BECE",
+      "meaning": "B count zero-test"
+    },
+    {
+      "va": "0x00529119",
+      "bytes_hex": "f7f9",
+      "sha256": "4CD6D3DE06229E6F92223EC6B1149EE735B26867748601C8563FFBEC9552CCB8",
+      "meaning": "B signed IDIV"
+    },
+    {
+      "va": "0x0052911F",
+      "bytes_hex": "395c246c",
+      "sha256": "3D41C4F7414834B9EB08710354E9765365746B3F6CA4551B50670F06F5D9285C",
+      "meaning": "A count zero-test"
+    },
+    {
+      "va": "0x00529130",
+      "bytes_hex": "f77c246c",
+      "sha256": "081C92A14116003C14BFCF5D8E74C6E6929438A3E469AE3205138187DB74556C",
+      "meaning": "A signed IDIV"
+    },
+    {
+      "va": "0x00529138",
+      "bytes_hex": "83bd7404000003",
+      "sha256": "B5021239FD30C9C37CC48B1C3981C8AA72A2CC5E81A5240B2B6D9F8EE9C4A0E6",
+      "meaning": "mode field +0x474 equals 3 gate"
+    },
+    {
+      "va": "0x00529145",
+      "bytes_hex": "895c2474895c2478895c247c",
+      "sha256": "E67BC7122E44A6CD1B610552B2EEB2443DE9B575D74D8F0F66D21D46B03A4991",
+      "meaning": "mode3 vector begin/end/capacity zero"
+    },
+    {
+      "va": "0x00529159",
+      "bytes_hex": "8b54241c8b0f525751",
+      "sha256": "84433412ED6B197B3CFC0F32714A682BDC5E5519ED2BB588DE800F8619B01B1B",
+      "meaning": "B-list source sentinel/head and push order"
+    },
+    {
+      "va": "0x0052915D",
+      "bytes_hex": "8b0f",
+      "sha256": "C162F47FC62E5896B333F444C5688A7C6E562D323BDBFFBCFBBD081D151CF548",
+      "meaning": "list B begin from [EDI]"
+    },
+    {
+      "va": "0x00529162",
+      "bytes_hex": "33c050",
+      "sha256": "FB95315737C0592B184E808F63132118EAFE24B9017DAEC75BC2880B43DCE3CB",
+      "meaning": "first vector insertion at 0"
+    },
+    {
+      "va": "0x00529171",
+      "bytes_hex": "8b4c241c8b06",
+      "sha256": "CFDE10C4236F9855C7B2ECFF40FEA93C50F15293931A59A13E580EC85E044577",
+      "meaning": "A-list source sentinel/head"
+    },
+    {
+      "va": "0x00529175",
+      "bytes_hex": "8b06",
+      "sha256": "4D597EB80E420B0F7025EA3449CAC9E6D4D7BFFB41F1241CB79D034C744FC10B",
+      "meaning": "list A begin from [ESI]"
+    },
+    {
+      "va": "0x00529177",
+      "bytes_hex": "8b542478",
+      "sha256": "9D72E2D54DDD04888059A123F4B557F682F2B0E2328681C15028AA696478671C",
+      "meaning": "second insertion at vector end"
+    },
+    {
+      "va": "0x005291D4",
+      "bytes_hex": "dd8424f8000000",
+      "sha256": "6FFB1850D77BFCF49708EE8A5FCE8BF1214799EAAA184A1E6F3969F3EFD84AD2",
+      "meaning": "record reset source is local stack double"
+    },
+    {
+      "va": "0x005291DE",
+      "bytes_hex": "dd5d28",
+      "sha256": "5DEC4084BF58B71BCF2DE2276A4DAB069C3AE3396187D72C7EF2D4D4532866A6",
+      "meaning": "record+0x28 receives 8-byte FPU value"
+    },
+    {
+      "va": "0x0052920F",
+      "bytes_hex": "80bf7c86010000",
+      "sha256": "BBFE2B8D3FF860D774456ED3D20C2996AB0194B5BC7E13E7E02AEF4153FBFE41",
+      "meaning": "mode3 member lost flag test"
+    },
+    {
+      "va": "0x005295E4",
+      "bytes_hex": "81e101000080",
+      "sha256": "88849218071242BD284426A34EB136A5B85F425A5F825FEC18A863822FA058C6",
+      "meaning": "mode!=3 branch uses separate path"
+    },
+    {
+      "va": "0x005299F1",
+      "bytes_hex": "bafeffff3f",
+      "sha256": "D8322AD9EC941A7C7BCE9FF68B01BA743D83BAD285873499828A64D3E025C7D9",
+      "meaning": "A list count maximum base 0x3ffffffe"
+    },
+    {
+      "va": "0x0052AB85",
+      "bytes_hex": "3bc1",
+      "sha256": "70F85B85192C68F24FA3BD821065345D7A8B2C754D9568987F179B40874F3BAF",
+      "meaning": "vector insert source begin==end zero-copy guard"
+    },
+    {
+      "va": "0x0052ABAB",
+      "bytes_hex": "bbffffff3f",
+      "sha256": "C6198D46D438B24F7D8E0EC8F20004578111034D601853416CBC37B62A71CDEA",
+      "meaning": "vector element limit base 0x3fffffff"
+    },
+    {
+      "va": "0x005299F6",
+      "bytes_hex": "2bd1",
+      "sha256": "6FBDB5E50EB66B94929E3DA397C061F76BA68EFF40D334C081C3262F52D3D2E0",
+      "meaning": "A list free capacity subtraction"
+    },
+    {
+      "va": "0x005299F8",
+      "bytes_hex": "83fa01",
+      "sha256": "F72822451C7D0CA025ECDBE596359D219BDDDF3424B88D0D5798F699408E9132",
+      "meaning": "A list free capacity unsigned threshold 1"
+    },
+    {
+      "va": "0x00529A07",
+      "bytes_hex": "41894f04",
+      "sha256": "45F54B938AE08E6660AE03260F77D88220F1138EF5C261C4C0421BCCB8F905C0",
+      "meaning": "A list count increment/store"
+    }
+  ],
+  "direct_e8": [
+    {
+      "site_va": "0x005290A2",
+      "target_va": "0x005299E0",
+      "bytes_hex": "e839090000",
+      "sha256": "747F9BBA8E907274B62671B73A9B26F932B97038B113259125E8BDD4A88C5313"
+    },
+    {
+      "site_va": "0x0052916C",
+      "target_va": "0x0052AB50",
+      "bytes_hex": "e8df190000",
+      "sha256": "BDF7A2CA2D10CD2B2319C2F5E75060B5D2E8AFCC27EF5BE29D69F65F6531946D"
+    },
+    {
+      "site_va": "0x00529186",
+      "target_va": "0x0052AB50",
+      "bytes_hex": "e8c5190000",
+      "sha256": "5226A23B13583ABCB27BEFFCE969FBE2AFADE228AC07CF104CBDF4CA3685F6D2"
+    },
+    {
+      "site_va": "0x005299E9",
+      "target_va": "0x004C52D0",
+      "bytes_hex": "e8e2b8f9ff",
+      "sha256": "EB8A95EB034B31EE7E6452785E891BAA3FBAACC52BF4DE3E88DDF094CA1191DE"
+    },
+    {
+      "site_va": "0x0052ABBB",
+      "target_va": "0x005B5B6D",
+      "bytes_hex": "e8adaf0800",
+      "sha256": "EA31F875610657E3E61E978B3B7C3F2B3CE4D07E00511CC68A08552731C023D7"
+    }
+  ],
+  "conditional_branch": [
+    {
+      "site_va": "0x0052913F",
+      "target_va": "0x005295E4",
+      "bytes_hex": "0f859f040000"
+    }
+  ],
+  "pseudocode_files": [
+    {
+      "function": "0x00528DB0",
+      "source_file": "functions/0052/00528DB0.c",
+      "sha256": "A2444391476AF79BF31F64465B3D344C30EA3E499E9D722D5D01F11D639CBEBC",
+      "lines": 527
+    },
+    {
+      "function": "0x005299E0",
+      "source_file": "functions/0052/005299E0.c",
+      "sha256": "A4A9C3F7782D515032EA734D870758CE8913578B8CD70D9873591FC63DB2EE0C",
+      "lines": 27
+    },
+    {
+      "function": "0x0052AB50",
+      "source_file": "functions/0052/0052AB50.c",
+      "sha256": "51DB822423C6C80271801C2B42D0554840F6A5D1F7220387F25CCDEBA6089EFE",
+      "lines": 80
+    }
+  ],
+  "checks": 42,
+  "passed": 42,
+  "failures": [],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "original_game_executed": false
+}

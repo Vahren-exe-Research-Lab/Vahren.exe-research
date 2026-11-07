@@ -1,0 +1,20 @@
+# REA-20261017-1238-DIRECT-POINT-ORIGIN-01｜virtual+0x80直行枝の2点入力の元データ
+- [OWNER] 独立REA / WRQ-20261013-REA-DEATH、T012/T013。Local Compactのみ、既保存native/Ghidra証拠のread-only crosswalk。新規REA/Ghidra、ゲーム実行なし。
+- [PRIMARY SOURCE] exe/T012_DAMAGE_CALLER_CONTEXTS.txt SHA256 9A2ED3B4DAA72ECB2D32511471BBDD18CC1E883EC5CFBCD31B4FD6B1A4566CA3（今回再hash一致）、VA 0x546A83..0x546C6E。
+- [INDEPENDENT RETURN EVIDENCE] rea_lab/results/run_20261009T175957025Z_550E70_assembly.json、SHA256 DD13253E385C1F3F5B292C5C29066ECF6883285801EC938E7DAFB68D3AAD8A46、Ghidra evidence_id ev_d4f259d6f70f56eb5bf60484f7ac0a551684b9cb2488e87248609be43b78f59d。正常出口0x551481 RET 0x8。新規取得ではない。
+- [STACK MODEL] S=0x546BBE SUB ESP,0x1Cの直前ESP。以下は中間calleeが通常にスタックを戻す経路だけで成立。直行枝0x546B74→0x546C45はこのSUB自体を実行しない。
+- [POINT A ORIGINAL WRITERS] 0x546A83 EAX=[EBP+0x40]、0x546A86 EDX=[EBP+0x48]、0x546A89 EDI=[EBP+0x4C]、0x546A8C/8E/90でX=(x48-x40 arithmetic_shift_right_1)+x40。0x546A92 [ESP+0x18]=X、0x546A96 [ESP+0x1C]=Y([EBP+0x4C])。通常のSと同じ深さならA=(S+0x18,S+0x1C)。
+- [POINT B ORIGINAL WRITERS] 0x546A9A..A0はPEER=[EBP+0x1E570]の+0x40/+0x48/+0x4Cを使用し、0x546AA3/AA5/A7でX中点を算出。0x546AA9/AAAの2 PUSH後0x546AAB [ESP+0x18]=X、0x546AAF [ESP+0x1C]=Yなので、元のS基準ではB=(S+0x10,S+0x14)。
+- [CALL BALANCE] 0x546AB3 CALL 0x447180後0x546AD6 ADD ESP,8が2 PUSHを解放。条件付き0x546B51/52の2 PUSH→0x546B53 CALL 0x550E70は保存Ghidra正常出口RET8と整合。0x546B85..BBEまで他にcaller側pushの恒久的増減は確認されない（各callee正常帰還が前提）。
+- [DIRECT BRANCH GATE] 前段の合法な実行で0x546B64 CMP [EBP+0x130]+0x9C,ESI（先行0x546AE5 XOR ESI,ESI）→0x546B66 JNEなら補助側。+0x9C==0で0x546B68/6Eの+0xA8/+0xAC比較が等しいと0x546B74 JE 0x546C45で直行する。さらに外側gateあり、ここだけでゲーム上の到達条件を確定しない。
+- [DIRECT TAIL REBASE] 直行時ESP=S。0x546C5A/5B PUSH EAX×2、0x546C5C SUB ESP,8後ESP=S-0x10。0x546C62 LEA EAX,[ESP+0x20]=S+0x10(B)→PUSH、0x546C67 LEA ECX,[ESP+0x2C]=S+0x18(A)→PUSH、0x546C6E CALL vtable+0x80。したがって保存命令が渡すポインタ元はA=EBP側XY、B=[EBP+0x1E570]側XY。
+- [COMPARE AUX PATH] 補助枝の同末尾はscratch確保後A=(S-0x4,S)、B=(S-0xC,S-0x8)へbaseが変わる（既REA-20261017-0939/1031/1133）。本件新増分は直行枝のA/B各DWORDの**元writerとstack depth回復根拠**であり、既知のpointer offsetsを再成果計上しない。
+- [LIMITS] 0x4051D0後のscratch writer、PEER実型と座標意味、virtual+0x80のlive callee、全callee/異常returnと実ゲーム入力到達は未確定。座標が演出・射撃等の最終出力になることは未証明、正常returnを偽装しない。
+- [EVIDENCE CLASS] 新規独立REA分析メモ1件、Ghidra 5種info/pseudo/assembly/callers/calleesの新ev_* ID 0、新VERIFIED関数0。
+- [WAVE] 保存RUN_RESULT 20261011T153309850Zとsync 20261011T153958076Z基準 W1=16/16, W2=10/10, W3=10/10, W4=12/12, W5=16/16、計64/64 (P0=29/29 P1=35/35)。W6正式0/16、暫定P0=5/P1=11、未試行TODO12・安全拒否BLOCKED4(0x515750/515790/5159B0/57D180)・結果VERIFY0。QUEUE/PROGRESSは既往rename EPERMで旧表示。
+- [MASTER / GAME] 最新E checkpoint167、研究34件 DONE9/IN_PROGRESS21/VERIFY4。旧原作EXE実機Golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [PC / PREFLIGHT] 2026-10-17 12:38 JST、CPU LoadPercentage56%、空き物理RAM 11343404KiB≈10.82GiB、active.lock=false、Get-Process java/javaw/ghidra/rea行なし、承認済みコピーSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。新規Ghidra実行時間0秒、軽量作業総時間は未計測。
+- [RUN GATE] 正式W6未登録、runner REA6.4.0指定と成功run6.1.0差、既往rename EPERM、4VA安全拒否によりrun_decompile.ps1/sync_progress.mjs未起動。単一MCP、最大4関数/回、Ghidra 900000ms/request 960000msを維持。
+- [RECOVERY REA-RC-20261017-1234-PREFLIGHT-QUOTING-01 / OTHER / RESOLVED] 当初のローカルPowerShell多重Command quotingで$展開が欠落しParserError。実行/書込成果0のpreflight構文障害であり、安全拒否ではない。後続の独立した単純Local read-only preflightでCPU/RAM/lock/SHAを正常確認。再実行不要。
+- [NEXT] 0x4051D0と0x447150の合法保存済x86証拠で補助scratchの初期値とcallsite境界を確認し、0x547FC0の引数消費・正常帰還、死亡処理0x575A60→0x575DF0→0x5684B0外側callbackはVERIFY維持。
+- [SAFETY] 既拒否0x5710C0..0x571500/上述W6の4VA/REA text exporter・拒否済write payloadは別shell/tool/path/Remoteでも再提出しない。原本ZIP/EXE/SAVE、A〜E/MASTER/T018/Work/WRQ、Git/push、設定・automation変更なし。

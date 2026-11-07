@@ -7,6 +7,15 @@
 <a id="field-6c"></a>
 ## N + 0x6C
 
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 11](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L11-L11) — AL=1時に0x5AA6F3 EDI=[N+0x6C]（リンク先L）、0x5AA6F8 [vptr(L)+0x64]、0x5AA6FD CALL indirect、0x5AA6FF TEST AL、0x5AA701 JE。真なら0x5AA703 LEA EAX,[EDI+0x160]、0x5AA709 E8 CALL
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 18](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L18-L18) — 0x5AA70E ECX=[N+0x6C]=L。0x5AA721/724/739/73C は **L本体+0x40/+0x44/+0x48/+0x4C** の外側矩形を参照し、Nの既存+0x40/+0x44/+0x48/+0x4Cのサイズと半値を計算。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 28](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L28-L28) — NEXT: L vtable+0x64の実体/生成元、N+0x6C writer、T013最終target、T024通常戦闘AI、T028士気・敗走、T011 summon parent ID、T012 HP/status。禁止0x5710C0..0x571500を調査せず、既安全拒否を別shell/path/tool
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 28](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L28-L28) — - 既知0x5AA6E9 は[N+0x8C]=AL保存。AL0は0x5AA6F1 JE→0x5AA70E。AL1時は0x5AA6F3 L=[N+0x6C] の vtable+0x64判定真の時だけ0x5AA709 E8→0x5A9CC0 を通り、L+0x160の内包座標縮退後に共通登録へ。旧06H/07Hのcallee
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
@@ -15,6 +24,9 @@
 
 <a id="field-8c"></a>
 ## N + 0x8C
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 10](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L10-L10) — 0x5AA6E6 ESI=ECX（受信効果N）、0x5AA6E9 [N+0x8C]=AL。0x5AA6EF TEST AL、0x5AA6F1 JE0x5AA70E によりAL=0は内側処理をskip。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 28](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L28-L28) — - 既知0x5AA6E9 は[N+0x8C]=AL保存。AL0は0x5AA6F1 JE→0x5AA70E。AL1時は0x5AA6F3 L=[N+0x6C] の vtable+0x64判定真の時だけ0x5AA709 E8→0x5A9CC0 を通り、L+0x160の内包座標縮退後に共通登録へ。旧06H/07Hのcallee
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion

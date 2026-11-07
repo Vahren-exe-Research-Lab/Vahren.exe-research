@@ -8,7 +8,7 @@
 
 文書結果は回収台帳での初出順で最大20件です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 1078 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 1163 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -22,6 +22,7 @@
 | [8](documents/page-008.md) | 100 | REA 06H｜P0 __write_nolock 保存後独立読み戻し | B-20261017-1517-01｜T012/T011 MP回復healと列車砲missileの同一raw gun_delayキー（限定SOURCE） |
 | [9](documents/page-009.md) | 100 | B-20261017-2017-01｜ZNMブーメランの子Skill分岐とMP回復宣言（限定ORIGINAL SOURCE） | B-20261013-1158-01｜WRQ-B-SKILL 54FD50 Rush状態コピー全本体（T013/T012） |
 | [10](documents/page-010.md) | 100 | B-20261013-1200-01｜WRQ-B-SKILL：55_00E0＋54FD50 copy chainのコピー対象421byteと非対象32byte（T013） | T024｜0x52AD00 連結リスト・マージ同距離分岐（2026-11-01 17H JST） |
-| [11](documents/page-011.md) | 78 | B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺 | B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json |
+| [11](documents/page-011.md) | 100 | B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺 | T028 原作retreat_ok後段：退却先未発見→メッセージ返却→mode1分配抑止（21H） |
+| [12](documents/page-012.md) | 63 | T028 退却先選択：Spot候補の容量・予約計数のstrict gate（22H） | B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json |
 
 [事典の入口](README.md)

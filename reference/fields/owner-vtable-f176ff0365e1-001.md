@@ -226,6 +226,12 @@
 - [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 20](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L20-L20) — NEXT: vtable+0x64 slotの実体、0x5A9CC0呼出時EAX/ESIのオブジェクト同一性と0x4BC9C0のkey、二vector producer、T028士気敗走、T013最終target、T024戦闘AI、T011召喚、T012ダメージ。安全拒否の迂回無し、原本/MASTER/他lane/RE
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 9](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L9-L9) — - 既04Hで接続済の第1vector manager+0x1EEC94..98: 0x48CFB3 MOV ECX,ESI→0x48CFB7 E8 CALL0x49E490→0x48CFBE TEST ESI,ESI、非NULLなら0x48CFC4 vtable+0x64→0x48CFC9 indirect CALL
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 10](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L10-L10) — - 第2vector manager+0x1EECA4..A8: 0x48D065 MOV ECX,ESI→0x48D069 E8 CALL0x49E490→0x48D070 TEST ESI,ESI、非NULLなら0x48D076 vtable+0x64→0x48D07B indirect CALL→AL gate。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 13](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L13-L13) — \| 0x435246 \| 0x435244 MOV AL,1 \| 0x435234 vtable+0x64 真後の1 \|
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
@@ -241,11 +247,20 @@
 <a id="field-68"></a>
 ## vtable + 0x68
 
+- [research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md 行 15](../../research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md?plain=1#L15-L15) — [FAILURE] 0x5682CB EAX==0→0x5682CF..0x568325で既存global stringへCP932 literal VA 0x628B4Cを連結し非零文字列pointerをEAXに返す。原生53 byte CP932は「の部隊は退却に失敗しました\n退却出来る領地がありません」。0x5
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md 行 16](../../research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md?plain=1#L16-L16) — [SUCCESS] EAX非零なら0x568329 MOV [EBP+0x1B4],EAX、0x56832F INC DWORD [EAX+0xB8]を先に実行し、0x568335以降で各Unitの+0x1867Cを検査→既知0x56835C vtable+0x68(PUSH1)へ。+0x1B4リンクと+0xB8参照数
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 17](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L17-L17) — - 0x44D002 unit[+0x1867C]!=0はskip。残りはunit[+0x1D0] pointer非NULLが必須。0x44D00B unit[+0x18615]==0の場合はpointer非NULLだけで0x44D033へ、+18615!=0の場合はpointer[+0x1F]!=0かつpointer
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-70"></a>
 ## vtable + 0x70
+
+- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 14](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L14-L14) — [EXISTING JOIN] 前08HのSimpleUnit 0x544790とUnit 0x578370の+0x1867C/HP・Unit限定0xF4241/+0x1E568分岐は既存、死亡イベントdead_event_a/dは07H既存。今回新しいのは正確なRTTI→vtable+0x70→入口の4系統区別とSt
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 65](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L65-L65) — 1. **T013/T012最優先**：`0x00550E70` の `candidate.vtable+0x70` の派生先、`0x00551E50` の結果反映（候補のHP/回復/状態、死亡判定）の実経路。以前拒否されたVAやコマンドに立ち入らず、許可済み証拠からのみ絞る。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
@@ -271,8 +286,14 @@
 - [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 8](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L8-L8) — [CRITICAL AL/MP ORDER] Upper caller57F9E8 reads Skill+0x278 cost→57F9EE subtract Unit+0x94 **BEFORE** optional57FA8F Unit vtable+0x80 and57FA99 call54E0B0. On r
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 16](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L16-L16) — [DEDUP] 既B T012_BATTLE_CALC.mdには0x55B060のHP handler単体解析あり、新関数/再READYとしては加算0。既T012 vtable+4、既T012 Unit vtable+0x80、既07-08H二入口・死イベントも再計上0。B主資料とB HANDOFFの検索では今回の4型
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1253-01｜WRQ-B-SKILL：Unit vtable+0x80 →0x579290軌道座標列設定関数（T012/T013）
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 10](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L10-L10) — - [DIRECT TAIL REBASE] 直行時ESP=S。0x546C5A/5B PUSH EAX×2、0x546C5C SUB ESP,8後ESP=S-0x10。0x546C62 LEA EAX,[ESP+0x20]=S+0x10(B)→PUSH、0x546C67 LEA ECX,[ESP+0x2C]=S+0x
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-98"></a>
 ## vtable + 0x98

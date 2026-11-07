@@ -1,0 +1,13 @@
+# REA-20261017-1936-W6-DEATH-TREE-01｜Wave6共通tree候補と通常死亡FlashObj callerの独立接続
+- [OWNER/SCOPE] 独立REA / WRQ-20261013-REA-DEATH・T012/T013、関連T005/T014。Local Compactで既存静的資料のクロスウォークのみ。新規REA/Ghidra/旧ゲーム起動0、既往安全拒否VA/抽出の再試行0。
+- [BASELINE] MASTER checkpoint172、研究DONE9/34（IN_PROGRESS21/VERIFY4）。最新保存sync progress_sync_20261011T153958076Z.json はWave1..5 16+10+10+12+16=64/64、P0 29/29、P1 35/35。raw QUEUEは古いstatus、PROGRESSは15/16のまま（rename EPERM）。保存済みrunが優先。
+- [W6 ORIGINAL CANDIDATES] REA_WAVE6_XREF_ELIGIBILITY_AUDIT_20261012_0140.md: 0x436560=T014/P1 は既VERIFIED親8関数、0x402C40=T005/T014/P1 は既VERIFIED親17関数から参照。これらは関数自身の5種類のGhidra証拠を意味しない。
+- [NEW CROSSWALK A] SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md DEATH-66（保存済みnative caller）に、FlashObj新規pool作成経路 0x4E2225 PUSH key=0xB0532C → 0x4E222E CALL 0x436560 → 0x4E2236 ECX=returned EAX → 0x4E2240 CALL 0x4E33B0 が記録済み。この使途はT012/T013のCorpse/FlashObj依存であり、0x436560をT014専用Power読込helperと固定解釈できない。
+- [NEW CROSSWALK B] DEATH-65にFlashObj pool key tree探索 0x4E2510 / 0x4E25A0 内で0x402C40によるquery/node文字列比較が保存済み。0x402C40はT005/T014だけでなく死亡効果側T012/T013のlookup前提にも現れる。比較順序・encoding・error/aliasは未確定。
+- [BASIS] Wave6の0x5964C0 callee evidence ev_ff3bf40913871207a524bdcdc61a67694df2d6300e9bcae944c544e93caf631d、0x40B200→0x402C40 evidence ev_f5bba603bb289fe46001acbd2e9227eb0df15c0d4b88f12e77e1f47cd0125ca6。DEATH側は過去に保存された局所native観測であり新5method IDではない。親件数8/17へ今回新加算0。
+- [REIMPLEMENTATION IMPLICATION] 将来Wave6選定時に0x436560と0x402C40をshared helper候補としてT005/T012/T013/T014間でレビューし、セーブ固有の関数名や直ちにknown return semanticsを付与しない。0x4E3040 tree挿入とnode allocator、lookup失敗・例外・実効child効果は引き続きVERIFY。正式QUEUE/他owner資料を書き換えない。
+- [WAVE6 STATUS] 正式0/16 VERIFIED、暫定P0 5/P1 11、未試行TODO12、既往安全拒否BLOCKED4（0x515750/515790/5159B0/57D180）、結果VERIFY0。拒否4件を新Waveへそのまま登録しない。Wave1～5凍結。
+- [PC PREFLIGHT] Local読取専用でCPU29%、空きRAM12.02GiB、Java/Ghidra/REAプロセス検出0、active.lock ENOENT（存在なし）、承認済みコピー SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。一回目の二重powershellラップがvariable展開を壊しParserError（REA-RC-20261017-1936-PS-DOUBLE-EXPAND-01 / OTHER / RESOLVED）；別の単純preflight読取コマンドが正常完了。データ書込/対象EXE実行なし。
+- [EXECUTION LIMIT] runnerにはREA6.4.0が指定される一方、最新成功RUN_RESULTはREA6.1.0/Ghidra12.1.4。Wave6正式未登録・QUEUE/PROGRESS更新EPERMも継続。run_decompile.ps1 / sync_progress.mjs は実行しない。単一MCP、最大4関数/回、Ghidra 900000ms・request 960000ms。新規Ghidra実行時間0秒、軽量作業時間未計測。
+- [GAMEPLAY/SAFETY] 旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。原本ZIP/EXE/SAVE、A-E、MASTER/T018/WRQ、Work/Git/push/MCP/automationは変更なし。
+- [NEXT] P0 WRQ-20261013-REA-DEATH の0x575A60→0x575DF0→0x5684B0の外側callback/Task正常帰還を既存証拠から優先。Wave6は重複・安全拒否・関数入口の根拠をチェックしてから安全な16候補を再選定。今回のshared helper依存は正式VERIFIEDや新ゲーム効果と誤認しない。

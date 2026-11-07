@@ -1,0 +1,17 @@
+# REA-20261017-2335-CP176-COUNT-AND-PREFLIGHT-01｜最新E表示とREA保存runの差分確認
+- [OWNER] 独立REA / T031・T012・T013・Wave6安全管理。Desktop Commander Local Compact限定。研究A〜E/MASTER/T018/Work/WRQ/Git/設定/automation書込なし。
+- [SOURCE READ] MASTER_LEDGER.md 最新checkpoint176、ANALYSIS_LANES_PROTOCOL.md、REA README/QUEUE/PROGRESS、runs/20261011T153309850Z/RUN_RESULT.json、logs/progress_sync_20261011T153958076Z.json、WAVES.md、REA既存監査とSOURCE_RECOVERY_DAMAGE_STATUS_20261011.mdをread-only照合。
+- [RECONCILIATION] E checkpoint176の「REA初期16候補15/16・TODO1」は、2026-10-11成功run・検証済syncより古い。REA authoritative wave1は16/16 VERIFIED。最後の0x479A30(T031)はruns/20261009T213635897Z/RUN_RESULT.jsonに5方法IDが既存保存済み。再解析不要。
+- [DEDUP] REA_20261017_1635_MASTER170_STATIC_COUNT_RECONCILIATION.mdが同不一致を既に報告。今回の増分はE checkpoint176でも古い値が再掲されたことの確認であって新関数・新静的発見ではない。Eの正式受領/訂正は未確認。E所有MASTERへの代行訂正は行わない。
+- [SAVED SYNC] wave1 16/16、wave2 10/10、wave3 10/10、wave4 12/12、wave5 16/16、累計64/64 VERIFIED、P0累計29/29/P1累計35/35。本回新規5-method evidence ID 0、新VERIFIED 0、保存済み証拠再使用。
+- [W6] 正式0/16、暫定候補P0 5/P1 11。既往安全拒否0x515750・0x515790・0x5159B0・0x57D180の4件はBLOCKED(P0 3/P1 1)、未試行12件TODO(P0 2/P1 10)、結果VERIFY0。拒否4件の再解析/再提出/別経路迂回0。
+- [QUEUE STATE] 最新sync queueUpdate=STALE_RENAME_DENIED、humanReadableProgress=SKIPPED_QUEUE_STALE。QUEUEのraw VERIFIED16/TODO48、PROGRESSの15/16表示はEPERMにより未追随。既存tmp保全、renameやACL回避・既往拒否操作の反復なし。
+- [RECOVERY REA-RC-20261017-2335-PREFLIGHT-SAFETY-01 / SAFETY_REFUSAL / BLOCKED] Local Compact start_processでCPU/RAM/active.lock/解析プロセス/承認済copy SHA256を一括読取する事前確認を1回要求したがOpenAI safety checksで拒否、PID・測定値を得られず。拒否されたcommandを別shell/path/toolや改変payloadで再試行しない。取得結果を推測で補わない。
+- [PC GATE] Local list_processesのCPU欄はn/a、現時点CPU率・空きRAM・同時稼働確認・現在のEXE SHAの完全なpreflightは未確定。Local directory一覧にはactive.lockが見えなかったがライブロック検査全項目PASSとは扱わない。新規重いrunner/syncを起動せず。
+- [VERSION GATE] 最新成功runはREA6.1.0/Ghidra12.1.4、現runner READMEはREA6.4.0を指定。正規Wave6未登録、EPERM、版差、拒否4VAも未解決。
+- [ORIGINAL/GAME] 既保存RUN_RESULT source/end SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今runで現ファイルを再hashできていない。原本EXE/ZIP/ゲーム実行0。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [RESEARCH] 最新MASTER checkpoint176で34Task DONE9/IN_PROGRESS21/VERIFY4。ゲーム性の正常死亡 0x575A60→0x575DF0→0x5684B0 の未解決callback/Task・Render・Spatial・選択解除はVERIFYのまま。T010/T012/T013を優先。
+- [NATIVE/WORK NO-DELTA] SOURCE_RECOVERY_DAMAGE_STATUSのDEATH-43/20261014 phase gate、最新保存20261017_22Hのworld recaptureを読んでからWork read-onlyでgraph/frame/spatial APIを確認。既知課題の再発見であり独立した新成果に計上0。
+- [LIMIT] 新規Ghidra実行0秒、今回の軽量調査総時間未計測。単一MCP、最大4関数/回、Ghidra900000ms/request960000ms維持。前Waveの64/64を凍結。
+- [NEXT] 正規許可条件が整うまで保存済nativeの死亡正常帰還証拠を照合。Wave6の未試行P0 0x470980・0x42E700は候補であって5-method VERIFIEDではない。E cp176のREA進捗欄はE担当がcp1635補正資料と本件IDを参照して判断する。REA ownerとして直接MASTERを書換えない。
+- [NO CHANGE] 原本、既存解析資料、他lane、MASTER、T018、Work、Git/push、MCP設定・スケジュール/automation変更なし。

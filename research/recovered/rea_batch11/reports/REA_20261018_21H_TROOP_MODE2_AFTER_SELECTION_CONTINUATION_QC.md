@@ -1,0 +1,18 @@
+# REA-20261018-21H-TROOP-MODE2-AFTER-SELECTION-01｜527ED0帰還後に残るmode2 Task解除
+- [OWNER/SCOPE] 独立REA。WRQ-20261013-REA-DEATH P0 / T010,T012,T013。Desktop Commander Local Compactのみ。保存済みnativeと現存Workコードのread-only照合。製品・原本・他レーン・既存正本への変更なし。
+- [NATIVE SOURCE] REA所有 SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md §ND-TROOP / 既存契約REA-ND-20261013-001。対象VA 0x5684B0,0x5685CA,0x5685F8,0x5685FD,0x56860F,0x568614,0x56861A,0x527ED0,0x4C22B0。
+- [BRANCH PRECONDITION] 通常Troop T.byte+1D==0、生存Unit数0。0x5685CAでT+1C=1。配列先頭U.byte+8C==0かつU.byte+1F8!=0の場合、0x5685F8から0x527ED0(T)に分岐する（配列先頭と最初の生存Unitの同一視は禁止）。
+- [POSTCALL NATIVE ORDER] 0x527ED0が正常帰還して初めて0x5685FDに進む。そこでengine+1EF140==2を評価する場合、0x56860Fから0x4C22B0(engine+C,T,delete=0)を呼ぶ。正常帰還は0x568614、最後は0x56861A RET。UI未帰還は完了ではない。
+- [WORK SOURCE] dev_lab/src/hakushin_compat/native_battle_outcome.py update_troop_5684b0：selected==0,count==0,controlled==Trueでpending trace(0x5685F8,return_pc=0x5685FD,callee=0x527ED0)を生成。mode2のtask_registry.unregister呼出判定はcontrolled==Falseのelse内部にのみ存在する。
+- [WORK CONTINUATION] native_battle_session.py continue_resolved_troop_selectionはbinding.advance後 phase=VERIFY_TROOP_SELECTIONとする。native_battle_runner.py のtroop_selection_resolvedもtrace生成後breakし、現存調査対象コード中に0x5685FD以降からmode2 Task解除へ戻す実装が確認できない。
+- [DELTA] 単に527ED0からUIを帰還させるだけでは足りない。normal・empty・controlled・mode2時の選択解除完了→0x5685FD mode2判定→条件付き4C22B0→0x56861Aのresume receiptが必要。mode2条件はnativeの後段評価であり、calleeの副作用を無根拠にゼロと置いて入口で早期判断しない。
+- [SEPARATE CASES] normal empty uncontrolledかつmode2は現WorkのTask解除直行候補。normal empty controlledだがmode!=2は527ED0正常帰還後Task解除skip候補。selected T.byte+1D!=0は別の選択部隊枝なのでこのmode2追尾を無条件に適用しない。
+- [LIMIT/VERIFY] 合法ゲームで上記組合せへの到達、527ED0/UIの全帰還、副作用、Task結果の実機一致は未証明。Workの全モジュール横断の不存在証明ではなく確認したAPI/runnerにおける静的接続不足。旧EXE実機test 0、新規Ghidra取得0。
+- [ACCEPTANCE NOT RUN] first=disabled, liveCount=0, T+1D=0, head+8C/1F8 controlled=true, engine+1EF140=2のFixtureで trace→527ED0→UI→5685FD→4C22B0(delete0)→56861A→死亡側0x575F71又は0x575F91を個別継続し、各段階のnextVA/returnPC/owner/Task active/pending before-afterを保存。各callee未帰還ならVERIFYのまま。
+- [PROVENANCE] source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（この回承認済コピーをGet-FileHashで再確認）。既存RUN_RESULT 20261011T153309850Z REA6.1.0/Ghidra12.1.4、最新sync 20261011T153958076Z 64/64。新5種evidence ID各0/静的VERIFIED増0。
+- [METRICS] W1 16/16 W2 10/10 W3 10/10 W4 12/12 W5 16/16、P0 29/29 P1 35/35。Wave6正式0/16・候補P0 5/P1 11、未着手TODO12(P0 2/P1 10)、既往安全拒否BLOCKED4(P0 3/P1 1)、結果VERIFY0。QUEUE/PROGRESSはrename EPERMによる古い表示。
+- [MASTER/GOLDEN] 今回読取MASTER checkpoint185、34Task DONE9/IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] Local接続OK。CPU11%、空きRAM8.42GiB、Java/Ghidra/REAプロセス名非検出、active.lockはENOENT。成功runのREA6.1.0に対し現在runner6.4.0、Wave6未正式登録、安全拒否/EPERM未解消のためGhidra/run_decompile/sync起動0秒。
+- [TIME/LIMIT] CPU/RAM確認2.798秒・ハッシュ確認1.437秒、軽量全体の総時間未計測。制限は単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。追加インストールなし。
+- [NEXT] 0x5685FD後のTask解除の完全帰還とmode2 gateを既存証拠で検証、次いで二つのtroop update(0x575F6C→0x575F71、0x575F8C→0x575F91)のowner/pointer/return receiptを区別。禁止VA0x5710C0..0x571500および過去安全拒否/抽出を再試行しない。
+- [NO CHANGE] 原本ZIP/EXE、A-E/MASTER/T018、Work製品、QUEUE/PROGRESS、Git/push/公開、MCP設定、既存automation変更なし。

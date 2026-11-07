@@ -49,6 +49,12 @@
 - [REF_SAVE_FORMAT.md 行 208](../../REF_SAVE_FORMAT.md?plain=1#L208-L208) — 未確認のまま: Unit の +0x76・+0x130 の表、+0x79 の詳しい意味、Spot +0x64、Power +0x74・+0xB4、+0x40 の正体、auto（7 世代の残り）がゲームで読めるか（save3 は実機確認済み）。
   制約・訂正　Existing full body linked; catalog revision differs
 
+<a id="field-b0"></a>
+## Power + 0xB0
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L6-L6) — - [ADDITIONAL BRANCH] 0x59691Eはstring候補0x626AB0を0x40B200で判別し、非一致時0x596997へ分岐。そこではCALL0x470700で数値をstack scratchへ読み、0x5969B4 CALL0x436560→0x5969CF CALL0x436680→0x
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-c4"></a>
 ## Power + 0xC4
 

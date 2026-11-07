@@ -1,0 +1,22 @@
+# REA-20261015-2240-POSTLETHAL-EVENT-FLAG-ABI-01
+- OWNER/REQUEST: REA専用 / WRQ-20261013-REA-DEATH (P0); T012/T013, 参照T006/T010/T014/T028。2026-10-15 22時台JST。既存保存済みx86＋既存REA/Ghidra5証拠のread-only crosscall照合。新規EXE逆解析・抽出なし。
+- TARGET: rea_lab/targets/hakushin067_Vahren.exe の承認済みコピー。実測SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。原本未実行/未編集。
+- SOURCE: exe/T012_STR_AFTERDEATH_PROBE.txt VA0x544CA5-544CC7、0x578AD8-578AFA; exe/T006_CORE_HANDLERS.txt VA0x4A13F8-4A1476,0x4321B0-432379。REA既存WAVE4_FINDINGSとREA_EVENT_SCENE_OBJECT_BRANCH_AUDITは0x4321B0個体のguard/writerを既報、本記録は死亡後2callsiteからの実引数接続が差分。
+- CALLEE FRAME: 0x4321B0のprologueはpush3回(12B),sub esp,0x108(264B),push EBX/EBP/ESI/EDI(16B),push cookie(4B)=計0x128B。従って0x4321F4 CMP BYTE [esp+0x154],0 は入口SP0+0x2Cの呼出側末尾引数byteを参照（Ghidra pseudo in_stack_0000002c）。
+- POSTLETHAL CALLER A: 0x544CA5 PUSH 1; 0x544CA7 PUSH 0; 0x544CA9 PUSH 0; 0x544CAB SUB ESP,0x1C (string); 0x544CC1 PUSH [Unit+0x1E0]; 0x544CC2 CALL 0x4321B0。入口SP0+0x2Cは最初にpushした1。
+- POSTLETHAL CALLER B: 0x578AD8 PUSH 1; 0x578ADA PUSH 0; 0x578ADC PUSH 0; 0x578ADE SUB ESP,0x1C; 0x578AF4 PUSH [Unit+0x1E0]; 0x578AF5 CALL 0x4321B0。同様に入口SP0+0x2C=1。
+- CONTRAST: script caller 0x4A13F8 PUSH 0; 0x4A13FA PUSH ECX; 0x4A13FB PUSH EDX; 0x4A13FC SUB ESP,0x1C; 0x4A1418 PUSH engine; 0x4A1419 CALL 0x4321B0。こちらの同flag byte=0。別caller 0x4A144F PUSH 1/0x4A1451 PUSH 0/0x4A1453 PUSH 0 は死亡後callerと同flag=1。
+- EXACT GUARD: 0x4321F4 flag!=0 THEN 0x432209 CMP BYTE [engine+0x1EEC44],0。両方非0なら0x432216 battle-special routeへ進み、一般経路0x432306をskipする。flag=1でもengine battle flag=0なら0x432306一般経路。
+- GENERAL ROUTE: 0x432306以下は保存済み原作x86で@evtend_文字列生成系を経て0x432379 CALL 0x4637A0（既存VERIFIED numeric writer）、event property lookup 0x4323AB→0x4647D0とVM frame処理へ。特殊経路ではこの関数内の0x432379 writerを通らない（既存WAVE4_FINDINGSの限界と一致）。
+- CRITICAL IMPLICATION: 死亡後両callerの明示flag=1は「常にhistory writerへ行く」を意味しない。0x49CD60を2回呼んだ後のlive engine+0x1EEC44状態に応じて0x4321B0内部のdispatch・履歴処理が異なる。先行virtual+58/0x49CD60の副作用は未知でbattle flagを事前固定できない。
+- NO OVERCLAIM: 0x4321B0全実行・@evtend_値/保存持続性・どの実ゲーム状態でspecial/generalに到達するか・Task callback外側正常帰還・例外処理/旧実機一致はVERIFY。ゲーム固有event意味論/確定BUGとしては扱わない。
+- EXISTING GHIDRA VERIFIED 0x4321B0: info ev_b0baec02c8d12ecbd78d2700c4b72f41016dad1c8fd11c33be96aa29aa107dea; pseudo ev_6443778f30890c0e5cb33fc7bbabf54b8cd665a1424f7b354c6bd439dbac2051; assembly ev_56f9a3557ec9eaa37a3dae138562b66cdde8d20a39e915d61d3e8c37709157db.
+- EXISTING GHIDRA: callers ev_0794fd174f88daf043f78ebffa04ea6ebc0dd6598eb55eee4075f1bce00664ac; callees ev_a7a4d0b5de1642953e3949dce36374369bf2c5c14b77ff0611341f0a68fa9d8e; run 20261009T225741694Z Ghidra12.1.4/REA6.1.0。
+- COUNTS: 現保存sync progress_sync_20261011T153958076Z はWave1～5 64/64 VERIFIED、Wave5 16/16、P0 29/29・P1 35/35。今回新5種evidence ID=0、新VERIFIED=0。Wave6正式0/16（候補P0 5/P1 11、未試行12/既往安全拒否4、関数結果VERIFY0）。
+- MASTER: 今回read-onlyのcheckpoint157、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧未改変EXE gameplay golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- PREFLIGHT: Local Compact 2026-10-15T22:37:58+09:00 CPU2%、空きRAM17.26GiB、Java/Ghidra/REA検出0、active.lockなし、承認済みcopy SHA一致。重量REA/Ghidra実行時間0秒、軽量全作業時間は未計測。
+- NOT RUN: 既存QUEUE/PROGRESSはWindows rename EPERMでSTALE（正式sync queueUpdate=STALE_RENAME_DENIED）、Wave6正式未登録かつ安全拒否候補4VA、保存成功REA6.1.0と現行README runner6.4.0の相違。runner/sync/Java/lock削除・再インストールなし。制限：単一MCP、関数最大4、Ghidra900000ms、request960000ms。
+- PREVIOUS BLOCKED: REA-RC-20261015-1840-DUALSTRING-WRITE-01、REA-RC-20261015-2040-FALSE-BRANCH-WRITE-01の拒否済みpayloadはPC未保存のまま、再提出/別path/tool/shellでの迂回なし。本成果とは別ID。
+- NEXT: P0 WRQ-20261013-REA-DEATHへこのA/B caller→0x4321B0のengine flag評価時点を引継ぎ、保存済み証拠で0x575A60→575DF0→5684B0外側Task callback帰還と0x49CD60後のflag writer/readerを再検証。個別callee return receiptなしで成功偽装しない。
+- BOUNDARY: 自REA所有新規ファイルのみ。MASTER/A～E/T018/研究他領域/dev_lab/WRQ/Work/原本ZIP EXE/Git/push/MCP設定/automationは書込変更なし。
+- ACCEPTANCE MATRIX (DESIGNED/NOT RUN): callerFlag0×battleFlag0→general; 0×1→general; 1×0→general; 1×1→special。死亡後A/BはcallerFlag=1固定なのでbattleFlagの実到達値と切替時点のcaptureが必須。既済event履歴writer/stackの副作用を先取りせず、分岐前後のengine state, `0x4637A0` call count, queue stack, return PCを別receiptにする。旧原作goldenは未観測であり、この行列は静的分岐のみ。

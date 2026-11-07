@@ -8,7 +8,7 @@
 
 文書結果は回収台帳での初出順で最大20件です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-010.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-010.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-012.md)
 
 - [B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺](../../research/recovered/b_batch10/data/T024_AI_DUPLICATE_FAR_DECLARATION_INHERITANCE_20261016.md?plain=1#L1-L1) — `research/recovered/b_batch10/data/T024_AI_DUPLICATE_FAR_DECLARATION_INHERITANCE_20261016.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1028-L1028)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
@@ -322,4 +322,92 @@
   回収状態 LOCAL_EXACT_JSON_RECEIPT。以前の収録状況 CATALOG_ONLY; NO BASELINE EXACT SHA BODY。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1105-L1105)。制約・訂正 Dated author audit/static/synthetic scope only; linked filenames/digests unverified; no runtime/Golden/strict MATCH/READY promotion
   本文 SHA256 `89218725795028ef6eebe6f475a2517cf3c8b2379fb5be297ba41daeeb1fb680`
 
-[前のページ](page-010.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [B-20261026-20H-T028-ATAN2-TRUNC-DISPATCH-01｜T028/T012 方向角度 atan2 dispatcher と整数化二経路](../../research/recovered/b_batch11/data/T028_ATAN2_DISPATCH_TRUNCATION_NATIVE_20261026_20H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_ATAN2_DISPATCH_TRUNCATION_NATIVE_20261026_20H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1106-L1106)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `f233a2e53c634f94f9681eed0a0e127fe6d58988bd6951249fb2dd8e68e2c942`
+
+- [B-20261026-22H-T028-ATAN2-FXAM-AXIS-ORDER-01 \| T028/T012 \| STATIC / INFERRED / VERIFY / NOT READY](../../research/recovered/b_batch11/data/T028_ATAN2_FXAM_AXIS_DISPATCH_NATIVE_20261026_22H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_ATAN2_FXAM_AXIS_DISPATCH_NATIVE_20261026_22H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1107-L1107)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `9c850cbabbd71f5019583f771cf431a99ef451f083958b1fef9501436ae6be72`
+
+- [B-20261016-1210-01｜T028 ボス死亡イベント36定義の分岐別原文分類](../../research/recovered/b_batch11/data/T028_BOSS_EVENT_36_CLASS_SOURCE_20261016.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_BOSS_EVENT_36_CLASS_SOURCE_20261016.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1108-L1108)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `0630e513b7d04114cc11193507c04ac19560c2a041d050dbd609fd542db9e70b`
+
+- [B-20261027-03H-T028-CACHE-UNIQUE-INSERT-ROLLBACK-01｜経路cacheハッシュ一意挿入時の重複候補rollback](../../research/recovered/b_batch11/data/T028_CACHE_DUPLICATE_INSERT_ROLLBACK_NATIVE_20261027_03H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_CACHE_DUPLICATE_INSERT_ROLLBACK_NATIVE_20261027_03H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1109-L1109)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `532489082933b1e06408886db6346b5ccf3100ca8f5d34cbf5ae4aaf0c22d04a`
+
+- [B-20261027-22H-T028-COUNT-QUEUE-TRANSITION-CLEAR-01｜dead_event=count の1C-byte record配列が戦闘遷移処理で論理clearされる経路](../../research/recovered/b_batch11/data/T028_DEATHCOUNT_RECORD_CLEAR_TRANSITION_NATIVE_20261027_22H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DEATHCOUNT_RECORD_CLEAR_TRANSITION_NATIVE_20261027_22H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1110-L1110)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `0d93569856c41550eb7f76ae79bd2e5802567ab1e3fbba45cc9934f0b4d6d8b5`
+
+- [B-20261028-14H-T028-DECIDE-SELECTOR-FLAG-WEIGHT-01｜候補状態+0x74による decide3/decide11 と数値パラメータの分岐](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1111-L1111)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `0c7954ec4979f19e2d74ee80bf9e0dce7b189d00beaae32ccbec5a21acdbf046`
+
+- [B-20261026-1715-T028-DEQUE-MAP-GROWTH-REPACK-01｜候補deque map増設時の循環配置保持（T028、2026-10-26 17H JST）](../../research/recovered/b_batch11/data/T028_DEQUE_MAP_GROWTH_REPACK_NATIVE_20261026_17H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DEQUE_MAP_GROWTH_REPACK_NATIVE_20261026_17H.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_VARIANT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1112-L1112)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `2797225fd00cb17f57db043d29124bf60cfd7e8bb6a90b0145e2a202343be457`
+
+- [B-20261026-1816-T028-ORDER-PERM-PHASE-JOIN-01｜代替移動・召喚配置の8方向優先順と起点引数（B/T028、T011参照）](../../research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1113-L1113)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `4be6776bbc1745b46d0dc665802bc9762f2f2d24c28ff7dfe21150d7979d2289`
+
+- [T028｜初期空間モデルの二重格子・定数幅・ABI連鎖（12H / STATIC・VERIFY・NOT READY）](../../research/recovered/b_batch11/data/T028_DUAL_GRID_INITIAL_COUNT_SOURCE_NATIVE_20261026_12H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DUAL_GRID_INITIAL_COUNT_SOURCE_NATIVE_20261026_12H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1114-L1114)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `84c767f1caa41f703efdc06873a79c7c0dcc74c6bb031fccb6edc3cb96365108`
+
+- [B-20261029-0515-T028-ALFLAG-ONE-SHOT-DRAIN-01｜T028 二系統結果vectorのALフラグ分岐と消費後クリア](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1115-L1115)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `b5d46e212bb9c9a93615e72bc0287110d3a685f649f64f4ea56844f7da875024`
+
+- [新B T028｜effect mode 0..11 palette・runtime field・登録済みガード（2026-10-29 10H）](../../research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1116-L1116)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `541dfce83c2d06559316a63ad624ebc38914bcf2035d6ba6c92adff4998f8396`
+
+- [迫真戦記ver0.67｜B T028：結果キューは同一producerから5要素生成（22H/23H訂正）](../../research/recovered/b_batch11/data/T028_FIVE_ELEMENT_RECORD_PRODUCER_CORRECTION_NATIVE_20261029_00H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_FIVE_ELEMENT_RECORD_PRODUCER_CORRECTION_NATIVE_20261029_00H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1117-L1117)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `960ed4610d1a340855528a6c131ac07decbc7a44ba3525ed6a619e98edbefcdf`
+
+- [B-20261029-0716-T028-INNER-POINT-OUTER-CENTER-NATIVE-01｜T028 AL1リンク先の内側矩形ゼロ化と受信側の外側中心合わせ](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1118-L1118)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `4c3d8984b7ea25ffd059352ffc17ba31615f8993d5b759375ab9c86fc4fac9c1`
+
+- [B-20261028-13H-T028-NULL-ECX-CALLSITE-MATRIX-01｜0x497BB0のnull出力vector引数producerを6 CALL siteで分類](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1119-L1119)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `d82737d1e2413d29521bbf73a24810aa140779b1b5f636211988863c93177979`
+
+- [B-20261028-16H-T028-POSTRESULT-DIALOG-DISPATCH-FALLBACK-01｜T028 放浪／傭兵結果文のdialog dispatch接続](../../research/recovered/b_batch11/data/T028_POSTRESULT_DIALOG_DISPATCH_FALLBACK_NATIVE_20261028_16H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_POSTRESULT_DIALOG_DISPATCH_FALLBACK_NATIVE_20261028_16H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1120-L1120)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `c9ede1ae7a22bcb44afcfd53c6dd3525b0f23e93fea8c378d2b607f4cd66a938`
+
+- [B-20261030-0916-T028-POSTRET-FULLERASE-PROVEN-01｜退却候補一時木の「全域削除」経路を呼出し実引数から証明](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1121-L1121)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `4c892aa112d27de3ebbc3d02c8154bd306ba422ae363a7e11102ec32d4cdfecd`
+
+- [B-20261029-0311-T028-QUEUE-OUTOFRANGE-THROW-01｜結果キューの不完全5要素レコードは範囲外例外経路（STATIC/VERIFY/NOT READY）](../../research/recovered/b_batch11/data/T028_RESULT_QUEUE_INCOMPLETE_TUPLE_OUTOFRANGE_V3_20261029_03H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RESULT_QUEUE_INCOMPLETE_TUPLE_OUTOFRANGE_V3_20261029_03H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1122-L1122)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `309e4f761ad1897dbbd109c873e45f6a17e4df8af87961c11d96e5bee6ab7fec`
+
+- [迫真戦記 ver0.67｜B T028：放浪・傭兵結果vectorのphase1読取／排出経路（23時台）](../../research/recovered/b_batch11/data/T028_RESULT_QUEUE_PHASE1_FLUSH_NATIVE_20261028_23H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RESULT_QUEUE_PHASE1_FLUSH_NATIVE_20261028_23H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1123-L1123)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `a95fc92fff9e6c3766cf3737c65a20667106c65d5cffd5988d5320bfd97f3654`
+
+- [B-20261030-0615-T028-MODE1-CASCADE-DTOR-01｜退却候補mode1の二段階破棄とゼロ要素例外経路](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1124-L1124)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `9942b6b3aa22c2cb93850dbfcaf64a01a4bd0b51f0c0c4f9b3970d0751320bdd`
+
+- [B-20261030-0711-T028-MODE1-POSTRET-BUFFER-RELEASE-01｜退却候補mode1早期分岐の配列バッファ条件付き解放](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_POSTRET_CONDITIONAL_VECTOR_BUFFER_FREE_NATIVE_20261030_07H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RETREAT_MODE1_POSTRET_CONDITIONAL_VECTOR_BUFFER_FREE_NATIVE_20261030_07H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1125-L1125)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `a62f2bfc272326ae24a94807637a9f370644995abf2f1182179e7357a14db945`
+
+- [B-20261030-0417-T028-RETREAT-NOTIFY-INDEPENDENT-GATE-01](../../research/recovered/b_batch11/data/T028_RETREAT_NOTIFICATION_POSTRELEASE_FLAG_GATE_NATIVE_20261030_04H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RETREAT_NOTIFICATION_POSTRELEASE_FLAG_GATE_NATIVE_20261030_04H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1126-L1126)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `7a56916d8fa5540426bb178f5272295dae5f353f826c8ad2ada8f45410190774`
+
+- [T028 原作retreat_ok後段：退却先未発見→メッセージ返却→mode1分配抑止（21H）](../../research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1127-L1127)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+  本文 SHA256 `ee0831a672e0afa56d17f4ed278c1b49260c0d3120e47acb6abad4f02a01135a`
+
+[前のページ](page-010.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-012.md)

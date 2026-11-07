@@ -1,0 +1,169 @@
+{
+  "checks_passed": 21,
+  "source_evidence_sha256": "1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205",
+  "native_site_hex_bytes_verified_from_13H_saved_record": {
+    "0x00526074": "8B5140",
+    "0x00526077": "8B4148",
+    "0x0052607A": "8B494C",
+    "0x0052607D": "2BC2",
+    "0x0052607F": "D1F8",
+    "0x00526081": "03C2"
+  },
+  "synthetic_cases": [
+    {
+      "a": -1,
+      "b": 0,
+      "native_i32": -1,
+      "mathematical_floor": -1,
+      "trunc0_arithmetic_mean": 0,
+      "sub_overflows": false
+    },
+    {
+      "a": -2,
+      "b": -1,
+      "native_i32": -2,
+      "mathematical_floor": -2,
+      "trunc0_arithmetic_mean": -1,
+      "sub_overflows": false
+    },
+    {
+      "a": -3,
+      "b": 0,
+      "native_i32": -2,
+      "mathematical_floor": -2,
+      "trunc0_arithmetic_mean": -1,
+      "sub_overflows": false
+    },
+    {
+      "a": 0,
+      "b": -1,
+      "native_i32": -1,
+      "mathematical_floor": -1,
+      "trunc0_arithmetic_mean": 0,
+      "sub_overflows": false
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "native_i32": 0,
+      "mathematical_floor": 0,
+      "trunc0_arithmetic_mean": 0,
+      "sub_overflows": false
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "native_i32": 1,
+      "mathematical_floor": 1,
+      "trunc0_arithmetic_mean": 1,
+      "sub_overflows": false
+    },
+    {
+      "a": -2147483648,
+      "b": 0,
+      "native_i32": 1073741824,
+      "mathematical_floor": -1073741824,
+      "trunc0_arithmetic_mean": -1073741824,
+      "sub_overflows": true
+    },
+    {
+      "a": 0,
+      "b": -2147483648,
+      "native_i32": -1073741824,
+      "mathematical_floor": -1073741824,
+      "trunc0_arithmetic_mean": -1073741824,
+      "sub_overflows": false
+    },
+    {
+      "a": -2147483648,
+      "b": 2147483647,
+      "native_i32": 2147483647,
+      "mathematical_floor": -1,
+      "trunc0_arithmetic_mean": 0,
+      "sub_overflows": true
+    },
+    {
+      "a": 2147483647,
+      "b": -2147483648,
+      "native_i32": 2147483647,
+      "mathematical_floor": -1,
+      "trunc0_arithmetic_mean": 0,
+      "sub_overflows": true
+    },
+    {
+      "a": 2147483647,
+      "b": 2147483647,
+      "native_i32": 2147483647,
+      "mathematical_floor": 2147483647,
+      "trunc0_arithmetic_mean": 2147483647,
+      "sub_overflows": false
+    },
+    {
+      "a": -2147483648,
+      "b": -2147483648,
+      "native_i32": -2147483648,
+      "mathematical_floor": -2147483648,
+      "trunc0_arithmetic_mean": -2147483648,
+      "sub_overflows": false
+    }
+  ],
+  "safe_grid_pairs": 263169,
+  "safe_grid_trunc0_divergences": 65792,
+  "PC_native_reverified_this_run": false,
+  "original_EXE_executed": false,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "research_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+  "owner": "B",
+  "tasks": [
+    "T011",
+    "T024"
+  ],
+  "scope": "PREVIOUSLY_CAPTURED_STATIC_13H_AND_SYNTHETIC_MODEL_ONLY",
+  "time_local": "2026-11-01 16H JST",
+  "prior_14_15h_manifest_local_readback": [
+    {
+      "hour": "14H",
+      "checked": 4,
+      "passed": 4
+    },
+    {
+      "hour": "15H",
+      "checked": 4,
+      "passed": 4
+    }
+  ],
+  "local_connection_attempt": "UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org",
+  "connection_error_type": "transient connection error (NOT safety refusal)",
+  "pc_03h_failed_save": "UNVERIFIED",
+  "pc_4h_to_16h_sync": "UNVERIFIED",
+  "protected_range": "0x5710C0..0x571500 not accessed",
+  "kb_reference_blob_sha": {
+    "symbols.tsv": "3fcf2d436c21f3fc91791a91e75c9a800167ca4d",
+    "structs.tsv": "d79f03b1dbac67012882b0cb691d6af479610a01",
+    "REF_BATTLE_AI_MORALE.md": "83fb9b91a84e8190042802ed7af5666ca51f7f8c"
+  },
+  "kb_duplicate_result": "No literal 0x526030,0x529DC0,0x52AD00,0x52607F in checked GitHub develop KB files; latest PC not read; NOT definitive duplicate-free",
+  "new_original_machine_code_read": false,
+  "source_provenance": "13H saved 6 machine instruction windows, Ghidra 00526030.c hash 7FEE7676046DFF1E081ED82702FBB17AEEEA2CCA92CCE64E1BB57B2F0D5745CF (not directly read this run)",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (previous original PE receipt only)",
+  "prior_existing_ids": [
+    "B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01",
+    "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+    "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01"
+  ],
+  "initial_verifier_failures": [
+    "KeyError from 0x/0X normalization mismatch",
+    "AssertionError from expected mathematical floor accidentally coded as trunc0"
+  ],
+  "correction": "Test harness corrected. Full 21/21 checks PASS. Failure history preserved.",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "SYNTHETIC_ONLY",
+    "VERIFY",
+    "NOT READY"
+  ]
+}

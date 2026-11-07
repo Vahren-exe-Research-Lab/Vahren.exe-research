@@ -136,6 +136,9 @@
 <a id="field-330"></a>
 ## owner + 0x330
 
+- [research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md 行 15](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L15-L15) — - 10/28 12H既知 0x463590 はowner+0x2FCの0x49F410→0x4BF820 erase、owner+0x330/0x32Cを使う0x460F10経路を持つ。0x4635E9 TEST EBXが非0なら0x4635EE CALL0x4591F0（内部資源destructor様）、続けて0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 10](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L10-L10) — 0x4635DE CALL0x402710でscratch文字列構築後、0x4635E3 PUSH owner→0x4635E4 CALL0x460F10。callee 0x460F46は[owner+0x330]を木headerとして走査し、0x460F95 CALL0x402C40の比較結果と0x460FA2..0
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
@@ -153,6 +156,15 @@
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_POSTPASS_VTABLE68_NATIVE_20261029_20H.md 行 8](../../research/recovered/b_batch2/T028_RETREAT_OK_POSTPASS_VTABLE68_NATIVE_20261029_20H.md?plain=1#L8-L8) — - 0x52216E MOV ECX,EBP→0x522170 E8 CALL 0x528700、0x522175 PUSH EAX/0x522176 LEA→0x52217B E8 CALL 0x525C90。前者は2026-10-25 T024で既知の owner+0x364/+0x368 spanに応じたlist
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md?plain=1#L6-L6) — - [STATIC CROSSCHECK 2] 解除後owner+0x34Cが0、かつ((owner+0x368-owner+0x364)&0xFFFFFFFC)==0の2条件でowner+0x45Dを0化。Work count=oldcount-len(selection)、bitmask比較、hide→+0x45D
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-368"></a>
+## owner + 0x368
+
+- [research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md?plain=1#L6-L6) — - [STATIC CROSSCHECK 2] 解除後owner+0x34Cが0、かつ((owner+0x368-owner+0x364)&0xFFFFFFFC)==0の2条件でowner+0x45Dを0化。Work count=oldcount-len(selection)、bitmask比較、hide→+0x45D
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-3ca0"></a>
 ## owner + 0x3CA0

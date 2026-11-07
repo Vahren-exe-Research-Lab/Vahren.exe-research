@@ -1,0 +1,18 @@
+# REA-20261018-0833-DEATH-GRAPH-PHASE-CROSSAPI-01｜通常死亡graphのセッション位相と既存解除APIの接続境界
+- [OWNER/REQUEST] 独立REA・WRQ-20261013-REA-DEATH P0。対象T010/T012/T013、VA0x575A60→0x575DF0→0x5684B0。Desktop Commander Local Compact限定、既存証拠/別owner実装read-only。新Ghidra/実機実行0。
+- [INITIAL SOURCE] MASTER_LEDGER checkpoint181、evidence/ANALYSIS_LANES_PROTOCOL、decomp_task README/QUEUE/PROGRESS、最新RUN_RESULT 20261011T153309850Z、sync 20261011T153958076Z、REA-ND-20261013-001/直近0730復旧を先読。
+- [NATIVE CONTRACT] 保存済みREA-ND-20261013-001 ND-GRAPH: W=Unit+5B0/800/89Cを順序処理し、各W.virtual+08のAL!=0なら0x4C22B0 Task解除、virtual+48 AL!=0なら0x4C3E40 Render解除、virtual+44の後0x4BC9C0 Spatial解除。後段0x5684B0の部隊・選択解除も必要。各callee正常帰還はVERIFY。
+- [WORK PHASE] dev_lab/src/hakushin_compat/native_battle_session.py begin_resolved_normal_disableは非完了でphase=VERIFY_NORMAL_DISABLE、continue_resolved_normal_disable_collisionはphase=VERIFY_NORMAL_DISABLE_GRAPHへ遷移、continue_resolved_normal_disable_graphは同phase・next_va=0x575C52を要求して初回graphのみ設定。
+- [WORK SHARED API GUARD] 同session._activeはphase=='ACTIVE'以外でSessionGap。unregister_resolved_task、unregister_resolved_render、unregister_resolved_window、およびupdate_resolved_troopはいずれも_activeを要求。従ってphase=VERIFY_NORMAL_DISABLE_GRAPHのまま、これらの既存公開APIを単純に順次呼ぶ設計はguardで停止する。
+- [RUNNER] native_battle_runner.pyでnormal_disable_graph_resolvedはcontinuation記録後break。別actionのtask_unregister_resolved/render_unregister_resolved/window_unregister_resolved/troop_update_resolvedの各handlerは当該既存Session APIに依存し、graphの途中で返りPCを渡す接続を持たない（確認範囲）。
+- [INDEPENDENT DELTA] 既報0035/0135/0236は初回graphで停止・再入guard・持続復元欠如、22Hはworld再取得条件。本IDの独立差分は『未実装graph内stageを既存独立解除APIで補おうとしてもSession位相guardにより合成できない』という既存API間の静的呼出制約。現行runnerがその合成を実際に試みた事実はない。
+- [SAFE ACCEPTANCE] Work側の将来設計はgraph所有の継続状態（stage、object、mgr、virtual raw AL、EAX、returnPC、完了済み副作用）から段階ごとに検査し、必要なregistry処理だけを委譲する。単純にphase='ACTIVE'へ戻して他actionを通すと未帰還graphの一般操作を許すため、代替手段と断定しない。
+- [VERIFY] Dot+54のEAX、3Window実vtable、各Task/Render/Spatial managerとworld再取得、独立calleeの正常return、0x5684B0親子帰還、Task callback、実Gameplayは未検証。原作BUG・Work動的不一致確定ではない。
+- [EVIDENCE] 新Ghidra info/pseudo/assembly/callers/callees ID取得0、STATIC VERIFIED増0。既存ND-001、latest RUN_RESULT source_sha256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187を再使用。今回COPY EXE SHAは再計算なし。
+- [WAVES] 保存済sync W1=16/16 W2=10/10 W3=10/10 W4=12/12 W5=16/16、累計64/64 VERIFIED（P0=29/29 P1=35/35）。Wave6正式0/16、暫定P0=5/P1=11、未試行TODO=12（P0=2/P1=10）、既往安全拒否BLOCKED=4（P0=3/P1=1）、結果VERIFY0。
+- [STALE] 現QUEUEは旧status16 VERIFIED/48 TODO、PROGRESSは15/16。最新sync queueUpdate=STALE_RENAME_DENIED、humanReadableProgress=SKIPPED_QUEUE_STALE。rename EPERM再試行/迂回なし。
+- [MASTER/GOLDEN] 最新checkpoint181、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/RUNTIME] Local接続成功、list_processes CPU率n/a、RAM未測定、プロセス名Java/Ghidra/REA一致は確認範囲で無し、Node複数、session PID23860は入力待ちで非介入、decomp_task一覧active.lock未検出。高負荷gate未完了。新規Ghidra実行0秒、軽量照合の総時間未計測。
+- [BLOCKER/LIMIT] 現runner REA6.4.0指定vs最後の成功REA6.1.0/Ghidra12.1.4、Wave6未登録・拒否4VA・rename EPERM・CPU/RAM不明のためrunner/sync起動0。単一MCP、4関数/回以下、Ghidra900000ms/request960000ms維持。
+- [NEXT] P0 WRQ-DEATH：既存Nativeの各window returnPC/virtual raw ALとgraph専用stage接続条件を照合し、Task/Render/Spatial、575F95→575C54→575D0D→5789F2→578B5Fの逐次receiptをVERIFYとしてWork ownerへ渡せる形にする。Wave6のT014 P0 0x470980/0x42E700はTODO継続。
+- [SAFETY/OWNER] 禁止0x5710C0..0x571500、Wave6拒否4VA、既往拒否REA text抽出/書込の再試行・迂回0。原本ZIP/EXE/SAVE・A-E/MASTER/T018・Work/WRQ・runner/QUEUE/PROGRESS・Git/push・MCP設定・既存automation変更0。

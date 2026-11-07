@@ -1,0 +1,18 @@
+# B-20261026-1816-T028-ORDER-PERM-PHASE-JOIN-01｜代替移動・召喚配置の8方向優先順と起点引数（B/T028、T011参照）
+Status: STATIC-ORIGINAL-PE-DATA / STATIC-ORIGINAL-PE-ASM / STATIC-GHIDRA-CROSSCHECK / INFERRED / VERIFY / NOT READY。新READY0、E MASTER統合0、Task DONE0、原作Gameplay Golden PASS0、strict MATCH0。
+[PRECHECK] Desktop Commander Local Compactオンライン。MASTER既正式checkpoint196/READY596（既存最終E値）、ANALYSIS_LANES_PROTOCOL、B HANDOFF末尾、T011/T012/T013/T024/T028現行owner資料、UNSYNCED_RECOVERY_REGISTER、既拒否・復旧履歴を確認。10/25 14H旧OFFLINE全文と他lane/Libraryの完全意味照合は未完、正式同期を主張しない。
+[SOURCE] 原作rea_lab/targets/hakushin067_Vahren.exeをread-only Python pefile/Capstoneで照合。現物SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。旧search_index/search.sqlite現物SHA256 0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF、BUILD_MANIFEST一致、SQLite URI mode=ro quick_check=ok。既存search.py function 0x4E7770/0x4E70E0、callersを局所read-only取得。全面Ghidra/REA実行なし。
+[NEW PE.DATA] 0x0062DD68..0x0062DD87の32Bは8個のsigned DWORDの巡回優先オフセット P=(0,-1,+1,-2,+2,-3,+3,+4)。raw hex=00000000ffffffff01000000feffffff02000000fdffffff0300000004000000。データSHA256=5371A73AF084E4D2B9B8D28A4DC624E8EC00B205D350546FCAF9FA68ED16530B。
+[EXISTING DIRECTION TABLE] 0x0062DD20..0x0062DD5Fの8方向index0..7は(0,-1),(-1,-1),(-1,0),(-1,1),(0,1),(1,1),(1,0),(1,-1)。この方向値・8方向の存在は旧14H/T012既知として再計上0。今回の増分はPの実バイトとindex結合・引数producer。
+[NEW ASM ALT mode!=0] 0x4E78C8 MOV EAX,0x62DD68→0x4E78D7 1 DWORD取得→0x4E78D9 開始引数→0x4E78E0 LEA ECX,[EAX+ECX+8]→0x4E78E4 AND ECX,0x80000007（負値補正 0x4E78EA..F0）→0x4E78F1/0x4E78F8 方向表index参照。0x4E7770内で候補ごとにPを順走査するGhidra擬似Cも照合。
+[NEW ASM ALT mode0] 0x4E7CBC→0x4E7CBE 開始引数、0x4E7CC5 加算、0x4E7CC9 signed remainder mask、0x4E7CD5/0x4E7CDCで同方向表参照。manager+0x3Cの両モードともPの回転順を採用する経路。
+[NEW ASM SPAWN] 0x4E70E0内の0x4E7229 MOV EAX,0x62DD68→0x4E7232/34/3B→0x4E723F signed mask→0x4E724B/52方向表参照。0x54F0D3 AND EAX,7→0x54F0D6 PUSH EAX→0x54F0E1 CALL 0x4E70E0。spawn側の起点引数はこの呼出経路では0..7に制限されるが0x5D1B80からの変換元のゲーム意味はVERIFY。
+[ROTATION RULE] 合法の開始値d=0..7では候補indexの順序は ((d+P[i]) mod 8), i=0..7。Pの剰余は各dで重複無し8件（Python合成集合テスト8/8、一時検算で旧ゲームGoldenではない）。d=0/8→[0,7,1,6,2,5,3,4]、d=1→[1,0,2,7,3,6,4,5]、d=4→[4,3,5,2,6,1,7,0]。
+[CALLER JOIN] 0x579823 MOV ECX,[ESI+0x18688]→0x57982A PUSH ECX、0x579829 PUSH [Unit+0x1E4AC]、0x57982B/2C 座標PUSH→0x579831 CALL 0x4E7770。従ってこの代替移動callerでは開始回転値=Unit+0x18688、探索上限系引数=Unit+0x1E4AC。先行T011§14のbase constructor 0x5717B2 設定4、setup 0x570865 設定8は既知成果（再計上0）。
+[CONDITIONAL IMPLICATION] 上記4/8が探索時まで維持されれば、初回方向はそれぞれindex4=(0,+1)とindex0=(0,-1)で逆向きになる。Unit+0x18688が実行中にどう更新され、合法な代替移動呼出しに到達するかはVERIFY。値8も剰余規則上d=0と同じ回転列になる（非負の計算範囲）。
+[PRIORITY LIMIT] FIFO deque（旧15H）、visited tree（旧16H）と新Pを組み合わせると、同じ探索深さの候補投入の順序はPに依存する。衝突/範囲/しきい値/距離gateや例外で候補がskipされるため、最終成功座標・最短距離・公平性は未確定。全てのUnit/召喚経路がこの挙動とは断言しない。
+[NON-DUP] B5 owner＋LANE_B_HANDOFFの主要新VA 0x54F0D3/0x4E78D7/0x4E7232/0x62DD68 は作業前literal直接一致0。既知の方向表、起点回転の一般的存在（14H）、FIFO/visited/growth、召喚callerの存在は再加算0。旧OFFLINE全文・他lane/Libraryを含む完全な意味的重複はVERIFY。
+[GOLDEN] 無改変旧ver0.67 EXE・20倍テスト前DAT・同SAVE/MAP/input/RNGでUnit+0x18688が4/8/他に変化する実経路、合法な遮蔽物、同距離で異なる方位に複数空きセル、manager mode0/非0、召喚位置と次tick gridを比較。未実施DESIGNED_NOT_RUN、旧Gameplay PASS0、strict MATCH0。
+[RECOVERY] B-RC-20261026-1816-PE-PY-QUOTE-OTHER-01。最初のPowerShell python -c引数引用符が消えてSyntaxError、失敗結果は証拠採用0。同じ認可済み原作ファイルに対する正しい引用符・ASCII glob経由のread-only Python実行で現物SHA・元PE.data/ASMを再取得しRECOVERED。安全拒否・他tool/path迂回なし。新規詳細の存在確認ENOENTは未作成時の予期どおりの結果。
+[SAFETY] 過去安全拒否（例0x5710C0..0x571500、既拒否操作・証拠）への再試行/別shell/tool/ZIP/Remote迂回0。原本ZIP/EXE/SAVE/DAT、MASTER、他lane/REA/dev_lab/Git/Work/設定/スケジュール非変更。
+[NEXT] 0x4E7770および0x4E70E0の合法到達入力でUnit+0x18688値域/更新writer、候補skip時の厳密な同距離優先順位、8方向ループ完遂の境界・召喚phase producer 0x5D1B80 をB既知資料と照合。T013空間格子consumerとの接続は残P0。READY/NOT READYは実機Golden受入後にownerとEが判定。

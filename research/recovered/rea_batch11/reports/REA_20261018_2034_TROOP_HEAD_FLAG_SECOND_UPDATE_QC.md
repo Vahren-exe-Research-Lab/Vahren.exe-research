@@ -1,0 +1,17 @@
+# REA-20261018-2034-TROOP-HEAD-FLAG-SECOND-UPDATE-01｜死亡後段の部隊先頭・選択フラグ再読の静的接続
+- [OWNER] 独立REA／WRQ-20261013-REA-DEATH／T010,T012,T013。Local Compact限定。保存済みnativeとWorkコードをread-only対照。原本・既存レーン・Workコード・MASTER・QUEUE・PROGRESS変更0。
+- [NATIVE EVIDENCE] SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md §ND-TROOP（保存済native 0x5684B0..0x56861A）と§ND-GRAPH-TAIL（0x575F62..0x575F95）；既存契約REA-ND-20261013-001。新規Ghidraの5種類の証拠IDは0。
+- [WORK CROSSCHECK] dev_lab/src/hakushin_compat/native_battle_outcome.py の update_troop_5684b0 及び native_battle_session.py の update_resolved_troop／continue_resolved_troop_selection をread-only確認。現コードのflags/count算出、selected分岐、first=units[troop.members[0]]、末尾commitを直接照合。
+- [ORDER] 0x5684B8→0x569280で部隊幅T+34を先に更新。T+1Dが非0ならdisabled memberをstable eraseし、そのU+1867D=0をcommit。T+1Dが0ならdisabled memberを部隊vectorから消さず、生存個数だけ数える。
+- [NORMAL NONEMPTY / IMPORTANT] T+1D==0かつlive_count>0時、0x5685C5→0x527EA0 tail-jumpの判定は**vector先頭troop.members[0]**のbyte+8C==0 && byte+1F8!=0。最初の生存Unitを選び直さない。先頭が既disabledでも判定元であり得る。
+- [BRANCH CASE A] normal, head disabled(1867C=1) かつ8C=0/1F8!=0、後続liveありなら、候補経路は0x5685C5 tail-call 0x527EA0。live_count>0でも既disabled headはvectorに残る。合法原作ゲーム到達はVERIFY。
+- [BRANCH CASE B] normal, head disabledだが8C!=0又は1F8=0、後続liveありなら、同じlive_countでも0x56861Aへ直接帰還し得る。旧実機・他calleeの副作用はVERIFY。
+- [BRANCH CASE C] selected T+1D!=0で同じhead disabled／後続liveなら、先頭削除とU+1867D=0が起こり、残存時は0x56853B→0x41F850のpending UI。normalと同じ整理にしない。
+- [SECOND UPDATE CONDITIONAL] normal T+1D==0ではこの部隊更新自身はU+1867Dを消さない。したがって最初の5684B0が正常RETしても、死亡側0x575F71後のU+1867D再読が非0なら0x575F8Cの第2部隊更新を省略できない。「第一call complete」や「生存memberあり」は第二call省略の十分条件ではない。第2対象selectedTroopは別pointerとして評価する。
+- [COMPAT ACCEPTANCE NOT RUN] 同一二Unit fixtureをselected=0/1、head+8C/+1F8、head disabled、tail live、U+1867D、selectionOwner/selectedTroop identityの軸で比較。各callのcallee, nextVA, returnPC、member order、U+1867D before/after、0x575F71→0x575F8C条件を記録し、未帰還UIを成功と偽装しない。
+- [LIMIT] この分析は保存済みnative仕様と現存Python条件の静的クロスウォーク。テスト実行・原作実機観測・新Ghidra逆コンパイル・新関数VERIFIEDは0。first-control flagsのゲーム上の意味、合法シナリオ到達、異なるworld所有者の一貫性はVERIFY。
+- [RUN SOURCE] 最新保存runs/20261011T153309850Z/RUN_RESULT.json と logs/progress_sync_20261011T153958076Z.jsonはREA6.1.0/Ghidra12.1.4、W1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16 計64/64(P0=29/29,P1=35/35)、今回+0。QUEUE/PROGRESSはrename EPERMの旧表示。
+- [NEXT WAVE] Wave6正式0/16、暫定P0=5/P1=11、うち拒否4(P0=3/P1=1) BLOCKED・未着手12(P0=2/P1=10)、関数結果VERIFY0。禁止0x5710C0..0x571500および拒否済み抽出・Wave6 4VAに新規解析をしない。
+- [MASTER/GOLDEN] 最新MASTER checkpoint185、34Task DONE9/IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/EXEC] Local接続成功、空き物理RAM=9165372KiB（約8.74GiB）、CPU値は取得不能（CPU column n/a）、active.lock ENOENT、プロセス名Java/Ghidra/REA非検出・Chrome/Node/Codex/Claude多数。負荷低水準未確認・Wave6未正式登録・現runner6.4.0と成功run6.1.0不一致につき重量run/syncを起動しない。PC確認PowerShell実行5.29秒、Ghidra実行0秒、軽量全体未計測。
+- [SAFETY/NEXT] 新たなWork製品修正0、実機golden0。次回は正常帰還の条件・0x575F71と0x575F91での選択owner同一性と合法到達を保存済み証拠から点検。原本ZIP/EXE、A〜E、MASTER/T018、Git/push、MCP設定/automation変更0。禁止操作・安全拒否の迂回/再試行0。

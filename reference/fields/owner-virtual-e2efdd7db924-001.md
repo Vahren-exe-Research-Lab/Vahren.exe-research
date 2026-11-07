@@ -46,6 +46,9 @@
 - [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 10](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L10-L10) — [POSITION/REGISTER] 0x54F164特殊条件で候補vtable+0x58 indirect call→cleanup。通常経路は0x54F18A..54F21Dにglobal0xB0BA64/68と0x4FACA0経路、0x54F239 effect object virtual+0x54、0x54
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
 
+- [research/recovered/rea_batch11/reports/REA_20261018_0236_DOT54_OWNER_RETURN_GATE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261018_0236_DOT54_OWNER_RETURN_GATE_QC.md?plain=1#L4-L4) — - [NATIVE VA] 0x575DFD→0x4DDD80(Dot=Unit+0x540)。global87F783が0なら0x4DDE6B RET4→親0x575E02。非0なら0x4DDD97 Dot.virtual+0x54 CALL、正常帰還0x4DDD99でEAXを検査する。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-58"></a>
 ## virtual + 0x58
 
@@ -56,6 +59,9 @@
 ## virtual + 0x64
 
 - [research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md 行 11](../../research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md?plain=1#L11-L11) — - 第二vector: 0x48D069 E8→0x49E490（native=e822140100）→同型の非NULL・virtual+0x64 gateを経て0x48D089 E8→0x5AA6E0（native=e852d61100）。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md 行 26](../../research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md?plain=1#L26-L26) — - V9 callers(0x5AA130) は直接E8を2件返す：0x4189CB(09H既知) と **新site 0x49E064**（0x49DF90内）。原作PE相対値を独立復号し2/2一致。新siteでは0x49E045 CMP [ESP+0x2C],0x80000008、非sentinel側0x49E05
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-70"></a>

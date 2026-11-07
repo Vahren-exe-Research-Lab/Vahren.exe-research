@@ -28,6 +28,12 @@
 - [research/recovered/b_batch7/data/T012_POSTILLUSION_POSTCORE_VECTOR_VIRTUAL_20261016.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_POSTCORE_VECTOR_VIRTUAL_20261016.md?plain=1#L5-L5) — [FACT/CALLER] nonempty時57E88F ECX=[Unit+0xC]→57E892 EDX=[ECX+4]、57E895 PUSH Unit EBX;57E896 PUSH receiver EDX、57E897 ESI=&Skill+30、57E89A CALL4B9F70、57E89F rest
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md?plain=1#L4-L4) — - [SAVED NATIVE] At 0x575DFD -> 0x4DDD80(&Unit+0x540), return 0x575E02, then W=Unit+0x5B0 at 0x575E16, W=Unit+0x800 at 0x575E6F, W=Unit+0x89C at 0x575EC8 are pr
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md?plain=1#L6-L6) — - [NEW CONDITIONAL CROSSWALK] A future continuation that reuses that first world_pointer unchanged for all three windows could deviate from saved native semanti
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-1d"></a>
 ## Unit + 0x1D
 
@@ -102,6 +108,12 @@
 
 - [research/recovered/DEVLAB_NATIVE_SAVE_COMPLETE_WIRE_20261011.md 行 11](../../research/recovered/DEVLAB_NATIVE_SAVE_COMPLETE_WIRE_20261011.md?plain=1#L11-L11) — - 0x4708A0はRAMの1byteをゼロ拡張したu32LEで書き込む（PUSH size=4→0x4628F0）。Unit+0x74～0x7A, +0xE8／Power+0x1C, +0x1D／Diplomacy 2flags／WorldGraph Path+0x88を含む。古いunit_runtime_pref
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included; historical save terminology/counts require later REF_SAVE_FORMAT.md S1101 correction crosscheck; no current semantics promoted
+
+<a id="field-75"></a>
+## Unit + 0x75
+
+- [research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md 行 23](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L23-L23) — - 次=0x467DE0のowner+0x1A4戻り副作用、0x463590で第2引数とvector候補が同一になる条件、mode1後0x5AC5ECのcleanup、Unit+0x75/+0x77設定元、T011/T012/T013/T024のP0。既拒否0x5710C0..0x571500等は再試行しない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-7c"></a>
 ## Unit + 0x7C
@@ -366,17 +378,5 @@
 
 - [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 22](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L22-L22) — \| Unit+0xD0 \| `0x569633` \| signed dword >= 0 \|
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-dc"></a>
-## Unit + 0xDC
-
-- [research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L5-L5) — [ENABLED/MATH] mode!=0なら0x577146 FILD Unit+0x90(HP)→0x57714C FIDIV Unit+0xDC(HPmax)→0x577152 FDIV global double VA0x63B198を実行。今回隔離EXE read-only定数生byte 9a9999999
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1130](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1130-L1130) — \| HP表示 \| itoa(Unit+0xDC) と itoa(Unit+0x90)（0x407300 内）→ 現在HP=Unit+0xDC、最大=Unit+0x90 \| STATIC-HIGH \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,17 @@
+# REA-20261015-COUNT-LITERAL-ALIAS-CORRECTION-01
+- OWNER/SCOPE: 独立REA、WRQ-20261013-REA-DEATH P0。T012/T013、参照T006/T028/T031。2026-10-15 JST。保存済み許可資料のみの軽量read-only照合から得た**独立した誤解訂正**。以前の安全拒否payloadの再提出ではない。
+- CORRECTION: 2026-10-15 18時台の「比較対象2アドレスが異なるため文字列も異なる可能性」という保留は、既存原作ASCII xref資料から解消できる。VA 0x62A314 と 0x627DAC は、ともにASCII literal **count** と分類済み。同一アドレスではないが同一内容の文字列として扱える。
+- PRIMARY SAVED EVIDENCE: exe/T006_API_STRING_XREFS.md 見出し「exact ASCII strings in Hakushin Vahren.exe」およびcount項目（およそ94行目）: count: str=0x627dac,0x62a314,0x6353c4; xrefs=0x44eeb3,0x544bd9,0x578a05。exe/T031_RNG_INDEX_PROBE.txt冒頭も同じcount三アドレス・xref三箇所を独立列挙。
+- LITERAL ANCHOR: exe/T013_UNIT_STRING_BAND.txt 0x627dac 'count'、exe/T014_ENTITY_MARKERS.txt 0x627dac 'count'。0x62A314についてはT006のASCII xref保存結果が文字列名根拠であり、今回の新規PE bytes抽出は0。
+- CALLER A: exe/T012_STR_AFTERDEATH_PROBE.txt 0x544BC5 virtual+58→0x544BC7 [Unit+0x1862C]長さgate→0x544BD9 ECX=0x62A314→0x544BDE call 0x40B200→0x544BEF 0x49CF20（比較成立時）。
+- CALLER B: 同保存native 0x5789F0 virtual+58→0x5789F2 [Unit+0x1862C]長さgate→0x578A05 ECX=0x627DAC→0x578A0A call 0x40B200→0x578A1B 0x49CF20（比較成立時）。
+- PREDICATE: 同一Unit string（Unit+0x1861C）を同じ0x40B200に渡すため、**同じ入力文字列・同じ比較規則を前提にした局所predicateは等価**。関数呼出の実時間/Unit identity/直前副作用が異なるため、A/B実行全体または結果が常に同一とは証明しない。
+- IMPORTANT REMAINDER: 比較不成立後は両callerに0x49CD60×2→0x4321B0の段階あり。既REA-20261015-2240のcallerFlag=1とengine battle flag gateは維持。dead_event_a/d関連の別定数0x62A31C/32C/33Cと0x627DB4/DC4/DD4の文字列同一性は今回未判定。
+- NO OVERCLAIM: 0x40B200下位0x402C40の文字単位比較規則、0x49CF20の副作用、0x49CD60後帰還、外側Task callbackの正常復帰、原作旧実機goldenはVERIFY。A/Bの違いを「固定比較文字列の内容差」に帰属させない。
+- METRICS: 保存sync progress_sync_20261011T153958076Z: Wave1-5 64/64 VERIFIED、Wave5 16/16、P0 29/29・P1 35/35。今回新Ghidra5種Evidence ID=0、新VERIFIED=0。Wave6正式0/16、候補P0 5/P1 11、未試行12/既往安全拒否4、結果VERIFY0。
+- MASTER READ: 最新checkpoint158、34Task DONE9/IN_PROGRESS21/VERIFY4。旧原作Gameplay golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- PREFLIGHT: Desktop Commander Local Compactのみ。2026-10-15 23:40 JST CPU63%、空きRAM16.61GiB、active.lock無、承認済みcopy SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。Java/Ghidra実稼働は確認されず。高CPUにつきrunner/Java/Ghidraを起動せず、重量実行0秒、軽量総所要は未測定。
+- RESTORATION: REA-RC-20261015-PS-QUOTING-01 (OTHER/RESOLVED)。初回PowerShell事前検査は二重shell解釈で構文失敗・情報未取得。修正した同一Local Compactのread-only検査でCPU/RAM/lock/SHAの取得成功。安全拒否ではなく、元の失敗を成功扱いしない。
+- PREVIOUS SAFETY BLOCKS: REA-RC-20261015-1840-DUALSTRING-WRITE-01・REA-RC-20261015-2040-FALSE-BRANCH-WRITE-01は引き続き未保存/BLOCKED。拒否済みpayloadを新pathへ移して再書込しない。このnoteは後から見つかった別の保存済みASCII xrefによる具体的な訂正のみ。
+- NEXT: P0 WRQ-20261013-REA-DEATHの未証明virtual callee帰還・Task continuationを既保存証拠から照合。0x402C40等のWave6候補は正式登録前に安全・重複・entryを再審査し、拒否済4VAは除外。QUEUE/PROGRESS rename EPERMとREA6.1.0対runner6.4.0差は未解消。
+- BOUNDARY: 原本ZIP/EXE、A-E/MASTER/T018、Work/WRQ/製品、MCP・スケジュール、Git/push/公開は変更禁止。禁止VA 0x5710C0..571500、既拒否exporter/抽出は未使用。単一MCP・最大4件、Ghidra900000ms/request960000ms制限は維持。

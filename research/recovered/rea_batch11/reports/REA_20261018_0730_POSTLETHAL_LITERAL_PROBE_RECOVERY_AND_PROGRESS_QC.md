@@ -1,0 +1,16 @@
+# REA-20261018-0730-POSTLETHAL-PROBE-RECOVERY-01｜独立REA 許可済み証拠監査と失敗記録
+- [OWNER/REQUEST] 独立REA。最優先WRQ-20261013-REA-DEATH、T010/T012/T013。Desktop Commander Local Compactのみ。
+- [INITIAL READ] MASTER_LEDGER checkpoint180、evidence/ANALYSIS_LANES_PROTOCOL、README、QUEUE.json、PROGRESS.md、最新runs/20261011T153309850Z/RUN_RESULT.json、logs/progress_sync_20261011T153958076Z.json、死亡関係の既存REA監査をread-only確認。
+- [AUTHORITY] 保存済みRUN_RESULTのsource SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回のEXE現在SHA再計算は失敗操作前に到達せず未実施。原本ZIP/EXEは一切編集・実行せず。
+- [PROGRESS] 保存済みsyncによるW1=16/16、W2=10/10、W3=10/10、W4=12/12、W5=16/16、累計64/64 VERIFIED(P0=29/29・P1=35/35)。今回新しいGhidra5-method証拠ID0・VERIFIED増0。
+- [WAVE6] 正式0/16 VERIFIED。暫定候補P0=5/P1=11、未試行TODO=12(P0=2/P1=10)、既往安全拒否BLOCKED=4(P0=3/P1=1)、関数結果VERIFY=0。拒否VAは0x515750/0x515790/0x5159B0/0x57D180。正式キュー未登録。
+- [STALE STATE] 実QUEUE.jsonには古い16 VERIFIED/48 TODO、実PROGRESS.mdには旧15/16。最新syncはqueueUpdate=STALE_RENAME_DENIED、humanReadableProgress=SKIPPED_QUEUE_STALE。rename EPERMを再試行/迂回せず、保存済みrunを優先して重複解析しない。
+- [NATIVE EVIDENCE REUSE] REA-ND-20261013-001の通常死亡VA575A60→575DF0→5684B0、致死tailのvirtual+58 VA5789F0→5789F2 live string gate→必要後段→578B5F RET16を確認。既存REA_20261015_1734/2137/2240は40B200比較・stack cleanup・event dispatchを既に監査済みで、今回は再成果計上なし。
+- [RELATED VERIFIED] 保存Ghidra 0x40B200（T012/T013関連）info ev_ec2dd487c7478081fb26ce910a9b854f47c123371b542f12e59e6bdf5534439f、assembly ev_80377536380b1f73406c409003776dc07da99b7a8d860e3f70dc06941a55541a。新Ghidra関数境界/証拠取得0。
+- [RECOVERY REA-RC-20261018-0730-POSTLETHAL-LITERAL-PARSER-01 / OTHER / BLOCKED-THIS-PROBE] 保存済み後段x86のliteral VA0x627DACと0x62A314のバイト列を承認済みコピーから読み取る限定read-only PowerShellコマンドを一度開始したが、PowerShell二重ラップ時の変数展開で$変数が欠落し、ParserError(ExpectedExpression)が発生。SHA算出・ファイルopen・文字列取得に到達せず、成果0。安全拒否ではなく構文エラー。
+- [NO-RETRY] 同じ失敗コマンドを再実行・別shell/tool/pathへ切り替えず、この二つのliteral実バイトは引き続きVERIFYとする。失敗した操作からの結果・SHA一致・文字列同一性を捏造しない。
+- [PC/EXEC] Local接続成功。list_processesはCPU率n/a、空きRAM未測定、Java/Ghidra/REAの名前一致なし、Node複数。decomp_task直下active.lockはlist_directoryで見当たらないが厳密preflight完了ではない。今回新規Ghidra解析0秒、軽量照合総時間未計測。
+- [HEAVY BLOCKERS] 現行runner REA6.4.0指定と成功run REA6.1.0/Ghidra12.1.4の版差、Wave6未登録・拒否4VA・runner除外不足、既存rename EPERM、負荷/RAM未確認のためrun_decompile.ps1とsync_progress.mjsは未実行。
+- [RESEARCH] 最新MASTER checkpoint180、研究DONE9/34(IN_PROGRESS21/VERIFY4)。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [NEXT] 最優先P0 WRQ-20261013-REA-DEATHは既存許可済み証拠から575C52以降のDot/embedded-window virtual・Task/Render/Spatial正常帰還、575D0D→致死caller5789F2→後段の段階的receiptを審査。現在のliteral二箇所は未取得のまま引継ぎ。Wave6安全なP0候補0x470980/0x42E700はTODOのみ。
+- [LIMIT/UNCHANGED] 単一MCPセッション、4関数/回以下、Ghidra900000ms、request960000msを維持。安全拒否済み0x5710C0..0x571500、Wave6拒否4VA、REA拒否済みextractの迂回0。原本・A～E・MASTER・T018・その他領域・Work/WRQ・runner/QUEUE/PROGRESS・Git/push・MCP設定・既存automationの変更0。

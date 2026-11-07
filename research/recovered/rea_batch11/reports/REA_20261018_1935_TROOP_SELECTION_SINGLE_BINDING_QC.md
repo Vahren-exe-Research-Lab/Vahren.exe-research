@@ -1,0 +1,16 @@
+# REA-20261018-1935-TROOP-SELECTION-SINGLE-BINDING-01 | 選択解除bindingの寿命と二度目の呼出条件
+- [SCOPE] 独立REA、WRQ-20261013-REA-DEATH、T010/T012/T013。Desktop Commander Local Compactのみ。既存原作静的証拠とWork再実装のread-only比較。新Ghidra取得0、ゲームEXE実行0。
+- [SAVED NATIVE] REA-ND-20261013-001: 通常死亡0x575DF0後段は0x575F6C→0x5684B0（復帰0x575F71）と、Unit+0x1867D再読後に条件付き0x575F8C→0x5684B0（復帰0x575F91）の二層。0x5684B0の選択中空0x56852Dと通常全滅先頭条件0x5685F8はそれぞれcallee0x527ED0、帰還0x568532/0x5685FD。
+- [WORK SOURCE 1] native_battle_session.py: bind_troop_selectionはACTIVE時にのみ受理、hasattr(self,'_troop_selection')で一度目以降の新規bindingを拒否。continue_resolved_troop_selectionはVERIFY_TROOP_UPDATEで既存binding.advance()を一度呼びphase=VERIFY_TROOP_SELECTIONとする。
+- [WORK SOURCE 2] native_battle_outcome.py: TroopSelectionCleanup.advanceはself.trace!=Noneで再実行拒否。TroopSelectionTraceにparent_return_pc（0x568532又は0x5685FD）と下位return_pc=0x527F2Eを分離保存しcomplete=False。再利用・再bind・parent returnの公開処理は今回確認したSessionの該当箇所では見つからない。
+- [WORK SOURCE 3] native_battle_runner.py: troop_selection_resolved actionはtrace採取後にbreakし、outputにはbindingと継続traceを残すがnative復帰を模擬しない。Local content-search '_troop_selection' はsrc/hakushin_compat/*.pyで13 matches、Session内の該当bind/continue/保存に集中し、消去や再bind処理の存在は検出されず。
+- [NEW DELTA] 前回の単一0x527ED0内部UI帰還欠落に加え、仮に一回目の下位UI/parent帰還を後段で実装しても、同一Sessionで別の0x527ED0呼出へ進むためのbinding世代交代が現状確認できない。戻り先だけでなくbinding identity、caller pair、解除したnode、次の呼出でfresh ringを区別する必要がある。
+- [LIMIT/VERIFY] 原作で同一死亡eventから二つの0x527ED0枝へ合法到達するか、第二の対象troop・ownerが同一か、他module/runner外で新Sessionを生成するかは未確証。実機不一致確定ではない。既存の単発UI deadendとは別の条件付きintegration gateとして記録。
+- [ACCEPTANCE NOT RUN] Work ownerは（A）第一5684B0が完了のみ（B）第一527ED0選択解除後第二5684B0が不要（C）第一527ED0帰還後に別の第二527ED0が必要、を同一/別owner別で検証。各callにowner/troop、next_va、callee、return_pc、selection binding generation、UI返値、deleted nodes、最終575F71/575F91を残し、二度目の旧binding再使用を禁止。
+- [EVIDENCE] 原作保存REA-ND-20261013-001、REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md、dev_lab/src/hakushin_compat/native_battle_outcome.py（TroopSelectionCleanup）、native_battle_session.py（bind/continue）、native_battle_runner.py（action分岐）。今回新規Ghidra info/pseudo/assembly/callers/callees evidence ID各0。
+- [PROGRESS] 最新保存RUN_RESULT 20261011T153309850Z / sync 20261011T153958076Z: Wave1 16/16、Wave2 10/10、Wave3 10/10、Wave4 12/12、Wave5 16/16、累計64/64(P0 29/29,P1 35/35)。今回+0。Wave6正式0/16（暫定P0 5/P1 11、TODO12/既拒否BLOCKED4、結果VERIFY0）。QUEUE/PROGRESS rename EPERMで表示古い。
+- [MASTER/GOLDEN] MASTER最終checkpoint185、34Task DONE9/IN_PROGRESS21/VERIFY4、旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT/OTHER] Local接続成功、active.lockのget_file_infoはENOENT（存在なし）。CPU/RAM取得用PowerShellワンショットは引用展開のParserErrorで未測定（OTHER、同一操作再試行なし）。Local list_processesはCPU n/aでNode/Codex/Claude/Chrome多数、重いGhidra/REAは安全を確証できず起動0秒。軽量調査総時間は未計測。
+- [VERSION/LIMIT] 成功run REA6.1.0/Ghidra12.1.4に対し現runner指定6.4.0、Wave6未登録、rename EPERM。最大4関数/単一MCP、Ghidra900000ms/request960000ms。run_decompile.ps1/sync_progress.mjs未実行。
+- [NEXT] T010/T012/T013: 既存証拠で527ED0の継続状態とbinding寿命を更に確認。Wave6 P0 0x470980/0x42E700はTODO維持。安全拒否VA0x5710C0..0x571500、REA exporter、既往拒否は迂回・再試行しない。
+- [NO MUTATION] 原本ZIP/EXE、既存A〜E/MASTER/T018、Work製品/WRQ、QUEUE/PROGRESS、Git/push、MCP設定、既存automationは変更しない。

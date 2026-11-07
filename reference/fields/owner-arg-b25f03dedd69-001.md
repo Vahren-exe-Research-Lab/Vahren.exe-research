@@ -10,4 +10,10 @@
 - [research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md 行 53](../../research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md?plain=1#L53-L53) — **キーの出自:** `0x00515420`は呼出引数を`[esp+4]`から読んで`[arg+0x80]`のSkill候補フラグ`+0x1FD`を確認。さらに`0x00515441: lea eax,[esp+0x1C]`はスタック調整後**元の`[entry ESP+4]`（同じ引数ワード）のアドレス**を指す。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1eed40"></a>
+## arg + 0x1EED40
+
+- [research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md 行 6](../../research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md?plain=1#L6-L6) — [EARLY GATE] 0x49D9F8 CMP BYTE PTR [arg+0x1EED40],0 /0x49D9FF JE0x49DB4F。0なら領域照合とtree削除をスキップ。arg=[Unit+0x1E0]（呼出先でスタックから取得）、+0x1EED40の意味・型はVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

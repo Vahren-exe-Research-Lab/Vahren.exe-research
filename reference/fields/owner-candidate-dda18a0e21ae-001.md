@@ -19,14 +19,41 @@
 <a id="field-74"></a>
 ## candidate + 0x74
 
+- [research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md 行 8](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L8-L8) — - 0x497C41 CALL0x5846A0の後、0x497C4D MOV CL,BYTE [EBP+0x74]、0x497C55 TEST CL、0x497C57 JE0x497C63。candidate+0x74!=0なら0x497C59 MOV DWORD [ESP+0x34],0x1F4（500）、0x497
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md 行 9](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L9-L9) — - candidate+0x74==0なら0x497C63 MOV EDX,[ESP+0xB0]→0x497C6A MOVZX EAX,BYTE [EDX+0x1D]。0x497C6E NEG /0x497C70 SBB /0x497C72 AND EAX,0xF /0x497C74 ADD EAX,0xA。したがって
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md 行 8](../../research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md?plain=1#L8-L8) — 14Hの0x497C4D candidate+0x74→decide3/500 または decide11/10\|25 のproducer、0x497CAF文字列生成は既知で再計上しない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-75"></a>
+## candidate + 0x75
+
+- [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 17](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L17-L17) — 0x497BB0 の既12H原作ASM: 0x497C0D CMP BYTE [candidate+0x77],0 と0x497C12 CMP BYTE [candidate+0x75],0 の**両方0**の枝だけ0x497C17でECX==0を検査。ECX==0なら0x497C21 CALL0x463590→own
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-77"></a>
+## candidate + 0x77
+
+- [research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md 行 7](../../research/recovered/b_batch11/data/T028_DECIDE_SELECTOR_FLAG_WEIGHT_NATIVE_20261028_14H.md?plain=1#L7-L7) — 既11H/12Hの0x497C0D/0x497C12 candidate+0x77/+0x75両0なら即vector追加/清掃、片方非0なら別枝へ、という分岐は既知で再計上しない。今回はその**非0枝** 0x497C3B..0x497CB4 の数値と文字列producerを照合。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 17](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L17-L17) — 0x497BB0 の既12H原作ASM: 0x497C0D CMP BYTE [candidate+0x77],0 と0x497C12 CMP BYTE [candidate+0x75],0 の**両方0**の枝だけ0x497C17でECX==0を検査。ECX==0なら0x497C21 CALL0x463590→own
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-78"></a>
 ## candidate + 0x78
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-7a"></a>
+## candidate + 0x7A
+
+- [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 13](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L13-L13) — \| 0x497781 \| 0x497779 XOR ECX,ECX \| **0** \| 0x497768 candidate+0x7A==0のみ、0x49777B candidate+0x1B0=0を先に書込 \|
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-94"></a>
 ## candidate + 0x94
@@ -42,6 +69,12 @@
 
 - [research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md 行 13](../../research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md?plain=1#L13-L13) — - 対応する他方の処理でも0x4958A7集合非member時 0x4958C1 CALL0x5882F0→0x4958F4..0x495910同じbyte/整数条件→0x495916 SUB [candidate+0xC0],EDX→0x49591E SETS→0x495928 store。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-1b0"></a>
+## candidate + 0x1B0
+
+- [research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md 行 13](../../research/recovered/b_batch11/data/T028_NULL_ECX_CALLSITE_PRODUCER_MATRIX_NATIVE_20261028_13H.md?plain=1#L13-L13) — \| 0x497781 \| 0x497779 XOR ECX,ECX \| **0** \| 0x497768 candidate+0x7A==0のみ、0x49777B candidate+0x1B0=0を先に書込 \|
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1c0"></a>
 ## candidate + 0x1C0

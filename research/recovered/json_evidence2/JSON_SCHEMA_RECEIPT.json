@@ -1,0 +1,3914 @@
+[
+  {
+    "source_path": "data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 27,
+    "physical_LF_lines": 424,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          27
+        ]
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.relation_T028",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.status",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.status[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 6
+      },
+      {
+        "json_path": "$.source_sha256",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.source_sha256.exe",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.archive",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.db",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.recovery",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.offline_zip_crc_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.recovery_zip_crc_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.sqlite_quick_check",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.recovery_inventory",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.recovery_inventory.included_files_snapshot",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.recovery_inventory.excluded_safety_held_snapshot",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.recovery_inventory.prior_covered_addresses_in_safe_zip",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          0
+        ]
+      },
+      {
+        "json_path": "$.total_direct_E8_sites",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.distinct_callers",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.AL_zero_sites",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.AL_one_sites",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.continuations",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.continuations.0:AL0_follow_group_0x568FB0",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.continuations.0:AL0_follow_member_sentinel_0x568460",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.continuations.1:AL1_follow_0x529B60",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.continuations.1:AL1_no_immediate_recognized_helper",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.call_sites",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          25
+        ]
+      },
+      {
+        "json_path": "$.call_sites[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 25,
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "json_path": "$.call_sites[].call_site",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].caller_function",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].caller_source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].caller_pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].AL",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].AL_setter_site",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].AL_setter_bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].E8",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].continuation",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.call_sites[].following_instruction_pattern",
+        "types": [
+          "string"
+        ],
+        "occurrences": 25
+      },
+      {
+        "json_path": "$.focus_functions",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005695B0.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568FB0.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00568460.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005282C0.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x005284A0.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70.native_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70.pseudoc_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.focus_functions.0x00576F70.pseudoc_lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          9
+        ]
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x005695B6",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00568FB6",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00568FBC",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00568FDD",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00568FD6",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00569027",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x00568487",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x0056848D",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_bytes.0x0056847E",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.critical_native_E8",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.critical_native_E8[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 2,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.critical_native_E8[].site",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.critical_native_E8[].target",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.critical_native_E8[].bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.semantic_limits",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.semantic_limits[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.golden_PASS",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_MATCH",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.new_READY",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_sync",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.github_sync",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.no_game_execution",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.no_forbidden_va_read",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 18,
+    "physical_LF_lines": 607,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          18
+        ]
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.T028",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.original_game_Golden_PASS",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_MATCH",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.READY",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.status",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.status[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 6
+      },
+      {
+        "json_path": "$.source_hashes",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.source_hashes.exe",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_hashes.db",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_hashes.pack",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_hashes.recovery",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.function",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.function.va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.function.size_bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.function.sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.function.ABI",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_instruction_windows",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          36
+        ]
+      },
+      {
+        "json_path": "$.native_instruction_windows[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 36,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.native_instruction_windows[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 36
+      },
+      {
+        "json_path": "$.native_instruction_windows[].hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 36
+      },
+      {
+        "json_path": "$.native_instruction_windows[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 36
+      },
+      {
+        "json_path": "$.direct_E8_calls",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          9
+        ]
+      },
+      {
+        "json_path": "$.direct_E8_calls[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 9,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.direct_E8_calls[].site_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 9
+      },
+      {
+        "json_path": "$.direct_E8_calls[].target_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 9
+      },
+      {
+        "json_path": "$.direct_E8_calls[].original_bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 9
+      },
+      {
+        "json_path": "$.pseudoc",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "json_path": "$.pseudoc[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 8,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.pseudoc[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.pseudoc[].path",
+        "types": [
+          "string"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.pseudoc[].bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.pseudoc[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.tests",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          58
+        ]
+      },
+      {
+        "json_path": "$.tests[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 58,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.tests[].check",
+        "types": [
+          "string"
+        ],
+        "occurrences": 58
+      },
+      {
+        "json_path": "$.tests[].pass",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 58
+      },
+      {
+        "json_path": "$.tests[].actual",
+        "types": [
+          "integer",
+          "null",
+          "string"
+        ],
+        "occurrences": 58
+      },
+      {
+        "json_path": "$.pass_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.test_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.safe_scope",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.note",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 21,
+    "physical_LF_lines": 681,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          21
+        ]
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.T013",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.state",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.state[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.original_game_Golden_PASS",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_MATCH",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.READY",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_SHA256",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.source_SHA256.Vahren.exe",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_SHA256.offline_pack_zip",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_SHA256.B_recovery_zip",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_SHA256.search.sqlite",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_instruction_windows",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          39
+        ]
+      },
+      {
+        "json_path": "$.native_instruction_windows[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 39,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.native_instruction_windows[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.native_instruction_windows[].hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.native_instruction_windows[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.direct_E8_calls",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          7
+        ]
+      },
+      {
+        "json_path": "$.direct_E8_calls[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 7,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.direct_E8_calls[].site_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 7
+      },
+      {
+        "json_path": "$.direct_E8_calls[].callee_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 7
+      },
+      {
+        "json_path": "$.direct_E8_calls[].bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 7
+      },
+      {
+        "json_path": "$.rdata_double",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.rdata_double[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 4,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.rdata_double[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.rdata_double[].double",
+        "types": [
+          "number"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.rdata_double[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.pseudoc",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.pseudoc[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 5,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.pseudoc[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.pseudoc[].path",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.pseudoc[].bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.pseudoc[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.model_examples",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          8
+        ]
+      },
+      {
+        "json_path": "$.model_examples[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 8,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.model_examples[].eligible_other_units",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.model_examples[].nearby_units",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.model_examples[].predicate",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.model_examples[].type",
+        "types": [
+          "string"
+        ],
+        "occurrences": 8
+      },
+      {
+        "json_path": "$.tests",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          62
+        ]
+      },
+      {
+        "json_path": "$.tests[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 62,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.tests[].id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 62
+      },
+      {
+        "json_path": "$.tests[].pass",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 62
+      },
+      {
+        "json_path": "$.tests[].actual",
+        "types": [
+          "integer",
+          "string"
+        ],
+        "occurrences": 62
+      },
+      {
+        "json_path": "$.pass_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.test_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.safe_scoping",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.known_error",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.caveat",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 20,
+    "physical_LF_lines": 599,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          20
+        ]
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.status",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.status[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.source_sha256",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.source_sha256.Vahren.exe",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.offline_pack",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.B_recovery",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256.search.sqlite",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_windows",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          39
+        ]
+      },
+      {
+        "json_path": "$.native_windows[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 39,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.native_windows[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.native_windows[].bytes_hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.native_windows[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 39
+      },
+      {
+        "json_path": "$.verified_e8_edges",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.verified_e8_edges[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 5,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.verified_e8_edges[].site_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.verified_e8_edges[].target_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.verified_e8_edges[].bytes_hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.ghidra_source_files",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.ghidra_source_files[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 4,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.ghidra_source_files[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.ghidra_source_files[].path",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.ghidra_source_files[].file_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.ghidra_source_files[].index_source_path",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.claim_static",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.claim_inferred",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.ready",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tests",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          60
+        ]
+      },
+      {
+        "json_path": "$.tests[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 60,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.tests[].id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 60
+      },
+      {
+        "json_path": "$.tests[].pass",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 60
+      },
+      {
+        "json_path": "$.tests[].detail",
+        "types": [
+          "null",
+          "object",
+          "string"
+        ],
+        "occurrences": 60,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tests[].detail.target",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.tests[].detail.bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.pass_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.test_count",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.original_game_executed",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.forbidden_area_revisited",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_sync",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.github_write",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 16,
+    "physical_LF_lines": 243,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          16
+        ]
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.status",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.status[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.original_exe_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.offline_pack_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.offline_index_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_windows",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          27
+        ]
+      },
+      {
+        "json_path": "$.native_windows[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 27,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.native_windows[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 27
+      },
+      {
+        "json_path": "$.native_windows[].bytes_hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 27
+      },
+      {
+        "json_path": "$.native_windows[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 27
+      },
+      {
+        "json_path": "$.native_windows[].meaning",
+        "types": [
+          "string"
+        ],
+        "occurrences": 27
+      },
+      {
+        "json_path": "$.direct_e8",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.direct_e8[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 5,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.direct_e8[].site_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.direct_e8[].target_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.direct_e8[].bytes_hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.direct_e8[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.conditional_branch",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          1
+        ]
+      },
+      {
+        "json_path": "$.conditional_branch[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.conditional_branch[].site_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.conditional_branch[].target_va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.conditional_branch[].bytes_hex",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pseudocode_files",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.pseudocode_files[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 3,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.pseudocode_files[].function",
+        "types": [
+          "string"
+        ],
+        "occurrences": 3
+      },
+      {
+        "json_path": "$.pseudocode_files[].source_file",
+        "types": [
+          "string"
+        ],
+        "occurrences": 3
+      },
+      {
+        "json_path": "$.pseudocode_files[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 3
+      },
+      {
+        "json_path": "$.pseudocode_files[].lines",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 3
+      },
+      {
+        "json_path": "$.checks",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.failures",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          0
+        ]
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.new_ready",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.original_game_executed",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 17,
+    "physical_LF_lines": 338,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          17
+        ]
+      },
+      {
+        "json_path": "$.run_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.scope",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.exe_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.offline_pack_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.search_sqlite_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.site_checks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          35
+        ]
+      },
+      {
+        "json_path": "$.site_checks[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 35,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.site_checks[].va",
+        "types": [
+          "string"
+        ],
+        "occurrences": 35
+      },
+      {
+        "json_path": "$.site_checks[].bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 35
+      },
+      {
+        "json_path": "$.site_checks[].window_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 35
+      },
+      {
+        "json_path": "$.site_checks[].evidence",
+        "types": [
+          "string"
+        ],
+        "occurrences": 35
+      },
+      {
+        "json_path": "$.call_checks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          12
+        ]
+      },
+      {
+        "json_path": "$.call_checks[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 12,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.call_checks[].site",
+        "types": [
+          "string"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.call_checks[].target",
+        "types": [
+          "string"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.call_checks[].bytes",
+        "types": [
+          "string"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.call_checks[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.source_checks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.source_checks[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 5,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.source_checks[].source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.source_checks[].sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.source_checks[].bytes",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.checks_passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.ready",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.dynamic",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.state",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          5
+        ]
+      },
+      {
+        "json_path": "$.state[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 5
+      },
+      {
+        "json_path": "$.safety",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 16,
+    "physical_LF_lines": 136,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          16
+        ]
+      },
+      {
+        "json_path": "$.checked_sites",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          17
+        ]
+      },
+      {
+        "json_path": "$.checked_sites.0x00526058",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0052607D",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0052607F",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526081",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0052608E",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526091",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526094",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x005260C4",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526117",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0052611D",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526120",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526122",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00526134",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00569392",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0056939B",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x0056940B",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checked_sites.0x00569414",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.eligibility_cross_function",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.eligibility_cross_function[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 4,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.eligibility_cross_function[].aux",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.eligibility_cross_function[].distance_sort_accepts",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.eligibility_cross_function[].loss",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.eligibility_cross_function[].proximity_accepts",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.limitations",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.limitations[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 4,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples[].ideal_floor",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples[].left",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples[].right",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.midpoint_boundary_examples[].x86_result",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.native_bytes_rechecked_from_prior_captures",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.new_native_exe_read",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.previous_original_exe_sha",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_evidence_hashes",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.prior_evidence_hashes.B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_evidence_hashes.B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.ready",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_classification",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 4,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples[].dx",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples[].dy",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples[].mathematical_squared",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.squared_distance_boundary_examples[].signed32_squared",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.synthetic_tests_passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.x87_status_bit_model.equal",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.x87_status_bit_model.equal.AH",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.equal.test_AH_0x41_zero",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.greater_ST0_than_mem",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.x87_status_bit_model.greater_ST0_than_mem.AH",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.greater_ST0_than_mem.test_AH_0x41_zero",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.less",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.x87_status_bit_model.less.AH",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.less.test_AH_0x41_zero",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.unordered",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.x87_status_bit_model.unordered.AH",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.x87_status_bit_model.unordered.test_AH_0x41_zero",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 19,
+    "physical_LF_lines": 105,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          19
+        ]
+      },
+      {
+        "json_path": "$.checks_failed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.checks_passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.computed.equivalence_transitivity_holds_for_1_NaN_2",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.negative_wrapped_square_46341_0",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.a_b",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.a_c",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.b_a",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.b_c",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.c_a",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.synthetic_comparisons.c_b",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.x87_status_AH",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.computed.x87_status_AH.equal",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.x87_status_AH.greater",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.x87_status_AH.less",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.computed.x87_status_AH.unordered",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.limitations",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          4
+        ]
+      },
+      {
+        "json_path": "$.limitations[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 4
+      },
+      {
+        "json_path": "$.local_saved_receipts",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "json_path": "$.local_saved_receipts[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 10,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.local_saved_receipts[].hour",
+        "types": [
+          "string"
+        ],
+        "occurrences": 10
+      },
+      {
+        "json_path": "$.local_saved_receipts[].verified",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 10
+      },
+      {
+        "json_path": "$.native_execution",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.new_original_pe_read",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_connected",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_synced",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.previous_source_sha256",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.previous_source_sha256.B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.previous_source_sha256.B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_call_sites",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.prior_call_sites.0x0052609E",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_call_sites.0x00526112",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_call_sites.0x0052AD35",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.ready",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          10
+        ]
+      },
+      {
+        "json_path": "$.source_sites.0x0052608E",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526091",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526094",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526117",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x0052611D",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526120",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526122",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x00526134",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x0052AD3A",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sites.0x0052AD3C",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      }
+    ]
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+    "encoding": "UTF-8",
+    "root_type": "object",
+    "top_level_key_count": 31,
+    "physical_LF_lines": 169,
+    "duplicate_keys": false,
+    "nonstandard_numeric_constants": false,
+    "shape": [
+      {
+        "json_path": "$",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          31
+        ]
+      },
+      {
+        "json_path": "$.checks_passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_evidence_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x00526074",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x00526077",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x0052607A",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x0052607D",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x0052607F",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.native_site_hex_bytes_verified_from_13H_saved_record.0x00526081",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.synthetic_cases",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          12
+        ]
+      },
+      {
+        "json_path": "$.synthetic_cases[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 12,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.synthetic_cases[].a",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.synthetic_cases[].b",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.synthetic_cases[].native_i32",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.synthetic_cases[].mathematical_floor",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.synthetic_cases[].trunc0_arithmetic_mean",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.synthetic_cases[].sub_overflows",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 12
+      },
+      {
+        "json_path": "$.safe_grid_pairs",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.safe_grid_trunc0_divergences",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.PC_native_reverified_this_run",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.original_EXE_executed",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.golden_pass",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.strict_match",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.ready",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.research_id",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.owner",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.tasks",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.tasks[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.scope",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.time_local",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_14_15h_manifest_local_readback",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.prior_14_15h_manifest_local_readback[]",
+        "types": [
+          "object"
+        ],
+        "occurrences": 2,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.prior_14_15h_manifest_local_readback[].hour",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.prior_14_15h_manifest_local_readback[].checked",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.prior_14_15h_manifest_local_readback[].passed",
+        "types": [
+          "integer"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.local_connection_attempt",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.connection_error_type",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_03h_failed_save",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.pc_4h_to_16h_sync",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.protected_range",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.kb_reference_blob_sha",
+        "types": [
+          "object"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.kb_reference_blob_sha.symbols.tsv",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.kb_reference_blob_sha.structs.tsv",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.kb_reference_blob_sha.REF_BATTLE_AI_MORALE.md",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.kb_duplicate_result",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.new_original_machine_code_read",
+        "types": [
+          "boolean"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_provenance",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.source_sha256",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.prior_existing_ids",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          3
+        ]
+      },
+      {
+        "json_path": "$.prior_existing_ids[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 3
+      },
+      {
+        "json_path": "$.initial_verifier_failures",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          2
+        ]
+      },
+      {
+        "json_path": "$.initial_verifier_failures[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 2
+      },
+      {
+        "json_path": "$.correction",
+        "types": [
+          "string"
+        ],
+        "occurrences": 1
+      },
+      {
+        "json_path": "$.status",
+        "types": [
+          "array"
+        ],
+        "occurrences": 1,
+        "lengths": [
+          6
+        ]
+      },
+      {
+        "json_path": "$.status[]",
+        "types": [
+          "string"
+        ],
+        "occurrences": 6
+      }
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "checked_sites": {
+    "0x00526058": true,
+    "0x0052607D": true,
+    "0x0052607F": true,
+    "0x00526081": true,
+    "0x0052608E": true,
+    "0x00526091": true,
+    "0x00526094": true,
+    "0x005260C4": true,
+    "0x00526117": true,
+    "0x0052611D": true,
+    "0x00526120": true,
+    "0x00526122": true,
+    "0x00526134": true,
+    "0x00569392": true,
+    "0x0056939B": true,
+    "0x0056940B": true,
+    "0x00569414": true
+  },
+  "eligibility_cross_function": [
+    {
+      "aux": 0,
+      "distance_sort_accepts": true,
+      "loss": 0,
+      "proximity_accepts": true
+    },
+    {
+      "aux": 1,
+      "distance_sort_accepts": true,
+      "loss": 0,
+      "proximity_accepts": false
+    },
+    {
+      "aux": 0,
+      "distance_sort_accepts": false,
+      "loss": 1,
+      "proximity_accepts": false
+    },
+    {
+      "aux": 1,
+      "distance_sort_accepts": false,
+      "loss": 1,
+      "proximity_accepts": false
+    }
+  ],
+  "golden_pass": 0,
+  "limitations": [
+    "No original PE/archives accessible in this run: native bytes are 10H/13H saved observations, not independently reread.",
+    "No complete sort tie stability conclusion from a single comparator.",
+    "x87 control word, negative sqrt exception mode, max instruction side effects require original runtime Golden.",
+    "No PC MASTER/HANDOFF latest comparison, no knowledge repo write."
+  ],
+  "midpoint_boundary_examples": [
+    {
+      "ideal_floor": 8,
+      "left": 10,
+      "right": 7,
+      "x86_result": 8
+    },
+    {
+      "ideal_floor": 8,
+      "left": 7,
+      "right": 10,
+      "x86_result": 8
+    },
+    {
+      "ideal_floor": -2,
+      "left": -2,
+      "right": -1,
+      "x86_result": -2
+    },
+    {
+      "ideal_floor": -1,
+      "left": -2147483648,
+      "right": 2147483647,
+      "x86_result": 2147483647
+    }
+  ],
+  "native_bytes_rechecked_from_prior_captures": 17,
+  "new_native_exe_read": false,
+  "previous_original_exe_sha": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "prior_evidence_hashes": {
+    "B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json": "562415C00B07730547E0BFC92F693503414CC742453C60F95BFF8A7E2CB1CE9D",
+    "B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json": "1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205"
+  },
+  "ready": false,
+  "research_id": "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+  "source_classification": "PRIOR_CAPTURED_STATIC+NEW_SYNTHETIC_ONLY",
+  "squared_distance_boundary_examples": [
+    {
+      "dx": 46340,
+      "dy": 0,
+      "mathematical_squared": 2147395600,
+      "signed32_squared": 2147395600
+    },
+    {
+      "dx": 46341,
+      "dy": 0,
+      "mathematical_squared": 2147488281,
+      "signed32_squared": -2147479015
+    },
+    {
+      "dx": 32768,
+      "dy": 32768,
+      "mathematical_squared": 2147483648,
+      "signed32_squared": -2147483648
+    },
+    {
+      "dx": 3,
+      "dy": 4,
+      "mathematical_squared": 25,
+      "signed32_squared": 25
+    }
+  ],
+  "strict_match": 0,
+  "synthetic_tests_passed": 33,
+  "x87_status_bit_model": {
+    "equal": {
+      "AH": "0x40",
+      "test_AH_0x41_zero": false
+    },
+    "greater_ST0_than_mem": {
+      "AH": "0x0",
+      "test_AH_0x41_zero": true
+    },
+    "less": {
+      "AH": "0x1",
+      "test_AH_0x41_zero": false
+    },
+    "unordered": {
+      "AH": "0x45",
+      "test_AH_0x41_zero": false
+    }
+  }
+}

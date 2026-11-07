@@ -1,0 +1,16 @@
+# REA-20261018-0035-DEATH-GRAPH-REENTRY-GATE-01｜通常死亡graph継続APIの再入条件不一致
+- [OWNER/SCOPE] 独立REA、WRQ-20261013-REA-DEATH、T010/T012/T013。Desktop Commander Local Compactのみ。Work等はread-only、新規Ghidra/旧EXE実行/製品修正なし。
+- [SOURCES] 2026-10-18 00時台JSTのLocal read-only: dev_lab/src/hakushin_compat/native_battle_outcome.py L113-161、native_battle_session.py L281-290、native_battle_runner.py L457-460。既存REA-20261017-22H-DEATH-WORLD-RECAPTURE-01、SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md ND-GRAPHを先読。
+- [NATIVE CONTEXT] 既保存0x575A60→0x575DF0→0x5684B0の死亡正常帰還は、marker処理・3埋込windowの各virtual/Task/Render/Spatial解除後に必要。既存ND-GRAPHは第一window W=Unit+5B0、第二=Unit+800、第三=Unit+89Cを分離し、returnまでVERIFY。
+- [NEW SOURCE GATE] session.continue_resolved_normal_disable_graph(pointer) は phase=="VERIFY_NORMAL_DISABLE_GRAPH"、frame.next_va==0x575C52、Unit identity一致を必要とし、begin_normal_disable_graph_575df0を1回呼び frame を置換する。
+- [BRANCH ZERO] unit.globals[0x87F783]==0 の初回呼出は graph=(W=Unit+0x5B0,virtual_slot=0x34,return_pc=0x575E18,world_pointer=Unit+C)、frame.next_va=0x575E16 を返す。
+- [BRANCH NONZERO] 同global byteが非0の初回呼出は graph=(Unit+0x540,virtual_slot=0x54,return_pc=0x4DDD99)、frame.next_va=0x4DDD97 を返す。graphがNoneという初回条件は以後満たさない。
+- [REENTRY COUNTEREXAMPLE] どちらの分岐でも初回後のframe.next_vaは0x575C52ではないため、同じsession API/actionを再送すると session guard で SessionGap("matching first normal-disable graph continuation required") に入る。return_pcを記録しただけでは実virtual戻りを証明せず、親+34の完走にはならない。
+- [RUNNER] native_battle_runner.py L457-460のnormal_disable_graph_resolved action はsession APIを1回呼び continuationをactionsへ加えてbreakする。検査対象src/hakushin_compatへのLocal literal content searchでは NormalDisableGraphFrame usageはnative_battle_outcomeの定義/生成、sessionの初回APIに限られ、graph resume専門APIは今回確認できなかった。動的到達/他モジュール未探索はVERIFY。
+- [DELTA VS PREVIOUS] 22H資料のworld再取得リスク・後段window未実装を再計上しない。今回の独立増分は「marker両分岐が必ず初回guardから離れ、同APIで再開できない」という具体的停止条件をコード上の制御フローから導いた点。
+- [CLASSIFICATION] 既存Workソース限定STATIC IMPLEMENTATION GAP=1 / 未確認graph resume経路・合法入力再現・テスト・原作実機goldenはVERIFY。原作エンジンBUG、実機不一致確定、全死亡経路一般化は禁止。
+- [OWNER ACCEPTANCE PROPOSAL/NOT RUN] Work担当が初回marker=0/非0を別fixtureにし、graph.virtual returnの実証を受け取る専用継続操作、worldの各window再取得、AL gating、Task/Render/Spatial各return receipt、次PC/親575C54/575D0Dまで明示的に進める。単にnext_vaを575C52へ書戻す、raw AL仮定、no-opで成功扱いは禁止。
+- [EVIDENCE] 新規Ghidra5種類のevidence ID=0件（今回は保存済みNative ND-GRAPHとWork現行ソースのみ）。source SHAの今回再計算なし、関数境界の新認定なし。
+- [PROGRESS] saved RUN_RESULT 20261011T153309850Z + sync 20261011T153958076Z: W1=16/16 W2=10/10 W3=10/10 W4=12/12 W5=16/16、累計64/64 VERIFIED、今回増加0。P0=29/29 P1=35/35。Wave6正式0/16、暫定P0=5/P1=11、未試行TODO12/BLOCKED4/結果VERIFY0。MASTER checkpoint177、研究DONE9/34 IN_PROGRESS21 VERIFY4。旧EXE actual golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/LIMIT] Local接続成功、list_processes CPU=n/a、RAM/現在SHA未測定。active.lockはdecomp_taskディレクトリ一覧では未検出。先行実行/負荷を完全否定できず重量runner/sync起動0（Ghidra実行0秒、軽量調査時間未計測）。REA成功6.1.0/Ghidra12.1.4、現runner6.4.0の差・EPERM・Wave6未登録を維持。単一MCP、4関数/回、Ghidra900000ms/request960000ms。
+- [SAFETY/NEXT] 0x5710C0..0x571500、Wave6既拒否4VA、既拒否REA exporter/21H Task-order書込・23H preflight commandを再試行・迂回していない。次回は保存済みND-GRAPHでmarker virtual+54及び最初のwindow+34の実callee/return receiptに続く正規経路を探索、Work担当へこの停止条件をhandoff候補。原本ZIP/EXE、他owner、MASTER/T018、Git/push、MCP設定、automationは変更なし。

@@ -28,4 +28,10 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md?plain=1#L9-L9) — - Link to 22H cleanup: `0x4296E5` reads `[receiver+0x38]` into EBX; when non-null reads `[EBX]` to EDI, decrements guarded `[EDI+4]`, then conditionally `0x4297
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-260"></a>
+## receiver + 0x260
+
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 12](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L12-L12) — - 04Hの二系統→0x5AA6E0 CALL先とspot_fire経路は既知で重複加算しない。新規は呼出時のAL=1/0差分、receiver+0x260、native保存位置+0x8C、AL依存追加処理。どちらが「火」か、+0x5A9CC0の実効果、対象object/vtable実体はVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

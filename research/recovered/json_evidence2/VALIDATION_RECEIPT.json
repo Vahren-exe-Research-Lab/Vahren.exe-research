@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-11-05",
+  "approved": 9,
+  "complete_valid_json_objects": 9,
+  "exact_bytes": 9,
+  "privacy_variants": 0,
+  "aliases": 0,
+  "deferred": 0,
+  "duplicate_key_rejection": true,
+  "nonstandard_numeric_rejection": true,
+  "native_runtime_validation": false,
+  "source_writes": false,
+  "remote_tools_used": false,
+  "transport": "Built-in local exec fallback; Local Desktop Commander connector 429 already known and authorized by parent.",
+  "independent_final_readback": {
+    "ledger_rows": 9,
+    "ledger_columns": 9,
+    "complete_source_destination_byte_equality": 9,
+    "source_and_destination_sha_match": 9,
+    "all_generated_json_parsed": true,
+    "deferred_rows": 0
+  }
+}
