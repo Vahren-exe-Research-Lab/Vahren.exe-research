@@ -13,7 +13,7 @@
 - 型　`f32[6]`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L138)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,7 +26,7 @@
 - 型　`i32[8]`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L139)
 
 読み手・書き手の個別採録は未実施です。
@@ -39,7 +39,7 @@
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L140)
 
 読み手・書き手の個別採録は未実施です。
@@ -52,7 +52,7 @@
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L141)
 
 読み手・書き手の個別採録は未実施です。
@@ -65,7 +65,7 @@
 - 型　`str`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L142)
 
 読み手・書き手の個別採録は未実施です。
@@ -78,7 +78,7 @@ field id
 - 型　`str`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L143)
 
 読み手・書き手の個別採録は未実施です。
@@ -91,7 +91,7 @@ field id
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L144)
 
 読み手・書き手の個別採録は未実施です。
@@ -104,7 +104,7 @@ smooth=step
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L145)
 
 読み手・書き手の個別採録は未実施です。

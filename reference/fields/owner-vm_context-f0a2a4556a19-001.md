@@ -8,9 +8,9 @@
 ## vm_context + 0x504
 
 - [REF_MAP_TERRAIN.md 行 163](../../REF_MAP_TERRAIN.md?plain=1#L163-L163) — - ABIは `BattleUnit* __fastcall(const char* name, Evaluator* evaluator)`、ECX=終端付き名前、EDX=vm_context+0x504、戻り値EAX。stack引数なし（0x49E8A7 は `ret`）。既存辞書・REF_UNIT_EXP_SUM
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 - [REF_MAP_TERRAIN.md 行 165](../../REF_MAP_TERRAIN.md?plain=1#L165-L165) — - 名前表は vm_context+0x504+0x1EEBEC。MSVC map の +4=head、+8=size、node+0/+4/+8=left/parent/right、+0xC=key string、+0x28=Unit*、+0x2D=nil。引数なしsetupの候補は、空表を拒否し、上限付きで検証した表
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

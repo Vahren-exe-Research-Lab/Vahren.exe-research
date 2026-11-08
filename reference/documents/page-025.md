@@ -21,8 +21,8 @@
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
 
 - [戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001）](../../REF_MAP_TERRAIN.md?plain=1#L1-L1) — `REF_MAP_TERRAIN.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
-  本文 SHA256 `31a0333cedf0b3b5361d6799df72be1c9ef2381b4edfd42550fc0c7b9cd7c6f8`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
+  本文 SHA256 `21c6fd560e4dca6ee3909407349d5d8a4deef419e47f73cae046522b6f0a2048`
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
 
 [前のページ](page-024.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

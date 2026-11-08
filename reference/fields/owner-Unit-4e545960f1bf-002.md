@@ -263,7 +263,7 @@
 ## Unit + 0xB0
 
 - [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 - [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 18](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L18-L18) — - 対象Unitについて `Unit+0xB0==0 && Unit+0xA8==0 && Unit+0x1E530 < global[0x65BC5C]` の場合、そのUnitの集計寄与は0。それ以外は `2×signed32(Unit+0x228)` を加算する（`0x5692E3`読出、`0x5692ED`のLE
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted

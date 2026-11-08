@@ -23,7 +23,7 @@
 ## Unit + 0x218
 
 - [REF_MAP_TERRAIN.md 行 155](../../REF_MAP_TERRAIN.md?plain=1#L155-L155) — - 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 <a id="field-21c"></a>
 ## Unit + 0x21C

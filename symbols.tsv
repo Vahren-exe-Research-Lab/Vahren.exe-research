@@ -588,7 +588,7 @@
 0x4F0BE0	func	Battle_LoadStageMap	戦闘マップ(.map)読込。セル設定、field type!=0 で Block 生成＋通行グリッド+0x60/+0x7C に1、object から Block、末尾で経路領域構築 0x4EA2E0	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4562D0	func	FieldData_SetChip	セル(FieldData)にチップを設定。EDX=チップ名 string*、EDI=セル、EBX=高さ。0x423E80 の矩形を+0x6C〜+0x80、attr を+0xD4、id を+0xF0	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x456380	func	FieldData::vf07_BuildQuad	セルの6頂点を +0x6C〜(UV) と +0x8C〜(位置) から作る。描画用	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-0x423E80	func	Image_GetChipAtlasRect	custom ABI EDX=チップ名char*, ESI=24byte出力、EAX=出力先、stack引数なし。6値の末尾2値はfloatサイズ。空/未登録名は6ゼロ既定値（初回lazy初期化）。名前表head=[0x87A230], node key+0xC/value+0x28/nil+0x41。M2製品経路は実機未確認（REF_MAP_TERRAIN §9）	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
+0x423E80	func	Image_GetChipAtlasRect	custom ABI EDX=チップ名char*, ESI=24byte出力、EAX=出力先、stack引数なし。6値の末尾2値はfloatサイズ。空/未登録名は6ゼロ既定値（初回lazy初期化）。名前表head=[0x87A230], node key+0xC/value+0x28/nil+0x41。静的契約はREF_MAP_TERRAIN §9。M2のseag 5×5変更/復元経路は実機確認（2026-11-09、§11）、再戦/境界継ぎ目は未検証	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4DF200	func	Block_CreateFromObjectDef	地形/オブジェクトの Block 生成。type1→+0x130 floor、2→+0x67、3→+0x67/+0x68、4→+0x67/+0x68/+0x69	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4E5860	func	Missile_FindBlockingObject	飛び道具と Block/ユニットの判定。wall(+0x68)は停止、wall2(+0x69)は乱数と no_wall2 で停止判定	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4E6110	func	Missile_CollectBlockingObjects	0x4E5860 と同系の判定（複数対象）	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)

@@ -8,6 +8,6 @@
 ## nil + 0x39
 
 - [REF_MAP_TERRAIN.md 行 195](../../REF_MAP_TERRAIN.md?plain=1#L195-L195) — - これはT040で既出の `g_ChipAtlasMap`（0x879E68、4整数の矩形、node nil+0x39）とは位置・値の幅・nil位置が異なる。本節のnative取得経路で0x879E68の表構造を流用しない。両表の生成・相互変換の全経路は本節では未調査。
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

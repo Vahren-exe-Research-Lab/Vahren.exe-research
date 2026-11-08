@@ -8,6 +8,6 @@
 ## FieldData + 0x6C
 
 - [REF_MAP_TERRAIN.md 行 130](../../REF_MAP_TERRAIN.md?plain=1#L130-L130) — \| 戦闘中のチップ変更・アニメーション \| **無し** \| DLL で FieldData +0x6C〜+0x80 を書換え（既存V1で実機確認済み） \|
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

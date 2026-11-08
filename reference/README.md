@@ -29,7 +29,7 @@
 | 0x41EF50 | [Ai_SelectFourwayBattleMode](symbols/0041EF50.md) | func | 四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。 |
 | 0x420900 | [TrigCosNegSinToTwoInts](symbols/00420900.md) | func | Original x86 70-byte trig helper: adds stored pi/2, calls cos and sin and integer converter, writes signed two-DWORD outputs to implicit ESI and ESI+4; conversion exceptions and gameplay role remain VERIFY |
 | 0x423D70 | [Image_GetChipRect](symbols/00423D70.md) | func | ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値） |
-| 0x423E80 | [Image_GetChipAtlasRect](symbols/00423E80.md) | func | custom ABI EDX=チップ名char*, ESI=24byte出力、EAX=出力先、stack引数なし。6値の末尾2値はfloatサイズ。空/未登録名は6ゼロ既定値（初回lazy初期化）。名前表head=[0x87A230], node key+0xC/value+0x28/nil+0x41。M2製品経路は実機未確認（REF_MAP_TERRAIN §9） |
+| 0x423E80 | [Image_GetChipAtlasRect](symbols/00423E80.md) | func | custom ABI EDX=チップ名char*, ESI=24byte出力、EAX=出力先、stack引数なし。6値の末尾2値はfloatサイズ。空/未登録名は6ゼロ既定値（初回lazy初期化）。名前表head=[0x87A230], node key+0xC/value+0x28/nil+0x41。静的契約はREF_MAP_TERRAIN §9。M2のseag 5×5変更/復元経路は実機確認（2026-11-09、§11）、再戦/境界継ぎ目は未検証 |
 | 0x4243C0 | [Image_GetFaceCached](symbols/004243C0.md) | func | cdecl 引数1（char* 画像名）、EAX=HBITMAP。キャッシュ0x879E48を引き、無ければ0x427270で読み込んで登録 |
 | 0x424C80 | [Image_GetChipSprite](symbols/00424C80.md) | func | ECX=char* チップ名、EAX=HGDIOBJ。キャッシュ0x87A1B8、無ければ0x879E68の矩形から切り出してDIBを作り登録。表に無い名前は0 |
 | 0x427040 | [Save_EncodeAdditiveEnvelope](symbols/00427040.md) | func | 先頭4バイトのマジックと28バイト鍵を付け、32バイト目以降へ繰返し加算する共通エンコーダ。鍵生成で CRT rand を28回消費する。 |

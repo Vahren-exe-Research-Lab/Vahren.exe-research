@@ -26,7 +26,7 @@
 ## GameManager + 0x88
 
 - [REF_MAP_TERRAIN.md 行 95](../../REF_MAP_TERRAIN.md?plain=1#L95-L95) — grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクトの+8）。
-  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L31-L31) — 5. `0x0051E388 MOV EAX,[EDI+4]`→`0x0051E38B LEA ECX,[EAX+0x88]`→**`0x0051E39E MOV [EDI+0x188],ECX`**。よって確認した正常構築経路で**`[Player+0x188]=GameManager+0x88`**。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
