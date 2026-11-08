@@ -598,7 +598,7 @@
 0x4EA2E0	func	Grid_RebuildNavigation	経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない（再実行してもぶら下がらないが漏れる）。戦闘中の再実行は実機未確認	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4EAA70	func	Grid_TestStraightWalk	2点間を8方向に進み通行不可マスに当たるか調べる	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4C1B70	func	Stage_GetCellAtPixel	thiscall stage, (px,py)。>>5 で 32px マスに変換して FieldData* を返す	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-0x4FBE80	func	NewGameStage::vf02_GetCellAtPos	座標のセルを返す（斜め表示モード対応）。Unit::vf25 が使う	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
+0x4FBE80	func	NewGameStage::vf02_GetCellAtPos	__thiscall ECX=stage, stack=(int32 px,int32 py), EAX=FieldData*, ret 8。斜め表示モード対応、変換後をマップ端へclamp。Unit::vf25 が使用。HKDR callbackからの直接呼出は未実機確認（REF_MAP_TERRAIN §7）	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4FBF40	func	NewGameStage::vf03_CollectVisibleCells	表示矩形内のセルを列挙（高さのはみ出し込み）	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x4FAF50	func	NewGameStage::vf00_SmoothHeights	読込後の高さ平滑化・隠れ判定	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x576DC0	func	Unit::vf25_TerrainMoveValue	現在セルの attr でユニットの movetype 表を引き consti を返す。無ければ 5	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)

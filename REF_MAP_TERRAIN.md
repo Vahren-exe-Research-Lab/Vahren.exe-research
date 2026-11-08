@@ -12,7 +12,7 @@
    - **field の `type = coll / wall / wall2`** … そのマスを通行不可グリッドに1を立て、同じマスに見えない当たり判定オブジェクト（Block）を作る。
    - **object の `type = coll / wall / wall2`** … Block を作る。`type` 無指定（木など）と `floor` は**当たり判定なし**（見た目だけ）。
    - **object の `type = break / break2 / gate`** … 壊せる壁・門。通常の Block ではなく専用の生成経路（0x4F3290 経由）で作られる。
-3. **移動の速さ・可否は movetype × 地形の attr**。ユニットの仮想関数 **Unit::vf25（0x576DC0）** が、いる座標のセルの `attr` 文字列でユニットの movetype 表を引き、`consti` の値を返す（無ければ既定 **5**）。`ship` の `grass*0` のように **0 のとき「その移動タイプでは進めない」** になる（0 の扱い＝速度0 の消費側は未確認）。［vf25 は静的確認、0＝不可は推定］
+3. **移動の速さ・可否は movetype × 地形の attr**。ユニットの仮想関数 **Unit::vf25（0x576DC0）** が、いる座標のセルの `attr` 文字列でユニットの movetype 表を引き、`consti` の値を返す（無ければ既定 **5**）。`ship` の `grass*0` のように **0 のとき「その移動タイプでは進めない」** になる。［vf25 と消費側 0x57902C は静的確認。2026-11-09 V2 の既存結果により0で移動不可を確認、§3参照］
 4. セル（`FieldData`、0x11C バイト）は描画オブジェクトで、テクスチャ座標（チップ画像の位置）を **+0x6C〜+0x80** に持つ。毎フレーム、表示範囲のセルを列挙（NewGameStage::vf03）→ 各セルの FieldData::vf07 が +0x6C の値から頂点を作る。よって **この6値を書き換えれば次の描画からチップの見た目が変わる**（アニメーション・途中変更の土台）。［**実機確認 2026-11-09**: 戦闘中に x32dbg で 7×7 マスの +0x6C〜+0x80 を別セルの値に書き換えると、草原が水の絵に即座に変わった。attr・通行判定は変えず見た目だけ変わる］
 5. 原作の DAT 命令にはマップチップを戦闘中に変える命令は**無い**（`changeMap` は世界画面の Spot が使うマップ名の変更）。途中変更・アニメーション・ダメージ床は DLL 拡張で作る。
 
@@ -111,7 +111,7 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 ## 3. 移動タイプと地形の速さ
 
 - Unit::vf25（0x576DC0）: `Unit+0x1F0` と `UnitDef(+0x1C8)+0x14C` が有効なら、`Unit+0x1E4`（stage）の vf02 で現在座標（`Unit+0x214/+0x218`）のセルを取り、セル `+0xD4`（attr）でユニットの movetype 表（`Unit+0x1E8` 系の木、終端 `+0x1EC`）を探し、見つかれば値、無ければ **5** を返す。［静的確認］
-- movetype.dat の `consti = attr*値` が値の出所（既存 DEVLAB_TERRAIN_MOVETYPE 参照。33種）。0 と未記述の区別は消費側で未確認（未記述なら既定5 は上記で確認）。
+- movetype.dat の `consti = attr*値` が値の出所（既存 DEVLAB_TERRAIN_MOVETYPE 参照。33種）。0 は消費側 0x57902C で移動せず false を返す。未記述は既定5（下記の既存V2結果・静的確認を参照）。
 - vf25 の呼出元は 0x578FD0（移動1歩の計算、vtable+0x64 経由の CALL、戻り 0x579010）。［実機確認 2026-11-09: 呼出元は全件 0x579010、草=6・岩=3 を観測（normal の movetype どおり）］
   - 値 v が **0 なら移動せず false を返す**（0x57902C）。＝ consti 0 は「その移動タイプでは進めない」。［静的確認］
   - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
@@ -127,14 +127,14 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 | 壊せる壁・門 | object `type=break/break2/gate` | 専用経路。門は break2 と同値 |
 | 飛び道具を止める | `wall`（必ず）、`wall2`（確率） | 2.2 |
 | ダメージ床・毒床 | **無し** | DAT の `doskill(skill,x,y,向き,off)` を定期実行すれば代用可 |
-| 戦闘中のチップ変更・アニメーション | **無し** | DLL で FieldData +0x6C を書換え（推定で可能） |
+| 戦闘中のチップ変更・アニメーション | **無し** | DLL で FieldData +0x6C〜+0x80 を書換え（既存V1で実機確認済み） |
 | 季節でマップを変える | `changeMap`（Spot のマップ名、世界画面） | 戦闘用マップの差し替えは DAT だけで可能 |
 
 ## 5. 未確認（x32dbg 検証項目）
 
 - ~~V1~~: **確認済み**（2026-11-09、OGGテストのコピー、スクリプト map_v1b.txt）。vf07 は描画のたびに表示中のセルについて呼ばれ、書換えは即時反映。
 - ~~V2~~: **確認済み**（§3）。
-- V2: Unit::vf25 の呼出元と、戻り値（consti）から移動速度への式、0 の扱い。
+- V2 補足: 呼出元・式・0 の扱いは §3 に確認済みとして記録（今回のM1作業での再試験ではない）。
 - V3: 戦闘中に 0x4E9A20 で通行不可を追加し 0x4EA2E0 を再実行してよいか（旧領域の解放、移動中ユニットが持つ領域ポインタの寿命）。
 - V4: Block を戦闘中に追加・削除してよいか（空間グリッド `+0x4C` 系への登録・解除）。
 - V5: `joint`/`edge` の境界チップは別オブジェクトとして作られるか（基礎チップだけ替えたときの継ぎ目）。
@@ -144,3 +144,28 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 ## 6. 主な関数・データ（symbols.tsv に追加）
 
 0x4EEA00 定義パーサー / 0x4EE470 ObjectDef構築 / 0x4EE560 FieldDef構築 / 0x4F0BE0 戦闘マップ読み込み / 0x4562D0 セル設定 / 0x456380 FieldData::vf07 / 0x4DF200 Block生成 / 0x4E5860・0x4E6110 飛び道具とBlock / 0x4E9470・0x4E9A20・0x4E9A60・0x4EA2E0・0x4EAA70・0x4EC1E0 通行グリッドと経路 / 0x4C1B70 座標→セル / 0x4FBE80 NewGameStage::vf02 / 0x4FBF40 NewGameStage::vf03 / 0x576DC0 Unit::vf25 / 0x423E80 チップ名→アトラス矩形。
+
+## 7. M1 実装のための ABI・読取り契約（2026-11-09 Codex）
+
+研究ID: `CODEX-MAP-M1-ABI-20261109`。対象EXE SHA256は本書冒頭と一致（今回実測）。OGGテスト配下コピーを pefile + Capstone で**静的に読んだだけ**で、ゲーム起動・注入・メモリ変更・実機試験は行っていない。VA は基準0x400000で、呼出先は `module+(VA-0x400000)` に補正する。
+
+### 7.1 NewGameStage::vf02 — vtable+8 / 0x4FBE80
+
+- ABIは `FieldData* __thiscall(Stage* self, int32_t px, int32_t py)`。ECX=stage、スタック第1引数=px、第2引数=py、戻り値EAX=セル、callee が8バイトを除去する。［STATIC］
+- 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み、0x4FBF19/0x4FBF30 は `ret 8`。
+- 整数型の根拠: 斜め座標変換 0x4C1690 内 0x4C16CE〜0x4C16F1 は入力を32ビットで保存して `fild dword` する。float のビット列を渡す契約ではない。
+- 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
+- 斜め分岐は変換後のマス座標を 0〜width-1 / 0〜height-1 に丸める（0x4FBEB7〜0x4FBF03）。したがって返却ポインタだけで「入力座標がもともとマップ内だった」とは判定できない。M1では幅高さの正値、積とアドレス加算のoverflow、配列可読範囲を確認し、返却セルが配列内かつ0x11C境界であることを検証して `index=(cell-cells)/0x11C; x=index%width; y=index/width` を得る。
+- vf02をDLLのHKDR購読callbackから呼ぶ実機試験は**未実施**。既存V1は原作自身の vf25→vf02 が返したセルを観察したもので、DLL呼出の受入れを代替しない。
+
+### 7.2 Battle_FindUnitByName — 0x49E780
+
+- ABIは `BattleUnit* __fastcall(const char* name, Evaluator* evaluator)`、ECX=終端付き名前、EDX=vm_context+0x504、戻り値EAX。stack引数なし（0x49E8A7 は `ret`）。既存辞書・REF_UNIT_EXP_SUMMON §10 の契約を今回静的に再確認した。［STATIC再確認、新規実機確認ではない］
+- 根拠: 0x49E7B6 は名前をECXからEAXへ、0x49E7B8 は評価器をEDXからESIへ保存。0x49E7CF〜0x49E7D9 は名前長を走査。0x49E7F0 は評価器+0x1EEBEC の名前multimapを使用。0x49E826 はnode+0x28のUnit*、0x49E82D/0x49E836 はUnit+0x1867Cのgone byteを読む。生存優先、なければ最初のgone unitを返す。
+- 名前表は vm_context+0x504+0x1EEBEC。MSVC map の +4=head、+8=size、node+0/+4/+8=left/parent/right、+0xC=key string、+0x28=Unit*、+0x2D=nil。引数なしsetupの候補は、空表を拒否し、上限付きで検証した表のキーを使いUnitを解決し、Unit+0x1E4のstageを取得すること。これは**実装方針**であり新しい原作関数の発見ではない。stage vtable、配列・幅高さを再検証し、戦闘外・stage変更時に旧記録を捨てる。
+- 原作関数は一時std::stringを構築/解放する（0x49E7E1→0x402800、0x49E810→0x5B6BBB）。ゲーム地形やユニットを変更する処理ではないが、完全な「プロセスメモリ書込みなし」の関数ではない。
+- **実績の区別**: Extensions commit `1ba7e4c46d7e783f353d3eae9f42b1def24553d5` の `plugins/exp/src/hakushin_exp_dat.h` 225〜238行は名前表を読み取る `hxd_find_unit` 再実装。原作0x49E780を直接呼ぶものではない。同commitの `docs/DAT_ROUTINE_BUS.md` 77〜80・121〜126行はcallback内native直接呼出を未実機確認としている。EXPの戦闘動作実績を、MapGimmickからのnative直接呼出実績に読み替えない。
+
+### 7.3 既存結果との整合と未確認
+
+§0/§3/§4/§5に残っていた「V1推定」「V2の0は未確認」は、同文書の2026-11-09既存V1/V2結果に合わせて訂正した。過去の静的段階のintake本文は当時の記録として維持する。今回新たに実機確認したのではない。V3〜V5、native lookup/vf02のHKDR callback内呼出、setupの戦闘開始/終了/再戦時の寿命は未確認。静的ABIの一致や合成テストを実機受入れへ格上げしない。

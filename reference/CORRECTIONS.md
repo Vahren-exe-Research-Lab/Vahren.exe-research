@@ -94,4 +94,14 @@
   - → 現在の解釈　ALは上位制御の分岐値。射撃ラッチを更新した後にAL0で早期returnする経路があり、MP減算や技能効果の成功とは分ける。
   - 確度　保存済みチャットの著者静的報告。今回の原作再解析・実機確認なし。 対象は研究Bのver0.67文脈。短報単体にEXE SHAの提示なし。。対象　ver0.67。[訂正の根拠](../research/recovered/chat_b_remainder2/reports/B_20261013_SKILL_HANDLERS_CHAT.md?plain=1#L5-L13)
 
+- [FieldData::vf07_BuildQuad](symbols/00456380.md) · `CORRECTION-MAP-V1-CHIP-LIVE` · `corrected`。REF内に残った静的調査時点の説明を既存V1結果へ整合。
+  - 訂正済みの旧解釈（履歴）　FieldData+0x6C の変更による即時表示反映は推定。
+  - → 現在の解釈　2026-11-09の既存V1実機結果で即時反映を確認済み。今回M1は再試験していない。
+  - 確度　既存V1実機報告（今回再試験なし）。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L16-L16)
+
+- [Unit::vf25_TerrainMoveValue](symbols/00576DC0.md) · `CORRECTION-MAP-V2-ZERO` · `corrected`。REF内の古い未確認記述を§3の既存消費側結果へ整合。
+  - 訂正済みの旧解釈（履歴）　consti=0 が進行不可になる消費側は未確認。
+  - → 現在の解釈　0x57902Cで値0なら移動せずfalseを返すことを既存静的調査で確認済み。V2既存実機結果と区別し今回再試験なし。
+  - 確度　既存静的確認とV2実機報告（今回再試験なし）。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L116-L116)
+
 [事典の入口](README.md)

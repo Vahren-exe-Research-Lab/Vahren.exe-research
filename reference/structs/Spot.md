@@ -14,7 +14,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L95)
+- [元の辞書行](../../structs.tsv#L98)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x00 name](../structs/Spot.md#field-0)。通常セーブへ Spot.name を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L127) · `MEM-SPOT-SERIALIZE-0`
 
@@ -28,7 +28,7 @@
 - 辞書の出典表記　F§62.1, S1101§5
 - 出典 [F§62.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-62)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 本文リンク未解決　S1101§5
-- [元の辞書行](../../structs.tsv#L96)
+- [元の辞書行](../../structs.tsv#L99)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x1C units](../structs/Spot.md#field-1c)。通常セーブへ Spot.units を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L132) · `MEM-SPOT-SERIALIZE-1C`
 
@@ -41,7 +41,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58, §79.7
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L97)
+- [元の辞書行](../../structs.tsv#L100)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x2C map](../structs/Spot.md#field-2c)。通常セーブへ Spot.map を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L128) · `MEM-SPOT-SERIALIZE-2C`
 
@@ -54,7 +54,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58, §79.7
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L98)
+- [元の辞書行](../../structs.tsv#L101)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x48 dungeon](../structs/Spot.md#field-48)。通常セーブへ Spot.dungeon を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L136) · `MEM-SPOT-SERIALIZE-48`
 
@@ -67,7 +67,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58, §79.3
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L99)
+- [元の辞書行](../../structs.tsv#L102)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x80 gain](../structs/Spot.md#field-80)。通常セーブへ Spot.gain を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L130) · `MEM-SPOT-SERIALIZE-80`
 
@@ -80,7 +80,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L100)
+- [元の辞書行](../../structs.tsv#L103)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x84 castle](../structs/Spot.md#field-84)。通常セーブへ Spot.castle を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L131) · `MEM-SPOT-SERIALIZE-84`
 
@@ -93,7 +93,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58, T014 A57
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L101)
+- [元の辞書行](../../structs.tsv#L104)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x88 capacity](../structs/Spot.md#field-88)。通常セーブへ Spot.capacity を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L133) · `MEM-SPOT-SERIALIZE-88`
 - [Spot_LoadRuntimeCapacity](../symbols/005972E0.md) → `writes` → [Spot + 0x88 capacity](../structs/Spot.md#field-88)。Spot 初期化で capacity を設定する。未指定の0なら文脈の既定値を代用し、その後上限24を適用する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1379-L1382) · `MEM-SPOT-INIT-88`
@@ -107,7 +107,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§68.1, §68.2
 - 出典 [F§68.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-68)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L102)
+- [元の辞書行](../../structs.tsv#L105)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x8C castleBattle](../structs/Spot.md#field-8c)。通常セーブへ Spot.castleBattle を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L134) · `MEM-SPOT-SERIALIZE-8C`
 
@@ -120,7 +120,7 @@ value（セーブの札 fightvalue）
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L103)
+- [元の辞書行](../../structs.tsv#L106)
 
 - [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x90 value](../structs/Spot.md#field-90)。通常セーブへ Spot.value を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L135) · `MEM-SPOT-SERIALIZE-90`
 
@@ -133,7 +133,7 @@ ctx（Spot 解決 0x467E90 も書く）
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§58, T014 A59
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
-- [元の辞書行](../../structs.tsv#L104)
+- [元の辞書行](../../structs.tsv#L107)
 
 - [Spot_FindByName](../symbols/00467E90.md) → `writes` → [Spot + 0xB0 ctx](../structs/Spot.md#field-b0)。CtxのSpot表を名前で検索し、見つかったSpotの+0xB0にCtxへの逆参照を書き込んで返す。見つからなければnull。保存報告の直接記述であり、今回の原作再検証はない。 （静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L571-L572) · `MEM3-SPOT-RESOLVER-WRITE-CTX`
 

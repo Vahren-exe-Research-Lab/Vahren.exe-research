@@ -14,7 +14,7 @@
 - 辞書の確度　静的確認（保存済み著者の限定サイト解析。今回の原作再検証・実行なし）
 - 辞書の出典表記　exp_research_20261021/EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json lines26-29,50-53,74-78 [recovered=research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json; sha256=9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4]
 - 出典 [exp_research_20261021/EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json](../../research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json)。Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
-- [元の辞書行](../../structs.tsv#L125)
+- [元の辞書行](../../structs.tsv#L128)
 
 - [Save_WriteFullState](../symbols/00460000.md) → `reads` → [SaveUnitDataTreeNode + 0x28 unitDataPointer](../structs/SaveUnitDataTreeNode.md#field-28)。保存処理の走査でnode+0x28からUnitDataポインタを読むと報告される。全save経路・生存期間は未証明。 （静的確認（保存済み著者の限定サイト解析。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json?plain=1#L26-L78) · `CACHE-SAVE-NODE28-READ-POINTER`
 

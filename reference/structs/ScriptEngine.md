@@ -15,7 +15,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines227-235; REF_SCRIPT_VM_CONTEXT.md lines3-4
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L122)
+- [元の辞書行](../../structs.tsv#L125)
 
 - [Event_RunExecutionMode](../symbols/004335E0.md) → `reads` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。実行ループが現在の実行モードを読み、mode1・2・6を別経路に分岐する。phaseの識別値とは区別する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L227-L235) · `MEM2-VM-DISPATCH-READ-MODE`
 - [Event_SetBattleExecutionMode_ReportedSite](../symbols/00492960.md) → `writes` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。報告上の戦闘setup位置0x492960で、現在の実行モードに2を設定する。新しい関数入口とはせず、厳密な命令位置・関数境界の原作再検証はない。 （静的確認（回収済み報告の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L232-L232) · `MEM3-VM-SETUP-WRITE-MODE`
@@ -31,7 +31,7 @@ mode2 で戦闘更新の前後に読む byte のゲート。合法な状態遷�
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines375-376; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L115)
+- [元の辞書行](../../structs.tsv#L118)
 
 - [Event_TestBattleActiveGate](../symbols/004335FA.md) → `reads` → [ScriptEngine + 0x1EEC44 battleActive](../structs/ScriptEngine.md#field-1eec44)。実行モード2で更新前後のactiveバイトを検査し、本呼出元でVM runnerへ進むかを決める。他の呼出元での実行まで排除する主張ではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L376) · `MEM-VM-ACTIVE-GATE`
 
@@ -44,7 +44,7 @@ waitが評価した引数を保持するカウンタ。インタプリタの継�
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines97-104; REF_SCRIPT_VM_CONTEXT.md lines3-4,15
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L121)
+- [元の辞書行](../../structs.tsv#L124)
 
 - [Script_Op_Wait](../symbols/004A17D8.md) → `reads` → [ScriptEngine + 0x1EED58 waitCounter](../structs/ScriptEngine.md#field-1eed58)。既存のwait命令（opcode9）の位置で、インタプリタの継続ごとに減算する保持カウンタを読む。OSのsleepではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L97-L104) · `MEM2-VM-WAIT-READ-COUNTER`
 - [Script_Op_Wait](../symbols/004A17D8.md) → `writes` → [ScriptEngine + 0x1EED58 waitCounter](../structs/ScriptEngine.md#field-1eed58)。waitは評価した引数を保持し、インタプリタの継続ごとに減算して、終了時に番兵0x80000008へ戻す。場面による実行スタックの扱いは別条件として残る。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L97-L104) · `MEM2-VM-WAIT-WRITE-COUNTER`
@@ -59,7 +59,7 @@ getTime が返す int32 の経過カウンタ。resetTime はこの値だけを0
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines108-133; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L110)
+- [元の辞書行](../../structs.tsv#L113)
 
 - [Expression_GetBattleTime](../symbols/004518FA.md) → `reads` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。getTime（opcode 0x25A）は、資料でint32と確認されたリセット可能な経過カウンタを読む。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L108) · `MEM-VM-TIME-READ`
 - [Event_ResetBattleClock](../symbols/004B47FC.md) → `writes` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。resetTimeはこのカウンタだけを0にする。isInterval側の時計と位相はリセットしない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L130) · `MEM-VM-TIME-RESET`
@@ -76,7 +76,7 @@ isIntervalと報告上の10tickごとの制限時間更新に使う絶対スケ�
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines108-114,125-133; REF_SCRIPT_VM_CONTEXT.md lines3-4,17
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L120)
+- [元の辞書行](../../structs.tsv#L123)
 
 - [Expression_TestBattleInterval](../symbols/00451915.md) → `reads` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。isIntervalは、正の指定間隔を10の倍数に切り上げた除数で絶対時計の余りを調べる。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L114) · `MEM2-VM-INTERVAL-READ-ABS`
 - [Event_InitializeBattleClock](../symbols/00492710.md) → `writes` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。戦闘開始の初期化で、リセット可能な経過カウンタとともに絶対スケジューラ時計を0にする。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-SETUP-WRITE-ABS`
@@ -94,7 +94,7 @@ VM の並列フレーム・ブロック列。現在フレームは末尾要素�
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L111)
+- [元の辞書行](../../structs.tsv#L114)
 
 - [Script_FetchCurrentFrame](../symbols/004339B1.md) → `reads` → [ScriptEngine + 0x1EED78 executionBlocks](../structs/ScriptEngine.md#field-1eed78)。現在フレームを取り出す際、この並列ベクトルの末尾要素を読む。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L256) · `MEM-VM-FRAME-READ-1EED78`
 - [Event_InstallPhaseFrames](../symbols/00433203.md) → `writes` → [ScriptEngine + 0x1EED78 executionBlocks](../structs/ScriptEngine.md#field-1eed78)。frameInstallMode=1では4本とも末尾へ追加する。frameInstallMode=0ではblockと実行モードを末尾へ追加し、PCとframe-kindの0を先頭へ挿入する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L259) · `MEM-VM-FRAME-INSTALL-1EED78`
@@ -110,7 +110,7 @@ VM の並列 PC 列。現在フレームは末尾要素。frameInstallMode=0 で
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L112)
+- [元の辞書行](../../structs.tsv#L115)
 
 - [Script_FetchCurrentFrame](../symbols/004339B1.md) → `reads` → [ScriptEngine + 0x1EED88 executionPCs](../structs/ScriptEngine.md#field-1eed88)。現在フレームを取り出す際、この並列ベクトルの末尾要素を読む。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L256) · `MEM-VM-FRAME-READ-1EED88`
 - [Event_InstallPhaseFrames](../symbols/00433203.md) → `writes` → [ScriptEngine + 0x1EED88 executionPCs](../structs/ScriptEngine.md#field-1eed88)。frameInstallMode=1では4本とも末尾へ追加する。frameInstallMode=0ではblockと実行モードを末尾へ追加し、PCとframe-kindの0を先頭へ挿入する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L259) · `MEM-VM-FRAME-INSTALL-1EED88`
@@ -126,7 +126,7 @@ VM の並列実行モード列。現在フレームは末尾要素。シナリ�
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L113)
+- [元の辞書行](../../structs.tsv#L116)
 
 - [Script_FetchCurrentFrame](../symbols/004339B1.md) → `reads` → [ScriptEngine + 0x1EED98 executionModes](../structs/ScriptEngine.md#field-1eed98)。現在フレームを取り出す際、この並列ベクトルの末尾要素を読む。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L256) · `MEM-VM-FRAME-READ-1EED98`
 - [Event_InstallPhaseFrames](../symbols/00433203.md) → `writes` → [ScriptEngine + 0x1EED98 executionModes](../structs/ScriptEngine.md#field-1eed98)。frameInstallMode=1では4本とも末尾へ追加する。frameInstallMode=0ではblockと実行モードを末尾へ追加し、PCとframe-kindの0を先頭へ挿入する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L259) · `MEM-VM-FRAME-INSTALL-1EED98`
@@ -142,7 +142,7 @@ VM の並列フレーム種別列。現在フレームは末尾要素。frameIns
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 - 出典 [F§82.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- [元の辞書行](../../structs.tsv#L114)
+- [元の辞書行](../../structs.tsv#L117)
 
 - [Script_FetchCurrentFrame](../symbols/004339B1.md) → `reads` → [ScriptEngine + 0x1EEDA8 executionFrameKinds](../structs/ScriptEngine.md#field-1eeda8)。現在フレームを取り出す際、この並列ベクトルの末尾要素を読む。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L256) · `MEM-VM-FRAME-READ-1EEDA8`
 - [Event_InstallPhaseFrames](../symbols/00433203.md) → `writes` → [ScriptEngine + 0x1EEDA8 executionFrameKinds](../structs/ScriptEngine.md#field-1eeda8)。frameInstallMode=1では4本とも末尾へ追加する。frameInstallMode=0ではblockと実行モードを末尾へ追加し、PCとframe-kindの0を先頭へ挿入する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L229-L259) · `MEM-VM-FRAME-INSTALL-1EEDA8`

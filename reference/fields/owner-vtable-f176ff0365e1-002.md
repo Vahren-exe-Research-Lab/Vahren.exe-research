@@ -277,6 +277,9 @@
 <a id="field-64"></a>
 ## vtable + 0x64
 
+- [REF_MAP_TERRAIN.md 行 115](../../REF_MAP_TERRAIN.md?plain=1#L115-L115) — - vf25 の呼出元は 0x578FD0（移動1歩の計算、vtable+0x64 経由の CALL、戻り 0x579010）。［実機確認 2026-11-09: 呼出元は全件 0x579010、草=6・岩=3 を観測（normal の movetype どおり）］
+  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+
 - [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 14](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L14-L14) — 0x5AA6E0はAL!=0かつ保持obj vtable+0x64非zeroのときだけ0x5AA709から上記0x5A9CC0を呼ぶ。共通後続0x5AA7B1 E8→0x4BC920は新規挿入候補（旧04HにCALL既知）、spot_fire文字列処理へ続く。V9 0x4BC920擬似Cは0x4BC3C0(param1
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
@@ -350,9 +353,6 @@
 ## vtable + 0x70
 
 - [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 1](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L1-L1) — # B-20261024-0912-T028-VTABLE70-DEATH-DISPATCH-RTTI-01｜4系統UnitのHP/死亡入口vtable+0x70と旧型ラベル訂正
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 14](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L14-L14) — [EXISTING JOIN] 前08HのSimpleUnit 0x544790とUnit 0x578370の+0x1867C/HP・Unit限定0xF4241/+0x1E568分岐は既存、死亡イベントdead_event_a/dは07H既存。今回新しいのは正確なRTTI→vtable+0x70→入口の4系統区別とSt
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

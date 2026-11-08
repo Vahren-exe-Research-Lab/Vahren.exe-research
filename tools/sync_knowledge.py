@@ -24,6 +24,9 @@ MANIFEST = "SOURCE_MANIFEST.tsv"
 FILES = (
     ".gitignore", ".gitattributes", "README.md", "kb.py",
     "symbols.tsv", "structs.tsv", "REF_DAT_BEHAVIOR.md", "REF_UI_SYSTEM.md",
+    "REF_MAP_TERRAIN.md",
+    "research/intake/CLAUDE/CLAUDE-MAP-T001-20261109.md",
+    "research/intake/CLAUDE/CLAUDE-T040-CHIP-ATLAS-HEIGHT-CAP-20261108.md",
     "SYNC_PROTOCOL.md", "SYNC_STATUS.md", "KB_SYNC_BLOCKED_20261029.md",
     "KNOWLEDGE_CURATION_PROTOCOL.md", "RESEARCH_INTAKE_PROTOCOL_20261101.md", "REF_UNIT_EXP_SUMMON.md", "REF_SKILL_POST_ACTION.md", "REF_BATTLE_AI_MORALE.md", "REF_AUDIO_VORBIS.md", "REF_BATTLE_TAKEOVER.md",
     "REF_SAVE_PERSISTENCE.md", "REF_SAVE_FORMAT.md", "REF_RANDOM_EVENTS.md", "REF_RTS_SCENARIO.md",
@@ -3273,7 +3276,6 @@ FILES += (
     'reference/symbols/004BDE40.md',
     'reference/symbols/004BE220.md',
     'reference/symbols/004BE340.md',
-    'reference/symbols/004BE388.md',
     'reference/symbols/004BE3E0.md',
     'reference/symbols/004BE480.md',
     'reference/symbols/004BE820.md',

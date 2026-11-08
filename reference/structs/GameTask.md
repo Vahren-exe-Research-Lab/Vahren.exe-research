@@ -5,6 +5,42 @@
 対象は迫真戦記 ver0.67。各フィールドの型・確度・出典は元の辞書から保持しています。
 
 
+<a id="field-4"></a>
+## 0x04 manager
+
+GameManager（0x8BE2F0）。メインループがvf+0x0C（入力poll）を毎コマ呼ぶ。+8が0以外でループ終了
+
+- 型　`ptr`
+- 辞書の確度　静的確認
+- 辞書の出典表記　S1108(Extensions plugins/speed/README.md)
+- [元の辞書行](../../structs.tsv#L92)
+
+読み手・書き手の個別採録は未実施です。
+
+<a id="field-24"></a>
+## 0x24 pendingChanges
+
+タスクの追加・削除の待ち。0以外ならコマの先頭で処理される
+
+- 型　`u32`
+- 辞書の確度　静的確認
+- 辞書の出典表記　S1108(Extensions plugins/speed/README.md)
+- [元の辞書行](../../structs.tsv#L93)
+
+読み手・書き手の個別採録は未実施です。
+
+<a id="field-3c"></a>
+## 0x3C frameCounter
+
+更新ごとに+1（0x4C29C6）。4の倍数のとき0x4BE220（BGM曲送り）、16の倍数で空き要素の整理
+
+- 型　`u32`
+- 辞書の確度　静的確認
+- 辞書の出典表記　S1108(Extensions plugins/speed/README.md)
+- [元の辞書行](../../structs.tsv#L94)
+
+読み手・書き手の個別採録は未実施です。
+
 <a id="field-40"></a>
 ## 0x40 frameTime
 
@@ -14,7 +50,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　R1101§1
 - 本文リンク未解決　R1101§1
-- [元の辞書行](../../structs.tsv#L92)
+- [元の辞書行](../../structs.tsv#L95)
 
 読み手・書き手の個別採録は未実施です。
 
@@ -27,7 +63,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　R1101§1
 - 本文リンク未解決　R1101§1
-- [元の辞書行](../../structs.tsv#L93)
+- [元の辞書行](../../structs.tsv#L96)
 
 読み手・書き手の個別採録は未実施です。
 
@@ -40,7 +76,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　R1101§1
 - 本文リンク未解決　R1101§1
-- [元の辞書行](../../structs.tsv#L94)
+- [元の辞書行](../../structs.tsv#L97)
 
 - [GameTask_SetFps](../symbols/004C21F0.md) → `writes` → [GameTask + 0x78 frameMs](../structs/GameTask.md#field-78)。fps から round(1000/fps) で求める1コマの長さを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_UI_SYSTEM.md?plain=1#L56-L57) · `MEM-FRAME-PERIOD-78`
 - [Window_PumpGameLoop](../symbols/004C24B0.md) → `reads` → [GameTask + 0x78 frameMs](../structs/GameTask.md#field-78)。メインループで1コマの長さを参照する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_UI_SYSTEM.md?plain=1#L56-L57) · `MEM-FRAME-LOOP-78`

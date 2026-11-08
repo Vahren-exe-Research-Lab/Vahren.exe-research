@@ -29,6 +29,7 @@
 | 0x41EF50 | [Ai_SelectFourwayBattleMode](symbols/0041EF50.md) | func | 四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。 |
 | 0x420900 | [TrigCosNegSinToTwoInts](symbols/00420900.md) | func | Original x86 70-byte trig helper: adds stored pi/2, calls cos and sin and integer converter, writes signed two-DWORD outputs to implicit ESI and ESI+4; conversion exceptions and gameplay role remain VERIFY |
 | 0x423D70 | [Image_GetChipRect](symbols/00423D70.md) | func | ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値） |
+| 0x423E80 | [Image_GetChipAtlasRect](symbols/00423E80.md) | func | チップ名からアトラス矩形6値を返す（セル・Block・ユニット等が共用） |
 | 0x4243C0 | [Image_GetFaceCached](symbols/004243C0.md) | func | cdecl 引数1（char* 画像名）、EAX=HBITMAP。キャッシュ0x879E48を引き、無ければ0x427270で読み込んで登録 |
 | 0x424C80 | [Image_GetChipSprite](symbols/00424C80.md) | func | ECX=char* チップ名、EAX=HGDIOBJ。キャッシュ0x87A1B8、無ければ0x879E68の矩形から切り出してDIBを作り登録。表に無い名前は0 |
 | 0x427040 | [Save_EncodeAdditiveEnvelope](symbols/00427040.md) | func | 先頭4バイトのマジックと28バイト鍵を付け、32バイト目以降へ繰返し加算する共通エンコーダ。鍵生成で CRT rand を28回消費する。 |
@@ -69,6 +70,8 @@
 | 0x455520 | [FrameWnd_DrawButtonText](symbols/00455520.md) | func | ボタンの枠と文字をウィンドウの画像に描く（BitBlt/AlphaBlend と DrawText）。EAX=ウィンドウ、ESI=矩形、引数 (描画先, 文字)、ret 8。ボタンの当たり判定はしない |
 | 0x455CF0 | [FrameWnd::vf12_shared43](symbols/00455CF0.md) | func | ウィンドウ共通のマウス移動処理。TempStatusWnd では説明表示に届かない（+0x44 が空の関数） |
 | 0x455D90 | [FrameWnd_ScreenToLocal](symbols/00455D90.md) | func | 画面座標をウィンドウ内の座標へ変換（推定） |
+| 0x4562D0 | [FieldData_SetChip](symbols/004562D0.md) | func | セル(FieldData)にチップを設定。EDX=チップ名 string*、EDI=セル、EBX=高さ。0x423E80 の矩形を+0x6C〜+0x80、attr を+0xD4、id を+0xF0 |
+| 0x456380 | [FieldData::vf07_BuildQuad](symbols/00456380.md) | func | セルの6頂点を +0x6C〜(UV) と +0x8C〜(位置) から作る。描画用 |
 | 0x4591F0 | [UnitData_DestroyPayload](symbols/004591F0.md) | func | UnitData 相当の記録内にある複数の文字列・vector を解放する。ノード自体の free より前に実行される。 |
 | 0x45B850 | [Game_Start](symbols/0045B850.md) | func | ゲーム開始 |
 | 0x45BE10 | [Scenario_InitialPlacement](symbols/0045BE10.md) | func | シナリオ開始時の配置 |
@@ -162,7 +165,7 @@
 | 0x4B47FC | [Event_ResetBattleClock](symbols/004B47FC.md) | code | resetTime 命令の処理位置。engine+0x1EED60 だけを0にし、interval時計+0x1EED64は変更しない。 |
 | 0x4B608F | [Battle_SkillTroopHandlerSite](symbols/004B608F.md) | code | 部隊命令表のhex0E(decimal14) skillTroopに対応するhandler位置。登録位置0x4B4645と区別し、main命令の同じ番号と混同しない。関数入口・引数ABI・副作用は未確認。 |
 | 0x4B9930 | [Scene_DispatchGameMode](symbols/004B9930.md) | func | GameManager が場面番号 +0x1EF144 の0〜7に応じて処理を分岐する経路。World 側は 0x48C880 へつながる。 |
-| 0x4B9AA0 | [Input_HandleEscapeExit](symbols/004B9AA0.md) | func | Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む。 |
+| 0x4B9AA0 | [Input_HandleEscapeExit](symbols/004B9AA0.md) | func | GameManager vtable(0x638DF0)+0x0C。メインループが毎コマ更新前に呼ぶ。[G+0x98]->vf+4（0x4EE170 入力poll）の後、Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む |
 | 0x4B9AD0 | [Title_Continue](symbols/004B9AD0.md) | code | タイトルの「続きから」側の分岐（DLL のタイトル判定で使用） |
 | 0x4B9B73 | [Title_Return](symbols/004B9B73.md) | code | タイトルへ戻る側の分岐 |
 | 0x4B9E50 | [Input_CreateNewGameMouseHost](symbols/004B9E50.md) | func | NewGameMouse を確保・初期化してプレイヤーの入力参照に設定する経路を含む。 |
@@ -174,7 +177,6 @@
 | 0x4BDE40 | [Audio_StartBgmTrack](symbols/004BDE40.md) | func | BGM の直接再生コア。ECX にファイル名を受け、スタック6引数を処理する（ret 0x18）。 |
 | 0x4BE220 | [Audio_AdvancePlaylistOnEnd](symbols/004BE220.md) | func | BGMの再生状態を調べ、再生完了や停止の際に0x4BF2B0でリセットし、次の曲を0x4BDE40で開く。1曲だけのloopでも再オープンが生じる。 |
 | 0x4BE340 | [Audio_UpdateMasterVolumeSlider](symbols/004BE340.md) | func | UIのマスター音量から減衰値を作る。ゼロ指定は内部で -10000 として扱い、その後有効下限 -9600 に収める。 |
-| 0x4BE388 | [g_InputReceiver](symbols/004BE388.md) | global | 入力pollの受け手。vtable 0x6394A0、vtable+4 が0x4EE170、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く |
 | 0x4BE3E0 | [Audio_ApplyScriptVolume](symbols/004BE3E0.md) | func | スクリプト volume の値を変換する。正値は百分率、ゼロ以下は生減衰値として扱い、最終値を -9600〜0 に制限する。 |
 | 0x4BE480 | [Audio_OpenCodecBackend](symbols/004BE480.md) | func | MP3等の再生バックエンドを初期化し、必要な内部バッファとDirectShow等のインターフェースを用意する。 |
 | 0x4BE820 | [Audio_PrepareBgmPlayback](symbols/004BE820.md) | func | BGM再生開始中の曲選択・既存再生状態に関する補助。既存曲・空曲で遷移が分かれる。 |
@@ -187,28 +189,47 @@
 | 0x4BF720 | [Audio_ResolveTransportBranch](symbols/004BF720.md) | func | BGMの状態下位5bitとフェード・EOF判定で次の処理を選ぶ。 |
 | 0x4BF780 | [Audio_TransitionPlaylistAfterEof](symbols/004BF780.md) | func | プレイリストの再生終了判定側で呼ばれ、次曲へ移行する処理に接続する。codecごとの条件がある。 |
 | 0x4C1200 | [Variable_FindTreeKey](symbols/004C1200.md) | func | 汎用木のキー検索に用いられる関数。文字列比較を通じて候補nodeと番兵を判別する。 |
+| 0x4C1B70 | [Stage_GetCellAtPixel](symbols/004C1B70.md) | func | thiscall stage, (px,py)。>>5 で 32px マスに変換して FieldData* を返す |
 | 0x4C1FC0 | [Random_InitializeMapSeed](symbols/004C1FC0.md) | func | マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。 |
 | 0x4C21F0 | [GameTask_SetFps](symbols/004C21F0.md) | func | thiscall、引数 fps。GameTask+0x74=fps、+0x78=round(1000/fps)。0x48AA00は25、0x513C60・0x526A40は25と100を切り替え |
 | 0x4C2240 | [Vector32_Append_4C2240](symbols/004C2240.md) | func | 保存済み局所解析では、owner+0x64/+0x68/+0x6Cで管理する4B要素vectorへ値を追加する補助。Bの呼出し箇所はTask待機列の文脈。旧T031のscene乱数reset後の呼出し記録を、callee自体の乱数専用処理とは一般化しない。全caller型・実機動作は未確認。 |
 | 0x4C24B0 | [Window_PumpGameLoop](symbols/004C24B0.md) | func | ゲームのメインループ。未処理メッセージを全部処理してから1コマ進める。1コマ：timeGetTime→GameTask+0x78との差だけSleep→0xAC0918へ時刻→更新→描画0x4C3EB0→Present。非アクティブ時は10msのSleepだけ |
+| 0x4C2714 | [PumpGameLoop_UpdateCall](symbols/004C2714.md) | code | 0x4C24B0内の E8 call 0x4C28D0（直前 mov esi,ebp）。HakushinSpeed がここを差し替える |
+| 0x4C2719 | [PumpGameLoop_FastModeDrawSkip](symbols/004C2719.md) | code | GameTask+0x74==100（戦闘の倍速）なら描画0x4C3EB0とPresentを1コマおきにする（0x68C7F3が交互）。原作の倍速は更新100回/秒・描画50回/秒 |
+| 0x4C28D0 | [GameTask_UpdateTasks](symbols/004C28D0.md) | func | GameTaskの全タスク更新。独自ABI ESI=GameTask（ebx/ebp/ediは保存）。各タスクのvf+4を呼び、終わりに GameTask+0x3C（コマ番号）を+1。呼び出し元は0x4C2714の1か所だけ |
 | 0x4C5800 | [List_SpliceWithCapacityGuard](symbols/004C5800.md) | func | 異なるlist間でnodeを移して双方の+4 countを更新、0x3FFFFFFE超過条件で別処理へ分岐。Unit上限ではない。 |
 | 0x4C7040 | [Ai_ApplyFourwayPairState](symbols/004C7040.md) | func | 四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。 |
 | 0x4DEC70 | [Tree_EraseIteratorNode](symbols/004DEC70.md) | func | 部分範囲消去側の単一node削除下位処理。node+0x15のiterator検査、freeとcount条件減算。通常の訓練全消去では必達でない。 |
 | 0x4DEF40 | [Tree_EraseRange](symbols/004DEF40.md) | func | 先頭と終端を受ける範囲消去。全区間では0x4ED030、部分区間では0x4DEC70へ分岐。一般的なABIと異常系は未検証。 |
+| 0x4DF200 | [Block_CreateFromObjectDef](symbols/004DF200.md) | func | 地形/オブジェクトの Block 生成。type1→+0x130 floor、2→+0x67、3→+0x67/+0x68、4→+0x67/+0x68/+0x69 |
 | 0x4DFBB0 | [SkillEffectRingRecord_InitializeAndDelegate](symbols/004DFBB0.md) | func | Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY |
 | 0x4E04F0 | [RetreatVoice_Update](symbols/004E04F0.md) | func | RetreatVoiceのTask更新という保存チャットの著者報告。+0x70の負/0/正で待機・再配置・上移動を分け、正のcounterが64を超えると0へ戻す。+0x5Cは減算後0へclamp。表示/音声の実機対応・全ABIは未確認。 |
 | 0x4E4C70 | [Unit_ApplyKnockMovementHelper](symbols/004E4C70.md) | func | ノックバック時の位置移動補助として 0x57AC5C 以降から使われる。移動可能残量の分岐の後で呼ばれる。 |
 | 0x4E4F60 | [SpatialCell_RemoveMatchingPointer](symbols/004E4F60.md) | func | Native branch on +0x3C selects identity-gated scalar clear or matching-pointer vector removal; death/move direct callers; gameplay and ownership VERIFY |
 | 0x4E53B0 | [Unit_RefreshTargetLatch](symbols/004E53B0.md) | func | Unit+0xC の参照元と本人を入力に取り、戻り値を Unit+0x1E570 に保存する処理で使われる。値の厳密な論理名は未確定。 |
+| 0x4E5860 | [Missile_FindBlockingObject](symbols/004E5860.md) | func | 飛び道具と Block/ユニットの判定。wall(+0x68)は停止、wall2(+0x69)は乱数と no_wall2 で停止判定 |
+| 0x4E6110 | [Missile_CollectBlockingObjects](symbols/004E6110.md) | func | 0x4E5860 と同系の判定（複数対象） |
 | 0x4E70E0 | [Summon_ProcessSharedQueue](symbols/004E70E0.md) | func | 召喚処理と代替移動処理で共用される2DWORDの待ち行列を使う。末尾投入・先頭取得・先頭進行・件数減算を含む。 |
 | 0x4E7ED0 | [Skill_CheckMissileRangeGate](symbols/004E7ED0.md) | func | 通常 missile のMP消費より前の対象・射程判定補助。探索窓と有効半径の参照値が分岐で変わる。 |
+| 0x4E9470 | [Grid_InitPassability](symbols/004E9470.md) | func | 通行グリッド(+0x60 byte/+0x64 int/+0x68 ptr/+0x7C 粗)を初期化 |
+| 0x4E9A20 | [Grid_MarkBlocked](symbols/004E9A20.md) | func | __fastcall ECX=x, EDX=grid, EAX=y。+0x60 と粗グリッド+0x7C に1を書く |
+| 0x4E9A60 | [Grid_BuildRegions](symbols/004E9A60.md) | func | 通れるマスを長方形領域に分割し経路グラフを作る |
+| 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない（再実行してもぶら下がらないが漏れる）。戦闘中の再実行は実機未確認 |
+| 0x4EAA70 | [Grid_TestStraightWalk](symbols/004EAA70.md) | func | 2点間を8方向に進み通行不可マスに当たるか調べる |
 | 0x4EC1E0 | [RouteCache_ConditionalHitPromotion](symbols/004EC1E0.md) | func | Native hit recency relink only above 8000 records, eviction branch on count>=8192; key ownership and runtime outcomes VERIFY |
 | 0x4ED030 | [Tree_ClearAllNodes](symbols/004ED030.md) | func | 全区間tree消去の下位処理。0x49F6A0のsubtree解放とsentinel自己リンク復元、count=0を含む。 |
 | 0x4EE0C0 | [Input_ConstructNewGameMouse](symbols/004EE0C0.md) | func | NewGameMouse の生成時に呼ばれる初期化関数。生成した実体は Player の入力参照へ配置される。 |
 | 0x4EE110 | [Input_ResetNewGameMouse](symbols/004EE110.md) | func | NewGameMouse のマウス状態 +0x18〜+0x38 と14個のキーボードword +0x3C〜+0x57 を0へ戻し、デバイス再取得を呼ぶ。 |
 | 0x4EE170 | [Input_ClearKeyEdgesBeforePoll](symbols/004EE170.md) | func | キーボードwordの上位edge byteを消し、下位heldを維持してから入力pollへ渡す。 |
 | 0x4EE1B0 | [Input_ProcessBufferedKeys](symbols/004EE1B0.md) | func | NewGameMouse のキー状態を更新し、共有修飾キーword+0x50の押下・解放状態を処理する。 |
+| 0x4EE470 | [ObjectDef_Construct](symbols/004EE470.md) | func | ObjectDef 構築（+0 type,+4 blk,+8 w,+0xC h,+0x10 alpha,+0x14 radius,+0x18 land_base,+0x1C image,+0x38 member）。ret 0x44 |
+| 0x4EE560 | [FieldDef_Construct](symbols/004EE560.md) | func | FieldDef 構築（+0x40 type,+0x44 alt,+0x48 alt_max,+0x4C edge,+0x4D smooth,+0x4E step,+0x50 attr,+0x6C id,+0x88 joint,+0x00 image,+0x1C member,+0x2C add2,+0x3C color）。ret 0xAC |
+| 0x4EEA00 | [MapDef_ParseFieldAndObjectDefs](symbols/004EEA00.md) | func | field/object 定義を全件パースし NewGameStage+0xFC(field)/+0xEC(object) の map へ格納。object type: 無=0,floor=1,coll=2,wall=3,wall2=4,break=5,break2/gate=6,goal=7,start=8,box=9 |
+| 0x4F0BE0 | [Battle_LoadStageMap](symbols/004F0BE0.md) | func | 戦闘マップ(.map)読込。セル設定、field type!=0 で Block 生成＋通行グリッド+0x60/+0x7C に1、object から Block、末尾で経路領域構築 0x4EA2E0 |
 | 0x4F93A0 | [Ai_ComputeBattleAreaTargetPoint](symbols/004F93A0.md) | func | 戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。 |
+| 0x4FAF50 | [NewGameStage::vf00_SmoothHeights](symbols/004FAF50.md) | func | 読込後の高さ平滑化・隠れ判定 |
+| 0x4FBE80 | [NewGameStage::vf02_GetCellAtPos](symbols/004FBE80.md) | func | __thiscall ECX=stage, stack=(int32 px,int32 py), EAX=FieldData*, ret 8。斜め表示モード対応、変換後をマップ端へclamp。Unit::vf25 が使用。HKDR callbackからの直接呼出は未実機確認（REF_MAP_TERRAIN §7） |
+| 0x4FBF40 | [NewGameStage::vf03_CollectVisibleCells](symbols/004FBF40.md) | func | 表示矩形内のセルを列挙（高さのはみ出し込み） |
 | 0x5001B0 | [Random_SetMapGenerationSeed](symbols/005001B0.md) | func | マップ初期化に関わる乱数 seed 生成経路。0x49B191 から呼ばれ、CRT srand を実行する。 |
 | 0x5023E0 | [Bgm_StreamThread](symbols/005023E0.md) | func | BGM ストリーム再生のスレッド |
 | 0x502DD0 | [Lexer_NextToken](symbols/00502DD0.md) | func | スクリプトの字句解析 |
@@ -325,6 +346,7 @@
 | 0x575110 | [Unit_LevelUpLoop](symbols/00575110.md) | func | Unit 版のレベルアップ |
 | 0x575A60 | [Unit_OnDefeated](symbols/00575A60.md) | func | 通常型 BattleUnit の vtable+0x58。最初の1回だけ +0x1867C を立て、生きている子のうち element_lost の子を子の vtable+0x58 で消す。陣営 +0x48 の一覧からは外さない。 |
 | 0x5769B0 | [Unit_ProcessKnockbackMotion](symbols/005769B0.md) | func | ノックバック関連の Unit+0x18688 などを更新する関数。押し戻し移動と状態値の複数分岐を含む。 |
+| 0x576DC0 | [Unit::vf25_TerrainMoveValue](symbols/00576DC0.md) | func | 現在セルの attr でユニットの movetype 表を引き consti を返す。無ければ 5 |
 | 0x576F10 | [SkillFlash_PostDamage_GatedRingDispatch](symbols/00576F10.md) | func | Bounded original x86: Unit+0x1867C/+0x8D gates, 8-slot R ring Unit+0x928+idx*0x264, conditional direct 0x4DFBB0 call, normal ret 4; lower effect/RNG unverified |
 | 0x577100 | [Unit_PostHpTierRegister](symbols/00577100.md) | func | Original x86 288B/85 instructions: Unit flag guards; mode0 0x41E160 unlink and timer clear; enabled HP/HPmax/0.05 integerized tier clamp 0..20 to +0x738; conditional 0x41E060 registration; +0x185F4=150. Rounding, rendering and Golden VERIFY. |
 | 0x577260 | [UnitData_FindSummonRecord](symbols/00577260.md) | func | BattleUnit 所有の文字列キーの木から記録 R を検索し、見つからなければ0を返す。呼出規約は ECX=owner、スタックの28バイトキー引数を関数側で回収する。 |
@@ -457,9 +479,13 @@
 | 0x5E6F10 | [VorbisBitreader_ConsumedBytesRoundedUp](symbols/005E6F10.md) | func | byteCursor+ceil(bitOffset/8)を計算する補助。EOF後はtotal+1となり得るが呼出側の異常挙動は未証明。 |
 | 0x626D5C | [str_face](symbols/00626D5C.md) | string | face。0x584830が顔画像名の取得に使う |
 | 0x6385BC | [vt_SpotDisplayObject](symbols/006385BC.md) | object | Spot 表示用クラスの仮想関数表。+0x54 が 0x5A8740、+0x58 が 0x5A89A0 に対応する。 |
+| 0x638C54 | [vt_FieldData](symbols/00638C54.md) | object | FieldData(セル 0x11C)の仮想関数表 |
+| 0x638DF0 | [vt_GameManager](symbols/00638DF0.md) | object | GameManagerの仮想関数表（0x553ACBで0x8BE2F0へ書込み）。+4=0x4B9930 Scene_DispatchGameMode、+0xC=0x4B9AA0 |
+| 0x6392BC | [vt_Block](symbols/006392BC.md) | object | Block(地形・オブジェクト)の仮想関数表 |
 | 0x639C5C | [vt_StatusWnd](symbols/00639C5C.md) | global | StatusWnd の仮想関数表。+0x44=説明表示 0x561120 |
 | 0x639CD4 | [vt_TempStatusWnd](symbols/00639CD4.md) | global | TempStatusWnd の仮想関数表。+0x3C=押下 0x560650、+0x40=離す 0x560CA0、+0x44=説明表示（空の関数 0x406E20） |
 | 0x63A4BC | [vt_SimpleUnit](symbols/0063A4BC.md) | object | SimpleUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0001を書き、通常ユニット種別となる。 |
+| 0x63A6EC | [vt_NewGameStage](symbols/0063A6EC.md) | object | 戦闘マップ管理 NewGameStage の仮想関数表 |
 | 0x63A8E4 | [vt_SimpleStaticUnit](symbols/0063A8E4.md) | object | SimpleStaticUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0101を書き、静的ユニット候補群へ登録する。 |
 | 0x63A9E4 | [vt_UnitRuntime](symbols/0063A9E4.md) | object | 通常型 Unit の仮想関数表。0x56F880 の生成時に vptr へ書き込まれる。 |
 | 0x63B058 | [g_IntervalQuantum](symbols/0063B058.md) | global | isInterval が指定間隔を切り上げる際の定数double 10.0。 |
@@ -488,6 +514,7 @@
 | 0x68B568 | [g_StatusBtnRect_Dismiss](symbols/0068B568.md) | global | 詳細パネルの「解雇」ボタンの矩形（RECT、全パネル共通） |
 | 0x68B578 | [g_StatusBtnRect_HireExtract](symbols/0068B578.md) | global | 詳細パネルの「雇用」「召上げ」ボタンの矩形 |
 | 0x68B588 | [g_StatusBtnRect_Item](symbols/0068B588.md) | global | 詳細パネルの「アイテム」ボタンの矩形。幅 0 ならアイテムボタンを出さない |
+| 0x68C7F3 | [g_FastModeDrawToggle](symbols/0068C7F3.md) | global | fps==100のとき描画するコマを交互に決めるbyte（0x4C2745〜0x4C277A） |
 | 0x8795F0 | [g_D3DPresentParams](symbols/008795F0.md) | global | Reset に渡す D3DPRESENT_PARAMETERS |
 | 0x879610 | [g_D3dPresentWindowedFlag](symbols/00879610.md) | global | D3DPRESENT_PARAMETERS の Windowed 項目。通常は0x65BEE4に合わせて設定される。 |
 | 0x879628 | [g_loadingLock](symbols/00879628.md) | global | g_loadingFlag を守るクリティカルセクション |
@@ -514,7 +541,7 @@
 | 0x8BCF10 | [g_TempStatusWnd_rects](symbols/008BCF10.md) | global | 技能アイコンなどの矩形の配列（16 バイトずつ） |
 | 0x8BE040 | [g_TempStatusWnd_hoverCount](symbols/008BE040.md) | global | 説明表示の対象の数 |
 | 0x8BE2F0 | [g_GameManager](symbols/008BE2F0.md) | object | GameManager の唯一の実体（G）。スクリプトVMの文脈。DLL 側ではこのアドレスを基準 G と呼ぶ |
-| 0x8BE388 | [g_NewGameMousePtr](symbols/008BE388.md) | global | ゲーム側で保持する NewGameMouse オブジェクトへの参照。起動時の初期化でNULLにされる。 |
+| 0x8BE388 | [g_NewGameMousePtr](symbols/008BE388.md) | global | = GameManager+0x98。NewGameMouse（入力pollの受け手）への参照。vtable 0x6394A0、vtable+4 が0x4EE170（edgeを消してからpoll）、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く。起動時の初期化でNULLにされる。2026-11-08統合：旧項目 g_InputReceiver「0x4BE388」は同じものをRVAで書いた誤り |
 | 0x8BE3A0 | [g_StartupVolumeMask](symbols/008BE3A0.md) | global | 起動時の音量設定計算に用いられるDWORD。musicoff状態とのAND演算で後続呼出しに渡される。 |
 | 0x8BE7F4 | [g_Engine](symbols/008BE7F4.md) | global | スクリプトエンジン E = G+0x504 |
 | 0xAAD434 | [g_GameManager_sceneId](symbols/00AAD434.md) | global | 現在の場面番号（G+0x1EF144）。0=タイトル、4=シナリオ選択 など |
@@ -523,12 +550,16 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7857 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7884 件。型や意味の正式登録前の局所表記も検索できます。
 
+- [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
+- [FieldData](structs/FieldData.md)
 - [FrameWnd](structs/FrameWnd.md)
 - [GameManager](structs/GameManager.md)
 - [GameTask](structs/GameTask.md)
+- [Grid](structs/Grid.md)
+- [NewGameStage](structs/NewGameStage.md)
 - [Player](structs/Player.md)
 - [Power](structs/Power.md)
 - [SaveUnitDataTreeNode](structs/SaveUnitDataTreeNode.md)
@@ -537,15 +568,16 @@
 - [StatusWnd](structs/StatusWnd.md)
 - [SummonRecordCacheNode](structs/SummonRecordCacheNode.md)
 - [TurnState](structs/TurnState.md)
+- [Unit](structs/Unit.md)
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 510 件、フィールド 122 件、根拠付き関係 165 件。
+辞書項目 537 件、フィールド 153 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75648 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75774 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 17 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 19 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2402 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2403 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

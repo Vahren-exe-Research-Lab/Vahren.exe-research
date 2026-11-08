@@ -4,6 +4,30 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-a8"></a>
+## stage + 0xA8
+
+- [REF_MAP_TERRAIN.md 行 64](../../REF_MAP_TERRAIN.md?plain=1#L64-L64) — - セル配列: `stage+0xA8`（FieldData×幅×高さ、各0x11C）、幅 `+0xAC`、高さ `+0xB0`。座標→セルは 0x4C1B70（ピクセル >>5、つまり **1マス32px**）、NewGameStage::vf02（vtable+8、斜め表示モード対応）。
+  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+
+<a id="field-dc"></a>
+## stage + 0xDC
+
+- [REF_MAP_TERRAIN.md 行 157](../../REF_MAP_TERRAIN.md?plain=1#L157-L157) — - 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
+  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+
+<a id="field-e4"></a>
+## stage + 0xE4
+
+- [REF_MAP_TERRAIN.md 行 157](../../REF_MAP_TERRAIN.md?plain=1#L157-L157) — - 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
+  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+
+<a id="field-148"></a>
+## stage + 0x148
+
+- [REF_MAP_TERRAIN.md 行 65](../../REF_MAP_TERRAIN.md?plain=1#L65-L65) — - field エントリ（type0）: FieldDef を引き、0x4562D0 でセルに設定（下記）。`FieldDef.type != 0` なら 0x4DF200 で Block を作り `stage+0x148` の vector に追加し、**通行グリッド +0x60 と粗グリッド +0x7C に 1**
+  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+
 <a id="field-298"></a>
 ## stage + 0x298
 

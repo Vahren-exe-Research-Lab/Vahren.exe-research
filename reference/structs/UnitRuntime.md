@@ -14,7 +14,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71
 - 出典 [data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-- [元の辞書行](../../structs.tsv#L116)
+- [元の辞書行](../../structs.tsv#L119)
 
 - [Unit_PostHpTierRegister](../symbols/00577100.md) → `reads` → [UnitRuntime + 0x90 hp](../structs/UnitRuntime.md#field-90)。enabled側でUnit-like基点のHPをFILDで読む。報告にoperand sizeがなく幅・宣言符号型は未確定。 （静的確認（回収済み研究本文のみ。幅・具体的class同一性未確定）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L4-L5) · `MEM-UNITRUNTIME-HPPOST-READ-HP`
 
@@ -27,7 +27,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71
 - 出典 [data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-- [元の辞書行](../../structs.tsv#L117)
+- [元の辞書行](../../structs.tsv#L120)
 
 - [Unit_PostHpTierRegister](../symbols/00577100.md) → `reads` → [UnitRuntime + 0xDC hpMax](../structs/UnitRuntime.md#field-dc)。enabled側のHP段階計算でHPmaxをFIDIVの整数メモリoperandとして読む。幅・HPmax=0の挙動は未確定。 （静的確認（回収済み研究本文のみ。幅・具体的class同一性未確定）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L4-L5) · `MEM-UNITRUNTIME-HPPOST-READ-MAX`
 
@@ -41,7 +41,7 @@ HP割合から整数化後signed 0..20へclampして書く段階値。HP本体�
 - 辞書の出典表記　data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md line7
 - 出典 [data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 - 出典 [data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md](../../research/recovered/b_batch7/data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-- [元の辞書行](../../structs.tsv#L118)
+- [元の辞書行](../../structs.tsv#L121)
 
 - [Unit_PostHpTierRegister](../symbols/00577100.md) → `writes` → [UnitRuntime + 0x738 hpTier](../structs/UnitRuntime.md#field-738)。enabled側で整数化結果をsigned 0..20へclampして段階値に書く。HP本体への書込みや描画成功ではない。格納幅不明。 （静的確認（回収済み研究本文のみ。幅・具体的class同一性未確定）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L4-L5) · `MEM-UNITRUNTIME-HPPOST-WRITE-TIER`
 
@@ -55,7 +55,7 @@ HP後処理で0/150を書く登録関連残量候補。enabled経路は登録ski
 - 辞書の出典表記　data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-6; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md lines4-7; REF_SKILL_POST_ACTION.md line72
 - 出典 [data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 - 出典 [data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md](../../research/recovered/b_batch7/data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md)。Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-- [元の辞書行](../../structs.tsv#L119)
+- [元の辞書行](../../structs.tsv#L122)
 
 - [Unit_PostHpTierRegister](../symbols/00577100.md) → `reads` → [UnitRuntime + 0x185F4 hpRegistrationCountdown](../structs/UnitRuntime.md#field-185f4)。enabled側は残量非0で新位置登録をskipし、0で登録blockへ進む。段階値更新後の条件付き参照。 （静的確認（回収済み研究本文のみ。幅・具体的class同一性未確定）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L4-L6) · `MEM-UNITRUNTIME-HPPOST-READ-TIMER`
 - [Unit_PostHpTierRegister](../symbols/00577100.md) → `writes` → [UnitRuntime + 0x185F4 hpRegistrationCountdown](../structs/UnitRuntime.md#field-185f4)。guard通過後のmode0はunlink helper正常帰還後に0、enabled側は登録skip時も含め正常合流で150を書く。実tick・可視寿命・登録成功は未確定。 （静的確認（回収済み研究本文のみ。幅・具体的class同一性未確定）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L4-L6) · `MEM-UNITRUNTIME-HPPOST-WRITE-TIMER`
