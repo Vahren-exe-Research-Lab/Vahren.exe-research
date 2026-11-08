@@ -13,7 +13,7 @@ Direct numeric assignment at 4B6053; consumed by movement formula. Negative valu
 - 型　`i32`
 - 辞書の確度　STATIC
 - 辞書の出典表記　REF_MAP_TERRAIN.md section 20 (CODEX-MAP-M4-FIXTURE-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
 - [元の辞書行](../../structs.tsv#L168)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,8 +26,34 @@ NewGameStage*（vf25 が使用）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
 - [元の辞書行](../../structs.tsv#L158)
+
+読み手・書き手の個別採録は未実施です。
+
+<a id="field-186a4"></a>
+## 0x186A4 aimX
+
+Troop setter568400 writes; getter576E80 may return sentinel instead.
+
+- 型　`i32`
+- 辞書の確度　STATIC
+- 辞書の出典表記　REF_MAP_TERRAIN.md section 23 (CODEX-MAP-M4-AIM-SKILL-20261109)
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+- [元の辞書行](../../structs.tsv#L169)
+
+読み手・書き手の個別採録は未実施です。
+
+<a id="field-186a8"></a>
+## 0x186A8 aimY
+
+Paired aim coordinate; valid pair feeds57EB40 direction, not guaranteed hit.
+
+- 型　`i32`
+- 辞書の確度　STATIC
+- 辞書の出典表記　REF_MAP_TERRAIN.md section 23 (CODEX-MAP-M4-AIM-SKILL-20261109)
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+- [元の辞書行](../../structs.tsv#L170)
 
 読み手・書き手の個別採録は未実施です。
 

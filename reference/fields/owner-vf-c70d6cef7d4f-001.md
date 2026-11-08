@@ -37,4 +37,19 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 136](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L136-L136) — 4. +0x1EED28 が0でなければ、両陣営の判定をする。主体（+0x1EED44）の vf+0x18 == 4 かつ相手（+0x1EED48）の vf+0x18 ≠ 4 か、0x514C80（残っているユニットの判定）で勝ちなら `0x493630(engine, 1)`、それ以外は `(engine, 0)`
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
+<a id="field-54"></a>
+## vf + 0x54
+
+- [REF_MAP_TERRAIN.md 行 579](../../REF_MAP_TERRAIN.md?plain=1#L579-L579) — - addTroopの0x4B4CADはE+0x1EEC3C==1の場合だけ座標をそのまま使い、他modeでは0x4B4CE0→0x4C1770で座標変換してから0x56A790の隊形配置へ進む。0x56A0B0は0x4C1690による逆変換と0x4E34E0（PtInRect）を用いて候補を検査する。0x4E5040
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+
+<a id="field-60"></a>
+## vf + 0x60
+
+- [REF_MAP_TERRAIN.md 行 579](../../REF_MAP_TERRAIN.md?plain=1#L579-L579) — - addTroopの0x4B4CADはE+0x1EEC3C==1の場合だけ座標をそのまま使い、他modeでは0x4B4CE0→0x4C1770で座標変換してから0x56A790の隊形配置へ進む。0x56A0B0は0x4C1690による逆変換と0x4E34E0（PtInRect）を用いて候補を検査する。0x4E5040
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+
+- [REF_MAP_TERRAIN.md 行 582](../../REF_MAP_TERRAIN.md?plain=1#L582-L582) — - 配置座標2行だけを変えたcac6bc8（hero700,700、target1000,700）ではPID7148の2体がaliveとなり、担当者はtick hit1/get0への到達を観測した。これは配置条件との関連を支持する限定的な比較である。旧入力(1800,700)がその実行のlive RECT外だったこと、
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

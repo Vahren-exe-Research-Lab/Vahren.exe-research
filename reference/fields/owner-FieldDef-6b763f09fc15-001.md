@@ -8,6 +8,6 @@
 ## FieldDef + 0x50
 
 - [REF_MAP_TERRAIN.md 行 535](../../REF_MAP_TERRAIN.md?plain=1#L535-L535) — - 0x4F5FA0のFieldDefコピーはattr文字列をFieldDef+0x50へ構築する。従って当該nodeのattrは+0x78、lengthは+0x88、capacityは+0x8C。文字列のSSO/heap区別は§17。定義表を読み、検証済attr名を得ることと、定義自体を書き換えることは別操作である。
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

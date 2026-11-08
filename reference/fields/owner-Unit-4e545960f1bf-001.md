@@ -91,6 +91,9 @@
 <a id="field-40"></a>
 ## Unit + 0x40
 
+- [REF_MAP_TERRAIN.md 行 608](../../REF_MAP_TERRAIN.md?plain=1#L608-L608) — - aimTroop handler0x4B626Aの2引数版は対象名を0x49E780で解決し、Unit+0x40/+0x48と+0x44/+0x4Cの矩形中心を取得する。対象pointerを追尾し続ける契約ではなく、その時点の座標取得である。3引数版は数値x/yを0x4B41B0で座標変換する。どちらか入力が−1な
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified; M4 STATIC placement/aim-real-caster chain; LIVE valid empty-name dummy, dext0 and fixture failure; poison/death causes remain bounded
+
 - [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 11](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L11-L11) — 0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUn
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
 
@@ -348,8 +351,5 @@
 
 - [research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md 行 11](../../research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md?plain=1#L11-L11) — [CALLER SPLIT] B/T013 original evidence: 0x57DE95 uses margin100 and gates C8/CC write→alternate-list clear→tail reset versus head fallback. 0x57D994 uses Unit+
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 935](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L935-L935) — - 実行条件: Unit+0x8C == 0、部隊あり（+0x1D0）、Unit+0x18614 == 0。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

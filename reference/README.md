@@ -166,7 +166,8 @@
 | 0x4B4645 | [Battle_SkillTroopRegistrationSite](symbols/004B4645.md) | code | 部隊/battle builtin登録表ではskillTroopをdecimal opcode14へ結ぶ登録位置。処理handler位置0x4B608Fとは別。原表の対応を採録し、完全関数境界・引数ABI・効果を確定しない。 |
 | 0x4B47FC | [Event_ResetBattleClock](symbols/004B47FC.md) | code | resetTime 命令の処理位置。engine+0x1EED60 だけを0にし、interval時計+0x1EED64は変更しない。 |
 | 0x4B6053 | [Script_SpeedTroopAssignSite](symbols/004B6053.md) | code | Writes evaluated numeric argument directly to each selected Unit+0xB0; not a percentage adjustment. Negative input does not establish permanent stop. |
-| 0x4B608F | [Battle_SkillTroopHandlerSite](symbols/004B608F.md) | code | 部隊命令表のhex0E(decimal14) skillTroopに対応するhandler位置。登録位置0x4B4645と区別し、main命令の同じ番号と混同しない。関数入口・引数ABI・副作用は未確認。 |
+| 0x4B608F | [Battle_SkillTroopHandlerSite](symbols/004B608F.md) | code | skillTroop handler op14 resolves selected actor Units and Skill; ordinary two-arg path calls57EB40 with actual Unit and mode1. No hit-result guarantee; other optional-arg paths differ. |
+| 0x4B626A | [Battle_AimTroopHandlerSite](symbols/004B626A.md) | code | Two args resolve target Unit rectangle center; three args transform numeric coordinates via 4B41B0; either -1 clears aim. Applies through selected actor Troop, not only one member. |
 | 0x4B9930 | [Scene_DispatchGameMode](symbols/004B9930.md) | func | GameManager が場面番号 +0x1EF144 の0〜7に応じて処理を分岐する経路。World 側は 0x48C880 へつながる。 |
 | 0x4B9AA0 | [Input_HandleEscapeExit](symbols/004B9AA0.md) | func | GameManager vtable(0x638DF0)+0x0C。メインループが毎コマ更新前に呼ぶ。[G+0x98]->vf+4（0x4EE170 入力poll）の後、Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む |
 | 0x4B9AD0 | [Title_Continue](symbols/004B9AD0.md) | code | タイトルの「続きから」側の分岐（DLL のタイトル判定で使用） |
@@ -192,6 +193,7 @@
 | 0x4BF720 | [Audio_ResolveTransportBranch](symbols/004BF720.md) | func | BGMの状態下位5bitとフェード・EOF判定で次の処理を選ぶ。 |
 | 0x4BF780 | [Audio_TransitionPlaylistAfterEof](symbols/004BF780.md) | func | プレイリストの再生終了判定側で呼ばれ、次曲へ移行する処理に接続する。codecごとの条件がある。 |
 | 0x4C1200 | [Variable_FindTreeKey](symbols/004C1200.md) | func | 汎用木のキー検索に用いられる関数。文字列比較を通じて候補nodeと番兵を判別する。 |
+| 0x4C1770 | [Stage_TransformScriptCoordinates](symbols/004C1770.md) | func | Used by addTroop outside mode1 and aim/move coordinate helper; raw script coordinates differ from runtime Unit coordinates. Descriptive name. |
 | 0x4C1B70 | [Stage_GetCellAtPixel](symbols/004C1B70.md) | func | thiscall stage, (px,py)。>>5 で 32px マスに変換して FieldData* を返す |
 | 0x4C1FC0 | [Random_InitializeMapSeed](symbols/004C1FC0.md) | func | マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。 |
 | 0x4C21F0 | [GameTask_SetFps](symbols/004C21F0.md) | func | thiscall、引数 fps。GameTask+0x74=fps、+0x78=round(1000/fps)。0x48AA00は25、0x513C60・0x526A40は25と100を切り替え |
@@ -209,6 +211,7 @@
 | 0x4DF200 | [Block_CreateFromObjectDef](symbols/004DF200.md) | func | 地形/オブジェクトの Block 生成。type1→+0x130 floor、2→+0x67、3→+0x67/+0x68、4→+0x67/+0x68/+0x69 |
 | 0x4DFBB0 | [SkillEffectRingRecord_InitializeAndDelegate](symbols/004DFBB0.md) | func | Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY |
 | 0x4E04F0 | [RetreatVoice_Update](symbols/004E04F0.md) | func | RetreatVoiceのTask更新という保存チャットの著者報告。+0x70の負/0/正で待機・再配置・上移動を分け、正のcounterが64を超えると0へ戻す。+0x5Cは減算後0へclamp。表示/音声の実機対応・全ABIは未確認。 |
+| 0x4E34E0 | [Stage_TestPointInRectangle](symbols/004E34E0.md) | func | Calls PtInRect for placement candidate bounds. Descriptive name. |
 | 0x4E4C70 | [Unit_ApplyKnockMovementHelper](symbols/004E4C70.md) | func | ノックバック時の位置移動補助として 0x57AC5C 以降から使われる。移動可能残量の分岐の後で呼ばれる。 |
 | 0x4E4F60 | [SpatialCell_RemoveMatchingPointer](symbols/004E4F60.md) | func | Native branch on +0x3C selects identity-gated scalar clear or matching-pointer vector removal; death/move direct callers; gameplay and ownership VERIFY |
 | 0x4E53B0 | [Unit_RefreshTargetLatch](symbols/004E53B0.md) | func | Unit+0xC の参照元と本人を入力に取り、戻り値を Unit+0x1E570 に保存する処理で使われる。値の厳密な論理名は未確定。 |
@@ -340,9 +343,11 @@
 | 0x565750 | [Event_GetElapsedLimitTime](symbols/00565750.md) | func | 時間制限ありなら初期値から現在値を差し引き、番兵状態では現在値を返す。 |
 | 0x567EC0 | [SortCandidate_CompareSignedField1BC](symbols/00567EC0.md) | func | Original 26-byte callback compares signed 32-bit fields at two pointer arguments +0x1BC and SETL returns 1 iff first<second; two verified sort callsites; exact object type and global sort semantics VERIFY. |
 | 0x5681C0 | [T028_RetreatSpotOrFailureString](symbols/005681C0.md) | func | Original x86 conditional destination search; zero result constructs failure string, nonzero stores Unit+0x1B4 and INC Spot+0xB8 before Unit virtual dispatch. Full ABI, actual retreat and message display VERIFY |
+| 0x568400 | [Troop_SetMemberAimCoordinates](symbols/00568400.md) | func | ESI=Troop; writes input x/y into live member Unit+186A4/+186A8. Descriptive name; not a direct hit command. |
 | 0x569360 | [TroopFirstEligiblePartnerRatioGate](symbols/00569360.md) | func | 最初の適格Unitをアンカーとして他の適格候補の近接比率を判定すると原報告が解析。通常有限値のモデルではM/N>=0.5、比較相手なし等は1。FPU特殊値・ABI・実動作は未確認。 |
 | 0x569530 | [Mode30_WriteAndConditionalDispatch](symbols/00569530.md) | func | Original x86 writes incoming EAX at owner+0x30 then, for a nonempty member vector, conditionally invokes 0x569730 for the first local +0x1867C==0 member; three verified E8 callers. ABI/gameplay effect VERIFY. |
 | 0x5699C0 | [TroopPositionCandidateScratchProducer](symbols/005699C0.md) | func | 構成員候補を列挙し、局所mode別に配置候補pairを共有scratchへ積む処理候補。原報告は角度候補のowner+0x28保存と8byte単位のscratch再利用を記録。型・座標系・ABI・実出力は未確認。 |
+| 0x56A0B0 | [Unit_TryFormationPlacement](symbols/0056A0B0.md) | func | Inverse transform and PtInRect candidate checks; success vf+54 versus exhausted candidate vf+60. Does not prove historical target death cause. |
 | 0x56AB20 | [TroopVirtualSlot4_PeriodicCandidateRoutine](symbols/0056AB20.md) | func | Troopのvtable+4に対応すると原報告が記録する候補処理。入口の条件を通ると局所カウンタを更新し、周期条件付きで0x569360を呼ぶ。実仮想CALL到達・士気や逃走との関係・ABIは未確認。 |
 | 0x56F6F0 | [Unit_InitializeRuntimeHolder](symbols/0056F6F0.md) | func | Unit の生成時に渡された所有者文脈を Unit+0xC に設定する補助。召喚元 Unit+0xC からの継承経路で使用される。 |
 | 0x56F720 | [Unit_SetHolderField](symbols/0056F720.md) | code | Unit の生成側でコンストラクタ引数を Unit+0xC に書き込む命令位置。 |
@@ -357,6 +362,7 @@
 | 0x575A60 | [Unit_OnDefeated](symbols/00575A60.md) | func | 通常型 BattleUnit の vtable+0x58。最初の1回だけ +0x1867C を立て、生きている子のうち element_lost の子を子の vtable+0x58 で消す。陣営 +0x48 の一覧からは外さない。 |
 | 0x5769B0 | [Unit_ProcessKnockbackMotion](symbols/005769B0.md) | func | ノックバック関連の Unit+0x18688 などを更新する関数。押し戻し移動と状態値の複数分岐を含む。 |
 | 0x576DC0 | [Unit::vf25_TerrainMoveValue](symbols/00576DC0.md) | func | 現在セルの attr でユニットの movetype 表を引き consti を返す。無ければ 5 |
+| 0x576E80 | [Unit_GetAimCoordinates](symbols/00576E80.md) | func | Returns Unit+186A4/+186A8 or sentinel pair under confusion/UI conditions. 57EB40 uses valid aim in direction calculation. |
 | 0x576F10 | [SkillFlash_PostDamage_GatedRingDispatch](symbols/00576F10.md) | func | Bounded original x86: Unit+0x1867C/+0x8D gates, 8-slot R ring Unit+0x928+idx*0x264, conditional direct 0x4DFBB0 call, normal ret 4; lower effect/RNG unverified |
 | 0x577100 | [Unit_PostHpTierRegister](symbols/00577100.md) | func | Original x86 288B/85 instructions: Unit flag guards; mode0 0x41E160 unlink and timer clear; enabled HP/HPmax/0.05 integerized tier clamp 0..20 to +0x738; conditional 0x41E060 registration; +0x185F4=150. Rounding, rendering and Golden VERIFY. |
 | 0x577260 | [UnitData_FindSummonRecord](symbols/00577260.md) | func | BattleUnit 所有の文字列キーの木から記録 R を検索し、見つからなければ0を返す。呼出規約は ECX=owner、スタックの28バイトキー引数を関数側で回収する。 |
@@ -560,7 +566,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7949 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7960 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -586,9 +592,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 547 件、フィールド 163 件、根拠付き関係 165 件。
+辞書項目 553 件、フィールド 165 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75988 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 76017 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 

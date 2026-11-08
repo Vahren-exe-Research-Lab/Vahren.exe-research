@@ -564,10 +564,57 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 - sample84/85はstage条件を満たさずok=false。最初のok=trueはsample86、2026-11-09 05:28:32.948 JST。
 - sample86ではhk_map_battle=0、hk_map_resultおよびcastsは未取得(null)。既にtargetはgone=1、hp=0、poi=100、heroはgone=0、hp=1068360、座標(1803,605)だった。poi=100を毒付与成功とは扱わない。
 - sample87（05:28:33.958 JST）でbattle=1、result=0、casts=0、hit_count=0を観測したが、targetのgone=1/hp=0は継続。最初のokとsetup成功を同時の出来事として記録しない。
-- これは敵への毒付与、味方除外、解除後の発射停止を受け入れる試験にはなっていない。敵死亡の瞬間・原因、hero移動の全経路、root時点ずれの因果は未確定。
+- これは敵への毒付与、味方除外、解除後の発射停止を受け入れる試験にはなっていない。敵死亡の瞬間・原因、入力座標と実Unit座標の対応、root時点ずれの因果は未確定。入力値との差だけでは移動を証明しない（後続§21）。
 
 ### 20.3 修正fixtureと既存毒計算の適用境界
 
 製品担当は自動試験専用の2dummyへ変更する案をf14f727で用意した。この時点では修正fixtureの実機成功は未確認。原作DAT既存用例の参照は、defense.dat lines38/51/108/124のskillとmove=0、02_迫真空手道場 line28のskill2、event_23_RPG line16619のlearn、B_11_閉店の日 line23のleader_skill、B_2222_レイノアレフ line221のdead_event。ここでは担当者による用例確認の報告として記録し、各指定が組み合わされた新dummyの動作保証とはしない。素材・DAT本文は収録しない。
 
 既存T012_BATTLE_CALC §38/§70–72、T012_DAMAGE_CORE_DUMP lines452–496、T028_MORALE_STATUS_PROBE lines20–45の再適用として、add_per=100は共通chanceだけで、後続の抵抗gateと状態強度判定を迂回しない。strattack=0を状態強度0と同一視せず、doskill dummyの実際の能力値・衝突・対象耐性を別確認する。これは新しいバイナリ発見には数えない。毒確率や敵のみ命中の実機成立は引き続き未確認。
+
+## 21. M4配置の座標変換とfixtureの限界（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-PLACEMENT-20261109`。STATICとOBSERVEDを分ける。対象EXE SHAは§19と同じ。既知projectへのreadOnly/noanalysis照会4件は担当者報告exit0、記録担当が保存出力・SHAと該当VAを独立照合した。
+
+- addTroopの0x4B4CADはE+0x1EEC3C==1の場合だけ座標をそのまま使い、他modeでは0x4B4CE0→0x4C1770で座標変換してから0x56A790の隊形配置へ進む。0x56A0B0は0x4C1690による逆変換と0x4E34E0（PtInRect）を用いて候補を検査する。0x4E5040で候補成立後にUnit vf+0x54、候補枯渇側にはvf+0x60呼出がある。
+- よって入力(1000,700)と実Unitの(1803,605)の差だけでは、自律移動を観測した証拠にならない。旧§20.2の「hero移動」は入力値との差からは確定できず、座標変換と時系列での実移動を分ける。
+- PID20432/f14f727のsample114（05:38:45.326 JST）はbattle1/result0/casts0、hero aliveで(1803,605)、target gone1/hp0/(0,0)。sample239（05:40:55.702）でも同状態、ready2/clear_result0/cycles5/after_clear3だった。新dummy定義だけでtarget死亡状態は解消せず、攻撃で倒されたという仮説を裏付けない。
+- 配置座標2行だけを変えたcac6bc8（hero700,700、target1000,700）ではPID7148の2体がaliveとなり、担当者はtick hit1/get0への到達を観測した。これは配置条件との関連を支持する限定的な比較である。旧入力(1800,700)がその実行のlive RECT外だったこと、当該Unitがvf+0x60を通ったことは未観測で、死亡原因を配置失敗と確定しない。
+- PID7148 sample103（05:46:40.824）はcasts1/result0、hero(1504,754)/target(1785,614)、両者hp1068360/poi100/dext131。sample104（05:46:41.836）はresult−16/ready3、hero(1511,751)hp1068168、target(1778,617)hp1068120。これは逐次読取だが、実Unit座標の時系列変化とHP減少は観測されている。**skill無し・move=0等は設定意図であり、「無攻撃・不動を保証したfixture」と呼ばない。** HP減少の原因、全自律行動、他の効果経路は未確定。
+
+sampler `hmg_m4_samples_20432.jsonl` / `hmg_m4_samples_7148.jsonl` はTEMPの読み取り専用逐次観測（atomic=false）を独立照合。生ログ・原作DAT・画像は収録しない。静的根拠:
+| TEMP解析出力 | SHA256 |
+|---|---|
+| m4_place_out.txt | fb138a0bf6bddf3d09dc75d4abec3d4e343d0a7fd5bae0d4acf27f939a18a6eb |
+| m4_place2_out.txt | d4e2819ad6950b91fcb8e3dd68b80c609a1de051cd2809e8a27b07480ede47bb |
+| m4_place3_out.txt | 3fc8402f66c2f71124dda600a27dc75152a08bc915184772751733bacdde5f91 |
+| m4_place4_out.txt | b33511d69d05c39b32316f7adc58f2684df0ef913bb3e76f2fd589b2116ff5e0 |
+
+## 22. doskillの空名Unitと器用さ0の実機観測（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-DUMMY-LIVE-20261109`。sampler `hmg_m4_samples_4992.jsonl` を記録担当が独立照合した。PID4992 sample117（05:54:56.454 JST）のUnit木にはkeyとnameがともに空のnodeがあり、pointer=34aae790は同時に取得したdoskill dummy globalのpointerと一致した。active1/excluded0/gone0、stage012dd860、stage寸法45×45/cells01b70024で、unit_tree_errorとstage_errorはnull。casts1/result0/ready1。sample118（05:54:57.464）も同じ空名nodeとstage条件を保持したまま、result−16/ready3になった。
+
+これは「空名は必ず壊れたUnit木」という旧製品仮定への実機反例である。現在stageに属する正常に読める空名dummyを、名前で返せる通常unit候補と区別する必要がある。全ての空名nodeを無条件に信頼する意味ではなく、pointer・flags・stage・文字列整合等の検証は残す。製品担当は検証済空名を対象候補から除く修正を準備したが、この記録時点でその修正版の実機成功は未確認。result−16の全原因を空名だけへ一般化しない。
+
+PID7148と4992のdummy実値はdext0/poi100/side_mask2、通常targetはdext131/poi100だった。既存T012 §70–72の通常addpoi、および§43–44の負healは、共通chanceに加え抵抗r²とsource/targetの器用さ対抗差>10がある。通常の非負target能力・有限係数のこの条件ではsourceDext0でその差を満たせず、add_per100だけでは毒付与にならない。負の固定heal量を増やしても前段gateを除去しない。正のpoi healは加算・回復側である。poi=100は状態ゲージであり、抵抗表Unit+0x13Cのrそのものではない。
+
+原作HP/poiへのDLL直接書込みを正当化しない。状態異常適用命令の調査では、既存登録表のstatusTroop/poisonTroop/poiTroopは未発見。setStatus/addStatusの確認済み12能力キーにpoiは含まれない（REF_DAT_BEHAVIOR §1）。これは未解決文字列を含む全EXEの完全な不存在証明ではない。毒付与・敵のみ命中・解除後停止の受入れは未達。
+
+## 23. 正規casterのaimTroop→skillTroop経路（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-AIM-SKILL-20261109`。STATIC。記録担当が既知project/EXE SHAに対するnoanalysis/readOnly照会3件（各exit0）と既存保存ASMを接続した。ゲーム操作・DAT/src変更なし。
+
+- skillTroop handler0x4B608Fはactor名を0x49E8B0で集合解決し、Skillを0x4678A0で解決する。0x4B61A4〜0x4B61ADはmode=1、選択Unit pointer、EAX=Skillとして0x57EB40を呼ぶ。doskillの固定dummyに置き換えない。第3引数によって別の部隊単位経路もあるため、通常2引数版と区別する。callerはcallee ALを命中成否として利用せず反復を続ける。
+- aimTroop handler0x4B626Aの2引数版は対象名を0x49E780で解決し、Unit+0x40/+0x48と+0x44/+0x4Cの矩形中心を取得する。対象pointerを追尾し続ける契約ではなく、その時点の座標取得である。3引数版は数値x/yを0x4B41B0で座標変換する。どちらか入力が−1なら両座標を0x80000008にする（0x4B6358〜0x4B636D）。
+- 適用先はactor Unit+0x1D0のTroopを重複排除し、0x4B63F3から0x568400へ渡す。0x568400はTroop+0xC/+0x10のmember列を反復し、gone byte+0x1867Cが0の各Unitの+0x186A4/+0x186A8へ座標を書く。**単一名を渡しても同部隊の他メンバーへ照準が及ぶ**ため、通常heroと同部隊の試験casterを置かない。
+- 0x576E80はconfusionやUI関連の条件によりsentinelを返す場合があり、それ以外ではUnit+0x186A4/+0x186A8を返す。既存 `exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt` の0x57EC80は同関数を呼び、0x57ED9C〜0x57EDC4で非sentinel照準を方向計算に優先する。skillTroopのmode1もこの共通部分を通る。通常missile系の範囲での接続であり、allfunc等の別枝へ無条件に一般化しない。
+- mode1は一部MP不足/cooldown/空間判定を迂回しても、0x57EED4〜0x57EEDAのMP減算が残る。fixture候補はmp=0とし、強制発動を無副作用や命中保証と呼ばない。
+- OGG原作F62_波動ビーム.dat lines581/585/587はunctrlTroop(actor)→aimTroop(actor,target)→skillTroop(actor,skill)を連続して使用する。lines615–617にはfreeTroop→aimTroop(actor,−1,−1)→ctrlTroopの解除側用例もある。原作本文は収録しない。
+
+推奨する次の限定fixtureは、専用独立部隊の正規casterと、通常能力を変えない対象を用いる上記DAT経路。高dextの設定は専用casterの定義へ限定し、通常heroの能力を変えない。ただし抵抗・実命中・他unit巻込み・EXP帰属・MP・照準の持続は実機確認が必要。target自身に自己専用attack_us=7で発動させる案は、既存Missile+0x19F/0x19Eの自己限定filterと整合するが、実形状の自己衝突とdext gateが未解決であり、任意targetへの保証は無い。
+
+| TEMP解析出力 | SHA256 |
+|---|---|
+| m4_skillaim_out.txt | bb53b765b130ce195a58c12af5bdd0336413ad80ab67c963eddf9f48ce287142 |
+| m4_aimtail_out.txt | ad35d05393834a1d56e6bd131095d5d4da10c44470cb151fce0a78655c5276e1 |
+| m4_aimwrite_out.txt | 78e1b9885b912c6e4e2cb1a6c7de0e6c719186def4dce922070aad26a6ff1202 |

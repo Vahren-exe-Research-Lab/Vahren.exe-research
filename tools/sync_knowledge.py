@@ -4988,6 +4988,15 @@ FILES = FILES + (
     'reference/symbols/004B6053.md',
 )
 
+FILES = FILES + (
+    'reference/symbols/004B626A.md',
+    'reference/symbols/004C1770.md',
+    'reference/symbols/004E34E0.md',
+    'reference/symbols/00568400.md',
+    'reference/symbols/0056A0B0.md',
+    'reference/symbols/00576E80.md',
+)
+
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.
