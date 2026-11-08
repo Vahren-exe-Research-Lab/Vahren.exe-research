@@ -156,5 +156,5 @@ Block	0x130	u8	floor	type floor	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001
 Block	0x138	i32	no_wall2	ObjectDef+0x4C	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 Block	0x13C	u8	no_arc_hit	ObjectDef+0x49	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 Unit	0x1E4	ptr	stage	NewGameStage*（vf25 が使用）	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-RenderContext	0x3C8C	u8	terrain_vertex_cache_valid	R is pointer from G+0x94. In mode 1, nonzero skips terrain vertex rebuild; 0x4C47F2 sets 1, camera setter 0x4C3C5A clears 0. Live invalidation not yet verified.	STATIC	REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)
+RenderContext	0x3C8C	u8	terrain_vertex_cache_valid	R is pointer from G+0x94. In mode 1, nonzero skips terrain vertex rebuild; 0x4C47F2 sets 1, camera setter 0x4C3C5A clears 0. Fixed-camera M3 product change/restore succeeded in REF_MAP_TERRAIN §18; live flag value itself was not directly observed.	STATIC	REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)
 GameManager	0x90	ptr	passabilityGrid	G is direct object address, not [G]. Grid pointer is read from G+0x90, embedded G+0x88 subobject+8; loader 0x4F0D8B..0x4F0D9B.	STATIC	REF_MAP_TERRAIN.md §16 (CODEX-MAP-M6-GRID-OWNERSHIP-20261109)

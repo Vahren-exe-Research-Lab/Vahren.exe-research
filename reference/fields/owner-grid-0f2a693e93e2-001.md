@@ -29,27 +29,27 @@
 ## grid + 0x64
 
 - [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 <a id="field-68"></a>
 ## grid + 0x68
 
 - [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 - [REF_MAP_TERRAIN.md 行 418](../../REF_MAP_TERRAIN.md?plain=1#L418-L418) — 1. 旧grid+0x68全セルの非ゼロnodeを一時木へ集約し、その木を走査する。
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 <a id="field-80"></a>
 ## grid + 0x80
 
 - [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 <a id="field-84"></a>
 ## grid + 0x84
 
 - [REF_MAP_TERRAIN.md 行 421](../../REF_MAP_TERRAIN.md?plain=1#L421-L421) — 4. grid+0x84のcache値vectorを解放し、0x4F4140を呼び、+0xACの順序listを解放して+0xB0=0へ戻す。
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

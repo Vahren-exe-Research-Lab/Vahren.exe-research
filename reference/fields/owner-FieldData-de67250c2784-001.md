@@ -8,6 +8,6 @@
 ## FieldData + 0x6C
 
 - [REF_MAP_TERRAIN.md 行 130](../../REF_MAP_TERRAIN.md?plain=1#L130-L130) — \| 戦闘中のチップ変更・アニメーション \| **無し** \| DLL で FieldData +0x6C〜+0x80 を書換え（既存V1で実機確認済み） \|
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

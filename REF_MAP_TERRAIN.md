@@ -382,7 +382,7 @@ OGGテストの原作DATを読み取り、`a_default/script/30_スキル/F12_cha
 - カメラsetter 0x4C3C20はR+0x4C/+0x50の座標を設定し、0x4C3C5AでR+0x3C8C=0にして行列を再計算する。0x520800からこのsetterを呼ぶ経路を確認した。［STATIC］
 - 0x4C3EB0の描画先頭にはtargetを黒へClearする経路がある。通常のalphaによる前frame残留を原因とする根拠にはならない。
 
-**解釈の限界:** M3の「画面移動で草の残像が消えた」はカメラ変更によるキャッシュ再構築と整合する［INFERRED］。しかし当該実機のR/mode/flagは観測しておらず、原因を実機確定とはしない。画像変更後の適切な無効化方法、別mode、一時停止と通常進行の差、継ぎ目は別途検証する。R+0x3C8Cの書換え実機成功はまだない。
+**解釈の限界:** M3の「画面移動で草の残像が消えた」はカメラ変更によるキャッシュ再構築と整合する［INFERRED］。しかし当該実機のR/mode/flagは観測しておらず、原因を実機確定とはしない。画像変更後の適切な無効化方法、別mode、一時停止と通常進行の差、継ぎ目は別途検証する。この静的調査時点ではR+0x3C8Cの書換え実機成功はまだない。後日のcache対応版による固定カメラでの変更/復元成功は§18に分離し、当該実行のR/mode/flagの直接観測とは区別する。
 
 根拠は§12.4と同じreadOnly Ghidra project・対象EXE、全照会exit 0。ローカル`%TEMP%`解析出力のSHA256（本文・素材の転載なし）:
 
@@ -480,3 +480,30 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 ### 17.1 M6へ越境しない座標上の注意
 
 既存`research/raw/q14_out.txt`の4EC1E0は座標を>>5してgrid照会へ進む一方、M1のFieldData取得は斜め表示対応のstage.vf02を使う。DATのcell x/yをそのまま通行gridのx/yへ書く対応は今回未証明である。M5のattr対象セルが正しく取れたことをM6の通行grid座標対応の証明に流用しない。これは既存経路間の接続上のVERIFY項目であり、新しい実機観測ではない。
+
+
+## 18. M3 cache対応版の固定カメラ試験（2026-11-09 05:08 JST）
+
+研究IDは`CODEX-MAP-M3-LIVE-20261109`を継続。OGGテストの自動event戦闘で、親実装担当が画面を操作・観察し、記録担当が同実行のDLLログと配置ファイルSHAを独立に照合した。通常侵攻ではなく、単一戦闘での確認である。
+
+- DLL: M3 cache対応コミット`3abbf33`、SHA256 `ce81ff368a482b24e4f54749f294366f9b0886f1bac94f5088cdda78445b6ed3`。OGG配下の唯一のVahren.exeの親/plugins/HakushinMapGimmick.dllを選び実測し、backup内の旧DLLを除外した。
+- 試験DAT: `edb620d`、`mapgimmick_test.dat` SHA256 `6c27206a2c3a06a4bdc817dab0436d23ebbaff51d3d93cee501aac8b17339afa`。原作root listを置換するbattleEvent呼出を避けた試験構成。素材・DAT本文・画面画像・個人ログ原文は収録しない。
+- 実行PID 26792、同一thread 31780、battle=1。ctx=010ee2f0、stage=012dd860、cells=01758024、45×45。ctxはログのDATコンテキスト値であり、§16のGameManager実体Gと混同しない。
+
+| 時刻（JST） | ログ観測（全行result=0、outputs_valid=1） |
+|---|---|
+| 05:08:07.233 | setup、45×45、battle=1 |
+| 05:08:13.894 | anim_def、grass_demo、interval=2 |
+| 05:08:13.903 | anim_rect、範囲(29,19)〜(33,23)、active=25 |
+| 05:08:43.055 | tick、active=25、区間集計changed=750/transitions=30 |
+| 05:08:58.180 | restore_rect、同範囲、active=0 |
+| 05:09:04.784 / 05:09:26.276 | get、active=0、x=31,y=21、attr=grass、field=pasture |
+| 05:09:11.606 | tick、active=0、区間集計changed=725/transitions=29 |
+
+最後の725/29は前の集計以降に発生した変更の累積であり、復元後の新たな725セル書込みを意味しない（§13.3と同じログ仕様）。変更中05:08:36.004にもgrass/pastureだったが、変更開始前のgetが無いためこれだけで変更前からの不変を証明しない。
+
+親担当の画面観測では、カメラ移動を行わず、緑色の変更パッチ出現→restore後に黄色い元地形へ全体復元→復元状態の維持→自動監視によるworld帰還を確認した。記録担当自身による画面の独立観察ではなく、操作担当の直接観察とログを組み合わせた受入れ証拠である。**この自動event戦闘・固定カメラ条件で、cache対応版の変更と復元が成立した**とする。§13のカメラ移動後だけ解消した先行観測とは別試験として保持する。
+
+同DATでHKDR setupに到達したことは観測済み。ただし[スクリプトREF §4](REF_SCRIPT_VM_CONTEXT.md#4-battleevent-replace-all-correction)のreplace-all静的訂正に対する万能な因果実証とはせず、登録構成修正後に到達した実機結果として記録する。
+
+**未確認:** 通常侵攻で同じ結果になること、pause状態が実際に成立していたこと、M3同プロセス再戦、長時間負荷、3画像それぞれの目視識別。M4毒床・M5attr・M6通行再構築の実機成功は含めない。§15のR/mode/flag自体のlive値は今回も記録しておらず、元の残像原因を遡って確定しない。
