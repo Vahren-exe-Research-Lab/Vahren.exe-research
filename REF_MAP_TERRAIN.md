@@ -651,3 +651,25 @@ vf02=0x4FBE80はESI=stageを設定し、斜め分岐の0x4FBEAEで同じ0x4C1690
 |---|---|
 | m6_coordinates_out.txt | 8a82f274556cab04c07af02afe2b4601b587988e874feb23e1bbfaf853f4a468 |
 | m6_endpoint_out.txt | 02d7cf6c3aa7666ff2567e7e3dc66cb24f1c5bb138eb6b91d4393357979f3c93 |
+
+## 25. M4: 匿名dummy修正と正規caster試験の限定観測（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-CASTER-LIVE-20261109`。LIVE読取値と親担当の画面観察を分離する。OGGテストの同じDLL（製品commit648dbcf、匿名dummyを候補から除外する修正版）で、DATのみ旧cac6bc8から正規caster版33ac829へ変えた2回の試験。元の個人samplerログ・画像・素材は収録しない。
+
+### 25.1 PID31288: 有効な空名dummyを残したまま完走
+
+旧doskill型DATのsample55（JST06:05:45.610）は45×45の有効stage、dummy=34af2010、dext0/poi100/side2、active1/excluded0/gone0。casts6/result0であった。sample146（06:07:17.544）でも同じdummyが有効で、clear_result0、ready2、outcome1、after_clear2、cycles4、casts6/result0/hit_count0。読取が成立した112標本のresultは未設定または0で、§22の-16はこの再試験で観測しなかった。これは有効な匿名dummyを含む表でも処理が継続し、床解除後の2周期監視を完了した実機証拠である。全ての匿名/破損ノードを許可してよいという一般化はしない。
+
+両対象のpoiは上記2標本とも100のままで、毒成功ではない。位置変化・HP低下も続いており、このfixtureの無攻撃・不動保証は依然ない。
+
+### 25.2 PID28188: 毒ゲージ負値を観測、適用原因の完全分離は未了
+
+正規caster版DATのsample77（JST06:09:43.940）ではtargetはalive、dext131、poi=-500、casterはalive、dext5405、poi100であった。casts3/result0/hit_count1、doskill用dummyは未初期化。この時点で対象の毒ゲージが負になったことは直接観測であり、§22のdext0 dummyでの毒不発とは区別する。親担当は対象の紫色表示も目視した。
+
+sample179（06:11:27.002）はcasts6、clear_result0、ready2、outcome1、after_clear2、cycles4、result0/hit_count0を保持しているが、active stageは既に一意に取れずunitsも空。従ってこの標本のDAT変数は終端状態の記録であり、その瞬間の有効戦闘stageを証明しない。親担当はworld帰還と06:11:53の正常終了を確認した。
+
+ただしfixtureにはunit_st→yaju→class c_yaju→a020由来の継承が残り、移動や通常召喚self_a020が混入した（実装担当の原作用例/継承調査と親画面観察）。この試験だけで、毒の発生原因を床から指示した単独skillへ完全に限定しない。通常heroの能力変更は行わず、独立classと対照対象を備えたfixtureで再分離する段階である。床解除は既存毒の治療を意味せず、解除後poi100へ戻ることを受入条件にはしない。
+
+根拠はTEMPの`hmg_m4_samples_31288.jsonl` sample55/146および`hmg_m4_samples_28188.jsonl` sample77/179のread-only逐次採取値（非原子的）、親担当の対応する目視報告。単一標本の全フィールドが完全同時であるとは扱わない。
+
+継承のSTATIC根拠をOGG試験コピーから読み取り再照合した（CP932、CR除去後のLF行番号）：`script/6000_スキルテスト/skilltest.dat:19`のunit_st:yaju、`10_ユニット/02_迫真空手道場.dat:12,47`のclass=c_yajuおよびc_yaju:a020、`20_クラス/01_03_マリナーズ_空手部_キモティカ.dat:336,344,346,356`のa020:base・通常skill列・skill2=1,self_a020・move150。親なしclass/unitではないため、fixtureで一部技能欄を空にしただけでは全継承の除去を実証しない。これらは原作素材を収録せず所在と短い識別子のみ記録した。
