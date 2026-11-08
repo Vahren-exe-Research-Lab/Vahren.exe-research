@@ -8,6 +8,6 @@
 ## nil + 0x39
 
 - [REF_MAP_TERRAIN.md 行 195](../../REF_MAP_TERRAIN.md?plain=1#L195-L195) — - これはT040で既出の `g_ChipAtlasMap`（0x879E68、4整数の矩形、node nil+0x39）とは位置・値の幅・nil位置が異なる。本節のnative取得経路で0x879E68の表構造を流用しない。両表の生成・相互変換の全経路は本節では未調査。
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -13,7 +13,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L131)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,7 +26,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L132)
 
 読み手・書き手の個別採録は未実施です。
@@ -39,7 +39,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L133)
 
 読み手・書き手の個別採録は未実施です。
@@ -52,7 +52,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L134)
 
 読み手・書き手の個別採録は未実施です。
@@ -65,7 +65,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`map`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L135)
 
 読み手・書き手の個別採録は未実施です。
@@ -78,7 +78,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`map`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L136)
 
 読み手・書き手の個別採録は未実施です。
@@ -91,7 +91,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`vector`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L137)
 
 読み手・書き手の個別採録は未実施です。

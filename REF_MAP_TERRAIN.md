@@ -488,7 +488,7 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 
 - DLL: M3 cache対応コミット`3abbf33`、SHA256 `ce81ff368a482b24e4f54749f294366f9b0886f1bac94f5088cdda78445b6ed3`。OGG配下の唯一のVahren.exeの親/plugins/HakushinMapGimmick.dllを選び実測し、backup内の旧DLLを除外した。
 - 試験DAT: `edb620d`、`mapgimmick_test.dat` SHA256 `6c27206a2c3a06a4bdc817dab0436d23ebbaff51d3d93cee501aac8b17339afa`。原作root listを置換するbattleEvent呼出を避けた試験構成。素材・DAT本文・画面画像・個人ログ原文は収録しない。
-- 実行PID 26792、同一thread 31780、battle=1。ctx=010ee2f0、stage=012dd860、cells=01758024、45×45。ctxはログのDATコンテキスト値であり、§16のGameManager実体Gと混同しない。
+- 実行PID 26792、同一thread 31780、battle=1。ctx=010ee2f0、stage=012dd860、cells=01758024、45×45。ctxはログ上のDAT vm_contextという呼称であり、本DLLの通知検証はctx=module+(0x8BE2F0−0x400000)、evaluator=ctx+0x504を必須とする（製品src/hakushin_map_plugin.c）。従って受理した通知のctxは§16のGameManager実体Gと同じ値である。別オブジェクトを意味せず、[G]はvtableである。
 
 | 時刻（JST） | ログ観測（全行result=0、outputs_valid=1） |
 |---|---|
@@ -506,4 +506,22 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 
 同DATでHKDR setupに到達したことは観測済み。ただし[スクリプトREF §4](REF_SCRIPT_VM_CONTEXT.md#4-battleevent-replace-all-correction)のreplace-all静的訂正に対する万能な因果実証とはせず、登録構成修正後に到達した実機結果として記録する。
 
-**未確認:** 通常侵攻で同じ結果になること、pause状態が実際に成立していたこと、M3同プロセス再戦、長時間負荷、3画像それぞれの目視識別。M4毒床・M5attr・M6通行再構築の実機成功は含めない。§15のR/mode/flag自体のlive値は今回も記録しておらず、元の残像原因を遡って確定しない。
+**この単戦時点の未確認:** 通常侵攻で同じ結果になること、pause状態が実際に成立していたこと、M3同プロセス再戦、長時間負荷、3画像それぞれの目視識別。再戦と3画像識別は後続§18.1で確認した。M4毒床・M5attr・M6通行再構築の実機成功は含めない。§15のR/mode/flag自体のlive値は今回も記録しておらず、元の残像原因を遡って確定しない。
+
+### 18.1 同一起動2戦・3画像識別の追加観測（2026-11-09 05:18–05:21 JST）
+
+同じ研究IDでの追加実機観測。親担当がOGGテストの自動event戦闘を固定cameraで操作・観察し、記録担当が最新DLLログのPID7504/thread28524を独立照合した。両戦とも45×45、stage=012dd860、矩形(29,19)–(33,23)、interval=2。以下は全てresult=0、outputs_valid=1。
+
+| JST | battle / 観測 |
+|---|---|
+| 05:18:38.606 | battle=1 setup、cells=01674024、definitions=0、active=0 |
+| 05:18:45.044 / .051 | anim_def / anim_rect、definitions=1、active=25 |
+| 05:19:26.793 | restore_rect、active=0。後続get/tickも成功 |
+| 05:20:01.656 | battle=2 setup、cells=01673024、definitions=0、active=0 |
+| 05:20:07.860 / .866 | anim_def / anim_rect、definitions=1、active=25、後続tick成功 |
+| 05:20:50.319 | restore_rect、active=0 |
+| 05:20:56.373 | get、x=31/y=21、attr=grass、field=pasture、active=0 |
+
+親担当は初戦で塊状の草・平坦な草・白い小模様の3画像を視覚識別し、2戦目もcamera移動なしで領域全体が元へ戻ることを確認した。復元後watch完了からworld Turn1への帰還、その後の正常終了も確認済み。同PIDでbattle 1→2、stage同一・配列別の再戦成立である。2戦目setup時に定義と割当てが失効し、その後の再定義・再割当て・復元まで成功した。製品の受入記録はcodex/m3-animationのdocs/M3_ACCEPTANCE.md（b65a225、world帰還追記a5ac3cc）。
+
+未確認は通常侵攻経路、pause成立時の表示更新、大量負荷、stageとセル配列の両方が同アドレスへ再利用される実機ケース。試験画像・生ログ・DAT本体は収録しない。

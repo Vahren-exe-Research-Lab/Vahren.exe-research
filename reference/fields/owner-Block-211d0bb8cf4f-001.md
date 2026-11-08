@@ -8,6 +8,6 @@
 ## Block + 0x10C
 
 - [REF_MAP_TERRAIN.md 行 189](../../REF_MAP_TERRAIN.md?plain=1#L189-L189) — - 6値の最後2個はfloatのサイズ値。Block側は0x4DF409〜0x4DF415で出力+0x10/+0x14をBlock+0x10C/+0x110へコピーし、0x4DF41D〜0x4DF43Fで `fld dword` と0.0比較を行う。Blockのcoll印が無い経路ではゼロサイズで生成を取りやめる。有限
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

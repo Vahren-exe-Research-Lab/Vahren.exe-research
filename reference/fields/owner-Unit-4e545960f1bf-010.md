@@ -26,7 +26,7 @@
 ## Unit + 0x1E54C
 
 - [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 - [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -41,7 +41,7 @@
 ## Unit + 0x1E550
 
 - [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 - [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained

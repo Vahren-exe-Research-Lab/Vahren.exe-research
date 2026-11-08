@@ -14,6 +14,6 @@
 ## Missile + 0x19C
 
 - [REF_MAP_TERRAIN.md 行 354](../../REF_MAP_TERRAIN.md?plain=1#L354-L354) — 既存`exe/T012_SKILL_PARSER_FIELD_DUMP.txt:35–48`の0x59A4AF→0x59A4D8はSkill+0x70への設定。解析担当が対象PEを直接読み、比較文字列VA 0x624898=`attack_us`（隣接0x6248A4=`skill`）を確認した。0x580280ではS
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

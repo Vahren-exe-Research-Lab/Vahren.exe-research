@@ -21,8 +21,8 @@
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
 
 - [戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001）](../../REF_MAP_TERRAIN.md?plain=1#L1-L1) — `REF_MAP_TERRAIN.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
-  本文 SHA256 `21016a371eb53f27d6aaed043adc1d20660c042f27b22e161b108d9ca59a5b50`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
+  本文 SHA256 `3dd424f184ffddae032660277d704fbd64875cd3efb7978b12f6d7e75b70791f`
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
 
 - [Script grammar, command VM, context and timing — curated A/T005–T010](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L1-L1) — `REF_SCRIPT_VM_CONTEXT.md`

@@ -363,6 +363,7 @@
 | ctx + 0x31C | 1 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-31c) |
 | ctx + 0x32C | 9 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-32c) |
 | ctx + 0x33C | 2 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-33c) |
+| ctx + 0x504 | 1 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-504) |
 | ctx + 0x1EED1C | 1 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-1eed1c) |
 | ctx + 0x1EED20 | 1 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-1eed20) |
 | ctx + 0x1EED4C | 1 | [1](fields/owner-ctx-0230c6b1d833-002.md#field-1eed4c) |

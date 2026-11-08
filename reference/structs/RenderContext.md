@@ -13,7 +13,7 @@ R is pointer from G+0x94. In mode 1, nonzero skips terrain vertex rebuild; 0x4C4
 - 型　`u8`
 - 辞書の確度　STATIC
 - 辞書の出典表記　REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 - [元の辞書行](../../structs.tsv#L159)
 
 読み手・書き手の個別採録は未実施です。

@@ -8,10 +8,10 @@
 ## owner + 0xC
 
 - [REF_MAP_TERRAIN.md 行 347](../../REF_MAP_TERRAIN.md?plain=1#L347-L347) — - Enemy ctor 0x447280はparam3をowner+0x0Cへ保存。初期化0x48A973/0x48A9A6はmask 2/4で生成してE+0x1E8634/+0x1E8638へ置き、0x51E100経由のE+0x1E8630はmask 1。
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 - [REF_MAP_TERRAIN.md 行 348](../../REF_MAP_TERRAIN.md?plain=1#L348-L348) — - storeRectUnitの0x4B3227以降では`red`（VA 0x630D38）がE+0x1EED48、`blue`（0x630D3C）がE+0x1EED44を参照し、そのowner+0x0Cを使う。
-  制約・訂正　M1/M2 bounded runtime; M3 cache version fixed-camera change/restore and world return in automatic event battle observed by operator with DLL logs, ordinary invasion/pause/reentry unverified; M4/M5/M6 STATIC contracts retain limits; assets/images/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
 
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 195](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L195-L195) — - Spot instance loader VA 0x5973AF..0x597412では、spot固有 `capacity` が0ならscenario `spot_capacity` (`owner+0x0C`) をfallbackに採用し、その後Spot runtime `+0x88`をさらに `min(valu
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
