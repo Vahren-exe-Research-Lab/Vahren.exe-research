@@ -63,6 +63,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 |---|---|
 | ユニット・EXP・訓練・召喚 | [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md) |
 | 技能発動後処理 | [REF_SKILL_POST_ACTION.md](REF_SKILL_POST_ACTION.md) |
+| 戦闘マップの地形・オブジェクト・通行判定・移動速度 | [REF_MAP_TERRAIN.md](REF_MAP_TERRAIN.md) |
 | 戦闘AI・士気 | [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md) |
 | 戦闘乗っ取り・外部結果統合 | [REF_BATTLE_TAKEOVER.md](REF_BATTLE_TAKEOVER.md) |
 | DAT・画面部品・詳細パネル | [REF_DAT_BEHAVIOR.md](REF_DAT_BEHAVIOR.md)、[REF_UI_SYSTEM.md](REF_UI_SYSTEM.md) |
