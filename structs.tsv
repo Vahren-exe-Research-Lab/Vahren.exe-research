@@ -89,6 +89,9 @@ StatusWnd	0x12F8	u32	hoverCount	説明表示の対象の数	テストのみ	W(wo
 Player	0x324	i32	cursorX	マウスの X（ゲーム座標。全画面でもウィンドウの画素ではなくこの値で判定する）	実機確認	本セッション, R1101§3
 Player	0x328	i32	cursorY	マウスの Y（ゲーム座標）	実機確認	本セッション, R1101§3
 Player	0x42C	ptr	hoverOwner	説明表示を受け持つウィンドウ	静的確認	本セッション
+GameTask	0x04	ptr	manager	GameManager（0x8BE2F0）。メインループがvf+0x0C（入力poll）を毎コマ呼ぶ。+8が0以外でループ終了	静的確認	S1108(Extensions plugins/speed/README.md)
+GameTask	0x24	u32	pendingChanges	タスクの追加・削除の待ち。0以外ならコマの先頭で処理される	静的確認	S1108(Extensions plugins/speed/README.md)
+GameTask	0x3C	u32	frameCounter	更新ごとに+1（0x4C29C6）。4の倍数のとき0x4BE220（BGM曲送り）、16の倍数で空き要素の整理	静的確認	S1108(Extensions plugins/speed/README.md)
 GameTask	0x40	u32	frameTime	1コマ開始時のtimeGetTime（0xAC0918へ写す）	静的確認	R1101§1
 GameTask	0x74	i32	fps	1秒あたりのコマ数（25、戦闘の速度で100）	静的確認	R1101§1
 GameTask	0x78	u32	frameMs	1コマのミリ秒（round(1000/fps)）。これに満たない分だけSleep	静的確認	R1101§1

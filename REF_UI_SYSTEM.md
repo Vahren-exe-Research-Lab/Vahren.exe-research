@@ -78,3 +78,11 @@
 `0x55B030`は[既保存B primary](research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md)の無効flag検査/設定と後段呼出を事典に採録しました。新規の原作解析ではありません。下位の空間処理や全死亡グラフを、この短いcallee契約から確定しません。
 
 同チャットの`0x589150`退却メッセージ/乱数の報告は、発言単体に対象buildの明示がなく、今回は正式な関数項目にしません。本文検索と[候補票](research/recovered/chat_rea_remainder2/FUNCTION_CANDIDATES.tsv)から確認でき、版対応・実機動作は未確認です。
+
+## 1コマの中身と倍速のしくみ（2026-11-08 Claude）
+- 静的確認：メインループ 0x4C24B0 の1コマは、Sleep→開始時刻 0xAC0918→（GameTask+0x3C が4の倍数なら）0x4BE220(G+0x160, コマ番号)→GameManager vf+0x0C（0x4B9AA0：入力poll 0x4EE170 と Esc 確認）→0x4C2714 の call 0x4C28D0（全タスク更新、コマ番号+1）→描画・Present。
+- 静的確認：戦闘の倍速（Z、GameTask_SetFps(100)）のときは、0x4C2719 で描画と Present が1コマおきになる。原作の倍速は「更新100回/秒・描画50回/秒」。戦略画面は25コマ/秒。
+- 静的確認：ゲームのキー読取り 0x4EE1B0 が扱う DIK は 0x01,0x02,0x03,0x1A,0x1B,0x1C,0x1D,0x28,0x2A,0x2B,0x2C,0x2D,0x34,0x9A,0x9B,0xC6,0xCE。Tab（0x0F）は未使用。
+- 静的確認：timeBeginPeriod(1) を 0x555E2F で呼ぶ。GetTickCount は乱数の種（0x5B6E99）に使われる。
+- 訂正：入力pollの受け手は 0x8BE388（=G+0x98、g_NewGameMousePtr）。旧項目 g_InputReceiver の 0x4BE388 は RVA だった。
+- 応用：HakushinSpeed（Extensions plugins/speed）は 0x4C2714 を差し替え、1コマに更新を複数回まわして加速する（ゲーム内は未確認）。

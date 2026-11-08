@@ -350,7 +350,7 @@
 0x4BE3E0	func	Audio_ApplyScriptVolume	スクリプト volume の値を変換する。正値は百分率、ゼロ以下は生減衰値として扱い、最終値を -9600〜0 に制限する。	静的確認	T015§BGM playback ABI / volume attenuation
 0x4BD2A0	func	Audio_RefreshMasterVolumeState	マスター音量用の基準値キャッシュの更新に関係する補助。実際の音量適用順序は複数の経路に分かれる。	推定	T015§D-20261015-0937-01
 0x4BE480	func	Audio_OpenCodecBackend	MP3等の再生バックエンドを初期化し、必要な内部バッファとDirectShow等のインターフェースを用意する。	静的確認	T015§Codec backend / EOF exact contract, §D-20261015-0337
-0x4B9AA0	func	Input_HandleEscapeExit	Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む。	静的確認	T015§Esc入力consumer・表示mode別のexit
+0x4B9AA0	func	Input_HandleEscapeExit	GameManager vtable(0x638DF0)+0x0C。メインループが毎コマ更新前に呼ぶ。[G+0x98]->vf+4（0x4EE170 入力poll）の後、Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む	静的確認	T015§Esc入力consumer・表示mode別のexit, S1108(Extensions plugins/speed/README.md)
 0x4BBAE0	func	Input_DestroyMouseHost	GameMouseのホスト終了側で関連デバイス・参照を解放する。global hostのvtableとの関連を持つ。	静的確認	T015§D-20261013-2234-01
 0x4BF520	func	Audio_SetFadeTransitionState	BGMのフェード入力を設定する補助。player+0x20 の符号と停止・再開条件を区別する。	推定	T015§D-20261013-1952-02
 0x4BF570	func	Audio_ResumeBgmTransition	再生コアの既存曲・空曲条件に応じた後続遷移を処理する。開始音量の経路は条件付き。	推定	T015§D-20261014-1841-01
@@ -375,7 +375,7 @@
 0x65BD9F	global	g_NoactiveWindowOption	起動パラメータ noactive の処理から0にされる状態値。非アクティブ時の入力処理分岐で参照される。	静的確認	T015§noactive起動オプションとinactive時
 0x879820	global	g_TestmapStartupFlag	testmap オプションで設定される状態値。Esc からの直接終了と一部の起動モード分岐に使われる。	静的確認	T015§testmap起動フラグとEsc
 0x87981D	global	g_MusicOffStartupFlag	musicoff 起動オプションで1になる値。BGMマネージャーの生成を省略・無効化する分岐で参照される。	静的確認	T015§BGM volume 0 / transport-loop interaction
-0x8BE388	global	g_NewGameMousePtr	ゲーム側で保持する NewGameMouse オブジェクトへの参照。起動時の初期化でNULLにされる。	静的確認	T015§WM_ACTIVATE失焦時の部分入力クリア, §D-20261013-2234
+0x8BE388	global	g_NewGameMousePtr	= GameManager+0x98。NewGameMouse（入力pollの受け手）への参照。vtable 0x6394A0、vtable+4 が0x4EE170（edgeを消してからpoll）、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く。起動時の初期化でNULLにされる。2026-11-08統合：旧項目 g_InputReceiver「0x4BE388」は同じものをRVAで書いた誤り	実機確認	T015§WM_ACTIVATE失焦時の部分入力クリア, §D-20261013-2234, R1101§4, W(dat_ui_input_provider.h), S1108(Extensions plugins/speed/README.md)
 0x8BE3A0	global	g_StartupVolumeMask	起動時の音量設定計算に用いられるDWORD。musicoff状態とのAND演算で後続呼出しに渡される。	推定	T015§D-20261015-2040-01
 0x65BED8	global	g_AudioBackendEntryCount	音声プレイヤーの内部エントリー数。バックエンド生成時に4倍してポインタ配列を確保する。	推定	T015§D-20261015-2340-01
 0x879610	global	g_D3dPresentWindowedFlag	D3DPRESENT_PARAMETERS の Windowed 項目。通常は0x65BEE4に合わせて設定される。	静的確認	T015§Win32/D3D window mode and buffered input
@@ -460,7 +460,6 @@
 0x87A1B8	global	g_ChipSpriteCache	チップ画像のキャッシュ（std::map）。0x424C80が登録	静的確認	R1101§2
 0x879E68	global	g_ChipAtlasMap	読込み済みチップの表（std::map、要素+0x28〜+0x34が矩形）。0x424C80・0x423D70が引く	静的確認	R1101§2
 0x423D70	func	Image_GetChipRect	ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値）	静的確認	R1101§2
-0x4BE388	global	g_InputReceiver	入力pollの受け手。vtable 0x6394A0、vtable+4 が0x4EE170、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く	実機確認	R1101§4, W(dat_ui_input_provider.h)
 0x626D5C	string	str_face	"face"。0x584830が顔画像名の取得に使う	静的確認	R1101§2
 0x4708D0	func	Save_WriteSlotHeader	通常セーブ先頭の見出しを書く。並びは @gamemode の値、シナリオ名、勢力名、ターン進行+0x14、保存日時（年を詰めた月・日・時・分を各 u32）。時・分の部分 0x470945〜0x47096E は保存命令で確認、全体の並びは読込 0x470550 と実セーブ 4 件で照合	静的確認	S1101§2
 0x470550	func	Save_ReadSlotHeader	通常セーブの見出しを読む。文字列 2 本の後の u32 を第 3 引数へ、続く u32 4 個を SYSTEMTIME の wMonth・wDay・wHour・wMinute へ入れる。呼出元は通常ロード 0x45E2D8 と 0x45ECBB・0x4CFC2A・0x539364	静的確認	S1101§2
@@ -577,3 +576,8 @@
 0x5DFE10	func	VorbisResidue_Parse	residue分類数/次元数と反復積を検査するparser。正常reader/成功受理・未改変条件でB>=1,D>=1,P<=Eの制約を持ち、6bit EOFは次8bit負値拒否へ伝播するという著者報告。 正常reader/非負packet長/未改変成功recordに限定。全alias/入力/ABI/allocator failure/実機挙動を証明しない。	推定	ChatGPT Library/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md LF26-31; ChatGPT Library/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md LF24-30,34-36 (historical authored static report; no new native/runtime verification)
 0x5DFFC0	func	VorbisResidue_Init	compiled codebook entryからdimensionを取りresidue instanceへ対応づけ、正常未改変受理条件ではB^Dと確保要求/除数に上限・非ゼロの制約があるという著者報告。 03H局所懸念を04H条件付き訂正と併記。任意object/全入口/allocator failure安全を確定しない。	推定	ChatGPT Library/REA_OFFLINE_20261101_03H_CODEBOOK_DIMENSION_REPORT.md LF25-29; ChatGPT Library/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md LF24-31,41-45 (historical authored static report; no new native/runtime verification)
 0x5E0DC0	func	VorbisResidue2_Decode	type2復号関数と報告された入口。instance+0x10のcompiled codebook先頭DWORDを除数として局所IDIVで使用する。 局所division経路だけ。fulldecoder ABI・全副作用・ゲームtype2使用・全除算安全を意味しない。	推定	ChatGPT Library/REA_OFFLINE_20261101_03H_CODEBOOK_DIMENSION_REPORT.md LF28-31; ChatGPT Library/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md LF37 (historical authored static report; no new native/runtime verification)
+0x4C28D0	func	GameTask_UpdateTasks	GameTaskの全タスク更新。独自ABI ESI=GameTask（ebx/ebp/ediは保存）。各タスクのvf+4を呼び、終わりに GameTask+0x3C（コマ番号）を+1。呼び出し元は0x4C2714の1か所だけ	静的確認	S1108(Extensions plugins/speed/README.md)
+0x4C2714	code	PumpGameLoop_UpdateCall	0x4C24B0内の E8 call 0x4C28D0（直前 mov esi,ebp）。HakushinSpeed がここを差し替える	静的確認	S1108(Extensions plugins/speed/README.md)
+0x4C2719	code	PumpGameLoop_FastModeDrawSkip	GameTask+0x74==100（戦闘の倍速）なら描画0x4C3EB0とPresentを1コマおきにする（0x68C7F3が交互）。原作の倍速は更新100回/秒・描画50回/秒	静的確認	S1108(Extensions plugins/speed/README.md)
+0x68C7F3	global	g_FastModeDrawToggle	fps==100のとき描画するコマを交互に決めるbyte（0x4C2745〜0x4C277A）	静的確認	S1108(Extensions plugins/speed/README.md)
+0x638DF0	object	vt_GameManager	GameManagerの仮想関数表（0x553ACBで0x8BE2F0へ書込み）。+4=0x4B9930 Scene_DispatchGameMode、+0xC=0x4B9AA0	静的確認	S1108(Extensions plugins/speed/README.md)
