@@ -768,6 +768,7 @@
 | GM + 0x1EF4EC | 2 | [1](fields/owner-GM-b3910ba413cc-001.md#field-1ef4ec) |
 | grid + 0x8 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-8) |
 | grid + 0x28 | 2 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-28) |
+| grid + 0x34 | 2 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-34) |
 | grid + 0x48 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-48) |
 | grid + 0x64 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-64) |
 | grid + 0x68 | 2 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-68) |

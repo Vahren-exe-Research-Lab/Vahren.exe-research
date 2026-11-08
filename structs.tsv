@@ -168,3 +168,4 @@ FieldDef	0x50	str	attr	Attr string; map-node+0x78, length+0x88, capacity+0x8C.	S
 Unit	0xB0	i32	speedTroopValue	Direct numeric assignment at 4B6053; consumed by movement formula. Negative values do not alone guarantee stop.	STATIC	REF_MAP_TERRAIN.md section 20 (CODEX-MAP-M4-FIXTURE-20261109)
 Unit	0x186A4	i32	aimX	Troop setter568400 writes; getter576E80 may return sentinel instead.	STATIC	REF_MAP_TERRAIN.md section 23 (CODEX-MAP-M4-AIM-SKILL-20261109)
 Unit	0x186A8	i32	aimY	Paired aim coordinate; valid pair feeds57EB40 direction, not guaranteed hit.	STATIC	REF_MAP_TERRAIN.md section 23 (CODEX-MAP-M4-AIM-SKILL-20261109)
+Grid	0x34	ptr	coordinateContext	4EC1E0 passes this as ESI to4C1690. Equality with current stage must be checked before assuming vf02/grid correspondence.	STATIC	REF_MAP_TERRAIN.md section24 (CODEX-MAP-M6-COORDINATE-JOIN-20261109)

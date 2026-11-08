@@ -479,7 +479,7 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 
 ### 17.1 M6へ越境しない座標上の注意
 
-既存`research/raw/q14_out.txt`の4EC1E0は座標を>>5してgrid照会へ進む一方、M1のFieldData取得は斜め表示対応のstage.vf02を使う。DATのcell x/yをそのまま通行gridのx/yへ書く対応は今回未証明である。M5のattr対象セルが正しく取れたことをM6の通行grid座標対応の証明に流用しない。これは既存経路間の接続上のVERIFY項目であり、新しい実機観測ではない。
+既存`research/raw/q14_out.txt`の4EC1E0は座標を>>5してgrid照会へ進む一方、M1のFieldData取得は斜め表示対応のstage.vf02を使う。この時点ではDATのcell x/yと通行gridの対応は未証明だった。後続§24で、同じstage逆変換・寸法・範囲内という条件下の補正前座標対応をSTATICに接続したが、書込み安全性は未確認である。M5のattr対象セルが正しく取れたことをM6の通行grid座標対応の証明に流用しない。これは既存経路間の接続上のVERIFY項目であり、新しい実機観測ではない。
 
 
 ## 18. M3 cache対応版の固定カメラ試験（2026-11-09 05:08 JST）
@@ -618,3 +618,36 @@ PID7148と4992のdummy実値はdext0/poi100/side_mask2、通常targetはdext131/
 | m4_skillaim_out.txt | bb53b765b130ce195a58c12af5bdd0336413ad80ab67c963eddf9f48ce287142 |
 | m4_aimtail_out.txt | ad35d05393834a1d56e6bd131095d5d4da10c44470cb151fce0a78655c5276e1 |
 | m4_aimwrite_out.txt | 78e1b9885b912c6e4e2cb1a6c7de0e6c719186def4dce922070aad26a6ff1202 |
+
+## 24. M6: vf02と通行grid座標の限定的対応（2026-11-09）
+
+研究ID: `CODEX-MAP-M6-COORDINATE-JOIN-20261109`。STATIC。既知project/EXE SHAでreadOnly/noanalysis照会2件はexit0。ゲーム実行・メモリ書込み・DLL導入なし。§17.1の未確認を、下記の条件付き対応まで狭める。
+
+### 24.1 同じ逆変換を通ること
+
+新ASMで0x4EC1E0はgridをEBPとし、0x4EC1F2/0x4EC204でESI=[grid+0x34]を設定する。両端座標を0x4EC1FB/0x4EC210で0x4C1690へ渡した後、0x4EC215〜0x4EC249で各成分を符号付き32除算（負数はゼロ方向への丸め）する。raw表示座標を直接32で割ってはいない。
+
+vf02=0x4FBE80はESI=stageを設定し、斜め分岐の0x4FBEAEで同じ0x4C1690を呼ぶ。変換後の負値を0へ補正し、0x4FBECC/0x4FBED4で32除算、幅/高さ上端へclampしてstage+A8の0x11Cセルを返す。
+
+0x4C1690は斜め表示global0x65BD9E!=0かつ入力context+E4==0の時、context+DC/+E0の平行移動、+18/+20の倍率、+68の行列を用いる逆変換を行い、+D4/+D8を加えた整数座標を返す。他条件では入力をそのまま返す。ABIはESI=context、ECX=入力x、stack=入力y、EDI=2DWORD出力としてcaller ASMを確認したもので、Ghidraの自動__thiscall表示だけを採用しない。
+
+従って、**[grid+0x34]==現在stage、同じ入力px/py、両寸法が一致し、逆変換後の座標が0以上かつ幅×32/高さ×32未満**なら、経路の端点補正前grid x/yとvf02返却セルのx/yは一致する。これは同一変換・同一整数演算からのSTATICな帰結であり、現ゲームの全時点でgrid+34==stageを保証したものではない。M6実装前にこのpointer/寸法整合を検証する必要がある。raw px/32を正当化しない。浮動小数境界の再実装誤差も避けるため、native変換の契約を保つ。
+
+### 24.2 端点補正と所在セルは別
+
+4EC1E0は32除算後、0x4EC297/0x4EC2AEで0x4EAC30を呼ぶ。新decompileの4EAC30は入力をgrid端へclampし、grid+68の候補位置に非ゼロregion nodeがあればその位置を返す。無ければ方向順を使った近傍候補探索を続け、候補が尽きると両成分0x80000008を返す。この関数は一時コンテナを確保・解放し、単なる無作用の座標換算ではない。
+
+従って経路処理が最終的に採用する端点は、障害物/領域状態によって所在セルと異なる。vf02の端clamp、path側の補正前32除算、4EAC30のregion候補探索を一つの処理とみなさない。範囲外・blockedセル・未構築regionのケースを別に扱う。
+
+### 24.3 正規loaderでのcleanup順序の再照合
+
+4E9470への新xref照会も0x4F0F06（map loader0x4F0BE0）の1件だけ。製品保存ASM `research/raw/dis_4f0be0.txt` 0x4F0C84〜0x4F0CB5では、既存stage+A8のセル配列を破棄してA8/AC/B0をゼロ化している。その後0x4F0F06でgridを旧node/行/cache込みで初期化し、0x4F0F0B〜0x4F0F2Aで同じ読込幅高さからstage座標設定とセル配列再確保へ進む。これは読込の破棄・再生成系列である。
+
+領域構築4EA2E0のcallerは同loader内0x4F1439と0x4F320B。前者は短い分岐、後者は障害物等の処理後の分岐で、単純な連続2回呼出ではない。既存障害物を保存したまま通行だけ動的更新するAPIと解釈しない。§16の旧+68ノード回収順、通行byte初期化、cache寿命、旧Unit経路の再計算問題は解消していない。
+
+次の最小観測案は読取のみでgrid+34/current stage、grid幅高さ/stage幅高さを照合し、複数の内側座標についてvf02セルとnative逆変換後/32の対応を比べること。書込み試験は、所有権・障害物保存復元・全経路利用者・安全な停止点が確定してから別に判断する。**M6/V3の戦闘中安全性は未確認のまま。**
+
+| TEMP解析出力 | SHA256 |
+|---|---|
+| m6_coordinates_out.txt | 8a82f274556cab04c07af02afe2b4601b587988e874feb23e1bbfaf853f4a468 |
+| m6_endpoint_out.txt | 02d7cf6c3aa7666ff2567e7e3dc66cb24f1c5bb138eb6b91d4393357979f3c93 |

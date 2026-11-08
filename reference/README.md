@@ -193,6 +193,7 @@
 | 0x4BF720 | [Audio_ResolveTransportBranch](symbols/004BF720.md) | func | BGMの状態下位5bitとフェード・EOF判定で次の処理を選ぶ。 |
 | 0x4BF780 | [Audio_TransitionPlaylistAfterEof](symbols/004BF780.md) | func | プレイリストの再生終了判定側で呼ばれ、次曲へ移行する処理に接続する。codecごとの条件がある。 |
 | 0x4C1200 | [Variable_FindTreeKey](symbols/004C1200.md) | func | 汎用木のキー検索に用いられる関数。文字列比較を通じて候補nodeと番兵を判別する。 |
+| 0x4C1690 | [Stage_InverseRuntimeCoordinates](symbols/004C1690.md) | func | ESI=context, ECX=x, stack y, EDI=output pair at verified callers. Both iso vf02 and path query use it before division by32. |
 | 0x4C1770 | [Stage_TransformScriptCoordinates](symbols/004C1770.md) | func | Used by addTroop outside mode1 and aim/move coordinate helper; raw script coordinates differ from runtime Unit coordinates. Descriptive name. |
 | 0x4C1B70 | [Stage_GetCellAtPixel](symbols/004C1B70.md) | func | thiscall stage, (px,py)。>>5 で 32px マスに変換して FieldData* を返す |
 | 0x4C1FC0 | [Random_InitializeMapSeed](symbols/004C1FC0.md) | func | マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。 |
@@ -225,6 +226,7 @@
 | 0x4E9A60 | [Grid_BuildRegions](symbols/004E9A60.md) | func | 通れるマスを長方形領域に分割し経路グラフを作る |
 | 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない。旧cache誤hit・リーク回避・旧path寿命を別途解決する必要があり、単独再実行の安全性は未証明（REF_MAP_TERRAIN.md §16） |
 | 0x4EAA70 | [Grid_TestStraightWalk](symbols/004EAA70.md) | func | 2点間を8方向に進み通行不可マスに当たるか調べる |
+| 0x4EAC30 | [Grid_AdjustPathEndpoint](symbols/004EAC30.md) | func | Clamps grid coordinate and searches for a nonzero region node; returns sentinel pair if no candidate. Allocates temporary containers, not a pure transform. |
 | 0x4EC1E0 | [RouteCache_ConditionalHitPromotion](symbols/004EC1E0.md) | func | Native hit recency relink only above 8000 records, eviction branch on count>=8192; key ownership and runtime outcomes VERIFY |
 | 0x4ED030 | [Tree_ClearAllNodes](symbols/004ED030.md) | func | 全区間tree消去の下位処理。0x49F6A0のsubtree解放とsentinel自己リンク復元、count=0を含む。 |
 | 0x4EE0C0 | [Input_ConstructNewGameMouse](symbols/004EE0C0.md) | func | NewGameMouse の生成時に呼ばれる初期化関数。生成した実体は Player の入力参照へ配置される。 |
@@ -566,7 +568,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7960 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7962 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -592,9 +594,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 553 件、フィールド 165 件、根拠付き関係 165 件。
+辞書項目 555 件、フィールド 166 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 76017 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 76044 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
