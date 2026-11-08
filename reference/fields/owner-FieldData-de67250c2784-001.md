@@ -8,6 +8,6 @@
 ## FieldData + 0x6C
 
 - [REF_MAP_TERRAIN.md 行 130](../../REF_MAP_TERRAIN.md?plain=1#L130-L130) — \| 戦闘中のチップ変更・アニメーション \| **無し** \| DLL で FieldData +0x6C〜+0x80 を書換え（既存V1で実機確認済み） \|
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

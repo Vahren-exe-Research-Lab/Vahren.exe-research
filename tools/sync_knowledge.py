@@ -4972,6 +4972,18 @@ FILES = FILES + (
 )
 FILES = FILES + ('reference/symbols/00402710.md',)
 FILES = FILES + ('reference/symbols/0048F620.md',)
+FILES = FILES + (
+    'reference/fields/owner-FieldDef-6b763f09fc15-001.md',
+    'reference/fields/owner-cell-39d02b42938b-001.md',
+    'reference/structs/FieldDef.md',
+    'reference/structs/FieldDefMap.md',
+    'reference/structs/FieldDefMapNode.md',
+    'reference/symbols/004F5360.md',
+    'reference/symbols/004F57A0.md',
+    'reference/symbols/004F5CA0.md',
+    'reference/symbols/004F5FA0.md',
+)
+
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.

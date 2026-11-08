@@ -231,6 +231,10 @@
 | 0x4EE560 | [FieldDef_Construct](symbols/004EE560.md) | func | FieldDef 構築（+0x40 type,+0x44 alt,+0x48 alt_max,+0x4C edge,+0x4D smooth,+0x4E step,+0x50 attr,+0x6C id,+0x88 joint,+0x00 image,+0x1C member,+0x2C add2,+0x3C color）。ret 0xAC |
 | 0x4EEA00 | [MapDef_ParseFieldAndObjectDefs](symbols/004EEA00.md) | func | field/object 定義を全件パースし NewGameStage+0xFC(field)/+0xEC(object) の map へ格納。object type: 無=0,floor=1,coll=2,wall=3,wall2=4,break=5,break2/gate=6,goal=7,start=8,box=9 |
 | 0x4F0BE0 | [Battle_LoadStageMap](symbols/004F0BE0.md) | func | 戦闘マップ(.map)読込。セル設定、field type!=0 で Block 生成＋通行グリッド+0x60/+0x7C に1、object から Block、末尾で経路領域構築 0x4EA2E0 |
+| 0x4F5360 | [FieldDefMap_FindOrInsert](symbols/004F5360.md) | func | Traverses field definition tree via map+4 sentinel and string keys; insertion helper 4F57A0. Descriptive name. |
+| 0x4F57A0 | [FieldDefMap_InsertRebalance](symbols/004F57A0.md) | func | Updates map count+8, node links and colors; head+0/+4/+8 min/root/max. Descriptive name. |
+| 0x4F5CA0 | [FieldDefMap_AllocateNode](symbols/004F5CA0.md) | func | Allocates 0xE0 node; key+0x0C, inline FieldDef+0x28, color+0xDC, nil+0xDD. Descriptive name; full ABI not established. |
+| 0x4F5FA0 | [FieldDef_CopyConstruct](symbols/004F5FA0.md) | func | Copies inline FieldDef including attr string+0x50; map node attr at +0x78. Descriptive name; full ABI not established. |
 | 0x4F93A0 | [Ai_ComputeBattleAreaTargetPoint](symbols/004F93A0.md) | func | 戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。 |
 | 0x4FAF50 | [NewGameStage::vf00_SmoothHeights](symbols/004FAF50.md) | func | 読込後の高さ平滑化・隠れ判定 |
 | 0x4FBE80 | [NewGameStage::vf02_GetCellAtPos](symbols/004FBE80.md) | func | __thiscall ECX=stage, stack=(int32 px,int32 py), EAX=FieldData*, ret 8。斜め表示モード対応、変換後をマップ端へclamp。Unit::vf25 が使用。M1のHKDR callbackからの直接呼出・DAT座標出力は実機確認（2026-11-09、REF_MAP_TERRAIN §10）。終了/再戦は未確認 |
@@ -555,11 +559,14 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7933 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7944 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
 - [FieldData](structs/FieldData.md)
+- [FieldDef](structs/FieldDef.md)
+- [FieldDefMap](structs/FieldDefMap.md)
+- [FieldDefMapNode](structs/FieldDefMapNode.md)
 - [FrameWnd](structs/FrameWnd.md)
 - [GameManager](structs/GameManager.md)
 - [GameTask](structs/GameTask.md)
@@ -578,9 +585,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 542 件、フィールド 155 件、根拠付き関係 165 件。
+辞書項目 546 件、フィールド 162 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75966 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75977 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 

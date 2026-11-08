@@ -35,7 +35,7 @@
 ## object + 0x10
 
 - [REF_MAP_TERRAIN.md 行 458](../../REF_MAP_TERRAIN.md?plain=1#L458-L458) — \| metadata \| object+0x10=length、+0x14=capacity。capacity<16はinline、>=16はobject先頭のpointerをdataとして読む \|
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
 
 <a id="field-1c"></a>
 ## object + 0x1C

@@ -525,3 +525,20 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 親担当は初戦で塊状の草・平坦な草・白い小模様の3画像を視覚識別し、2戦目もcamera移動なしで領域全体が元へ戻ることを確認した。復元後watch完了からworld Turn1への帰還、その後の正常終了も確認済み。同PIDでbattle 1→2、stage同一・配列別の再戦成立である。2戦目setup時に定義と割当てが失効し、その後の再定義・再割当て・復元まで成功した。製品の受入記録はcodex/m3-animationのdocs/M3_ACCEPTANCE.md（b65a225、world帰還追記a5ac3cc）。
 
 未確認は通常侵攻経路、pause成立時の表示更新、大量負荷、stageとセル配列の両方が同アドレスへ再利用される実機ケース。試験画像・生ログ・DAT本体は収録しない。
+
+## 19. M5 field定義表の値配置とvf25の既定値（2026-11-09）
+
+研究ID: `CODEX-MAP-M5-FIELD-TREE-20261109`。STATIC。製品担当のreadOnly/noanalysis Ghidra照会を記録担当が出力・SHAと照合した。対象は従来と同じver0.67 EXE（SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187）。ライブでのattr変更・速度変化・復元成功を意味しない。
+
+- stage+0xFCはfield定義のmapオブジェクト。製品既存raw `research/raw/dis_4eea00.txt` の0x4F04F1〜0x4F0515と、下記木操作を接続した。map+4=head、map+8=count。head+0/+4/+8は最小/root/最大、通常node+0/+4/+8はleft/parent/right。
+- 0x4F5CA0は0xE0バイトを確保し、key文字列をnode+0x0C、FieldDef値をnode+0x28へ構築する。node+0xDC=color、+0xDD=nil。**node+0x28はFieldDefのインライン値であり、FieldDef*を格納する欄ではない。** 汎用Unit名前表など別のmapノード配置を流用しない。
+- 0x4F5FA0のFieldDefコピーはattr文字列をFieldDef+0x50へ構築する。従って当該nodeのattrは+0x78、lengthは+0x88、capacityは+0x8C。文字列のSSO/heap区別は§17。定義表を読み、検証済attr名を得ることと、定義自体を書き換えることは別操作である。
+- 0x4F5360はheadからキー比較・木探索を行い、0x4F57A0はcount増分とリンク/色調整を行う。型名・関数名は説明用で、呼出ABI全体や例外経路をここでは確定しない。
+- Unit::vf25（0x576DC0）の既存§3契約をASMで再確認。Unit+0x1F0==0、または [Unit+0x1C8]+0x14C==0 なら0x576DCDでEAX=5。そうでなければstage.vf02でセルを得て、0x576E00でcell+0xD4をキー、0x576E0BでUnit+0x1E8をmapとして0x4C1200へ渡す。返却nodeをUnit+0x1ECの終端と比較し、未発見なら5、存在すればnode+0x28の値を返す。0x14Cはオフセットで、条件の0を連結して「+0x14C0」と読まない。
+- 従って新attr名がそのユニットのmovetype表に無ければ「必ず停止」にはならず、既定値5へ落ちる。値0の停止分岐は既存§3の別契約。field定義表に存在する名前だけで、全ユニットの速度や通行不能を保証しない。
+
+根拠出力（TEMPの解析テキストのみ、正本へ生ファイルは収録しない）:
+- `m5_field_out.txt` SHA256 `72b04271e3120b7050435fedcac167308e3a57741b04f236bd3cb6e8d65c336f`: lines1–59 node構築、61–130 map探索、158–192 vf25 ASM。
+- `m5_field_out2.txt` SHA256 `f43aa5602a379e09f1a0a5897d18b1dc10b62b1c21b9601eb1ae909994dc4d30`: lines1–148 map挿入、150–199 FieldDefコピー、201以降node構築ASM。
+
+未確認: 動的attr代入/復元の成功、変更したattrに対する各ユニットの実速度、field表の全ライフサイクルと全callsite ABI。通行grid再構築・Block追加削除の成立は含めない。
