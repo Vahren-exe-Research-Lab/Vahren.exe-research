@@ -709,3 +709,15 @@ movetype=dropはparser59C5EC（literal624EB4）→59C601でSkill+48=1。580280�
 | m4_center_asm.txt | b303713b7c975659fac1e520511866461f7b8d2427602f01937dfd9bcef1ddcc |
 
 前2件は既知project/EXEのreadOnly/noanalysis exit0、後3件は同SHA一致OGG EXEのPEセクション読取とCapstone局所逆アセンブル。原作実行・変更なし。失敗観測はTEMP `hmg_m4_samples_29148.jsonl` sample65/126/257と親の目視/ログ照合報告。
+
+## 27. M4: drop版の固定3体対照試験（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-DROP-LIVE-20261109`。§26の候補を製品DAT b36233a（DLL648dbcfのまま）で試験した。PID31904のread-only samplerを研究担当も独立照合し、別レビュー担当も同じ記録を監査した。床内対象に毒、床外対照とcasterに変化なし、解除後呼出停止をこの固定配置で確認した。通常ユニットの能力は変更せず、専用classのfixtureを使用。
+
+sample65〜120（JST06:30:59.545〜06:31:55.186）のbaselineは3体ともpoi100/HP10000で位置固定・move0。床内target=34b905c0は(1803,605)、床外outside=34baeb68は(1433,737)、caster=34b72018は(1486,763)。baseline_done1/elapsed2の後、sample121（06:31:56.196、casts1/result0/hit_count1）で床内targetのみpoi=-500、床外とcasterはpoi100/HP10000。casterのUnit+1E574は依然outside=34baeb68を指していたため、この試験ではAI対象pointerと異なるaim地点への効果成立を直接比較できる。弾内部pointer/実行PCの採取ではない。
+
+sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、ready2/clear_result0/result0/hit_count0/outcome1/after_clear2/cycles6、casts=clear_casts=40。床解除後2周期を経ても指示数は増えなかった。161件の有効観測全体でoutside/casterはそれぞれpoi100/HP10000・位置不変。床内targetはHP0/poi-330でもgone0だったため、この標本を死亡完了と呼ばない。親担当は床内の紫表示、床外正常、画像の復元、world帰還と約06:34の正常終了を目視した。
+
+これは**動かない対象の足元へ床を置く固定配置**の受入証拠である。移動して床へ入ること、境界・重なり、厳密Unit-ID限定、任意耐性/射程、EXP、同process再戦は別の未確認。§26の通常homing弾の失敗を消さず、drop/origin/homing構成変更による結果の差として保持する。床解除は既に付いた毒を治療する命令ではない。
+
+根拠: TEMP `hmg_m4_samples_31904.jsonl` sample65/120/121/216および全有効161標本の比較、親の対応する画面報告。元ログ・画像・原作素材を正本へ収録しない。samplerは非原子的な逐次読取である。
