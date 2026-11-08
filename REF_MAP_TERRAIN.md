@@ -721,3 +721,37 @@ sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、re
 これは**動かない対象の足元へ床を置く固定配置**の受入証拠である。移動して床へ入ること、境界・重なり、厳密Unit-ID限定、任意耐性/射程、EXP、同process再戦は別の未確認。§26の通常homing弾の失敗を消さず、drop/origin/homing構成変更による結果の差として保持する。床解除は既に付いた毒を治療する命令ではない。
 
 根拠: TEMP `hmg_m4_samples_31904.jsonl` sample65/120/121/216および全有効161標本の比較、親の対応する画面報告。元ログ・画像・原作素材を正本へ収録しない。samplerは非原子的な逐次読取である。
+
+## 28. M6: セルを保持するmask再構築候補と経路コピー（2026-11-09）
+
+研究ID: `CODEX-MAP-M6-MASK-REBUILD-CONTRACT-20261109`。STATICと設計上の帰結を分離する。新しい原作実行・書込みは行っておらず、V3受入済ではない。
+
+### 28.1 独立helperの範囲とABI
+
+4E9470本体（§16）はgridの旧region node/行/cacheを解放して再確保する。stage+A8セルの破棄はloaderの別処理（§24）であり、このhelper自身の処理とは区別する。stage+148のBlock vectorを再生成する処理も4E9470には無い。従ってloader全体を再実行せず、grid helperだけを対象とする設計余地はある。ただし戦闘中呼出可能という証明ではない。
+
+4E9A20のABIはECX=x、EDX=grid、EAX=y、stack引数なし、4E9A5AはRET。非負かつ幅高さ内の場合だけgrid+60[y][x]=1とgrid+7C[y/2][x/2]=1へ書く。openへ戻す関数ではなく、画像/FieldDef/Block登録にも触れない。直接xrefはloader4F2EDCの1件だが、fieldやobjectの各loader分岐には同等のinline書込みもある（保存dis_4f0be0.txt 4F1A0B/4F215E/4F239F等）。
+
+**4EA2E0の旧辞書『cdecl相当』を訂正する。** 引数はstackにgrid1個、正常出口4EA962はRET4でcallee cleanup。内部4EA349〜4EA361はgrid+64を取り、`4E9A60(grid, temporaryRegionTable, grid+64)`を呼ぶ。4E9A60はgrid+60の非ゼロbyteをblockedとして一時表へ写し、領域分割する。4EA2E0は新node/隣接関係とgrid+68を構築する。FieldDefやstageのBlock群をこの段階で再読して占有maskを復元する仕組みではない。
+
+### 28.2 再投入対象はBlockの複製ではなく占有mask
+
+設計候補（未実機）は、現在grid+60の各byteをDLL側へ値として保存し、同じ幅高さで4E9470を呼び、保存したblockedセルと追加閉塞の合成maskについて4E9A20を呼び、最後に4EA2E0を1回呼ぶ、という系列。現在のmaskを基準とすれば、field collだけを再走査してobject/gate等を取りこぼす再構成を避けられる。粗gridは同helperで対応する2×2区画を立て直せる。これは観測済み演算を組み合わせた候補で、完了済の実装/安全契約ではない。
+
+この系列で既存Blockを4DF200で複製する理由はない。Block/空間登録を変える操作とは分ける。追加閉塞の解除も「元から塞がれたセルを開ける」ことにならないよう基底maskとの合成を保つ必要がある。基底maskが動的gate等により後から変わる場合の追従は未確認なので、最初のsnapshotを永続的な全時点の正解とみなさない。cell attr変更から通行maskを推定しない。
+
+### 28.3 経路利用者と残る危険点
+
+新4EAFD0の成功経路は、region node列を一時的に辿った後、4EBA11/4EBCCDでgrid+34の座標contextを使い、grid座標×32+16を4C1770へ渡す。戻った2DWORDを8byte要素vectorへ値コピーする。非空結果vectorの構築とregion pointer作業列を混同しない。4EC1E0はこの結果をcacheへ保持し、解決済み直接callerは5767F7と576AACの2件である。
+
+この2つのUnit callerは既確認57A690→57A910→4EDFE0で、返却vectorの2DWORDを独立0x10 list nodeへコピーする（§16）。従って、この確認済経路のUnit list payloadはregion node pointerを借用しているものではない。しかしgrid初期化後も**古い座標列は残る**ので、メモリ参照が生きていることと新しい通行条件で正しいことは別。移動中ユニットの再経路化、他の直接/間接利用者、未採取のpointer保持まで安全と一般化しない。
+
+残る実装阻害点: 原作query途中に初期化を挟まない停止点とスレッド/再入条件、native allocation失敗時の途中破壊からの回復、全経路利用者と古い座標列の扱い、動的障害物基底の追従、Blockの物理衝突との整合。旧+68を解放前にゼロ化しない・4EA2E0単独再実行でリークを許容しないという§16の制約は継続する。これら未解決のまま戦闘中再構築を製品化しない。
+
+| TEMP解析出力 | SHA256 |
+|---|---|
+| m6_rebuild_out.txt | a0a55865456c8c8a70622d35a6582cab927ecde2ed58a20aab71bffa7e0934ab |
+| m6_path_owners_out.txt | bede39dc41a82850c5ac2dc4b196759c4437616abba699d4826d3a4e3f18dd1d |
+| m6_build_contract_asm.txt | 28fdd6b79b77a82d5687753bb5fc23c4d9fb87732204d53b06d3c0e36ed8b6dd |
+
+前2件は既知project/EXEでreadOnly/noanalysis exit0。最後は同SHA一致OGG EXEのPE静的読取とCapstone。元ゲーム資産・個人ログは収録しない。

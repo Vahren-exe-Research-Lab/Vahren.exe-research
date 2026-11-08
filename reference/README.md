@@ -224,9 +224,10 @@
 | 0x4E9980 | [Grid_DestroyRegionNode](symbols/004E9980.md) | func | Destroys region node adjacency tree at +0x2C and vector at +0x18, then deletes node. Descriptive name; does not establish safe in-battle cleanup. |
 | 0x4E9A20 | [Grid_MarkBlocked](symbols/004E9A20.md) | func | __fastcall ECX=x, EDX=grid, EAX=y。+0x60 と粗グリッド+0x7C に1を書く |
 | 0x4E9A60 | [Grid_BuildRegions](symbols/004E9A60.md) | func | 通れるマスを長方形領域に分割し経路グラフを作る |
-| 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない。旧cache誤hit・リーク回避・旧path寿命を別途解決する必要があり、単独再実行の安全性は未証明（REF_MAP_TERRAIN.md §16） |
+| 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。stack grid 1個、正常出口4EA962 RET4（callee cleanup）。旧cdecl相当表記は撤回（REF_MAP_TERRAIN.md §28）。呼出2か所は分岐の別経路。前の領域ノードは解放しない。旧cache誤hit・リーク回避・旧path寿命を別途解決する必要があり、単独再実行の安全性は未証明（REF_MAP_TERRAIN.md §16） |
 | 0x4EAA70 | [Grid_TestStraightWalk](symbols/004EAA70.md) | func | 2点間を8方向に進み通行不可マスに当たるか調べる |
 | 0x4EAC30 | [Grid_AdjustPathEndpoint](symbols/004EAC30.md) | func | Clamps grid coordinate and searches for a nonzero region node; returns sentinel pair if no candidate. Allocates temporary containers, not a pure transform. |
+| 0x4EAFD0 | [Grid_BuildCoordinatePath](symbols/004EAFD0.md) | func | Builds an 8-byte coordinate vector from region traversal via4C1770; temporary region-pointer list is distinct. Returned vector is cached by4EC1E0. |
 | 0x4EC1E0 | [RouteCache_ConditionalHitPromotion](symbols/004EC1E0.md) | func | Native hit recency relink only above 8000 records, eviction branch on count>=8192; key ownership and runtime outcomes VERIFY |
 | 0x4ED030 | [Tree_ClearAllNodes](symbols/004ED030.md) | func | 全区間tree消去の下位処理。0x49F6A0のsubtree解放とsentinel自己リンク復元、count=0を含む。 |
 | 0x4EE0C0 | [Input_ConstructNewGameMouse](symbols/004EE0C0.md) | func | NewGameMouse の生成時に呼ばれる初期化関数。生成した実体は Player の入力参照へ配置される。 |
@@ -596,12 +597,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 555 件、フィールド 171 件、根拠付き関係 165 件。
+辞書項目 556 件、フィールド 171 件、根拠付き関係 165 件。
 
 回収済み文書のVA言及・取得記録 76047 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 23 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 24 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
 [回収済み研究文書の題名・本文](DOCUMENTS.md) — 2404 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

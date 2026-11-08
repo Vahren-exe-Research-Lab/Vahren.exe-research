@@ -124,4 +124,9 @@
   - → 現在の解釈　Non-rif true roots are marked in the executed set and skipped later; list-node deletion is not established. Body-side list replacement can invalidate the current iteration node.
   - 確度　STATIC; bounded runtime observation is not full causality proof。対象　ver0.67。[訂正の根拠](../REF_SCRIPT_VM_CONTEXT.md?plain=1#L16-L16)
 
+- [Grid_RebuildNavigation](symbols/004EA2E0.md) · `CORRECTION-MAP-4EA2E0-CLEANUP` · `corrected`。Caller push alone did not prove caller cleanup. Correct the symbols.tsv ABI label.
+  - 訂正済みの旧解釈（履歴）　cdecl-like single stack grid argument
+  - → 現在の解釈　Single stack grid argument with callee cleanup: normal epilogue4EA962 RET4.
+  - 確度　STATIC saved x86 epilogue。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L735-L735)
+
 [事典の入口](README.md)
