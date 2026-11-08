@@ -8,6 +8,6 @@
 ## g_GameManager + 0x90
 
 - [REF_MAP_TERRAIN.md 行 95](../../REF_MAP_TERRAIN.md?plain=1#L95-L95) — grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクトの+8）。
-  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

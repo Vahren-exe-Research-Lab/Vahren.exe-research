@@ -2344,7 +2344,7 @@
 | Unit + 0x1C8 | 35 | [1](fields/owner-Unit-4e545960f1bf-004.md#field-1c8) / [2](fields/owner-Unit-4e545960f1bf-005.md#field-1c8) |
 | Unit + 0x1CC | 2 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1cc) |
 | Unit + 0x1D0 | 23 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1d0) |
-| Unit + 0x1D4 | 20 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1d4) |
+| Unit + 0x1D4 | 21 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1d4) |
 | Unit + 0x1D8 | 3 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1d8) |
 | Unit + 0x1DC | 6 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1dc) |
 | Unit + 0x1E0 | 17 | [1](fields/owner-Unit-4e545960f1bf-005.md#field-1e0) |
@@ -2383,7 +2383,7 @@
 | Unit + 0x18638 | 4 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-18638) |
 | Unit + 0x1863C | 1 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-1863c) |
 | Unit + 0x18650 | 10 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-18650) |
-| Unit + 0x18654 | 32 | [1](fields/owner-Unit-4e545960f1bf-006.md#field-18654) / [2](fields/owner-Unit-4e545960f1bf-007.md#field-18654) |
+| Unit + 0x18654 | 32 | [1](fields/owner-Unit-4e545960f1bf-007.md#field-18654) |
 | Unit + 0x1867C | 88 | [1](fields/owner-Unit-4e545960f1bf-007.md#field-1867c) / [2](fields/owner-Unit-4e545960f1bf-008.md#field-1867c) |
 | Unit + 0x1867D | 14 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-1867d) |
 | Unit + 0x1867E | 16 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-1867e) |

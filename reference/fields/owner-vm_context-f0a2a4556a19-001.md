@@ -8,9 +8,9 @@
 ## vm_context + 0x504
 
 - [REF_MAP_TERRAIN.md 行 163](../../REF_MAP_TERRAIN.md?plain=1#L163-L163) — - ABIは `BattleUnit* __fastcall(const char* name, Evaluator* evaluator)`、ECX=終端付き名前、EDX=vm_context+0x504、戻り値EAX。stack引数なし（0x49E8A7 は `ret`）。既存辞書・REF_UNIT_EXP_SUM
-  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
 
 - [REF_MAP_TERRAIN.md 行 165](../../REF_MAP_TERRAIN.md?plain=1#L165-L165) — - 名前表は vm_context+0x504+0x1EEBEC。MSVC map の +4=head、+8=size、node+0/+4/+8=left/parent/right、+0xC=key string、+0x28=Unit*、+0x2D=nil。引数なしsetupの候補は、空表を拒否し、上限付きで検証した表
-  制約・訂正　MAP-T001 prior V1/V2; M1 live readback and M2 seag 5x5 change/restore confirmed by user visual report plus DLL logs; atlas metadata parsed to EOF; before-change attr baseline absent; battle reentry/seams/log OFF untested; assets and raw personal logs not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

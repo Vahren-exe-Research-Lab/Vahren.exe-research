@@ -246,3 +246,53 @@ M2実装担当と記録担当は試験コピーの `a_default/image/imagedata.da
 ### 11.2 残る確認と解釈の限界
 
 変更前のgetログが無いため、上表の変更中・復元後がともにsand/sandだったことを「変更前からattr/idが不変だった」とする実機証明には使わない。再戦時のsnapshot寿命、境界飾りの継ぎ目（V5）、ログOFF、異常時rollbackの実機挙動は未検証。任意の画像・範囲・別版の成功へ一般化しない。M3以降の受入れは含まない。
+
+
+### 11.3 再起動後の再現（03:36 JST）
+
+ユーザーの追加報告「問題なく終わりました」をログと照合した。PID 25008では03:36:08.027にsetup=0、45×45、battle=1、03:36:15.166にchip_rect=0（中心x=3,y=16、範囲(1,14)〜(5,18)、seag）、03:36:24.353に同範囲のrestore_rect=0を確認した。先のPID 25416とは異なる新規プロセスであり、**再起動後の再現成功**に限定する。同一プロセスで戦闘終了→再戦した場合の寿命確認ではない。
+
+### 11.4 同一プロセスで撤退→再戦（03:44〜03:47 JST）
+
+追加試験ではユーザーから「撤退後も維持されました」と報告があり、勢力の存続と再戦を確認した。試験DATはmasterをwallmemberへ明示配置したM2コミット`f47f25f`。それ以前の勢力滅亡の原因をこの変更だけで確定しない。記録担当が読み直したDLLログは次のとおり。
+
+| 時刻 | PID 28996 の結果（すべてresult=0、outputs_valid=1） |
+|---|---|
+| 03:44:46.918 | setup、45×45、battle=1、stage=012dd860、cells=19a16024 |
+| 03:44:55.116 | chip_rect、seag、(1,11)〜(5,15) |
+| 03:45:05.642 | restore_rect、同範囲 |
+| 03:47:32.191 | setup、45×45、battle=2、stage=012dd860、cells=1888c024 |
+| 03:47:42.003 | chip_rect、seag、(0,0)〜(3,3) |
+| 03:47:51.511 | restore_rect、同範囲 |
+
+同じプロセスでbattle世代1→2、stageアドレス再利用・cell配列変更後の変更と復元が成功した。2戦目は端でclipされた4×4=16セル。これを同プロセス再戦の受入れ確認とし、§11.2の再戦未検証は先行試験時点の記録とする。cell配列まで完全同一アドレスを再利用する条件、境界飾りの継ぎ目（V5）、ログOFF、異常時rollbackは依然未確認。毒床の実機成功も含まない。
+
+## 12. M4用 DAT 呼出契約の静的調査（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-DAT-20261109`。対象EXE SHA256は `e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187`。結論は静的確認に限定し、毒床・敵のみへの毒付与の実機成功を意味しない。
+
+### 12.1 doskill の第5引数 off は座標モード
+
+`Script_DispatchCommand`（0x4A1250）のcase 0x38、0x4A5740以降を確認した。x/yは0x49CCA0で数値引数として評価される。0x4A5774で第5引数を取得し、0x4A578Aの比較文字列VA 0x6319B8は`on`（対象EXEのPE sectionを直接読み確認）。0x4A579Cで0x4A6B30による文字列比較後、非一致は0x4A580Dへ分岐する。`on`または既定経路では0x4A57AE/0x4A57E1で画面幅・高さ（0x65BEEC/0x65BEF0）によるスケールとカメラ座標加算を行うが、`off`を含む非`on`経路は入力座標をそのまま使う。［STATIC］
+
+従って`off`を敵味方指定と解釈しない。専用発射者のグローバル0xAC08FC/0xAC0900の初期化経路はあるが、その所属・命中対象フィルタは未追跡。Unit+0x1D4の所属識別からred/blueとの対応まで推定しない。また、この版のマス→描画座標を単純なcell×32で求める根拠はない。§7のvf02はpixel→cellであり、逆変換は別途確認が必要。
+
+### 12.2 storeIndexVar は文字列配列の要素を文字列出力
+
+`Script_DispatchVarCommand`（0x4AE0F0）のcase 0x29、0x4B05F8〜0x4B07A6を確認した。入力は文字列配列、添字は0x4B0631から0x49CCA0で評価、出力先は第3引数。0x415530で文字列vectorを構成し、`Ai_InsertKeyedVectorRecord`へ渡す。文字列要素を数値変数へ自動変換して出力する契約ではない。既存HakushinExpの配列出力例とも整合する（[README](research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/HAKUSHIN_EXP_README.md)、countVar/storeIndexVarの説明）。［STATIC］
+
+0x49CCA0（既存Ghidra名`ScriptArg_EvalIntLiteralOrVar`、189 bytes）はinteger literalへのdynamic_cast成功時に+4の整数を返し、numeric variableの場合は`Variable_GetOrCreateNumeric`によるレコード+0x1Cを読む。不適合型は例外経路へ進む。この評価経路には文字列の数値変換がない。ただし、別の明示変換命令が全命令集合に存在しないことまでは確認していない。［STATIC］
+
+### 12.3 毒識別子 poi と耐性スキルの区別
+
+OGGテストの原作DATを読み取り、`a_default/script/30_スキル/F12_charge.dat:1642–1663`の`dsncharge`に`func=charge`、`add=poi`（1661行）、`add_per=50`（1662行）を確認した。毒付与の既存識別子はこの定義では`poi`であり、`poison`という綴りを未検証のまま代入しない。一方、`Status_10_部隊.dat:332–343`の`ps_poi`は`func=status`、`attr=poi`による耐性用定義であり、毒付与の動作例には使えない。原作定義の存在と、doskill経由で敵だけに毒を付けられることは別の主張である。最小毒床の実機試験・発射者所属・耐性による影響は未確認。素材本文は収録しない。［静的データ確認］
+
+### 12.4 根拠と再確認方法
+
+解析担当は`dev_lab/HakushinMapGimmick/tools/ghidra/run_query.py`から、project `dev_lab/_work/kb_ghidra_validation_20261030/Hakushin067_ResidualCodeRepair_20261022`、program `hakushin067_Vahren.exe`を`-noanalysis -readOnly`で照会し、3件ともexit 0。記録担当も該当出力を読み、上記分岐・型評価と照合した。出力はローカルTEMPの解析結果であり、正本収録物ではない。再確認は上記VAで行える。
+
+| ローカル解析出力 | SHA256 | 確認範囲 |
+|---|---|---|
+| `%TEMP%/m4_dat_query2_out.txt` | `f0def70da51d819c12b1b15a0d02ed851dd2a86b61f9df1dbd5db9778b3a1b29` | doskill 2293–2378行、storeIndexVar 4661–4732行 |
+| `%TEMP%/m4_dat_query3_out.txt` | `ed40f1ca2076bc2aba066c69b3b993f4432a4a4fc256e42d5103b19fc6fa1546` | 0x4A5740以降の110命令、0x4A6B30 |
+| `%TEMP%/m4_dat_query4_out.txt` | `d36b8871210d44527e1631853383fe7650f98afaae4b1cb08f7b2905a9070519` | 0x49CCA0 |
