@@ -13,7 +13,7 @@ byte 行表。1=通行不可
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L146)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,7 +26,7 @@ int 行表。0x80000008=なし
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L147)
 
 読み手・書き手の個別採録は未実施です。
@@ -39,7 +39,7 @@ pointer 行表
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L148)
 
 読み手・書き手の個別採録は未実施です。
@@ -52,7 +52,7 @@ pointer 行表
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L149)
 
 読み手・書き手の個別採録は未実施です。
@@ -65,7 +65,7 @@ pointer 行表
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L150)
 
 読み手・書き手の個別採録は未実施です。
@@ -78,7 +78,7 @@ pointer 行表
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 - [元の辞書行](../../structs.tsv#L151)
 
 読み手・書き手の個別採録は未実施です。

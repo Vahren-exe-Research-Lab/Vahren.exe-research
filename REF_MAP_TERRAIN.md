@@ -446,3 +446,37 @@ objectのcoll/wall/wall2によるBlockと、break/break2/gate(type 5/6)の専用
 従ってこの2経路では、返されたvectorの保存領域をそのままUnitが借用し続けるのではなく、8-byte要素をUnit側listへ値コピーする。**これを全AI経路の無参照保証へ一般化しない。** コピーされた要素の意味と下流の全consumer、node等のpointer値が要素に含まれないことの全体証明、cache破棄と同時進行する処理の排他は未確認。さらに値コピーが独立していても、既にUnitへ渡した旧経路を再計算しなければ新しい障害物へ向かい続ける問題が残る。
 
 次の最小確認は、Unit+0x186B0のconsumerと移動中の再経路探索条件を既存B/T028記録へ接続し、合法な停止点で旧経路を無効化できるかを確定すること。M6の実機はそれ以降とし、新規移動命令、移動途中、解除、同プロセス再戦、反復時のメモリ量を別々に観測する。
+
+
+## 17. M5 attr代入の文字列ABIと容量内経路
+
+研究ID: `CODEX-MAP-M5-STRING-ASSIGN-20261109`。M5設計準備のSTATICであり、attr変更/復元の実機成功ではない。原作0x402710はC文字列代入ではなく、**文字列オブジェクトから部分文字列を代入する関数**である。
+
+| 項目 | 確認した契約 |
+|---|---|
+| ABI | ECX=宛先object、stack=(source object pointer, position, count)、RET 0xC、EAX=宛先 |
+| metadata | object+0x10=length、+0x14=capacity。capacity<16はinline、>=16はobject先頭のpointerをdataとして読む |
+| コピー長 | min(source.length-position,count)。宛先lengthを更新して末尾NULを書き込む |
+| 範囲外position | 0x402721の比較後0x40272A→0x5B5BBA、std::out_of_range |
+| 過大長 | 0x40275C〜0x402766→0x5B5B6D、std::length_error |
+| 容量不足 | 0x40276B〜0x402777でcapacity<コピー長なら0x402A40へ進む |
+| 容量内縮小/空代入 | heap pointerとcapacityを保持し、空でもheapを解放しない |
+| 自己代入 | source==destは0x4028F0を使う別経路 |
+| 成否 | bool戻り値はなく、正常復帰後のmetadataとbytesの再読照合が必要 |
+
+0x402A40はoperator_newを使う容量拡張経路とbad_allocのthrow経路を持つ。成長時例外の全所有権・strong exception guaranteeは未確定であり、Zig/C側で原作MSVC C++例外を通常の失敗戻り値のように扱わない。［STATIC／未確定境界］
+
+M5初版の**提案**は、原作宛先のcapacity内だけを許し、sourceを別object、position=0、count=検証済lengthとして既知の範囲外・成長経路を避ける方式。従来DESIGNの「元のattrと同じ長さ以下」という案に対し、native分岐が比較するのは元lengthではなくcapacityである。ただし「capacity内なら全て安全」という一般保証ではなく、metadata・SSO/heapのdata領域・NUL・書込み可能範囲・stage寿命の検証は必要。自己代入経路は初版対象外とする提案。
+
+復元用にはDLL所有の元bytesとlengthを保存する。原作string構造体のheap pointerを複製して後から戻す方式は所有権を壊すため使わない。短縮後もcapacityは保持されるため、その容量内で元bytesを戻す経路を構成できる［設計上の帰結、実機未検証］。再確保を伴う復元・例外後復旧は未解決。複数セルの全件事前検証、途中失敗時のrollback、画像とattrの独立した元値保存は製品側の実装/合成テストで別途検証する。
+
+M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid・Blockの変更を同時成功とみなさない。既存hk_map_getの出力残値で意図せずattr変更しないよう明示指定が必要という製品設計案も、native契約とは区別する。
+
+根拠は§12.4と同じ対象EXE・readOnly Ghidra、照会2件exit 0。記録担当も出力とSHAを照合した。ローカル解析出力は非収録:
+
+- `%TEMP%/m5_string_out.txt`: SHA256 `1ea763a2b7785da1b3ad4325d200645d34c3c03cf522d0d4ecf5ca734e65507c`（0x402710 decompile＋ASM）。
+- `%TEMP%/m5_growth_out.txt`: SHA256 `5052f060f6211f2a937f8056b27707a04d88719ef3f59a7b59a508c7344827bf`（0x402A40とthrow helper）。
+
+### 17.1 M6へ越境しない座標上の注意
+
+既存`research/raw/q14_out.txt`の4EC1E0は座標を>>5してgrid照会へ進む一方、M1のFieldData取得は斜め表示対応のstage.vf02を使う。DATのcell x/yをそのまま通行gridのx/yへ書く対応は今回未証明である。M5のattr対象セルが正しく取れたことをM6の通行grid座標対応の証明に流用しない。これは既存経路間の接続上のVERIFY項目であり、新しい実機観測ではない。

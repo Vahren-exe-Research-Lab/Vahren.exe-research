@@ -1217,6 +1217,7 @@
 | object + 0x4 | 2 | [1](fields/owner-object-2958d416d08a-001.md#field-4) |
 | object + 0x8 | 1 | [1](fields/owner-object-2958d416d08a-001.md#field-8) |
 | object + 0xC | 3 | [1](fields/owner-object-2958d416d08a-001.md#field-c) |
+| object + 0x10 | 1 | [1](fields/owner-object-2958d416d08a-001.md#field-10) |
 | object + 0x1C | 2 | [1](fields/owner-object-2958d416d08a-001.md#field-1c) |
 | object + 0x1D | 6 | [1](fields/owner-object-2958d416d08a-001.md#field-1d) |
 | object + 0x20 | 1 | [1](fields/owner-object-2958d416d08a-001.md#field-20) |

@@ -21,8 +21,8 @@
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
 
 - [戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001）](../../REF_MAP_TERRAIN.md?plain=1#L1-L1) — `REF_MAP_TERRAIN.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
-  本文 SHA256 `5373318a2e6370ea514dc61b1fccbbfb3cde4339f08b8835b7dd36336748a6d2`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+  本文 SHA256 `d594d58f800ffa296f0cf67181f0140bf4b2a768530ccf016da917e78cdb16a0`
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
 
 - [Script grammar, command VM, context and timing — curated A/T005–T010](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L1-L1) — `REF_SCRIPT_VM_CONTEXT.md`

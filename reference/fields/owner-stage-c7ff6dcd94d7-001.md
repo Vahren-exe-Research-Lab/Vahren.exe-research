@@ -8,31 +8,31 @@
 ## stage + 0xA8
 
 - [REF_MAP_TERRAIN.md 行 64](../../REF_MAP_TERRAIN.md?plain=1#L64-L64) — - セル配列: `stage+0xA8`（FieldData×幅×高さ、各0x11C）、幅 `+0xAC`、高さ `+0xB0`。座標→セルは 0x4C1B70（ピクセル >>5、つまり **1マス32px**）、NewGameStage::vf02（vtable+8、斜め表示モード対応）。
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 <a id="field-dc"></a>
 ## stage + 0xDC
 
 - [REF_MAP_TERRAIN.md 行 157](../../REF_MAP_TERRAIN.md?plain=1#L157-L157) — - 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 <a id="field-e4"></a>
 ## stage + 0xE4
 
 - [REF_MAP_TERRAIN.md 行 157](../../REF_MAP_TERRAIN.md?plain=1#L157-L157) — - 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 <a id="field-e8"></a>
 ## stage + 0xE8
 
 - [REF_MAP_TERRAIN.md 行 404](../../REF_MAP_TERRAIN.md?plain=1#L404-L404) — `G=module+(0x8BE2F0-0x400000)`はGameManagerの実体（symbolsのkind=object）で、`[G]`はそのvtable。製品保存ASM `research/raw/dis_4f0be0.txt` の0x4F0D8Bはstage+0xE8からGを取得、0x4F0D91はLEA
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 <a id="field-148"></a>
 ## stage + 0x148
 
 - [REF_MAP_TERRAIN.md 行 65](../../REF_MAP_TERRAIN.md?plain=1#L65-L65) — - field エントリ（type0）: FieldDef を引き、0x4562D0 でセルに設定（下記）。`FieldDef.type != 0` なら 0x4DF200 で Block を作り `stage+0x148` の vector に追加し、**通行グリッド +0x60 と粗グリッド +0x7C に 1**
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 <a id="field-298"></a>
 ## stage + 0x298

@@ -10,6 +10,7 @@
 
 | VA | 名前 | 種別 | 意味 |
 |---|---|---|---|
+| 0x402710 | [StdString_AssignSubstring](symbols/00402710.md) | func | ECX=dest; stack source-object,position,count; RET0xC; EAX=dest. length+0x10/capacity+0x14, SSO capacity<16. Capacity sufficient preserves pointer/capacity; growth and exceptions are separate. M5 runtime unverified. |
 | 0x402C40 | [UnitData_CompareRawStringKeys](symbols/00402C40.md) | func | UnitData のキー比較で呼び出す生バイトの文字列比較。共通先頭が一致しても長さが異なれば別キーとなる。 |
 | 0x406E20 | [Nop_406E20](symbols/00406E20.md) | func | 何もしない関数（TempStatusWnd の vtable +0x44） |
 | 0x40D0A0 | [BattleStatusWnd_Open](symbols/0040D0A0.md) | func | 戦況ウィンドウを開く処理 |
@@ -553,7 +554,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7928 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7929 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -576,9 +577,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 540 件、フィールド 155 件、根拠付き関係 165 件。
+辞書項目 541 件、フィールド 155 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75929 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75943 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 

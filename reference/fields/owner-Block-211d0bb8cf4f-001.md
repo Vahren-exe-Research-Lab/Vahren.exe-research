@@ -8,6 +8,6 @@
 ## Block + 0x10C
 
 - [REF_MAP_TERRAIN.md 行 189](../../REF_MAP_TERRAIN.md?plain=1#L189-L189) — - 6値の最後2個はfloatのサイズ値。Block側は0x4DF409〜0x4DF415で出力+0x10/+0x14をBlock+0x10C/+0x110へコピーし、0x4DF41D〜0x4DF43Fで `fld dword` と0.0比較を行う。Blockのcoll印が無い経路ではゼロサイズで生成を取りやめる。有限
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

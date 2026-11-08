@@ -31,6 +31,12 @@
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-10"></a>
+## object + 0x10
+
+- [REF_MAP_TERRAIN.md 行 458](../../REF_MAP_TERRAIN.md?plain=1#L458-L458) — \| metadata \| object+0x10=length、+0x14=capacity。capacity<16はinline、>=16はobject先頭のpointerをdataとして読む \|
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
+
 <a id="field-1c"></a>
 ## object + 0x1C
 

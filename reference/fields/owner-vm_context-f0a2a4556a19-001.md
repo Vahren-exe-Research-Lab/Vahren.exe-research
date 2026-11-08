@@ -8,9 +8,9 @@
 ## vm_context + 0x504
 
 - [REF_MAP_TERRAIN.md 行 163](../../REF_MAP_TERRAIN.md?plain=1#L163-L163) — - ABIは `BattleUnit* __fastcall(const char* name, Evaluator* evaluator)`、ECX=終端付き名前、EDX=vm_context+0x504、戻り値EAX。stack引数なし（0x49E8A7 は `ret`）。既存辞書・REF_UNIT_EXP_SUM
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 - [REF_MAP_TERRAIN.md 行 165](../../REF_MAP_TERRAIN.md?plain=1#L165-L165) — - 名前表は vm_context+0x504+0x1EEBEC。MSVC map の +4=head、+8=size、node+0/+4/+8=left/parent/right、+0xC=key string、+0x28=Unit*、+0x2D=nil。引数なしsetupの候補は、空表を拒否し、上限付きで検証した表
-  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs; M5 substring-assign ABI/capacity STATIC, growth exception ownership and M5 gameplay unverified
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
