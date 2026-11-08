@@ -580,12 +580,14 @@
 - [GameManager](structs/GameManager.md)
 - [GameTask](structs/GameTask.md)
 - [Grid](structs/Grid.md)
+- [Missile](structs/Missile.md)
 - [NewGameStage](structs/NewGameStage.md)
 - [Player](structs/Player.md)
 - [Power](structs/Power.md)
 - [RenderContext](structs/RenderContext.md)
 - [SaveUnitDataTreeNode](structs/SaveUnitDataTreeNode.md)
 - [ScriptEngine](structs/ScriptEngine.md)
+- [Skill](structs/Skill.md)
 - [Spot](structs/Spot.md)
 - [StatusWnd](structs/StatusWnd.md)
 - [SummonRecordCacheNode](structs/SummonRecordCacheNode.md)
@@ -594,9 +596,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 555 件、フィールド 166 件、根拠付き関係 165 件。
+辞書項目 555 件、フィールド 171 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 76044 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 76047 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 

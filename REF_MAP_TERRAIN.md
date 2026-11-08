@@ -673,3 +673,39 @@ sample179（06:11:27.002）はcasts6、clear_result0、ready2、outcome1、after
 根拠はTEMPの`hmg_m4_samples_31288.jsonl` sample55/146および`hmg_m4_samples_28188.jsonl` sample77/179のread-only逐次採取値（非原子的）、親担当の対応する目視報告。単一標本の全フィールドが完全同時であるとは扱わない。
 
 継承のSTATIC根拠をOGG試験コピーから読み取り再照合した（CP932、CR除去後のLF行番号）：`script/6000_スキルテスト/skilltest.dat:19`のunit_st:yaju、`10_ユニット/02_迫真空手道場.dat:12,47`のclass=c_yajuおよびc_yaju:a020、`20_クラス/01_03_マリナーズ_空手部_キモティカ.dat:336,344,346,356`のa020:base・通常skill列・skill2=1,self_a020・move150。親なしclass/unitではないため、fixtureで一部技能欄を空にしただけでは全継承の除去を実証しない。これらは原作素材を収録せず所在と短い識別子のみ記録した。
+
+## 26. M4: 床外誤着弾とaim・追尾対象の分離（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-TARGET-SEPARATION-20261109`。§25の毒観測をM4受入成功へ拡大しない。独立classの3体対照fixture（製品ea1fdd5、DLL648dbcf）で、床外の敵へ毒が付いたため不合格。以下はLIVEとSTATICの接続であり、live実行PC/弾pointerを採取した因果証明ではない。
+
+### 26.1 PID29148の反例
+
+read-only samplerのsample65（JST06:19:33.589）は3体ともpoi100。caster=(1486,763), dext5000、床内target=(1803,605), dext50、床外outside=(1433,737), dext50で、親なし専用class名も読み取った。sample126（06:20:35.202、casts1/hit_count1/result0、baseline_done1）は同位置の床外outsideのみpoi=-500、床内targetとcasterはpoi100。親のDLLログ照合では床内targetの座標が命令対象であった。位置を恣意的に変えて近傍対象選択を隠す受入にはしない。
+
+sample257（06:22:47.654）は戦闘stage不在/units空で、終端DAT値casts40/clear_casts40/clear_result0/ready2/outcome1/after_clear2/cycles6/result0/hit_count0を保持。床解除後に呼出数が増えないという限定観測と、誤対象への毒付与という失敗は分離する。親はworld帰還と約06:23の正常終了を確認した。元sampler/画像は収録しない。
+
+### 26.2 aim座標はAI対象pointerを置換しない
+
+新readOnly照会の57EB40はUnit+1E574を対象pointerとして保持する。aim座標が有効な場合も、0x57EF6B〜0x57EF78は既存対象pointerをstackへ、aim座標対pointerをECXへ渡して580280を呼ぶ（EDX=0）。従ってaimTroopの名前引数はその時点の座標を指定しても、追尾用Unitを同期設定する契約ではない。
+
+580280は0x580F41でMissile+B4へ受け取った対象pointerを保存する（source==targetの場合のowner置換は5811BA〜5811C3に別分岐）。homing文字列のparser59B224〜59B40CはSkill+1D8へ角度値を設定し、onは正の180度に相当する経路。Missile::vf01は54CE5D以降でこの値を読み、正値時54CE97でMissile+B4の対象矩形を取得し方向を更新する。aimの初期方向と追尾pointerが異なることを許す実装であり、今回の床外近傍敵への着弾と整合する。実機で1E574/B4の当該pointer自体を採取していないので、全因果をLIVE確定とはしない。
+
+### 26.3 原作の地点生成候補と残る制約
+
+movetype=dropはparser59C5EC（literal624EB4）→59C601でSkill+48=1。580280では580412/58044Cで地点側mode1となり、有効aimを5802D0に保持し、EDX=0の呼出では5805B0/5805B7/5805D8でその座標を採用する。ただし58094D〜5809B0には射程上限によるclampがある。
+
+**originとcenterを混同しない。** literal624A40='origin'は59AEF7でSkill+45、literal624A54='center'は59AF69でSkill+2B8へ入る。5809B4/5809BAでorigin=0かつ地点mode1なら採用座標から矩形を作り580A30へ渡す。origin!=0なら5809F7以降でcaster座標を起点にする。centerは上下の中心補正側であり、caster起点を選ぶflagではない。調査途中の「+45=centerなのでcenter=offが必要」という推測はparser照合で撤回した。
+
+このSTATIC範囲から、homing=off・movetype=drop・origin=offでaim地点に生成し、center=onを維持する候補を製品側へ提示した。height=0等を含むfixture全体の成立はこの時点では未実機。衝突は4E5860/4E6110の幾何判定であり、厳密なUnit-ID専用適用ではない。重なった他unit、床境界、range超過、死体/移動後の座標、毒耐性/確率、EXP帰属は別に検証する。homing=offだけの通常飛翔弾では途中の他unitへの衝突を排除できない。
+
+原作用例として実装担当がF10_missile.dat:1032のkusomusume_poi:sk_ms、1049 movetype=drop、1051 speed1000、1052 height100を報告した。これはDAT文法と用途の参考で、今回のheight0/aim指定の受入成功を代替しない。
+
+| TEMP解析出力 | SHA256 |
+|---|---|
+| m4_targeting_out.txt | 74847169bc35552615232fdadcd99ac887a1cc2f54894ff0283122f25a672e04 |
+| m4_homing_out.txt | 3556f9012f44710fd99c45df4369eb6fd61a21c8e3b2e78269578942c29fff49 |
+| m4_homing_asm.txt | 59dbc091451099d0f7fb0d16aab3d845da89f5557e9e0fd77e78eb8f6ce5df58 |
+| m4_drop_asm.txt | ab8ebdcc7b884139d7aabc54ed2d3706a267b235574583942586a64f3380d52c |
+| m4_center_asm.txt | b303713b7c975659fac1e520511866461f7b8d2427602f01937dfd9bcef1ddcc |
+
+前2件は既知project/EXEのreadOnly/noanalysis exit0、後3件は同SHA一致OGG EXEのPEセクション読取とCapstone局所逆アセンブル。原作実行・変更なし。失敗観測はTEMP `hmg_m4_samples_29148.jsonl` sample65/126/257と親の目視/ログ照合報告。

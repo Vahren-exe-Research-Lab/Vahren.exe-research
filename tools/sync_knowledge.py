@@ -5002,6 +5002,11 @@ FILES = FILES + (
     'reference/symbols/004EAC30.md',
 )
 
+FILES = FILES + (
+    'reference/structs/Missile.md',
+    'reference/structs/Skill.md',
+)
+
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.
