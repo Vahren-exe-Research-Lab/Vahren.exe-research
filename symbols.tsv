@@ -614,3 +614,4 @@
 0x4F5FA0	func	FieldDef_CopyConstruct	Copies inline FieldDef including attr string+0x50; map node attr at +0x78. Descriptive name; full ABI not established.	STATIC	REF_MAP_TERRAIN.md §19 (CODEX-MAP-M5-FIELD-TREE-20261109)
 0x4F5360	func	FieldDefMap_FindOrInsert	Traverses field definition tree via map+4 sentinel and string keys; insertion helper 4F57A0. Descriptive name.	STATIC	REF_MAP_TERRAIN.md §19 (CODEX-MAP-M5-FIELD-TREE-20261109)
 0x4F57A0	func	FieldDefMap_InsertRebalance	Updates map count+8, node links and colors; head+0/+4/+8 min/root/max. Descriptive name.	STATIC	REF_MAP_TERRAIN.md §19 (CODEX-MAP-M5-FIELD-TREE-20261109)
+0x4B6053	code	Script_SpeedTroopAssignSite	Writes evaluated numeric argument directly to each selected Unit+0xB0; not a percentage adjustment. Negative input does not establish permanent stop.	STATIC	REF_MAP_TERRAIN.md section 20 (CODEX-MAP-M4-FIXTURE-20261109)

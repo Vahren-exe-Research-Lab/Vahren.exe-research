@@ -542,3 +542,32 @@ M5はセル+0xD4のattrのみを対象とし、field id・FieldDef・通行grid�
 - `m5_field_out2.txt` SHA256 `f43aa5602a379e09f1a0a5897d18b1dc10b62b1c21b9601eb1ae909994dc4d30`: lines1–148 map挿入、150–199 FieldDefコピー、201以降node構築ASM。
 
 未確認: 動的attr代入/復元の成功、変更したattrに対する各ユニットの実速度、field表の全ライフサイクルと全callsite ABI。通行grid再構築・Block追加削除の成立は含めない。
+
+## 20. M4試験の停止指定・周期監視の再確認（2026-11-09）
+
+研究ID: `CODEX-MAP-M4-FIXTURE-20261109`。原作の静的契約、失敗試験の読取観測、修正案を分ける。M4毒付与成功の報告ではない。対象EXEは§19と同じSHA、Ghidra readOnly/noanalysis照会2件はexit0。記録担当が解析出力のSHAと以下ASMを独立照合した。
+
+### 20.1 STATIC: speedTroopとisInterval
+
+- speedTroop分岐の0x4B5FB9で数値引数を0x49CCA0へ渡し、0x4B6053で選択Unit+0xB0へ直接代入する。従って `speedTroop(...,-100)` を「速度を100%減らす」「確実な停止」と解釈する根拠は無い。§3の移動式には別途clampがあり、負値代入だけから停止を保証しない。これは試験設計上の誤認訂正であり、死亡原因の確定ではない。
+- isIntervalの0x451915〜0x45195Dは引数から周期を算出し、0x45194BでE+0x1EED64を読んで0x451954で剰余判定する。**当該分岐には時計を消費・リセットする書込みが無い。** 同じ時計値・同じ有効引数なら複数回判定は同結果となるが、別rootの評価時点まで同じ時計値であることや、監視rootが必ず同じ周期で観測できることまでは保証しない。「別rootの判定に消費された」という説明は採らない。異なるroot間の時点ずれが今回の原因かは未確認。
+- sleep/active分岐の0x4B5CBAはコマンド比較由来boolをTroop+0x70へ書く。stop/free群0x4B5B30〜0x4B5B84にはaction queue/移動先のクリアがある。これだけで永久AI停止、攻撃禁止、衝突無効を保証しない。
+
+根拠（TEMP出力、生ファイル未収録）:
+- `m4_stop_out.txt` SHA256 `9e97b3abe5247d7ed38a3cb4d769d4d5bf8cc3ecd77c0327c2263fdfdac97c04`: lines16/59数値取得・Unit+0xB0代入、lines152以降stop/free群。
+- `m4_stop2_out.txt` SHA256 `4b8b102982cb0c7f4ba338133c337393866f68d5dedf328c95a355fb0f32899c`: line4 Troop+0x70、lines20–43 isInterval読取/剰余。
+
+### 20.2 OBSERVED: PID26184の不成立試験
+
+親担当の読み取り専用逐次sampler `hmg_m4_samples_26184.jsonl` を記録担当と独立レビュー担当が照合した。個人ログ原文は収録しない。atomic=falseの逐次読取で、死亡瞬間を捉えたものではない。
+
+- sample84/85はstage条件を満たさずok=false。最初のok=trueはsample86、2026-11-09 05:28:32.948 JST。
+- sample86ではhk_map_battle=0、hk_map_resultおよびcastsは未取得(null)。既にtargetはgone=1、hp=0、poi=100、heroはgone=0、hp=1068360、座標(1803,605)だった。poi=100を毒付与成功とは扱わない。
+- sample87（05:28:33.958 JST）でbattle=1、result=0、casts=0、hit_count=0を観測したが、targetのgone=1/hp=0は継続。最初のokとsetup成功を同時の出来事として記録しない。
+- これは敵への毒付与、味方除外、解除後の発射停止を受け入れる試験にはなっていない。敵死亡の瞬間・原因、hero移動の全経路、root時点ずれの因果は未確定。
+
+### 20.3 修正fixtureと既存毒計算の適用境界
+
+製品担当は自動試験専用の2dummyへ変更する案をf14f727で用意した。この時点では修正fixtureの実機成功は未確認。原作DAT既存用例の参照は、defense.dat lines38/51/108/124のskillとmove=0、02_迫真空手道場 line28のskill2、event_23_RPG line16619のlearn、B_11_閉店の日 line23のleader_skill、B_2222_レイノアレフ line221のdead_event。ここでは担当者による用例確認の報告として記録し、各指定が組み合わされた新dummyの動作保証とはしない。素材・DAT本文は収録しない。
+
+既存T012_BATTLE_CALC §38/§70–72、T012_DAMAGE_CORE_DUMP lines452–496、T028_MORALE_STATUS_PROBE lines20–45の再適用として、add_per=100は共通chanceだけで、後続の抵抗gateと状態強度判定を迂回しない。strattack=0を状態強度0と同一視せず、doskill dummyの実際の能力値・衝突・対象耐性を別確認する。これは新しいバイナリ発見には数えない。毒確率や敵のみ命中の実機成立は引き続き未確認。

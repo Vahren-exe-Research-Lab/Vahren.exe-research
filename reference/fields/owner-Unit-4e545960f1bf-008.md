@@ -7,6 +7,12 @@
 <a id="field-1867c"></a>
 ## Unit + 0x1867C
 
+- [research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md 行 7](../../research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md?plain=1#L7-L7) — - **New crosswalk:** after rank 0x448E90 returns, its caller traverses a Unit* vector. Scheduler A (`0x449792`) skips nonzero Unit+0x1867C; manager mode zero ad
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md 行 8](../../research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md?plain=1#L8-L8) — - Scheduler B (`0x449959`) separately skips nonzero Unit+0x1867C and then calls 0x402670 followed by 0x577A20 with ECX=Unit, EDX=8. The **local** B fragment lac
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 - [research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md 行 14](../../research/recovered/e_reports/T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md?plain=1#L14-L14) — - New legal comparison fixtures: manager mode=0/nonzero x Unit+0x1867C zero/nonzero x first/second index match/fail x legally available vector order; observe ra
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -275,7 +281,7 @@
 ## Unit + 0x1868C
 
 - [REF_MAP_TERRAIN.md 行 118](../../REF_MAP_TERRAIN.md?plain=1#L118-L118) — - v≥8 で `Unit+0x1868C` を加算、v≤3 で0に戻す（地形による何らかの継続カウンタ。用途は未確認）。
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 
 - [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 4](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L4-L4) — [FACT-PRE] 保存命令0x57E74DではUnit+0x18688へ8方向インデックスをstore、0x57E753/0x57E759ではSkill+0x278 costをUnit+0x94 MPからsub、0x57E75FではUnit+0x1868C=0。これらは今回の0x57E788幻覚条件より前。
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -308,13 +314,13 @@
 ## Unit + 0x186B0
 
 - [REF_MAP_TERRAIN.md 行 439](../../REF_MAP_TERRAIN.md?plain=1#L439-L439) — \| m6_path_values_out.txt \| `a665a00a6dc58f3fa0dfb002138be21b468042d1f8f548e241e4988d1f865c7a` \| 57A910、両callerのUnit+0x186B0宛先 \|
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 
 - [REF_MAP_TERRAIN.md 行 444](../../REF_MAP_TERRAIN.md?plain=1#L444-L444) — 0x4EC1E0の既知直接callerは0x5767B0と0x5769B0。前者0x5767FC〜0x57680E、後者0x576AB1〜0x576AC3は返されたvectorのbegin/endを取り、ESI=`Unit+0x186B0`として0x57A690へ渡す。0x57A690は旧list nodeをdelet
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 
 - [REF_MAP_TERRAIN.md 行 448](../../REF_MAP_TERRAIN.md?plain=1#L448-L448) — 次の最小確認は、Unit+0x186B0のconsumerと移動中の再経路探索条件を既存B/T028記録へ接続し、合法な停止点で旧経路を無効化できるかを確定すること。M6の実機はそれ以降とし、新規移動命令、移動途中、解除、同プロセス再戦、反復時のメモリ量を別々に観測する。
-  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 
 - [research/recovered/ac_tests6/reports/T020_T028_HASH_ORDER_DUPLICATE_CONDITIONAL_GATE_20261027_03H.md 行 16](../../research/recovered/ac_tests6/reports/T020_T028_HASH_ORDER_DUPLICATE_CONDITIONAL_GATE_20261027_03H.md?plain=1#L16-L16) — Strict capture requirement for future: actual original insertion key, lookup outcome, returned inserted flag, hash and order counts PRE/POST, evicted head ident
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
@@ -324,11 +330,5 @@
 
 - [research/recovered/b_batch11/data/T028_CACHE_DUPLICATE_INSERT_ROLLBACK_NATIVE_20261027_03H.md 行 25](../../research/recovered/b_batch11/data/T028_CACHE_DUPLICATE_INSERT_ROLLBACK_NATIVE_20261027_03H.md?plain=1#L25-L25) — - NEXT: 0x4FC710別caller 0x4FACA0におけるduplicate out flag用途と0x4EC4CC順序key追加の条件、0x4EC4BDで生成されたpath payload holderの未採用時の解放、実際のUnit+0x186B0の経路消費を限定照合。安全拒否領域は対象外。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 7](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L7-L7) — [NEW PARAM/SIDE EFFECT] 0x576661 CMP BYTE [ESP+8],0：入口PUSH ECX後の引数byte。非zero=本callのPUSH1なら0x576673でUnit+0x186B0 list headを空にし、0x57667Eで別件数 Unit+0x186B4=0、旧nodeを
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 13](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L13-L13) — [KB_CANDIDATE] 新ID B-20261031-22H-T013-ALT-LIST-DRAIN-RESET-ORDER-01 / owner B/T013 / VA 0x57DEBB/0x57DECB/0x57DED8/0x576660/0x543DE0、CALL0x576693/0x5766BB→0x5B
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

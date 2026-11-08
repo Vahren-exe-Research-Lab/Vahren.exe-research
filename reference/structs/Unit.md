@@ -5,6 +5,19 @@
 対象は迫真戦記 ver0.67。各フィールドの型・確度・出典は元の辞書から保持しています。
 
 
+<a id="field-b0"></a>
+## 0xB0 speedTroopValue
+
+Direct numeric assignment at 4B6053; consumed by movement formula. Negative values do not alone guarantee stop.
+
+- 型　`i32`
+- 辞書の確度　STATIC
+- 辞書の出典表記　REF_MAP_TERRAIN.md section 20 (CODEX-MAP-M4-FIXTURE-20261109)
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+- [元の辞書行](../../structs.tsv#L168)
+
+読み手・書き手の個別採録は未実施です。
+
 <a id="field-1e4"></a>
 ## 0x1E4 stage
 
@@ -13,7 +26,7 @@ NewGameStage*（vf25 が使用）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 - [元の辞書行](../../structs.tsv#L158)
 
 読み手・書き手の個別採録は未実施です。

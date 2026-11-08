@@ -121,6 +121,15 @@
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 225](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L225-L225) — \| `B-20261023-1708-T013-TROOP-RTTI-RATIO-GATE-01` **CURATION_READY_STATIC / UNMERGED (native-validated, pending Git manifest gate)** \| Original PE RTTI locator
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
+<a id="field-70"></a>
+## Troop + 0x70
+
+- [REF_MAP_TERRAIN.md 行 554](../../REF_MAP_TERRAIN.md?plain=1#L554-L554) — - sleep/active分岐の0x4B5CBAはコマンド比較由来boolをTroop+0x70へ書く。stop/free群0x4B5B30〜0x4B5B84にはaction queue/移動先のクリアがある。これだけで永久AI停止、攻撃禁止、衝突無効を保証しない。
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+
+- [REF_MAP_TERRAIN.md 行 558](../../REF_MAP_TERRAIN.md?plain=1#L558-L558) — - `m4_stop2_out.txt` SHA256 `4b8b102982cb0c7f4ba338133c337393866f68d5dedf328c95a355fb0f32899c`: line4 Troop+0x70、lines20–43 isInterval読取/剰余。
+  制約・訂正　M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
+
 <a id="field-1d0"></a>
 ## Troop + 0x1D0
 

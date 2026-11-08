@@ -26,7 +26,7 @@ G is direct object address, not [G]. Grid pointer is read from G+0x90, embedded 
 - 型　`ptr`
 - 辞書の確度　STATIC
 - 辞書の出典表記　REF_MAP_TERRAIN.md §16 (CODEX-MAP-M6-GRID-OWNERSHIP-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M3 fixed-camera animation restore and same-process two-battle reentry observed; three images visually distinguished; accepted DAT ctx equals direct GameManager G; ordinary invasion/pause/load and identical stage+array reuse unverified; assets/raw logs excluded; M5 STATIC field tree inline-value layout and vf25 missing-key default 5; runtime attr writes unverified; M4 STATIC direct speed assignment/non-consuming interval plus failed fixture observation; death cause and poison success unverified
 - [元の辞書行](../../structs.tsv#L160)
 
 読み手・書き手の個別採録は未実施です。

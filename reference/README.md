@@ -165,6 +165,7 @@
 | 0x4B044F | [Random_DispatchShuffle](symbols/004B044F.md) | code | shuffle（opcode40）で文字列ベクトルの存在を確認し、0x479740 から並び替えを実行する位置。 |
 | 0x4B4645 | [Battle_SkillTroopRegistrationSite](symbols/004B4645.md) | code | 部隊/battle builtin登録表ではskillTroopをdecimal opcode14へ結ぶ登録位置。処理handler位置0x4B608Fとは別。原表の対応を採録し、完全関数境界・引数ABI・効果を確定しない。 |
 | 0x4B47FC | [Event_ResetBattleClock](symbols/004B47FC.md) | code | resetTime 命令の処理位置。engine+0x1EED60 だけを0にし、interval時計+0x1EED64は変更しない。 |
+| 0x4B6053 | [Script_SpeedTroopAssignSite](symbols/004B6053.md) | code | Writes evaluated numeric argument directly to each selected Unit+0xB0; not a percentage adjustment. Negative input does not establish permanent stop. |
 | 0x4B608F | [Battle_SkillTroopHandlerSite](symbols/004B608F.md) | code | 部隊命令表のhex0E(decimal14) skillTroopに対応するhandler位置。登録位置0x4B4645と区別し、main命令の同じ番号と混同しない。関数入口・引数ABI・副作用は未確認。 |
 | 0x4B9930 | [Scene_DispatchGameMode](symbols/004B9930.md) | func | GameManager が場面番号 +0x1EF144 の0〜7に応じて処理を分岐する経路。World 側は 0x48C880 へつながる。 |
 | 0x4B9AA0 | [Input_HandleEscapeExit](symbols/004B9AA0.md) | func | GameManager vtable(0x638DF0)+0x0C。メインループが毎コマ更新前に呼ぶ。[G+0x98]->vf+4（0x4EE170 入力poll）の後、Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む |
@@ -559,7 +560,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7944 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7949 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -585,9 +586,9 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 546 件、フィールド 162 件、根拠付き関係 165 件。
+辞書項目 547 件、フィールド 163 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75977 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75988 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
