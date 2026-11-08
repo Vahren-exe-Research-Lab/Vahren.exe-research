@@ -7,6 +7,12 @@
 <a id="field-2fc"></a>
 ## owner + 0x2FC
 
+- [research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md 行 15](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L15-L15) — - 10/28 12H既知 0x463590 はowner+0x2FCの0x49F410→0x4BF820 erase、owner+0x330/0x32Cを使う0x460F10経路を持つ。0x4635E9 TEST EBXが非0なら0x4635EE CALL0x4591F0（内部資源destructor様）、続けて0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 9](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L9-L9) — 0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIF
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 19](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L19-L19) — 次は0x497BB0のECX=0の上流producer（0x494618/0x49516Aほか）、owner+0x2FCと+0x32Cのフィールド型、0x4591F0後の外部参照・第2RB set本当のconsumer、T028士気敗走/T013最終target/T024戦闘AI/T011召喚親子を優先。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 

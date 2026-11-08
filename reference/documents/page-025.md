@@ -21,8 +21,13 @@
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
 
 - [戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001）](../../REF_MAP_TERRAIN.md?plain=1#L1-L1) — `REF_MAP_TERRAIN.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
-  本文 SHA256 `32dae6248cc68d1a042cdd52166fc91327e243188c862f5b7685b1ba21155897`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  本文 SHA256 `93f4ae612c134b1ffe6f51513d2e8212e2427e4487c1f9ef2b33bba687915485`
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
+
+- [Script grammar, command VM, context and timing — curated A/T005–T010](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L1-L1) — `REF_SCRIPT_VM_CONTEXT.md`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2451-L2451)。制約・訂正 Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+  本文 SHA256 `76c74302407e6e1b28b22d4c4bebcc9b0e02a0718a26ced5b8d159a83c67d227`
+  元パス <code>REF_SCRIPT_VM_CONTEXT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2451-L2451)。
 
 [前のページ](page-024.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-13c"></a>
+## Skill + 0x13C
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 94](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L94-L94) — - ローダ0x599BD0@0x59A79Bは文字列add(0x6248EC)を指定し、0x59A7C8でcompiled Skill+0x13Cへ設定。0x59E81Cはadd2(0x625508)、0x59E897は候補vector+0x158を指定する。除外対象のappend helper本体は読んでいない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 62](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L62-L62) — - **最新A:** `EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md` — 召喚キャッシュは文字列キーで比較。Skill+0x13Cは固定文字列、+0x14Cはその長さ、+0x158は候補一覧。ノードは0x200byte、UnitData埋込は0x1D4byte。0x57726
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 <a id="field-14c"></a>
 ## Skill + 0x14C
 
@@ -351,11 +360,5 @@
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md 行 13](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md?plain=1#L13-L13) — - 0x55116E context+0xE & Skill+0x248>0なら0x576F10補助call→0x55119B Unit+0x8D suppress早期ret。補助callは早期retより先に到達し得る。callee副作用は不明。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; historical ZIP SHA later changed as recorded in STATUS_DEXT; no archive opened
-
-- [research/recovered/json_wiki1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.json 行 191](../../research/recovered/json_wiki1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.json?plain=1#L191-L191) — "compiled_precondition": "Skill+0x248<=0; matching Unit/Skill/context D1E1",
-  制約・訂正　3 proposed tasks with selected source/runtime boundary evidence; instructions inert; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
-
-- [research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md 行 15](../../research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md?plain=1#L15-L15) — - Work現行resume_selected_support_core_flashはコンパイル済みSkill+0x248<=0で0x551CF2へ進み、Skill+0x6F0読取・4DFBB0は未呼出。今回の局所試験は原DAT実効flash=-4を手動Skill+248へ束縛して3/3PASS、対象Unitは変更せず
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

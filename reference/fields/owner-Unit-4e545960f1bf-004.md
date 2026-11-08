@@ -7,6 +7,9 @@
 <a id="field-168"></a>
 ## Unit + 0x168
 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 672](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L672-L672) — 1. `summon_max` → Unit+0x168 += 値（0x57436C..0x574399）
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
@@ -344,9 +347,6 @@
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 18](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L18-L18) — - [VERIFY] 戦闘Unit+0x1C8が、召喚獣・変身後Unitで常に戦略ユニットの同一永続個体を指すか、save writerが同一インスタンスを直にserializeするかは未確定。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 40](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L40-L40) — - `0x578DA7..DBB`: 被害対象の `[Unit+0x1C8]+0x16C` を q 分減らす（不足なら0）。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

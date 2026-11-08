@@ -4,11 +4,23 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1fa"></a>
+## Unit + 0x1FA
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 543](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L543-L543) — [STRICT / GOLDEN NOT RUN] opcode10 active/sleepのinner+0x70とopcode11 ctrl/unctrlのUnit+0x1FA＋条件付きPlayer selection clearを分離。RTS直下waveにctrl/unctrlの直接callが有る証拠は既存検索0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 570](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L570-L570) — [CRITICAL IMPLEMENTATION] 別のscript-freeTroop命令familyの+0x48/+0x4C/+0x50 writerと、一般通常GUI「停止」操作、SpaceのGameTask pause、RTS active/sleep +0x70、ctrl/unctrl Unit+0x1FA、
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-214"></a>
 ## Unit + 0x214
 
+- [REF_MAP_TERRAIN.md 行 113](../../REF_MAP_TERRAIN.md?plain=1#L113-L113) — - Unit::vf25（0x576DC0）: `Unit+0x1F0` と `UnitDef(+0x1C8)+0x14C` が有効なら、`Unit+0x1E4`（stage）の vf02 で現在座標（`Unit+0x214/+0x218`）のセルを取り、セル `+0xD4`（attr）でユニットの movetype
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
 - [REF_MAP_TERRAIN.md 行 155](../../REF_MAP_TERRAIN.md?plain=1#L155-L155) — - 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 - [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L7-L7) — 【NEW 3 / FIRST LIVE】0x56954F～0x56957Dで登録順にUnit参照をたどり、Unit+0x1867C==0の最初の候補に限って、0x56957D→0x569730 E8直接CALLで配置処理を呼ぶ。呼出位置はUnit+0x214/+0x218を整数2つとしてPUSH、Troop+0x28の
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
@@ -26,7 +38,7 @@
 ## Unit + 0x218
 
 - [REF_MAP_TERRAIN.md 行 155](../../REF_MAP_TERRAIN.md?plain=1#L155-L155) — - 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 <a id="field-21c"></a>
 ## Unit + 0x21C
@@ -381,14 +393,5 @@
 
 - [research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md 行 6](../../research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md?plain=1#L6-L6) — [NEW NATIVE TWO CALL SITES] V9 verified E8 0x577AA7→0x57A7D0 (e8242d0000)、0x577D47→0x57A7D0 (e8842a0000)、ともに同caller function 0x577A20。kind8側0x577D37 MOV EAX,[Un
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; -4..+3 relies on normal truncation conditions, actual FP state/distribution unverified; record+0x28 is distinct
-
-- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 10](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L10-L10) — [PROCESS GATE] 0x579EEB MOV EBP,[ESP+0x188]、0x579EF8 EBX=2、0x579F04 CMP DWORD[EBP+4],2、0x579F07 unsigned JB 0x57A1CA。少なくともこの入口では件数相当の+4が0/1なら後続の複数要素処理・0x579F13
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 16](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L16-L16) — [KB_CANDIDATE] owner=B/T013、研究ID=本見出し、VA=0x577A20/0x577D82/0x577DCB/0x577ADE/0x577B27/0x5A3DF0/0x5A3E55/0x5A3E78/0x579EB0/0x579F04、offset=Unit+0x18650/+0x18654、
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-- [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 14](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L14-L14) — [KB_CANDIDATE] ID=B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01; owner=B/T013; VA=0x574D70/0x574E30/0x56F880/0x577600/0x577A20/0x57DD10; CALL=0x4AB946/0x4
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

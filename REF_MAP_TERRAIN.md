@@ -13,7 +13,7 @@
    - **object の `type = coll / wall / wall2`** … Block を作る。`type` 無指定（木など）と `floor` は**当たり判定なし**（見た目だけ）。
    - **object の `type = break / break2 / gate`** … 壊せる壁・門。通常の Block ではなく専用の生成経路（0x4F3290 経由）で作られる。
 3. **移動の速さ・可否は movetype × 地形の attr**。ユニットの仮想関数 **Unit::vf25（0x576DC0）** が、いる座標のセルの `attr` 文字列でユニットの movetype 表を引き、`consti` の値を返す（無ければ既定 **5**）。`ship` の `grass*0` のように **0 のとき「その移動タイプでは進めない」** になる。［vf25 と消費側 0x57902C は静的確認。2026-11-09 V2 の既存結果により0で移動不可を確認、§3参照］
-4. セル（`FieldData`、0x11C バイト）は描画オブジェクトで、テクスチャ座標（チップ画像の位置）を **+0x6C〜+0x80** に持つ。毎フレーム、表示範囲のセルを列挙（NewGameStage::vf03）→ 各セルの FieldData::vf07 が +0x6C の値から頂点を作る。よって **この6値を書き換えれば次の描画からチップの見た目が変わる**（アニメーション・途中変更の土台）。［**実機確認 2026-11-09**: 戦闘中に x32dbg で 7×7 マスの +0x6C〜+0x80 を別セルの値に書き換えると、草原が水の絵に即座に変わった。attr・通行判定は変えず見た目だけ変わる］
+4. セル（`FieldData`、0x11C バイト）は描画オブジェクトで、テクスチャ座標（チップ画像の位置）を **+0x6C〜+0x80** に持つ。FieldData::vf07はセル値から頂点を作るが、**毎描画必ず呼ばれるとは限らない**。mode 1には描画コンテキストの地形頂点キャッシュ経路があり、画像変更の表示反映は再構築条件に依存する（§15）。この6値はアニメーション・途中変更の土台だが、書換えだけで次描画へ無条件に反映するとは一般化しない。［**実機確認 2026-11-09**: 戦闘中に x32dbg で 7×7 マスの +0x6C〜+0x80 を別セルの値に書き換えると、草原が水の絵に即座に変わった。attr・通行判定は変えず見た目だけ変わる］
 5. 原作の DAT 命令にはマップチップを戦闘中に変える命令は**無い**（`changeMap` は世界画面の Spot が使うマップ名の変更）。途中変更・アニメーション・ダメージ床は DLL 拡張で作る。
 
 ## 1. 定義パーサー 0x4EEA00
@@ -81,7 +81,7 @@ parent（`field a : b`）の継承は Prop 表の親探索（0x465060 等）で�
 | +0x114 | smooth 区分（0/1/2） | 0x4F181B |
 | +0x118 | step（byte） | 0x4562D0 |
 
-FieldData::vf07（0x456380）は +0x6C〜+0x78 をUV、+0x8C〜+0xA8 を位置として6頂点（2三角形）を書く。NewGameStage::vf03（0x4FBF40）は表示矩形内のセルを列挙する（0x4C1BE0）。［静的確認］
+FieldData::vf07（0x456380）は +0x6C〜+0x78 をUV、+0x8C〜+0xA8 を位置として6頂点（2三角形）を書く。NewGameStage::vf03（0x4FBF40）は表示矩形内のセルを列挙する（0x4C1BE0）。［静的確認］ただしmode 1の0x4C4420にはセル値から直接頂点を作って保存するキャッシュ経路もある。毎frameのvf07呼出保証ではない（§15）。
 
 ### 2.2 Block（地形・オブジェクトの当たり判定と表示、vtable 0x6392BC）
 
@@ -132,7 +132,7 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 
 ## 5. 未確認（x32dbg 検証項目）
 
-- ~~V1~~: **確認済み**（2026-11-09、OGGテストのコピー、スクリプト map_v1b.txt）。vf07 は描画のたびに表示中のセルについて呼ばれ、書換えは即時反映。
+- ~~V1~~: **確認済み**（2026-11-09、OGGテストのコピー、スクリプト map_v1b.txt）。この試験条件では書換えの即時反映を観測した。「vf07が毎描画必ず呼ばれる」への一般化は§15のキャッシュ経路により撤回する。
 - ~~V2~~: **確認済み**（§3）。
 - V2 補足: 呼出元・式・0 の扱いは §3 に確認済みとして記録（今回のM1作業での再試験ではない）。
 - V3: 戦闘中に 0x4E9A20 で通行不可を追加し 0x4EA2E0 を再実行してよいか（旧領域の解放、移動中ユニットが持つ領域ポインタの寿命）。
@@ -296,3 +296,100 @@ OGGテストの原作DATを読み取り、`a_default/script/30_スキル/F12_cha
 | `%TEMP%/m4_dat_query2_out.txt` | `f0def70da51d819c12b1b15a0d02ed851dd2a86b61f9df1dbd5db9778b3a1b29` | doskill 2293–2378行、storeIndexVar 4661–4732行 |
 | `%TEMP%/m4_dat_query3_out.txt` | `ed40f1ca2076bc2aba066c69b3b993f4432a4a4fc256e42d5103b19fc6fa1546` | 0x4A5740以降の110命令、0x4A6B30 |
 | `%TEMP%/m4_dat_query4_out.txt` | `d36b8871210d44527e1631853383fe7650f98afaae4b1cb08f7b2905a9070519` | 0x49CCA0 |
+
+
+## 13. M3 アニメーション試験と時間単位の訂正（2026-11-09）
+
+研究ID: `CODEX-MAP-M3-LIVE-20261109`。対象はOGGテストの同じver0.67。導入DLL SHA256は `026ff7879eaca7bf4d2bc973a94866a5ca482b393816179d3dab5bb1b332a663`（plugins配下を実測）。以下はログの成功、画面についてのユーザー報告、静的な時間契約を分離した記録であり、M3の全面受入れではない。画像・個人ログ原文は収録しない。
+
+### 13.1 grass画像列と初回試験
+
+§11.1と同一SHA・T008形式の`imagedata.dat`で、M3実装担当が全502レコード・EOF・boundsを検証した際に次を確認した。［静的データ確認］
+
+| 名前 | record byte offset | LTRB |
+|---|---:|---|
+| grass | 2406 | (704,101,736,133) |
+| grass1 | 2428 | (736,101,768,133) |
+| grass2 | 2451 | (768,101,800,133) |
+
+初回PID 24040では03:56:11.488のanim_def=0、03:56:11.490のanim_rect=0、範囲(4,8)〜(8,12)、active=25、interval=20。03:57:16.221までtick=0が継続し、restore呼出は無かった。ユーザー報告は「止まらなかったように見える、重くない」。これは登録/tickの成功と体感負荷の報告であり、目視の切替・停止が成功した証明ではない。
+
+### 13.2 DLLtickと内部時計の取り違え
+
+初回DATは1200回の`hk_map_tick`呼出を20秒として扱っていた。しかし1 DLLtickはDATからの呼出1回で、内部シミュレーションtickや描画frameとは別である。既存A72の保存根拠`exe/T010_BATTLE_FRAME_ORDER.md`§4/§6および`exe/T010_CLOCK_UPDATE_PROBE.txt`では、通常0x492D80(arg0)の0x492FA1 `jne 4930A6`によりabsolute%10!=0時はreturnし、0x4930C0 root scanも10内部tick境界の内側にある。正本内にも[T030のA72訂正](research/recovered/principal_models1/reports/data/T030_RTS_MODE.md)488行に保存されている。旧[T010](research/recovered/script_topics/T010_EVENT_SCHEDULER.md)132行の初回counter=1/毎tick root評価はこの通常経路に適用しない。［既存STATICの再照合］
+
+初回ログの60 DLL呼出ごとの成功要約は概ね10秒間隔で、通常内部60tick/sを仮定するとDLL呼出は約6/s、1200回は約200秒になる。これは固定実時間保証ではなく、速度・pause・gate・別arg1経路によって変わる。restore未到達をDLL停止機能の不具合と結論しない。試験DATだけをinterval=2、`isInterval(600)`の2周期でrestoreする形へ訂正し、DLLは変更していない。
+
+### 13.3 修正試験と一時停止中の表示
+
+記録担当が直接読んだPID 13528の結果は次のとおり。［実機ログ確認］
+
+| 時刻（JST） | 観測 |
+|---|---|
+| 04:05:41.063 / .070 | anim_def=0 / anim_rect=0、interval=2、範囲(4,8)〜(8,12)、active=25 |
+| 04:05:57.383 | tick=0、active=25、区間集計anim_changed=750 / transitions=30 |
+| 04:06:05.466 | restore_rect=0、同範囲、active=0 |
+| 04:06:07.595 | get=0、active=0 |
+| 04:06:09.642 | tick=0、active=0、区間集計anim_changed=700 / transitions=28 |
+
+最後の700/28は直前60呼出区間の累積であり、復元後に700セルを書き直したという意味ではない。製品`src/hakushin_map_plugin.c:151–170,202–203`のtickログ集計を照合した。
+
+ユーザーは最初に「一部戻るが草が残る」、続いて「画面移動したら残っていた草は消えた、ゲーム閉じた」と報告し、試験時は「一時停止していた」と確認した。ログでは復元・active=0が成立し、報告された一部の残像はカメラ移動後に解消した。この観測だけでキャッシュ原因を確定しない。T010§5にはpause中もUI/renderの別経路があるため「pauseですべての描画が停止する」とも断定しない。
+
+**未確認:** 通常進行・カメラ固定時の即時復元、意図した3画像の目視切替、長時間負荷、M3の同プロセス再戦。M3全面受入れは保留。
+
+## 14. M4 所属aliasと命中対象の追加静的調査
+
+研究IDは§12の`CODEX-MAP-M4-DAT-20261109`を継続する。同じEXE・読み取り専用Ghidra projectでの追加照会（exit 0）によるSTATIC。§12.1/§12.3の所属・命中経路未追跡はその時点の履歴であり、以下の局所契約まで追跡した。毒床の実機確認とはしない。
+
+### 14.1 色aliasとdoskill専用発射者
+
+- Enemy ctor 0x447280はparam3をowner+0x0Cへ保存。初期化0x48A973/0x48A9A6はmask 2/4で生成してE+0x1E8634/+0x1E8638へ置き、0x51E100経由のE+0x1E8630はmask 1。
+- storeRectUnitの0x4B3227以降では`red`（VA 0x630D38）がE+0x1EED48、`blue`（0x630D3C）がE+0x1EED44を参照し、そのowner+0x0Cを使う。
+- 0x432AEB〜0x432AFDはflags E+0x1EED54/+0x1EED55が両方0の場合にred=slot+0x1E8634、blue=slot+0x1E8638を設定する。他状態の0x432B0E〜0x432B34はslot+0x1E8630/+0x1E8634へ切り替える。0x492726/+2Cにも呼出側pointerによるalias設定がある。従って色とmaskを固定対応させない。
+- doskillの0xAC08FC専用ownerはmask 2で作られる。0x4A58BA〜0x4A58D4でUnit ctor 0x56F880のparam5へこのownerを渡し、ctorはUnit+0x1D4へ保存する。`off`による座標選択と、この所属maskは独立である。
+
+### 14.2 attack_usと局所命中filter
+
+既存`exe/T012_SKILL_PARSER_FIELD_DUMP.txt:35–48`の0x59A4AF→0x59A4D8はSkill+0x70への設定。解析担当が対象PEを直接読み、比較文字列VA 0x624898=`attack_us`（隣接0x6248A4=`skill`）を確認した。0x580280ではSkill+0x70のbit 1/2/4をそれぞれMissile+0x19C/+0x19D/+0x19Eへ写し、値7では+0x19Fを立てる。
+
+0x4E5860/0x4E6110はowner maskが1または4かのboolを作り、混乱Unit+0xC8<0時の乱数反転を経て+0x19CとXORする。候補側にもmask 1/4判定を行い、不一致を通常対象とし、+0x19Dは両側、+0x19Eは自己を許可、+0x19Fは通常の他者経路を抑止する。0x54BA00からこれらの衝突判定後に0x54DAE0の適用へ進む。
+
+従って混乱等の別条件がない通常のdoskill専用mask 2発射者では、attack_us=0はmask 1/4側、attack_us=1はmask 2側を対象にする局所filterと読める。ただし色alias・実際の配置・衝突条件は別途必要であり、任意の「敵だけ」への毒成功を保証しない。毒確率・耐性・同group複数巻込み・最小skill全体と実機成立は未確認。
+
+### 14.3 追加出力の出所
+
+根拠はローカル`%TEMP%`の解析出力で、原作素材ではなく非収録の照会結果。§12.4と同じproject/target、下記SHAは記録担当も照合。VAと局所範囲を上記に残し、再確認可能にした。
+
+| 出力 | SHA256 | 主な範囲 |
+|---|---|---|
+| m4_sides_out.txt | `58946e2425df4780bdac4f32f1340a5527bba4d1de44cce6efd684d74e599b57` | Enemy ctor、doskill owner/Unit構築 |
+| m4_sides2_out.txt | `55392bab7db18d8d8644899814c97ffd6cdaacbc7d0f678335ea37a48e6569b1` | storeRectUnit色alias |
+| m4_sides3_out.txt | `747997cbcff7dc7812b66df90cc9f91f605d0bbbdfa489a16c7ac051a7b18d2b` | 3 slot初期化 |
+| m4_dummy_out.txt | `6c3a490c140f07fc71c469bd1377571d076ef5b0898392d61c9eb6e52f0d5999` | 563行 Unit+0x1D4=param5 |
+| m4_alias_out.txt | `55d1cfc779cb2365139aa9a6dc7ae3d09642f94b494eae8290b444d9a4d3fdb1` | 0x432AEB/0x492726 |
+| m4_projectile_out.txt | `208598738b795f3f76a1b6d3b6202bc949ce67a921890ffb3456d7c24e58d405` | 507–529行、Skill+0x70 |
+| m4_hitfilter_out.txt | `aaba31bb4627771a3d0089418cb059862f27de2ae3b7e2056a6ff01f920538b1` | 59–74、300–318、359–375、733–748、839–850行 |
+| m4_collision_out.txt | `5ca0cf1100b894e85553c287c76e86d79006744d0a0f048dedbcbb65cc3bb384` | 504–527行、衝突後の適用 |
+
+
+## 15. 地形頂点キャッシュと表示反映の条件
+
+研究ID: `CODEX-MAP-M3-RENDER-CACHE-20261109`。§13の残像観測を受けた追加STATIC。新たなゲームattach・liveメモリ観測は行っていない。§0/§2.1/§5の「毎描画vf07・次描画へ必ず反映」は広すぎたため訂正し、V1で実際に観測した即時反映自体は保持する。
+
+- 0x4C271F/0x4C2722はG+0x94から描画コンテキストRを取得して0x4C2728で描画へ進む。
+- 0x4C4420内の0x4C45F3でmode 1を判定し、0x4C45FCでR+0x3C8Cが非ゼロなら0x4C4603からreturn。ゼロの場合のみR+0x38のstageを取り（0x4C461C）、vf03でセルを列挙（0x4C4641）し、セル+0x6C〜+0x78から6頂点を直接作る。0x4C47F2でR+0x3C8C=1としてvertex bufferへuploadする。［STATIC］
+- カメラsetter 0x4C3C20はR+0x4C/+0x50の座標を設定し、0x4C3C5AでR+0x3C8C=0にして行列を再計算する。0x520800からこのsetterを呼ぶ経路を確認した。［STATIC］
+- 0x4C3EB0の描画先頭にはtargetを黒へClearする経路がある。通常のalphaによる前frame残留を原因とする根拠にはならない。
+
+**解釈の限界:** M3の「画面移動で草の残像が消えた」はカメラ変更によるキャッシュ再構築と整合する［INFERRED］。しかし当該実機のR/mode/flagは観測しておらず、原因を実機確定とはしない。画像変更後の適切な無効化方法、別mode、一時停止と通常進行の差、継ぎ目は別途検証する。R+0x3C8Cの書換え実機成功はまだない。
+
+根拠は§12.4と同じreadOnly Ghidra project・対象EXE、全照会exit 0。ローカル`%TEMP%`解析出力のSHA256（本文・素材の転載なし）:
+
+| 出力 | SHA256 | 確認範囲 |
+|---|---|---|
+| m3_render_out.txt | `16b3cfc093bc7dd236102b043b8aaba1ce0ffe8511c10c5bd75ee13f2dff6178` | 描画関連関数 |
+| m3_render2_out.txt | `74afb5a21f9a652e47df669700d1a07bf9fc75d27a275abd023e394d3e78b99d` | 61行Clear、244–332行cache/build |
+| m3_dirty_out.txt | `044a1ee4b3d88e76eb425a01c9d0f9f992c4b7529b9265deb8fed68060ca1285` | flag 0/1の保存位置 |
+| m3_dirtywriters_out.txt | `628ecf3e85b1aa1297e337752700783fdf582a822d4cb044be733bab9e3ae97f` | 388–434行カメラsetter |
+| m3_camera_out.txt | `697b20012817e173b24f539bee58796ce9fae5518d1b2e6b761d6a6daa384055` | R取得、mode/flag分岐、stage取得 |

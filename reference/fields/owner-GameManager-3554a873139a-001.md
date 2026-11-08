@@ -26,7 +26,7 @@
 ## GameManager + 0x88
 
 - [REF_MAP_TERRAIN.md 行 95](../../REF_MAP_TERRAIN.md?plain=1#L95-L95) — grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクトの+8）。
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L31-L31) — 5. `0x0051E388 MOV EAX,[EDI+4]`→`0x0051E38B LEA ECX,[EAX+0x88]`→**`0x0051E39E MOV [EDI+0x188],ECX`**。よって確認した正常構築経路で**`[Player+0x188]=GameManager+0x88`**。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion

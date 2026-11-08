@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 2403 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 2404 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -36,6 +36,6 @@
 | [22](documents/page-022.md) | 100 | BATTLE_INIT_SCENE_NATIVE_ABI_20261021.json | WIKI_SKILL_DELAY_INHERITANCE_20261013.json |
 | [23](documents/page-023.md) | 100 | WIKI_SKILL_DELAY_UNRESOLVED14_20261013.json | T013_RUSH_VECTOR_APPEND_550410_NATIVE_20261013.txt |
 | [24](documents/page-024.md) | 100 | T013_SUPPORT_POSTCORE_RANDOM_4B9F70_NATIVE_20261013.txt | 経験値操作を DAT から使う設計メモ（Claude 2026-11-03、検討中・未実装） |
-| [25](documents/page-025.md) | 3 | E_OFFLINE_20261023_1153_UI_TEXT.md | 戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001） |
+| [25](documents/page-025.md) | 4 | E_OFFLINE_20261023_1153_UI_TEXT.md | Script grammar, command VM, context and timing — curated A/T005–T010 |
 
 [事典の入口](README.md)

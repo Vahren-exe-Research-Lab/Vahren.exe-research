@@ -7,6 +7,12 @@
 <a id="field-c"></a>
 ## owner + 0xC
 
+- [REF_MAP_TERRAIN.md 行 347](../../REF_MAP_TERRAIN.md?plain=1#L347-L347) — - Enemy ctor 0x447280はparam3をowner+0x0Cへ保存。初期化0x48A973/0x48A9A6はmask 2/4で生成してE+0x1E8634/+0x1E8638へ置き、0x51E100経由のE+0x1E8630はmask 1。
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
+- [REF_MAP_TERRAIN.md 行 348](../../REF_MAP_TERRAIN.md?plain=1#L348-L348) — - storeRectUnitの0x4B3227以降では`red`（VA 0x630D38）がE+0x1EED48、`blue`（0x630D3C）がE+0x1EED44を参照し、そのowner+0x0Cを使う。
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 195](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L195-L195) — - Spot instance loader VA 0x5973AF..0x597412では、spot固有 `capacity` が0ならscenario `spot_capacity` (`owner+0x0C`) をfallbackに採用し、その後Spot runtime `+0x88`をさらに `min(valu
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
@@ -408,11 +414,5 @@
 
 - [research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md 行 26](../../research/recovered/ac_tests6/reports/T020_T028_NULL_VECTOR_OWNER_CLEANUP_GATE_20261028_12H.md?plain=1#L26-L26) — P0：C-NB02合法原作G0+G1+G2同run一次受入。P1：0x497BB0のnull ECX producer、owner+0x2FC/+0x32C索引と候補の参照寿命、別vector+第2RB集合の真consumerを局所callと実ゲーム効果に分けて追跡する。
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
-
-- [research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md 行 15](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L15-L15) — - 10/28 12H既知 0x463590 はowner+0x2FCの0x49F410→0x4BF820 erase、owner+0x330/0x32Cを使う0x460F10経路を持つ。0x4635E9 TEST EBXが非0なら0x4635EE CALL0x4591F0（内部資源destructor様）、続けて0x
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 9](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L9-L9) — 0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIF
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

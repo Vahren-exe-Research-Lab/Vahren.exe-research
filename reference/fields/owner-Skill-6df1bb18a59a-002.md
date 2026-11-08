@@ -7,6 +7,12 @@
 <a id="field-74"></a>
 ## Skill + 0x74
 
+- [research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md 行 5](../../research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md?plain=1#L5-L5) — [PRODUCER +274] 0x59C3EB EDX='next_interval'→0x59C410 call0x4647D0→0x59C415 ECX=[returned+0x20]→0x59C418 MOV DWORD[compiledSkill+0x274],ECX. The loaded value is
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 1](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L1-L1) — # B-20261013-1920-02｜T011/T012/T013 Skill+0x74の保存済みnative setterと2消費側接続
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 - [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 24](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L24-L24) — [CURRENT BOUNDARY] `Skill+0x74` bounded producer still B-1920-02; cross-lane Work use exact `rush` raw name with parsed int getter, but source→live Skill, @/var
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
@@ -339,11 +345,5 @@
 
 - [research/recovered/exp/EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md 行 17](../../research/recovered/exp/EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md?plain=1#L17-L17) — - 0x54E82A: Skill+0x14C!=0なら0x54E835のSkill+0x13Cという固定文字列を選択。0x14Cは+0x13C基準の **+0x10（文字列長）**。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; section2 unresolved DAT key names clarified as add/add2 in EXP_ENDTRANSFER CP10, not next/next2
-
-- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 94](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L94-L94) — - ローダ0x599BD0@0x59A79Bは文字列add(0x6248EC)を指定し、0x59A7C8でcompiled Skill+0x13Cへ設定。0x59E81Cはadd2(0x625508)、0x59E897は候補vector+0x158を指定する。除外対象のappend helper本体は読んでいない。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
-
-- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 62](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L62-L62) — - **最新A:** `EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md` — 召喚キャッシュは文字列キーで比較。Skill+0x13Cは固定文字列、+0x14Cはその長さ、+0x158は候補一覧。ノードは0x200byte、UnitData埋込は0x1D4byte。0x57726
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -7,6 +7,12 @@
 <a id="field-248"></a>
 ## Skill + 0x248
 
+- [research/recovered/json_wiki1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.json 行 191](../../research/recovered/json_wiki1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.json?plain=1#L191-L191) — "compiled_precondition": "Skill+0x248<=0; matching Unit/Skill/context D1E1",
+  制約・訂正　3 proposed tasks with selected source/runtime boundary evidence; instructions inert; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md 行 15](../../research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md?plain=1#L15-L15) — - Work現行resume_selected_support_core_flashはコンパイル済みSkill+0x248<=0で0x551CF2へ進み、Skill+0x6F0読取・4DFBB0は未呼出。今回の局所試験は原DAT実効flash=-4を手動Skill+248へ束縛して3/3PASS、対象Unitは変更せず
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 625](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L625-L625) — [B OWNER SAVED-NATIVE READONLY] 研究Bの正式READY B-20261013-1424-01（flash原文→Skill+0x248）および B-20261013-1356-01（B所有data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_202610
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -345,11 +351,5 @@
 
 - [research/recovered/b_reports/T011_SUPER_BRACE_STATUS_RETURN_ABI_NATIVE_20261025_02H.md 行 27](../../research/recovered/b_reports/T011_SUPER_BRACE_STATUS_RETURN_ABI_NATIVE_20261025_02H.md?plain=1#L27-L27) — 要VERIFY：0x416920の全戻値極性/全入力、0x5049E0と0x50B220の異常条件、同名super挿入規則、u_diplo_nt3..nt6の実効Skill+0x288=0、実戦効果。原作無改変EXEとX20前DAT、同一SAVE/MAP/input/RNGの合法/不正`{`比較はDESIGNED_NO
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/T012_STR_RATIO_PRESENCE_ABI_AND_SPARSE_CFG_NATIVE_20261024_20H.md 行 12](../../research/recovered/b_reports/T012_STR_RATIO_PRESENCE_ABI_AND_SPARSE_CFG_NATIVE_20261024_20H.md?plain=1#L12-L12) — 存在確認AL=0のとき0x0059CE3Aへ飛び、0x0059CDC2 FLD1→0x0059CDC4で初期化したSkill+0x288=1.0をこの局所経路では維持。AL!=0なら0x0059CDE1 MOV EDX,0x00625054（同じ文字列`str_ratio`）→0x0059CDE8 CALL 0x004
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 11](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L11-L11) — 1. T012 Skill-mode helper 0x550D80: mode1..5でUnit+0x98/+0xA0/+0xACを区別。Skill+0x288のratioで2種statを混合、Skill+0x280でscale、+0.5後に0x5D1B80へtail-call。Ghidra pseudoの引数なし同
-  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

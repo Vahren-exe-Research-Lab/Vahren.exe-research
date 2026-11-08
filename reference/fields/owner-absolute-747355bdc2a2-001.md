@@ -7,6 +7,9 @@
 <a id="field-1eed64"></a>
 ## absolute + 0x1EED64
 
+- [REF_SCRIPT_VM_CONTEXT.md 行 17](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L17-L17) — - Battle clocks: getTime uses resettable +0x1EED60, isInterval uses absolute +0x1EED64, getLimit uses independent 10-tick cadence. resetTime clears only the for
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 77](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L77-L77) — [CONFIRMED-TARGET-STATIC＋SCRIPT] A所有 `data/T010_EVENT_SCHEDULER.md`「battle clock native semantics」「resettable time vs absolute interval clock」をread-only照合。`getT
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 

@@ -154,6 +154,9 @@
 <a id="field-1eed58"></a>
 ## engine + 0x1EED58
 
+- [REF_SCRIPT_VM_CONTEXT.md 行 15](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L15-L15) — - event/call and routine invoke common native 0x4321B0 using different flags/return conventions and scene-dependent event markers; cannot collapse AST operation
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+
 - [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1028](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1028-L1028) — [A SAVED NATIVE, READONLY] A所有`exe/T006_TARGET_DISPATCH.md`：通常event/call opcode0はAL=1 Yield、routine opcode1はAL=0 Continue、msg opcode11の正常1〜3引数とwait opcode9はYiel
   制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
 
@@ -389,9 +392,6 @@
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
 - [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 29](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L29-L29) — engine+0x1EEF60	erasePowerStaff		0x4a72ec	REGISTRATION_XREF_ONLY
-  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
-
-- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 30](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L30-L30) — engine+0x1EEF60	addPowerMerce2		0x4a7349	REGISTRATION_XREF_ONLY
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -197,6 +197,8 @@
 | 0x4C2714 | [PumpGameLoop_UpdateCall](symbols/004C2714.md) | code | 0x4C24B0内の E8 call 0x4C28D0（直前 mov esi,ebp）。HakushinSpeed がここを差し替える |
 | 0x4C2719 | [PumpGameLoop_FastModeDrawSkip](symbols/004C2719.md) | code | GameTask+0x74==100（戦闘の倍速）なら描画0x4C3EB0とPresentを1コマおきにする（0x68C7F3が交互）。原作の倍速は更新100回/秒・描画50回/秒 |
 | 0x4C28D0 | [GameTask_UpdateTasks](symbols/004C28D0.md) | func | GameTaskの全タスク更新。独自ABI ESI=GameTask（ebx/ebp/ediは保存）。各タスクのvf+4を呼び、終わりに GameTask+0x3C（コマ番号）を+1。呼び出し元は0x4C2714の1か所だけ |
+| 0x4C3C20 | [RenderContext_SetCameraPosition](symbols/004C3C20.md) | func | Sets context+0x4C/+0x50, clears terrain vertex cache flag+0x3C8C at 0x4C3C5A, then recalculates matrix. Descriptive name. |
+| 0x4C4420 | [RenderContext_BuildTerrainVertices](symbols/004C4420.md) | func | mode 1 builds terrain vertices only when render context+0x3C8C is zero; sets flag and uploads vertex buffer. Descriptive name; other modes not summarized. |
 | 0x4C5800 | [List_SpliceWithCapacityGuard](symbols/004C5800.md) | func | 異なるlist間でnodeを移して双方の+4 countを更新、0x3FFFFFFE超過条件で別処理へ分岐。Unit上限ではない。 |
 | 0x4C7040 | [Ai_ApplyFourwayPairState](symbols/004C7040.md) | func | 四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。 |
 | 0x4DEC70 | [Tree_EraseIteratorNode](symbols/004DEC70.md) | func | 部分範囲消去側の単一node削除下位処理。node+0x15のiterator検査、freeとcount条件減算。通常の訓練全消去では必達でない。 |
@@ -550,7 +552,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7892 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7917 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -562,6 +564,7 @@
 - [NewGameStage](structs/NewGameStage.md)
 - [Player](structs/Player.md)
 - [Power](structs/Power.md)
+- [RenderContext](structs/RenderContext.md)
 - [SaveUnitDataTreeNode](structs/SaveUnitDataTreeNode.md)
 - [ScriptEngine](structs/ScriptEngine.md)
 - [Spot](structs/Spot.md)
@@ -572,12 +575,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 537 件、フィールド 153 件、根拠付き関係 165 件。
+辞書項目 539 件、フィールド 154 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75839 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75905 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 19 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 20 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2403 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2404 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

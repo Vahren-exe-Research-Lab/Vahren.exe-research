@@ -10,4 +10,10 @@
 - [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 48](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L48-L48) — - `0x00515470` のEDX入力は、上位 `0x0054C96F..0x0054C97B` および `0x0055267C..0x00552688` の間接参照 `[[Missile+0x78]+0x1D4]+0x1C` から配送され、`0x00515484` で **+0x68** のtreeを参照。所有者
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-19c"></a>
+## Missile + 0x19C
+
+- [REF_MAP_TERRAIN.md 行 354](../../REF_MAP_TERRAIN.md?plain=1#L354-L354) — 既存`exe/T012_SKILL_PARSER_FIELD_DUMP.txt:35–48`の0x59A4AF→0x59A4D8はSkill+0x70への設定。解析担当が対象PEを直接読み、比較文字列VA 0x624898=`attack_us`（隣接0x6248A4=`skill`）を確認した。0x580280ではS
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -278,7 +278,7 @@
 ## vtable + 0x64
 
 - [REF_MAP_TERRAIN.md 行 115](../../REF_MAP_TERRAIN.md?plain=1#L115-L115) — - vf25 の呼出元は 0x578FD0（移動1歩の計算、vtable+0x64 経由の CALL、戻り 0x579010）。［実機確認 2026-11-09: 呼出元は全件 0x579010、草=6・岩=3 を観測（normal の movetype どおり）］
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 - [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 14](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L14-L14) — 0x5AA6E0はAL!=0かつ保持obj vtable+0x64非zeroのときだけ0x5AA709から上記0x5A9CC0を呼ぶ。共通後続0x5AA7B1 E8→0x4BC920は新規挿入候補（旧04HにCALL既知）、spot_fire文字列処理へ続く。V9 0x4BC920擬似Cは0x4BC3C0(param1
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.

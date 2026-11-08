@@ -7,6 +7,9 @@
 <a id="field-1eef60"></a>
 ## engine + 0x1EEF60
 
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 30](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L30-L30) — engine+0x1EEF60	addPowerMerce2		0x4a7349	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
 - [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 31](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L31-L31) — engine+0x1EEF60	addPowerStaff2		0x4a73a2	REGISTRATION_XREF_ONLY
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
@@ -335,9 +338,6 @@
   制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 142](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L142-L142) — - `isComTurn` opcode12 -> VA 0x44F6A8: byte `engine+0x1EF4C4` を入口gateとして追加power条件を評価
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 391](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L391-L391) — [CONFIRMED / NEW BRANCH] A保存 `exe/T031_PHASE_PREDICATE_HANDLERS.txt` 0x44F6A8..0x44F6DE。既知T031のisComTurn opcode12/engine+0x1EF4C4入口readerを精密化。入口は`cmp byte[esi+0
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

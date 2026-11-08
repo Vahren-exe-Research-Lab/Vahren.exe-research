@@ -7,6 +7,12 @@
 <a id="field-288"></a>
 ## Skill + 0x288
 
+- [research/recovered/b_reports/T012_STR_RATIO_PRESENCE_ABI_AND_SPARSE_CFG_NATIVE_20261024_20H.md 行 12](../../research/recovered/b_reports/T012_STR_RATIO_PRESENCE_ABI_AND_SPARSE_CFG_NATIVE_20261024_20H.md?plain=1#L12-L12) — 存在確認AL=0のとき0x0059CE3Aへ飛び、0x0059CDC2 FLD1→0x0059CDC4で初期化したSkill+0x288=1.0をこの局所経路では維持。AL!=0なら0x0059CDE1 MOV EDX,0x00625054（同じ文字列`str_ratio`）→0x0059CDE8 CALL 0x004
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 11](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L11-L11) — 1. T012 Skill-mode helper 0x550D80: mode1..5でUnit+0x98/+0xA0/+0xACを区別。Skill+0x288のratioで2種statを混合、Skill+0x280でscale、+0.5後に0x5D1B80へtail-call。Ghidra pseudoの引数なし同
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
+
 - [research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json 行 151](../../research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json?plain=1#L151-L151) — "not_new": "0x004645B3 AL=1, 0x0046457A AL=0, 50-bound, Skill+0x288 default, earlier 17H already established.",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 

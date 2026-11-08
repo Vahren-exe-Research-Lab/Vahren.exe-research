@@ -7,6 +7,15 @@
 <a id="field-1867c"></a>
 ## Unit + 0x1867C
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 124](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L124-L124) — "meaning_static_x86": "SimpleUnit: guard Unit+0x1867C"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 136](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L136-L136) — "meaning_static_x86": "StaticUnit: guard Unit+0x1867C"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 148](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L148-L148) — "meaning_static_x86": "SimpleStaticUnit: guard Unit+0x1867C"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 92](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L92-L92) — - Scheduler A: `0x449792 -> 0x448E90` is followed by a Unit-pointer-vector walk, `Unit+0x1867C==0` test and mode-dependent additional `0x44D070` index gates. On
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -254,7 +263,7 @@
 ## Unit + 0x1868C
 
 - [REF_MAP_TERRAIN.md 行 118](../../REF_MAP_TERRAIN.md?plain=1#L118-L118) — - v≥8 で `Unit+0x1868C` を加算、v≤3 で0に戻す（地形による何らかの継続カウンタ。用途は未確認）。
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 - [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 4](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L4-L4) — [FACT-PRE] 保存命令0x57E74DではUnit+0x18688へ8方向インデックスをstore、0x57E753/0x57E759ではSkill+0x278 costをUnit+0x94 MPからsub、0x57E75FではUnit+0x1868C=0。これらは今回の0x57E788幻覚条件より前。
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -330,14 +339,5 @@
 
 - [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 18](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L18-L18) — [NEXT] 0x4C1690 global0x65BD9EとESI+0xE4の正当な状態設定元、0x4C1860の変換点実消費、0x57D9A9のvslot+0x5CとUnit+0x186C8/CCの後続consumer。T011召喚EXP、T012 damage/status、T024通常AI、T028士気/敗走の
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 15](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L15-L15) — \| Head-to-sentinel or two-value output \| `0x57DD10`, `Unit+0x186C8/CC`; adjacent `0x577600` \| B21 \| Coordinates/attack destination meaning or completed movement
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 184](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L184-L184) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

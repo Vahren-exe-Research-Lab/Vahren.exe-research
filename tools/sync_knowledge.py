@@ -4962,6 +4962,12 @@ FILES += (
     'reference/fields/owner-module-120970d81283-001.md',
     'reference/fields/owner-nil-5da3a4c7f117-001.md',
 )
+FILES = FILES + (
+    'reference/fields/owner-resettable-c5b4638efe2f-001.md',
+    'reference/structs/RenderContext.md',
+    'reference/symbols/004C3C20.md',
+    'reference/symbols/004C4420.md',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.

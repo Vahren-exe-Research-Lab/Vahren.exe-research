@@ -605,3 +605,5 @@
 0x638C54	object	vt_FieldData	FieldData(セル 0x11C)の仮想関数表	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x6392BC	object	vt_Block	Block(地形・オブジェクト)の仮想関数表	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
 0x63A6EC	object	vt_NewGameStage	戦闘マップ管理 NewGameStage の仮想関数表	静的確認	REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
+0x4C4420	func	RenderContext_BuildTerrainVertices	mode 1 builds terrain vertices only when render context+0x3C8C is zero; sets flag and uploads vertex buffer. Descriptive name; other modes not summarized.	STATIC	REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)
+0x4C3C20	func	RenderContext_SetCameraPosition	Sets context+0x4C/+0x50, clears terrain vertex cache flag+0x3C8C at 0x4C3C5A, then recalculates matrix. Descriptive name.	STATIC	REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)

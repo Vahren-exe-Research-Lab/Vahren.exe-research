@@ -8,6 +8,6 @@
 ## FieldData + 0x6C
 
 - [REF_MAP_TERRAIN.md 行 130](../../REF_MAP_TERRAIN.md?plain=1#L130-L130) — \| 戦闘中のチップ変更・アニメーション \| **無し** \| DLL で FieldData +0x6C〜+0x80 を書換え（既存V1で実機確認済み） \|
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -7,6 +7,9 @@
 <a id="field-c8"></a>
 ## Unit + 0xC8
 
+- [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 24](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L24-L24) — \| Unit+0xC8 \| `0x569645` \| signed dword >= 0 \|
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L11-L11) — - [SELECTED BASE] 0x57B938 signed(Unit+0xC8)<0の場合だけ0x57B940 CALL randのroll→0x57B95E比較で、0x57B966のbase=[Unit+0x1D4]または0x57B974のbase=[[Unit+0x1D4]+0x1C]を選択。Unit+0x
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
@@ -372,8 +375,5 @@
 
 - [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 672](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L672-L672) — 1. `summon_max` → Unit+0x168 += 値（0x57436C..0x574399）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

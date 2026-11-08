@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-18650"></a>
+## Unit + 0x18650
+
+- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 10](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L10-L10) — [PROCESS GATE] 0x579EEB MOV EBP,[ESP+0x188]、0x579EF8 EBX=2、0x579F04 CMP DWORD[EBP+4],2、0x579F07 unsigned JB 0x57A1CA。少なくともこの入口では件数相当の+4が0/1なら後続の複数要素処理・0x579F13
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
+- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 16](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L16-L16) — [KB_CANDIDATE] owner=B/T013、研究ID=本見出し、VA=0x577A20/0x577D82/0x577DCB/0x577ADE/0x577B27/0x5A3DF0/0x5A3E55/0x5A3E78/0x579EB0/0x579F04、offset=Unit+0x18650/+0x18654、
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
+- [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 14](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L14-L14) — [KB_CANDIDATE] ID=B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01; owner=B/T013; VA=0x574D70/0x574E30/0x56F880/0x577600/0x577A20/0x57DD10; CALL=0x4AB946/0x4
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
 <a id="field-18654"></a>
 ## Unit + 0x18654
 
@@ -107,7 +119,7 @@
 ## Unit + 0x1867C
 
 - [REF_MAP_TERRAIN.md 行 164](../../REF_MAP_TERRAIN.md?plain=1#L164-L164) — - 根拠: 0x49E7B6 は名前をECXからEAXへ、0x49E7B8 は評価器をEDXからESIへ保存。0x49E7CF〜0x49E7D9 は名前長を走査。0x49E7F0 は評価器+0x1EEBEC の名前multimapを使用。0x49E826 はnode+0x28のUnit*、0x49E82D/0x49E8
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
 
 - [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 11](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L11-L11) — 0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUn
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
@@ -299,15 +311,6 @@
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
 - [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 94](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L94-L94) — "meaning_static_x86": "Unit: guard Unit+0x1867C"
-  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
-
-- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 124](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L124-L124) — "meaning_static_x86": "SimpleUnit: guard Unit+0x1867C"
-  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
-
-- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 136](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L136-L136) — "meaning_static_x86": "StaticUnit: guard Unit+0x1867C"
-  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
-
-- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 148](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L148-L148) — "meaning_static_x86": "SimpleStaticUnit: guard Unit+0x1867C"
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

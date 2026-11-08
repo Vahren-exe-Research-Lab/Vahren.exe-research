@@ -304,6 +304,15 @@
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 678](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L678-L678) — [COMPILED +4C AND MP GATE / CONDITIONAL] B保存VA0x59A2DA..59A398はraw special=onをSkill+0x4C signed1へ書込み、on以外をnumeric getterへ渡す分岐（格納値の親effectiveはVERIFY）。B/T012保存の通常
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+<a id="field-70"></a>
+## Skill + 0x70
+
+- [REF_MAP_TERRAIN.md 行 354](../../REF_MAP_TERRAIN.md?plain=1#L354-L354) — 既存`exe/T012_SKILL_PARSER_FIELD_DUMP.txt:35–48`の0x59A4AF→0x59A4D8はSkill+0x70への設定。解析担当が対象PEを直接読み、比較文字列VA 0x624898=`attack_us`（隣接0x6248A4=`skill`）を確認した。0x580280ではS
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
+- [REF_MAP_TERRAIN.md 行 371](../../REF_MAP_TERRAIN.md?plain=1#L371-L371) — \| m4_projectile_out.txt \| `208598738b795f3f76a1b6d3b6202bc949ce67a921890ffb3456d7c24e58d405` \| 507–529行、Skill+0x70 \|
+  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+
 <a id="field-74"></a>
 ## Skill + 0x74
 
@@ -321,11 +330,5 @@
 
 - [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 16](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L16-L16) — [VERIFY] Skill+0x74/+0x78のDAT実値・符号/0値到達性、Skill更新による途中変更、最終生成Unit回数、Skill+0x40分岐（召喚/別効果）、Manager M+8/+0x14 gate、status+0x210の事後writer、RNG/MP/EXP・可視tickは未証明。0x580
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md 行 5](../../research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md?plain=1#L5-L5) — [PRODUCER +274] 0x59C3EB EDX='next_interval'→0x59C410 call0x4647D0→0x59C415 ECX=[returned+0x20]→0x59C418 MOV DWORD[compiledSkill+0x274],ECX. The loaded value is
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 1](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L1-L1) — # B-20261013-1920-02｜T011/T012/T013 Skill+0x74の保存済みnative setterと2消費側接続
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

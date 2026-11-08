@@ -7,6 +7,15 @@
 <a id="field-186c8"></a>
 ## Unit + 0x186C8
 
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 18](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L18-L18) — [NEXT] 0x4C1690 global0x65BD9EとESI+0xE4の正当な状態設定元、0x4C1860の変換点実消費、0x57D9A9のvslot+0x5CとUnit+0x186C8/CCの後続consumer。T011召喚EXP、T012 damage/status、T024通常AI、T028士気/敗走の
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 15](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L15-L15) — \| Head-to-sentinel or two-value output \| `0x57DD10`, `Unit+0x186C8/CC`; adjacent `0x577600` \| B21 \| Coordinates/attack destination meaning or completed movement
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 184](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L184-L184) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 185](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L185-L185) — - The adjacent `0x577600` reader has count-zero and nonzero local paths, including `0x5779CD -> 0x576450` and conditional `Unit+0x18638/+0x1863C` updates. B20 a
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
@@ -360,17 +369,5 @@
 
 - [research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md 行 9](../../research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md?plain=1#L9-L9) — [PRE-SAVED EXE VA REF ONLY] B既存 exe/T011_STRUCTURE_DISPATCH_PROBE.txt VA0x59C1BA..0x59C253 はSkill+0x210 scalar/+0x214 string loader候補、既T012§85/§87 VA0x57BEC3→0x
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md 行 10](../../research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md?plain=1#L10-L10) — [EXE VA/XREF EXISTING ONLY] B保存VA0x59C1BA..0x59C253（関連skill keyed fields）、0x57BEC3→0x4C1200、0x57BEDB付近のSkill+0x210/+0x214・Unit+0x1E53Cは先行証拠の参照だけ。gun_delay raw p
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 556](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L556-L556) — [EXE/XREF LIMIT] B既存0x57BEC3/0x57BEDBのSkill+0x210/+0x214→Unit+0x1E53Cのkeyed stateは参考のみ。gun_delay raw→これらのslotへのloader接続・実クールダウン共有はVERIFY。既B-20261013-1110-01の単体命
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-<a id="field-1e54c"></a>
-## Unit + 0x1E54C
-
-- [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　MAP-T001 prior V1/V2; M1 readback and M2 visual change/restore confirmed; same-process battle1-to-2 with reused stage and changed cell array confirmed; M4 doskill coordinate mode/string output/numeric evaluation STATIC only; poison runtime, same-cell-array reuse, seams/log OFF untested; assets and personal logs excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
