@@ -7,6 +7,15 @@
 <a id="field-1e53c"></a>
 ## Unit + 0x1E53C
 
+- [research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md 行 8](../../research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md?plain=1#L8-L8) — [EXE/XREF PREEXISTING ONLY] B保存native exe/T012_SKILL_POST_57BE30_NATIVE_20261013.txt VA0x57BEC3 call0x4C1200（Skill+0x210>0、key+0x214→Unit+0x1E53C map）、0x57BEDB
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md 行 9](../../research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md?plain=1#L9-L9) — [PRE-SAVED EXE VA REF ONLY] B既存 exe/T011_STRUCTURE_DISPATCH_PROBE.txt VA0x59C1BA..0x59C253 はSkill+0x210 scalar/+0x214 string loader候補、既T012§85/§87 VA0x57BEC3→0x
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md 行 10](../../research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md?plain=1#L10-L10) — [EXE VA/XREF EXISTING ONLY] B保存VA0x59C1BA..0x59C253（関連skill keyed fields）、0x57BEC3→0x4C1200、0x57BEDB付近のSkill+0x210/+0x214・Unit+0x1E53Cは先行証拠の参照だけ。gun_delay raw p
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -17,7 +26,7 @@
 ## Unit + 0x1E54C
 
 - [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -32,7 +41,7 @@
 ## Unit + 0x1E550
 
 - [REF_MAP_TERRAIN.md 行 117](../../REF_MAP_TERRAIN.md?plain=1#L117-L117) — - 速さ = clamp(v × 0.2 × `Unit+0xB0`（mov 系の値）×（`Unit+0x1E54C`>0 なら `Unit+0x1E550` 倍）× [0x65BD50]（既定1.0）, 50, 2000) × 0.01。v=5 で 1.0 倍。［静的確認、定数は .rdata 実値］
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained

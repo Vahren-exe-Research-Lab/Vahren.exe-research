@@ -7,6 +7,15 @@
 <a id="field-186c8"></a>
 ## Unit + 0x186C8
 
+- [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 13](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L13-L13) — [GOLDEN REQUIRED] 原作無改変EXE、変更前DAT、同SAVE/MAP/input/seed/RNG/tick、quota_viewとquarter_viewの組合せ、context+0xE4=0/1、global flag0/1、matrix identity/nonidentity、画面点と境界ma
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 15](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L15-L15) — [NEXT P0] 0x57DE95→0x4C1860の真条件・0x576660 vtable下位作用とUnit+0x186C8/CC consumer、最終targetは未解決。T011召喚EXP/死亡・T012ダメージ・T024通常AI・T028士気/敗走も未完。原本・他owner・REA/dev_lab・MAST
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 18](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L18-L18) — [NEXT] 0x4C1690 global0x65BD9EとESI+0xE4の正当な状態設定元、0x4C1860の変換点実消費、0x57D9A9のvslot+0x5CとUnit+0x186C8/CCの後続consumer。T011召喚EXP、T012 damage/status、T024通常AI、T028士気/敗走の
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -360,14 +369,5 @@
 
 - [research/recovered/b_batch5/data/T011_T012_BMP_FAROFF_SKRN_ACQUISITION_SOURCE_20261017.md 行 9](../../research/recovered/b_batch5/data/T011_T012_BMP_FAROFF_SKRN_ACQUISITION_SOURCE_20261017.md?plain=1#L9-L9) — [VA/XREF EXISTING ONLY] B保存済み0x59C1BA..0x59C253のSkill keyed loader候補、0x57BEC3→0x4C1200・Skill+0x210/+0x214／Unit+0x1E53Cは既証拠を参考にするのみ。b_mp_faroffのeffective fkey/de
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md 行 8](../../research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md?plain=1#L8-L8) — [EXE/XREF PREEXISTING ONLY] B保存native exe/T012_SKILL_POST_57BE30_NATIVE_20261013.txt VA0x57BEC3 call0x4C1200（Skill+0x210>0、key+0x214→Unit+0x1E53C map）、0x57BEDB
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md 行 9](../../research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md?plain=1#L9-L9) — [PRE-SAVED EXE VA REF ONLY] B既存 exe/T011_STRUCTURE_DISPATCH_PROBE.txt VA0x59C1BA..0x59C253 はSkill+0x210 scalar/+0x214 string loader候補、既T012§85/§87 VA0x57BEC3→0x
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

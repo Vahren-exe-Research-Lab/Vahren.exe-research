@@ -263,7 +263,7 @@
 ## Unit + 0x1868C
 
 - [REF_MAP_TERRAIN.md 行 118](../../REF_MAP_TERRAIN.md?plain=1#L118-L118) — - v≥8 で `Unit+0x1868C` を加算、v≤3 で0に戻す（地形による何らかの継続カウンタ。用途は未確認）。
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 4](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L4-L4) — [FACT-PRE] 保存命令0x57E74DではUnit+0x18688へ8方向インデックスをstore、0x57E753/0x57E759ではSkill+0x278 costをUnit+0x94 MPからsub、0x57E75FではUnit+0x1868C=0。これらは今回の0x57E788幻覚条件より前。
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
@@ -294,6 +294,15 @@
 
 <a id="field-186b0"></a>
 ## Unit + 0x186B0
+
+- [REF_MAP_TERRAIN.md 行 439](../../REF_MAP_TERRAIN.md?plain=1#L439-L439) — \| m6_path_values_out.txt \| `a665a00a6dc58f3fa0dfb002138be21b468042d1f8f548e241e4988d1f865c7a` \| 57A910、両callerのUnit+0x186B0宛先 \|
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+- [REF_MAP_TERRAIN.md 行 444](../../REF_MAP_TERRAIN.md?plain=1#L444-L444) — 0x4EC1E0の既知直接callerは0x5767B0と0x5769B0。前者0x5767FC〜0x57680E、後者0x576AB1〜0x576AC3は返されたvectorのbegin/endを取り、ESI=`Unit+0x186B0`として0x57A690へ渡す。0x57A690は旧list nodeをdelet
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+- [REF_MAP_TERRAIN.md 行 448](../../REF_MAP_TERRAIN.md?plain=1#L448-L448) — 次の最小確認は、Unit+0x186B0のconsumerと移動中の再経路探索条件を既存B/T028記録へ接続し、合法な停止点で旧経路を無効化できるかを確定すること。M6の実機はそれ以降とし、新規移動命令、移動途中、解除、同プロセス再戦、反復時のメモリ量を別々に観測する。
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/ac_tests6/reports/T020_T028_HASH_ORDER_DUPLICATE_CONDITIONAL_GATE_20261027_03H.md 行 16](../../research/recovered/ac_tests6/reports/T020_T028_HASH_ORDER_DUPLICATE_CONDITIONAL_GATE_20261027_03H.md?plain=1#L16-L16) — Strict capture requirement for future: actual original insertion key, lookup outcome, returned inserted flag, hash and order counts PRE/POST, evicted head ident
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
@@ -327,17 +336,5 @@
 
 - [research/recovered/b_reports/T013_POSTSELECT_FOUR_CALLER_MODE_NATIVE_20261029_15H.md 行 11](../../research/recovered/b_reports/T013_POSTSELECT_FOUR_CALLER_MODE_NATIVE_20261029_15H.md?plain=1#L11-L11) — - 0x544D10 entry: 0x544D1A CMP BYTE [EBX+0x1867E],0 / 0x544D21 JE0x544D2C。非ゼロ時0x544D23 XOR AL,AL→0x544D29 RET4（既設定時はここから下流を処理しない）。ゼロなら0x544D2C FLD1→0x544D31 Uni
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-186c8"></a>
-## Unit + 0x186C8
-
-- [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 13](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L13-L13) — [GOLDEN REQUIRED] 原作無改変EXE、変更前DAT、同SAVE/MAP/input/seed/RNG/tick、quota_viewとquarter_viewの組合せ、context+0xE4=0/1、global flag0/1、matrix identity/nonidentity、画面点と境界ma
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 15](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L15-L15) — [NEXT P0] 0x57DE95→0x4C1860の真条件・0x576660 vtable下位作用とUnit+0x186C8/CC consumer、最終targetは未解決。T011召喚EXP/死亡・T012ダメージ・T024通常AI・T028士気/敗走も未完。原本・他owner・REA/dev_lab・MAST
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

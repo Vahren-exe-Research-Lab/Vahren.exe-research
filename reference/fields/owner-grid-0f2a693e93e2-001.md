@@ -25,4 +25,31 @@
 - [research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md 行 7](../../research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md?plain=1#L7-L7) — - NEW-2 [STATIC]: 非0側0x4E507E/5081/5084のgrid+0x48からセルを取得、0x4E5086 CMP DWORD PTR [EAX+ECX*4],0 -> 0x4E5089 SETE DL -> 0x4E508C EAX=EDX。範囲内かつ空セルなら1、非空又は範囲外なら0。これは
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-64"></a>
+## grid + 0x64
+
+- [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+<a id="field-68"></a>
+## grid + 0x68
+
+- [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+- [REF_MAP_TERRAIN.md 行 418](../../REF_MAP_TERRAIN.md?plain=1#L418-L418) — 1. 旧grid+0x68全セルの非ゼロnodeを一時木へ集約し、その木を走査する。
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+<a id="field-80"></a>
+## grid + 0x80
+
+- [REF_MAP_TERRAIN.md 行 412](../../REF_MAP_TERRAIN.md?plain=1#L412-L412) — 製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) \| (dst &
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
+<a id="field-84"></a>
+## grid + 0x84
+
+- [REF_MAP_TERRAIN.md 行 421](../../REF_MAP_TERRAIN.md?plain=1#L421-L421) — 4. grid+0x84のcache値vectorを解放し、0x4F4140を呼び、+0xACの順序listを解放して+0xB0=0へ戻す。
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

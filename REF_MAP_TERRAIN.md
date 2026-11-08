@@ -92,7 +92,7 @@ type による旗: 1→`+0x130`、2→`+0x67`、3→`+0x67,+0x68`、4→`+0x67,+
 
 ### 2.3 通行グリッド（`grid`）
 
-grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクトの+8）。
+`G = module + (0x8BE2F0 - 0x400000)` はGameManagerの実体アドレスであり、`[G]`はvtable。gridポインタは **`[G+0x90]`**（G+0x88に埋め込まれた小オブジェクトの+8）から読む。G自身を一度dereferenceしてから+0x90へ進むのは誤り。根拠は§16。
 
 | オフセット | 内容 |
 |---|---|
@@ -102,9 +102,9 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 | +0x6C / +0x70 | 幅 / 高さ（マス） |
 | +0x74 / +0x78 / +0x7C | 粗グリッド（半分の解像度）の幅・高さ・行表 |
 
-- 0x4E9470: 初期化、0x4E9A20: 1マスを通行不可にする（細・粗両方）。
+- 0x4E9470: 旧領域・grid行・経路cacheを解放して再確保する初期化。戦闘中に呼んで安全とは未証明（§16）。0x4E9A20: 1マスを通行不可にする（細・粗両方）。
 - 0x4EA2E0 → 0x4E9A60: 通れるマスを長方形の領域に分け、経路探索のグラフを作る。引数は grid 1個（スタック渡し、呼出側 `push grid; call`）。読込関数内の呼出は 0x4F1439 と 0x4F320B の**2か所だが分岐の別経路で、1回の読込で呼ばれるのは1回**。［静的確認］
-- **戦闘中の再構築（V3）の静的評価**: 0x4EA2E0 は新しい領域を作って通れるマスの `+0x64`（領域番号）と `+0x68`（領域ノード）を上書きするだけで、**前の領域ノードは解放しない**（一時木だけ解放）。よって再実行しても古いポインタがぶら下がる（解放済みを指す）ことは無いが、メモリは少し漏れる。通行不可になったマスの `+0x64/+0x68` は古い値のまま残るため、再構築前に全マスを `+0x64=0x80000008`、`+0x68=0` に戻す（0x4E9470 の初期化と同じ値、`+0x60` は保つ）必要がある。経路キャッシュ（0x4EC1E0 側）が古い領域の組を保持し続ける可能性があり、塞いだ道を通ろうとする恐れは残る → 実機確認は DLL の段階 M6 で行う。［静的確認／実機未確認］
+- **戦闘中の再構築（V3）の静的評価**: 0x4EA2E0 は新しい領域を作って通れるマスの `+0x64`（領域番号）と `+0x68`（領域ノード）を上書きするだけで、**前の領域ノードは解放しない**（一時木だけ解放）。この関数単独が旧nodeを解放しないという局所事実であり、再実行全体の安全性を保証しない。旧領域のリークを許容した製品設計にはできず、経路cacheの番号再利用による誤hitにも注意する（§16）。通行不可になったマスの `+0x64/+0x68` は古い値のまま残るため、新しい表は `+0x64=0x80000008`、`+0x68=0` から構築する必要がある。ただし旧+0x68はcleanupがnodeを収集する根拠でもあり、解放前にゼロ化すると旧nodeを追跡できなくなる。これらの値だけをリセットする手順を完成した再構築処理とは扱わない。経路キャッシュ（0x4EC1E0 側）が古い領域の組を保持し続ける可能性があり、塞いだ道を通ろうとする恐れは残る → 実機確認は DLL の段階 M6 で行う。［静的確認／実機未確認］
 - 0x4EAA70: 2点間を8方向に歩いて通行不可マスに当たるか調べる（直進可否）。
 - 0x4EC1E0: 経路照会（辞書の既存名 `RouteCache_ConditionalHitPromotion`、B レーン T028 の経路キャッシュと同一関数）。内部で 0x4EAC30（領域ノード +0x68 の参照）と 0x4EAA70 を呼ぶ。呼出元は Unit_ProcessKnockbackMotion（0x5769B0）と 0x5767B0（ユニット移動）。［静的確認］
 
@@ -393,3 +393,56 @@ OGGテストの原作DATを読み取り、`a_default/script/30_スキル/F12_cha
 | m3_dirty_out.txt | `044a1ee4b3d88e76eb425a01c9d0f9f992c4b7529b9265deb8fed68060ca1285` | flag 0/1の保存位置 |
 | m3_dirtywriters_out.txt | `628ecf3e85b1aa1297e337752700783fdf582a822d4cb044be733bab9e3ae97f` | 388–434行カメラsetter |
 | m3_camera_out.txt | `697b20012817e173b24f539bee58796ce9fae5518d1b2e6b761d6a6daa384055` | R取得、mode/flag分岐、stage取得 |
+
+
+## 16. M5/M6準備: gridの所有権と再構築境界
+
+研究ID: `CODEX-MAP-M6-GRID-OWNERSHIP-20261109`。既存証拠の再照合と同じver0.67へのreadOnly静的照会。M6の危険な仮実装・OGG変更・新規実機試験は行っていない。
+
+### 16.1 Gとgridの参照、field/objectの区別
+
+`G=module+(0x8BE2F0-0x400000)`はGameManagerの実体（symbolsのkind=object）で、`[G]`はそのvtable。製品保存ASM `research/raw/dis_4f0be0.txt` の0x4F0D8Bはstage+0xE8からGを取得、0x4F0D91はLEA G+0x88、0x4F0D9BはMOV [G+0x90]でgridポインタを取得する。正本の旧「gridはG+0x90」という省略はdereference位置が曖昧だったため、§2.3を`grid=[G+0x90]`へ明確化した。［STATIC］
+
+「field collは全MAPで未使用」と一般化しない。[既存全MAP調査](research/recovered/DEVLAB_TERRAIN_MOVETYPE_20261011.md)12–14行は、highland_128_collを24,382セル、highland_128_coll_wを1,312セルと記録し、前者のtype=collは有効、後者はコメントであると区別している。これは過去の全量データ調査であり、今回の試験MAPにcollが存在するかの新しい実測ではない。また同文書の当時「native未取得」は履歴として保持し、後日の§1/§2のnative証拠と混同しない。
+
+objectのcoll/wall/wall2によるBlockと、break/break2/gate(type 5/6)の専用生成は異なる。field attr変更、通行grid変更、Blockの生成/削除は別操作であり、gridを開通させても既存Blockが消えるとは限らない。M5のattrで変わるmovetype判定と、M6の経路グラフ・V4のBlock管理を一つの成否にまとめない。
+
+### 16.2 4EA2E0単独の再実行とcache
+
+製品保存`research/raw/q14_out.txt:634–692`では4EA2E0が新nodeをgrid+0x68へ上書きし、一時木を解放する。旧領域nodeの解放処理ではない。同784–806行の4EC1E0はgrid+0x64の2つの領域番号から`((src & 0x7fff)<<16) | (dst & 0xffff)`を作り、grid+0x80系cacheのhit時に保存済pathを返す。新領域で番号が再利用される場合、旧cacheのままでは旧pathを返す危険がある。旧nodeを残して解放済参照を避けるだけでは、正しさもリーク回避も満たさない。［STATICからの設計上の帰結］
+
+### 16.3 4E9470の解放と再確保
+
+新しい保存照会`m6_grid_ownership_out.txt:34–181`で、4E9470は旧幅/高さが非ゼロの場合に次を行うことを確認した。［STATIC］
+
+1. 旧grid+0x68全セルの非ゼロnodeを一時木へ集約し、その木を走査する。
+2. 各nodeの+0x2Cの隣接木、+0x18のvector、node本体を解放する。
+3. gridの細3表と粗表の行・行表を解放する。
+4. grid+0x84のcache値vectorを解放し、0x4F4140を呼び、+0xACの順序listを解放して+0xB0=0へ戻す。
+5. 182–256行で幅/高さと表を再確保し、+0x60=0、+0x64=0x80000008、+0x68=0、+0x7C=0で初期化する。
+
+同262–288行の4E9980も隣接木/vector/node本体を解放するnode destructorである。旧+0x68を先にゼロ化すると4E9470が旧nodeを収集する手掛かりを失うため、sentinelリセットとcleanupの順序を取り違えない。4E9470は通行byteも初期化するので、既存障害物を保持したまま単に呼び直すAPIではない。
+
+正規xrefはmap loader内0x4F0F06の1件。callerはEDI=grid、`push height; push width; call 4E9470`。callee先頭もEDIをgridとして読み、正常epilogue 0x4E9948は`RET 8`（`m6_path_copy_out.txt`）。従ってEDIの暗黙引数＋stack width/height＋callee cleanupであり、単純なcdecl/thiscall宣言に置換しない。値の返却はこの呼出から有用な契約を確定していない。［STATIC ABI］
+
+**未確認:** 戦闘中の正規cleanup呼出条件、Unit/AIが保持する旧経路の寿命全体、再確保例外後の復旧、変更前の細/粗障害物の安全な保存復元。正規map-load経路の存在は戦闘中の再初期化が安全という証明ではない。M6/V3はまだ未実機であり、この調査だけで有効化しない。
+
+### 16.4 根拠の所在
+
+新規照会は§12.4の既知Ghidra project/EXEを`-noanalysis -readOnly`で読み、全件exit 0。ローカルTEMP出力のSHA256を記録し、ゲーム資産・個人ログは収録しない。
+
+| 出力 | SHA256 | 範囲 |
+|---|---|---|
+| m6_grid_ownership_out.txt | `1b3cb699d12cfdb57eb4586caa2056aa19c9d6b27a1a5ef9f258fc48995a325b` | 4E9470/4E9980、loader caller |
+| m6_path_lifetime_out.txt | `594d8c82eba87197d7aa1aa2cb5579c81d0d8ea9fba37367298ee8668f666806` | 5767B0/5769B0、4E9470 prologueとxref |
+| m6_path_copy_out.txt | `33de387f3835518b99856233818dab40c9ded95a31fc1edf261c553f07c0bc94` | 57A690/4EDFE0、4E9948 RET8 |
+| m6_path_values_out.txt | `a665a00a6dc58f3fa0dfb002138be21b468042d1f8f548e241e4988d1f865c7a` | 57A910、両callerのUnit+0x186B0宛先 |
+| m6_path_values_asm_out.txt | `a581a1aec0254aacbd87397a619e8bec7170e582d52e78b99f253b3445a18688` | 57A910の範囲反復・ESI引数 |
+
+### 16.5 直接callerのpath値コピーと残る寿命問題
+
+0x4EC1E0の既知直接callerは0x5767B0と0x5769B0。前者0x5767FC〜0x57680E、後者0x576AB1〜0x576AC3は返されたvectorのbegin/endを取り、ESI=`Unit+0x186B0`として0x57A690へ渡す。0x57A690は旧list nodeをdeleteしてから0x57A910へ範囲挿入する。0x57A910の0x57A93E/0x57A950/0x57A98CはESIを入力beginからendまで8 bytesずつ進め、0x57A960で0x4EDFE0を呼ぶ。0x4EDFE0は新しい0x10-byte list nodeを確保し、+8/+0xCへESIが指す2DWORDをコピーする。［STATIC、decompileとASMを照合］
+
+従ってこの2経路では、返されたvectorの保存領域をそのままUnitが借用し続けるのではなく、8-byte要素をUnit側listへ値コピーする。**これを全AI経路の無参照保証へ一般化しない。** コピーされた要素の意味と下流の全consumer、node等のpointer値が要素に含まれないことの全体証明、cache破棄と同時進行する処理の排他は未確認。さらに値コピーが独立していても、既にUnitへ渡した旧経路を再計算しなければ新しい障害物へ向かい続ける問題が残る。
+
+次の最小確認は、Unit+0x186B0のconsumerと移動中の再経路探索条件を既存B/T028記録へ接続し、合法な停止点で旧経路を無効化できるかを確定すること。M6の実機はそれ以降とし、新規移動命令、移動途中、解除、同プロセス再戦、反復時のメモリ量を別々に観測する。

@@ -18,6 +18,19 @@
 
 読み手・書き手の個別採録は未実施です。
 
+<a id="field-90"></a>
+## 0x90 passabilityGrid
+
+G is direct object address, not [G]. Grid pointer is read from G+0x90, embedded G+0x88 subobject+8; loader 0x4F0D8B..0x4F0D9B.
+
+- 型　`ptr`
+- 辞書の確度　STATIC
+- 辞書の出典表記　REF_MAP_TERRAIN.md §16 (CODEX-MAP-M6-GRID-OWNERSHIP-20261109)
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
+- [元の辞書行](../../structs.tsv#L160)
+
+読み手・書き手の個別採録は未実施です。
+
 <a id="field-1b8"></a>
 ## 0x1B8 ctx
 

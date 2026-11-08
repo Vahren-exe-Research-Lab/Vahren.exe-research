@@ -678,7 +678,8 @@
 | G + 0x78 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-78) |
 | G + 0x80 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-80) |
 | G + 0x84 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-84) |
-| G + 0x88 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-88) |
+| G + 0x88 | 3 | [1](fields/owner-G-333e0a1e2781-001.md#field-88) |
+| G + 0x90 | 2 | [1](fields/owner-G-333e0a1e2781-001.md#field-90) |
 | G + 0x94 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-94) |
 | G + 0x1B8 | 6 | [1](fields/owner-G-333e0a1e2781-001.md#field-1b8) |
 | G + 0x4C4 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-4c4) |
@@ -690,7 +691,6 @@
 | G + 0x1EF4BE | 2 | [1](fields/owner-G-333e0a1e2781-001.md#field-1ef4be) |
 | G + 0x1EF4C8 | 2 | [1](fields/owner-G-333e0a1e2781-001.md#field-1ef4c8) |
 | G + 0x1EF570 | 1 | [1](fields/owner-G-333e0a1e2781-001.md#field-1ef570) |
-| g_GameManager + 0x90 | 1 | [1](fields/owner-g_GameManager-34d58cd31975-001.md#field-90) |
 | game + 0x1B8 | 1 | [1](fields/owner-game-6ca5cab77e70-001.md#field-1b8) |
 | game + 0x1EF244 | 1 | [1](fields/owner-game-6ca5cab77e70-001.md#field-1ef244) |
 | game_manager_base + 0xC | 2 | [1](fields/owner-game_manager_base-144c8e3007db-001.md#field-c) |
@@ -698,7 +698,7 @@
 | GameEvent + 0x1EED50 | 1 | [1](fields/owner-GameEvent-889b67a729c1-001.md#field-1eed50) |
 | GameManager + 0x8 | 2 | [1](fields/owner-GameManager-3554a873139a-001.md#field-8) |
 | GameManager + 0xC | 2 | [1](fields/owner-GameManager-3554a873139a-001.md#field-c) |
-| GameManager + 0x88 | 2 | [1](fields/owner-GameManager-3554a873139a-001.md#field-88) |
+| GameManager + 0x88 | 1 | [1](fields/owner-GameManager-3554a873139a-001.md#field-88) |
 | GameManager + 0x504 | 4 | [1](fields/owner-GameManager-3554a873139a-001.md#field-504) |
 | GameManager + 0x1EF144 | 2 | [1](fields/owner-GameManager-3554a873139a-001.md#field-1ef144) |
 | GameManager + 0x1EF148 | 7 | [1](fields/owner-GameManager-3554a873139a-001.md#field-1ef148) |
@@ -764,6 +764,10 @@
 | grid + 0x8 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-8) |
 | grid + 0x28 | 2 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-28) |
 | grid + 0x48 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-48) |
+| grid + 0x64 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-64) |
+| grid + 0x68 | 2 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-68) |
+| grid + 0x80 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-80) |
+| grid + 0x84 | 1 | [1](fields/owner-grid-0f2a693e93e2-001.md#field-84) |
 | Group + 0x10 | 1 | [1](fields/owner-Group-34ca0e766088-001.md#field-10) |
 | Group + 0x1D | 3 | [1](fields/owner-Group-34ca0e766088-001.md#field-1d) |
 | Group + 0x30 | 1 | [1](fields/owner-Group-34ca0e766088-001.md#field-30) |
@@ -2021,6 +2025,7 @@
 | stage + 0xA8 | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-a8) |
 | stage + 0xDC | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-dc) |
 | stage + 0xE4 | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-e4) |
+| stage + 0xE8 | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-e8) |
 | stage + 0x148 | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-148) |
 | stage + 0x298 | 1 | [1](fields/owner-stage-c7ff6dcd94d7-001.md#field-298) |
 | start + 0x1C | 2 | [1](fields/owner-start-cced28c6dc3f-001.md#field-1c) |
@@ -2399,10 +2404,10 @@
 | Unit + 0x18688 | 23 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-18688) |
 | Unit + 0x1868C | 5 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-1868c) |
 | Unit + 0x186A4 | 4 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186a4) |
-| Unit + 0x186B0 | 6 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186b0) |
+| Unit + 0x186B0 | 9 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186b0) |
 | Unit + 0x186B4 | 2 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186b4) |
 | Unit + 0x186C0 | 1 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186c0) |
-| Unit + 0x186C8 | 18 | [1](fields/owner-Unit-4e545960f1bf-008.md#field-186c8) / [2](fields/owner-Unit-4e545960f1bf-009.md#field-186c8) |
+| Unit + 0x186C8 | 18 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186c8) |
 | Unit + 0x186CC | 2 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186cc) |
 | Unit + 0x186D0 | 1 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d0) |
 | Unit + 0x186D4 | 5 | [1](fields/owner-Unit-4e545960f1bf-009.md#field-186d4) |

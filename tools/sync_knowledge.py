@@ -4920,7 +4920,6 @@ FILES += (
 # Reviewed generated pages already tracked by MAP-T001/T039 integration.
 FILES += (
     'reference/fields/owner-FieldData-de67250c2784-001.md',
-    'reference/fields/owner-g_GameManager-34d58cd31975-001.md',
     'reference/fields/owner-vm_context-f0a2a4556a19-001.md',
     'reference/structs/Block.md',
     'reference/structs/FieldData.md',
@@ -4967,6 +4966,9 @@ FILES = FILES + (
     'reference/structs/RenderContext.md',
     'reference/symbols/004C3C20.md',
     'reference/symbols/004C4420.md',
+)
+FILES = FILES + (
+    'reference/symbols/004E9980.md',
 )
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.

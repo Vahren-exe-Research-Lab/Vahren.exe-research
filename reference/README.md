@@ -213,10 +213,11 @@
 | 0x4E6110 | [Missile_CollectBlockingObjects](symbols/004E6110.md) | func | 0x4E5860 と同系の判定（複数対象） |
 | 0x4E70E0 | [Summon_ProcessSharedQueue](symbols/004E70E0.md) | func | 召喚処理と代替移動処理で共用される2DWORDの待ち行列を使う。末尾投入・先頭取得・先頭進行・件数減算を含む。 |
 | 0x4E7ED0 | [Skill_CheckMissileRangeGate](symbols/004E7ED0.md) | func | 通常 missile のMP消費より前の対象・射程判定補助。探索窓と有効半径の参照値が分岐で変わる。 |
-| 0x4E9470 | [Grid_InitPassability](symbols/004E9470.md) | func | 通行グリッド(+0x60 byte/+0x64 int/+0x68 ptr/+0x7C 粗)を初期化 |
+| 0x4E9470 | [Grid_InitPassability](symbols/004E9470.md) | func | 旧node・grid行・route cacheを解放後に細/粗gridを再確保。EDI=grid、stack width,height、RET8。正規xrefはmap loadのみ、戦闘中安全性未確認（REF_MAP_TERRAIN.md §16） |
+| 0x4E9980 | [Grid_DestroyRegionNode](symbols/004E9980.md) | func | Destroys region node adjacency tree at +0x2C and vector at +0x18, then deletes node. Descriptive name; does not establish safe in-battle cleanup. |
 | 0x4E9A20 | [Grid_MarkBlocked](symbols/004E9A20.md) | func | __fastcall ECX=x, EDX=grid, EAX=y。+0x60 と粗グリッド+0x7C に1を書く |
 | 0x4E9A60 | [Grid_BuildRegions](symbols/004E9A60.md) | func | 通れるマスを長方形領域に分割し経路グラフを作る |
-| 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない（再実行してもぶら下がらないが漏れる）。戦闘中の再実行は実機未確認 |
+| 0x4EA2E0 | [Grid_RebuildNavigation](symbols/004EA2E0.md) | func | 経路領域の構築。cdecl相当で grid を1個 push。呼出2か所は分岐の別経路。前の領域ノードは解放しない。旧cache誤hit・リーク回避・旧path寿命を別途解決する必要があり、単独再実行の安全性は未証明（REF_MAP_TERRAIN.md §16） |
 | 0x4EAA70 | [Grid_TestStraightWalk](symbols/004EAA70.md) | func | 2点間を8方向に進み通行不可マスに当たるか調べる |
 | 0x4EC1E0 | [RouteCache_ConditionalHitPromotion](symbols/004EC1E0.md) | func | Native hit recency relink only above 8000 records, eviction branch on count>=8192; key ownership and runtime outcomes VERIFY |
 | 0x4ED030 | [Tree_ClearAllNodes](symbols/004ED030.md) | func | 全区間tree消去の下位処理。0x49F6A0のsubtree解放とsentinel自己リンク復元、count=0を含む。 |
@@ -552,7 +553,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7917 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7928 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -575,12 +576,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 539 件、フィールド 154 件、根拠付き関係 165 件。
+辞書項目 540 件、フィールド 155 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75905 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75929 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 20 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 21 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
 [回収済み研究文書の題名・本文](DOCUMENTS.md) — 2404 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

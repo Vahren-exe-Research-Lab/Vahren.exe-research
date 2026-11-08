@@ -109,4 +109,9 @@
   - → 現在の解釈　Mode 1 skips terrain vertex rebuild while render context+0x3C8C is nonzero. Camera setter clears the flag; V1 immediate reflection is an observed case, not a universal guarantee. M3 artifact cause remains inferred.
   - 確度　STATIC; runtime cause INFERRED。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L16-L16)
 
+- [Grid_InitPassability](symbols/004E9470.md) · `CORRECTION-MAP-GRID-REBUILD-OWNERSHIP` · `corrected`。Separate loader cleanup from 4EA2E0-only region rebuilding and retain ownership/lifetime limits.
+  - 訂正済みの旧解釈（履歴）　Grid initialization was summarized without its old-region and route-cache destruction; resetting region rows before rebuilding could appear sufficient.
+  - → 現在の解釈　4E9470 uses the old +0x68 rows to gather and destroy region nodes, frees rows/cache, and reallocates. Zeroing the old node rows first loses cleanup reachability. EDI=grid, stack width/height, RET8; in-battle safety remains unverified.
+  - 確度　STATIC; in-battle safety VERIFY。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L105-L107)
+
 [事典の入口](README.md)

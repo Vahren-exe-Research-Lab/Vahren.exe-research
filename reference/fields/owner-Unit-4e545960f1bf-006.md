@@ -17,10 +17,10 @@
 ## Unit + 0x214
 
 - [REF_MAP_TERRAIN.md 行 113](../../REF_MAP_TERRAIN.md?plain=1#L113-L113) — - Unit::vf25（0x576DC0）: `Unit+0x1F0` と `UnitDef(+0x1C8)+0x14C` が有効なら、`Unit+0x1E4`（stage）の vf02 で現在座標（`Unit+0x214/+0x218`）のセルを取り、セル `+0xD4`（attr）でユニットの movetype
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [REF_MAP_TERRAIN.md 行 155](../../REF_MAP_TERRAIN.md?plain=1#L155-L155) — - 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L7-L7) — 【NEW 3 / FIRST LIVE】0x56954F～0x56957Dで登録順にUnit参照をたどり、Unit+0x1867C==0の最初の候補に限って、0x56957D→0x569730 E8直接CALLで配置処理を呼ぶ。呼出位置はUnit+0x214/+0x218を整数2つとしてPUSH、Troop+0x28の
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
@@ -38,7 +38,7 @@
 ## Unit + 0x218
 
 - [REF_MAP_TERRAIN.md 行 155](../../REF_MAP_TERRAIN.md?plain=1#L155-L155) — - 根拠: Unit::vf25 の 0x576DE4〜0x576DFE は Unit+0x218 を push、Unit+0x214 を push、ECX=Unit+0x1E4 として `call [vtable+8]`。callee 0x4FBEA3/0x4FBEA6 は [EBP+0xC]/[EBP+8] を読み
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 <a id="field-21c"></a>
 ## Unit + 0x21C

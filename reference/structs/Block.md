@@ -13,7 +13,7 @@ type coll/wall/wall2
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L152)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,7 +26,7 @@ type wall/wall2。飛び道具を止める
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L153)
 
 読み手・書き手の個別採録は未実施です。
@@ -39,7 +39,7 @@ type wall2。no_wall2 で確率すり抜け
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L154)
 
 読み手・書き手の個別採録は未実施です。
@@ -52,7 +52,7 @@ type floor
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L155)
 
 読み手・書き手の個別採録は未実施です。
@@ -65,7 +65,7 @@ ObjectDef+0x4C
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L156)
 
 読み手・書き手の個別採録は未実施です。
@@ -78,7 +78,7 @@ ObjectDef+0x49
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 - [元の辞書行](../../structs.tsv#L157)
 
 読み手・書き手の個別採録は未実施です。

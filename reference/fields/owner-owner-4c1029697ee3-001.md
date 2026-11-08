@@ -8,10 +8,10 @@
 ## owner + 0xC
 
 - [REF_MAP_TERRAIN.md 行 347](../../REF_MAP_TERRAIN.md?plain=1#L347-L347) — - Enemy ctor 0x447280はparam3をowner+0x0Cへ保存。初期化0x48A973/0x48A9A6はmask 2/4で生成してE+0x1E8634/+0x1E8638へ置き、0x51E100経由のE+0x1E8630はmask 1。
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [REF_MAP_TERRAIN.md 行 348](../../REF_MAP_TERRAIN.md?plain=1#L348-L348) — - storeRectUnitの0x4B3227以降では`red`（VA 0x630D38）がE+0x1EED48、`blue`（0x630D3C）がE+0x1EED44を参照し、そのowner+0x0Cを使う。
-  制約・訂正　M1/M2 bounded runtime accepted; M3 registration/tick/restore active0 logged, paused visual residue cleared on camera move; full M3 acceptance pending; M4 owner/filter and M3 cache STATIC, live cache cause INFERRED; no assets/images/raw personal logs
+  制約・訂正　M1/M2 bounded runtime; M3 paused restore/camera residue observations and cache STATIC; M4 targeting STATIC; M6 old-grid cleanup/custom ABI and Unit list value-copy STATIC, live rebuild/whole-AI lifetime VERIFY; no assets/images/raw logs
 
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 195](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L195-L195) — - Spot instance loader VA 0x5973AF..0x597412では、spot固有 `capacity` が0ならscenario `spot_capacity` (`owner+0x0C`) をfallbackに採用し、その後Spot runtime `+0x88`をさらに `min(valu
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
