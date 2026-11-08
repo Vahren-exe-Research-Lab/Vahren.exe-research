@@ -21,8 +21,8 @@
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2449-L2449)。
 
 - [戦闘マップ：地形チップ・オブジェクト・通行判定・移動速度（MAP-T001）](../../REF_MAP_TERRAIN.md?plain=1#L1-L1) — `REF_MAP_TERRAIN.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
-  本文 SHA256 `d9f010ca84ddb07c2e564d8bb3bada1f26099c7db7209449df2222f3e029e96d`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。制約・訂正 Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+  本文 SHA256 `6297130d3e0bdc7e42398eb04ecd0b4db0bb18cebc83bcc93b75c5fdce038f3d`
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
 
 [前のページ](page-024.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

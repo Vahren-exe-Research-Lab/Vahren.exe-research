@@ -251,7 +251,7 @@
 ## Unit + 0x1868C
 
 - [REF_MAP_TERRAIN.md 行 118](../../REF_MAP_TERRAIN.md?plain=1#L118-L118) — - v≥8 で `Unit+0x1868C` を加算、v≤3 で0に戻す（地形による何らかの継続カウンタ。用途は未確認）。
-  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+  制約・訂正　Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
 
 - [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 4](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L4-L4) — [FACT-PRE] 保存命令0x57E74DではUnit+0x18688へ8方向インデックスをstore、0x57E753/0x57E759ではSkill+0x278 costをUnit+0x94 MPからsub、0x57E75FではUnit+0x1868C=0。これらは今回の0x57E788幻覚条件より前。
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained

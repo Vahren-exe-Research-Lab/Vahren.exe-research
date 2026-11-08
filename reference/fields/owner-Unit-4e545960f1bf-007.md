@@ -104,7 +104,7 @@
 ## Unit + 0x1867C
 
 - [REF_MAP_TERRAIN.md 行 164](../../REF_MAP_TERRAIN.md?plain=1#L164-L164) — - 根拠: 0x49E7B6 は名前をECXからEAXへ、0x49E7B8 は評価器をEDXからESIへ保存。0x49E7CF〜0x49E7D9 は名前長を走査。0x49E7F0 は評価器+0x1EEBEC の名前multimapを使用。0x49E826 はnode+0x28のUnit*、0x49E82D/0x49E8
-  制約・訂正　Existing MAP-T001 and new CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; no new runtime test; game binary not distributed
+  制約・訂正　Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
 
 - [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 11](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L11-L11) — 0x529DC0は件数2未満を短絡し、2以上なら26個の一時bucket（0x529E3D push 0x1A、要素長0xC）を構築、0x529EAE/0x529F04/0x529F74 -> 0x52AD00 でmergeする。0x52AD35 -> 0x526030 の比較は各group+0xC/+0x10からUn
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
