@@ -13,7 +13,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L131)
 
 読み手・書き手の個別採録は未実施です。
@@ -26,7 +26,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L132)
 
 読み手・書き手の個別採録は未実施です。
@@ -39,7 +39,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L133)
 
 読み手・書き手の個別採録は未実施です。
@@ -52,7 +52,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`ptr`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L134)
 
 読み手・書き手の個別採録は未実施です。
@@ -65,7 +65,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`map`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L135)
 
 読み手・書き手の個別採録は未実施です。
@@ -78,7 +78,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`map`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L136)
 
 読み手・書き手の個別採録は未実施です。
@@ -91,7 +91,7 @@ FieldData 配列（幅×高さ、各0x11C）
 - 型　`vector`
 - 辞書の確度　静的確認
 - 辞書の出典表記　REF_MAP_TERRAIN.md (CLAUDE-MAP-T001-20261109)
-- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+- 出典 [REF_MAP_TERRAIN.md](../../REF_MAP_TERRAIN.md)。MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 - [元の辞書行](../../structs.tsv#L137)
 
 読み手・書き手の個別採録は未実施です。

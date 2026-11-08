@@ -156,7 +156,7 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 - 整数型の根拠: 斜め座標変換 0x4C1690 内 0x4C16CE〜0x4C16F1 は入力を32ビットで保存して `fild dword` する。float のビット列を渡す契約ではない。
 - 斜め表示分岐は 0x4FBE89 の global 0x65BD9E と stage+0xE4 に依存する。helper 0x4C1690 は stage+0xDC/+0xE0、+0x18/+0x20、+0x68、+0xD4/+0xD8 を参照する。非斜め分岐は 0x4FBF26 から 0x4C1B70 へ進む。
 - 斜め分岐は変換後のマス座標を 0〜width-1 / 0〜height-1 に丸める（0x4FBEB7〜0x4FBF03）。したがって返却ポインタだけで「入力座標がもともとマップ内だった」とは判定できない。M1では幅高さの正値、積とアドレス加算のoverflow、配列可読範囲を確認し、返却セルが配列内かつ0x11C境界であることを検証して `index=(cell-cells)/0x11C; x=index%width; y=index/width` を得る。
-- vf02をDLLのHKDR購読callbackから呼ぶ実機試験は**未実施**。既存V1は原作自身の vf25→vf02 が返したセルを観察したもので、DLL呼出の受入れを代替しない。
+- M1実装前の時点ではvf02をDLLのHKDR購読callbackから呼ぶ実機試験は未実施だった。既存V1は原作自身の vf25→vf02 が返したセルの観察でありDLL呼出の受入れを代替しない。**その後のM1実機確認は§10**に記録する。
 
 ### 7.2 Battle_FindUnitByName — 0x49E780
 
@@ -164,11 +164,11 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 - 根拠: 0x49E7B6 は名前をECXからEAXへ、0x49E7B8 は評価器をEDXからESIへ保存。0x49E7CF〜0x49E7D9 は名前長を走査。0x49E7F0 は評価器+0x1EEBEC の名前multimapを使用。0x49E826 はnode+0x28のUnit*、0x49E82D/0x49E836 はUnit+0x1867Cのgone byteを読む。生存優先、なければ最初のgone unitを返す。
 - 名前表は vm_context+0x504+0x1EEBEC。MSVC map の +4=head、+8=size、node+0/+4/+8=left/parent/right、+0xC=key string、+0x28=Unit*、+0x2D=nil。引数なしsetupの候補は、空表を拒否し、上限付きで検証した表のキーを使いUnitを解決し、Unit+0x1E4のstageを取得すること。これは**実装方針**であり新しい原作関数の発見ではない。stage vtable、配列・幅高さを再検証し、戦闘外・stage変更時に旧記録を捨てる。
 - 原作関数は一時std::stringを構築/解放する（0x49E7E1→0x402800、0x49E810→0x5B6BBB）。ゲーム地形やユニットを変更する処理ではないが、完全な「プロセスメモリ書込みなし」の関数ではない。
-- **実績の区別**: Extensions commit `1ba7e4c46d7e783f353d3eae9f42b1def24553d5` の `plugins/exp/src/hakushin_exp_dat.h` 225〜238行は名前表を読み取る `hxd_find_unit` 再実装。原作0x49E780を直接呼ぶものではない。同commitの `docs/DAT_ROUTINE_BUS.md` 77〜80・121〜126行はcallback内native直接呼出を未実機確認としている。EXPの戦闘動作実績を、MapGimmickからのnative直接呼出実績に読み替えない。
+- **実績の区別**: Extensions commit `1ba7e4c46d7e783f353d3eae9f42b1def24553d5` の `plugins/exp/src/hakushin_exp_dat.h` 225〜238行は名前表を読み取る `hxd_find_unit` 再実装。原作0x49E780を直接呼ぶものではない。同commitの `docs/DAT_ROUTINE_BUS.md` 77〜80・121〜126行はcallback内native直接呼出を未実機確認としている。EXPの戦闘動作実績を、MapGimmickからのnative直接呼出実績に読み替えない。**今回別途確認したMapGimmick M1の実績は§10**。
 
 ### 7.3 既存結果との整合と未確認
 
-§0/§3/§4/§5に残っていた「V1推定」「V2の0は未確認」は、同文書の2026-11-09既存V1/V2結果に合わせて訂正した。過去の静的段階のintake本文は当時の記録として維持する。今回新たに実機確認したのではない。V3〜V5、native lookup/vf02のHKDR callback内呼出、setupの戦闘開始/終了/再戦時の寿命は未確認。静的ABIの一致や合成テストを実機受入れへ格上げしない。
+§0/§3/§4/§5に残っていた「V1推定」「V2の0は未確認」は、同文書の2026-11-09既存V1/V2結果に合わせて訂正した。過去の静的段階のintake本文は当時の記録として維持する。今回新たに実機確認したのではない。この記録時点ではV3〜V5、native lookup/vf02のHKDR callback内呼出、setupの戦闘開始/終了/再戦時の寿命は未確認だった。後日のM1開始・読取り経路の実機確認と、なお未確認の終了/再戦を§10で区別する。静的ABIの一致や合成テストを実機受入れへ格上げしない。
 
 ## 8. 試験シナリオの敵勢力設定（2026-11-09 ユーザー実機報告）
 
@@ -176,3 +176,46 @@ grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクト�
 - 変更前は敵に先に攻め込まれて滅亡したため、この3設定を追加して再導入した経緯がある。設定と変更前の状況の出典: [MapGimmick commit 0ca4ddea の試験DAT](https://github.com/ButaMonky/Vahren.exe-MapGimmick/blob/0ca4ddea4f4b0c26aa3c58faff475fe0e90c3201/dat/mapgimmick_test.dat#L72)、同版 `CODEX_HANDOFF.md` §0・§4。結果の出典は本作業チャットのユーザー返答（2026-11-09）。Codexによる独立した画面観察・再試験は行っていない。
 - **未分離**: fix / yabo / kosen 各設定の個別効果と必要十分性。他シナリオ・継続セーブ・長時間経過・全難易度で同じ挙動になるかは未確認。DATの既存コメントにある「fix = onで侵攻しない」を単独効果の確定根拠にはしない。
 - この報告が確認したのは敵の先行侵攻が見られなかったことだけ。「城壁と門」「海の戦場」へ攻め込めること、M1のDLL読取り結果、M2チップ変更などは本報告の確認範囲に含めない。
+
+## 9. M2 チップ矩形取得の静的契約（2026-11-09 Codex）
+
+研究ID: `CODEX-MAP-M2-CHIP-ABI-20261109`。対象は本書冒頭と同じver0.67 SHA256。OGGテスト配下EXEを静的に読んだ実装担当の出力を確認した。根拠は製品リポジトリ `ButaMonky/Vahren.exe-MapGimmick` の `research/raw/m2_chip_abi.txt`（596行、SHA256 `157b5489bf929c732ea8295e83d2d7ecc70a08df3a869cbed54378727b3eafd2`）。本節で使う命令範囲は以下に限定し、同ファイルの命令途中から始まる0x55A640付近は根拠に使わない。原作バイナリは収録しない。
+
+### 9.1 0x423E80 の引数・戻り値と書込み
+
+- **custom ABI**: EDX=終端付きチップ名 `char*`、ESI=呼出側が用意した24バイト出力、EAX=その出力先、stack引数なし。標準のfastcallだけではESI引数を渡せない。［STATIC］
+- 名前は0x423EE8〜0x423F11でEDXから一時std::stringへ変換する。戻りは0x423FFFの `mov eax,esi`、0x42401Cの `ret`。原作FieldData設定側は0x4562DCでESIへstack出力先を入れ、0x4562E0で呼び、0x4562E5〜0x456314で6 dwordをセル+0x6C〜+0x80へ転記する。
+- 空名は0x423F1E〜0x423F5A、未登録名は0x423F7F〜0x423FEDで既定矩形をコピーする。既定値は0xB05140〜0xB05154の6 floatで、0x423EAF〜0x423EE2が0xB05158のbit0を使って初回に6個の0.0へ初期化する。つまり取得関数自体にもこのlazy初期化と一時文字列の生成/解放があり、「完全にメモリ書込みをしない関数」ではない。
+- 6値の最後2個はfloatのサイズ値。Block側は0x4DF409〜0x4DF415で出力+0x10/+0x14をBlock+0x10C/+0x110へコピーし、0x4DF41D〜0x4DF43Fで `fld dword` と0.0比較を行う。Blockのcoll印が無い経路ではゼロサイズで生成を取りやめる。有限値かつ末尾2値>0を要求するM2の検証は**製品側の安全条件**であり、原作がすべての非有限値/負値を拒否するとの主張ではない。
+
+### 9.2 チップ矩形の名前表
+
+- 0x423F76→0x426360→0x4266B0で名前を検索する。headポインタ格納位置はVA 0x87A230（ASLR時はmodule+0x47A230）。head+4=root、node+0/+4/+8=left/parent/right、node+0xC=std::string key、node+0x28=6 dwordの矩形値、node+0x41=nil byte。［STATIC］
+- 根拠: 0x4266B0/0x4266BBがhead/rootを取得、0x4266BE/0x42671Aがnilを検査。0x4266D4でkeyを選び、0x42670F/0x426718でright/leftへ進むlower_bound経路を使う。0x426360は候補のキー比較で一致を確かめ、0x423F7Fはheadとの一致で未登録を判定。0x423F8C〜0x423FACがnode+0x28〜+0x3Cを出力へコピーする。
+- これはT040で既出の `g_ChipAtlasMap`（0x879E68、4整数の矩形、node nil+0x39）とは位置・値の幅・nil位置が異なる。本節のnative取得経路で0x879E68の表構造を流用しない。両表の生成・相互変換の全経路は本節では未調査。
+- M2実装は名前の検索経路を上限付きで検証してからnative呼出し、出力を検証する。これは実装方針であり、任意の破損状態や同時変更に対するnative関数の安全性を保証する研究結果ではない。
+
+### 9.3 確認範囲
+
+この節は静的根拠の記録で、M2 DLLからのHKDR callback内native呼出し・表示変更・復元・再戦時の寿命・V5境界飾りの実機受入れは未実施。既存V1のデバッガによる書換え成功と、M2製品経路の成功は区別する。
+
+## 10. M1 読取り経路の実機確認（2026-11-09 03:24 JST）
+
+研究ID: `CODEX-MAP-M1-LIVE-20261109`。OGGテスト配下で外伝「マップギミックテスト」の「地形読み取り」をユーザーが実行し、Codexがゲーム側 `HakushinMapGimmick.log` を読み取った。対象は本書冒頭のver0.67、詳細ログ版DLLのSHA256は `3d11f1340cbb0a5e27fc6bb523c048ba478b509bdd57b3d003e0415b82ad4d20`（導入先DLLで実測）。原作素材・個人ログの原文は収録せず、確認した値を以下に要約する。
+
+| 時刻（JST、2026-11-09） | 呼出と観測結果 |
+|---|---|
+| 03:24:04.061 | `hk_map_setup result=0`、width=45、height=45、outputs_valid=1 |
+| 03:24:13.818〜.826 | `hk_map_cell_of result=0`、unit=`hk_mapt_hero`、x=20,y=38。続く`hk_map_get result=0`でattr=`grass`、field=`pasture` |
+| 03:24:22.066〜03:24:34.972 | cell_of/getとも0、x=24,y=37、attr=`rock`、field=`mt`を複数回 |
+| 03:24:44.783〜03:24:52.065 | cell_of/getとも0、x=19,y=37、attr=`grass`、field=`pasture`を複数回 |
+
+同一ゲーム実行（PID 12656）の同一DAT呼出スレッドで、各成功行はoutputs_valid=1だった。これにより今回のM1製品経路について、初期化・HKDR通知からのsetup、原作名前lookup、stage vf02による座標取得、attr/idのDAT文字列配列出力が戦闘中に動いたことを**実機確認**とする。座標と地形の変化もログで確認した。任意のDLL・別版・全呼出状況の安全性まで一般化しない。
+
+### 10.1 先行する -13 と試験配置の修正
+
+03:19:41〜03:20:08の先行試験ではsetup/getは0だが、`hk_map_cell_of(hk_mapt_hero)` は -13（名前未解決）。この時点のhome memberは `a000*6` のみで、master名を設定しただけでは試験対象が明示配置されていなかった。homeへ `hk_mapt_hero` を明示配置したDATで新しく試験し、上表のcell_of=0を確認した。先行試験のgetが返したx=0,y=0のmud/mudは、cell_ofの成功を意味しない。
+
+### 10.2 残る確認
+
+戦闘終了→再戦時のstage寿命、ログOFF、M2のチップ変更/復元、V3〜V5は今回のM1実機受入れ範囲に含めない。§7の「未実機」は調査当時の履歴として残し、現在の確認範囲は本節による。M2の静的契約（§9）をM1の成功から実機確認へ格上げしない。

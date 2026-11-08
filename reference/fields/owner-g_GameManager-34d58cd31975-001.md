@@ -8,6 +8,6 @@
 ## g_GameManager + 0x90
 
 - [REF_MAP_TERRAIN.md 行 95](../../REF_MAP_TERRAIN.md?plain=1#L95-L95) — grid は `g_GameManager+0x90`（GameManager+0x88 にある小オブジェクトの+8）。
-  制約・訂正　Existing MAP-T001 and CODEX-MAP-M1-ABI-20261109 static ABI; V1/V2 are prior reports; section 8 is user-reported no enemy invasion with fix=on/yabo=0/kosen=0 combined, individual effects untested; no independent new runtime test; game binary not distributed
+  制約・訂正　MAP-T001 prior V1/V2; M1 static ABI and live setup/cell_of/get confirmed 2026-11-09 03:24 JST; section 8 enemy settings are combined user report only; M2 chip ABI is static only; battle reentry/log OFF/M2 live remain untested; game assets and raw personal logs not distributed
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -29,7 +29,7 @@
 | 0x41EF50 | [Ai_SelectFourwayBattleMode](symbols/0041EF50.md) | func | 四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。 |
 | 0x420900 | [TrigCosNegSinToTwoInts](symbols/00420900.md) | func | Original x86 70-byte trig helper: adds stored pi/2, calls cos and sin and integer converter, writes signed two-DWORD outputs to implicit ESI and ESI+4; conversion exceptions and gameplay role remain VERIFY |
 | 0x423D70 | [Image_GetChipRect](symbols/00423D70.md) | func | ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値） |
-| 0x423E80 | [Image_GetChipAtlasRect](symbols/00423E80.md) | func | チップ名からアトラス矩形6値を返す（セル・Block・ユニット等が共用） |
+| 0x423E80 | [Image_GetChipAtlasRect](symbols/00423E80.md) | func | custom ABI EDX=チップ名char*, ESI=24byte出力、EAX=出力先、stack引数なし。6値の末尾2値はfloatサイズ。空/未登録名は6ゼロ既定値（初回lazy初期化）。名前表head=[0x87A230], node key+0xC/value+0x28/nil+0x41。M2製品経路は実機未確認（REF_MAP_TERRAIN §9） |
 | 0x4243C0 | [Image_GetFaceCached](symbols/004243C0.md) | func | cdecl 引数1（char* 画像名）、EAX=HBITMAP。キャッシュ0x879E48を引き、無ければ0x427270で読み込んで登録 |
 | 0x424C80 | [Image_GetChipSprite](symbols/00424C80.md) | func | ECX=char* チップ名、EAX=HGDIOBJ。キャッシュ0x87A1B8、無ければ0x879E68の矩形から切り出してDIBを作り登録。表に無い名前は0 |
 | 0x427040 | [Save_EncodeAdditiveEnvelope](symbols/00427040.md) | func | 先頭4バイトのマジックと28バイト鍵を付け、32バイト目以降へ繰返し加算する共通エンコーダ。鍵生成で CRT rand を28回消費する。 |
@@ -228,7 +228,7 @@
 | 0x4F0BE0 | [Battle_LoadStageMap](symbols/004F0BE0.md) | func | 戦闘マップ(.map)読込。セル設定、field type!=0 で Block 生成＋通行グリッド+0x60/+0x7C に1、object から Block、末尾で経路領域構築 0x4EA2E0 |
 | 0x4F93A0 | [Ai_ComputeBattleAreaTargetPoint](symbols/004F93A0.md) | func | 戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。 |
 | 0x4FAF50 | [NewGameStage::vf00_SmoothHeights](symbols/004FAF50.md) | func | 読込後の高さ平滑化・隠れ判定 |
-| 0x4FBE80 | [NewGameStage::vf02_GetCellAtPos](symbols/004FBE80.md) | func | __thiscall ECX=stage, stack=(int32 px,int32 py), EAX=FieldData*, ret 8。斜め表示モード対応、変換後をマップ端へclamp。Unit::vf25 が使用。HKDR callbackからの直接呼出は未実機確認（REF_MAP_TERRAIN §7） |
+| 0x4FBE80 | [NewGameStage::vf02_GetCellAtPos](symbols/004FBE80.md) | func | __thiscall ECX=stage, stack=(int32 px,int32 py), EAX=FieldData*, ret 8。斜め表示モード対応、変換後をマップ端へclamp。Unit::vf25 が使用。M1のHKDR callbackからの直接呼出・DAT座標出力は実機確認（2026-11-09、REF_MAP_TERRAIN §10）。終了/再戦は未確認 |
 | 0x4FBF40 | [NewGameStage::vf03_CollectVisibleCells](symbols/004FBF40.md) | func | 表示矩形内のセルを列挙（高さのはみ出し込み） |
 | 0x5001B0 | [Random_SetMapGenerationSeed](symbols/005001B0.md) | func | マップ初期化に関わる乱数 seed 生成経路。0x49B191 から呼ばれ、CRT srand を実行する。 |
 | 0x5023E0 | [Bgm_StreamThread](symbols/005023E0.md) | func | BGM ストリーム再生のスレッド |
@@ -550,7 +550,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7884 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7891 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -574,7 +574,7 @@
 
 辞書項目 537 件、フィールド 153 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75774 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75814 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 

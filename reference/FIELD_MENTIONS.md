@@ -143,6 +143,7 @@
 | begin + 0x60 | 1 | [1](fields/owner-begin-e6f07d43b5c2-001.md#field-60) |
 | begin + 0x70 | 1 | [1](fields/owner-begin-e6f07d43b5c2-001.md#field-70) |
 | begin + 0x1EEFA0 | 1 | [1](fields/owner-begin-e6f07d43b5c2-001.md#field-1eefa0) |
+| Block + 0x10C | 1 | [1](fields/owner-Block-211d0bb8cf4f-001.md#field-10c) |
 | borrowed + 0xC | 3 | [1](fields/owner-borrowed-4389ec109b96-001.md#field-c) |
 | BOTH + 0x1867C | 1 | [1](fields/owner-BOTH-8c458494c5d0-001.md#field-1867c) |
 | bow + 0x135 | 2 | [1](fields/owner-bow-c177affdff64-001.md#field-135) |
@@ -1142,6 +1143,7 @@
 | mode + 0x78 | 1 | [1](fields/owner-mode-e642b12901a6-001.md#field-78) |
 | mode + 0x1EEC3C | 2 | [1](fields/owner-mode-e642b12901a6-001.md#field-1eec3c) |
 | mode + 0x1EED43 | 1 | [1](fields/owner-mode-e642b12901a6-001.md#field-1eed43) |
+| module + 0x47A230 | 1 | [1](fields/owner-module-120970d81283-001.md#field-47a230) |
 | move + 0x1A0 | 1 | [1](fields/owner-move-683a62ce15fb-001.md#field-1a0) |
 | MP + 0x94 | 1 | [1](fields/owner-MP-204ac66a8856-001.md#field-94) |
 | MP + 0xE0 | 1 | [1](fields/owner-MP-204ac66a8856-001.md#field-e0) |
@@ -1154,24 +1156,26 @@
 | new + 0x20 | 1 | [1](fields/owner-new-11507a0e2f5e-001.md#field-20) |
 | new + 0x194 | 1 | [1](fields/owner-new-11507a0e2f5e-001.md#field-194) |
 | NewGameModel + 0x38 | 5 | [1](fields/owner-NewGameModel-1a2780319f5d-001.md#field-38) |
+| nil + 0x39 | 1 | [1](fields/owner-nil-5da3a4c7f117-001.md#field-39) |
 | no + 0x48 | 1 | [1](fields/owner-no-9390298f3fb0-001.md#field-48) |
 | Node + 0x10 | 1 | [1](fields/owner-Node-e93372533f32-001.md#field-10) |
 | node + 0x8 | 2 | [1](fields/owner-node-545ea5384610-001.md#field-8) |
-| node + 0xC | 41 | [1](fields/owner-node-545ea5384610-001.md#field-c) |
+| node + 0xC | 42 | [1](fields/owner-node-545ea5384610-001.md#field-c) |
 | node + 0x10 | 11 | [1](fields/owner-node-545ea5384610-001.md#field-10) |
 | node + 0x11 | 4 | [1](fields/owner-node-545ea5384610-001.md#field-11) |
 | node + 0x14 | 15 | [1](fields/owner-node-545ea5384610-001.md#field-14) |
 | node + 0x15 | 5 | [1](fields/owner-node-545ea5384610-001.md#field-15) |
 | node + 0x18 | 6 | [1](fields/owner-node-545ea5384610-001.md#field-18) |
 | node + 0x19 | 4 | [1](fields/owner-node-545ea5384610-001.md#field-19) |
-| node + 0x1C | 12 | [1](fields/owner-node-545ea5384610-001.md#field-1c) |
+| node + 0x1C | 12 | [1](fields/owner-node-545ea5384610-001.md#field-1c) / [2](fields/owner-node-545ea5384610-002.md#field-1c) |
 | node + 0x20 | 23 | [1](fields/owner-node-545ea5384610-002.md#field-20) |
 | node + 0x21 | 2 | [1](fields/owner-node-545ea5384610-002.md#field-21) |
-| node + 0x28 | 90 | [1](fields/owner-node-545ea5384610-002.md#field-28) / [2](fields/owner-node-545ea5384610-003.md#field-28) |
+| node + 0x28 | 92 | [1](fields/owner-node-545ea5384610-002.md#field-28) / [2](fields/owner-node-545ea5384610-003.md#field-28) |
 | node + 0x29 | 2 | [1](fields/owner-node-545ea5384610-003.md#field-29) |
 | node + 0x2C | 3 | [1](fields/owner-node-545ea5384610-003.md#field-2c) |
 | node + 0x2D | 3 | [1](fields/owner-node-545ea5384610-003.md#field-2d) |
 | node + 0x39 | 1 | [1](fields/owner-node-545ea5384610-003.md#field-39) |
+| node + 0x41 | 1 | [1](fields/owner-node-545ea5384610-003.md#field-41) |
 | node + 0x1FC | 1 | [1](fields/owner-node-545ea5384610-003.md#field-1fc) |
 | node_flag + 0x14 | 1 | [1](fields/owner-node_flag-b939c04795f7-001.md#field-14) |
 | nonnull + 0x20 | 2 | [1](fields/owner-nonnull-1832c9ebcb6d-001.md#field-20) |

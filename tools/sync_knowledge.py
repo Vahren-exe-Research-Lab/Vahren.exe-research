@@ -4956,6 +4956,12 @@ FILES += (
     'reference/symbols/0063A6EC.md',
     'reference/symbols/0068C7F3.md',
 )
+# Reviewed generated field mentions from M2 ABI and M1 live evidence.
+FILES += (
+    'reference/fields/owner-Block-211d0bb8cf4f-001.md',
+    'reference/fields/owner-module-120970d81283-001.md',
+    'reference/fields/owner-nil-5da3a4c7f117-001.md',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.
