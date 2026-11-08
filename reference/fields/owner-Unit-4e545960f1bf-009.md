@@ -122,7 +122,7 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3159](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3159-L3159) — - **next_first=off**: 子を Unit+0x1E49C に預け、突進経路の中間点（FUN_005795E0 で index==全長/2 のとき）に生成する。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-1e4a4"></a>
 ## Unit + 0x1E4A4

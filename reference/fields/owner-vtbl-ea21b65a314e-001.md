@@ -8,13 +8,13 @@
 ## vtbl + 0x10
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3712](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3712-L3712) — \| BGM \| 0x502300 `_beginthread`（CRT 0x5B7D14） \| 0x5023E0 \| 0x502220←0x4BE820←0x4BDE40。DirectSoundBuffer vtbl+0x10/+0x2C/+0x4C とデコーダ vf1 のみ \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-44"></a>
 ## vtbl + 0x44
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3741](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3741-L3741) — - +0x44（slot 17）: 0x559666 の 1 箇所だけ。D3D デバイスの vtbl+0x44（Present）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 114](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L114-L114) — - 仮想呼び出しの変位で照合: slot 16（+0x40）の呼び出しはない。slot 17（+0x44）は 1 箇所（0x559666、D3D デバイスの vtbl+0x44 = Present）だけ。slot 1（+4）は 3 箇所（0x42E74E / 0x43A3DD / 0x4709D0）あるが、いずれも i
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
@@ -23,6 +23,6 @@
 ## vtbl + 0x48
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3788](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3788-L3788) — - 0x4BF2B0 の停止経路は、`+0x44` が立っていれば次の順で処理する: `state=3` → IDirectSoundBuffer::Stop（vtbl+0x48）→ **0x502330（main が seek と vf01 デコードを実行）** → 0x502160（ここで初めて停止フラグを立て、0
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

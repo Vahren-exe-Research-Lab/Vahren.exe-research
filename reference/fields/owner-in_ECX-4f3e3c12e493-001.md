@@ -8,6 +8,6 @@
 ## in_ECX + 0x1EED78
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 208](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L208-L208) — - 構造体の復元: エンジン本体（`in_ECX + 0x1EED78` などのフィールド）、Unit、Skill、SpotのフィールドにGhidraで型を付け、擬似Cのフィールド名を意味のある名前にする。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

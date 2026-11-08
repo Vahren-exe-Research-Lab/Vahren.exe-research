@@ -95,13 +95,13 @@
 ## base + 0x479628
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3835](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3835-L3835) — - **ローダー終了**: base+0x47983C は、起動ローダー（スレッド 0x555AD0。`a_system/xp.txt` があれば main で同期実行）を始める前に 0x555D69 で 1 になり（CS base+0x479628 の中）、ローダーが終わった後（GetExitCodeThread≠S
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-47983c"></a>
 ## base + 0x47983C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3835](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3835-L3835) — - **ローダー終了**: base+0x47983C は、起動ローダー（スレッド 0x555AD0。`a_system/xp.txt` があれば main で同期実行）を始める前に 0x555D69 で 1 になり（CS base+0x479628 の中）、ローダーが終わった後（GetExitCodeThread≠S
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 151](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L151-L151) — \| `dat_ui_selector_auto_arm.diff` \| `core/dat_ui_selector_plugin.c`（mtime 1793032353209、SHA256 6e30fe0dd446e5c861fd139ffa957fe8bcc9dccb30ff2ff916e6021b11c6c187）
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
@@ -116,7 +116,7 @@
 ## base + 0x6AD434
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3836](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3836-L3836) — - **タイトル画面**: base+0x6AD434（GameManager+0x1EF144）は場面番号。0＝タイトル（0x48AD30、'title_name'）、1＝ワールド、2＝戦闘・マップイベント、4＝シナリオ選択、5＝シナリオ開始、6＝ロード、7＝マップテスト。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 151](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L151-L151) — \| `dat_ui_selector_auto_arm.diff` \| `core/dat_ui_selector_plugin.c`（mtime 1793032353209、SHA256 6e30fe0dd446e5c861fd139ffa957fe8bcc9dccb30ff2ff916e6021b11c6c187）
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.

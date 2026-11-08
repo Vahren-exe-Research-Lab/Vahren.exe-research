@@ -29,7 +29,7 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3519](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3519-L3519) — - Unit+0x214 は突進中も動かない。表示上の矩形だけが動く。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_MODE6_FTOL_20261011.md 行 38](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_MODE6_FTOL_20261011.md?plain=1#L38-L38) — - Skill+0x250==0ならVA0x551044から0x5510E1へ分岐し、距離sqrt・倍率・新たなint convertを**まるごとskip**。+0x250非zeroではsource/target x/y(Unit+0x214/+0x218)の符号付き32bit差を取り、2つのIMULとADDの低32
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
@@ -86,7 +86,7 @@
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3518](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3518-L3518) — - 振れ幅の上限（§80 の 1.5×Unit+0x228）が実際の制約になっているかは VERIFY。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md?plain=1#L10-L10) — - `FUN_00571B70` でUnit+0x1E594に追従対象ポインタ候補、Unit+0x1E598に追従距離候補を書込。初期値は `Unit+0x228*2+32`。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -95,7 +95,7 @@
 ## Unit + 0x230
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3215](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3215-L3215) — - ユニットの判定矩形は Unit+0x40..+0x4C。Unit+0x230≠0 なら、その半径の正方形（下端基準）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-2fc"></a>
 ## Unit + 0x2FC
@@ -269,7 +269,7 @@
 ## Unit + 0x185FC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1080](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1080-L1080) — \| 基本値 \| e=_ftol2(ceil(f×target Unit+0x185FC)) \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-18610"></a>
 ## Unit + 0x18610
@@ -299,13 +299,13 @@
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 935](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L935-L935) — - 実行条件: Unit+0x8C == 0、部隊あり（+0x1D0）、Unit+0x18614 == 0。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1673](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1673-L1673) — - talent 以外は Unit+0x18614==0。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-1861c"></a>
 ## Unit + 0x1861C

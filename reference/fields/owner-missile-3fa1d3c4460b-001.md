@@ -29,12 +29,12 @@
 ## missile + 0x100
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3201](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3201-L3201) — - 移動累計 d = ftol(missile+0x100)。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-1ac"></a>
 ## missile + 0x1AC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3140](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3140-L3140) — 4. それ以外は next2 から1つ。next_order(+0x270)=0 なら rand() を1回使って選ぶ。on なら missile+0x1AC の順番。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

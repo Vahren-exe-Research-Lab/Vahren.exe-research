@@ -155,7 +155,7 @@
 ## engine + 0x1EED58
 
 - [REF_SCRIPT_VM_CONTEXT.md 行 15](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L15-L15) — - event/call and routine invoke common native 0x4321B0 using different flags/return conventions and scene-dependent event markers; cannot collapse AST operation
-  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
 
 - [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1028](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1028-L1028) — [A SAVED NATIVE, READONLY] A所有`exe/T006_TARGET_DISPATCH.md`：通常event/call opcode0はAL=1 Yield、routine opcode1はAL=0 Continue、msg opcode11の正常1〜3引数とwait opcode9はYiel
   制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
@@ -253,11 +253,23 @@
 <a id="field-1eedb8"></a>
 ## engine + 0x1EEDB8
 
+- [REF_SCRIPT_VM_CONTEXT.md 行 16](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L16-L16) — - battleEvent replaces the active root list: opcode10 clears engine+0x1EEDB8 with 0x48F620, then appends only ScriptIF roots from the selected event with 0x5299
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
+
+- [REF_SCRIPT_VM_CONTEXT.md 行 31](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L31-L31) — **STATIC:** after event lookup and temporary body-vector construction, dispatcher opcode10 reloads engine at 0x4A1909, sets ESI=engine+0x1EEDB8 at 0x4A190F, and
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 464](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L464-L464) — 2. 先頭レベルの各要素について、0x436530 で `__RTDynamicCast(ScriptElement → ScriptIF)` を試す。キャストできたもの**だけ**を 0x5299E0 で **std::list（engine+0x1EEDB8 = battle{} のルートと同じリスト）の末尾に追加
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 29](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L29-L29) — 4. ScriptIFだけを battle root active list（engine +0x1EEDB8）へ登録する。
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eede8"></a>
+## engine + 0x1EEDE8
+
+- [REF_SCRIPT_VM_CONTEXT.md 行 37](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L37-L37) — The fresh 0x4930C0 output further distinguishes one-shot execution from node removal. ScriptIF+4 identifies rif, +8 holds the condition, +0xC the then body. Non
+  制約・訂正　Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
 
 <a id="field-1eee18"></a>
 ## engine + 0x1EEE18
@@ -383,15 +395,6 @@
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
 - [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 26](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L26-L26) — engine+0x1EEF60	changeMaster		0x4a7262	REGISTRATION_XREF_ONLY
-  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
-
-- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 27](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L27-L27) — engine+0x1EEF60	changePlayer		0x4a7290	REGISTRATION_XREF_ONLY
-  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
-
-- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 28](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L28-L28) — engine+0x1EEF60	erasePowerMerce		0x4a72be	REGISTRATION_XREF_ONLY
-  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
-
-- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 29](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L29-L29) — engine+0x1EEF60	erasePowerStaff		0x4a72ec	REGISTRATION_XREF_ONLY
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

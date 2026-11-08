@@ -456,7 +456,7 @@ DATファイルを読み込む処理を、他AIの汎用パーサ（declaration_
 - pushTurn など、world の状態が必要なものは担当外。
 - ランナーでは `rng`（LegacyRng）の rand15 を使う。§14 の shuffle と同じ乱数列になる。
 - **PC上の全体回帰**（このチャットで§15〜18を書き戻した後）: **Ran 648 tests OK（674秒）**。他のAIの python.exe が動いていないことを確認してから実行した。
-
+> **訂正（2026-11-09）:** battleEvent全体は既存root listをclearした後、選択したeventのScriptIFを再登録する。以下の「常に追加する」という一般化は撤回する。5299E0単体のappendとdispatcher全体を混同していた。根拠・未確認範囲は[現行REFの訂正](../../../REF_SCRIPT_VM_CONTEXT.md#4-battleevent-replace-all-correction)を参照。以下の歴史本文は原文を保持する。
 <a id="f-19b"></a>
 ## 19b. battleEvent（GENERAL op10）を確定（§11 の VERIFY を解消）
 - 処理は次の順に進む。

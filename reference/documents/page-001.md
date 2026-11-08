@@ -131,8 +131,8 @@
   元パス <code>dev_lab/reports/NATIVE_SKILL_CAPABILITY_SUBSET_20261011.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L25-L25)。
 
 - [主要解析記録の部分回収版](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2-L2) — `research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md`
-  回収状態 PARTIAL_REDACTED_SCOPE_CORRECTED。以前の収録状況 CATALOG_SNAPSHOT_DIFFERS_0322398525f0f056900998e2344c58024f6f1723f44c344d92f5c6e5491b20c9。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L26-L26)。制約・訂正 Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
-  本文 SHA256 `af1da13e6b95ec75af7ed758679eb6740e8ad90e9d00d032c5ee3374589864d8`
+  回収状態 PARTIAL_REDACTED_SCOPE_CORRECTED。以前の収録状況 CATALOG_SNAPSHOT_DIFFERS_0322398525f0f056900998e2344c58024f6f1723f44c344d92f5c6e5491b20c9。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L26-L26)。制約・訂正 Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
+  本文 SHA256 `b687c74d56efceb31c8209b29660c288c652d5f7839e786b385b02df8690f0df`
   元パス <code>dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L26-L26)。
 
 - [progress_sync_20261011T153958076Z.json](../../research/recovered/rea_runs/logs/progress_sync_20261011T153958076Z.json?plain=1#L1-L1) — `research/recovered/rea_runs/logs/progress_sync_20261011T153958076Z.json`

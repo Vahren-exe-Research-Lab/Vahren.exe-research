@@ -8,7 +8,7 @@
 ## scene + 0x10
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2002](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2002-L2002) — - 消すのは [scene+0x10] の集合、追加するのは [GM+4]+0x1EF4B4 の集合。両者を同じオブジェクトと見なしている（STATIC_HIGH）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-68"></a>
 ## scene + 0x68

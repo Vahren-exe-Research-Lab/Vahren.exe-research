@@ -17,7 +17,7 @@
   制約・訂正　Existing full body linked; not duplicated
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3570](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3570-L3570) — \| battle{} の設置 \| 0x492890（VM の 0x433E58 から）：ScriptIF root、モード 2、active 1、3陣営の vf+0xC \| §79 と B で一致。0x48D6A0 と 0x492890 のどちらがモード 2 を先に書くかは VERIFY \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json 行 127](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json?plain=1#L127-L127) — "conditional_path": "When Actionable BattleWnd Task present and eligible, paused M+8 via vf+0x0C TRUE permits vf+0x04 0x40E220, whose input conditions may reach
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
@@ -29,12 +29,12 @@
 ## vf + 0x14
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3571](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3571-L3571) — \| 終了 \| **0x493630** だけが出口（FrameDriver の 0x49303A / 0x493082 / 0x4930A1、BattleWnd の 0x40E2B9、script の 0x4A1764）。モード 2 なら 3陣営の vf+0x14 → 0x4C21F0。0x493746 で +0x1E
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-18"></a>
 ## vf + 0x18
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 136](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L136-L136) — 4. +0x1EED28 が0でなければ、両陣営の判定をする。主体（+0x1EED44）の vf+0x18 == 4 かつ相手（+0x1EED48）の vf+0x18 ≠ 4 か、0x514C80（残っているユニットの判定）で勝ちなら `0x493630(engine, 1)`、それ以外は `(engine, 0)`
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -26,8 +26,8 @@
   元パス <code>REF_MAP_TERRAIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2450-L2450)。
 
 - [Script grammar, command VM, context and timing — curated A/T005–T010](../../REF_SCRIPT_VM_CONTEXT.md?plain=1#L1-L1) — `REF_SCRIPT_VM_CONTEXT.md`
-  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2451-L2451)。制約・訂正 Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
-  本文 SHA256 `76c74302407e6e1b28b22d4c4bebcc9b0e02a0718a26ced5b8d159a83c67d227`
+  回収状態 CONTENT_REVIEWED。以前の収録状況 NEW_BODY_INDEX_REGISTRATION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2451-L2451)。制約・訂正 Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
+  本文 SHA256 `5533db3a35fcb8c8a6a93fa933551c77239cdf6128d8811dcf608a525db6037e`
   元パス <code>REF_SCRIPT_VM_CONTEXT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2451-L2451)。
 
 [前のページ](page-024.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

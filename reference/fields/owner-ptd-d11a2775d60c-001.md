@@ -8,7 +8,7 @@
 ## ptd + 0x14
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1047](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1047-L1047) — - 乱数共有: CRT rand は単一状態（スレッド毎 ptd+0x14）。雇用・中立生成・放浪・friend・skill2 は全て同じ列を消費（T031 lane A の `LegacyRng` を読取専用で使用、変更なし）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-54"></a>
 ## ptd + 0x54

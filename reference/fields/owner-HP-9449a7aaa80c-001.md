@@ -14,6 +14,6 @@
 ## HP + 0xDC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1207](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1207-L1207) — \| 1. 戦闘中だけの Unit 状態 \| 現在HP +0xDC、現在MP +0xE0、能力値 +0x90..（構築値）、consti/movetype コピー、行動キュー +0x186B0 等 \| 0x573BD0 / 0x576660 \| CONFIRMED（所在）\|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

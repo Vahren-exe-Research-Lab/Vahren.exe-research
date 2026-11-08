@@ -292,7 +292,7 @@
 0x44E3F0	func	Expression_RegisterConditionNames	isWorld、isNewTurn、isComTurn などの条件式名と opcode の登録を行う領域の入口。	静的確認	T010§condition registry
 0x4365F0	func	Event_InsertFrameKindZero	スクリプト実行フレームの構築時に引数0を配列の先頭へ挿入する補助。フレーム種類と命令位置の扱いに関係する。	静的確認	T010§phase executionMode / frame-install contract, §frameInstallMode vector transform
 0x436080	func	Event_TransformScriptFrame	実行フレームを構築する補助関数の一つ。frameInstallMode=0 と通常実行の分岐に使われる。	推定	T010§frameInstallMode vector transform
-0x4930C0	func	Event_EvaluateBattleIfRoots	戦闘に登録された if/rif のroot条件を評価する。真の通常ifは実行後に集合から除去し、rifは残す。	静的確認	T010§if / rif lifecycle
+0x4930C0	func	Event_EvaluateBattleIfRoots	if/rif rootsを評価。非rifの真rootは既実行集合へ記録して後続scanでskipし、list node削除とは別。body実行後にcurrentnode.nextを読む経路があり、body内battleEvent置換の安全性は未確認。REF_SCRIPT_VM_CONTEXT §4	静的確認	T010§if / rif lifecycle
 0x492D80	func	Event_ProcessBattleTick	戦闘の進行に合わせた処理経路。自然終了判定と ScriptVM の再開に関連する入口として参照される。	推定	T010§2026-10-12 A69, BATTLE_TAKEOVER_OBSERVABILITY_CONTRACT
 0x48BC70	func	Scene_RunPhase6SeedSetup	実行フェーズ6を設定し、0x48BCB9で乱数リセット補助を呼ぶ。フェーズ5側とは別の分岐。	静的確認	T031§2026-10-12 A51
 0x479740	func	Random_ShuffleStringVector	スクリプト shuffle の文字列ベクトルを並べ替える補助。0x479A30 を呼び、28バイト要素の Fisher-Yates 処理に接続する。	静的確認	T031§16 Native RNG / shuffle contract
@@ -301,7 +301,7 @@
 0x565700	func	Event_UpdateBattleLimit	戦闘時間制限の現在カウンタを更新する補助。番兵値のとき増加し、それ以外では正値を減らす。	静的確認	T010§battle clock native semantics
 0x565730	func	Event_GetBattleLimit	戦闘時間制限の現在値を返す。state[0x67B938] が番兵なら 0x7FFFFFFF を返す。	静的確認	T010§battle clock native semantics
 0x565750	func	Event_GetElapsedLimitTime	時間制限ありなら初期値から現在値を差し引き、番兵状態では現在値を返す。	静的確認	T010§battle clock native semantics
-0x4A18B1	code	Event_DispatchBattleEvent	スクリプト battleEvent（opcode10）でrootを列挙し、ScriptIF のみを active list に登録する位置。	静的確認	T010§battleEvent root scheduler
+0x4A18B1	code	Event_DispatchBattleEvent	battleEvent opcode10はevent解決後、4A1915→48F620でengine+1EEDB8をclearし、4A195E→5299E0でScriptIFだけ再登録。helper単体appendと異なり全体はreplace-all。REF_SCRIPT_VM_CONTEXT §4	静的確認	T010§battleEvent root scheduler
 0x4518FA	code	Expression_GetBattleTime	getTime 条件（opcode0x25A）で engine+0x1EED60 を返す分岐位置。	静的確認	T010§battle clock native semantics
 0x45190B	code	Expression_GetBattleLimit	getLimit 条件（opcode0x25B）で 0x565730 を呼び現在の時間制限を取得する。	静的確認	T010§battle clock native semantics
 0x451915	code	Expression_TestBattleInterval	isInterval（opcode0x25C）で正の指定値を10の倍数に切り上げ、engine+0x1EED64 の割り切れ判定に使う。	静的確認	T010§battle clock native semantics
@@ -609,3 +609,4 @@
 0x4C3C20	func	RenderContext_SetCameraPosition	Sets context+0x4C/+0x50, clears terrain vertex cache flag+0x3C8C at 0x4C3C5A, then recalculates matrix. Descriptive name.	STATIC	REF_MAP_TERRAIN.md §15 (CODEX-MAP-M3-RENDER-CACHE-20261109)
 0x4E9980	func	Grid_DestroyRegionNode	Destroys region node adjacency tree at +0x2C and vector at +0x18, then deletes node. Descriptive name; does not establish safe in-battle cleanup.	STATIC	REF_MAP_TERRAIN.md §16 (CODEX-MAP-M6-GRID-OWNERSHIP-20261109)
 0x402710	func	StdString_AssignSubstring	ECX=dest; stack source-object,position,count; RET0xC; EAX=dest. length+0x10/capacity+0x14, SSO capacity<16. Capacity sufficient preserves pointer/capacity; growth and exceptions are separate. M5 runtime unverified.	STATIC	REF_MAP_TERRAIN.md §17 (CODEX-MAP-M5-STRING-ASSIGN-20261109)
+0x48F620	func	StdList_ClearNodes	ESI=list header; self-links sentinel next/prev, clears count+4, deletes old nodes. battleEvent caller at 4A1915 clears active roots before append. Descriptive helper name.	STATIC	REF_SCRIPT_VM_CONTEXT.md §4 (CODEX-BATTLEEVENT-REPLACE-20261109)

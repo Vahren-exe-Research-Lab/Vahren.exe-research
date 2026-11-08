@@ -14,7 +14,7 @@
 ## word + 0x78
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2814](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2814-L2814) — - word +0x78 = 1、+0x7A = 0、+0xBC = 0、**+0xC0 = 100**（AI の 0x4771F0 では aff）、+0x80 = 0。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-84"></a>
 ## word + 0x84

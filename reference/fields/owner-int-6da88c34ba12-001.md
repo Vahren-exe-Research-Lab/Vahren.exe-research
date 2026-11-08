@@ -8,6 +8,6 @@
 ## int + 0x1C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1528](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1528-L1528) — - 名前 → レコード `(text, int+0x1C)` の multimap。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

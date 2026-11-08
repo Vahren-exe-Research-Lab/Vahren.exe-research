@@ -4,8 +4,20 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1ef4c3"></a>
+## engine + 0x1EF4C3
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 141](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L141-L141) — - `isPlayerEnd` opcode10 -> VA 0x44F664: byte `engine+0x1EF4C3`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-1ef4c4"></a>
 ## engine + 0x1EF4C4
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1017](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1017-L1017) — [A SAVED NATIVE / READ-ONLY] A-owned data/T031_RANDOM_EVENT_SCHEDULER.mdのA-20261013-2103-02、および保存exe/T031_PHASE_PREDICATE_HANDLERS.txt VA0x44F6A8..0x44F6DE。isCo
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 142](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L142-L142) — - `isComTurn` opcode12 -> VA 0x44F6A8: byte `engine+0x1EF4C4` を入口gateとして追加power条件を評価
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 391](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L391-L391) — [CONFIRMED / NEW BRANCH] A保存 `exe/T031_PHASE_PREDICATE_HANDLERS.txt` 0x44F6A8..0x44F6DE。既知T031のisComTurn opcode12/engine+0x1EF4C4入口readerを精密化。入口は`cmp byte[esi+0
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence

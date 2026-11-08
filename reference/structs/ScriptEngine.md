@@ -15,7 +15,7 @@
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines227-235; REF_SCRIPT_VM_CONTEXT.md lines3-4
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
 - [元の辞書行](../../structs.tsv#L125)
 
 - [Event_RunExecutionMode](../symbols/004335E0.md) → `reads` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。実行ループが現在の実行モードを読み、mode1・2・6を別経路に分岐する。phaseの識別値とは区別する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L227-L235) · `MEM2-VM-DISPATCH-READ-MODE`
@@ -45,7 +45,7 @@ waitが評価した引数を保持するカウンタ。インタプリタの継�
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines97-104; REF_SCRIPT_VM_CONTEXT.md lines3-4,15
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
 - [元の辞書行](../../structs.tsv#L124)
 
 - [Script_Op_Wait](../symbols/004A17D8.md) → `reads` → [ScriptEngine + 0x1EED58 waitCounter](../structs/ScriptEngine.md#field-1eed58)。既存のwait命令（opcode9）の位置で、インタプリタの継続ごとに減算する保持カウンタを読む。OSのsleepではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L97-L104) · `MEM2-VM-WAIT-READ-COUNTER`
@@ -78,7 +78,7 @@ isIntervalと報告上の10tickごとの制限時間更新に使う絶対スケ�
 - 辞書の確度　静的確認
 - 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines108-114,125-133; REF_SCRIPT_VM_CONTEXT.md lines3-4,17
 - 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
-- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden
+- 出典 [REF_SCRIPT_VM_CONTEXT.md](../../REF_SCRIPT_VM_CONTEXT.md)。Curated existing T005-T010 summary; A72 normal root 10-tick gate clarified; M3 runtime remains bounded in REF_MAP_TERRAIN; no new native gameplay Golden; battleEvent replace-all and executed-set correction STATIC; reentrant iterator safety VERIFY; PID21760 observation not full causal proof
 - [元の辞書行](../../structs.tsv#L123)
 
 - [Expression_TestBattleInterval](../symbols/00451915.md) → `reads` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。isIntervalは、正の指定間隔を10の倍数に切り上げた除数で絶対時計の余りを調べる。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L114) · `MEM2-VM-INTERVAL-READ-ABS`

@@ -8,52 +8,52 @@
 ## p + 0x1D
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2340](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2340-L2340) — - 0x478F50: sc = p+0x1D、または君主が @hero、または "@mode_samecall"（find-or-create）の値が 0。各リーダー d（room > 0 かつ資金 ≥ 10 の間）: free = min(0x65C118 − 配下数 − 1, room)。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-20"></a>
 ## p + 0x20
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1746](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1746-L1746) — - 最後まで返らなければ、flag（p+0x20≠0）が立っていれば centre、立っていなければ 0x80000008。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-60"></a>
 ## p + 0x60
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2325](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2325-L2325) — - aff = 0x5878F0(r, 君主)。r+0x74 で p+0x60 ≠ SENT かつ turn−p+0x60 < leave_period(5) なら 0。aff ≤ compati_bad(0) なら（r+0x74 なら +0xC8 = turn）次。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2804](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2804-L2804) — - aff は、p+0x60 ≠ SENT かつ turn − p+0x60 < leave_period(5) なら 0、それ以外は 0x5878F0(r, master p)。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-b0"></a>
 ## p + 0xB0
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2159](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2159-L2159) — - p+0xB0[q] ≥ turn ならとばす。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2160](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2160-L2160) — - cost = 0x593C20(q) = chop(収入(q) × diplo_cost_per(10)×0.01 + 0.5)。予算 < cost ならとばす。予算から引き、0x593C70 で p+0xB0[q] = turn。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2788](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2788-L2788) — - 0x593C70(p, q)（p+0xB0[q] = turn）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-108"></a>
 ## p + 0x108
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2275](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2275-L2275) — - p+0x108[t] が2ターン以内なら need = chop(need×4+0.5)。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-118"></a>
 ## p + 0x118
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2208](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2208-L2208) — - 金を p から q へ。0x593D50 で p+0x118[q] = turn + diplo_frd_peace(2) − 1。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2357](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2357-L2357) — - 目標を +0x50 から順に（+0x50 += 1）: q = 所有者。!pl かつ平和（0x593E50: p+0x118[q] ≥ turn）→ 次。f = 0x46B230(p,q)（find-or-create）。!pl かつ f ≥ diplo_bestfriend(80) なら thr = chop((
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2768-L2768) — 2. 0x593D50(p, player) で p+0x118[player] = turn + diplo_frd_peace(2) − 1。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-1c0"></a>
 ## p + 0x1C0

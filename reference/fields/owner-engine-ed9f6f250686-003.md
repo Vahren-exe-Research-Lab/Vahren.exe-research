@@ -7,6 +7,15 @@
 <a id="field-1eef60"></a>
 ## engine + 0x1EEF60
 
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 27](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L27-L27) — engine+0x1EEF60	changePlayer		0x4a7290	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 28](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L28-L28) — engine+0x1EEF60	erasePowerMerce		0x4a72be	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 29](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L29-L29) — engine+0x1EEF60	erasePowerStaff		0x4a72ec	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
 - [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 30](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L30-L30) — engine+0x1EEF60	addPowerMerce2		0x4a7349	REGISTRATION_XREF_ONLY
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
@@ -278,7 +287,7 @@
 ## engine + 0x1EF175
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-1ef4b4"></a>
 ## engine + 0x1EF4B4
@@ -314,7 +323,7 @@
 ## engine + 0x1EF4C1
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 139](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L139-L139) — - `isNewTurn` opcode7 -> VA 0x44F63C: byte `engine+0x1EF4C1`
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
@@ -323,21 +332,6 @@
 ## engine + 0x1EF4C2
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 140](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L140-L140) — - `isPlayerTurn` opcode9 -> VA 0x44F658: byte `engine+0x1EF4C2`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c3"></a>
-## engine + 0x1EF4C3
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 141](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L141-L141) — - `isPlayerEnd` opcode10 -> VA 0x44F664: byte `engine+0x1EF4C3`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c4"></a>
-## engine + 0x1EF4C4
-
-- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1017](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1017-L1017) — [A SAVED NATIVE / READ-ONLY] A-owned data/T031_RANDOM_EVENT_SCHEDULER.mdのA-20261013-2103-02、および保存exe/T031_PHASE_PREDICATE_HANDLERS.txt VA0x44F6A8..0x44F6DE。isCo
-  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 142](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L142-L142) — - `isComTurn` opcode12 -> VA 0x44F6A8: byte `engine+0x1EF4C4` を入口gateとして追加power条件を評価
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

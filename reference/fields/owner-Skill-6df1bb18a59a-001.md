@@ -32,7 +32,7 @@
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3167](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3167-L3167) — 2. +1 した結果がちょうど wait_time で、かつ sound リスト（Skill+0x30≠+0x34）があれば、FUN_004b9f70 で効果音を鳴らして戻る。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-34"></a>
 ## Skill + 0x34

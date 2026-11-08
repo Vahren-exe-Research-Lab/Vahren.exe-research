@@ -8,7 +8,7 @@
 ## Person + 0x14
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1237](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1237-L1237) — - 次の解析対象: Unit 破棄の実際の呼出位置（シーン切替・Person の Unit ベクタ解放）、Troop 構造体の HP 保持有無、Person+0x14 の書込元、0x461DA0 の移植。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 <a id="field-48"></a>
 ## Person + 0x48

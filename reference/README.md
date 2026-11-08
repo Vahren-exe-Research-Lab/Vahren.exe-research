@@ -129,6 +129,7 @@
 | 0x48D6A0 | [Battle_ConstructScene](symbols/0048D6A0.md) | func | 通常戦闘のscene2構築関数。GameEvent 相当を受けてUnit/Map・乱数・Task・VMの初期化へ進み、実際の通常復帰RETは0x48EA5Aにある（旧Ghidraの0x48EA38終端説は誤り）。 |
 | 0x48EEE0 | [Audio_StartWorldPlaylist](symbols/0048EEE0.md) | func | World 側の BGM 候補を作成し、world-music flagが立っていれば二重開始を避ける。 |
 | 0x48F080 | [Audio_SelectBattleEventBgm](symbols/0048F080.md) | func | 戦闘イベントの bgm プロパティを調べ、空でなければ custom BGM 名として 0x4BDE40 に渡す。none の特別扱いはない。 |
+| 0x48F620 | [StdList_ClearNodes](symbols/0048F620.md) | func | ESI=list header; self-links sentinel next/prev, clears count+4, deletes old nodes. battleEvent caller at 4A1915 clears active roots before append. Descriptive helper name. |
 | 0x48F720 | [ListTree_FindFirstNonmemberFlaggedRecord](symbols/0048F720.md) | func | EAX outer candidates plus stack context; distinct sentinel offsets +0x21 outer / +0x19 exclusion / +0x11 inner; unsigned exclusion compare; if outer key is not excluded AND node+0x18 inner count>0, returns first inner key+0x0C; otherwise EAX=0; a selected stored key of 0 can also yield EAX=0; RET4, runtime reachability VERIFY |
 | 0x48F9E0 | [War_Start](symbols/0048F9E0.md) | func | 戦争開始 |
 | 0x4922A0 | [Battle_Begin](symbols/004922A0.md) | func | 戦闘の開始（簡易戦闘の後に fight）。通常は 0x4922A0(GM, skip) から |
@@ -136,7 +137,7 @@
 | 0x492890 | [BattleEvent_InstallBattleBlock](symbols/00492890.md) | func | ScriptBattle の処理 |
 | 0x492960 | [Event_SetBattleExecutionMode_ReportedSite](symbols/00492960.md) | code | 回収済みT010報告が戦闘setupとして示す位置。engine+0x1EEC3Cに2を設定すると記載。関数入口ではなく、命令位置・境界の原作再検証なし。 |
 | 0x492D80 | [Event_ProcessBattleTick](symbols/00492D80.md) | func | 戦闘の進行に合わせた処理経路。自然終了判定と ScriptVM の再開に関連する入口として参照される。 |
-| 0x4930C0 | [Event_EvaluateBattleIfRoots](symbols/004930C0.md) | func | 戦闘に登録された if/rif のroot条件を評価する。真の通常ifは実行後に集合から除去し、rifは残す。 |
+| 0x4930C0 | [Event_EvaluateBattleIfRoots](symbols/004930C0.md) | func | if/rif rootsを評価。非rifの真rootは既実行集合へ記録して後続scanでskipし、list node削除とは別。body実行後にcurrentnode.nextを読む経路があり、body内battleEvent置換の安全性は未確認。REF_SCRIPT_VM_CONTEXT §4 |
 | 0x49356A | [Script_ExecEntry_Battle](symbols/0049356A.md) | code | 0x4A1250 への CALL。戦闘中の battleEvent と dead_event の命令はここを通る。dead_event は倒れたその場で実行。 |
 | 0x493630 | [Battle_End](symbols/00493630.md) | func | 戦闘終了（勝敗の反映・戦略への復帰） |
 | 0x49CD60 | [Ai_UpdateKeyedUnitVector](symbols/0049CD60.md) | func | キー付きベクトルを検索・消去・挿入する関数群の入口。書換えで使われる値の名称と全分岐は未確定。 |
@@ -149,7 +150,7 @@
 | 0x4A1250 | [Script_DispatchCommand](symbols/004A1250.md) | func | GENERAL 命令の分岐（79 命令） |
 | 0x4A17C8 | [Save_DispatchCommand](symbols/004A17C8.md) | code | スクリプト save（opcode7）の処理入口で 0x45F960 へ状態を渡す。 |
 | 0x4A17D8 | [Script_Op_Wait](symbols/004A17D8.md) | code | wait 命令（op9） |
-| 0x4A18B1 | [Event_DispatchBattleEvent](symbols/004A18B1.md) | code | スクリプト battleEvent（opcode10）でrootを列挙し、ScriptIF のみを active list に登録する位置。 |
+| 0x4A18B1 | [Event_DispatchBattleEvent](symbols/004A18B1.md) | code | battleEvent opcode10はevent解決後、4A1915→48F620でengine+1EEDB8をclearし、4A195E→5299E0でScriptIFだけ再登録。helper単体appendと異なり全体はreplace-all。REF_SCRIPT_VM_CONTEXT §4 |
 | 0x4A2793 | [World_DispatchSkinRebuild](symbols/004A2793.md) | code | スクリプト worldskin（opcode24）の処理位置。derived world skin を作り直す 0x5B47B0 を呼ぶ。 |
 | 0x4A2ED6 | [Spot_DispatchShowSpot](symbols/004A2ED6.md) | code | スクリプト showSpot（opcode42）の処理位置。Spot 表示オブジェクトを取得または生成して表示する。 |
 | 0x4A304A | [Spot_DispatchHideSpot](symbols/004A304A.md) | code | スクリプト hideSpot（opcode43）の処理位置。既存Spotの表示オブジェクトの非表示処理を呼ぶ。 |
@@ -554,7 +555,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7929 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7932 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Block](structs/Block.md)
 - [Ctx](structs/Ctx.md)
@@ -577,12 +578,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 541 件、フィールド 155 件、根拠付き関係 165 件。
+辞書項目 542 件、フィールド 155 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75943 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75964 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 21 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 23 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
 [回収済み研究文書の題名・本文](DOCUMENTS.md) — 2404 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

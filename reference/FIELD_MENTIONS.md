@@ -582,7 +582,8 @@
 | engine + 0x1EED7C | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eed7c) |
 | engine + 0x1EED88 | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eed88) |
 | engine + 0x1EED8C | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eed8c) |
-| engine + 0x1EEDB8 | 2 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eedb8) |
+| engine + 0x1EEDB8 | 4 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eedb8) |
+| engine + 0x1EEDE8 | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eede8) |
 | engine + 0x1EEE18 | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eee18) |
 | engine + 0x1EEE4C | 2 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eee4c) |
 | engine + 0x1EEEE0 | 1 | [1](fields/owner-engine-ed9f6f250686-002.md#field-1eeee0) |
@@ -597,8 +598,8 @@
 | engine + 0x1EF4BE | 5 | [1](fields/owner-engine-ed9f6f250686-003.md#field-1ef4be) |
 | engine + 0x1EF4C1 | 2 | [1](fields/owner-engine-ed9f6f250686-003.md#field-1ef4c1) |
 | engine + 0x1EF4C2 | 1 | [1](fields/owner-engine-ed9f6f250686-003.md#field-1ef4c2) |
-| engine + 0x1EF4C3 | 1 | [1](fields/owner-engine-ed9f6f250686-003.md#field-1ef4c3) |
-| engine + 0x1EF4C4 | 3 | [1](fields/owner-engine-ed9f6f250686-003.md#field-1ef4c4) / [2](fields/owner-engine-ed9f6f250686-004.md#field-1ef4c4) |
+| engine + 0x1EF4C3 | 1 | [1](fields/owner-engine-ed9f6f250686-004.md#field-1ef4c3) |
+| engine + 0x1EF4C4 | 3 | [1](fields/owner-engine-ed9f6f250686-004.md#field-1ef4c4) |
 | engine + 0x1EF6B4 | 4 | [1](fields/owner-engine-ed9f6f250686-004.md#field-1ef6b4) |
 | entry + 0x0 | 1 | [1](fields/owner-entry-923fe53966c6-001.md#field-0) |
 | entry + 0x10 | 1 | [1](fields/owner-entry-923fe53966c6-001.md#field-10) |

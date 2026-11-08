@@ -114,4 +114,14 @@
   - → 現在の解釈　4E9470 uses the old +0x68 rows to gather and destroy region nodes, frees rows/cache, and reallocates. Zeroing the old node rows first loses cleanup reachability. EDI=grid, stack width/height, RET8; in-battle safety remains unverified.
   - 確度　STATIC; in-battle safety VERIFY。対象　ver0.67。[訂正の根拠](../REF_MAP_TERRAIN.md?plain=1#L105-L107)
 
+- [Event_DispatchBattleEvent](symbols/004A18B1.md) · `CORRECTION-BATTLEEVENT-REPLACE-ALL` · `corrected`。Correct historical findings section19b at its reuse point and current REF; keep iterator lifetime unverified.
+  - 訂正済みの旧解釈（履歴）　battleEvent always appends roots; multiple calls accumulate registrations.
+  - → 現在の解釈　The dispatcher clears engine+0x1EEDB8 via 48F620 before appending the selected ScriptIF roots. Helper 5299E0 alone appends; the full command replaces the active list.
+  - 確度　STATIC; bounded runtime observation is not full causality proof。対象　ver0.67。[訂正の根拠](../REF_SCRIPT_VM_CONTEXT.md?plain=1#L16-L16)
+
+- [Event_EvaluateBattleIfRoots](symbols/004930C0.md) · `CORRECTION-BATTLE-IF-EXECUTED-SET` · `corrected`。Distinguish execution eligibility from physical list-node lifetime.
+  - 訂正済みの旧解釈（履歴）　A true normal if is removed from the root list after execution.
+  - → 現在の解釈　Non-rif true roots are marked in the executed set and skipped later; list-node deletion is not established. Body-side list replacement can invalidate the current iteration node.
+  - 確度　STATIC; bounded runtime observation is not full causality proof。対象　ver0.67。[訂正の根拠](../REF_SCRIPT_VM_CONTEXT.md?plain=1#L16-L16)
+
 [事典の入口](README.md)

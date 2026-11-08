@@ -8,9 +8,9 @@
 ## master + 0xC4
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1482](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1482-L1482) — - しきい値 = −10000 + 100 − master+0xC4。power+0x1D が立ち、`@mode_escape` == 1 のときは −10000 の代わりに `loyal_escape_bdr`（既定 1）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1483](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1483-L1483) — - その後 master+0xC4 に trust_up（既定 1）を足す（上限 100）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

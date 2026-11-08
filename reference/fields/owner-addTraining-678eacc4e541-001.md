@@ -8,6 +8,6 @@
 ## addTraining + 0xD4
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3056](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3056-L3056) — - 勢力（0x467F40）: addTraining +0xD4（0x4AADB1）、addTrainingUp +0xD8（0x4AAE9D）、addBaseLevel +0xDC（0x4AAF83）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only; 2026-11-09 authorized correction notice at formerly blank LF459: always-append withdrawn by fresh static evidence; all original nonblank lines and original source SHA preserved
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
