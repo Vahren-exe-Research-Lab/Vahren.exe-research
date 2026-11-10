@@ -624,3 +624,8 @@
 0x4C1690	func	Stage_InverseRuntimeCoordinates	ESI=context, ECX=x, stack y, EDI=output pair at verified callers. Both iso vf02 and path query use it before division by32.	STATIC	REF_MAP_TERRAIN.md section24 (CODEX-MAP-M6-COORDINATE-JOIN-20261109)
 0x4EAC30	func	Grid_AdjustPathEndpoint	Clamps grid coordinate and searches for a nonzero region node; returns sentinel pair if no candidate. Allocates temporary containers, not a pure transform.	STATIC	REF_MAP_TERRAIN.md section24 (CODEX-MAP-M6-COORDINATE-JOIN-20261109)
 0x4EAFD0	func	Grid_BuildCoordinatePath	Builds an 8-byte coordinate vector from region traversal via4C1770; temporary region-pointer list is distinct. Returned vector is cached by4EC1E0.	STATIC	REF_MAP_TERRAIN.md section28 (CODEX-MAP-M6-MASK-REBUILD-CONTRACT-20261109)
+# ---- M6 停止点・経路 cache・空間表（2026-11-11 Claude） ----
+0x4F4140	func	HashCache_ClearAll	ESI=容器の暗黙引数。番兵付き list の全ノード削除、件数0、bucket vector 再初期化、+0x20=7/+0x24=8。4E9470 では ESI=grid+0x80（経路 cache）、4F08E0/4F0BE0 では stage+0x10C の別容器	静的確認	REF_MAP_TERRAIN.md §30 (CLAUDE-MAP-M6-STOPPOINT-20261111)
+0x4E4DC0	func	SpatialTable_RegisterObject	ESI=空間表、stack=object。+0x65（ユニット）は +0x220/+0x224、それ以外は +0x66 が立つとき +0x114/+0x118 の 32px 区画へ登録。Battle_ConstructScene が coll Block（+0x67）とユニットを登録	静的確認	REF_MAP_TERRAIN.md §30 (CLAUDE-MAP-M6-STOPPOINT-20261111)
+0x4E5040	func	SpatialTable_MaxOverlap	空間表の区画を走査し、Block は半径 +0x11C、ユニットは +0x228 で重なり量の最大を返す。Unit_UpdateBattleFrame 等 15 か所から呼ばれる。押し戻しへの使い方は未追跡	静的確認	REF_MAP_TERRAIN.md §30 (CLAUDE-MAP-M6-STOPPOINT-20261111)
+0x597860	func	Spot_IsCastleBattle	War_Start が攻撃先 spot で呼び、結果を評価器 +0x1EED40/41/42 へ入れる。spot+0x8C==0 のとき文字列比較。名前の castle 判定は推定	推定	REF_MAP_TERRAIN.md §30 (CLAUDE-MAP-M6-STOPPOINT-20261111)

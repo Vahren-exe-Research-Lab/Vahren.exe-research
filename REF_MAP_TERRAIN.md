@@ -74,7 +74,7 @@ parent（`field a : b`）の継承は Prop 表の親探索（0x465060 等）で�
 | +0x8C〜+0xA8 | 四隅の画面座標（NewGameStage::vf01 が設定） | FieldData::vf07 |
 | +0xAC | byte（隠れ判定等で立つ） | NewGameStage::vf00 |
 | +0xB0 / +0xB4 | セル x / y | 0x4F185C |
-| +0xB8 | std::string（第1文字列引数） | 0x4562D0 |
+| +0xB8 | std::string（第1文字列引数）＝ .map 上の field 名（FieldDef 木の key）。画像名ではない（2026-11-11 訂正、§30.8） | 0x4562D0、0x4F183C |
 | +0xD4 | std::string **attr** | 0x456328、Unit::vf25 |
 | +0xF0 | std::string id | 0x456342 |
 | +0x10C / +0x110 | 高さ（+0x10C は vf00 で平滑化後の値） | 0x4562D0、vf00 |
@@ -766,7 +766,7 @@ sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、re
 - 0x4F1749: FieldDef+0x00（image）をローカル std::string へ 402710 でコピー。
 - 0x4F1756〜0x4F175C: FieldDef+0x2C と +0x30 を比較し、異なれば（add2 が空でなければ）0x4F177E rand()、×g_RandomUnitScale×要素数（÷28 を 0x92492493 の乗算で実施）で添字を作り、0x4F17D7 で add2[添字] をローカル文字列へ上書きコピーする。**add2 があるとき基本 image は使われず、add2 の中からだけ選ばれる。** §1.2 表の「画像の差分候補」はこの意味。要素は 28 バイトの std::string。
 - 0x4F17DC〜0x4F1811: alt / alt_max の乱数。0x4F1811〜0x4F182A: smooth 区分（0/1/2）。
-- 0x4F1832〜0x4F184D: 0x4562D0 へ（ローカル画像名文字列, attr=FieldDef+0x50, id=FieldDef+0x6C, smooth区分, step=FieldDef+0x4E）を渡す。§2.1 のセル +0xB8（第1文字列引数）はこの画像名、+0xD4 attr、+0xF0 id。
+- 0x4F1832〜0x4F184D: 0x4562D0 へ（第1スタック引数=field 名の key 文字列（元の esp+0x120）、EDX=ローカル画像名文字列（元の esp+0x104）、attr=FieldDef+0x50, id=FieldDef+0x6C, smooth区分, step=FieldDef+0x4E）を渡す。§2.1 のセル +0xB8（第1文字列引数）は .map 上の field 名（0x4F1662 で木検索に使った key）、画像名は EDX 側で +0x6C〜+0x80 の取得にだけ使われる。+0xD4 attr、+0xF0 id。**2026-11-11 訂正**: 旧記述「+0xB8 はこの画像名」は誤り。0x4F183C の `lea ecx,[esp+0x130]` は4回 push 後なので元の esp+0x120（key）を指す（独立レビュー指摘を再確認、§30.8）。［静的確認］
 - add2 vector は先頭 +0x2C・末尾 +0x30 だけが読まれる。容量の位置は未確定（+0x1C member と +0x2C add2 の間隔が 0x10 で、vector の内部配置は確定していない）。
 
 ### 29.2 node 基準のオフセット（FieldDef map node、§17 の続き）
@@ -781,4 +781,85 @@ sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、re
 
 ### 29.3 製品側の設計への帰結（設計、実機未確認）
 
-製品 `hk_map_chip_field` / `hk_map_field_rect`（ButaMonky/Vahren.exe-MapGimmick、branch codex/m5-attributes、docs/M5_CHIP_FIELD.md）は、この木を全件検証してから変更先 FieldDef の image（add2 があれば DLL 独自の固定規則で1つ選択、rand() は消費しない）と attr をセルへ書く。セル id・+0xB8 画像名・高さ・type・Block・grid は変えない。type≠0 の定義が絡む場合は拒否する。合成試験のみで、実ゲームの木の値・見た目・移動への効果は未確認。セル上の object（wall2/gate）は別 Block であり、field 置換で消えないことは §2 から静的に言えるが、表示上の扱いは未観測。
+製品 `hk_map_chip_field` / `hk_map_field_rect`（ButaMonky/Vahren.exe-MapGimmick、branch codex/m5-attributes、docs/M5_CHIP_FIELD.md）は、この木を全件検証してから変更先 FieldDef の image（add2 があれば DLL 独自の固定規則で1つ選択、rand() は消費しない）と attr をセルへ書く。セル id・+0xB8（field 名。旧記述の「画像名」は誤り、§30.8）・高さ・type・Block・grid は変えない。type≠0 の定義が絡む場合は拒否する。合成試験のみで、実ゲームの木の値・見た目・移動への効果は未確認。セル上の object（wall2/gate）は別 Block であり、field 置換で消えないことは §2 から静的に言えるが、表示上の扱いは未観測。
+
+## 30. M6: 戦闘中再構築の停止点・スレッド・ABI（2026-11-11）
+
+研究ID: `CLAUDE-MAP-M6-STOPPOINT-20261111`。対象は OGG と同じ SHA256 E8DAC301… の EXE。Ghidra（§12.4 の既知 project、`-noanalysis -readOnly`）と、原作 EXE ファイルを読むだけの Capstone 走査（製品 tools/vdis.py と同方式の一時スクリプト）。ゲームの起動・メモリ書込み・DLL 導入は行っていない。§16・§24・§28 の未解決点のうち、停止点・スレッド・ABI・grid 利用者・Block 衝突を詰める。**V3/M6 の実機受入れではない。**
+
+### 30.1 スレッドと停止点［静的確認／一部は親担当の確認を転記］
+
+- EXE がスレッドを作るのは 0x555CD0 の CreateThread（Startup_LoaderThread、起動時のみ。メインスレッドはその終了まで待ちメッセージを回す）と 0x502220 の _beginthread（Bgm_StreamThread）だけ。戦闘処理・DAT イベントはメインスレッドで動く。［親担当 Claude が 2026-11-11 に Ghidra readOnly で確認した事実の転記］
+- 経路照会 0x4EC1E0 の直接呼出は 0x5767F7（0x5767B0 内）と 0x576AAC（0x5769B0 内）の2か所だけ（今回の全 .text 直接 call 走査でも同じ 2 件）。どちらも直後に 0x57A690 で結果を Unit+0x186B0 の list へ値コピーし、その間にスクリプト呼出は無い。0x4EAFD0・0x4EAA70・0x4EAC30 は 0x4EC1E0 からだけ、0x4E9A60 は 0x4EA2E0（0x4EA361）からだけ、0x4E9470（0x4F0F06）・0x4E9A20（0x4F2EDC）・0x4EA2E0（0x4F1439・0x4F320B）は loader 0x4F0BE0 からだけ直接呼ばれる。［静的確認。間接呼出（関数ポインタ経由）は直接 call 走査では検出できないため、その不在は未証明］
+- 従って、HKDR の同期 callback（DAT routine 呼出の最中）に grid 系関数がスタック上に残っている経路は静的には見つからない。DAT 呼出は経路照会・領域構築の**外側**で起きる、というのが現時点の静的結論。「DAT 呼出の瞬間に grid を初期化しても途中の native 処理を壊さない」ことの静的根拠にはなるが、実機の呼出スタック観測（x32dbg で HKDR callback 時の call stack に 0x4E9xxx〜0x4ECxxx が無いこと）は未実施。
+
+### 30.2 ABI［静的確認］
+
+| 関数 | 入力 | 戻り・後始末 | 保存レジスタ |
+|---|---|---|---|
+| 0x4E9470（grid 初期化） | EDI=grid、stack=(width, height)。caller 0x4F0F00〜0x4F0F06 は `push height; push width; call` | 正常出口 0x4E9948 `ret 8`（callee cleanup）。有用な戻り値は無い | 先頭で EBX/EBP/ESI を push、出口で pop。EDI は保存しないが読むだけで書き換えない。EAX/ECX/EDX は破壊。冒頭 40 命令で EDI 以外の入力レジスタを読まない（ESI は 0x4E9496 で 0 クリア）。本体全体のレジスタ依存の全数確認はしていない |
+| 0x4EA2E0（領域構築） | stack=grid 1個（caller `push grid; call`） | 正常出口 0x4EA962 `ret 4`（§28 と一致） | EBX/EBP/ESI/EDI をすべて push/pop |
+| 0x4E9A20（1マス閉塞） | ECX=x、EDX=grid、EAX=y（0x4F2ED2〜0x4F2EDC） | 0x4E9A5A `ret`（stack 引数なし） | ESI・EDI を push/pop。EAX/ECX/EDX は破壊。範囲外（負数・幅高さ以上）は何もしない。細 grid+0x60[y][x]=1、粗 grid+0x7C[y/2][x/2]=1（/2 は符号付き） |
+
+0x4E9470 の再確保部（0x4E9759〜0x4E9936）: +0x6C/+0x70 に引数の幅・高さを入れ、+0x60（byte 行表、全 0）、+0x64（int 行表、全 0x80000008）、+0x68（pointer 行表、全 0）、+0x74/+0x78 = ftol(0x5B6ED0(幅または高さ × [0x63B050]))、+0x7C（byte 粗行表、全 0）を順に確保する。確保はすべて 0x5B5C0B。最初の 0x14 byte ノード確保（0x4E94B0、0x5B6C2B）だけ null 検査があり、失敗時は 0x4E994B〜0x4E996F で bad_alloc を `_CxxThrowException` する。+0x34（座標 context。§24 の照合対象）は 4E9470 の再確保部で書かれない。［静的確認。[0x63B050] の値と 0x5B6ED0 の丸め（切上げか）は未確認。0x5B5C0B が失敗時に throw するか null を返すかは未確認。どちらでも DLL からは MSVC 例外を捕捉・回復できない］
+
+### 30.3 0x4F4140 は経路 cache の全消去［静的確認］
+
+0x4F4140 は ESI を暗黙引数とする hash 容器の全消去。ESI+4 の番兵付き双方向 list の全ノードを operator_delete し、件数 ESI+8=0、bucket vector（ESI+0x10/+0x14）を空にして 0x4F48F0 で番兵を詰め直し、ESI+0x20=7、ESI+0x24=8 に戻す。呼出元は4件:
+
+- 0x4E96EC（0x4E9470 内、`lea esi,[edi+0x80]`）: grid+0x80 の経路 cache（§16.2 の 4EC1E0 が使う cache）の消去。
+- 0x4EC6D8（0x4EC6C0 内、呼出元は 0x4EC5F0 の 0x4EC623）: 範囲消去で全範囲が指定されたときの近道。4EC1E0 の cache 上限処理（0x1FFF 超）から到達する。
+- 0x4F09D7（0x4F08E0 内）・0x4F0D19（loader 0x4F0BE0 内）: どちらも `lea esi,[ebp+0x10c]` で stage+0x10C の別容器を消す。grid の cache ではない。
+
+従って 0x4E9470 を呼べば grid+0x80 の経路 cache は全消去され、§16.2 の「旧 cache が新しい領域番号で誤 hit する」危険はこの系列では起きない。［静的確認からの帰結］
+
+### 30.4 領域構築の条件旗 0x1EED42 と stage+0xE4［静的確認／意味は推定］
+
+- loader の `[esp+0x48]` は 0x4F0DA8〜0x4F0DB1 で `stage+0xE8 → G`、`G+0x504`（評価器）として作られる。従って旗は **評価器+0x1EED42**（= G+0x504+0x1EED42）の byte。
+- 書込み元: Script_InvokeEventCore 0x4328BF〜0x43291F（`event` 節の `castle_battle` が `on` かを 0x40B200 で比較し、+0x1EED40/+0x1EED41/+0x1EED42 に同じ値）、War_Start 0x48FA22〜0x48FA68（0x597860(攻撃先 spot) の結果を 3 byte に入れ、0 なら spot の `maze_battle` が `on` かを +0x1EED42 にだけ入れる）、Battle_End 0x493759（BL）、Title_Handler 0x48AECB（0）、0x48B50D・0x48BFC7・0x48C8DB・0x49B653 でも書く（多くは 0 クリアと見られるが BL の値は未追跡）。文字列は 0x6361FC `castle_battle`、0x631CF0 `maze_battle`、0x631CEC/0x6361F8 `on`、0x63620C `event`。
+- 読取り: loader 0x4F1427・0x4F31FD と Ai_UpdateSpatialTargetLink 0x57D3FC・0x57D63D の4か所だけ（即値走査）。AI 側は Unit+0x8C が立つユニットについて、旗 0 なら経路照会 0x5767B0 を使わず目標座標 Unit+0x186C0/C4 を直接置き、旗 1 なら 0x5767B0（経路照会）を呼ぶ。
+- **領域構築の条件の訂正**: 親の「0x4F1427 で旗!=0 のときだけ呼ばれる」は不完全。両分岐とも `stage+0xE4==0` なら旗を見ずに 0x4EA2E0 を呼ぶ（0x4F140A〜0x4F1421、0x4F31F0〜0x4F31F7）。旗を見るのは stage+0xE4!=0 のときだけ。条件は **`stage+0xE4==0 || 評価器+0x1EED42!=0`**。0x4F1427 側は `[esp+0x88]==0`（.map ファイルが開けず既定 60×60 で作った分岐）、0x4F31FD 側は通常の .map 読込後。
+- stage+0xE4 は loader 第4引数の byte（0x4F0C77〜0x4F0C7E）。Battle_ConstructScene 0x48E157/0x48E179 は 0、SimpleBattle_BuildUnitRoster 0x4102FC は 1、0x48EB36 の呼出は ESI（値は未追跡）。0x4C1690 は stage+0xE4==0 のときだけ斜め表示の逆変換をする（§24）。従って通常の戦闘画面（Battle_ConstructScene）では E4=0 で、領域グラフは旗に関係なく常に作られる［推定。0x48EB36 側の値と、旗の意味を「城戦・迷路戦」と呼ぶことは推定］。
+- 領域グラフが無い grid での 0x4EC1E0: 両端の 0x4EAC30 が 0x80000008 を返すと静的な空 vector（0xB05C90）を返す。つまり経路無しで動き、例外にはならない［静的確認］。
+
+### 30.5 grid +0x60/+0x64/+0x68 を直接読む箇所［静的確認・範囲限定］
+
+全 .text の Capstone 走査（`mov r,[r2+0x60]` の後 12 命令以内の `*4` 行参照、既存 research/raw/rows60/64/68.txt の型と同じ）で、grid と解釈できる +0x60 行参照は 0x4E9610〜0x4E9CBF（4E9470・4E9A20・4E9A60）、0x4EAB3B（4EAA70）、loader 0x4F1A0B/0x4F215E/0x4F2308/0x4F239F だけ（他は 0x40D63A の stack 参照で無関係）。+0x64 は 0x4E9820 と 0x4EC3BD、+0x68 は 0x4E94FA/0x4E9890/0x4EA807/0x4EAE37/0x4EC2D1 だけ（既存 rows64/rows68）。`[r+0x90]` から 16 命令以内に +0x60〜+0x7C を読む型は 0 件。G+0x90 の絶対アドレス参照は書込み2件（0x4B9F40、0x553B74）だけ。ユニットの経路照会は 0x5767B0 が `[[Unit+0xC]+8]`（Unit+0xC=G+0x88 と見て [G+0x90] に当たる。Unit+0xC の値は推定）を 4EC1E0 へ渡す形。
+
+結論: ユニット移動・衝突・AI が通行 byte や領域番号を**直接**読む箇所は、この型の走査では見つからない。通行 grid の利用者は経路照会系（4EC1E0 とその下位）と loader だけ［静的確認。ただしレジスタを跨いだ別の書き方・関数ポインタ経由・インライン展開の別形は走査型の外で、完全な列挙ではない］。
+
+### 30.6 ユニットの物理衝突は grid ではなく Block（空間表）［静的確認／一部推定］
+
+- 移動1歩 Unit::vf29（0x578FD0）は地形値（vf25）と stage vf02 の高さ（セル+0x10C）から補間点列を作るだけで、grid も Block も見ない。
+- Battle_ConstructScene 0x48E283〜0x48E433 は stage+0x148 の Block を走査し、+0x65（ユニット）または +0x67（coll 旗）のものを 0x4E4DC0 で空間表（ESI+0x48 の行表、32px 区画、範囲 ESI+0x40/+0x44）へ登録する。+0x67 の読取りはこの登録（と SimpleBattle 0x410379、生成 0x4DF3E2）だけ。
+- 0x4E5040 は空間表の区画を走査し、ユニット以外（+0x65==0）は Block 位置 +0x114/+0x118 と半径 +0x11C、ユニットは +0x220/+0x224 と +0x228 で重なり量を求める。呼出元は Unit_UpdateBattleFrame 0x57AC4F、Ai_CheckFacingSelection、0x5795E0、Unit_UpdateSimpleFrame など 15 件。［静的確認。押し戻し・停止にどう使うかの下流は未追跡＝推定］
+- 飛び道具は 0x4E5860/0x4E6110 で Block の +0x68/+0x69 を見る（§2.2）。
+- **M6 への帰結**: grid+0x60 だけを塞いでも、Block（空間表）は増えないので物理的な壁にはならない。既に旧経路を持つユニット、経路照会を使わない直接目標のユニット（30.4 の旗0・Unit+0x8C）、押されたユニットは、新しく塞いだマスへ入れる可能性がある［静的確認からの推定。実機未確認］。
+
+### 30.7 M6 設計への結論
+
+重大な阻害要因（DAT 呼出中に grid 系関数がスタック上にある経路、grid を直接読む AI、別スレッドの grid 利用）は静的には見つからなかった。§28.2 の系列（現在の +0x60 を値で保存 → 4E9470(width,height) → 保存 mask と追加閉塞の合成を 4E9A20 で再投入 → 条件 `stage+0xE4==0 || 評価器+0x1EED42!=0` が成り立つ場合だけ 4EA2E0）を、実機未確認の製品実装候補として進めてよいと判断する。残る危険:
+
+1. 4E9470/4EA2E0 内の確保失敗は MSVC 例外で、DLL から回復できない（同寸法の再確保なので可能性は低いが 0 ではない）。
+2. Unit+0x186B0 の旧経路（座標列の値コピー）と Unit+0x186C0/C4 の直接目標は残る。DAT 側で moveTroop 等を出し直すか、AI の再探索を待つ。
+3. Block（空間表）・飛び道具判定・画像は変わらない。
+4. 間接呼出・走査型の外の grid 利用、旗の実行時変化（castle_battle 設定）、0x48EB36 経路の E4 値、[0x63B050] と丸めは未確認。
+5. 実機での停止点（HKDR callback 時の call stack）、塞いだ道を迂回するか、解除後に元へ戻るか、同一起動の再戦、反復時のメモリ量は未確認。
+
+| TEMP 解析出力 | SHA256 | 範囲 |
+|---|---|---|
+| q1_out.txt | 176d058eda783a4a2cbb93f956dc22b85e71f4c5ebf7354e026ef7bc8c644d70 | 4E9470 先頭/出口、4EA2E0 先頭/出口、loader 呼出部、0x1EED42 即値、4F4140 |
+| q2_out.txt | 1494565c58de08513b08951a23b44e701cf75fd34995f95a0f9cb957c6f6a8f5 | 4F4140 の ESI、4EC6C0、loader 先頭、4EC1E0、旗の書込み元、G+0x88/+0x90 参照 |
+| q3_out.txt | ddff5252e5dd3b1d8172f04bc6da5576df5184570b2e8bb97848ee561edbfa4f | loader caller、597860、Ai_UpdateSpatialTargetLink、5767B0/5769B0 caller |
+| q4_out.txt | 25e4a089a2ce9fd7082d219dbf6d7406ae89d2d4e6fbbe3f5cbfa30827899034 | stage+0x148 利用関数名、loader 第4引数、5767B0、Unit::vf29 |
+| q5_out.txt | 35430e60650db085443ec583e4ad173969e6f099c098217a3050519b46e4c90d | Battle_ConstructScene の Block 登録、4E6110 |
+| q6_out.txt | ee807ed528f2331dfb54ca010f46807ebd65335871af9db4ce43ce0a9d6ab492 | 4E4DC0 と caller、4E5040 caller |
+| q7_out.txt | eec3f906619727180a128eb00de7fad2a419bcdc1f52315d938d343bb68297b6 | 4E5040 |
+| scan_out.txt | f4665d782432a5116b0800db8b401e8e05dc5b8dd9c09d681b177ebb94350e50 | 全 .text 走査（+0x90→grid、+0x60 行、+0x148/+0x14C、grid 系直接 call） |
+| d3.txt | ef5f71f5c976fe0db2e1450e5c4285d5d4db1c2f4ba8549e4d524fcbe91c4fb4 | 4E9470 再確保部 0x4E9740〜0x4E9990（Capstone） |
+
+製品側の実装（実機未確認）は ButaMonky/Vahren.exe-MapGimmick の branch codex/m6-block、docs/M6_PLAN.md。
+
+### 30.8 §29.1 の訂正（セル +0xB8 は field 名）
+
+独立レビューの指摘を受けて再確認した。0x4562D0 は `sub esp,0x1c; push esi` の後 `[esp+0x24]`（第1スタック引数）を 0x45630E で 402710 によりセル +0xB8 へコピーし、画像名は EDX の文字列を 0x423E80 へ渡して +0x6C〜+0x80 を作る（research/raw/m2_chip_abi.txt）。呼出側 0x4F1832〜0x4F1843 は4回 push した後に `lea ecx,[esp+0x130]` を第1引数として push しており、これは元の esp+0x120、すなわち 0x4F1662 で `lea edx,[esp+0x120]` として木検索に使った key 文字列（.map 上の field 名）である。画像名ローカルは 0x4F1846 の `lea edx,[esp+0x118]`（5回 push 後なので元の esp+0x104）で EDX に渡る。従って **+0xB8 は FieldDef 木の key（field 名）**で、画像名ではない。§29.1 と §2.1 を訂正した。［静的確認。画像名ローカルが 0x4F1749 のコピー先と同じ esp+0x104 であることは保存 ASM の再読で要再確認］マスごとの正確な FieldDef は +0xB8 を key に stage+0xFC の map（head は stage+0x100）を引ける（M6 で grid とセルの対応を考える際の参考）。
