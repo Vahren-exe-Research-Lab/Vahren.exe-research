@@ -755,3 +755,30 @@ sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、re
 | m6_build_contract_asm.txt | 28fdd6b79b77a82d5687753bb5fc23c4d9fb87732204d53b06d3c0e36ed8b6dd |
 
 前2件は既知project/EXEでreadOnly/noanalysis exit0。最後は同SHA一致OGG EXEのPE静的読取とCapstone。元ゲーム資産・個人ログは収録しない。
+
+## 29. M5 chip_field: loader の画像選択とFieldDef nodeオフセット（2026-11-10 Claude）
+
+研究ID: `CLAUDE-MAP-M5-CHIP-FIELD-20261110`。製品リポジトリ保存済みの research/raw/dis_4f0be0.txt（OGG EXE、SHA256 E8DAC301…、Capstone静的逆アセンブル）を読み直した。新しい原作実行・書込みは無い。
+
+### 29.1 field エントリのセル設定（0x4F170E〜0x4F184D）［静的確認］
+
+- 0x4F1702 で検索結果 node を head（stage+0x100）と比較し、未発見なら別経路。発見時 0x4F1711 で ESI=node+0x28（FieldDef インライン値、§17 と一致）。
+- 0x4F1749: FieldDef+0x00（image）をローカル std::string へ 402710 でコピー。
+- 0x4F1756〜0x4F175C: FieldDef+0x2C と +0x30 を比較し、異なれば（add2 が空でなければ）0x4F177E rand()、×g_RandomUnitScale×要素数（÷28 を 0x92492493 の乗算で実施）で添字を作り、0x4F17D7 で add2[添字] をローカル文字列へ上書きコピーする。**add2 があるとき基本 image は使われず、add2 の中からだけ選ばれる。** §1.2 表の「画像の差分候補」はこの意味。要素は 28 バイトの std::string。
+- 0x4F17DC〜0x4F1811: alt / alt_max の乱数。0x4F1811〜0x4F182A: smooth 区分（0/1/2）。
+- 0x4F1832〜0x4F184D: 0x4562D0 へ（ローカル画像名文字列, attr=FieldDef+0x50, id=FieldDef+0x6C, smooth区分, step=FieldDef+0x4E）を渡す。§2.1 のセル +0xB8（第1文字列引数）はこの画像名、+0xD4 attr、+0xF0 id。
+- add2 vector は先頭 +0x2C・末尾 +0x30 だけが読まれる。容量の位置は未確定（+0x1C member と +0x2C add2 の間隔が 0x10 で、vector の内部配置は確定していない）。
+
+### 29.2 node 基準のオフセット（FieldDef map node、§17 の続き）
+
+| node+ | FieldDef+ | 内容 |
+|---|---|---|
+| +0x28 | +0x00 | image（std::string） |
+| +0x54 / +0x58 | +0x2C / +0x30 | add2 先頭 / 末尾（要素28バイト） |
+| +0x68 | +0x40 | type（0 以外で Block・grid 旗） |
+| +0x78 | +0x50 | attr |
+| +0x94 | +0x6C | id |
+
+### 29.3 製品側の設計への帰結（設計、実機未確認）
+
+製品 `hk_map_chip_field` / `hk_map_field_rect`（ButaMonky/Vahren.exe-MapGimmick、branch codex/m5-attributes、docs/M5_CHIP_FIELD.md）は、この木を全件検証してから変更先 FieldDef の image（add2 があれば DLL 独自の固定規則で1つ選択、rand() は消費しない）と attr をセルへ書く。セル id・+0xB8 画像名・高さ・type・Block・grid は変えない。type≠0 の定義が絡む場合は拒否する。合成試験のみで、実ゲームの木の値・見た目・移動への効果は未確認。セル上の object（wall2/gate）は別 Block であり、field 置換で消えないことは §2 から静的に言えるが、表示上の扱いは未観測。
