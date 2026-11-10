@@ -863,3 +863,75 @@ sample216（06:33:32.255）は有効stage012dd860/cells01bef024を維持し、re
 ### 30.8 §29.1 の訂正（セル +0xB8 は field 名）
 
 独立レビューの指摘を受けて再確認した。0x4562D0 は `sub esp,0x1c; push esi` の後 `[esp+0x24]`（第1スタック引数）を 0x45630E で 402710 によりセル +0xB8 へコピーし、画像名は EDX の文字列を 0x423E80 へ渡して +0x6C〜+0x80 を作る（research/raw/m2_chip_abi.txt）。呼出側 0x4F1832〜0x4F1843 は4回 push した後に `lea ecx,[esp+0x130]` を第1引数として push しており、これは元の esp+0x120、すなわち 0x4F1662 で `lea edx,[esp+0x120]` として木検索に使った key 文字列（.map 上の field 名）である。画像名ローカルは 0x4F1846 の `lea edx,[esp+0x118]`（5回 push 後なので元の esp+0x104）で EDX に渡る。従って **+0xB8 は FieldDef 木の key（field 名）**で、画像名ではない。§29.1 と §2.1 を訂正した。［静的確認。画像名ローカルが 0x4F1749 のコピー先と同じ esp+0x104 であることは保存 ASM の再読で要再確認］マスごとの正確な FieldDef は +0xB8 を key に stage+0xFC の map（head は stage+0x100）を引ける（M6 で grid とセルの対応を考える際の参考）。
+
+## 31. M7: 戦闘マップのファイル名決定と季節差し替えの差込み点（2026-11-11）
+
+研究ID: `CLAUDE-MAP-M7-SEASON-20261111`。対象は OGG と同じ SHA256 E8DAC301… の EXE（今回 pefile で再計算して一致）。Ghidra（§12.4 の既知 project、`-noanalysis -readOnly`）、製品 tools/vdis.py（Capstone）、原作 EXE のバイト列と a_default の DAT・stage フォルダの**読取りだけ**。ゲームの起動・メモリ書込み・DLL 導入・原作フォルダへの書込みは無い。製品側の設計は ButaMonky/Vahren.exe-MapGimmick branch codex/m7-season の docs/M7_PLAN.md。以下 E＝評価器（G+0x504。§30.4 と同じ。既存研究の「GM」と同じ物）。
+
+### 31.1 読込関数 0x4F0BE0 の入口と分岐［静的確認］
+
+- ABI: ECX＝Spot*（0 も可）、stack＝(stage, 第2引数, 第3引数, byte E4)、正常出口 0x4F3289 `ret 0x10`（callee cleanup）。0x4F0C5D: ECX≠0 なら第2引数を std::string* として 0x402710 でローカル（元の esp+0x190）へ写し、ECX=0 なら第2引数を map バイト列の先頭として扱う（0x4F0C73、0x4F0EDA で先頭2バイトを幅・高さに読む）。ECX≠0 のとき 0x4F0DBB で Affiliation_GetPower(Spot)。第3引数の意味は未追跡。
+- ファイル経路 0x4F0DF7〜0x4F0ECB: 0x416970 で `名前 + ".map"`（0x62DC38）→ **0x4F0E2D `call 0x427490`**（ECX＝その c 文字列、push `"stage/"` 0x62DC40、呼出側 `add esp,4`、戻り EAX＝パス）→ CreateFileA（[0x60915C]、GENERIC_READ、OPEN_EXISTING）→ GetFileSize [0x6090F0] → 0x5B5C0B で確保 → ReadFile [0x609084] → CloseHandle [0x609088]。ローカルの名前文字列はこの後、末尾 0x4F3248 の解放まで読まれない（直接 esp 参照の走査、範囲限定）。
+- 0x4F0E2D の5バイトは `E8 5E 66 F3 FF`。
+
+### 31.2 呼出元と名前の出所［静的確認］
+
+0x4F0BE0 の直接呼出は .text 全体で3件（E8 走査）: 0x48E180（Battle_ConstructScene）、0x48EB36（0x48EA60、Scene_DispatchGameMode 0x4B99DA から）、0x41030A（SimpleBattle_BuildUnitRoster、名前＝`[0x8B8E48]+0x2C`、E4=1）。
+
+Battle_ConstructScene 0x48DEE0〜0x48DF00 の選択:
+
+| 条件 | 行き先 | 呼び方 |
+|---|---|---|
+| E+0x1EECD4（E+0x1EECC4 の長さ）≠0 | 0x48E14E | ECX＝E+0x1EED1C、stack＝(stage, &E+0x1EECC4, E+0x1EED44, 0) |
+| 上が0で E+0x1EED18≠0 | 0x48E16A | ECX＝0、stack＝(stage, E+0x1EED18, E+0x1EED44, 0) |
+| 両方0で E+0x1EECF0（E+0x1EECE0 の長さ）≠0 | 0x48DF06〜 | .map を使わない別経路（画像を StretchBlt する分岐と見られる。未追跡） |
+| すべて0 | 0x48E0DB | 0x4F08E0(stage, 画面幅, 画面高) |
+
+上2行は同じ 0x48E180（`E8 5B 2A 06 00`）を通る。
+
+E+0x1EECC4 の書込み元（即値走査 `scan:1eecc4`）:
+
+- War_Start 0x48FB2D〜0x48FB54: `assign(E+0x1EECC4, Spot(ESI)+0x2C)`、長さ0なら 0x402800 で `"test"`（0x631CFC）。続いて 0x48FB8A で E+0x1EED18=0、0x48FB90 で E+0x1EED1C=Spot。既存 F§68.2-3 の記述と一致（今回 ASM で再確認）。
+- Script_InvokeEventCore 0x4327CE〜0x432856: event 戦闘。ローカルの文字列3つを E+0x1EECC4/+0x1EECE0/+0x1EECFC へ写し、E+0x1EED18=EBX、E+0x1EED1C=静的なダミー Spot 0xB094D0（0x5971A0 で1回だけ構築）。どの event 項目かは未追跡（`map` と推定）。
+- 0x4341F0（0x526280 から2回）: 引数があれば写す。0x49AF10（0x49B5C0・0x521D90 から）: E+0x1EECC4/+0x1EECE0 を空にし、0x49B1A2 で E+0x1EED18 を設定。同関数の 0x49B191 は Random_SetMapGenerationSeed 0x5001B0 を呼ぶので、dungeon のメモリ上 map 経路と推定。
+
+changeMap（op44、0x4A78B9 で登録、処理 0x4AC6D2〜）は対象 Spot の +0x2C を書くだけ（既存 F§79.7）。Spot の map は通常セーブに書かれる（0x598CE0）。EXE の DAT 命令文字列に、Spot の現在 map を DAT へ返す命令は見当たらない（`changeMap`/`changeDungeon`/`setDungeon`/`setDungeonFloor`/`showDungeon`/`isDungeon` 等のみ）［静的確認・文字列範囲］。季節・月の命令も無く、ターン系（`getTurn`、`isNewTurn`、`isPlayerTurn`、`isComTurn`、`pushTurn`）だけがある。
+
+### 31.3 ファイル探索 0x427490 と 0x427190［静的確認／基準フォルダの中身は未確認］
+
+- 0x427490: ECX＝探すファイル名、stack＝相対フォルダ（`"stage/"`）、`ret`（呼出側 cleanup）、戻り EAX＝パス char*。基準フォルダ `[0x68B370]` と `[0x68B38C]`（std::string。2つが等しければ1つだけ、0x4275F5〜0x427642）ごとに、`基準+stage/` から始める幅優先の待ち行列を作る。各フォルダ d で FindFirstFileA(d+名前)（0x427865、[0x609178]）が当たればその連結結果を返す（0x427B9C→0x427BEB）。当たらなければ FindFirstFileA(d+`"*"`)（0x4278A1）で、`.`・`..` 以外の属性 0x10（フォルダ）を `d+名前+"/"` として待ち行列へ足す。つまり **stage 以下のサブフォルダも探す**。基準1を探し尽くしてから基準2。
+- どこにも無ければ 0x427C41〜0x427C50 で 0x427190(`"stage/"+名前`)。0x427190 は `基準1+相対` を FindFirstFileA で確かめ、在ればそれ、無ければ**確かめずに** `基準2+相対` を返す（0x4271AA〜0x42725D、静的バッファ 0xAC2018）。
+- 連結 0x406CF0（thiscall、ECX＝前半、stack＝後半）は 0x400 バイト×16面の回転バッファ（0xABC460 起点、添字 [0xAC0860]）に書いて返す。長さ検査は無い。
+- 0x427490 の直接呼出は2件: 0x4F0E2D（戦闘マップ）と 0x500246（Random_SetMapGenerationSeed 0x5001B0 内、`[EAX+0x48]`＝Spot+0x48（dungeon 名、changeDungeon が書く）+ ".map"、`"stage/"` 0x62D864）。
+- 未確認: 2つの基準フォルダの実際の値と順序（既存 BGM 研究も「第1/第2の動的ベースパス、内容未確定」）。同名ファイルが複数フォルダにある時の FindFirstFileA の列挙順。
+- 原作 a_default\stage は .map 151個、サブフォルダ無し、名前に `@` を含むものは無い（読取りのみの一覧）。
+
+### 31.4 ファイルが無いとき［静的確認／見た目は未確認］
+
+CreateFileA 失敗（またはサイズ0）では [esp+0x88]（ファイルサイズ）が0のまま、幅・高さは既定 0x3C（0x4F0DD3）。0x4F0F06 で grid、0x4F0F2A（0x456480）でセル配列を 60×60 で作った後、0x4F1401 の分岐でセル解析を全部飛ばし、0x4F140A〜0x4F143E（stage vf00 と §30.4 の条件付き 0x4EA2E0）を経て 0x4F3248 の後始末へ進む。この経路に通知（MessageBox 等）の呼出は無い。War_Start で Spot の map が空なら `"test"` を探し、それも無ければ同じ扱い。空セルの描画結果は未確認。
+
+### 31.5 季節差し替えの差込み点［静的確認からの設計判断。実装・実機は未着手］
+
+- **B（ファイル名の差し替え）**: 0x4F0E2D の CALL を Core の call_patch（HKCP、期待バイト `E8 5E 66 F3 FF`）で包む。包む関数は ECX のファイル名から季節版の名前を作り、元の 0x427490 で探して、結果パスが実在すれば（0x427190 の未確認返却があるので自前で存在確認する）それを返し、無ければ元の名前で元の 0x427490 を呼ぶ。戻り値は回転バッファなので、得た直後に使う（2回目の呼出の前に1回目の結果を保持しない）。この位置は War_Start・event 戦闘・0x48EB36・SimpleBattle のファイル読込をすべて通り、メモリ上の map（0x48E16A）と dungeon（0x500246）は通らない。名前は .map のファイル名なので、同じ .map を共有する Spot はすべて同じ季節版になる。
+- **C 自動版（読込直後の表適用）**: 0x48E180 の CALL を包み、元の 0x4F0BE0 の後に stage（第1引数）へ表を当てる。Battle_ConstructScene のファイル経路・メモリ上経路の両方を通り、0x41030A・0x48EB36 は通らない。DAT の戦闘 event を改造しなくても全通常戦闘に効く。DAT 版（戦闘 event で M5 の chip_field を呼ぶ）は新しいフックが要らないが、最初の評価までの間の表示は未確認。
+- 季節の変数は DAT が書き、DLL は読込時に G から読む。読込はメインスレッド（§30.1）で、変数木を読むだけ。EXE に季節の概念が無いので、判定を DAT（ターンから計算）に任せても原作の処理に新しい分岐は入らない［推定］。
+
+### 31.6 原作データでの「海」の扱い（MAP-T001 §3 の補足）［原作 DAT の読取り］
+
+- 海系 field（sea0/seag/seam/sea1 等）は `type` 無指定（0＝床）、`attr = sea`。`ice` も type 無指定で `attr = snow`。従って海も氷も通行 grid を塞がず、通れるかと速さは movetype の consti だけで決まる。
+- movetype.dat の34種で `sea*0` を持つものは無い。`ship` だけが陸系（grass/sand/wood/rock/mersh/road/snow/mud）を 0 にし、sea*5。`normal` は sea*3（既定5より遅いが進める）。「海→氷」は attr を sea→snow に替えるだけで、normal は既定5（snow 無記述）、ship は snow*0 で止まる。
+- 本当に通れない水面は `hori`/`hori2`（image=sea0、type=coll、attr=mersh）のような coll field で、grid と Block の両方を作る（§2）。冬版 `hori_w`/`hori2_w`（image=ice）は `type = coll` がコメントアウトされており、原作は通れる冬の堀を別 field＋別 .map で表していると読める［推定］。
+- 原作 DAT の `changeMap` は260回（大半が event_world_kousoku.dat の全 Spot 一括切替と、Spot ごとの元の名前への書き戻し）。
+
+| TEMP 解析出力 | SHA256 | 範囲 |
+|---|---|---|
+| q1_out.txt | 9ceacdd7b34fba2337efcae9bde3fa1f545366191d1da0603eca257c19c82544 | 0x4F0BE0 の呼出元3件の decompile、0x427490、0x416970、changeMap 登録、0x4F13F0 |
+| q2_out.txt | 7b5429e356df2f09cdfd24e4bc5d572d49a3ac243197cba7646553f6d0d472f7 | 即値走査 0x1EECC4/0x1EED1C/0x1EED18/0x1EED44、0x48E100 |
+| q3_out.txt | b3f0847dfc2ddaa07629e3b788a1a7148a359307d35d8b8e5bfea9f9c554fd72 | War_Start 0x48FB00、changeMap 処理 0x4AC6C0、0x48EAF0、0x4102C0、0x48E5D0、0x48DE50 |
+| q4_out.txt | 9dbfc1b238e3e96ca3e3cf12d3220d20f4e836a860997459b1b673e1252e002e | 0x406CF0、0x48E14A の参照元 |
+| q5_out.txt | c8c6e7b15bb3f007a0523c297be9bbc87995ed9cb8d9a7372d129fc6b7f17ccd | 0x48DEDC の選択分岐 |
+| q6_out.txt | effb83efbd0789549d4f22a312e97c5c978480051a5f41a3cac5b0ca0c3d26b0 | 0x5001F0（dungeon の 0x427490 呼出） |
+| d427.txt | 11228e9185b726998e8b1f3346305fc1e909b13358d1f1f9b7008b0017faa4fc | 0x427490〜0x427CA0（Capstone） |
+| d4271.txt | dae0fe3ba601f6951206480334f8abae66f0a71413f22e7107239b362f7cd161 | 0x427190〜0x427270（Capstone） |
+
+E8 呼出の全数と5バイト列は原作 EXE を pefile で読んだ一時スクリプトで数えた（0x427490: 2件、0x4F0BE0: 3件、0x416970: 31件、0x427190: 8件）。原作の DAT・MAP・ログは収録しない。
