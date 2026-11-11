@@ -1,4 +1,7 @@
 # 研究成果のGitHub優先収録規約（2026-11-01 ユーザー明示変更）
+
+> **2026-11-12 管理者決定（最優先）：プルリクエストは不要。** 管理者（ButaMonky）と、管理者が作業を任せた AI（Claude・Codex など）は、`develop` へ直接コミット・push してよい。作業ブランチ・PR・curator を通す手順を定めた以下の記述は、この決定と食い違う部分について無効とする。push の前に `git pull --ff-only` で最新にし、テストがあれば実行する。過去の PR 番号・作業ブランチは出典として残す。
+
 研究ID: KB-POLICY-20261101-RESEARCH-INTAKE-PRIORITY-01。対象: 迫真戦記 ver0.67 A/B/C/D/E/REA・専任KB統合。
 正本: PRIVATE `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。この規約は研究資料の公開・統合の新手順を定め、原作実ゲームの互換性やREADYを宣言しない。
 

@@ -1,5 +1,8 @@
 # 研究知識ベースの正本・競合防止（KB-SYNC-01）
 
+> **2026-11-12 管理者決定（最優先）：プルリクエストは不要。** 管理者（ButaMonky）と、管理者が作業を任せた AI（Claude・Codex など）は、`develop` へ直接コミット・push してよい。作業ブランチ・PR・curator を通す手順を定めた以下の記述は、この決定と食い違う部分について無効とする。push の前に `git pull --ff-only` で最新にし、テストがあれば実行する。過去の PR 番号・作業ブランチは出典として残す。
+
+
 対象は `_REDEV_RESEARCH/knowledge` のみ。研究ROOT全体、原作EXE・DAT・MAP・SAVE・ZIPはGit管理しない。
 正式正本（2026-11-07切替）: 非公開 `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。旧 `ButaMonky/Hakushin067-Research-Knowledge` は履歴保全用で新規push禁止。存在とPRIVATE設定を確認してから同期する。
 過去の拒否・復旧履歴は `KB_SYNC_BLOCKED_20261029.md` を参照。現在の実行状態は `SYNC_STATUS.md` を参照。安全拒否された操作は迂回しない。

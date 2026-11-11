@@ -24,7 +24,7 @@ MANIFEST = "SOURCE_MANIFEST.tsv"
 FILES = (
     ".gitignore", ".gitattributes", "README.md", "kb.py",
     "symbols.tsv", "structs.tsv", "REF_DAT_BEHAVIOR.md", "REF_UI_SYSTEM.md",
-    "REF_MAP_TERRAIN.md",
+    "REF_MAP_TERRAIN.md", "REF_BATTLE_SWAP_HEADLESS.md", "docs/test-scenario-dat.md",
     "research/intake/CLAUDE/CLAUDE-MAP-T001-20261109.md",
     "research/intake/CLAUDE/CLAUDE-T040-CHIP-ATLAS-HEIGHT-CAP-20261108.md",
     "SYNC_PROTOCOL.md", "SYNC_STATUS.md", "KB_SYNC_BLOCKED_20261029.md",

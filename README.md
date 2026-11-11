@@ -1,5 +1,8 @@
 # 迫真戦記 ver0.67 研究知識ベース
 
+> **2026-11-12 管理者決定（最優先）：プルリクエストは不要。** 管理者（ButaMonky）と、管理者が作業を任せた AI（Claude・Codex など）は、`develop` へ直接コミット・push してよい。作業ブランチ・PR・curator を通す手順を定めた以下の記述は、この決定と食い違う部分について無効とする。push の前に `git pull --ff-only` で最新にし、テストがあれば実行する。過去の PR 番号・作業ブランチは出典として残す。
+
+
 > **正式な正本（2026-11-07以降）:** [Vahren-exe-Research-Lab/Vahren.exe-research](https://github.com/Vahren-exe-Research-Lab/Vahren.exe-research) の `develop`。新しい研究・Issue・PRは新正本へ。
 > 旧 [ButaMonky/Hakushin067-Research-Knowledge](https://github.com/ButaMonky/Hakushin067-Research-Knowledge) はPrivateの歴史資料・バックアップで、新規pushは禁止。
 > 両リポジトリはPrivate。権利・個人情報・履歴の監査を終えるまでPublicへ変更しません。
@@ -66,6 +69,8 @@ python -B tools/reference.py callees 0x0055BC60 --json
 | 戦闘マップの地形・オブジェクト・通行判定・移動速度 | [REF_MAP_TERRAIN.md](REF_MAP_TERRAIN.md) |
 | 戦闘AI・士気 | [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md) |
 | 戦闘乗っ取り・外部結果統合 | [REF_BATTLE_TAKEOVER.md](REF_BATTLE_TAKEOVER.md) |
+| 戦闘差し替え（簡易戦闘の計算を外部に任せる、実機確認あり） | [REF_BATTLE_SWAP_HEADLESS.md](REF_BATTLE_SWAP_HEADLESS.md) |
+| 確認用の外伝シナリオ（テストDAT）の作り方 | [docs/test-scenario-dat.md](docs/test-scenario-dat.md) |
 | DAT・画面部品・詳細パネル | [REF_DAT_BEHAVIOR.md](REF_DAT_BEHAVIOR.md)、[REF_UI_SYSTEM.md](REF_UI_SYSTEM.md) |
 | VM・context・時計 | [REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md)、[主要本文と旧説明の訂正](research/recovered/vm_dispatch_topic/README.md) |
 | セーブの処理・通常セーブの形式 | [REF_SAVE_PERSISTENCE.md](REF_SAVE_PERSISTENCE.md)、[REF_SAVE_FORMAT.md](REF_SAVE_FORMAT.md) |

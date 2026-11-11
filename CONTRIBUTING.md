@@ -1,5 +1,8 @@
 # 研究を追加・訂正する人とAIへ
 
+> **2026-11-12 管理者決定（最優先）：プルリクエストは不要。** 管理者（ButaMonky）と、管理者が作業を任せた AI（Claude・Codex など）は、`develop` へ直接コミット・push してよい。作業ブランチ・PR・curator を通す手順を定めた以下の記述は、この決定と食い違う部分について無効とする。push の前に `git pull --ff-only` で最新にし、テストがあれば実行する。過去の PR 番号・作業ブランチは出典として残す。
+
+
 > **現行正本:** `Vahren-exe-Research-Lab/Vahren.exe-research` の `develop`。旧 `ButaMonky/Hakushin067-Research-Knowledge` はPrivate保存専用。新しいIssue・PR・研究は新正本へ。
 
 **研究本文を保存し、関数・メモリの意味から根拠へ辿れるようにする。未確認は未確認として残す。** このガイドは日常の入口です。詳しい規約は必要な箇所だけ参照してください。既存の担当権限・保留範囲・公開設定は変えません。

@@ -5560,3 +5560,7 @@
 !/research/recovered/rea_unreturned5_review4/PARENT_UI_REVIEW.json
 !/research/recovered/rea_unreturned5_review4/README.md
 !/research/recovered/rea_unreturned5_review4/STATUS.tsv
+
+# 2026-11-12 戦闘差し替え研究とテストDATの作り方
+!/REF_BATTLE_SWAP_HEADLESS.md
+!/docs/test-scenario-dat.md
