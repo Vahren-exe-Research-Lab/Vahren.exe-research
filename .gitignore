@@ -5563,4 +5563,5 @@
 
 # 2026-11-12 戦闘差し替え研究とテストDATの作り方
 !/REF_BATTLE_SWAP_HEADLESS.md
+!/REF_SIMPLE_BATTLE_ENGINE.md
 !/docs/test-scenario-dat.md

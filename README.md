@@ -70,6 +70,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 | 戦闘AI・士気 | [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md) |
 | 戦闘乗っ取り・外部結果統合 | [REF_BATTLE_TAKEOVER.md](REF_BATTLE_TAKEOVER.md) |
 | 戦闘差し替え（簡易戦闘の計算を外部に任せる、実機確認あり） | [REF_BATTLE_SWAP_HEADLESS.md](REF_BATTLE_SWAP_HEADLESS.md) |
+| 簡易戦闘の中身（外部で同じ計算をするための仕様、解析中） | [REF_SIMPLE_BATTLE_ENGINE.md](REF_SIMPLE_BATTLE_ENGINE.md) |
 | 確認用の外伝シナリオ（テストDAT）の作り方 | [docs/test-scenario-dat.md](docs/test-scenario-dat.md) |
 | DAT・画面部品・詳細パネル | [REF_DAT_BEHAVIOR.md](REF_DAT_BEHAVIOR.md)、[REF_UI_SYSTEM.md](REF_UI_SYSTEM.md) |
 | VM・context・時計 | [REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md)、[主要本文と旧説明の訂正](research/recovered/vm_dispatch_topic/README.md) |
