@@ -122,6 +122,8 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
   - 2 missile → `Skill_ExecuteMissile`（0x546F70、§5.5）
   - 3 heal → 隣の敵がいて range_min ≠ 0 なら使わない。allfunc なら `Skill_ExecuteHealAllTargets`（0x547AF0）。そうでなければ支援の対象の一覧（+0x1E584..）から選ぶ（0x54ADA0・0x54A170・0x54A5F0・0x54A1C0・0x54A7B0）。
   - 4 summon → `Summon_ProcessSkillKind4` 0x547490（§16.1）
+- **special の条件（0x57BC10、静的 2026-11-13、途中まで）**：special（+0x4C）≥ 100 なら無条件で通す。100 未満なら、周りの一覧（ユニット +0x1E4C4、0x579AA0 → 0x4E2D90 で数える）の数が special 以上なら使わない。func ≠ 4 で陣営の vf+0x18 が 0（コンピュータの陣営と見られる）なら、HP / 最大 HP（+0xDC）≥ 0.5 のとき使わない。目標が無ければ通す（func 3/4 も通す）。目標が +0x8D 付き・速さ +0xA8 = 0 なら使わない。attack_range（+0x188）≥ 目標の距離（+0x1E578）か HP 半分未満なら、`check + 0x40` と距離を比べる（続きは未読）。
+- 実機（2026-11-13、射撃の技能）：使われた技能の 88% が `range_min < 距離 ≤ check`。前の技能を見送った理由は距離の外 2,009、待ち 497、まだ説明できない 1,376（special・mp = −1・MP 不足など）。待ちは反復ではなく「技を選ぶ処理の回数」で数えるほうが合う（要確認）。
 - **最初に成功した 1 つだけ**使う。成功したら：
   - 減速 `+0x1E54C = slow_time`（+0x208）、`+0x1E550 = slow_per`（+0x200）。今の残りより長いときだけ。
   - delay（+0x20C）> 0 なら待ち `+0x1E538 = delay + 1`。
