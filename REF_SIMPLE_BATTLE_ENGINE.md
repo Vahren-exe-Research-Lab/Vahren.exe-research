@@ -96,7 +96,18 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
 ## 5. 行動
 
 ### 5.1 SkillDispatch 0x545CC0
-- `gauge2 ≥ bdr` で、gauge2 = 0。技能の一覧（+0x18650、std::list）から使えるものを選び、func（スキル +0x40）で分ける：1 近接（vf+0x7C = 0x546C90）、2 射撃（0x546F70）、3 回復（0x547AF0 ほか）、4 召喚。
+- `gauge2 ≥ bdr` でなければ何もしない。届いたら gauge2 = 0。
+- 待ち +0x1E538 > 0、または +0xD0 < 0（状態異常と見られる）なら使わない。+0x1AC = 0。
+- **近接の優先**：+0x1A4 ≠ 0 かつ +0x134 が立ち、隣の敵（+0x1E570）がいるとき、`R(0,100) < +0x18600` なら、技能の一覧を先頭から見て、special（+0x4C）> 0 なら 0x57BC10 で使えるか確かめ、func = 1（sword）なら vf+0x7C で近接を出す。
+- **ふつうの選び方**：技能の一覧（+0x18650、std::list、並びは作るときの順）を先頭から見る。陣営の種類（[+0x1D4]+0xC）が 2 なら +0xA0C、それ以外は +0xA10 の値を使い、0x80000065 より大きいもの（使える技能）だけを試す。special > 0 なら 0x57BC10 も通す。func で分ける（ジャンプ表 0x5465D4）:
+  - 1 sword → vf+0x7C（0x546C90）
+  - 2 missile → `Skill_ExecuteMissile`（0x546F70、§5.5）
+  - 3 heal → 隣の敵がいて range_min ≠ 0 なら使わない。allfunc なら `Skill_ExecuteHealAllTargets`（0x547AF0）。そうでなければ支援の対象の一覧（+0x1E584..）から選ぶ（0x54ADA0・0x54A170・0x54A5F0・0x54A1C0・0x54A7B0）。
+  - 4 summon → 0x546466 側（未解析）
+- **最初に成功した 1 つだけ**使う。成功したら：
+  - 減速 `+0x1E54C = slow_time`（+0x208）、`+0x1E550 = slow_per`（+0x200）。今の残りより長いときだけ。
+  - delay（+0x20C）> 0 なら待ち `+0x1E538 = delay + 1`。
+  - gun_delay（+0x210）> 0 なら、技能ごとの待ちの表（+0x1E53C、キー = +0x214 の名前）に gun_delay + 1 を入れる（§2 の「+0x1E540 の一覧の残り時間を 1 減らす」はこの表）。
 
 ### 5.2 突撃 0x546A30
 - 突撃の技能 +0x130 があり、目標があり、連続の歩数 +0x1868C ≥ 技能の +0x2B4、向きが目標の方向と 2 以内なら、その場でダメージ（0x550E70）。歩数を減らす。
@@ -104,6 +115,14 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
 ### 5.3 近接 0x546C90
 - 向きを目標へ。MP −= mp。幻覚（+0xCC < 0）なら `R(0,100) < unit_illusion_miss` で外れ。
 - rush 回（0 なら 1）：damage ≥ 0 かつ str ≠ 0 なら 0x550E70 でダメージ。next 系の技能を続けて出す（0x547FC0）。
+
+### 5.5 射撃 0x546F70（func 2）
+- 隣の敵がいて range_min（+0x298）≠ 0 なら使わない。allfunc なら `Skill_ExecuteMissileAllTargets`（0x547DB0）。
+- 目標（+0x1E574）が要る。状態異常 +0xC0 < 0 で mp = 0 の技能、+0xC4 < 0 で mp ≠ 0 の技能は使えない。MP が足りなければ使えない。技能の待ち（+0x1E53C の表）が残っていれば使えない。
+- 距離（当たり判定の矩形の中心どうし）が `range_min < 距離 ≤ check`（+0x294）のときだけ。
+- 向きを目標へ（0x447180）。技能の +0x2D0 == 7 なら向きは変えない。
+- 味方が射線にいないか `Skill_CheckMissileRangeGate`（0x4E7ED0）で調べる。結果はその反復のあいだ +0x1E560 に残す（1 = 撃てる、2 = だめ）。+0x1FC が立つ技能などは調べない。
+- MP −= mp。offset（+0x254）があれば撃つ位置をずらす（vf+0x80）。rush（+0x74）回、`SimpleUnit_CastSkill`（0x547FC0）で飛び道具を作る（§11）。
 
 ### 5.4 ダメージ 0x550E70
 - 既存研究 T012（`data/T012_BATTLE_CALC.md` §3・§4）を正とする。攻撃側 = 能力値（str のモード）× damage_consti[耐性] × 乱数（damage_min..max）、防御側 = 防御 × 別の乱数（damage_min2..max2）。差を取り、距離の補正、耐性 0/10 の特別扱い、btl_min_damage。
