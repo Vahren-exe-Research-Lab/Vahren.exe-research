@@ -12,6 +12,10 @@
 - 定数は context.dat から読む（読み込み処理 `0x45A000..0x45C800` から作った表。研究者の手元）。このゲームの主な値：unit_action_bdr 4000、unit_search_bdr 100、unit_retreat_speed 300、unit_illusion_miss 66、unit_confusion_miss 25、btl_limit 1300、btl_min_damage 1。
 - 戦場はマス目（32 px）。context `unit_battle_cram = on` で 1 マスに 1 体（地図の +0x3C が立つ）。
 
+## 0.1 外部の戦闘が受け取る範囲（方針）
+- 戦闘差し替えの入口（0x40E27F、1 フレーム目）の時点で、原作は**準備・能力値の計算・配置・並べ替えを終えている**（§13・§15）。外部の戦闘は、その時点の状態（ユニットのフィールド・技能・地図・乱数の状態）をそのまま受け取れば、準備の部分を作り直さなくてよい。
+- よって外部で同じにする必要があるのは、§1 以降の「1 反復の中身」。準備の部分（§13・§15）は記録として残すが、後回しにできる。
+
 ## 1. 1 フレーム（0x40E2F0）
 
 ```
@@ -157,11 +161,34 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
   5. vf+0x58（除去）。dead_event（REF_BATTLE_SWAP_HEADLESS.md §5.2：その場で実行、あとから呼んだものが先に動く）。
 - 召喚（func 4）は `Summon_ProcessSkillKind4`（0x547490）。既存研究 REF_UNIT_EXP_SUMMON.md を参照。
 
+## 15. 能力値の写し（Unit_CopyStatsFromDef 0x573BD0、静的）
+- UnitData（+0x1C8）から戦闘ユニットへ：
+
+| UnitData | 内容 | 戦闘ユニット |
+|---|---|---|
+| +0x178 | hp | +0x90 |
+| +0x17C | mp | +0x94 |
+| +0x180 | attack | +0x98 |
+| +0x184 | defense | +0x9C |
+| +0x188 | magic | +0xA0 |
+| +0x18C | magdef | +0xA4 |
+| +0x194 | speed | +0xA8 |
+| +0x190 | dext | +0xAC |
+| +0x1A0 | move | +0xB0 |
+| +0x198 | hprec | +0xB4 |
+| +0x19C | mprec | +0xB8 |
+
+- 部隊の兵（+0x1D0 の部隊があり、+0x1CC の主がいる）で、シナリオ変数 `@mode_sdown` が 1 なら、人材でない兵の attack・defense・magic・magdef・dext に context `notalent_down`/100 を掛ける。
+- そのあと、技能の type（training など）・status の技能（add2・yorozu など）・summon_max・movetype の補正を足し、最大値（+0xDC 以降）を作る（未解析）。
+- 戦闘差し替えでは、この計算は原作が済ませたあとの値を受け取ればよい（§0.1）。
+
 ## 8. ユニットのフィールド（主なもの）
 | オフセット | 内容 | 確かさ |
 |---|---|---|
 | +0x90/+0x94 | HP / MP | 実機 |
-| +0x98/+0x9C/+0xA0 | 攻撃 / 防御 / 魔力（の順と見られる） | 実機（値） |
+| +0x98/+0x9C/+0xA0/+0xA4 | 攻撃 / 防御 / 魔力 / 魔法防御 | 静的（§15）・実機 |
+| +0xAC | 技（dext） | 静的（§15） |
+| +0xB4/+0xB8 | HP 回復 / MP 回復 | 静的（§15） |
 | +0xA8 | 速さ（行動ゲージの増分） | 実機 |
 | +0xB0 / +0x1B0 | 移動（現在 / 基本） | 静的 |
 | +0xBC..+0xD4 | 7 つの状態ゲージ（毒・麻痺・沈黙などと見られる） | 静的（T012 §6） |
