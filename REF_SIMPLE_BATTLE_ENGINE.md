@@ -182,3 +182,24 @@ dmg = max(dmg, btl_min_damage)
      - bom：`0x4E6110` で範囲内の全ユニットに `0x54DAE0`。
   7. 終わりの演出・乱数での散らばり（Rng_RangeInclusive 3 か所、0x4208A0）など。
 - 一般兵の近接 a_zan の zan1 は func missile（range 80、rush 2、damage −3、next2）なので、**近接攻撃の多くもこの飛び道具の経路を通る**。
+
+## 12. 戦闘のクラスと更新関数（RTTI から、静的）
+| クラス | vtable | 更新 vf+4 | 備考 |
+|---|---|---|---|
+| SimpleUnit | 0x63A4BC | 0x545740 | 簡易戦闘のユニット |
+| Unit | 0x63A9E4 | 0x57AA00 | 通常戦闘のユニット |
+| SimpleMissile | 0x63A5A4 | 0x552030 | 簡易戦闘の飛び道具 |
+| Missile | 0x63A544 | 0x54BA00 | 通常戦闘の飛び道具 |
+| RushMissile | 0x63A6B4 | 0x5501A0 | rush の飛び道具 |
+| Heal | 0x63A604 | 0x54E420 | 回復の効果 |
+| SummonFlash | 0x63A65C | 0x54F490 | 召喚の効果 |
+| SimpleStaticUnit | 0x63A8E4 | 0x55AD80 | 簡易戦闘の建物（城・砦など） |
+| StaticUnit | 0x63A85C | 0x55AD80 | 通常戦闘の建物 |
+| Troop | 0x639A30 | 0x56AB20 | 部隊 |
+| Person | 0x6396E0 | 0x5149C0 | 陣営の基底 |
+| Enemy | 0x638B60（+0x90 の部分 0x638B84） | +0x90 の vf+4 = **0x4498E0** | AI の陣営。1 反復の手順「陣営の更新」 |
+| Player | 0x639B08（+0x90 の部分 0x639B2C） | 0x521A00 | プレイヤーの陣営 |
+| DemoPerson | 0x638030（+0x90 の部分 0x638054） | 0x449730 | |
+| BattleWnd | 0x638074（+0x28 の部分 0x6380CC） | 0x40E220 | 戦況ウィンドウ |
+
+- 陣営の更新 0x4498E0（Enemy）：0x140 反復ごとに `Ai_RebuildLiveUnitScoreMap`（0x5151D0）と `ModeScoreRank_Process`（0x448E90）で作戦のモードを選び直す。主将の kosen、context の btl_mode_coe・btl_attackmode・btl_chargemode を使う。既存研究 REF_BATTLE_AI_MORALE.md（T013・T024・T028）がこの部分にあたる。
