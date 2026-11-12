@@ -22,7 +22,7 @@
 for iter in 0..499:
     if iter % 50 == 0: 勝敗の判定（§1.1）
     if Event_ProcessBattleTick(E, 1): break        # 0x492D80
-    防衛側・攻撃側の陣営 [side+0x90].vf+4          # 陣営の更新（未解析）
+    防衛側・攻撃側の陣営 [side+0x90].vf+4          # 陣営の更新（敵の陣営は §17。ユニットより前）
     for u in W.units (W+0x238 の順): u.vf+4          # §2 ユニットの更新
     W.units.insert(end, W+0x258..0x25C)               # 0x4FAA60：この反復で生まれたユニット（召喚など）を末尾に足す
     for m in W+0x248（飛び道具の集合、std::set の順）: m.vf+4    # §11
@@ -115,7 +115,7 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
   - 1 sword → vf+0x7C（0x546C90）
   - 2 missile → `Skill_ExecuteMissile`（0x546F70、§5.5）
   - 3 heal → 隣の敵がいて range_min ≠ 0 なら使わない。allfunc なら `Skill_ExecuteHealAllTargets`（0x547AF0）。そうでなければ支援の対象の一覧（+0x1E584..）から選ぶ（0x54ADA0・0x54A170・0x54A5F0・0x54A1C0・0x54A7B0）。
-  - 4 summon → 0x546466 側（未解析）
+  - 4 summon → `Summon_ProcessSkillKind4` 0x547490（§16.1）
 - **最初に成功した 1 つだけ**使う。成功したら：
   - 減速 `+0x1E54C = slow_time`（+0x208）、`+0x1E550 = slow_per`（+0x200）。今の残りより長いときだけ。
   - delay（+0x20C）> 0 なら待ち `+0x1E538 = delay + 1`。
@@ -182,6 +182,42 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
 - そのあと、技能の type（training など）・status の技能（add2・yorozu など）・summon_max・movetype の補正を足し、最大値（+0xDC 以降）を作る（未解析）。
 - 戦闘差し替えでは、この計算は原作が済ませたあとの値を受け取ればよい（§0.1）。
 
+## 16. 召喚と回復（0x547490 付近、静的、2026-11-12）
+### 16.1 召喚（func 4、`Summon_ProcessSkillKind4` 0x547490）
+- **使えない条件**（どれかに当たれば使わない）：
+  - 隣に敵がいて（+0x1E570）range_min（スキル +0x298）≠ 0。
+  - ユニット +0xC8 < 0（行動できない状態）。+0xC0 < 0 で mp 0 のスキル、+0xC4 < 0 で mp ありのスキル（状態異常で物理／魔法の技が止まるものと見られる）。
+  - 戦場のユニット数（[+0x1D4]+0x24）が context `btl_unitmax`（読み込みの既定 500、このゲームの context は 810）を超える。
+  - special（+0x4C）== 0 のとき、出した召喚の数（+0x178..+0x17C の一覧）が summon_max（+0x168）以上。
+  - mp が足りない。gun_delay（+0x210）があり、そのスキルの待ち（ユニット +0x1E53C の木、キー = スキル +0x214）が残っている。
+  - check（+0x294）があるのに目標がいない、または目標までの距離の 2 乗が check の 2 乗を超える。
+- **出す場所**：向き d は、目標がいれば自分から目標への 8 方向（0x447180）、いなければ自分の向き +0x18688。
+  - check ありなら目標の中心 + 方向表（0x62A200、(dx,dy) の組）[d] × 32。
+  - なければ自分の中心 + 方向表[d] × range（+0x290、0 なら既定値 [0x68B2D8]）。
+- mp を減らす。数は rush（+0x74）、0 なら 1。
+- **どのユニットか**：スキル +0x13C の名前があればそれ。なければ一覧 +0x158 から、next_order（+0x270）なら i 番目（i % 数）、そうでなければ `Rng_RangeInclusive(0, 数−1)`（**1 体ごとに乱数 1 回**）。
+- **レベル**：summon_level（+0x238）≠ 0 なら `summon_level × 0.01 × 撃ち手のレベル`、0 ならユニット +0x170（倍率）× レベル、それも 0 なら context の既定倍率（[0x65BD70]）× レベル。+0.5 して切り捨て、`UnitDef_ComputeStats`（0x58B7F0）で能力値を作る。同じ名前の召喚の記録があれば使い回す（0x577260／0x577310）。
+- `Battle_CreateSimpleUnit`（0x544290、0x1E5A0 バイト）で作り、`Summon_ProcessSharedQueue`（0x4E70E0）で置く。置けたら `Unit_AppendSummonChild`（0x5774A0）。1 反復の手順で W+0x258 に積まれ、0x4FAA60 で更新の順の末尾に足される（§1）。
+
+### 16.2 回復・補助（`Skill_BuildSupportCandidateList` 0x54ADA0 を使う経路）
+- mp・gun_delay の条件は召喚と同じ。
+- 味方の一覧（ユニット +0x1E584..+0x1E588）から候補を作り、スキル +0xA1C があれば `Skill_FilterSupportCandidates`（0x54A170）で絞る。
+- 候補ごと：距離（候補 +0x10、double）が range（+0x290）以内で、random_space_min（+0x88）より遠いものに効かせる。
+  - ユニット +0xCC < 0（幻惑などの状態と見られる）なら、候補ごとに `rand` を 1 回引き、0..99 の値が context `unit_illusion_miss`（既定 50）未満ならその候補は外れる。
+  - 当たれば `Skill_ApplyHealStatus`（0x551490）。1 つでも効けば自分にも 0x551490 を呼ぶ（自分を含めるか、演出のためかは未確認）。
+
+## 17. 敵の陣営の更新（Enemy +0x90 の vf+4 = 0x4498E0、静的、2026-11-12）
+- 1 反復の手順の「陣営の更新」で呼ばれる（this = 陣営 +0x90。以下 S = 陣営）。既存研究 REF_BATTLE_AI_MORALE.md の候補・順位（0x449500・0x448E90）と同じ関数群。
+- S+0x98（陣営の反復の数え）を使う：
+  - **320 反復ごと**（数え % 0x140 == 0）：`Ai_RebuildLiveUnitScoreMap`（0x5151D0）と `ModeScoreRank_Process`（0x448E90）で点数と順位を作り直し、更新できる各ユニットの作戦を一度空にする（0x577A20、文字列 0x625013）。
+  - **作戦の間隔 N ごと**（数え % N == 0。N = [0x65C150] = 200、フラグ [0x87984D] が立てば 400）：数えは毎回 1 増える。**最初の反復（数え 0）でも動く。**
+- 作戦を決める（N ごと）：
+  1. 陣営の値 `kosen`（0x591570）と context の `btl_mode_coe`（既定 33）・`btl_attackmode`（既定 100）・`btl_chargemode`（既定 25）から閾値を作る：`a = kosen × btl_mode_coe/100 × btl_attackmode/100 + …`、`c = … + btl_chargemode/100`（式の細部は要確認）。
+  2. 自陣と敵陣の戦力（0x515000 を 2 回）の比を閾値と比べ、`BattleCategory_UpdateUnitCandidates`（0x449500）を category 3（push）や 1（even）で呼ぶ。どちらでもなければ下の 3 へ。
+  3. 陣営の種類（S+0x98 > 10 なら 8、そうでなければ 6。シナリオのフラグ [S+4]+0x1EF244 が立ち S+0x18 == 0 なら 6 → 7）で作戦の名前を決める（0 hold、1/2/7 even、3 push、4/5 hold、6 advance、8 back）。
+  4. **ユニットごと**（+0x1867C・+0x1867E が 0、+0xC0・+0xD0・+0xC8 が負でない）：作戦の名前を +0x1E4FC に書き、作戦の長さ +0x1E4F8 = max(`Rng_RangeInclusive(1, ftol(N × f + 0.5))`, +0x1E518)。f = 0.6（種類 0）、0.3（種類 6）、0.8（その他）。**ここで 1 体ごとに乱数を 1 回使う。**
+- 外部の戦闘への影響：N の倍数の反復では、ユニットの更新より前にこの乱数が入る（§1）。プレイヤーの陣営の vf+4（0x521A00）は未解析。多種ユニットの記録で、反復 0・200・400… の乱数の数を照合する。
+
 ## 8. ユニットのフィールド（主なもの）
 | オフセット | 内容 | 確かさ |
 |---|---|---|
@@ -247,9 +283,20 @@ dmg = max(dmg, btl_min_damage)
   3. resize 系（大きさの変化。当たり判定の矩形 +0x40〜+0x4C も変わる）。
   4. 移動（homing +0x1D8 などで向きを変え、0x4C5A40 で進める）。
   5. 経過 +0x1A4 がスキルの time（+0x2B0）を超えたら終わり（next_last なら次のスキル）。next_interval（+0x274）ごとに次のスキル（vf+0x58）。
-  6. **当たり**：hard（+0x1C4）が 0 でなければ「経過 % hard == 0」のとき、0 なら経過 == damage(+0x24C)+1 のときだけ判定する。
-     - bom でない：`0x4E5860` で最初に当たったユニット。+0x66 が立っていれば（壁など）止まる。そうでなければ **`0x54DAE0`**（ダメージを与える。既存研究 T012 の DAMAGE_CALLER_54DAE0）。
+  6. **当たりを調べる反復か**（f = その反復の前の +0x180。`hard` = +0x1C4、`damage` = +0x24C）：
+     - 動く飛び道具（speed +0x2A0 ≠ 0）：`f ≥ damage` かつ（`hard == 0` または `f % hard == 0`）。damage が負（zan1 の −3 など）なら最初から調べる。
+     - 止まっている飛び道具（speed == 0）：`hard ≠ 0` で `f % hard == 0` の反復、または `hard == 0` なら経過 +0x1A4 == damage+1 の 1 回だけ。
+     - damage < −1 なら当たりを調べない（ただの演出）。
+     - 進んだ距離 +0x100（毎反復 |speed| を足す）を切り捨てた値がスキルの range（+0x290）以上になったら終わり（next_last なら次のスキル）。
+  6.1 当たったとき：
+     - bom でない：`0x4E5860` で最初に当たったユニット。+0x66 が立っていれば（壁など）止まる。そうでなければ **`0x54DAE0`**。
      - bom：`0x4E6110` で範囲内の全ユニットに `0x54DAE0`。
+  6.2 **`0x54DAE0`（当たり 1 回の処理）**：
+     1. `damage ≥ 0` かつ str（+0x27C）≠ 0 なら `Damage_ComputeAttackDefense`（0x550E70、§9）。damage = −1 は「当たるがダメージなし」。
+     2. next_interval（+0x274）== 0 で next_first（+0x26F）でなければ、vf+0x58（0x552EF0）で**当たった場所から次のスキル**（next +0x8C／+0x9C／+0xA8／+0xB8／+0xC8／+0xD8 の一覧）を出す。
+     3. onehit（+0x1CC）なら終わり（+0xF8 = 1、経過 = 1,000,000）。
+     4. hard（+0x1C4）== 0 なら終わり（貫かない）。hard ≠ 0 なら飛び続け、hard 反復ごとに当たり直す。
+  6.3 次のスキルを出す時：next_first は最初の反復（+0x180 == 0）、next_interval は `+0x180 % next_interval == 0` の反復ごと、next_last は終わるとき、どれでもなければ当たったとき。
   7. 終わりの演出・乱数での散らばり（Rng_RangeInclusive 3 か所、0x4208A0）など。
 - 一般兵の近接 a_zan の zan1 は func missile（range 80、rush 2、damage −3、next2）なので、**近接攻撃の多くもこの飛び道具の経路を通る**。
 
