@@ -20,8 +20,11 @@ for iter in 0..499:
     if Event_ProcessBattleTick(E, 1): break        # 0x492D80
     防衛側・攻撃側の陣営 [side+0x90].vf+4          # 陣営の更新（未解析）
     for u in W.units (W+0x238 の順): u.vf+4          # §2 ユニットの更新
-    0x4FAA60                                          # 後処理（未解析）
-    W+0x248 の効果の更新、W+0x278 の新しい効果の登録、0x498EE0
+    W.units.insert(end, W+0x258..0x25C)               # 0x4FAA60：この反復で生まれたユニット（召喚など）を末尾に足す
+    for m in W+0x248（飛び道具の集合、std::set の順）: m.vf+4    # §11
+    for m in W+0x278（終わった飛び道具）: W+0x248 から外す      # 0x579AA0 で探して 0x510850 で消す
+    W+0x248 に W+0x268..0x26C（この反復で作られた飛び道具）を入れる   # 0x498EE0
+    W+0x258・W+0x268・W+0x278 を空にする
     残り時間 W+0x288 -= 1                            # 実機：1 反復に 1
 ```
 
@@ -41,10 +44,14 @@ if +0x1E55C > 0: +0x1E55C -= 1
 if moving(+0x186D4 != NONE): 移動を進める（§4.3）; return
 if knock(+0x1E4E0 != 0): ノックバック（§4.4）; return
 if not routed and +0xD4 >= 0: latch = TargetLatch(map, u)   # §3.1、毎反復 rand 1 回（cram のとき）
+first = False                                                # 接敵したての先制
+if steps(+0x1868C) > 0:
+    if +0x1A4 == 0: first = (latch != 0)
+    elif +0x134 and R(0,100) < +0x18600: first = (latch != 0)   # rand 1 回
 if Charge(u): return                                         # §5.2 突撃（+0x130 の技能）
 if gauge < bdr:
     if latch == 0: IdleMove(u)                               # §4.1
-    elif 条件: 0x57BBA0                                       # 未解析
+    elif first: MeleeNow(u)                                   # 0x57BBA0：近接の技能（func 1、special なし）をゲージと関係なく出す
     return
 gauge = R(-bdr/10, 0)                                       # rand 1 回
 +0x1E538, +0x1E54C, +0x1E558 を 1 減らす（+0x1E54C が 0 なら倍率 +0x1E550 = 1.0）
@@ -57,6 +64,7 @@ if not moving: 0x57DD10; IdleMove(u)
 if acted: NaturalRecovery(u)                                 # 0x57DF90
 ```
 （実機：ゲージと探索カウンタの規則はスナップショットで全ユニット矛盾なし）
+（実機：**移動中のユニットは乱数を使わない、止まっているユニットは 1 回**。スナップショットの次の反復の乱数の回数と照合して、移動中 23 件はすべて 0 回、停止中 85 件はすべて 1 回。移動中はゲージが閾値を超えても行動しない）
 
 ## 3. 目標
 
@@ -127,11 +135,27 @@ if acted: NaturalRecovery(u)                                 # 0x57DF90
 ### 5.4 ダメージ 0x550E70
 - 既存研究 T012（`data/T012_BATTLE_CALC.md` §3・§4）を正とする。攻撃側 = 能力値（str のモード）× damage_consti[耐性] × 乱数（damage_min..max）、防御側 = 防御 × 別の乱数（damage_min2..max2）。差を取り、距離の補正、耐性 0/10 の特別扱い、btl_min_damage。
 
+## 5.6 行動のあとの回復 0x57DF90
+- HP += hprec（+0xB4）。ただし毒（+0xBC < 0）で hprec ≥ 0 のとき、HP が最大を超えていて hprec ≥ 0 のときは足さない。最大HP（+0xDC）で頭打ち。負になったら vf+0x70 で倒れる。
+- MP += mprec（+0xB8）。沈黙（+0xC4 < 0）で mprec ≥ 0 のときは足さない。0..最大MP（+0xE0）。
+- 7 つの状態ゲージ（+0xBC・+0xC0・+0xC4・+0xC8・+0xCC・+0xD0・+0xD4）に unit_status_recovery（0x65BD58）を足し、unit_status_hp_limit（0x65BCFC）で頭打ち。負の値が状態異常の残り（毒 +0xBC、移動不可 +0xC0、沈黙 +0xC4、混乱 +0xC8、幻覚 +0xCC、行動不可 +0xD0、目標の固定不可 +0xD4 と見られる。名前は使われ方からの推定）。
+- 最後に 0x578EF0。
+
+## 5.7 距離を取る 0x57DD10（cavalry_range）
+- cavalry_range（+0x198）があり、目標がいて、隣の敵がいないとき、目標との距離が cavalry_range 未満なら、目標と反対の方向へ escape_run（+0x190）× 2 の位置を行き先にする（弓兵などが離れる動き）。+0x1E55C > 0 の間はしない。
+
 ## 6. 潰走 0x57DBB0
 - `HP/maxHP ≤ +0x18608` で潰走（+0x1867E = 1、移動の速さ ×unit_retreat_speed/100）。潰走中は `> +0x18608 × 1.2` で立ち直る。
 
 ## 7. 戦死 0x544790
-- `HP −= ダメージ`、0 以下で：撃破の報酬、break（死亡時スキル）、生存判定 0x588470、vf+0x58（除去）、dead_event（その場で実行。あとから呼んだものが先に動く、実機）。
+- `HP −= ダメージ`。0 より大きければ、ノックバック（攻撃者の knock、相手の no_knock +0x1E4DC と乱数）、被弾時の技能（+0x1B0）などで終わり。
+- 0 以下で：
+  1. 部隊に入っているユニットを、部隊の主のいる攻撃者が倒したなら、倒されたユニットの UnitData +0x1C4 を、攻撃者の部隊の +0xBC と主の +0x1B4 に足す（撃破の報酬、0x5449C0..）。
+  2. break（死亡時スキル）。def の "lost_reserve" の確率で別の技能。W+0x28C（両軍の全滅判定の猶予）を lost_reserve（無ければ 10）にする。
+  3. **0x588470（死亡の扱いの判定）**：たまった経験値でレベルを上げきり（unit_level_max まで）、`経験値 ×= dead_penalty/100`、勢力の資金から「価格 × レベル」を引く。シナリオ変数 `@mode_dead2`・`@mode_dead` と、人材なら `rand% ≥ 生存率`（0x585890 の値）で、本当に死ぬかを決める。結果を UnitData +0x1B0 に入れる。
+  4. 部隊の主なら、部隊の技能（+0x184）を出す。
+  5. vf+0x58（除去）。dead_event（REF_BATTLE_SWAP_HEADLESS.md §5.2：その場で実行、あとから呼んだものが先に動く）。
+- 召喚（func 4）は `Summon_ProcessSkillKind4`（0x547490）。既存研究 REF_UNIT_EXP_SUMMON.md を参照。
 
 ## 8. ユニットのフィールド（主なもの）
 | オフセット | 内容 | 確かさ |
@@ -177,7 +201,7 @@ dmg = max(dmg, btl_min_damage)
 ```
 - Strength 0x550D80（スキル +0x27C のモード、+0x280 = str の値 × 0.01、+0x288 = str_ratio × 0.01）:
   - 1 attack: ftol(攻撃 +0x98 × scale + 0.5)、2 magic: 魔力 +0xA0、3 attack_magic: (攻撃×ratio + 魔力×(1−ratio)) × scale、4 attack_dext: (攻撃×ratio + 技 +0xAC×(1−ratio))、5 magic_dext: (魔力×ratio + 技×(1−ratio))、6 fix。
-- 既存研究 T012 §3 と一致（防御側の乱数も damage_min..max）。研究日誌（非公開）§97.25 の「damage_min2..max2」は誤り（status 側 0x5513xx・0x5518xx が使う）。
+- 既存研究 T012 §3 と一致（防御側の乱数も damage_min..max）。研究日誌（非公開）の以前の記述「damage_min2..max2」は誤り（status 側 0x5513xx・0x5518xx が使う）。
 - 外部の計算での実装は研究者の手元にある（未照合。多種ユニットの記録で照合する）。
 
 ## 10. スキルの連鎖と飛び道具（静的、途中）
